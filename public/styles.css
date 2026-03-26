@@ -675,3 +675,154 @@ a:hover {
 .popup-detail-link:hover {
     text-decoration: underline;
 }
+
+/* === Address Input === */
+.address-input-container {
+    position: relative;
+    display: flex;
+    gap: 0.5rem;
+    align-items: flex-start;
+    margin-bottom: 1rem;
+    max-width: 500px;
+}
+
+.address-input {
+    flex: 1;
+    padding: 0.6rem 0.75rem;
+    border: 1px solid #cbd5e1;
+    border-radius: 6px;
+    font-size: 0.95rem;
+    color: #334155;
+    background: #fff;
+}
+
+.address-input:focus {
+    outline: 2px solid #2563eb;
+    outline-offset: 1px;
+}
+
+.address-input::placeholder {
+    color: #94a3b8;
+}
+
+.address-search-btn {
+    padding: 0.6rem 1rem;
+    background: #2563eb;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    cursor: pointer;
+    white-space: nowrap;
+}
+
+.address-search-btn:hover {
+    background: #1d4ed8;
+}
+
+.address-clear-btn {
+    padding: 0.6rem 0.75rem;
+    background: none;
+    border: 1px solid #cbd5e1;
+    border-radius: 6px;
+    font-size: 0.85rem;
+    color: #64748b;
+    cursor: pointer;
+    white-space: nowrap;
+}
+
+.address-clear-btn:hover {
+    border-color: #ef4444;
+    color: #ef4444;
+}
+
+/* Suggestion Dropdown */
+.address-suggestions {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    max-width: 100%;
+    background: #fff;
+    border: 1px solid #e2e8f0;
+    border-radius: 0 0 6px 6px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    z-index: 100;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    max-height: 250px;
+    overflow-y: auto;
+}
+
+.address-suggestion-item {
+    padding: 0.6rem 0.75rem;
+    cursor: pointer;
+    font-size: 0.9rem;
+    color: #334155;
+    border-bottom: 1px solid #f1f5f9;
+}
+
+.address-suggestion-item:hover {
+    background: #f1f5f9;
+}
+
+.address-suggestion-item:last-child {
+    border-bottom: none;
+}
+
+/* === Travel Time Row on Cards === */
+.card-travel-times {
+    display: flex;
+    gap: 0.75rem;
+    padding: 0.5rem 0;
+    margin: 0.5rem 0;
+    border-top: 1px solid #f1f5f9;
+    font-size: 0.85rem;
+    color: #475569;
+    flex-wrap: wrap;
+}
+
+.card-travel-times.loading {
+    color: #94a3b8;
+    font-style: italic;
+}
+
+.card-travel-times.no-data {
+    color: #94a3b8;
+    font-style: italic;
+}
+
+.travel-mode {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.2rem;
+    white-space: nowrap;
+}
+
+.travel-spinner {
+    display: inline-block;
+}
+
+.keine-fahrzeit {
+    font-style: italic;
+}
+
+/* === Travel Error === */
+.travel-error {
+    background: #fef2f2;
+    color: #991b1b;
+    padding: 0.5rem 0.75rem;
+    border-radius: 6px;
+    font-size: 0.85rem;
+    margin-bottom: 0.75rem;
+    border: 1px solid #fecaca;
+}
+
+/* === Mobile adjustments for address input === */
+@media (max-width: 767px) {
+    .address-input-container {
+        max-width: 100%;
+    }
+}
