@@ -61,9 +61,9 @@ Requirements for initial release. Each maps to roadmap phases.
 
 ### Deployment
 
-- [ ] **DEPL-01**: Site is a static Rust/Leptos WASM SPA compiled with Trunk
-- [ ] **DEPL-02**: Site is deployed to GitHub Pages
-- [ ] **DEPL-03**: School data embedded at build time (YAML → JSON → include_str!)
+- [x] **DEPL-01**: Site is a static Rust/Leptos WASM SPA compiled with Trunk
+- [x] **DEPL-02**: Site is deployed to GitHub Pages
+- [x] **DEPL-03**: School data embedded at build time (YAML → JSON → include_str!)
 
 ## v2 Requirements
 
@@ -139,9 +139,9 @@ Which phases cover which requirements. Updated during roadmap creation.
 | COMP-01 | Phase 5 | Pending |
 | COMP-02 | Phase 5 | Pending |
 | COMP-03 | Phase 5 | Pending |
-| DEPL-01 | Phase 2 | Pending |
-| DEPL-02 | Phase 2 | Pending |
-| DEPL-03 | Phase 2 | Pending |
+| DEPL-01 | Phase 2 | Complete |
+| DEPL-02 | Phase 2 | Complete |
+| DEPL-03 | Phase 2 | Complete |
 
 **Coverage:**
 - v1 requirements: 36 total

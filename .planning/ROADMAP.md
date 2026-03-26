@@ -57,7 +57,7 @@ Plans:
 **Plans**: 3 plans
 
 Plans:
-- [ ] 02-01-PLAN.md — Rust project scaffold + build.rs data embedding + app shell with router + GitHub Actions deploy workflow
+- [x] 02-01-PLAN.md — Rust project scaffold + build.rs data embedding + app shell with router + GitHub Actions deploy workflow
 - [ ] 02-02-PLAN.md — School listing page with card grid, filter panel, sort controls, and URL-persisted filter state
 - [ ] 02-03-PLAN.md — School detail page with all data sections, ratings, admission, contact, and "Keine Angabe" handling
 **UI hint**: yes

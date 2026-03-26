@@ -2,15 +2,15 @@
 gsd_state_version: 1.0
 milestone: v1.0
 milestone_name: milestone
-status: Needs discuss → plan
-stopped_at: Phase 2 context gathered
-last_updated: "2026-03-26T18:00:33.515Z"
+status: executing
+stopped_at: Completed 02-01-PLAN.md
+last_updated: "2026-03-26T18:30:35.753Z"
 last_activity: 2026-03-26
 progress:
   total_phases: 5
   completed_phases: 1
-  total_plans: 5
-  completed_plans: 5
+  total_plans: 8
+  completed_plans: 6
   percent: 0
 ---
 
@@ -21,13 +21,13 @@ progress:
 See: .planning/PROJECT.md (updated 2026-03-26)
 
 **Core value:** Parents can quickly find and compare Berlin Gymnasien based on ratings, location, specialization, and grundständig (after-4th-grade) acceptance
-**Current focus:** Phase 02 — SPA Foundation
+**Current focus:** Phase 02 — spa-foundation-and-school-directory
 
 ## Current Position
 
-Phase: 02 (SPA Foundation and School Directory) — NOT STARTED
-Plan: 0 of TBD
-Status: Needs discuss → plan
+Phase: 02 (spa-foundation-and-school-directory) — EXECUTING
+Plan: 2 of 3
+Status: Ready to execute
 Last activity: 2026-03-26
 
 Progress: [░░░░░░░░░░] 0%
@@ -56,6 +56,7 @@ Progress: [░░░░░░░░░░] 0%
 | Phase 01-data-pipeline P02 | 2 | 1 tasks | 1 files |
 | Phase 01-data-pipeline P04 | 2 | 2 tasks | 2 files |
 | Phase 01-data-pipeline P05 | 5 | 2 tasks | 2 files |
+| Phase 02 P01 | 7 | 3 tasks | 17 files |
 
 ## Accumulated Context
 
@@ -75,6 +76,9 @@ Recent decisions affecting current work:
 - [Phase 01-data-pipeline]: writer.py write_school_yaml returns (changed, changelog_entry) tuple; write_all aggregates stats and appends to CHANGELOG.md
 - [Phase 01-data-pipeline]: deepdiff excludes last_updated and completeness_score from changelog comparison to avoid noise on every re-run
 - [Phase 01-data-pipeline]: Step imports in run.py are lazy (inside functions) so orchestrator can be imported without all deps; check_api_key uses sys.exit(1) for clean CLI output without traceback
+- [Phase 02]: Path-based routing with 404.html fallback (Leptos 0.8 has no hash routing)
+- [Phase 02]: build.rs with serde-saphyr for YAML-to-JSON at compile time, embedded via include_str!
+- [Phase 02]: Minimal initial deps: no reactive_stores or leptos-use yet (lean compile)
 
 ### Pending Todos
 
@@ -88,6 +92,6 @@ None yet.
 
 ## Session Continuity
 
-Last session: 2026-03-26T18:00:33.506Z
-Stopped at: Phase 2 context gathered
-Resume file: .planning/phases/02-spa-foundation-and-school-directory/02-CONTEXT.md
+Last session: 2026-03-26T18:30:35.749Z
+Stopped at: Completed 02-01-PLAN.md
+Resume file: None
