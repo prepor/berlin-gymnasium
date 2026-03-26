@@ -25,3 +25,243 @@ a {
 a:hover {
     text-decoration: underline;
 }
+
+/* Detail page */
+.detail-page {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+.back-link {
+    display: inline-block;
+    margin-bottom: 1rem;
+    color: #2563eb;
+    text-decoration: none;
+    font-size: 0.95rem;
+}
+
+.back-link:hover {
+    text-decoration: underline;
+}
+
+.detail-section {
+    background: #fff;
+    border-radius: 8px;
+    padding: 1.5rem;
+    margin-bottom: 1rem;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.detail-section h2 {
+    margin-top: 0;
+    font-size: 1.25rem;
+    color: #1e293b;
+    border-bottom: 1px solid #e2e8f0;
+    padding-bottom: 0.5rem;
+}
+
+.keine-angabe {
+    color: #94a3b8;
+    font-style: italic;
+}
+
+.detail-hero {
+    padding-bottom: 1rem;
+}
+
+.detail-hero h1 {
+    margin: 0 0 0.25rem;
+    font-size: 1.75rem;
+    color: #0f172a;
+}
+
+.detail-district {
+    color: #64748b;
+    font-size: 1.1rem;
+    margin: 0 0 0.5rem;
+}
+
+.detail-address {
+    color: #334155;
+    margin: 0 0 0.75rem;
+}
+
+.detail-badges {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-bottom: 0.75rem;
+}
+
+.badge {
+    display: inline-block;
+    padding: 0.25rem 0.75rem;
+    border-radius: 9999px;
+    font-size: 0.85rem;
+    font-weight: 500;
+}
+
+.badge-traeger {
+    background: #e0e7ff;
+    color: #3730a3;
+}
+
+.badge-grundstaendig {
+    background: #fef3c7;
+    color: #92400e;
+    font-weight: 600;
+}
+
+.badge-ganztag {
+    background: #ecfdf5;
+    color: #065f46;
+}
+
+.detail-counts {
+    color: #475569;
+    margin: 0 0 0.5rem;
+}
+
+.detail-website-row {
+    margin-top: 0.25rem;
+}
+
+.detail-website {
+    color: #2563eb;
+    word-break: break-all;
+}
+
+/* Profile chips */
+.profile-chips {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.profile-badge {
+    display: inline-block;
+    padding: 0.25rem 0.75rem;
+    border-radius: 9999px;
+    font-size: 0.85rem;
+    font-weight: 500;
+    color: #fff;
+}
+
+.profile-mint {
+    background: #22c55e;
+}
+
+.profile-musik {
+    background: #a855f7;
+}
+
+.profile-sport {
+    background: #3b82f6;
+}
+
+.profile-bilingual {
+    background: #f97316;
+}
+
+.profile-altsprachlich {
+    background: #ef4444;
+}
+
+.profile-other {
+    background: #64748b;
+}
+
+/* Languages table */
+.languages-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 0.5rem;
+}
+
+.languages-table th,
+.languages-table td {
+    text-align: left;
+    padding: 0.5rem;
+    border-bottom: 1px solid #e2e8f0;
+}
+
+.languages-table th {
+    color: #64748b;
+    font-weight: 600;
+    font-size: 0.9rem;
+}
+
+/* Rating entries */
+.rating-entry {
+    padding: 0.75rem;
+    border: 1px solid #e2e8f0;
+    border-radius: 6px;
+    margin-bottom: 0.5rem;
+}
+
+.rating-score {
+    color: #334155;
+}
+
+.rating-reviews {
+    color: #64748b;
+    font-size: 0.9rem;
+}
+
+.rating-retrieved {
+    color: #94a3b8;
+    font-size: 0.85rem;
+    margin-top: 0.25rem;
+}
+
+.abitur-average {
+    margin-top: 0.75rem;
+    font-weight: 600;
+    color: #1e293b;
+}
+
+/* Admission and contact definition lists */
+.admission-list,
+.contact-list,
+.provenance-list {
+    margin: 0;
+}
+
+.admission-list dt,
+.contact-list dt,
+.provenance-list dt {
+    font-weight: 600;
+    margin-top: 0.75rem;
+    color: #1e293b;
+}
+
+.admission-list dt:first-child,
+.contact-list dt:first-child,
+.provenance-list dt:first-child {
+    margin-top: 0;
+}
+
+.admission-list dd,
+.contact-list dd,
+.provenance-list dd {
+    margin-left: 0;
+    color: #334155;
+    margin-bottom: 0.25rem;
+}
+
+/* Responsive */
+@media (max-width: 640px) {
+    .detail-page {
+        padding: 0.75rem;
+    }
+
+    .detail-hero h1 {
+        font-size: 1.4rem;
+    }
+
+    .detail-section {
+        padding: 1rem;
+    }
+}
