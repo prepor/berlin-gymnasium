@@ -138,6 +138,8 @@ version = "0.1.0"
 dependencies = [
  "console_error_panic_hook",
  "console_log",
+ "js-sys",
+ "leaflet",
  "leptos",
  "leptos-use",
  "leptos_meta",
@@ -986,6 +988,19 @@ name = "lazy_static"
 version = "1.5.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "bbd2bcb4c963f2ddae06a2efc7e9f3591312473c50c6685e1f298068316e66fe"
+
+[[package]]
+name = "leaflet"
+version = "0.5.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "5340ef65d6b55fcf0185ffa74c670df3bd8fe93edfe45a0e1f27f50b4f92a86c"
+dependencies = [
+ "js-sys",
+ "paste",
+ "url",
+ "wasm-bindgen",
+ "web-sys",
+]
 
 [[package]]
 name = "leb128fmt"
