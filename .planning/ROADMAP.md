@@ -70,7 +70,10 @@ Plans:
   1. A user can switch to a map view and see pins for all schools at their correct coordinates on an OpenStreetMap base layer
   2. A user can click any pin to see the school name and navigate to its detail page
   3. Applying filters in the listing view removes the corresponding pins from the map in real time
-**Plans**: TBD
+**Plans**: 1 plan
+
+Plans:
+- [ ] 03-01-PLAN.md — Leaflet.js map integration via wasm-bindgen with color-coded pins, popups, filter sync, and list/map view toggle
 **UI hint**: yes
 
 ### Phase 4: Travel Time Routing
@@ -104,6 +107,6 @@ Phases execute in numeric order: 1 → 2 → 3 → 4 → 5
 |-------|----------------|--------|-----------|
 | 1. Data Pipeline | 5/5 | Complete | 2026-03-26 |
 | 2. SPA Foundation and School Directory | 3/3 | Complete | 2026-03-26 |
-| 3. Interactive Map | 0/TBD | Not started | - |
+| 3. Interactive Map | 0/1 | In Progress | - |
 | 4. Travel Time Routing | 0/TBD | Not started | - |
 | 5. Comparison, Favorites, and Sharing | 0/TBD | Not started | - |
