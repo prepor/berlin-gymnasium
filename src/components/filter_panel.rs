@@ -1,16 +1,19 @@
 use leptos::prelude::*;
 
+use crate::i18n::{t, use_language};
+
 /// Multi-select checkbox group for filtering.
 #[component]
 fn CheckboxGroup(
-    label: &'static str,
+    label_key: &'static str,
     options: Vec<String>,
     selected: Signal<Vec<String>>,
     on_toggle: Callback<String>,
 ) -> impl IntoView {
+    let lang = use_language();
     view! {
         <fieldset class="filter-group">
-            <legend class="filter-group-label">{label}</legend>
+            <legend class="filter-group-label">{move || t(label_key, lang.get())}</legend>
             <div class="filter-options">
                 {options
                     .into_iter()
@@ -39,21 +42,22 @@ fn CheckboxGroup(
     }
 }
 
-/// Tri-state radio group (Alle / Ja / Nein) for boolean filters.
+/// Tri-state radio group (All / Yes / No) for boolean filters.
 #[component]
 fn TriStateRadio(
-    label: &'static str,
+    label_key: &'static str,
     name: &'static str,
     selected: Signal<Option<bool>>,
     on_change: Callback<Option<bool>>,
 ) -> impl IntoView {
+    let lang = use_language();
     let is_all = move || selected.get().is_none();
     let is_yes = move || selected.get() == Some(true);
     let is_no = move || selected.get() == Some(false);
 
     view! {
         <fieldset class="filter-group">
-            <legend class="filter-group-label">{label}</legend>
+            <legend class="filter-group-label">{move || t(label_key, lang.get())}</legend>
             <div class="filter-radios">
                 <label class="filter-radio">
                     <input
@@ -62,7 +66,7 @@ fn TriStateRadio(
                         prop:checked=is_all
                         on:change=move |_| on_change.run(None)
                     />
-                    "Alle"
+                    {move || t("all", lang.get())}
                 </label>
                 <label class="filter-radio">
                     <input
@@ -71,7 +75,7 @@ fn TriStateRadio(
                         prop:checked=is_yes
                         on:change=move |_| on_change.run(Some(true))
                     />
-                    "Ja"
+                    {move || t("yes", lang.get())}
                 </label>
                 <label class="filter-radio">
                     <input
@@ -80,7 +84,7 @@ fn TriStateRadio(
                         prop:checked=is_no
                         on:change=move |_| on_change.run(Some(false))
                     />
-                    "Nein"
+                    {move || t("no", lang.get())}
                 </label>
             </div>
         </fieldset>
@@ -105,42 +109,43 @@ pub fn FilterPanel(
     on_set_grundstaendig: Callback<Option<bool>>,
     on_set_ganztag: Callback<Option<bool>>,
 ) -> impl IntoView {
+    let lang = use_language();
     view! {
         <details class="filter-panel-mobile" open=true>
-            <summary class="filter-toggle">"Filter anzeigen / verbergen"</summary>
+            <summary class="filter-toggle">{move || t("show_hide_filters", lang.get())}</summary>
             <div class="filter-panel">
-                <h2 class="filter-heading">"Filter"</h2>
+                <h2 class="filter-heading">{move || t("filters", lang.get())}</h2>
 
                 <CheckboxGroup
-                    label="Bezirk"
+                    label_key="district"
                     options=districts
                     selected=selected_districts
                     on_toggle=on_toggle_district
                 />
 
                 <CheckboxGroup
-                    label="Profil"
+                    label_key="profile"
                     options=profiles
                     selected=selected_profiles
                     on_toggle=on_toggle_profile
                 />
 
                 <TriStateRadio
-                    label="Grundstaendig (ab Klasse 5)"
+                    label_key="grundstaendig"
                     name="grundstaendig"
                     selected=selected_grundstaendig
                     on_change=on_set_grundstaendig
                 />
 
                 <CheckboxGroup
-                    label="Fremdsprache"
+                    label_key="foreign_language"
                     options=languages
                     selected=selected_languages
                     on_toggle=on_toggle_language
                 />
 
                 <TriStateRadio
-                    label="Ganztag"
+                    label_key="ganztag"
                     name="ganztag"
                     selected=selected_ganztag
                     on_change=on_set_ganztag

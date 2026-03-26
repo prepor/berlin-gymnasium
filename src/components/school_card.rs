@@ -1,5 +1,6 @@
 use leptos::prelude::*;
 
+use crate::i18n::{profile_label, t, t_fmt, use_language};
 use crate::models::{School, TravelTimes};
 
 /// Returns the badge color for a given profile type.
@@ -14,20 +15,6 @@ fn profile_color(profile: &str) -> &'static str {
     }
 }
 
-/// Returns a human-readable German label for a profile type.
-fn profile_label(profile: &str) -> &str {
-    match profile {
-        "MINT" => "MINT",
-        "bilingual_english" => "Bilingual EN",
-        "bilingual_french" => "Bilingual FR",
-        "altsprachlich" => "Altsprachlich",
-        "music" => "Musik",
-        "sports" => "Sport",
-        "other" => "Sonstiges",
-        _ => profile,
-    }
-}
-
 /// A single school rendered as a clickable card.
 #[component]
 pub fn SchoolCard(
@@ -35,21 +22,29 @@ pub fn SchoolCard(
     #[prop(optional)] travel_times: Option<Signal<Option<TravelTimes>>>,
     #[prop(optional)] travel_loading: Option<Signal<bool>>,
 ) -> impl IntoView {
+    let lang = use_language();
     let has_coords = school.coords.is_some();
     let href = format!("#/school/{}", school.school_id);
     let name = school.name.clone();
     let district = school.district.clone();
     let profiles = school.profile.clone();
     let grundstaendig = school.accepts_after_4th_grade == Some(true);
-    let student_text = match (school.student_count, school.teacher_count) {
-        (Some(s), Some(t)) => format!("{} Schueler / {} Lehrkraefte", s, t),
-        (Some(s), None) => format!("{} Schueler", s),
-        (None, Some(t)) => format!("{} Lehrkraefte", t),
-        (None, None) => "Keine Angabe".to_string(),
-    };
+    let student_count = school.student_count;
+    let teacher_count = school.teacher_count;
     let completeness = school.completeness_score.unwrap_or(0.0);
     let completeness_pct = (completeness * 100.0) as u32;
-    let completeness_text = format!("{}% vollstaendig", completeness_pct);
+
+    let student_text = move || {
+        let l = lang.get();
+        match (student_count, teacher_count) {
+            (Some(s), Some(t)) => t_fmt("n_students_n_teachers", l, &[&s.to_string(), &t.to_string()]),
+            (Some(s), None) => t_fmt("n_students", l, &[&s.to_string()]),
+            (None, Some(t)) => t_fmt("n_teachers", l, &[&t.to_string()]),
+            (None, None) => t("no_data", l).to_string(),
+        }
+    };
+    let completeness_text =
+        move || t_fmt("pct_complete", lang.get(), &[&completeness_pct.to_string()]);
 
     view! {
         <a class="school-card" href=href>
@@ -57,31 +52,30 @@ pub fn SchoolCard(
             <p class="card-district">{district}</p>
 
             <div class="card-badges">
-                {profiles
-                    .into_iter()
-                    .map(|p| {
-                        let color = profile_color(&p);
-                        let label = profile_label(&p).to_string();
-                        let style = format!(
-                            "background:{};color:#fff;padding:2px 8px;border-radius:12px;font-size:0.75rem;font-weight:600;display:inline-block;margin:2px",
-                            color,
-                        );
-                        view! { <span class="profile-badge" style=style>{label}</span> }
+                {move || {
+                    let l = lang.get();
+                    profiles
+                        .iter()
+                        .map(|p| {
+                            let color = profile_color(p);
+                            let label = profile_label(p, l).to_string();
+                            let style = format!(
+                                "background:{};color:#fff;padding:2px 8px;border-radius:12px;font-size:0.75rem;font-weight:600;display:inline-block;margin:2px",
+                                color,
+                            );
+                            view! { <span class="profile-badge" style=style>{label}</span> }
+                        })
+                        .collect::<Vec<_>>()
+                }}
+                {move || {
+                    grundstaendig.then(|| view! {
+                        <span
+                            class="grundstaendig-badge"
+                            style="background:#0d9488;color:#fff;padding:2px 8px;border-radius:12px;font-size:0.75rem;font-weight:600;display:inline-block;margin:2px"
+                        >
+                            {t("from_grade_5", lang.get())}
+                        </span>
                     })
-                    .collect::<Vec<_>>()}
-                {if grundstaendig {
-                    Some(
-                        view! {
-                            <span
-                                class="grundstaendig-badge"
-                                style="background:#0d9488;color:#fff;padding:2px 8px;border-radius:12px;font-size:0.75rem;font-weight:600;display:inline-block;margin:2px"
-                            >
-                                "ab Klasse 5"
-                            </span>
-                        },
-                    )
-                } else {
-                    None
                 }}
             </div>
 
@@ -91,23 +85,21 @@ pub fn SchoolCard(
 
             // Travel time row: shown when travel_times signal exists
             {move || {
+                let l = lang.get();
                 let tt_signal = travel_times?;
                 let loading_signal = travel_loading.unwrap_or(Signal::derive(|| false));
                 let is_loading = loading_signal.get();
 
                 if is_loading {
-                    // Per D-21: loading spinner
                     Some(view! {
                         <div class="card-travel-times loading">
-                            <span class="travel-spinner">"Berechne Fahrzeit..."</span>
+                            <span class="travel-spinner">{t("calculating_travel", l)}</span>
                         </div>
                     }.into_any())
                 } else {
                     let tt = tt_signal.get();
                     match tt {
                         Some(times) => {
-                            // Per D-15: emoji + Xmin format
-                            // Per D-22: show dash for None values
                             let walk = times.walk_minutes
                                 .map(|m| format!("{} Min.", m))
                                 .unwrap_or_else(|| "\u{2014}".to_string());
@@ -119,18 +111,17 @@ pub fn SchoolCard(
                                 .unwrap_or_else(|| "\u{2014}".to_string());
                             Some(view! {
                                 <div class="card-travel-times">
-                                    <span class="travel-mode walk" title="Zu Fuss">"\u{1F6B6} "{walk}</span>
-                                    <span class="travel-mode bike" title="Fahrrad">"\u{1F6B2} "{bike}</span>
-                                    <span class="travel-mode car" title="Auto">"\u{1F697} "{car}</span>
+                                    <span class="travel-mode walk" title=t("on_foot", l)>"\u{1F6B6} "{walk}</span>
+                                    <span class="travel-mode bike" title=t("bicycle", l)>"\u{1F6B2} "{bike}</span>
+                                    <span class="travel-mode car" title=t("car", l)>"\u{1F697} "{car}</span>
                                 </div>
                             }.into_any())
                         }
                         None => {
-                            // Per D-18: no coords or no route
                             if !has_coords {
                                 Some(view! {
                                     <div class="card-travel-times no-data">
-                                        <span class="keine-fahrzeit">"Keine Fahrzeit verfuegbar"</span>
+                                        <span class="keine-fahrzeit">{t("no_travel_time", l)}</span>
                                     </div>
                                 }.into_any())
                             } else {
