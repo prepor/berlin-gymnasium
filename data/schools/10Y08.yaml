@@ -10,6 +10,8 @@ website: http://sartre-gymnasium.de
 phone: +49 30 99281416
 email: sekretariat@sartre-gymnasium.de
 traeger: öffentlich
+student_count: 902
+teacher_count: 72
 accepts_after_4th_grade: false
 profile:
 - other

@@ -10,6 +10,8 @@ website: https://www.wrg-berlin.de
 phone: +49 30 8902990
 email: sekretariat@wrg.schule.berlin.de
 traeger: öffentlich
+student_count: 555
+teacher_count: 49
 accepts_after_4th_grade: false
 profile:
 - bilingual_english

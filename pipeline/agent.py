@@ -86,11 +86,18 @@ For EACH school, find:
 
 4. ganztag (bool): Is this a full-day (Ganztagsschule) or half-day school?
 
-5. open_day (string): Next Tag der offenen Tür date in ISO format "YYYY-MM-DD".
+5. student_count (int or null): Total number of students (Schüler).
+   Search: school website, "{{school_name}} Schülerzahl", or berlin.de Schulporträt.
+   This is a fallback — the seed step tries to get this from bildungsstatistik.berlin.de first.
+
+6. teacher_count (int or null): Total number of teachers (Lehrkräfte).
+   Search: same sources as student_count.
+
+7. open_day (string): Next Tag der offenen Tür date in ISO format "YYYY-MM-DD".
    Search: "{{school_name}} Tag der offenen Tür 2026" on school website.
    Set null if past or not found.
 
-6. admission_requirements: Object with:
+8. admission_requirements: Object with:
    - notendurchschnitt (float or null): GPA threshold for admission
    - oversubscribed (bool or null): typically oversubscribed?
    - selection_criteria (string or null): description of selection process
@@ -98,22 +105,22 @@ For EACH school, find:
    - entrance_test (bool or null): entrance exam required?
    - notes (string or null): any other admission info
 
-7. ratings: Dict keyed by source name. DO NOT use Google Maps (Terms of Service violation).
+9. ratings: Dict keyed by source name. DO NOT use Google Maps (Terms of Service violation).
    Look for German school rating sites (NOT schulnoten.de or schulinfo.de — both defunct).
    Format per source: {{"source": "site_name", "score": 4.2, "scale_min": 1.0, "scale_max": 5.0,
    "review_count": 45, "retrieved": "2026-03-26"}}
 
-8. abitur_average (float or null): Most recent Abitur average grade for this school.
-   Search: "{{school_name}} Abitur Durchschnitt Tagesspiegel" or school website.
+10. abitur_average (float or null): Most recent Abitur average grade for this school.
+    Search: "{{school_name}} Abitur Durchschnitt Tagesspiegel" or school website.
 
-9. image_urls (list of strings): Up to 3 URLs to school photos from the school's own website.
+11. image_urls (list of strings): Up to 3 URLs to school photos from the school's own website.
 
-10. social_media (dict): {{"instagram": "url", "facebook": "url"}} — only if official school accounts.
+12. social_media (dict): {{"instagram": "url", "facebook": "url"}} — only if official school accounts.
 
-11. unverified_fields (list of strings): Field names where data came only from agent research,
+13. unverified_fields (list of strings): Field names where data came only from agent research,
     not cross-verified with an official source (for transparency per D-19).
 
-12. field_confidence (dict): For each field you found data for, rate confidence:
+14. field_confidence (dict): For each field you found data for, rate confidence:
     "high" = official source (school website, berlin.de), "medium" = secondary source,
     "low" = single mention or inferred.
 
@@ -125,6 +132,8 @@ Return a JSON array with one object per school_id. Example structure:
     "profile": ["MINT", "bilingual_english"],
     "languages": [{{"name": "Englisch", "from_grade": 5}}, {{"name": "Französisch", "from_grade": 7}}],
     "ganztag": false,
+    "student_count": 950,
+    "teacher_count": 85,
     "open_day": "2026-11-15",
     "admission_requirements": {{
       "notendurchschnitt": 2.3,

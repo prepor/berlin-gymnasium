@@ -10,6 +10,8 @@ website: https://www.europa-gymnasium.eu
 phone: +49 30 74073717
 email: info@europa-gymnasium.eu
 traeger: privat
+student_count: 84
+teacher_count: 16
 accepts_after_4th_grade: false
 profile:
 - bilingual_english

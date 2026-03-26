@@ -41,9 +41,11 @@ pub fn SchoolCard(
     let district = school.district.clone();
     let profiles = school.profile.clone();
     let grundstaendig = school.accepts_after_4th_grade == Some(true);
-    let student_text = match school.student_count {
-        Some(n) => format!("{} Schueler", n),
-        None => "Keine Angabe".to_string(),
+    let student_text = match (school.student_count, school.teacher_count) {
+        (Some(s), Some(t)) => format!("{} Schueler / {} Lehrkraefte", s, t),
+        (Some(s), None) => format!("{} Schueler", s),
+        (None, Some(t)) => format!("{} Lehrkraefte", t),
+        (None, None) => "Keine Angabe".to_string(),
     };
     let completeness = school.completeness_score.unwrap_or(0.0);
     let completeness_pct = (completeness * 100.0) as u32;

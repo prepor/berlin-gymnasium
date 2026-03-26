@@ -10,6 +10,8 @@ website: http://www.beethoven-gymnasium.eu
 phone: +49 30 76890530
 email: Leitung@beethoven-gymnasium.eu
 traeger: öffentlich
+student_count: 876
+teacher_count: 72
 accepts_after_4th_grade: false
 profile:
 - music

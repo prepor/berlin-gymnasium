@@ -10,6 +10,8 @@ website: https://berlin-mitte.phorms.de
 phone: +49 30 318737100
 email: berlin-mitte@phorms.de
 traeger: privat
+student_count: 768
+teacher_count: 84
 accepts_after_4th_grade: true
 profile:
 - bilingual_english

@@ -10,6 +10,8 @@ website: http://www.herwegh-gymnasium.de
 phone: +49 30 4042070
 email: mail@herwegh-gymnasium.de
 traeger: öffentlich
+student_count: 925
+teacher_count: 81
 accepts_after_4th_grade: false
 profile:
 - MINT

@@ -10,6 +10,8 @@ website: https://www.tagore-gymnasium.de
 phone: +49 30 9321069
 email: schulleitung@tagore-gymnasium.de
 traeger: öffentlich
+student_count: 915
+teacher_count: 78
 accepts_after_4th_grade: false
 profile:
 - bilingual_english

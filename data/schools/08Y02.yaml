@@ -10,6 +10,8 @@ website: https://www.die-schweitzer.de
 phone: +49 30 225009830
 email: sekretariat@08Y02.schule.berlin.de
 traeger: öffentlich
+student_count: 609
+teacher_count: 60
 accepts_after_4th_grade: false
 profile:
 - bilingual_french

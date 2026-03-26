@@ -10,6 +10,8 @@ website: http://www.melanchthon-schule-berlin.de
 phone: +49 30 9918008
 email: spieler@melanchthon-schule-berlin.de
 traeger: öffentlich
+student_count: 1101
+teacher_count: 84
 accepts_after_4th_grade: true
 profile:
 - MINT

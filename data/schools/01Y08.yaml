@@ -10,6 +10,8 @@ website: https://lessing-gymnasium-berlin.de
 phone: +49 30 45798510
 email: post@lessing-gymnasium-berlin.de
 traeger: öffentlich
+student_count: 775
+teacher_count: 74
 accepts_after_4th_grade: false
 profile:
 - other

@@ -10,6 +10,8 @@ website: https://www.robert-koch-gymnasium.berlin
 phone: +49 30 50585731
 email: sekretariat@robert-koch-gymnasium.berlin
 traeger: öffentlich
+student_count: 653
+teacher_count: 54
 accepts_after_4th_grade: false
 profile:
 - bilingual_french

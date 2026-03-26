@@ -10,6 +10,8 @@ website: http://fichtenberg-oberschule.net
 phone: +49 30 902992354
 email: info@fichtenberg-oberschule.net
 traeger: öffentlich
+student_count: 809
+teacher_count: 78
 accepts_after_4th_grade: false
 profile:
 - other

@@ -10,6 +10,8 @@ website: http://www.waldgymnasium.de
 phone: +49 30 902926930
 email: sekretariat@waldgymnasium.schule.berlin.de
 traeger: öffentlich
+student_count: 734
+teacher_count: 68
 accepts_after_4th_grade: false
 profile:
 - MINT

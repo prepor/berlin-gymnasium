@@ -10,6 +10,8 @@ website: https://goethe-gymnasium.berlin
 phone: +49 30 8649960
 email: info.goethe-gymnasium@t-online.de
 traeger: öffentlich
+student_count: 836
+teacher_count: 61
 accepts_after_4th_grade: true
 profile:
 - altsprachlich

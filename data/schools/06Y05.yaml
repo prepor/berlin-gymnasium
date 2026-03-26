@@ -10,6 +10,8 @@ website: http://www.siemens-gymnasium-berlin.de
 phone: +49 30 8039066
 email: leitung@siemens-gymnasium-berlin.de
 traeger: öffentlich
+student_count: 908
+teacher_count: 66
 accepts_after_4th_grade: false
 profile:
 - other

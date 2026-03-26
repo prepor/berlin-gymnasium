@@ -10,6 +10,8 @@ website: https://www.gvb-berlin.de
 phone: +49 30 210052460
 email: 12Y04@12Y04.schule.berlin.de
 traeger: öffentlich
+student_count: 946
+teacher_count: 80
 accepts_after_4th_grade: false
 profile:
 - bilingual_english

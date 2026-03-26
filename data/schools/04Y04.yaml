@@ -10,6 +10,8 @@ website: http://www.gks-berlin.de
 phone: +49 30 902927310
 email: kontakt@gks-berlin.de
 traeger: öffentlich
+student_count: 858
+teacher_count: 81
 accepts_after_4th_grade: false
 profile:
 - altsprachlich

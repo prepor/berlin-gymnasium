@@ -10,6 +10,8 @@ website: http://www.leibnizschule-berlin.de
 phone: +49 30 50586711
 email: sekretariat@leibniz-gymnasium.berlin
 traeger: öffentlich
+student_count: 827
+teacher_count: 69
 accepts_after_4th_grade: false
 profile:
 - MINT

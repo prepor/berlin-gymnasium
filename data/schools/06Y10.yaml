@@ -10,6 +10,8 @@ website: http://www.lilienthal-gymnasium-berlin.de
 phone: +49 30 84415360
 email: sekretariat@lilienthal-gymnasium-berlin.de
 traeger: öffentlich
+student_count: 767
+teacher_count: 64
 accepts_after_4th_grade: false
 profile:
 - MINT

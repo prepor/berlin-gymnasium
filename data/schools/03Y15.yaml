@@ -10,6 +10,8 @@ website: https://max-delbrueck-gymnasium.de
 phone: +49 30 47596720
 email: sekretariat@max-delbrueck-gymnasium.de
 traeger: öffentlich
+student_count: 1056
+teacher_count: 84
 accepts_after_4th_grade: false
 profile:
 - bilingual_english

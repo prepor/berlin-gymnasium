@@ -10,6 +10,8 @@ website: http://www.dreilinden-gymnasium.de
 phone: +49 30 8031087
 email: sekretariat@dreilinden-gymnasium.de
 traeger: öffentlich
+student_count: 766
+teacher_count: 72
 accepts_after_4th_grade: false
 profile:
 - bilingual_english
