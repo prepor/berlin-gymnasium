@@ -26,12 +26,15 @@ languages:
 - name: Russisch
 - name: Spanisch
 admission_requirements:
-  selection_criteria: 'Bei Übernachfrage: Durchschnittsnote der Förderprognose (Grundschulempfehlung). Aufnahme in die Profilklasse (MINT) nach besonderen leistungsorientierten Kriterien (schulinterner NC aus Mathematik, Deutsch und Naturwissenschaft).'
+  selection_criteria: 'Bei Übernachfrage: Durchschnittsnote der Förderprognose (Grundschulempfehlung). Aufnahme in die Profilklasse
+    (MINT) nach besonderen leistungsorientierten Kriterien (schulinterner NC aus Mathematik, Deutsch und Naturwissenschaft).'
   probeunterricht: false
   entrance_test: false
-  notes: Profilklasse (MINT-Spitzenförderung) hat separate leistungsorientierte Aufnahmekriterien. Schwerpunktklassen (mathematisch-naturwissenschaftlich, Sprachen, Universal) werden nach Schülerwunsch eingeteilt. Beratungsgespräch mit Schulleitung vor Anmeldung empfohlen.
+  notes: Profilklasse (MINT-Spitzenförderung) hat separate leistungsorientierte Aufnahmekriterien. Schwerpunktklassen 
+    (mathematisch-naturwissenschaftlich, Sprachen, Universal) werden nach Schülerwunsch eingeteilt. Beratungsgespräch 
+    mit Schulleitung vor Anmeldung empfohlen.
 image_urls:
-- https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Berlin_AvH-Oberschule.JPG/800px-Berlin_AvH-Oberschule.JPG
+- https://commons.wikimedia.org/wiki/Special:FilePath/Berlin_AvH-Oberschule.JPG?width=800
 social_media:
   instagram: https://www.instagram.com/avh.berlin/
 ratings: {}

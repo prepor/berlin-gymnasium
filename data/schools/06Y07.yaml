@@ -27,13 +27,16 @@ languages:
   from_grade: 9
 admission_requirements:
   oversubscribed: false
-  selection_criteria: 'Förderprognose (GPA of school report) is the primary criterion. For profile classes: weighted grades in core subjects (Englisch double-weighted for bilingual profile) plus an interview process. Not typically oversubscribed in recent years.'
+  selection_criteria: 'Förderprognose (GPA of school report) is the primary criterion. For profile classes: weighted grades
+    in core subjects (Englisch double-weighted for bilingual profile) plus an interview process. Not typically oversubscribed
+    in recent years.'
   probeunterricht: false
   entrance_test: false
-  notes: Applicants must be in Klasse 6, must have Förderprognose, English must be first foreign language. Profile classes use an interview and weighted subject grades.
+  notes: Applicants must be in Klasse 6, must have Förderprognose, English must be first foreign language. Profile 
+    classes use an interview and weighted subject grades.
 image_urls:
-- https://upload.wikimedia.org/wikipedia/commons/thumb/a/ad/160918-Steglitz-Paulsen-Gymnasium.JPG/800px-160918-Steglitz-Paulsen-Gymnasium.JPG
-- https://upload.wikimedia.org/wikipedia/commons/thumb/d/d0/120428-Steglitz-Paulsengymnasium-1.JPG/800px-120428-Steglitz-Paulsengymnasium-1.JPG
+- https://commons.wikimedia.org/wiki/Special:FilePath/160918-Steglitz-Paulsen-Gymnasium.JPG?width=800
+- https://commons.wikimedia.org/wiki/Special:FilePath/120428-Steglitz-Paulsengymnasium-1.JPG?width=800
 social_media: {}
 ratings: {}
 completeness_score: 0.588

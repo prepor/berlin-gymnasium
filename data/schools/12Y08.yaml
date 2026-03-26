@@ -22,8 +22,8 @@ languages:
 - name: Spanisch
   from_grade: 7
 image_urls:
-- https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Thomas-Mann-Gymnasium_Berlin_Haupteingang.jpg/800px-Thomas-Mann-Gymnasium_Berlin_Haupteingang.jpg
-- https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/Thomas-Mann-Gymnasium_Eingang.jpg/800px-Thomas-Mann-Gymnasium_Eingang.jpg
+- https://commons.wikimedia.org/wiki/Special:FilePath/Thomas-Mann-Gymnasium_Berlin_Haupteingang.jpg?width=800
+- https://commons.wikimedia.org/wiki/Special:FilePath/Thomas-Mann-Gymnasium_Eingang.jpg?width=800
 social_media: {}
 ratings: {}
 completeness_score: 0.882

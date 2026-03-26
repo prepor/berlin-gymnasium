@@ -32,8 +32,8 @@ admission_requirements:
   entrance_test: false
   notes: Oldest gymnasium in Spandau. Class 5 entry available (grundstaendig). Music classes from grade 7.
 image_urls:
-- https://upload.wikimedia.org/wikipedia/commons/thumb/7/71/Kant-gymn-spandau.jpg/800px-Kant-gymn-spandau.jpg
-- https://upload.wikimedia.org/wikipedia/commons/thumb/f/f4/Spandau_Bismarckstra%C3%9Fe.jpg/800px-Spandau_Bismarckstra%C3%9Fe.jpg
+- https://commons.wikimedia.org/wiki/Special:FilePath/Kant-gymn-spandau.jpg?width=800
+- https://commons.wikimedia.org/wiki/Special:FilePath/Spandau_Bismarckstra%C3%9Fe.jpg?width=800
 social_media:
   instagram: https://www.instagram.com/kant_gymnasium/
 ratings: {}

@@ -27,12 +27,14 @@ languages:
 - name: Russisch
   from_grade: 8
 admission_requirements:
-  selection_criteria: Aufnahme nach Durchschnittsnote der Förderprognose; Probeunterricht erforderlich wenn Notensumme Deutsch/Mathe/FS über 14 liegt
+  selection_criteria: Aufnahme nach Durchschnittsnote der Förderprognose; Probeunterricht erforderlich wenn Notensumme 
+    Deutsch/Mathe/FS über 14 liegt
   probeunterricht: true
   entrance_test: false
-  notes: Schule trägt seit 2017 den Titel 'Schule ohne Rassismus'. Profil Berufsvorbereitung mit Qualifizierungsbausteinen. Block lessons 8:00–15:15 Uhr.
+  notes: Schule trägt seit 2017 den Titel 'Schule ohne Rassismus'. Profil Berufsvorbereitung mit 
+    Qualifizierungsbausteinen. Block lessons 8:00–15:15 Uhr.
 image_urls:
-- https://upload.wikimedia.org/wikipedia/commons/thumb/d/d2/Sartre_Oberschule_Berlin.jpg/800px-Sartre_Oberschule_Berlin.jpg
+- https://commons.wikimedia.org/wiki/Special:FilePath/Sartre_Oberschule_Berlin.jpg?width=800
 social_media:
   facebook: https://www.facebook.com/sartregymnasium/
   instagram: https://www.instagram.com/sartre.gymnasium.berlin/

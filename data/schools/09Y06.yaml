@@ -24,7 +24,7 @@ languages:
 - name: Latein
   from_grade: 8
 image_urls:
-- https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/Friedrichshagen_Bruno-Wille-Stra%C3%9Fe_Gerhard-Hauptmann-Schule.JPG/800px-Friedrichshagen_Bruno-Wille-Stra%C3%9Fe_Gerhard-Hauptmann-Schule.JPG
+- https://commons.wikimedia.org/wiki/Special:FilePath/Friedrichshagen_Bruno-Wille-Stra%C3%9Fe_Gerhard-Hauptmann-Schule.JPG?width=800
 social_media:
   facebook: https://www.facebook.com/p/GHS-Gerhart-Hauptmann-Schule-Gymnasium-100058322439219/
 ratings: {}

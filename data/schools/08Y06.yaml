@@ -24,7 +24,7 @@ languages:
 - name: Latein
   from_grade: 8
 image_urls:
-- https://upload.wikimedia.org/wikipedia/commons/thumb/7/71/Hannah-Arendt-Gymnasium.jpg/800px-Hannah-Arendt-Gymnasium.jpg
+- https://commons.wikimedia.org/wiki/Special:FilePath/Hannah-Arendt-Gymnasium.jpg?width=800
 social_media:
   instagram: https://www.instagram.com/hannah_arendt_gymnasium_berlin/
 ratings: {}
