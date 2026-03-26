@@ -49,8 +49,8 @@ Requirements for initial release. Each maps to roadmap phases.
 
 ### Travel Time
 
-- [ ] **TRVL-01**: User can enter their address to calculate travel time to each school
-- [ ] **TRVL-02**: Travel time shown for walking, public transport, and car
+- [x] **TRVL-01**: User can enter their address to calculate travel time to each school
+- [x] **TRVL-02**: Travel time shown for walking, public transport, and car
 - [ ] **TRVL-03**: User can sort/filter schools by travel time from their address
 
 ### Comparison & Sharing
@@ -133,8 +133,8 @@ Which phases cover which requirements. Updated during roadmap creation.
 | MAP-01 | Phase 3 | Complete |
 | MAP-02 | Phase 3 | Complete |
 | MAP-03 | Phase 3 | Complete |
-| TRVL-01 | Phase 4 | Pending |
-| TRVL-02 | Phase 4 | Pending |
+| TRVL-01 | Phase 4 | Complete |
+| TRVL-02 | Phase 4 | Complete |
 | TRVL-03 | Phase 4 | Pending |
 | COMP-01 | Phase 5 | Pending |
 | COMP-02 | Phase 5 | Pending |

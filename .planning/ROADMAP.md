@@ -87,7 +87,7 @@ Plans:
 **Plans**: 2 plans
 
 Plans:
-- [ ] 04-01-PLAN.md — Data model (TravelTimes, SortField extension), Cargo deps (gloo-net, wasm-bindgen-futures), Photon geocoding + Valhalla routing service modules
+- [x] 04-01-PLAN.md — Data model (TravelTimes, SortField extension), Cargo deps (gloo-net, wasm-bindgen-futures), Photon geocoding + Valhalla routing service modules
 - [ ] 04-02-PLAN.md — AddressInput component, listing page integration (URL params, reactive signals, travel time fetch), SchoolCard travel row, sort controls extension, CSS
 **UI hint**: yes
 

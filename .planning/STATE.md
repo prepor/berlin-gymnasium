@@ -2,15 +2,15 @@
 gsd_state_version: 1.0
 milestone: v1.0
 milestone_name: milestone
-status: verifying
-stopped_at: Phase 4 context gathered
-last_updated: "2026-03-26T19:53:42.258Z"
+status: executing
+stopped_at: Completed 04-01-PLAN.md
+last_updated: "2026-03-26T20:18:29.817Z"
 last_activity: 2026-03-26
 progress:
   total_phases: 5
   completed_phases: 3
-  total_plans: 9
-  completed_plans: 9
+  total_plans: 11
+  completed_plans: 10
   percent: 0
 ---
 
@@ -21,13 +21,13 @@ progress:
 See: .planning/PROJECT.md (updated 2026-03-26)
 
 **Core value:** Parents can quickly find and compare Berlin Gymnasien based on ratings, location, specialization, and grundständig (after-4th-grade) acceptance
-**Current focus:** Phase 03 — interactive-map
+**Current focus:** Phase 04 — travel-time-routing
 
 ## Current Position
 
-Phase: 4
-Plan: Not started
-Status: Phase complete — ready for verification
+Phase: 04 (travel-time-routing) — EXECUTING
+Plan: 2 of 2
+Status: Ready to execute
 Last activity: 2026-03-26
 
 Progress: [░░░░░░░░░░] 0%
@@ -60,6 +60,7 @@ Progress: [░░░░░░░░░░] 0%
 | Phase 02 P02 | 5 | 2 tasks | 9 files |
 | Phase 02 P03 | 4 | 2 tasks | 5 files |
 | Phase 03 P01 | 7 | 2 tasks | 8 files |
+| Phase 04 P01 | 3 | 2 tasks | 7 files |
 
 ## Accumulated Context
 
@@ -90,6 +91,9 @@ Recent decisions affecting current work:
 - [Phase 03]: Used leaflet crate 0.5.0 with js_sys::Object+Reflect for marker options (no serde-wasm-bindgen needed)
 - [Phase 03]: Map container always in DOM with CSS display toggle to prevent Leaflet state loss on view switch
 - [Phase 03]: JsCast::unchecked_ref for traversing CircleMarker->Path->Layer wasm-bindgen type hierarchy
+- [Phase 04]: Use gloo-net for WASM HTTP (ergonomic, lightweight) over raw web-sys fetch
+- [Phase 04]: Bicycle instead of transit for third travel time mode (Valhalla matrix does not support multimodal)
+- [Phase 04]: POST+GET fallback for Valhalla CORS (per research Pitfall 3)
 
 ### Pending Todos
 
@@ -103,6 +107,6 @@ None yet.
 
 ## Session Continuity
 
-Last session: 2026-03-26T19:53:42.248Z
-Stopped at: Phase 4 context gathered
-Resume file: .planning/phases/04-travel-time-routing/04-CONTEXT.md
+Last session: 2026-03-26T20:18:29.814Z
+Stopped at: Completed 04-01-PLAN.md
+Resume file: None
