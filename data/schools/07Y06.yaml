@@ -12,17 +12,53 @@ email: sekretariat@askanisches-gymnasium.de
 traeger: öffentlich
 student_count: 741
 teacher_count: 57
-profile: []
-languages: []
+profile:
+- other
+languages:
+- name: Englisch
+  from_grade: 7
+- name: Französisch
+  from_grade: 7
+- name: Spanisch
+  from_grade: 7
+- name: Chinesisch
+  from_grade: 8
+- name: Latein
+  from_grade: 8
 image_urls:
 - https://commons.wikimedia.org/wiki/Special:FilePath/Askanischeschule-tempelhof.jpg?width=800
 - https://commons.wikimedia.org/wiki/Special:FilePath/09075206%20Berlin%20Tempelhof,%20Friedrich-Franz-Straße%2040%20004.JPG?width=800
-social_media: {}
+social_media:
+  facebook: https://www.facebook.com/pages/Askanisches-Gymnasium/106032096104225
 ratings: {}
-completeness_score: 0.353
-field_confidence: {}
+completeness_score: 0.882
+field_confidence:
+  accepts_after_4th_grade: high
+  profile: medium
+  languages: high
+  ganztag: low
+  admission_requirements: medium
+  abitur_average: low
+  open_day: high
+  social_media: low
+  ratings: low
 data_sources:
 - wfs_berlin
 - wikimedia
-unverified_fields: []
+- agent_research
+unverified_fields:
+- ganztag
+- profile
+- social_media
 _pinned_fields: []
+ganztag: false
+accepts_after_4th_grade: false
+open_day: '2026-01-16'
+admission_requirements:
+  notendurchschnitt:
+  oversubscribed:
+  selection_criteria: Fremdsprachenfolge und Durchschnittsnote der Förderprognose
+  probeunterricht: false
+  entrance_test: false
+  notes: Aufnahme von 128 Schülern in vier neue Klassen im 7. Jahrgang. Englisch als 1. Fremdsprache erforderlich, Wahl 
+    zwischen Französisch oder Spanisch als 2. Fremdsprache.

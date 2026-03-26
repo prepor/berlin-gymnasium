@@ -12,15 +12,40 @@ email: freiherr-vom-stein-gymnasium@t-online.de
 traeger: öffentlich
 student_count: 942
 teacher_count: 89
-profile: []
-languages: []
-admission_requirements: {}
+profile:
+- MINT
+- bilingual_english
+languages:
+- name: Englisch
+  from_grade: 5
+- name: Französisch
+  from_grade: 7
+- name: Latein
+  from_grade: 7
+- name: Spanisch
+  from_grade: 8
+admission_requirements:
+  notendurchschnitt:
+  oversubscribed: true
+  selection_criteria: 'Notendurchschnitt der Förderprognose; für Kl. 5 Mathe-NaWi: Ranking der 32 besten'
+  probeunterricht: false
+  entrance_test: false
+  notes: 'Für Klasse 5 Mathe-NaWi-Profil: Ranking nach Leistung, 32 Plätze'
 image_urls:
 - https://commons.wikimedia.org/wiki/Special:FilePath/Berlin-Spandau%20FvS-Gymnasium%20asv2022-09.jpg?width=800
-social_media: {}
+social_media:
+  facebook: https://www.facebook.com/FreiherrvomSteinGymnasium/
 ratings: {}
-completeness_score: 0.412
-field_confidence: {}
+completeness_score: 0.882
+field_confidence:
+  accepts_after_4th_grade: high
+  profile: high
+  languages: high
+  ganztag: medium
+  open_day: high
+  admission_requirements: medium
+  abitur_average: low
+  social_media: medium
 data_sources:
 - wfs_berlin
 - agent_research
@@ -34,4 +59,9 @@ unverified_fields:
 - admission_requirements
 - languages
 - profile
+- ganztag
+- abitur_average
 _pinned_fields: []
+ganztag: false
+accepts_after_4th_grade: true
+open_day: '2026-01-24'

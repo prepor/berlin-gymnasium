@@ -36,9 +36,17 @@ admission_requirements:
     students in grades 7–8.
 abitur_average: 2.3
 image_urls: []
-social_media: {}
-ratings: {}
-completeness_score: 0.706
+social_media:
+  facebook: https://www.facebook.com/103120406395388
+ratings:
+  schulen.de:
+    source: schulen.de
+    score:
+    scale_min: 1.0
+    scale_max: 6.0
+    review_count:
+    retrieved: '2026-03-26'
+completeness_score: 0.882
 field_confidence:
   accepts_after_4th_grade: high
   profile: high
@@ -65,4 +73,5 @@ unverified_fields:
 - admission_requirements
 - languages
 - profile
+- open_day
 _pinned_fields: []

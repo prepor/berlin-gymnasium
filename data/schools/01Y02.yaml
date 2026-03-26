@@ -29,21 +29,30 @@ languages:
 admission_requirements:
   notendurchschnitt: 1.3
   oversubscribed: true
-  selection_criteria: Up to 70% of places awarded on basis of Förderprognose (grade average); remaining 30% by lottery. Sibling children given priority. No entrance test. Probeunterricht required only if Notensumme of German, Maths, English in Klasse 5 and 6 Halbjahr exceeds 14.
+  selection_criteria: Up to 70% of places awarded on basis of Förderprognose (grade average); remaining 30% by lottery. 
+    Sibling children given priority. No entrance test. Probeunterricht required only if Notensumme of German, Maths, 
+    English in Klasse 5 and 6 Halbjahr exceeds 14.
   probeunterricht: true
   entrance_test: false
-  notes: Heavily oversubscribed; school recommends listing only as first-choice school. In recent years, direct admission (60% quota) typically required average up to 1.3. English/French bilingual track (S1) and English/Spanish bilingual track (S4) available. Public school, no fees.
+  notes: Heavily oversubscribed; school recommends listing only as first-choice school. In recent years, direct 
+    admission (60% quota) typically required average up to 1.3. English/French bilingual track (S1) and English/Spanish 
+    bilingual track (S4) available. Public school, no fees.
 image_urls:
 - https://commons.wikimedia.org/wiki/Special:FilePath/Berlin_Mitte_Zehdenicker_Straße_17_(09080444).JPG?width=800
-social_media: {}
+social_media:
+  facebook: https://www.facebook.com/johnlennongymnasium/
+  instagram: https://www.instagram.com/explore/locations/199503053398849/john-lennon-gymnasium/
 ratings: {}
-completeness_score: 0.647
+completeness_score: 0.941
 field_confidence:
   accepts_after_4th_grade: high
   profile: high
   languages: high
   ganztag: high
   admission_requirements: high
+  abitur_average: medium
+  open_day: high
+  social_media: high
 data_sources:
 - wfs_berlin
 - agent_research
@@ -59,4 +68,7 @@ unverified_fields:
 - admission_requirements
 - languages
 - profile
+- abitur_average
 _pinned_fields: []
+abitur_average: 1.96
+open_day: '2026-01-14'

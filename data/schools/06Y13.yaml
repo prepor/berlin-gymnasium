@@ -12,8 +12,17 @@ email: sekretariat@gymnasiumsteglitz.de
 traeger: öffentlich
 student_count: 816
 teacher_count: 73
-profile: []
-languages: []
+profile:
+- altsprachlich
+languages:
+- name: Latein
+  from_grade: 5
+- name: Englisch
+  from_grade: 5
+- name: Altgriechisch
+  from_grade: 8
+- name: Neugriechisch
+  from_grade: 7
 admission_requirements:
   notes: No data retrieved in this research session.
 image_urls:
@@ -22,8 +31,16 @@ image_urls:
 - https://commons.wikimedia.org/wiki/Special:FilePath/Gymnasium%20Steglitz%2004-2015.jpg?width=800
 social_media: {}
 ratings: {}
-completeness_score: 0.412
-field_confidence: {}
+completeness_score: 0.882
+field_confidence:
+  accepts_after_4th_grade: high
+  profile: high
+  languages: high
+  ganztag: high
+  abitur_average: medium
+  open_day: high
+  social_media: low
+  ratings: low
 data_sources:
 - wfs_berlin
 - agent_research
@@ -35,4 +52,9 @@ unverified_fields:
 - field_confidence
 - image_urls
 - admission_requirements
+- abitur_average
 _pinned_fields: []
+accepts_after_4th_grade: true
+ganztag: true
+abitur_average: 1.89
+open_day: '2026-01-10'

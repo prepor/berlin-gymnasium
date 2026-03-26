@@ -12,17 +12,49 @@ email: sekretariat@archenhold.de
 traeger: öffentlich
 student_count: 741
 teacher_count: 63
-profile: []
-languages: []
+profile:
+- MINT
+languages:
+- name: Englisch
+  from_grade: 7
+- name: Französisch
+  from_grade: 7
+- name: Latein
+  from_grade: 7
+- name: Italienisch
+  from_grade: 9
 image_urls:
 - https://upload.wikimedia.org/wikipedia/commons/thumb/5/58/Main_building_Archenhold_School%2C_Berlin.jpg/800px-Main_building_Archenhold_School%2C_Berlin.jpg
 - https://upload.wikimedia.org/wikipedia/commons/thumb/b/b5/12-03-20-archenhold-oberschule-by-RalfR-30.jpg/800px-12-03-20-archenhold-oberschule-by-RalfR-30.jpg
 social_media: {}
 ratings: {}
-completeness_score: 0.353
-field_confidence: {}
+completeness_score: 0.882
+field_confidence:
+  accepts_after_4th_grade: high
+  profile: high
+  languages: high
+  ganztag: high
+  admission_requirements: medium
+  abitur_average: low
+  open_day: high
+  social_media: low
+  ratings: low
 data_sources:
 - wfs_berlin
 - wikimedia
-unverified_fields: []
+- agent_research
+unverified_fields:
+- ganztag
+- admission_requirements
+- social_media
 _pinned_fields: []
+ganztag: true
+accepts_after_4th_grade: false
+open_day: '2026-01-17'
+admission_requirements:
+  notendurchschnitt:
+  oversubscribed:
+  selection_criteria: Durchschnittsnote der Förderprognose
+  probeunterricht: false
+  entrance_test: false
+  notes:

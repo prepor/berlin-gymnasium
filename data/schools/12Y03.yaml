@@ -25,16 +25,29 @@ languages:
 - name: Chinesisch
   from_grade: 8
 admission_requirements:
-  selection_criteria: 'Schnelllerner track (from grade 5): entrance test (Eignungstest) required; Regelklassen track (from grade 7): points-based system using Förderprognose average grade, a practical exercise (praktische Übung), and additional competences; mandatory advisory meeting if ISS recommendation and average ≥ 3.0'
+  selection_criteria: 'Schnelllerner track (from grade 5): entrance test (Eignungstest) required; Regelklassen track (from
+    grade 7): points-based system using Förderprognose average grade, a practical exercise (praktische Übung), and additional
+    competences; mandatory advisory meeting if ISS recommendation and average ≥ 3.0'
   probeunterricht: false
   entrance_test: true
-  notes: 'Two parallel tracks: Schnelllerner (gifted, starting grade 5, entrance test required, 3 classes) and Regelklassen (starting grade 7, 3 classes). Schnelllerner complete Abitur in 12 years. Latein is mandatory second language (unique among most Berlin schools). Third language choice: Français or Chinesisch from grade 8.'
+  notes: 'Two parallel tracks: Schnelllerner (gifted, starting grade 5, entrance test required, 3 classes) and Regelklassen
+    (starting grade 7, 3 classes). Schnelllerner complete Abitur in 12 years. Latein is mandatory second language (unique
+    among most Berlin schools). Third language choice: Français or Chinesisch from grade 8.'
 image_urls:
 - https://upload.wikimedia.org/wikipedia/commons/thumb/d/d8/Berlin_HumboldtGymnasium_Tegel_asv2021-03.jpg/800px-Berlin_HumboldtGymnasium_Tegel_asv2021-03.jpg
 - https://upload.wikimedia.org/wikipedia/commons/thumb/f/f2/Tegel_Hatzfeldtallee_Humboldt-Gymnasium.JPG/800px-Tegel_Hatzfeldtallee_Humboldt-Gymnasium.JPG
-social_media: {}
-ratings: {}
-completeness_score: 0.588
+social_media:
+  facebook: https://www.facebook.com/p/Humboldt-Gymnasium-Tegel-100079610033259/
+  instagram: https://www.instagram.com/humboldtberlin/
+ratings:
+  schulen.de:
+    source: schulen.de
+    score:
+    scale_min: 1.0
+    scale_max: 6.0
+    review_count:
+    retrieved: '2026-03-26'
+completeness_score: 0.882
 field_confidence:
   accepts_after_4th_grade: high
   profile: medium
@@ -42,6 +55,9 @@ field_confidence:
   ganztag: low
   open_day: low
   admission_requirements: high
+  abitur_average: low
+  social_media: high
+  ratings: low
 data_sources:
 - wfs_berlin
 - agent_research
@@ -56,4 +72,8 @@ unverified_fields:
 - admission_requirements
 - languages
 - profile
+- abitur_average
+- open_day
+- ganztag
 _pinned_fields: []
+ganztag: true

@@ -33,9 +33,10 @@ admission_requirements:
   entrance_test: false
   notes: Located in Karow; lower demand reported due to peripheral location. No NC required in recent cycle.
 image_urls: []
-social_media: {}
+social_media:
+  facebook: https://www.facebook.com/189797747702560
 ratings: {}
-completeness_score: 0.647
+completeness_score: 0.765
 field_confidence:
   accepts_after_4th_grade: high
   profile: high
@@ -43,6 +44,10 @@ field_confidence:
   ganztag: medium
   oversubscribed: high
   admission_requirements: medium
+  abitur_average: low
+  open_day: low
+  social_media: medium
+  ratings: low
 data_sources:
 - wfs_berlin
 - agent_research

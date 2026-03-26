@@ -12,18 +12,33 @@ email: sekretariat@ksl.schulerzbistum.de
 traeger: privat
 student_count: 735
 teacher_count: 65
-profile: []
-languages: []
+profile:
+- altsprachlich
+languages:
+- name: Englisch
+  from_grade: 5
+- name: Latein
+  from_grade: 6
+- name: Französisch
+  from_grade: 7
+- name: Spanisch
+  from_grade: 7
 admission_requirements:
   notes: No search results retrieved in this session; data not available.
 image_urls:
 - https://commons.wikimedia.org/wiki/Special:FilePath/Eingangsbereich-1.jpg?width=800
 - https://commons.wikimedia.org/wiki/Special:FilePath/KSL-Vorplatz.jpg?width=800
 - https://commons.wikimedia.org/wiki/Special:FilePath/Neubau-1.jpg?width=800
-social_media: {}
+social_media:
+  instagram: https://instagram.com/ksl_berlin
 ratings: {}
-completeness_score: 0.412
-field_confidence: {}
+completeness_score: 0.824
+field_confidence:
+  accepts_after_4th_grade: high
+  profile: high
+  languages: medium
+  ganztag: high
+  social_media: medium
 data_sources:
 - wfs_berlin
 - agent_research
@@ -35,4 +50,10 @@ unverified_fields:
 - field_confidence
 - image_urls
 - admission_requirements
+- accepts_after_4th_grade
+- profile
+- languages
+- ganztag
 _pinned_fields: []
+ganztag: true
+accepts_after_4th_grade: true

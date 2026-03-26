@@ -35,8 +35,9 @@ image_urls:
 - https://upload.wikimedia.org/wikipedia/commons/thumb/d/d2/Sartre_Oberschule_Berlin.jpg/800px-Sartre_Oberschule_Berlin.jpg
 social_media:
   facebook: https://www.facebook.com/sartregymnasium/
+  instagram: https://www.instagram.com/sartre.gymnasium.berlin/
 ratings: {}
-completeness_score: 0.647
+completeness_score: 0.765
 field_confidence:
   accepts_after_4th_grade: high
   profile: medium
@@ -44,6 +45,9 @@ field_confidence:
   ganztag: medium
   admission_requirements: high
   social_media: high
+  abitur_average: low
+  open_day: medium
+  ratings: low
 data_sources:
 - wfs_berlin
 - agent_research

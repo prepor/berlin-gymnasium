@@ -32,12 +32,17 @@ image_urls:
 - https://commons.wikimedia.org/wiki/Special:FilePath/Lassenstra%C3%9Fe%2018%20Berlin-Grunewald.jpg?width=800
 social_media: {}
 ratings: {}
-completeness_score: 0.588
+completeness_score: 0.824
 field_confidence:
   accepts_after_4th_grade: high
   profile: high
   languages: high
   admission_requirements: high
+  ganztag: medium
+  abitur_average: low
+  open_day: high
+  social_media: low
+  ratings: low
 data_sources:
 - wfs_berlin
 - agent_research
@@ -52,4 +57,8 @@ unverified_fields:
 - admission_requirements
 - languages
 - profile
+- ganztag
+- abitur_average
 _pinned_fields: []
+ganztag: false
+open_day: '2026-01-16'

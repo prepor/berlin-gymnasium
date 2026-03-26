@@ -36,14 +36,20 @@ admission_requirements:
   notes: No special entrance test or trial lesson noted; accepts from grade 7 (not grundständig)
 image_urls:
 - https://commons.wikimedia.org/wiki/Special:FilePath/Berlin_Prenzlauer_Berg_Pasteurstraße_7-11_(09050108).JPG?width=800
-social_media: {}
+social_media:
+  instagram: https://www.instagram.com/fmbg.berlin/
 ratings: {}
-completeness_score: 0.588
+completeness_score: 0.882
 field_confidence:
   accepts_after_4th_grade: high
   profile: high
   languages: high
   admission_requirements: medium
+  ganztag: high
+  abitur_average: low
+  open_day: high
+  social_media: high
+  ratings: low
 data_sources:
 - wfs_berlin
 - agent_research
@@ -58,4 +64,7 @@ unverified_fields:
 - admission_requirements
 - languages
 - profile
+- ganztag
 _pinned_fields: []
+ganztag: true
+open_day: '2026-01-29'

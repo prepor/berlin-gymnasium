@@ -38,7 +38,7 @@ image_urls: []
 social_media:
   instagram: https://www.instagram.com/cfvsgymnasium/
 ratings: {}
-completeness_score: 0.647
+completeness_score: 0.824
 field_confidence:
   accepts_after_4th_grade: high
   profile: high
@@ -46,6 +46,9 @@ field_confidence:
   ganztag: high
   admission_requirements: medium
   social_media: high
+  abitur_average: low
+  open_day: high
+  ratings: low
 data_sources:
 - wfs_berlin
 - agent_research
@@ -60,4 +63,6 @@ unverified_fields:
 - admission_requirements
 - languages
 - profile
+- open_day
 _pinned_fields: []
+open_day: '2026-01-10'

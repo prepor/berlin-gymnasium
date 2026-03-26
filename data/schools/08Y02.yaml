@@ -39,8 +39,9 @@ image_urls:
 - https://commons.wikimedia.org/wiki/Special:FilePath/Berlin-Neukölln-Albert-Schweitzer-high%20school.JPG?width=800
 social_media:
   instagram: https://www.instagram.com/die.schweitzer.berlin/
+  facebook: https://facebook.com/dieschweitzer/
 ratings: {}
-completeness_score: 0.647
+completeness_score: 0.824
 field_confidence:
   accepts_after_4th_grade: high
   profile: high
@@ -67,4 +68,6 @@ unverified_fields:
 - admission_requirements
 - languages
 - profile
+- open_day
 _pinned_fields: []
+open_day: '2026-01-14'

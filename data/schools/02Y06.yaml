@@ -33,15 +33,28 @@ admission_requirements:
   notes: Bilingual modules in grades 8–10 in English or French; Cambridge and DELF certificates offered
 image_urls:
 - https://commons.wikimedia.org/wiki/Special:FilePath/Berlin,_Kreuzberg,_Schleiermacherstrasse_23,_Leibniz-Oberschule,_Direktorenwohnhaus.jpg?width=800
-social_media: {}
-ratings: {}
-completeness_score: 0.647
+social_media:
+  facebook: https://www.facebook.com/leibniz.gymnasium.berlin/
+  instagram: https://www.instagram.com/leibnizschule/
+ratings:
+  schulen.de:
+    source: schulen.de
+    score:
+    scale_min: 1.0
+    scale_max: 6.0
+    review_count:
+    retrieved: '2026-03-26'
+completeness_score: 0.941
 field_confidence:
   accepts_after_4th_grade: high
   profile: high
   ganztag: high
   languages: medium
   admission_requirements: medium
+  abitur_average: low
+  open_day: high
+  social_media: high
+  ratings: low
 data_sources:
 - wfs_berlin
 - agent_research
@@ -57,4 +70,6 @@ unverified_fields:
 - admission_requirements
 - languages
 - profile
+- abitur_average
 _pinned_fields: []
+open_day: '2026-01-17'

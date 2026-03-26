@@ -13,8 +13,11 @@ traeger: öffentlich
 student_count: 152
 teacher_count: 13
 accepts_after_4th_grade: false
-profile: []
-languages: []
+profile:
+- other
+languages:
+- name: Englisch
+  from_grade: 7
 admission_requirements:
   selection_criteria: 'Standard Berlin process: Förderprognose required; applicants without Gymnasium recommendation must
     present a Probetag result. All applications during the registration window are treated equally regardless of submission
@@ -27,12 +30,17 @@ admission_requirements:
 image_urls: []
 social_media: {}
 ratings: {}
-completeness_score: 0.529
+completeness_score: 0.765
 field_confidence:
   accepts_after_4th_grade: medium
   profile: low
   ganztag: low
   admission_requirements: medium
+  languages: low
+  abitur_average: low
+  open_day: medium
+  social_media: low
+  ratings: low
 data_sources:
 - wfs_berlin
 - agent_research
@@ -46,4 +54,6 @@ unverified_fields:
 - admission_requirements
 - languages
 - profile
+- open_day
 _pinned_fields: []
+open_day: '2026-01-08'

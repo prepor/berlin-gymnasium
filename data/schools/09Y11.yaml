@@ -12,16 +12,49 @@ email: sekretariat@noether-gymnasium.de
 traeger: öffentlich
 student_count: 824
 teacher_count: 71
-profile: []
-languages: []
+profile:
+- MINT
+languages:
+- name: Englisch
+  from_grade: 5
+- name: Französisch
+  from_grade: 7
+- name: Spanisch
+  from_grade: 7
+- name: Latein
+  from_grade: 9
 image_urls:
 - https://upload.wikimedia.org/wikipedia/commons/thumb/1/15/Emmy_Noether_Gymnasium.jpg/800px-Emmy_Noether_Gymnasium.jpg
 social_media: {}
 ratings: {}
-completeness_score: 0.353
-field_confidence: {}
+completeness_score: 0.765
+field_confidence:
+  accepts_after_4th_grade: high
+  profile: high
+  languages: high
+  ganztag: low
+  admission_requirements: high
+  abitur_average: low
+  open_day: low
+  social_media: low
+  ratings: low
 data_sources:
 - wfs_berlin
 - wikimedia
-unverified_fields: []
+- agent_research
+unverified_fields:
+- ganztag
+- social_media
+- abitur_average
+- open_day
 _pinned_fields: []
+accepts_after_4th_grade: true
+admission_requirements:
+  notendurchschnitt:
+  oversubscribed: true
+  selection_criteria: Durchschnittsnote der Förderprognose, Noten aus zwei Schulhalbjahren, inner- und außerschulische 
+    Kompetenzen, profilbezogene Tests
+  probeunterricht: false
+  entrance_test: true
+  notes: Gymnasium besonderer pädagogischer Prägung mit naturwissenschaftlichem Profil seit 2015. MINT-Profilklassen ab 
+    Klasse 5 oder 7.

@@ -12,17 +12,50 @@ email: sekretariat@afg.schule.berlin.de
 traeger: öffentlich
 student_count: 907
 teacher_count: 75
-profile: []
-languages: []
+profile:
+- bilingual_english
+languages:
+- name: Englisch
+  from_grade: 5
+- name: Französisch
+  from_grade: 7
+- name: Spanisch
+  from_grade: 7
+- name: Latein
+  from_grade: 8
 image_urls:
 - https://upload.wikimedia.org/wikipedia/commons/thumb/1/12/Anne-Frank-Gymnasium_-_Haus_A_-_au%C3%9Fen.jpg/800px-Anne-Frank-Gymnasium_-_Haus_A_-_au%C3%9Fen.jpg
 - https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/Berlin_szkola_Anny_Frank.jpg/800px-Berlin_szkola_Anny_Frank.jpg
-social_media: {}
+social_media:
+  facebook: https://www.facebook.com/afg.schule.berlin/
 ratings: {}
-completeness_score: 0.353
-field_confidence: {}
+completeness_score: 0.882
+field_confidence:
+  accepts_after_4th_grade: high
+  profile: high
+  languages: medium
+  ganztag: low
+  admission_requirements: medium
+  abitur_average: high
+  open_day: high
+  social_media: high
+  ratings: high
 data_sources:
 - wfs_berlin
 - wikimedia
-unverified_fields: []
+- agent_research
+unverified_fields:
+- ganztag
+- languages
 _pinned_fields: []
+ganztag: false
+accepts_after_4th_grade: false
+open_day: '2026-01-15'
+admission_requirements:
+  notendurchschnitt:
+  oversubscribed:
+  selection_criteria: Förderprognose average grade
+  probeunterricht: true
+  entrance_test: false
+  notes: 4 classes per year (sometimes 5-6), 1-2 profile classes. English profile class with extra English in grades 
+    7-8. Bilingual Geography and Biology from grade 9. Registration March 5-12, 2026.

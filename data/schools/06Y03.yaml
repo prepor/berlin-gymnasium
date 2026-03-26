@@ -30,21 +30,30 @@ languages:
 - name: Französisch
   from_grade: 8
 admission_requirements:
-  selection_criteria: Durchschnittsnote der Förderprognose as primary criterion for grundständige Klasse 5 (altsprachlicher Bildungszweig) and grade 7 classes
+  selection_criteria: Durchschnittsnote der Förderprognose as primary criterion for grundständige Klasse 5 
+    (altsprachlicher Bildungszweig) and grade 7 classes
   probeunterricht: false
   entrance_test: false
-  notes: Grundständiger Zug (grade 5 entry) introduced in school year 2006/07 in the altsprachlicher Bildungszweig. Latin as 2nd language from grade 5, Ancient Greek as mandatory 3rd language from grade 8. Grade 7 also has a Werkstatt Ästhetische Bildung profile (DS, Kunst, Musik). Strong music programme with 3 choirs, 6 orchestras, 6 bands.
+  notes: Grundständiger Zug (grade 5 entry) introduced in school year 2006/07 in the altsprachlicher Bildungszweig. 
+    Latin as 2nd language from grade 5, Ancient Greek as mandatory 3rd language from grade 8. Grade 7 also has a 
+    Werkstatt Ästhetische Bildung profile (DS, Kunst, Musik). Strong music programme with 3 choirs, 6 orchestras, 6 
+    bands.
 image_urls:
 - https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/Dahlem_K%C3%B6nigin-Luise-Stra%C3%9Fe_Arndt-Gymnasium.JPG/800px-Dahlem_K%C3%B6nigin-Luise-Stra%C3%9Fe_Arndt-Gymnasium.JPG
-social_media: {}
+social_media:
+  instagram: https://www.instagram.com/arndt.gymnasium.dahlem/
 ratings: {}
-completeness_score: 0.647
+completeness_score: 0.824
 field_confidence:
   accepts_after_4th_grade: high
   profile: high
   languages: high
   ganztag: low
   admission_requirements: medium
+  abitur_average: low
+  open_day: low
+  social_media: high
+  ratings: low
 data_sources:
 - wfs_berlin
 - agent_research
@@ -60,4 +69,6 @@ unverified_fields:
 - admission_requirements
 - languages
 - profile
+- abitur_average
+- open_day
 _pinned_fields: []

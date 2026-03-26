@@ -32,12 +32,17 @@ image_urls:
 - https://commons.wikimedia.org/wiki/Special:FilePath/Carl-von-Ossietzky-Gymnasium_Berlin.jpg?width=800
 social_media: {}
 ratings: {}
-completeness_score: 0.588
+completeness_score: 0.824
 field_confidence:
   accepts_after_4th_grade: high
   profile: high
   admission_requirements: high
   languages: medium
+  ganztag: high
+  abitur_average: low
+  open_day: medium
+  social_media: low
+  ratings: low
 data_sources:
 - wfs_berlin
 - agent_research
@@ -52,4 +57,7 @@ unverified_fields:
 - admission_requirements
 - languages
 - profile
+- open_day
 _pinned_fields: []
+ganztag: true
+open_day: '2026-01-24'

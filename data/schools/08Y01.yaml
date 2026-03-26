@@ -12,16 +12,47 @@ email: 08Y01@08Y01.schule.berlin.de
 traeger: öffentlich
 student_count: 711
 teacher_count: 58
-profile: []
-languages: []
+profile:
+- MINT
+- music
+languages:
+- name: Englisch
+  from_grade: 5
+- name: Französisch
+  from_grade: 7
+- name: Latein
+  from_grade: 7
 image_urls:
 - https://commons.wikimedia.org/wiki/Special:FilePath/Albrecht-Dürer-Schule-01.jpg?width=800
-social_media: {}
+social_media:
+  instagram: https://www.instagram.com/albrechtduerergymnasiumberlin/
+  facebook: https://de-de.facebook.com/Albrecht-D%C3%BCrer-Gymnasium-Neuk%C3%B6lln-235193843178518/
 ratings: {}
-completeness_score: 0.353
-field_confidence: {}
+completeness_score: 0.824
+field_confidence:
+  accepts_after_4th_grade: high
+  profile: high
+  languages: high
+  ganztag: high
+  open_day: low
+  admission_requirements: high
+  abitur_average: low
+  social_media: high
 data_sources:
 - wfs_berlin
 - wikimedia
-unverified_fields: []
+- agent_research
+unverified_fields:
+- ganztag
+- abitur_average
+- open_day
 _pinned_fields: []
+ganztag: true
+accepts_after_4th_grade: true
+admission_requirements:
+  notendurchschnitt:
+  oversubscribed: true
+  selection_criteria: Schnelllernertest für Klasse 5; Notendurchschnitt der Förderprognose bei Übernachfrage
+  probeunterricht: false
+  entrance_test: true
+  notes: Schnelllernerklassen ab Klasse 5; Dalton-Pädagogik

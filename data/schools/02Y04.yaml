@@ -29,12 +29,17 @@ image_urls:
 - https://commons.wikimedia.org/wiki/Special:FilePath/Friedrichshain_Georg-Friedrich-Händel-Gymnasium.jpg?width=800
 social_media: {}
 ratings: {}
-completeness_score: 0.588
+completeness_score: 0.824
 field_confidence:
   accepts_after_4th_grade: medium
   profile: low
   languages: low
   admission_requirements: low
+  ganztag: medium
+  abitur_average: medium
+  open_day: low
+  social_media: low
+  ratings: low
 data_sources:
 - wfs_berlin
 - agent_research
@@ -49,4 +54,8 @@ unverified_fields:
 - admission_requirements
 - languages
 - profile
+- ganztag
+- abitur_average
 _pinned_fields: []
+ganztag: true
+abitur_average: 1.92

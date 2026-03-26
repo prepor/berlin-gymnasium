@@ -37,8 +37,15 @@ image_urls:
 - https://commons.wikimedia.org/wiki/Special:FilePath/Mitte_Große_Hamburger_Straße_27_Jüdisches_Gymnasium-001.JPG?width=800
 social_media:
   instagram: https://www.instagram.com/jgmmberlin/
-ratings: {}
-completeness_score: 0.706
+ratings:
+  golocal:
+    source: golocal
+    score: 4.0
+    scale_min: 1.0
+    scale_max: 5.0
+    review_count: 1
+    retrieved: '2026-03-26'
+completeness_score: 0.941
 field_confidence:
   accepts_after_4th_grade: high
   profile: high
@@ -70,4 +77,6 @@ unverified_fields:
 - admission_requirements
 - languages
 - profile
+- open_day
 _pinned_fields: []
+open_day: '2026-01-18'

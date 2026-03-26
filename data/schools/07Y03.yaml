@@ -12,16 +12,48 @@ email: sekretariat@rheingau-gymnasium.de
 traeger: öffentlich
 student_count: 725
 teacher_count: 60
-profile: []
-languages: []
+profile:
+- music
+languages:
+- name: Englisch
+  from_grade: 7
+- name: Französisch
+  from_grade: 7
+- name: Latein
+  from_grade: 8
+- name: Spanisch
+  from_grade: 8
 image_urls:
 - https://commons.wikimedia.org/wiki/Special:FilePath/Rheingau-Oberschule.JPG?width=800
-social_media: {}
+social_media:
+  instagram: https://www.instagram.com/rgs.berlin/
 ratings: {}
-completeness_score: 0.353
-field_confidence: {}
+completeness_score: 0.882
+field_confidence:
+  accepts_after_4th_grade: high
+  profile: high
+  languages: medium
+  ganztag: medium
+  admission_requirements: medium
+  abitur_average: high
+  open_day: high
+  social_media: high
+  ratings: high
 data_sources:
 - wfs_berlin
 - wikimedia
-unverified_fields: []
+- agent_research
+unverified_fields:
+- ganztag
+- languages
 _pinned_fields: []
+ganztag: true
+accepts_after_4th_grade: false
+open_day: '2026-01-12'
+admission_requirements:
+  notendurchschnitt:
+  oversubscribed:
+  selection_criteria: Förderprognose average grade; music aptitude test for music track
+  probeunterricht: true
+  entrance_test: false
+  notes: Music-focused track requires aptitude test on March 6 and March 13. Registration March 5-12.

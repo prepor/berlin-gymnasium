@@ -30,12 +30,17 @@ admission_requirements:
 image_urls: []
 social_media: {}
 ratings: {}
-completeness_score: 0.588
+completeness_score: 0.882
 field_confidence:
   accepts_after_4th_grade: medium
   profile: medium
   languages: low
   admission_requirements: low
+  ganztag: high
+  abitur_average: medium
+  open_day: high
+  social_media: low
+  ratings: low
 data_sources:
 - wfs_berlin
 - agent_research
@@ -49,4 +54,8 @@ unverified_fields:
 - admission_requirements
 - languages
 - profile
+- abitur_average
 _pinned_fields: []
+ganztag: true
+abitur_average: 2.13
+open_day: '2026-01-09'

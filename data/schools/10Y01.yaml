@@ -30,16 +30,28 @@ languages:
 - name: Italienisch
 admission_requirements:
   notendurchschnitt: 2.2
-  selection_criteria: Students with a Förderprognose average of up to 2.2 are directly eligible to enroll. Those exceeding 2.2 may register for a Probeunterricht (trial assessment) held Berlin-wide, covering written tests in German and Mathematics as well as cross-disciplinary competencies.
+  selection_criteria: Students with a Förderprognose average of up to 2.2 are directly eligible to enroll. Those 
+    exceeding 2.2 may register for a Probeunterricht (trial assessment) held Berlin-wide, covering written tests in 
+    German and Mathematics as well as cross-disciplinary competencies.
   probeunterricht: true
   entrance_test: false
-  notes: Admission is to grade 7 (Klasse 7). The Probeunterricht is only required for applicants whose Förderprognose average exceeds 2.2; it is not a separate entrance exam but a Berlin-wide eligibility assessment. No grundständig (grade 5) intake offered.
+  notes: Admission is to grade 7 (Klasse 7). The Probeunterricht is only required for applicants whose Förderprognose 
+    average exceeds 2.2; it is not a separate entrance exam but a Berlin-wide eligibility assessment. No grundständig 
+    (grade 5) intake offered.
 image_urls:
 - https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Tagore-Gymnasium_in_Berlin-Marzahn_%28Eingang%29.jpg/800px-Tagore-Gymnasium_in_Berlin-Marzahn_%28Eingang%29.jpg
 - https://upload.wikimedia.org/wikipedia/commons/thumb/c/c6/Tagore-Gymnasium_in_Berlin-Marzahn.jpg/800px-Tagore-Gymnasium_in_Berlin-Marzahn.jpg
-social_media: {}
-ratings: {}
-completeness_score: 0.647
+social_media:
+  instagram: https://www.instagram.com/sv_tagore_gymnasium/
+ratings:
+  schulen.de:
+    source: schulen.de
+    score:
+    scale_min: 1.0
+    scale_max: 6.0
+    review_count:
+    retrieved: '2026-03-26'
+completeness_score: 0.882
 field_confidence:
   accepts_after_4th_grade: high
   profile: high
@@ -66,4 +78,6 @@ unverified_fields:
 - admission_requirements
 - languages
 - profile
+- abitur_average
+- open_day
 _pinned_fields: []

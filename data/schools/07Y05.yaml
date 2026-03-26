@@ -41,7 +41,7 @@ image_urls:
 social_media:
   instagram: https://www.instagram.com/lhgberlin/
 ratings: {}
-completeness_score: 0.706
+completeness_score: 0.882
 field_confidence:
   accepts_after_4th_grade: high
   profile: medium
@@ -69,4 +69,6 @@ unverified_fields:
 - admission_requirements
 - languages
 - profile
+- open_day
 _pinned_fields: []
+open_day: '2026-01-17'

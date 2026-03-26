@@ -31,14 +31,20 @@ admission_requirements:
   notes: Bilingualer Zug (Englisch) seit Schuljahr 2015/16; CertiLingua-Label; Schach-Auszeichnung (Bronze, Deutsche 
     Schachjugend 2025)
 image_urls: []
-social_media: {}
+social_media:
+  facebook: https://www.facebook.com/GymnasiumAmTiergartenBerlin/
 ratings: {}
-completeness_score: 0.588
+completeness_score: 0.765
 field_confidence:
   accepts_after_4th_grade: high
   profile: high
   languages: medium
   admission_requirements: high
+  ganztag: medium
+  abitur_average: low
+  open_day: low
+  social_media: medium
+  ratings: low
 data_sources:
 - wfs_berlin
 - agent_research
@@ -52,4 +58,7 @@ unverified_fields:
 - admission_requirements
 - languages
 - profile
+- ganztag
+- open_day
 _pinned_fields: []
+ganztag: true

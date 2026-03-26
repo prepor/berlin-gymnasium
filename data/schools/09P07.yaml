@@ -37,8 +37,9 @@ image_urls:
 - https://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/Gr%C3%BCne_Trift_K%C3%B6penick_ev_Gymnasium_2013-12-09_ama_fec.JPG/800px-Gr%C3%BCne_Trift_K%C3%B6penick_ev_Gymnasium_2013-12-09_ama_fec.JPG
 social_media:
   instagram: https://www.instagram.com/ev.schule.koepenick
+  facebook: https://www.facebook.com/Evangelische-Schule-K%C3%B6penick-152342864785751/
 ratings: {}
-completeness_score: 0.706
+completeness_score: 0.824
 field_confidence:
   accepts_after_4th_grade: high
   profile: high
@@ -55,6 +56,7 @@ field_confidence:
   ratings: high
   social_media.instagram: low
   image_urls: low
+  social_media: high
 data_sources:
 - wfs_berlin
 - agent_research

@@ -12,16 +12,47 @@ email: sekretariat@ghs-berlin.de
 traeger: öffentlich
 student_count: 819
 teacher_count: 63
-profile: []
-languages: []
+profile:
+- other
+languages:
+- name: Englisch
+  from_grade: 7
+- name: Französisch
+  from_grade: 7
+- name: Spanisch
+  from_grade: 7
+- name: Latein
+  from_grade: 8
 image_urls:
 - https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/Friedrichshagen_Bruno-Wille-Stra%C3%9Fe_Gerhard-Hauptmann-Schule.JPG/800px-Friedrichshagen_Bruno-Wille-Stra%C3%9Fe_Gerhard-Hauptmann-Schule.JPG
-social_media: {}
+social_media:
+  facebook: https://www.facebook.com/p/GHS-Gerhart-Hauptmann-Schule-Gymnasium-100058322439219/
 ratings: {}
-completeness_score: 0.353
-field_confidence: {}
+completeness_score: 0.765
+field_confidence:
+  accepts_after_4th_grade: high
+  profile: low
+  languages: high
+  ganztag: low
+  admission_requirements: medium
+  abitur_average: low
+  open_day: medium
+  social_media: high
+  ratings: low
 data_sources:
 - wfs_berlin
 - wikimedia
-unverified_fields: []
+- agent_research
+unverified_fields:
+- ganztag
+- profile
+- languages
 _pinned_fields: []
+accepts_after_4th_grade: false
+admission_requirements:
+  notendurchschnitt:
+  oversubscribed: true
+  selection_criteria: Durchschnittsnote der Förderprognose
+  probeunterricht: false
+  entrance_test: false
+  notes:

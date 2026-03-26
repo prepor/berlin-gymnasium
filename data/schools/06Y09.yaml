@@ -13,7 +13,8 @@ traeger: öffentlich
 student_count: 809
 teacher_count: 78
 accepts_after_4th_grade: false
-profile: []
+profile:
+- other
 languages:
 - name: Englisch
   from_grade: 7
@@ -26,16 +27,29 @@ languages:
 admission_requirements:
   notendurchschnitt: 2.3
   oversubscribed: true
-  selection_criteria: The sole admission criterion is the Förderprognose from primary school. Children with a Förderprognose of 2.3 or worse must pass a Probeunterricht (trial lesson) before applying. Typically oversubscribed. No pre-selection for profiles required at admission.
+  selection_criteria: The sole admission criterion is the Förderprognose from primary school. Children with a 
+    Förderprognose of 2.3 or worse must pass a Probeunterricht (trial lesson) before applying. Typically oversubscribed.
+    No pre-selection for profiles required at admission.
   probeunterricht: true
   entrance_test: false
-  notes: Notably integrates blind and visually impaired students since 1980. Cooperates with Paulsen-Gymnasium for Oberstufe course offerings. No profile choice required at admission; profiling via Wahlpflichtfächer from classes 8–10.
+  notes: Notably integrates blind and visually impaired students since 1980. Cooperates with Paulsen-Gymnasium for 
+    Oberstufe course offerings. No profile choice required at admission; profiling via Wahlpflichtfächer from classes 
+    8–10.
 image_urls:
 - https://upload.wikimedia.org/wikipedia/commons/thumb/1/1c/130908-Steglitz-Fichtenberg-Oberschule.JPG/800px-130908-Steglitz-Fichtenberg-Oberschule.JPG
 - https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/Fichtenberg_Oberschule1_Berlin.JPG/800px-Fichtenberg_Oberschule1_Berlin.JPG
-social_media: {}
-ratings: {}
-completeness_score: 0.588
+social_media:
+  facebook: https://www.facebook.com/Fichtenberg-Oberschule-145801625453329/
+  instagram: https://www.instagram.com/fichtenberg.oberschule/
+ratings:
+  schulen.de:
+    source: schulen.de
+    score:
+    scale_min: 1.0
+    scale_max: 6.0
+    review_count:
+    retrieved: '2026-03-26'
+completeness_score: 0.941
 field_confidence:
   accepts_after_4th_grade: high
   profile: medium
@@ -43,6 +57,11 @@ field_confidence:
   admission_requirements: high
   oversubscribed: high
   notendurchschnitt: high
+  ganztag: medium
+  abitur_average: low
+  open_day: high
+  social_media: high
+  ratings: low
 data_sources:
 - wfs_berlin
 - agent_research
@@ -57,4 +76,8 @@ unverified_fields:
 - admission_requirements
 - languages
 - profile
+- ganztag
+- abitur_average
 _pinned_fields: []
+ganztag: true
+open_day: '2026-01-22'

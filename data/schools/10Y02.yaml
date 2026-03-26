@@ -12,17 +12,49 @@ email: sekretariat@ong.berlin
 traeger: öffentlich
 student_count: 948
 teacher_count: 77
-profile: []
-languages: []
+profile:
+- MINT
+languages:
+- name: Englisch
+  from_grade: 5
+- name: Spanisch
+  from_grade: 6
+- name: Französisch
+  from_grade: 8
+- name: Latein
+  from_grade: 8
 image_urls:
 - https://upload.wikimedia.org/wikipedia/commons/thumb/7/7b/Otto-nagel-gymn01.jpg/800px-Otto-nagel-gymn01.jpg
 - https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Otto-nagel-gymn02.jpg/800px-Otto-nagel-gymn02.jpg
-social_media: {}
+social_media:
+  instagram: https://www.instagram.com/ongofficial/
+  facebook: https://www.facebook.com/ongofficial/
 ratings: {}
-completeness_score: 0.353
-field_confidence: {}
+completeness_score: 0.882
+field_confidence:
+  accepts_after_4th_grade: high
+  profile: high
+  languages: high
+  ganztag: high
+  open_day: low
+  admission_requirements: high
+  abitur_average: high
+  social_media: high
 data_sources:
 - wfs_berlin
 - wikimedia
-unverified_fields: []
+- agent_research
+unverified_fields:
+- abitur_average
 _pinned_fields: []
+abitur_average: 1.98
+ganztag: true
+accepts_after_4th_grade: true
+admission_requirements:
+  notendurchschnitt:
+  oversubscribed: true
+  selection_criteria: 'Kl. 5: Ranking (10 Punkte Gutachten + 10 Punkte Schnelllernertest); Kl. 7: 60% Ranking, 10% Härtefälle,
+    30% Los'
+  probeunterricht: false
+  entrance_test: true
+  notes: Schnelllernerklassen ab Klasse 5; eines der 3 gefragtesten Gymnasien Berlins 2023/24

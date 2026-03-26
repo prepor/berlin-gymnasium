@@ -30,20 +30,31 @@ languages:
 - name: Spanisch
   from_grade: 9
 admission_requirements:
-  selection_criteria: Förderprognose Durchschnittsnote used in oversubscription situations. Public Gymnasium; standard Berlin admission rules apply.
+  selection_criteria: Förderprognose Durchschnittsnote used in oversubscription situations. Public Gymnasium; standard 
+    Berlin admission rules apply.
   probeunterricht: true
   entrance_test: false
-  notes: Public Gymnasium; starts at grade 7. Five-stream school. Choice between Regelzug and bilingual Deutsch-Englisch stream. Reinforced English instruction in grades 7 and 8 for all students. MINT subjects offered in bilingual profile. Music Leistungskurs available. Chor and Orchester AGs. English from grade 5 per schulen.de data (likely reflects SESB/bilingual entry — official Berlin data lists no grade-5 start for this school; grades 7 entry confirmed).
+  notes: Public Gymnasium; starts at grade 7. Five-stream school. Choice between Regelzug and bilingual Deutsch-Englisch
+    stream. Reinforced English instruction in grades 7 and 8 for all students. MINT subjects offered in bilingual 
+    profile. Music Leistungskurs available. Chor and Orchester AGs. English from grade 5 per schulen.de data (likely 
+    reflects SESB/bilingual entry — official Berlin data lists no grade-5 start for this school; grades 7 entry 
+    confirmed).
 image_urls:
 - https://commons.wikimedia.org/wiki/Special:FilePath/F%C3%BCrstin-Bismarck-Schule%20-%20Sophie-Charlotte-Schule%2C%20Sybelstr.%202-4%20(Berlin-Charlottenburg).jpg?width=800
-social_media: {}
+social_media:
+  instagram: https://www.instagram.com/scg_berlin/
+  facebook: https://www.facebook.com/p/Sophie-Charlotte-Gymnasium-100066431442238/
 ratings: {}
-completeness_score: 0.647
+completeness_score: 0.882
 field_confidence:
   accepts_after_4th_grade: high
   profile: high
   languages: medium
   admission_requirements: medium
+  abitur_average: low
+  open_day: high
+  social_media: high
+  ratings: low
 data_sources:
 - wfs_berlin
 - agent_research
@@ -59,4 +70,6 @@ unverified_fields:
 - admission_requirements
 - languages
 - profile
+- abitur_average
 _pinned_fields: []
+open_day: '2026-01-24'

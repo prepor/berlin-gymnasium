@@ -38,7 +38,7 @@ image_urls:
 social_media:
   instagram: https://www.instagram.com/coppi_gym/
 ratings: {}
-completeness_score: 0.647
+completeness_score: 0.824
 field_confidence:
   accepts_after_4th_grade: high
   profile: high
@@ -65,4 +65,6 @@ unverified_fields:
 - admission_requirements
 - languages
 - profile
+- abitur_average
 _pinned_fields: []
+open_day: '2026-01-17'

@@ -38,7 +38,7 @@ image_urls:
 social_media:
   instagram: https://www.instagram.com/gemont.official/
 ratings: {}
-completeness_score: 0.706
+completeness_score: 0.882
 field_confidence:
   accepts_after_4th_grade: high
   profile: high
@@ -67,3 +67,4 @@ unverified_fields:
 - languages
 - profile
 _pinned_fields: []
+open_day: '2026-01-24'

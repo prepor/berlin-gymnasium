@@ -40,7 +40,7 @@ image_urls:
 - https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/Schadowgymn-zehlendorf.jpg/800px-Schadowgymn-zehlendorf.jpg
 social_media: {}
 ratings: {}
-completeness_score: 0.647
+completeness_score: 0.824
 field_confidence:
   accepts_after_4th_grade: high
   profile: high
@@ -48,6 +48,10 @@ field_confidence:
   ganztag: medium
   oversubscribed: medium
   admission_requirements: medium
+  abitur_average: low
+  open_day: high
+  social_media: low
+  ratings: low
 data_sources:
 - wfs_berlin
 - agent_research
@@ -64,3 +68,4 @@ unverified_fields:
 - languages
 - profile
 _pinned_fields: []
+open_day: '2026-01-17'

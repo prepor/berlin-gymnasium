@@ -27,21 +27,28 @@ languages:
 - name: Latein
   from_grade: 9
 admission_requirements:
-  selection_criteria: Durchschnittsnote der Förderprognose bei Übernachfrage; bilingual track starts grade 5 with entrance test
+  selection_criteria: Durchschnittsnote der Förderprognose bei Übernachfrage; bilingual track starts grade 5 with 
+    entrance test
   probeunterricht: false
   entrance_test: true
-  notes: Bilingual (Kl.5) track requires entrance test for MINT/bilingual classes. Standard track from grade 7 via Förderprognose GPA.
+  notes: Bilingual (Kl.5) track requires entrance test for MINT/bilingual classes. Standard track from grade 7 via 
+    Förderprognose GPA.
 image_urls:
 - https://commons.wikimedia.org/wiki/Special:FilePath/Berlin_Weißensee_Pistoriusstraße_133-137_(09040547).JPG?width=800
-social_media: {}
+social_media:
+  facebook: https://www.facebook.com/PrimoLeviSchule/
 ratings: {}
-completeness_score: 0.647
+completeness_score: 0.941
 field_confidence:
   accepts_after_4th_grade: high
   profile: high
   languages: high
   ganztag: high
   admission_requirements: medium
+  abitur_average: low
+  open_day: high
+  social_media: medium
+  ratings: high
 data_sources:
 - wfs_berlin
 - agent_research
@@ -57,4 +64,7 @@ unverified_fields:
 - admission_requirements
 - languages
 - profile
+- abitur_average
 _pinned_fields: []
+abitur_average: 2.3
+open_day: '2026-01-19'

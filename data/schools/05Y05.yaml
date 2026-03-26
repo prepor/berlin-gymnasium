@@ -32,21 +32,29 @@ languages:
 - name: Chinesisch
   from_grade: 8
 admission_requirements:
-  selection_criteria: Durchschnittsnote der Förderprognose (GPA of school recommendation); brief admission interview with headteacher required for all applicants
+  selection_criteria: Durchschnittsnote der Förderprognose (GPA of school recommendation); brief admission interview 
+    with headteacher required for all applicants
   probeunterricht: false
   entrance_test: false
-  notes: School starts at grade 7. Admission interview (kurzes Gespräch mit der Schulleiterin) required for all applicants during the registration period. Students choose between a Sprachenklasse (language/bilingual focus) and a musisch-künstlerische Klasse (arts/music focus) upon entry to grade 7.
+  notes: School starts at grade 7. Admission interview (kurzes Gespräch mit der Schulleiterin) required for all 
+    applicants during the registration period. Students choose between a Sprachenklasse (language/bilingual focus) and a
+    musisch-künstlerische Klasse (arts/music focus) upon entry to grade 7.
 image_urls:
 - https://upload.wikimedia.org/wikipedia/commons/thumb/f/f9/Lily-Braun-Gymnasium_Haupteingang.jpg/800px-Lily-Braun-Gymnasium_Haupteingang.jpg
-social_media: {}
+social_media:
+  instagram: https://www.instagram.com/lily.braun.gymnasium/
 ratings: {}
-completeness_score: 0.647
+completeness_score: 0.882
 field_confidence:
   accepts_after_4th_grade: high
   profile: high
   languages: high
   ganztag: high
   admission_requirements: high
+  abitur_average: low
+  open_day: high
+  social_media: high
+  ratings: low
 data_sources:
 - wfs_berlin
 - agent_research
@@ -62,4 +70,6 @@ unverified_fields:
 - admission_requirements
 - languages
 - profile
+- open_day
 _pinned_fields: []
+open_day: '2026-01-17'

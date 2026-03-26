@@ -12,17 +12,38 @@ email: sekretariat@willi-graf-os.de
 traeger: öffentlich
 student_count: 585
 teacher_count: 49
-profile: []
-languages: []
+profile:
+- bilingual_other
+- MINT
+languages:
+- name: Englisch
+  from_grade: 7
+- name: Spanisch
+  from_grade: 7
+- name: Französisch
+  from_grade: 9
+- name: Latein
+  from_grade: 9
 admission_requirements:
-  notes: No data retrieved in this research session. Cooperates with Goethe-Gymnasium Lichterfelde and Lilienthal-Gymnasium for Oberstufe (noted in Goethe-Gymnasium source).
+  notes: No data retrieved in this research session. Cooperates with Goethe-Gymnasium Lichterfelde and 
+    Lilienthal-Gymnasium for Oberstufe (noted in Goethe-Gymnasium source).
 image_urls:
 - https://commons.wikimedia.org/wiki/Special:FilePath/Frontansicht%20Schulgebäude%20Willi-Graf-Gymnasium.jpg?width=800
 - https://commons.wikimedia.org/wiki/Special:FilePath/Willy-Graf-Gymnasium%20Frontansicht.jpg?width=800
-social_media: {}
+social_media:
+  instagram: https://www.instagram.com/willigrafgym/
+  facebook: https://www.facebook.com/willigrafgym/
 ratings: {}
-completeness_score: 0.412
-field_confidence: {}
+completeness_score: 0.882
+field_confidence:
+  accepts_after_4th_grade: high
+  profile: high
+  languages: high
+  ganztag: medium
+  abitur_average: low
+  open_day: high
+  social_media: high
+  ratings: low
 data_sources:
 - wfs_berlin
 - agent_research
@@ -34,4 +55,8 @@ unverified_fields:
 - field_confidence
 - image_urls
 - admission_requirements
+- ganztag
 _pinned_fields: []
+ganztag: false
+accepts_after_4th_grade: false
+open_day: '2026-01-24'

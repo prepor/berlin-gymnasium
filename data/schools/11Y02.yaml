@@ -49,7 +49,7 @@ ratings:
     scale_max: 5.0
     review_count: 2
     retrieved: '2026-03-26'
-completeness_score: 0.765
+completeness_score: 0.941
 field_confidence:
   accepts_after_4th_grade: high
   profile: high
@@ -78,3 +78,4 @@ unverified_fields:
 - languages
 - profile
 _pinned_fields: []
+open_day: '2026-01-10'

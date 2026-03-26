@@ -26,21 +26,29 @@ languages:
 - name: Englisch
   from_grade: 7
 admission_requirements:
-  selection_criteria: Aufnahmegespräch mit dem Schulleiter; Sprachaffinität und Leistungsbereitschaft werden geprüft; Schulversuch, auch ohne Vorkenntnisse in Französisch möglich
+  selection_criteria: Aufnahmegespräch mit dem Schulleiter; Sprachaffinität und Leistungsbereitschaft werden geprüft; 
+    Schulversuch, auch ohne Vorkenntnisse in Französisch möglich
   probeunterricht: false
   entrance_test: false
-  notes: 'Altsprachlicher Zug ab Klasse 5 (Schulversuch): Sprachenfolge Französisch–Latein–Englisch. Regelklassen beginnen ab Klasse 7 mit Englisch.'
+  notes: 'Altsprachlicher Zug ab Klasse 5 (Schulversuch): Sprachenfolge Französisch–Latein–Englisch. Regelklassen beginnen
+    ab Klasse 7 mit Englisch.'
 image_urls:
 - https://commons.wikimedia.org/wiki/Special:FilePath/Gesundbrunnen_Diesterweg-Gymnasium.jpg?width=800
-social_media: {}
+social_media:
+  instagram: https://www.instagram.com/diesterweggymnasiumberlin/
+  facebook: https://www.facebook.com/p/Diesterweg-Gymnasium-Berlin-100066936645063/
 ratings: {}
-completeness_score: 0.647
+completeness_score: 0.882
 field_confidence:
   accepts_after_4th_grade: high
   profile: high
   languages: high
   ganztag: high
   admission_requirements: medium
+  abitur_average: low
+  open_day: high
+  social_media: high
+  ratings: low
 data_sources:
 - wfs_berlin
 - agent_research
@@ -56,4 +64,6 @@ unverified_fields:
 - admission_requirements
 - languages
 - profile
+- open_day
 _pinned_fields: []
+open_day: '2026-01-10'

@@ -12,17 +12,48 @@ email: 12Y08@12Y08.schule.berlin.de
 traeger: öffentlich
 student_count: 929
 teacher_count: 79
-profile: []
-languages: []
+profile:
+- other
+languages:
+- name: Englisch
+  from_grade: 7
+- name: Französisch
+  from_grade: 7
+- name: Spanisch
+  from_grade: 7
 image_urls:
 - https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Thomas-Mann-Gymnasium_Berlin_Haupteingang.jpg/800px-Thomas-Mann-Gymnasium_Berlin_Haupteingang.jpg
 - https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/Thomas-Mann-Gymnasium_Eingang.jpg/800px-Thomas-Mann-Gymnasium_Eingang.jpg
 social_media: {}
 ratings: {}
-completeness_score: 0.353
-field_confidence: {}
+completeness_score: 0.882
+field_confidence:
+  accepts_after_4th_grade: high
+  profile: medium
+  languages: medium
+  ganztag: high
+  admission_requirements: medium
+  abitur_average: low
+  open_day: high
+  social_media: low
+  ratings: low
 data_sources:
 - wfs_berlin
 - wikimedia
-unverified_fields: []
+- agent_research
+unverified_fields:
+- profile
+- languages
+- admission_requirements
+- social_media
 _pinned_fields: []
+ganztag: true
+accepts_after_4th_grade: false
+open_day: '2026-01-24'
+admission_requirements:
+  notendurchschnitt:
+  oversubscribed:
+  selection_criteria: Durchschnittsnote der Förderprognose
+  probeunterricht: false
+  entrance_test: false
+  notes: 'Schwerpunkte ab Klasse 7: Kultur, Naturwissenschaften, Sport, Sprachen oder Wirtschaft'

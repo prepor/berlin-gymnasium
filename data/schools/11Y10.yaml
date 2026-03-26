@@ -12,14 +12,48 @@ email: info@ardenne-gymnasium.de
 traeger: öffentlich
 student_count: 849
 teacher_count: 71
-profile: []
-languages: []
+profile:
+- MINT
+- music
+languages:
+- name: Englisch
+  from_grade: 7
+- name: Französisch
+  from_grade: 7
+- name: Latein
+  from_grade: 9
 image_urls: []
-social_media: {}
+social_media:
+  instagram: https://www.instagram.com/instardenne/
+  facebook: https://www.facebook.com/manfredvonardenne/
 ratings: {}
-completeness_score: 0.353
-field_confidence: {}
+completeness_score: 0.824
+field_confidence:
+  accepts_after_4th_grade: high
+  profile: high
+  languages: medium
+  ganztag: high
+  admission_requirements: medium
+  abitur_average: low
+  open_day: high
+  social_media: high
+  ratings: low
 data_sources:
 - wfs_berlin
-unverified_fields: []
+- agent_research
+unverified_fields:
+- ganztag
+- languages
+- admission_requirements
 _pinned_fields: []
+accepts_after_4th_grade: false
+ganztag: true
+admission_requirements:
+  notendurchschnitt:
+  oversubscribed:
+  selection_criteria: Sprachbetontes Profil, MINT-Profil, musikalisches Profil
+  probeunterricht: false
+  entrance_test: false
+  notes: Open all-day school (Offene Ganztagsbetreuung). Instrumental class offered each year. MINT-Schule with 
+    comprehensive divided instruction in natural sciences.
+open_day: '2026-01-22'
