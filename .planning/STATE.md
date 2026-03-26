@@ -3,14 +3,14 @@ gsd_state_version: 1.0
 milestone: v1.0
 milestone_name: milestone
 status: executing
-stopped_at: Completed 01-data-pipeline-02-PLAN.md
-last_updated: "2026-03-26T14:52:03.071Z"
+stopped_at: Completed 01-data-pipeline-04-PLAN.md
+last_updated: "2026-03-26T15:00:35.974Z"
 last_activity: 2026-03-26
 progress:
   total_phases: 5
   completed_phases: 0
   total_plans: 5
-  completed_plans: 2
+  completed_plans: 3
   percent: 0
 ---
 
@@ -26,7 +26,7 @@ See: .planning/PROJECT.md (updated 2026-03-26)
 ## Current Position
 
 Phase: 01 (data-pipeline) — EXECUTING
-Plan: 3 of 5
+Plan: 4 of 5
 Status: Ready to execute
 Last activity: 2026-03-26
 
@@ -54,6 +54,7 @@ Progress: [░░░░░░░░░░] 0%
 *Updated after each plan completion*
 | Phase 01-data-pipeline P01 | 6 | 2 tasks | 9 files |
 | Phase 01-data-pipeline P02 | 2 | 1 tasks | 1 files |
+| Phase 01-data-pipeline P04 | 2 | 2 tasks | 2 files |
 
 ## Accumulated Context
 
@@ -69,6 +70,9 @@ Recent decisions affecting current work:
 - [Phase 01-data-pipeline]: Use hatchling packages=['.'] and --project pipeline in justfile for uv run from workspace root
 - [Phase 01-data-pipeline]: XLSX fetch failures are non-fatal so seed continues with null student/teacher counts
 - [Phase 01-data-pipeline]: BSN normalization to string on both WFS and XLSX sides for robust merge
+- [Phase 01-data-pipeline]: validate.py returns (SchoolRecord | None, list[dict]) — None on ValidationError so orchestrator counts failures without halting
+- [Phase 01-data-pipeline]: writer.py write_school_yaml returns (changed, changelog_entry) tuple; write_all aggregates stats and appends to CHANGELOG.md
+- [Phase 01-data-pipeline]: deepdiff excludes last_updated and completeness_score from changelog comparison to avoid noise on every re-run
 
 ### Pending Todos
 
@@ -82,6 +86,6 @@ None yet.
 
 ## Session Continuity
 
-Last session: 2026-03-26T14:52:03.067Z
-Stopped at: Completed 01-data-pipeline-02-PLAN.md
+Last session: 2026-03-26T15:00:35.971Z
+Stopped at: Completed 01-data-pipeline-04-PLAN.md
 Resume file: None

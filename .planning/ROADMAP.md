@@ -41,7 +41,7 @@ Plans:
 - [x] 01-01-PLAN.md — Python scaffold (pyproject.toml, justfile, pipeline.yaml) + Pydantic SchoolRecord schema
 - [x] 01-02-PLAN.md — Seed step: WFS fetch + Eckdaten XLSX merge → schools_index.yaml
 - [ ] 01-03-PLAN.md — Agent enrichment: Claude claude-sonnet-4-6 batches with web_search_20260209
-- [ ] 01-04-PLAN.md — Validate + merge (D-17 structured wins) + YAML writer + changelog
+- [x] 01-04-PLAN.md — Validate + merge (D-17 structured wins) + YAML writer + changelog
 - [ ] 01-05-PLAN.md — Orchestrator (run.py wiring all steps) + README + end-to-end verification
 
 ### Phase 2: SPA Foundation and School Directory

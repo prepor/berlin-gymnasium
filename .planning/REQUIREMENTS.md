@@ -14,7 +14,7 @@ Requirements for initial release. Each maps to roadmap phases.
 - [ ] **DATA-03**: Claude AI agents enrich each school with profile/specialization, languages offered, Ganztag status, open day dates, and ratings from discoverable sources
 - [x] **DATA-04**: Each school stored as one YAML file in `data/schools/{school_id}.yaml` with defined schema
 - [x] **DATA-05**: YAML schema includes provenance tracking (data_sources, last_updated per school)
-- [ ] **DATA-06**: Pipeline re-run produces field-level changelog (`data/CHANGELOG.md`) showing what changed
+- [x] **DATA-06**: Pipeline re-run produces field-level changelog (`data/CHANGELOG.md`) showing what changed
 - [x] **DATA-07**: Pipeline runs reproducibly with documented setup and single command execution
 - [x] **DATA-08**: Pipeline validates all school records against Pydantic schema before writing
 - [x] **DATA-09**: Pipeline collects ratings from multiple permitted sources (not Google Maps scraping) with source attribution, scale, and review count
@@ -110,7 +110,7 @@ Which phases cover which requirements. Updated during roadmap creation.
 | DATA-03 | Phase 1 | Pending |
 | DATA-04 | Phase 1 | Complete |
 | DATA-05 | Phase 1 | Complete |
-| DATA-06 | Phase 1 | Pending |
+| DATA-06 | Phase 1 | Complete |
 | DATA-07 | Phase 1 | Complete |
 | DATA-08 | Phase 1 | Complete |
 | DATA-09 | Phase 1 | Complete |
