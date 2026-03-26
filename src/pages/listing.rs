@@ -6,7 +6,9 @@ use crate::components::filter_chips::FilterChips;
 use crate::components::filter_panel::FilterPanel;
 use crate::components::school_card::SchoolCard;
 use crate::components::sort_controls::SortControls;
+use crate::components::view_toggle::ViewToggle;
 use crate::models::{all_districts, all_languages, all_profiles, School, SortField};
+use crate::pages::map::MapView;
 use crate::state::AppState;
 
 /// Parse a comma-separated query param value into a Vec<String>.
@@ -35,6 +37,7 @@ fn build_query_string(
     languages: &[String],
     ganztag: Option<bool>,
     sort: &SortField,
+    view: &str,
 ) -> String {
     let mut params = Vec::new();
 
@@ -59,6 +62,9 @@ fn build_query_string(
     }
     if *sort != SortField::Name {
         params.push(format!("sort={}", sort.to_query()));
+    }
+    if view == "map" {
+        params.push("view=map".to_string());
     }
 
     params.join("&")
@@ -182,6 +188,11 @@ pub fn ListingPage() -> impl IntoView {
             .unwrap_or_default()
     });
 
+    // Read view mode from URL query param
+    let is_map_view = Signal::derive(move || {
+        query.read().get("view").as_deref() == Some("map")
+    });
+
     // Count active filters
     let active_filter_count = Signal::derive(move || {
         let mut count = 0;
@@ -197,15 +208,16 @@ pub fn ListingPage() -> impl IntoView {
         count
     });
 
-    // Helper to navigate with updated filters
+    // Helper to navigate with updated filters (now includes view parameter)
     let nav = navigate.clone();
     let navigate_with_filters = move |districts: Vec<String>,
                                        profiles: Vec<String>,
                                        grundstaendig: Option<bool>,
                                        languages: Vec<String>,
                                        ganztag: Option<bool>,
-                                       sort: SortField| {
-        let qs = build_query_string(&districts, &profiles, grundstaendig, &languages, ganztag, &sort);
+                                       sort: SortField,
+                                       view: &str| {
+        let qs = build_query_string(&districts, &profiles, grundstaendig, &languages, ganztag, &sort, view);
         let path = if qs.is_empty() {
             "/".to_string()
         } else {
@@ -220,10 +232,11 @@ pub fn ListingPage() -> impl IntoView {
         );
     };
 
-    // Callbacks for filter changes
+    // Callbacks for filter changes — preserve current view mode
     let nav_fn = navigate_with_filters.clone();
     let on_toggle_district = Callback::new(move |district: String| {
         let new_districts = toggle_in_list(&selected_districts.get(), &district);
+        let view = if is_map_view.get() { "map" } else { "" };
         nav_fn(
             new_districts,
             selected_profiles.get(),
@@ -231,12 +244,14 @@ pub fn ListingPage() -> impl IntoView {
             selected_languages.get(),
             selected_ganztag.get(),
             current_sort.get(),
+            view,
         );
     });
 
     let nav_fn = navigate_with_filters.clone();
     let on_toggle_profile = Callback::new(move |profile: String| {
         let new_profiles = toggle_in_list(&selected_profiles.get(), &profile);
+        let view = if is_map_view.get() { "map" } else { "" };
         nav_fn(
             selected_districts.get(),
             new_profiles,
@@ -244,11 +259,13 @@ pub fn ListingPage() -> impl IntoView {
             selected_languages.get(),
             selected_ganztag.get(),
             current_sort.get(),
+            view,
         );
     });
 
     let nav_fn = navigate_with_filters.clone();
     let on_set_grundstaendig = Callback::new(move |val: Option<bool>| {
+        let view = if is_map_view.get() { "map" } else { "" };
         nav_fn(
             selected_districts.get(),
             selected_profiles.get(),
@@ -256,12 +273,14 @@ pub fn ListingPage() -> impl IntoView {
             selected_languages.get(),
             selected_ganztag.get(),
             current_sort.get(),
+            view,
         );
     });
 
     let nav_fn = navigate_with_filters.clone();
     let on_toggle_language = Callback::new(move |language: String| {
         let new_languages = toggle_in_list(&selected_languages.get(), &language);
+        let view = if is_map_view.get() { "map" } else { "" };
         nav_fn(
             selected_districts.get(),
             selected_profiles.get(),
@@ -269,11 +288,13 @@ pub fn ListingPage() -> impl IntoView {
             new_languages,
             selected_ganztag.get(),
             current_sort.get(),
+            view,
         );
     });
 
     let nav_fn = navigate_with_filters.clone();
     let on_set_ganztag = Callback::new(move |val: Option<bool>| {
+        let view = if is_map_view.get() { "map" } else { "" };
         nav_fn(
             selected_districts.get(),
             selected_profiles.get(),
@@ -281,11 +302,13 @@ pub fn ListingPage() -> impl IntoView {
             selected_languages.get(),
             val,
             current_sort.get(),
+            view,
         );
     });
 
     let nav_fn = navigate_with_filters.clone();
     let on_sort_change = Callback::new(move |sort: SortField| {
+        let view = if is_map_view.get() { "map" } else { "" };
         nav_fn(
             selected_districts.get(),
             selected_profiles.get(),
@@ -293,11 +316,13 @@ pub fn ListingPage() -> impl IntoView {
             selected_languages.get(),
             selected_ganztag.get(),
             sort,
+            view,
         );
     });
 
     let nav_fn = navigate_with_filters.clone();
     let on_clear_all = Callback::new(move |_: ()| {
+        let view = if is_map_view.get() { "map" } else { "" };
         nav_fn(
             vec![],
             vec![],
@@ -305,6 +330,22 @@ pub fn ListingPage() -> impl IntoView {
             vec![],
             None,
             SortField::Name,
+            view,
+        );
+    });
+
+    // View toggle callback — switches between list and map views
+    let nav_fn = navigate_with_filters.clone();
+    let on_toggle_view = Callback::new(move |_: ()| {
+        let new_view = if is_map_view.get() { "" } else { "map" };
+        nav_fn(
+            selected_districts.get(),
+            selected_profiles.get(),
+            selected_grundstaendig.get(),
+            selected_languages.get(),
+            selected_ganztag.get(),
+            current_sort.get(),
+            new_view,
         );
     });
 
@@ -332,6 +373,7 @@ pub fn ListingPage() -> impl IntoView {
                 <div class="header-controls">
                     <FilterChips active_count=active_filter_count on_clear_all=on_clear_all />
                     <SortControls current_sort=current_sort on_sort_change=on_sort_change />
+                    <ViewToggle is_map_view=is_map_view on_toggle=on_toggle_view />
                 </div>
             </header>
             <div class="listing-content">
@@ -352,7 +394,14 @@ pub fn ListingPage() -> impl IntoView {
                         on_set_ganztag=on_set_ganztag
                     />
                 </aside>
-                <section class="school-grid">
+                <div style:display=move || {
+                    if is_map_view.get() { "block" } else { "none" }
+                } style="flex:1;min-width:0">
+                    <MapView filtered_schools=filtered_schools />
+                </div>
+                <section class="school-grid" style:display=move || {
+                    if is_map_view.get() { "none" } else { "" }
+                }>
                     <For
                         each=move || filtered_schools.get()
                         key=|s| s.school_id.clone()
