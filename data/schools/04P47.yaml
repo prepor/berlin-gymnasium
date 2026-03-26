@@ -15,7 +15,6 @@ teacher_count: 16
 accepts_after_4th_grade: false
 profile:
 - bilingual_english
-- other
 ganztag: true
 languages:
 - name: Englisch

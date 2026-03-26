@@ -13,8 +13,7 @@ traeger: öffentlich
 student_count: 125
 teacher_count: 2
 accepts_after_4th_grade: false
-profile:
-- other
+profile: []
 languages: []
 admission_requirements:
   selection_criteria: Aufnahme in Jahrgangsstufe 7 nach Berliner Standard-Gymnasialaufnahmeverfahren 

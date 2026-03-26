@@ -13,8 +13,7 @@ traeger: öffentlich
 student_count: 152
 teacher_count: 13
 accepts_after_4th_grade: false
-profile:
-- other
+profile: []
 languages: []
 admission_requirements:
   selection_criteria: 'Standard Berlin process: Förderprognose required; applicants without Gymnasium recommendation must

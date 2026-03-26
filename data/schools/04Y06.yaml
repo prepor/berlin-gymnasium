@@ -15,7 +15,6 @@ teacher_count: 74
 accepts_after_4th_grade: false
 profile:
 - MINT
-- other
 ganztag: false
 languages:
 - name: Englisch

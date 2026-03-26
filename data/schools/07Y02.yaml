@@ -16,7 +16,6 @@ accepts_after_4th_grade: true
 profile:
 - bilingual_french
 - MINT
-- other
 ganztag: true
 languages:
 - name: Französisch

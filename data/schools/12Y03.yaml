@@ -15,7 +15,6 @@ teacher_count: 114
 accepts_after_4th_grade: true
 profile:
 - altsprachlich
-- other
 languages:
 - name: Englisch
   from_grade: 5

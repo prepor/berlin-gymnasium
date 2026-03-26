@@ -13,8 +13,7 @@ traeger: öffentlich
 student_count: 809
 teacher_count: 78
 accepts_after_4th_grade: false
-profile:
-- other
+profile: []
 languages:
 - name: Englisch
   from_grade: 7
