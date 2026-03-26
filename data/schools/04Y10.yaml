@@ -29,10 +29,11 @@ languages:
 admission_requirements:
   selection_criteria: Durchschnittsnote der Förderprognose bei Übernachfrage
   entrance_test: false
-  notes: UNESCO-Projektschule. Bilingual Deutsch/Englisch stream. Offers Darstellendes Spiel and Psychologie in Sekundarstufe II. MINT focus (Mathematik, Informatik, Naturwissenschaften, Technik). Gebundenes Ganztagskonzept.
+  notes: UNESCO-Projektschule. Bilingual Deutsch/Englisch stream. Offers Darstellendes Spiel and Psychologie in 
+    Sekundarstufe II. MINT focus (Mathematik, Informatik, Naturwissenschaften, Technik). Gebundenes Ganztagskonzept.
 image_urls:
-- https://commons.wikimedia.org/wiki/Special:FilePath/Weimarische%20Stra%C3%9Fe%2021-24%20Berlin-Wilmersdorf.jpg?width=800
-- https://commons.wikimedia.org/wiki/Special:FilePath/WilmersdorfWeimarischeStra%C3%9FeMarieCurieSchule.jpg?width=800
+- photos/04Y10_0.jpg
+- photos/04Y10_1.jpg
 social_media: {}
 ratings:
   schulen.de:

@@ -22,7 +22,7 @@ languages:
 - name: Französisch
   from_grade: 7
 image_urls:
-- https://commons.wikimedia.org/wiki/Special:FilePath/Eckener%20Gymnasium.JPG?width=800
+- photos/07Y07_0.jpg
 social_media:
   facebook: https://www.facebook.com/108389745855255/
 ratings: {}

@@ -24,9 +24,10 @@ languages:
 - name: Latein
   from_grade: 7
 admission_requirements:
-  notes: Gymnasien-Berlin.net lists no Klasse-5 tracks. School named after composer Georg Friedrich Händel; music profile expected. Website haendelgym.de not fully indexed in search results.
+  notes: Gymnasien-Berlin.net lists no Klasse-5 tracks. School named after composer Georg Friedrich Händel; music 
+    profile expected. Website haendelgym.de not fully indexed in search results.
 image_urls:
-- https://commons.wikimedia.org/wiki/Special:FilePath/Friedrichshain_Georg-Friedrich-Händel-Gymnasium.jpg?width=800
+- photos/02Y04_0.jpg
 social_media: {}
 ratings: {}
 completeness_score: 0.824

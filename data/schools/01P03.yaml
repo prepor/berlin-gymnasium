@@ -28,13 +28,21 @@ languages:
 admission_requirements:
   notendurchschnitt: 2.2
   oversubscribed: true
-  selection_criteria: 'For grade 5 (grundständig): Grundschule prognosis of at least 2.2, a motivational letter from the student, and an admission interview with the principal. For grade 7: sum of grades in Deutsch, Mathematik and Englisch across the year-5 report and mid-year grade-6 report must not exceed 14. A lateral entry (Quereinstieg) is possible in principle if a place is available, primarily in grades 7–8 with French or Russian as the second foreign language. Entry to the Oberstufe requires MSA plus grade-10 promotion certificate; newcomers must additionally demonstrate basic knowledge of Judaism.'
+  selection_criteria: 'For grade 5 (grundständig): Grundschule prognosis of at least 2.2, a motivational letter from the student,
+    and an admission interview with the principal. For grade 7: sum of grades in Deutsch, Mathematik and Englisch across the
+    year-5 report and mid-year grade-6 report must not exceed 14. A lateral entry (Quereinstieg) is possible in principle
+    if a place is available, primarily in grades 7–8 with French or Russian as the second foreign language. Entry to the Oberstufe
+    requires MSA plus grade-10 promotion certificate; newcomers must additionally demonstrate basic knowledge of Judaism.'
   probeunterricht: true
   entrance_test: true
-  notes: Probeunterricht is available in cases where the required Förderprognose is missing (grade 7 entry). Admission interview (Aufnahmegespräch) is required for the grundständig grade-5 track. Hebrew is mandatory for all students in grades 5–10 regardless of religious background; lateral entrants without Hebrew must take a remedial course. The school is a state-recognised private Jewish school; all students (Jewish and non-Jewish) participate in Hebrew and Jewish religious education and kosher lunch. Approximately 70% of students are Jewish.
+  notes: Probeunterricht is available in cases where the required Förderprognose is missing (grade 7 entry). Admission 
+    interview (Aufnahmegespräch) is required for the grundständig grade-5 track. Hebrew is mandatory for all students in
+    grades 5–10 regardless of religious background; lateral entrants without Hebrew must take a remedial course. The 
+    school is a state-recognised private Jewish school; all students (Jewish and non-Jewish) participate in Hebrew and 
+    Jewish religious education and kosher lunch. Approximately 70% of students are Jewish.
 abitur_average: 1.97
 image_urls:
-- https://commons.wikimedia.org/wiki/Special:FilePath/Mitte_Große_Hamburger_Straße_27_Jüdisches_Gymnasium-001.JPG?width=800
+- photos/01P03_0.jpg
 social_media:
   instagram: https://www.instagram.com/jgmmberlin/
 ratings:

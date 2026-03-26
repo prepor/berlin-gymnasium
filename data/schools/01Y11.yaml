@@ -27,9 +27,10 @@ languages:
 admission_requirements:
   selection_criteria: Aufnahme nach Durchschnittsnote der Förderprognose bei Übernachfrage
   entrance_test: false
-  notes: UNESCO-Projektschule; Schule ohne Rassismus – Schule mit Courage; teilgebundener Ganztagsbetrieb für Klassen 7–8 (zwei Tage/Woche verpflichtend)
+  notes: UNESCO-Projektschule; Schule ohne Rassismus – Schule mit Courage; teilgebundener Ganztagsbetrieb für Klassen 
+    7–8 (zwei Tage/Woche verpflichtend)
 image_urls:
-- https://commons.wikimedia.org/wiki/Special:FilePath/Singerstraße_8A,_Berlin-Mitte,_270-375.jpg?width=800
+- photos/01Y11_0.jpg
 social_media: {}
 ratings: {}
 completeness_score: 0.824

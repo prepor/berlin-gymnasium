@@ -26,9 +26,9 @@ languages:
 admission_requirements:
   notes: No data retrieved in this research session.
 image_urls:
-- https://commons.wikimedia.org/wiki/Special:FilePath/Gymnasium%20Steglitz.JPG?width=800
-- https://commons.wikimedia.org/wiki/Special:FilePath/120518-Gymnasium-Steglitz-Heesestraße.JPG?width=800
-- https://commons.wikimedia.org/wiki/Special:FilePath/Gymnasium%20Steglitz%2004-2015.jpg?width=800
+- photos/06Y13_0.jpg
+- photos/06Y13_1.jpg
+- photos/06Y13_2.jpg
 social_media: {}
 ratings: {}
 completeness_score: 0.882

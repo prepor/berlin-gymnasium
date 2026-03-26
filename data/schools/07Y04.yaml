@@ -24,7 +24,7 @@ languages:
 - name: Italienisch
   from_grade: 9
 image_urls:
-- https://commons.wikimedia.org/wiki/Special:FilePath/Paul-Natorp-Oberschule%20in%20Friedenau.JPG?width=800
+- photos/07Y04_0.jpg
 social_media:
   instagram: https://www.instagram.com/sv_natorp/
 ratings: {}

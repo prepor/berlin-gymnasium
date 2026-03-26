@@ -35,8 +35,8 @@ admission_requirements:
   notes: Applicants must be in Klasse 6, must have Förderprognose, English must be first foreign language. Profile 
     classes use an interview and weighted subject grades.
 image_urls:
-- https://commons.wikimedia.org/wiki/Special:FilePath/160918-Steglitz-Paulsen-Gymnasium.JPG?width=800
-- https://commons.wikimedia.org/wiki/Special:FilePath/120428-Steglitz-Paulsengymnasium-1.JPG?width=800
+- photos/06Y07_0.jpg
+- photos/06Y07_1.jpg
 social_media: {}
 ratings: {}
 completeness_score: 0.588

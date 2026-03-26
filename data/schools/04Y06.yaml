@@ -33,9 +33,9 @@ admission_requirements:
   notes: 'Public Gymnasium (Heinz-Berggruen-Gymnasium) named after art patron Heinz Berggruen; starts at grade 7. No grade-5
     grundständig track confirmed. Website: http://hbgym.de'
 image_urls:
-- https://commons.wikimedia.org/wiki/Special:FilePath/Heinz-Berggruen-Gymnasium.jpg?width=800
-- https://commons.wikimedia.org/wiki/Special:FilePath/Bayernallee%204%20(Berlin-Westend).JPG?width=800
-- https://commons.wikimedia.org/wiki/Special:FilePath/Heinz-Berggruen%20Gymnasium.jpg?width=800
+- photos/04Y06_0.jpg
+- photos/04Y06_1.jpg
+- photos/04Y06_2.jpg
 social_media:
   instagram: https://www.instagram.com/hbgym_berlin/
 ratings: {}

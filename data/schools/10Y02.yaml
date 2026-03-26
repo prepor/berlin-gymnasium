@@ -24,8 +24,8 @@ languages:
 - name: Latein
   from_grade: 8
 image_urls:
-- https://commons.wikimedia.org/wiki/Special:FilePath/Otto-nagel-gymn01.jpg?width=800
-- https://commons.wikimedia.org/wiki/Special:FilePath/Otto-nagel-gymn02.jpg?width=800
+- photos/10Y02_0.jpg
+- photos/10Y02_1.jpg
 social_media:
   instagram: https://www.instagram.com/ongofficial/
   facebook: https://www.facebook.com/ongofficial/

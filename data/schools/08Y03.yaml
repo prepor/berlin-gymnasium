@@ -23,8 +23,8 @@ languages:
 - name: Italienisch
   from_grade: 7
 image_urls:
-- https://commons.wikimedia.org/wiki/Special:FilePath/Einsteingymn-b.jpg?width=800
-- https://commons.wikimedia.org/wiki/Special:FilePath/ALbert%20EInstein%20OBerschule.jpg?width=800
+- photos/08Y03_0.jpg
+- photos/08Y03_1.jpg
 social_media:
   instagram: https://www.instagram.com/alberteinstein.sv/
 ratings: {}

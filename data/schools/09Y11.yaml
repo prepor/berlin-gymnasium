@@ -24,7 +24,7 @@ languages:
 - name: Latein
   from_grade: 9
 image_urls:
-- https://commons.wikimedia.org/wiki/Special:FilePath/Emmy_Noether_Gymnasium.jpg?width=800
+- photos/09Y11_0.jpg
 social_media: {}
 ratings: {}
 completeness_score: 0.765

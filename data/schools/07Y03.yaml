@@ -24,7 +24,7 @@ languages:
 - name: Spanisch
   from_grade: 8
 image_urls:
-- https://commons.wikimedia.org/wiki/Special:FilePath/Rheingau-Oberschule.JPG?width=800
+- photos/07Y03_0.jpg
 social_media:
   instagram: https://www.instagram.com/rgs.berlin/
 ratings: {}

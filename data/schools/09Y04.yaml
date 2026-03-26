@@ -24,8 +24,8 @@ languages:
 - name: Latein
   from_grade: 8
 image_urls:
-- https://commons.wikimedia.org/wiki/Special:FilePath/Anne-Frank-Gymnasium_-_Haus_A_-_au%C3%9Fen.jpg?width=800
-- https://commons.wikimedia.org/wiki/Special:FilePath/Berlin_szkola_Anny_Frank.jpg?width=800
+- photos/09Y04_0.jpg
+- photos/09Y04_1.jpg
 social_media:
   facebook: https://www.facebook.com/afg.schule.berlin/
 ratings: {}

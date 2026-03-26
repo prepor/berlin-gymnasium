@@ -23,7 +23,7 @@ languages:
 - name: Latein
   from_grade: 7
 image_urls:
-- https://commons.wikimedia.org/wiki/Special:FilePath/Albrecht-Dürer-Schule-01.jpg?width=800
+- photos/08Y01_0.jpg
 social_media:
   instagram: https://www.instagram.com/albrechtduerergymnasiumberlin/
   facebook: https://de-de.facebook.com/Albrecht-D%C3%BCrer-Gymnasium-Neuk%C3%B6lln-235193843178518/

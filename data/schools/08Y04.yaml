@@ -21,7 +21,7 @@ languages:
 - name: Latein
   from_grade: 7
 image_urls:
-- https://commons.wikimedia.org/wiki/Special:FilePath/Sonnenallee%2079%203.JPG?width=800
+- photos/08Y04_0.jpg
 social_media: {}
 ratings: {}
 completeness_score: 0.824

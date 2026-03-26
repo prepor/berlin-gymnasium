@@ -32,7 +32,7 @@ admission_requirements:
   entrance_test: false
   notes: 'Für Klasse 5 Mathe-NaWi-Profil: Ranking nach Leistung, 32 Plätze'
 image_urls:
-- https://commons.wikimedia.org/wiki/Special:FilePath/Berlin-Spandau%20FvS-Gymnasium%20asv2022-09.jpg?width=800
+- photos/05Y01_0.jpg
 social_media:
   facebook: https://www.facebook.com/FreiherrvomSteinGymnasium/
 ratings: {}

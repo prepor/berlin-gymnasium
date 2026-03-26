@@ -31,12 +31,14 @@ languages:
 admission_requirements:
   notendurchschnitt: 2.1
   oversubscribed: true
-  selection_criteria: Durchschnittsnote der Grundschulförderprognose; direct admission without lottery typically requires average between 1.8 and 2.1; otherwise lottery among qualified applicants
+  selection_criteria: Durchschnittsnote der Grundschulförderprognose; direct admission without lottery typically 
+    requires average between 1.8 and 2.1; otherwise lottery among qualified applicants
   probeunterricht: false
   entrance_test: false
-  notes: School accepts 3 or 4 classes of grade 7 per year (approx. 90 students). Standard Berlin Gymnasium admission process; no grundständig (grade 5) entry.
+  notes: School accepts 3 or 4 classes of grade 7 per year (approx. 90 students). Standard Berlin Gymnasium admission 
+    process; no grundständig (grade 5) entry.
 image_urls:
-- https://commons.wikimedia.org/wiki/Special:FilePath/Berlin-Neukölln-Albert-Schweitzer-high%20school.JPG?width=800
+- photos/08Y02_0.jpg
 social_media:
   instagram: https://www.instagram.com/die.schweitzer.berlin/
   facebook: https://facebook.com/dieschweitzer/

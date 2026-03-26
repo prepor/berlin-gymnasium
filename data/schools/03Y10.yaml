@@ -23,13 +23,15 @@ languages:
   from_grade: 7
 admission_requirements:
   oversubscribed: true
-  selection_criteria: Entrance test (Schnelllernerklassen) required for grade 5 admission. Listed as the Berlin gymnasium that conducts the most Schnelllerner tests per year.
+  selection_criteria: Entrance test (Schnelllernerklassen) required for grade 5 admission. Listed as the Berlin 
+    gymnasium that conducts the most Schnelllerner tests per year.
   probeunterricht: false
   entrance_test: true
-  notes: Rosa-Luxemburg-Gymnasium is noted as conducting the most Schnelllerner-class entrance tests in Berlin annually (per Tagesspiegel). Anmeldung zur Testung must happen in advance of general application period.
+  notes: Rosa-Luxemburg-Gymnasium is noted as conducting the most Schnelllerner-class entrance tests in Berlin annually 
+    (per Tagesspiegel). Anmeldung zur Testung must happen in advance of general application period.
 image_urls:
-- https://commons.wikimedia.org/wiki/Special:FilePath/Pankow_Kissingenplatz_Gymnasium.jpg?width=800
-- https://commons.wikimedia.org/wiki/Special:FilePath/Rosaluxemburgoberschule.jpg?width=800
+- photos/03Y10_0.jpg
+- photos/03Y10_1.jpg
 social_media: {}
 ratings: {}
 completeness_score: 0.588

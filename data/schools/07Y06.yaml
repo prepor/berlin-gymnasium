@@ -26,8 +26,8 @@ languages:
 - name: Latein
   from_grade: 8
 image_urls:
-- https://commons.wikimedia.org/wiki/Special:FilePath/Askanischeschule-tempelhof.jpg?width=800
-- https://commons.wikimedia.org/wiki/Special:FilePath/09075206%20Berlin%20Tempelhof,%20Friedrich-Franz-Straße%2040%20004.JPG?width=800
+- photos/07Y06_0.jpg
+- photos/07Y06_1.jpg
 social_media:
   facebook: https://www.facebook.com/pages/Askanisches-Gymnasium/106032096104225
 ratings: {}

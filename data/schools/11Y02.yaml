@@ -44,8 +44,8 @@ admission_requirements:
     advance due to variable application numbers. Bilingual Abitur (CertiLingua) available.
 abitur_average: 1.86
 image_urls:
-- https://commons.wikimedia.org/wiki/Special:FilePath/Johann-Gottfried-Herder-Gymnasium_%28Berlin-Lichtenberg%29.jpg?width=800
-- https://commons.wikimedia.org/wiki/Special:FilePath/Johann-Gottfried-Herder-Gymnasium_in_Berlin-Lichtenberg.jpg?width=800
+- photos/11Y02_0.jpg
+- photos/11Y02_1.jpg
 social_media:
   facebook: https://www.facebook.com/herderberlin/
 ratings:

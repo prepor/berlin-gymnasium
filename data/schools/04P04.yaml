@@ -26,9 +26,9 @@ languages:
 admission_requirements:
   notes: No search results retrieved in this session; data not available.
 image_urls:
-- https://commons.wikimedia.org/wiki/Special:FilePath/Eingangsbereich-1.jpg?width=800
-- https://commons.wikimedia.org/wiki/Special:FilePath/KSL-Vorplatz.jpg?width=800
-- https://commons.wikimedia.org/wiki/Special:FilePath/Neubau-1.jpg?width=800
+- photos/04P04_0.jpg
+- photos/04P04_1.jpg
+- photos/04P04_2.jpg
 social_media:
   instagram: https://instagram.com/ksl_berlin
 ratings: {}
