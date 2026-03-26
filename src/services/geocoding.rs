@@ -39,17 +39,39 @@ impl PhotonFeature {
     }
 
     /// Build a display label for the dropdown.
-    /// Joins street, housenumber, postcode, city. Falls back to name if all are None.
+    /// Format: "Name, Street Housenumber, Postcode City"
+    /// Omits parts that are None. Falls back to name if nothing else is available.
     pub fn display_label(&self) -> String {
-        let parts: Vec<&str> = [
-            self.properties.street.as_deref(),
-            self.properties.housenumber.as_deref(),
-            self.properties.postcode.as_deref(),
-            self.properties.city.as_deref(),
-        ]
-        .iter()
-        .filter_map(|p| *p)
-        .collect();
+        let mut parts: Vec<String> = Vec::new();
+
+        // Include the place name if it differs from the street
+        if let Some(name) = &self.properties.name {
+            let dominated_by_street = self
+                .properties
+                .street
+                .as_deref()
+                .map(|s| s == name.as_str())
+                .unwrap_or(false);
+            if !dominated_by_street {
+                parts.push(name.clone());
+            }
+        }
+
+        // Street + housenumber
+        match (&self.properties.street, &self.properties.housenumber) {
+            (Some(st), Some(hn)) => parts.push(format!("{} {}", st, hn)),
+            (Some(st), None) => parts.push(st.clone()),
+            _ => {}
+        }
+
+        // Postcode + city combined
+        match (&self.properties.postcode, &self.properties.city) {
+            (Some(pc), Some(city)) => parts.push(format!("{} {}", pc, city)),
+            (None, Some(city)) => parts.push(city.clone()),
+            (Some(pc), None) => parts.push(pc.clone()),
+            _ => {}
+        }
+
         if parts.is_empty() {
             self.properties.name.clone().unwrap_or_default()
         } else {
@@ -60,12 +82,20 @@ impl PhotonFeature {
 
 /// Geocode an address string using the Photon API (photon.komoot.io).
 /// Biased toward Berlin (lat=52.52, lon=13.405). Returns up to 5 suggestions.
+///
+/// Uses gloo-net's `.query()` builder to pass params separately from the base URL.
+/// Embedding params directly in the URL string causes gloo-net 0.6 to append a
+/// trailing `&` (via its RequestBuilder → Request conversion), which Photon rejects
+/// with HTTP 400.
 pub async fn geocode_address(query: &str) -> Result<Vec<PhotonFeature>, String> {
-    let url = format!(
-        "https://photon.komoot.io/api/?q={}&lat=52.52&lon=13.405&limit=5&lang=de",
-        js_sys::encode_uri_component(query)
-    );
-    let resp = gloo_net::http::Request::get(&url)
+    let resp = gloo_net::http::Request::get("https://photon.komoot.io/api/")
+        .query([
+            ("q", query),
+            ("lat", "52.52"),
+            ("lon", "13.405"),
+            ("limit", "5"),
+            ("lang", "de"),
+        ])
         .send()
         .await
         .map_err(|e| format!("Geocoding-Fehler: {:?}", e))?;

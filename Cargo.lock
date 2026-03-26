@@ -138,6 +138,7 @@ version = "0.1.0"
 dependencies = [
  "console_error_panic_hook",
  "console_log",
+ "gloo-net",
  "js-sys",
  "leaflet",
  "leptos",
@@ -149,6 +150,7 @@ dependencies = [
  "serde-saphyr",
  "serde_json",
  "wasm-bindgen",
+ "wasm-bindgen-futures",
  "web-sys",
 ]
 
