@@ -1,0 +1,10 @@
+wfs_url: "https://gdi.berlin.de/services/wfs/schulen"
+eckdaten_url: "https://www.berlin.de/sen/bildung/service/daten/od-eckdaten-allg-2024.xlsx"
+include_private_schools: true
+batch_size: 8
+semaphore_limit: 8
+max_web_searches_per_school: 5
+cache_dir: "pipeline/cache"
+data_dir: "data/schools"
+index_file: "data/schools_index.yaml"
+log_level: "INFO"

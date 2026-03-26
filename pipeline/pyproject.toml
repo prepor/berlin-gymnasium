@@ -1,0 +1,24 @@
+[project]
+name = "berlin-gymnasien-pipeline"
+version = "0.1.0"
+requires-python = ">=3.13"
+dependencies = [
+    "anthropic==0.86.0",
+    "httpx==0.28.1",
+    "beautifulsoup4==4.14.3",
+    "pydantic==2.12.5",
+    "ruamel.yaml==0.19.1",
+    "tenacity==9.1.4",
+    "deepdiff==8.6.2",
+    "openpyxl==3.1.5",
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.uv]
+dev-dependencies = [
+    "pytest>=8.0",
+    "pytest-asyncio>=0.23",
+]
