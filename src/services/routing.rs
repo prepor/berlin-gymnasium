@@ -45,19 +45,18 @@ pub async fn fetch_travel_times_matrix(
     .send()
     .await;
 
-    // If POST fails (likely CORS), try GET with json query param
+    // If POST fails (likely CORS), try GET with json query param.
+    // Uses .query() builder to avoid gloo-net trailing "&" bug (see geocoding.rs).
     let resp = match resp {
         Ok(r) if r.ok() => r,
         _ => {
-            let encoded = js_sys::encode_uri_component(&body_str);
-            let url = format!(
-                "https://valhalla1.openstreetmap.de/sources_to_targets?json={}",
-                encoded
-            );
-            gloo_net::http::Request::get(&url)
-                .send()
-                .await
-                .map_err(|e| format!("Valhalla-Fehler: {:?}", e))?
+            gloo_net::http::Request::get(
+                "https://valhalla1.openstreetmap.de/sources_to_targets",
+            )
+            .query([("json", body_str.as_str())])
+            .send()
+            .await
+            .map_err(|e| format!("Valhalla-Fehler: {:?}", e))?
         }
     };
 
@@ -99,15 +98,28 @@ pub async fn fetch_all_travel_times(
         .map(|(_, lat, lng)| (*lat, *lng))
         .collect();
 
-    // Fire all three modes sequentially (WASM is single-threaded,
-    // but these are I/O-bound so interleaving via await is fine)
+    // Walk and bike handle 106 targets fine in a single request.
+    // Car ("auto") causes Valhalla FOSSGIS to 504 with 106 targets,
+    // so we batch it into chunks of 25.
     let walk = fetch_travel_times_matrix(origin_lat, origin_lng, &targets, "pedestrian").await;
     let bike = fetch_travel_times_matrix(origin_lat, origin_lng, &targets, "bicycle").await;
-    let car = fetch_travel_times_matrix(origin_lat, origin_lng, &targets, "auto").await;
+
+    // Batch car requests
+    let mut car_times_all: Vec<Option<u32>> = Vec::with_capacity(targets.len());
+    let chunk_size = 25;
+    for chunk in targets.chunks(chunk_size) {
+        match fetch_travel_times_matrix(origin_lat, origin_lng, chunk, "auto").await {
+            Ok(times) => car_times_all.extend(times),
+            Err(e) => {
+                log::warn!("Valhalla auto batch failed: {e}");
+                car_times_all.extend(std::iter::repeat(None).take(chunk.len()));
+            }
+        }
+    }
 
     let walk_times = walk.unwrap_or_default();
     let bike_times = bike.unwrap_or_default();
-    let car_times = car.unwrap_or_default();
+    let car_times = car_times_all;
 
     let mut result = HashMap::new();
     for (i, (school_id, _, _)) in school_coords.iter().enumerate() {
