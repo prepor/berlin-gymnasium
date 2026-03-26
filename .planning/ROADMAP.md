@@ -19,9 +19,8 @@ Decimal phases appear between their surrounding integers in numeric order.
 
 - [x] **Phase 1: Data Pipeline** - Reproducible Python pipeline producing a validated YAML corpus of all Berlin Gymnasien
 - [ ] **Phase 2: SPA Foundation and School Directory** - Leptos WASM SPA deployed to GitHub Pages with filterable school listing and detail pages
-- [x] **Phase 3: Interactive Map** - OpenStreetMap map with clickable pins synced to active filters (completed 2026-03-26)
+- [x] **Phase 3: Interactive Map** - OpenStreetMap map with clickable pins synced to active filters (completed 2005-03-26)
 - [ ] **Phase 4: Travel Time Routing** - User address input with travel time matrix (walk, bike, car) and sort-by-commute
-- [ ] **Phase 5: Comparison, Favorites, and Sharing** - Side-by-side comparison, favorites shortlist, and shareable permalinks
 
 ## Phase Details
 
@@ -90,27 +89,3 @@ Plans:
 - [x] 04-01-PLAN.md — Data model (TravelTimes, SortField extension), Cargo deps (gloo-net, wasm-bindgen-futures), Photon geocoding + Valhalla routing service modules
 - [x] 04-02-PLAN.md — AddressInput component, listing page integration (URL params, reactive signals, travel time fetch), SchoolCard travel row, sort controls extension, CSS
 **UI hint**: yes
-
-### Phase 5: Comparison, Favorites, and Sharing
-**Goal**: Parents can compare 2–3 schools side by side, save a favorites shortlist, and share school links
-**Depends on**: Phase 4
-**Requirements**: COMP-01, COMP-02, COMP-03
-**Success Criteria** (what must be TRUE):
-  1. A user can select 2–3 schools and view them in a side-by-side comparison layout showing all key fields
-  2. Each school has a shareable permalink URL that opens directly to its detail page
-  3. A user can save schools to a favorites shortlist that persists across browser sessions (localStorage) and can be reviewed at any time
-**Plans**: TBD
-**UI hint**: yes
-
-## Progress
-
-**Execution Order:**
-Phases execute in numeric order: 1 → 2 → 3 → 4 → 5
-
-| Phase | Plans Complete | Status | Completed |
-|-------|----------------|--------|-----------|
-| 1. Data Pipeline | 5/5 | Complete | 2026-03-26 |
-| 2. SPA Foundation and School Directory | 3/3 | Complete | 2026-03-26 |
-| 3. Interactive Map | 1/1 | Complete   | 2026-03-26 |
-| 4. Travel Time Routing | 0/2 | Planned | - |
-| 5. Comparison, Favorites, and Sharing | 0/TBD | Not started | - |
