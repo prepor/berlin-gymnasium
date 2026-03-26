@@ -4,11 +4,12 @@ use wasm_bindgen::JsCast;
 
 use crate::components::detail_section::DetailSection;
 use crate::components::rating_display::RatingDisplay;
+use crate::i18n::{profile_label, t, t_fmt, use_language, Language};
 use crate::models::School;
 use crate::state::AppState;
 
-/// Format an ISO date (YYYY-MM-DD) to German format (DD.MM.YYYY).
-fn format_german_date(iso: &str) -> String {
+/// Format an ISO date (YYYY-MM-DD) to DD.MM.YYYY.
+fn format_date(iso: &str) -> String {
     let parts: Vec<&str> = iso.split('-').collect();
     if parts.len() == 3 {
         format!("{}.{}.{}", parts[2], parts[1], parts[0])
@@ -38,18 +39,19 @@ fn profile_color(profile: &str) -> &'static str {
     }
 }
 
-/// Format a boolean Option as Ja/Nein/Keine Angabe.
-fn bool_display(val: Option<bool>) -> &'static str {
+/// Format a boolean Option as Yes/No/No data.
+fn bool_display(val: Option<bool>, lang: Language) -> &'static str {
     match val {
-        Some(true) => "Ja",
-        Some(false) => "Nein",
-        None => "Keine Angabe",
+        Some(true) => t("yes", lang),
+        Some(false) => t("no", lang),
+        None => t("no_data", lang),
     }
 }
 
 #[component]
 pub fn DetailPage(id: String) -> impl IntoView {
     let state = use_context::<AppState>().expect("AppState must be provided");
+    let lang = use_language();
 
     let school = move || {
         state.schools.iter().find(|s| s.school_id == id).cloned()
@@ -57,15 +59,16 @@ pub fn DetailPage(id: String) -> impl IntoView {
 
     view! {
         {move || {
+            let l = lang.get();
             match school() {
-                Some(s) => render_detail(s).into_any(),
+                Some(s) => render_detail(s, l).into_any(),
                 None => {
                     view! {
                         <main class="detail-page">
-                            <a href="#/" class="back-link">"← Zurueck zur Liste"</a>
-                            <h1>"Schule nicht gefunden"</h1>
-                            <p>"Die angeforderte Schule konnte nicht gefunden werden."</p>
-                            <a href="#/">"Zur Schuluebersicht"</a>
+                            <a href="#/" class="back-link">{t("back_to_list", l)}</a>
+                            <h1>{t("school_not_found", l)}</h1>
+                            <p>{t("school_not_found_desc", l)}</p>
+                            <a href="#/">{t("to_overview", l)}</a>
                         </main>
                     }
                         .into_any()
@@ -77,7 +80,7 @@ pub fn DetailPage(id: String) -> impl IntoView {
 
 /// Small Leaflet map showing the school's location.
 #[component]
-fn SchoolMap(lat: f64, lng: f64, name: String) -> impl IntoView {
+fn SchoolMap(lat: f64, lng: f64, _name: String) -> impl IntoView {
     let map_ref = NodeRef::<leptos::html::Div>::new();
 
     Effect::new(move |_| {
@@ -127,7 +130,7 @@ fn SchoolMap(lat: f64, lng: f64, name: String) -> impl IntoView {
     }
 }
 
-fn render_detail(s: School) -> impl IntoView {
+fn render_detail(s: School, lang: Language) -> impl IntoView {
     // Pre-compute values for sections
     let has_profiles_or_languages = !s.profile.is_empty() || !s.languages.is_empty();
     let has_admission = s.admission_requirements.is_some();
@@ -138,23 +141,25 @@ fn render_detail(s: School) -> impl IntoView {
     let address_display = s
         .address
         .clone()
-        .unwrap_or_else(|| "Keine Angabe".to_string());
+        .unwrap_or_else(|| t("no_data", lang).to_string());
     let traeger_label = match s.traeger.as_deref() {
-        Some("privat") => "Privat",
-        Some("oeffentlich") | Some("öffentlich") => "Oeffentlich",
-        Some(_) => "Unbekannt",
-        None => "Keine Angabe",
+        Some("privat") => t("private_school", lang),
+        Some("oeffentlich") | Some("öffentlich") => t("public_school", lang),
+        Some(_) => t("unknown", lang),
+        None => t("no_data", lang),
     };
     let student_teacher = match (s.student_count, s.teacher_count) {
-        (Some(st), Some(te)) => format!("{} Schueler / {} Lehrkraefte", st, te),
-        (Some(st), None) => format!("{} Schueler", st),
-        (None, Some(te)) => format!("{} Lehrkraefte", te),
-        (None, None) => "Keine Angabe".to_string(),
+        (Some(st), Some(te)) => {
+            t_fmt("n_students_n_teachers", lang, &[&st.to_string(), &te.to_string()])
+        }
+        (Some(st), None) => t_fmt("n_students", lang, &[&st.to_string()]),
+        (None, Some(te)) => t_fmt("n_teachers", lang, &[&te.to_string()]),
+        (None, None) => t("no_data", lang).to_string(),
     };
     let ganztag_label = match s.ganztag {
-        Some(true) => "Ganztagsschule",
-        Some(false) => "Halbtagsschule",
-        None => "Keine Angabe",
+        Some(true) => t("all_day_school", lang),
+        Some(false) => t("half_day_school", lang),
+        None => t("no_data", lang),
     };
 
     // Website
@@ -176,7 +181,7 @@ fn render_detail(s: School) -> impl IntoView {
         .iter()
         .map(|p| {
             let class = format!("profile-badge {}", profile_color(p));
-            let label = p.clone();
+            let label = profile_label(p, lang).to_string();
             view! { <span class={class}>{label}</span> }
         })
         .collect();
@@ -188,7 +193,7 @@ fn render_detail(s: School) -> impl IntoView {
         .map(|l| {
             let grade_text = l
                 .from_grade
-                .map(|g| format!("Klasse {}", g))
+                .map(|g| t_fmt("grade_n", lang, &[&g.to_string()]))
                 .unwrap_or_else(|| "-".to_string());
             let name = l.name.clone();
             view! {
@@ -205,30 +210,30 @@ fn render_detail(s: School) -> impl IntoView {
         let noten = adm
             .notendurchschnitt
             .map(|v| format!("{:.1}", v))
-            .unwrap_or_else(|| "Keine Angabe".to_string());
-        let ueberbucht = bool_display(adm.oversubscribed);
+            .unwrap_or_else(|| t("no_data", lang).to_string());
+        let ueberbucht = bool_display(adm.oversubscribed, lang);
         let auswahl = adm
             .selection_criteria
             .clone()
-            .unwrap_or_else(|| "Keine Angabe".to_string());
-        let probe = bool_display(adm.probeunterricht);
-        let aufnahme = bool_display(adm.entrance_test);
+            .unwrap_or_else(|| t("no_data", lang).to_string());
+        let probe = bool_display(adm.probeunterricht, lang);
+        let aufnahme = bool_display(adm.entrance_test, lang);
         let notes = adm.notes.clone();
 
         view! {
             <dl class="admission-list">
-                <dt>"Notendurchschnitt"</dt>
+                <dt>{t("grade_average", lang)}</dt>
                 <dd>{noten}</dd>
-                <dt>"Ueberbucht"</dt>
+                <dt>{t("oversubscribed", lang)}</dt>
                 <dd>{ueberbucht}</dd>
-                <dt>"Auswahlverfahren"</dt>
+                <dt>{t("selection_process", lang)}</dt>
                 <dd>{auswahl}</dd>
-                <dt>"Probeunterricht"</dt>
+                <dt>{t("trial_class", lang)}</dt>
                 <dd>{probe}</dd>
-                <dt>"Aufnahmetest"</dt>
+                <dt>{t("entrance_test", lang)}</dt>
                 <dd>{aufnahme}</dd>
                 {notes.map(|n| view! {
-                    <dt>"Hinweise"</dt>
+                    <dt>{t("notes", lang)}</dt>
                     <dd>{n}</dd>
                 })}
             </dl>
@@ -251,13 +256,16 @@ fn render_detail(s: School) -> impl IntoView {
 
     let abitur_view = s
         .abitur_average
-        .map(|avg| view! { <p class="abitur-average">"Abiturdurchschnitt: "{format!("{:.2}", avg)}</p> });
+        .map(|avg| {
+            let text = t_fmt("abitur_avg", lang, &[&format!("{:.2}", avg)]);
+            view! { <p class="abitur-average">{text}</p> }
+        });
 
     // Open day
     let open_day_view = s
         .open_day
         .as_ref()
-        .map(|d| format_german_date(d));
+        .map(|d| format_date(d));
 
     // Contact
     let phone_view = s.phone.clone().map(|p| {
@@ -273,21 +281,23 @@ fn render_detail(s: School) -> impl IntoView {
     });
 
     // Data provenance
-    let last_updated_display = format_german_date(&s.last_updated);
+    let last_updated_display = format_date(&s.last_updated);
     let sources_display = if s.data_sources.is_empty() {
-        "Keine Angabe".to_string()
+        t("no_data", lang).to_string()
     } else {
         s.data_sources.join(", ")
     };
     let completeness_display = s
         .completeness_score
-        .map(|c| format!("{:.0}% vollstaendig", c * 100.0))
-        .unwrap_or_else(|| "Keine Angabe".to_string());
+        .map(|c| t_fmt("pct_complete", lang, &[&format!("{:.0}", c * 100.0)]))
+        .unwrap_or_else(|| t("no_data", lang).to_string());
+
+    let no_data_label = t("no_data", lang);
 
     view! {
         <main class="detail-page">
             // Back navigation
-            <a href="javascript:history.back()" class="back-link">"← Zurueck zur Liste"</a>
+            <a href="javascript:history.back()" class="back-link">{t("back_to_list", lang)}</a>
 
             // Section 1: Hero
             <section class="detail-section detail-hero">
@@ -298,7 +308,7 @@ fn render_detail(s: School) -> impl IntoView {
                 <div class="detail-badges">
                     <span class="badge badge-traeger">{traeger_label}</span>
                     {grundstaendig.then(|| view! {
-                        <span class="badge badge-grundstaendig">"Grundstaendig (ab Klasse 5)"</span>
+                        <span class="badge badge-grundstaendig">{t("grundstaendig", lang)}</span>
                     })}
                     <span class="badge badge-ganztag">{ganztag_label}</span>
                 </div>
@@ -308,7 +318,7 @@ fn render_detail(s: School) -> impl IntoView {
                 <div class="detail-website-row">
                     {match website_view {
                         Some(v) => v.into_any(),
-                        None => view! { <span class="keine-angabe">"Keine Angabe"</span> }.into_any(),
+                        None => view! { <span class="keine-angabe">{no_data_label}</span> }.into_any(),
                     }}
                 </div>
             </section>
@@ -316,11 +326,11 @@ fn render_detail(s: School) -> impl IntoView {
             // Map
             {s.coords.as_ref().map(|c| {
                 let name = s.name.clone();
-                view! { <SchoolMap lat=c.lat lng=c.lng name=name /> }
+                view! { <SchoolMap lat=c.lat lng=c.lng _name=name /> }
             })}
 
             // Section 2: Profile & Languages
-            <DetailSection title="Profil & Sprachen" empty={!has_profiles_or_languages}>
+            <DetailSection title=t("profile_languages", lang) empty={!has_profiles_or_languages}>
                 <div class="profile-chips">
                     {profile_chips}
                 </div>
@@ -329,8 +339,8 @@ fn render_detail(s: School) -> impl IntoView {
                         <table class="languages-table">
                             <thead>
                                 <tr>
-                                    <th>"Sprache"</th>
-                                    <th>"Ab Klasse"</th>
+                                    <th>{t("language_col", lang)}</th>
+                                    <th>{t("from_grade", lang)}</th>
                                 </tr>
                             </thead>
                             <tbody>
@@ -344,49 +354,49 @@ fn render_detail(s: School) -> impl IntoView {
             </DetailSection>
 
             // Section 3: Admission Requirements
-            <DetailSection title="Aufnahmebedingungen" empty={!has_admission}>
+            <DetailSection title=t("admission", lang) empty={!has_admission}>
                 {admission_view}
             </DetailSection>
 
             // Section 4: Ratings
-            <DetailSection title="Bewertungen" empty={!has_ratings}>
+            <DetailSection title=t("ratings", lang) empty={!has_ratings}>
                 {rating_entries}
                 {abitur_view}
             </DetailSection>
 
             // Section 5: Open Day
-            <DetailSection title="Tag der offenen Tuer" empty={!has_open_day}>
+            <DetailSection title=t("open_day", lang) empty={!has_open_day}>
                 {open_day_view.map(|d| view! { <p>{d}</p> })}
             </DetailSection>
 
             // Section 6: Contact
-            <DetailSection title="Kontakt" empty={s.phone.is_none() && s.email.is_none()}>
+            <DetailSection title=t("contact", lang) empty={s.phone.is_none() && s.email.is_none()}>
                 <dl class="contact-list">
-                    <dt>"Telefon"</dt>
+                    <dt>{t("telephone", lang)}</dt>
                     <dd>
                         {match phone_view {
                             Some(v) => v.into_any(),
-                            None => view! { <span class="keine-angabe">"Keine Angabe"</span> }.into_any(),
+                            None => view! { <span class="keine-angabe">{no_data_label}</span> }.into_any(),
                         }}
                     </dd>
-                    <dt>"E-Mail"</dt>
+                    <dt>{t("email_label", lang)}</dt>
                     <dd>
                         {match email_view {
                             Some(v) => v.into_any(),
-                            None => view! { <span class="keine-angabe">"Keine Angabe"</span> }.into_any(),
+                            None => view! { <span class="keine-angabe">{no_data_label}</span> }.into_any(),
                         }}
                     </dd>
                 </dl>
             </DetailSection>
 
             // Section 7: Data Provenance
-            <DetailSection title="Datenherkunft" empty=false>
+            <DetailSection title=t("data_provenance", lang) empty=false>
                 <dl class="provenance-list">
-                    <dt>"Letzte Aktualisierung"</dt>
+                    <dt>{t("last_updated", lang)}</dt>
                     <dd>{last_updated_display}</dd>
-                    <dt>"Datenquellen"</dt>
+                    <dt>{t("data_sources", lang)}</dt>
                     <dd>{sources_display}</dd>
-                    <dt>"Vollstaendigkeit"</dt>
+                    <dt>{t("completeness_label", lang)}</dt>
                     <dd>{completeness_display}</dd>
                 </dl>
             </DetailSection>

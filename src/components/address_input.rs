@@ -2,6 +2,7 @@ use leptos::prelude::*;
 use leptos_use::use_debounce_fn_with_arg;
 use wasm_bindgen_futures::spawn_local;
 
+use crate::i18n::{t, use_language};
 use crate::services::geocoding::{geocode_address, PhotonFeature};
 
 /// Address input component with debounced geocoding and suggestion dropdown.
@@ -13,6 +14,7 @@ pub fn AddressInput(
     initial_coords: Signal<Option<(f64, f64)>>,
     travel_loading: Signal<bool>,
 ) -> impl IntoView {
+    let lang = use_language();
     let input_value = RwSignal::new(String::new());
     let suggestions = RwSignal::new(Vec::<PhotonFeature>::new());
     let show_suggestions = RwSignal::new(false);
@@ -63,7 +65,7 @@ pub fn AddressInput(
         debounced_for_input(val);
     };
 
-    // On form submit (Enter key or Suchen button): select first suggestion or trigger immediate geocode
+    // On form submit (Enter key or Search button): select first suggestion or trigger immediate geocode
     let on_submit = move |ev: leptos::ev::SubmitEvent| {
         ev.prevent_default();
         // Invalidate any pending debounced geocode
@@ -131,7 +133,7 @@ pub fn AddressInput(
                 <input
                     type="text"
                     class="address-input"
-                    placeholder="Adresse eingeben"
+                    placeholder=move || t("address_placeholder", lang.get())
                     prop:value=move || input_value.get()
                     on:input=on_input
                 />
@@ -171,12 +173,13 @@ pub fn AddressInput(
                 disabled=move || travel_loading.get() || is_loading.get()
             >
                 {move || {
+                    let l = lang.get();
                     if travel_loading.get() {
-                        view! { <span class="spinner"></span> " Berechne..." }.into_any()
+                        view! { <span class="spinner"></span> {t("calculating", l)} }.into_any()
                     } else if is_loading.get() {
-                        view! { <span class="spinner"></span> " Suche..." }.into_any()
+                        view! { <span class="spinner"></span> {t("searching", l)} }.into_any()
                     } else {
-                        view! { "Suchen" }.into_any()
+                        view! { {t("search", l)} }.into_any()
                     }
                 }}
             </button>
@@ -189,7 +192,7 @@ pub fn AddressInput(
                             class="address-clear-btn"
                             on:click=on_clear
                         >
-                            "Adresse loeschen"
+                            {t("clear_address", lang.get())}
                         </button>
                     })
                 } else {

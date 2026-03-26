@@ -2,6 +2,7 @@ use leptos::prelude::*;
 use wasm_bindgen::prelude::*;
 use wasm_bindgen::JsCast;
 
+use crate::i18n::{profile_label, t, use_language, Language};
 use crate::models::School;
 
 /// Determine the pin color based on the school's first profile.
@@ -17,25 +18,10 @@ fn profile_color_for_map(profiles: &[String]) -> &'static str {
     }
 }
 
-/// Human-readable German label for a profile type.
-/// Matches school_card.rs profile_label exactly.
-fn profile_label_for_map(profile: &str) -> &str {
-    match profile {
-        "MINT" => "MINT",
-        "bilingual_english" => "Bilingual EN",
-        "bilingual_french" => "Bilingual FR",
-        "altsprachlich" => "Altsprachlich",
-        "music" => "Musik",
-        "sports" => "Sport",
-        "other" => "Sonstiges",
-        _ => profile,
-    }
-}
-
 /// Build popup HTML for a school marker.
 /// Uses plain HTML strings (not Leptos components) since the popup lives
 /// inside Leaflet's DOM, outside Leptos's reactive tree.
-fn build_popup_html(school: &School) -> String {
+fn build_popup_html(school: &School, lang: Language) -> String {
     let mut html = String::new();
     html.push_str(&format!(
         "<div class='map-popup'><strong>{}</strong>",
@@ -47,14 +33,17 @@ fn build_popup_html(school: &School) -> String {
     ));
 
     if school.accepts_after_4th_grade == Some(true) {
-        html.push_str("<br><span class='popup-grundstaendig'>ab Klasse 5</span>");
+        html.push_str(&format!(
+            "<br><span class='popup-grundstaendig'>{}</span>",
+            t("from_grade_5", lang)
+        ));
     }
 
     if !school.profile.is_empty() {
         html.push_str("<div class='popup-profiles'>");
         for p in &school.profile {
             let color = profile_color_for_map(&[p.clone()]);
-            let label = profile_label_for_map(p);
+            let label = profile_label(p, lang);
             html.push_str(&format!(
                 "<span style='background:{};color:#fff;padding:1px 6px;\
                  border-radius:8px;font-size:0.7rem;margin:2px;display:inline-block'>{}</span>",
@@ -88,6 +77,7 @@ fn circle_marker_options(color: &str) -> JsValue {
 /// on an OpenStreetMap base layer. Pins are clickable with popup info.
 #[component]
 pub fn MapView(filtered_schools: Memo<Vec<School>>) -> impl IntoView {
+    let lang = use_language();
     let map_ref = NodeRef::<leptos::html::Div>::new();
 
     // Store the Leaflet Map instance (initialized once)
@@ -132,8 +122,9 @@ pub fn MapView(filtered_schools: Memo<Vec<School>>) -> impl IntoView {
         map_instance.set_value(Some(map));
     });
 
-    // Effect 2: Update markers whenever filtered_schools changes
+    // Effect 2: Update markers whenever filtered_schools or language changes
     Effect::new(move |_| {
+        let current_lang = lang.get();
         let Some(map) = map_instance.get_value() else {
             return;
         };
@@ -160,7 +151,7 @@ pub fn MapView(filtered_schools: Memo<Vec<School>>) -> impl IntoView {
             let marker = leaflet::CircleMarker::new_with_options(&latlng, &options);
 
             // Build popup HTML and bind to marker
-            let popup_html = build_popup_html(school);
+            let popup_html = build_popup_html(school, current_lang);
             let marker_as_layer: &leaflet::Layer = marker.unchecked_ref();
             marker_as_layer.bind_popup_with_options(
                 &JsValue::from_str(&popup_html),

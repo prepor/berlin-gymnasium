@@ -10,6 +10,7 @@ use crate::components::school_card::SchoolCard;
 use crate::components::sort_controls::SortControls;
 use crate::components::view_toggle::ViewToggle;
 use crate::hash_router::{navigate_hash, HashLocation};
+use crate::i18n::{t, t_fmt, use_language};
 use crate::models::{all_districts, all_languages, all_profiles, School, SortField, TravelTimes};
 use crate::pages::map::MapView;
 use crate::services::routing::fetch_all_travel_times;
@@ -159,7 +160,6 @@ fn filter_and_sort(
                 filtered.sort_by(|a, b| {
                     let ta = tt.get(&a.school_id).and_then(|t| t.walk_minutes);
                     let tb = tt.get(&b.school_id).and_then(|t| t.walk_minutes);
-                    // None sorts last (ascending)
                     match (ta, tb) {
                         (Some(x), Some(y)) => x.cmp(&y),
                         (Some(_), None) => std::cmp::Ordering::Less,
@@ -211,6 +211,7 @@ fn filter_and_sort(
 /// The main listing page showing all schools as filterable cards.
 #[component]
 pub fn ListingPage() -> impl IntoView {
+    let lang = use_language();
     let state = use_context::<AppState>().expect("AppState must be provided");
     let all_schools = state.schools.clone();
 
@@ -518,8 +519,8 @@ pub fn ListingPage() -> impl IntoView {
     view! {
         <main class="listing-page">
             <header class="listing-header">
-                <h1>"Berliner Gymnasien"</h1>
-                <p class="school-count">{move || format!("{} Schulen gefunden", school_count())}</p>
+                <h1>{move || t("berlin_gymnasien", lang.get())}</h1>
+                <p class="school-count">{move || t_fmt("n_schools_found", lang.get(), &[&school_count().to_string()])}</p>
                 <AddressInput
                     on_address_selected=on_address_selected
                     on_address_cleared=on_address_cleared
@@ -527,11 +528,12 @@ pub fn ListingPage() -> impl IntoView {
                     travel_loading=Signal::derive(move || travel_loading.get())
                 />
                 {move || {
+                    let l = lang.get();
                     if travel_loading.get() {
                         Some(view! {
                             <div class="travel-loading-banner">
                                 <span class="spinner spinner-lg"></span>
-                                <span>" Fahrzeiten werden berechnet..."</span>
+                                <span>{t("calculating_travel_times", l)}</span>
                             </div>
                         }.into_any())
                     } else {

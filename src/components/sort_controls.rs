@@ -1,5 +1,6 @@
 use leptos::prelude::*;
 
+use crate::i18n::{t, use_language};
 use crate::models::SortField;
 
 /// A dropdown control for sorting the school list.
@@ -9,12 +10,13 @@ pub fn SortControls(
     on_sort_change: Callback<SortField>,
     #[prop(optional)] has_travel_times: Option<Signal<bool>>,
 ) -> impl IntoView {
+    let lang = use_language();
     let selected_value = move || current_sort.get().to_query().to_string();
 
     view! {
         <div class="sort-controls">
             <label class="sort-label" for="sort-select">
-                "Sortieren:"
+                {move || t("sort_by", lang.get())}
             </label>
             <select
                 id="sort-select"
@@ -25,16 +27,17 @@ pub fn SortControls(
                 }
                 prop:value=selected_value
             >
-                <option value="name">"Name (A-Z)"</option>
-                <option value="district">"Bezirk"</option>
-                <option value="students">"Schueleranzahl"</option>
+                <option value="name">{move || t("name_az", lang.get())}</option>
+                <option value="district">{move || t("district", lang.get())}</option>
+                <option value="students">{move || t("student_count_sort", lang.get())}</option>
                 {move || {
                     let show = has_travel_times.map(|s| s.get()).unwrap_or(false);
+                    let l = lang.get();
                     if show {
                         Some(view! {
-                            <option value="travel_walk">"Fahrzeit (zu Fuss)"</option>
-                            <option value="travel_bike">"Fahrzeit (Fahrrad)"</option>
-                            <option value="travel_car">"Fahrzeit (Auto)"</option>
+                            <option value="travel_walk">{t("travel_walk_sort", l)}</option>
+                            <option value="travel_bike">{t("travel_bike_sort", l)}</option>
+                            <option value="travel_car">{t("travel_car_sort", l)}</option>
                         })
                     } else {
                         None
