@@ -1,5 +1,7 @@
 use leptos::prelude::*;
 use leptos_router::hooks::use_params_map;
+use wasm_bindgen::prelude::*;
+use wasm_bindgen::JsCast;
 
 use crate::components::detail_section::DetailSection;
 use crate::components::rating_display::RatingDisplay;
@@ -73,6 +75,58 @@ pub fn DetailPage() -> impl IntoView {
                 }
             }
         }}
+    }
+}
+
+/// Small Leaflet map showing the school's location.
+#[component]
+fn SchoolMap(lat: f64, lng: f64, name: String) -> impl IntoView {
+    let map_ref = NodeRef::<leptos::html::Div>::new();
+
+    Effect::new(move |_| {
+        if let Some(el) = map_ref.get() {
+            let html_el: &web_sys::HtmlElement = el.as_ref();
+
+            // Create map centered on school
+            let lat_lng = leaflet::LatLng::new(lat, lng);
+            let map_opts = leaflet::MapOptions::default();
+            let map = leaflet::Map::new_with_element(html_el, &map_opts)
+                .expect("Leaflet Map::new_with_element failed");
+            map.set_view(&lat_lng, 15.0);
+
+            // Add OSM tile layer
+            leaflet::TileLayer::new("https://tile.openstreetmap.org/{z}/{x}/{y}.png")
+                .add_to(&map);
+
+            // Add marker for the school
+            let marker_opts = js_sys::Object::new();
+            let _ = js_sys::Reflect::set(&marker_opts, &"radius".into(), &JsValue::from_f64(10.0));
+            let _ = js_sys::Reflect::set(&marker_opts, &"fillColor".into(), &JsValue::from_str("#3b82f6"));
+            let _ = js_sys::Reflect::set(&marker_opts, &"color".into(), &JsValue::from_str("#fff"));
+            let _ = js_sys::Reflect::set(&marker_opts, &"weight".into(), &JsValue::from_f64(2.0));
+            let _ = js_sys::Reflect::set(&marker_opts, &"fillOpacity".into(), &JsValue::from_f64(0.9));
+
+            let marker = leaflet::CircleMarker::new_with_options(&lat_lng, &marker_opts.into());
+            marker.add_to(&map);
+
+            // Invalidate size after render (Leaflet needs this when container size changes)
+            let map_clone = map.clone();
+            let cb = Closure::once(move || {
+                map_clone.invalidate_size(false);
+            });
+            web_sys::window()
+                .unwrap()
+                .set_timeout_with_callback_and_timeout_and_arguments_0(
+                    cb.as_ref().unchecked_ref(),
+                    100,
+                )
+                .ok();
+            cb.forget();
+        }
+    });
+
+    view! {
+        <div node_ref=map_ref class="detail-map" style="height: 250px; width: 100%; border-radius: 8px; margin: 1rem 0;"></div>
     }
 }
 
@@ -261,6 +315,12 @@ fn render_detail(s: School) -> impl IntoView {
                     }}
                 </div>
             </section>
+
+            // Map
+            {s.coords.as_ref().map(|c| {
+                let name = s.name.clone();
+                view! { <SchoolMap lat=c.lat lng=c.lng name=name /> }
+            })}
 
             // Section 2: Profile & Languages
             <DetailSection title="Profil & Sprachen" empty={!has_profiles_or_languages}>
