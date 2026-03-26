@@ -1,14 +1,19 @@
+use std::collections::HashMap;
+
 use leptos::prelude::*;
 use leptos_router::hooks::{use_navigate, use_query_map};
 use leptos_router::NavigateOptions;
+use wasm_bindgen_futures::spawn_local;
 
+use crate::components::address_input::AddressInput;
 use crate::components::filter_chips::FilterChips;
 use crate::components::filter_panel::FilterPanel;
 use crate::components::school_card::SchoolCard;
 use crate::components::sort_controls::SortControls;
 use crate::components::view_toggle::ViewToggle;
-use crate::models::{all_districts, all_languages, all_profiles, School, SortField};
+use crate::models::{all_districts, all_languages, all_profiles, School, SortField, TravelTimes};
 use crate::pages::map::MapView;
+use crate::services::routing::fetch_all_travel_times;
 use crate::state::AppState;
 
 /// Parse a comma-separated query param value into a Vec<String>.
@@ -38,6 +43,7 @@ fn build_query_string(
     ganztag: Option<bool>,
     sort: &SortField,
     view: &str,
+    from_coords: Option<(f64, f64)>,
 ) -> String {
     let mut params = Vec::new();
 
@@ -66,6 +72,9 @@ fn build_query_string(
     if view == "map" {
         params.push("view=map".to_string());
     }
+    if let Some((lat, lng)) = from_coords {
+        params.push(format!("from={:.6},{:.6}", lat, lng));
+    }
 
     params.join("&")
 }
@@ -90,6 +99,7 @@ fn filter_and_sort(
     languages: &[String],
     ganztag: Option<bool>,
     sort: &SortField,
+    travel_times: &Option<HashMap<String, TravelTimes>>,
 ) -> Vec<School> {
     let mut filtered: Vec<School> = schools
         .iter()
@@ -145,12 +155,54 @@ fn filter_and_sort(
                 .unwrap_or(0)
                 .cmp(&a.student_count.unwrap_or(0))
         }),
-        // Travel time sorts -- will be wired with actual data in Plan 04-02.
-        // For now, fall back to name sort when travel times are not yet available.
-        SortField::TravelTimeWalk
-        | SortField::TravelTimeBike
-        | SortField::TravelTimeCar => {
-            filtered.sort_by(|a, b| a.name.cmp(&b.name));
+        SortField::TravelTimeWalk => {
+            if let Some(tt) = travel_times {
+                filtered.sort_by(|a, b| {
+                    let ta = tt.get(&a.school_id).and_then(|t| t.walk_minutes);
+                    let tb = tt.get(&b.school_id).and_then(|t| t.walk_minutes);
+                    // None sorts last (ascending)
+                    match (ta, tb) {
+                        (Some(x), Some(y)) => x.cmp(&y),
+                        (Some(_), None) => std::cmp::Ordering::Less,
+                        (None, Some(_)) => std::cmp::Ordering::Greater,
+                        (None, None) => a.name.cmp(&b.name),
+                    }
+                });
+            } else {
+                filtered.sort_by(|a, b| a.name.cmp(&b.name));
+            }
+        }
+        SortField::TravelTimeBike => {
+            if let Some(tt) = travel_times {
+                filtered.sort_by(|a, b| {
+                    let ta = tt.get(&a.school_id).and_then(|t| t.bike_minutes);
+                    let tb = tt.get(&b.school_id).and_then(|t| t.bike_minutes);
+                    match (ta, tb) {
+                        (Some(x), Some(y)) => x.cmp(&y),
+                        (Some(_), None) => std::cmp::Ordering::Less,
+                        (None, Some(_)) => std::cmp::Ordering::Greater,
+                        (None, None) => a.name.cmp(&b.name),
+                    }
+                });
+            } else {
+                filtered.sort_by(|a, b| a.name.cmp(&b.name));
+            }
+        }
+        SortField::TravelTimeCar => {
+            if let Some(tt) = travel_times {
+                filtered.sort_by(|a, b| {
+                    let ta = tt.get(&a.school_id).and_then(|t| t.car_minutes);
+                    let tb = tt.get(&b.school_id).and_then(|t| t.car_minutes);
+                    match (ta, tb) {
+                        (Some(x), Some(y)) => x.cmp(&y),
+                        (Some(_), None) => std::cmp::Ordering::Less,
+                        (None, Some(_)) => std::cmp::Ordering::Greater,
+                        (None, None) => a.name.cmp(&b.name),
+                    }
+                });
+            } else {
+                filtered.sort_by(|a, b| a.name.cmp(&b.name));
+            }
         }
     }
 
@@ -200,6 +252,23 @@ pub fn ListingPage() -> impl IntoView {
         query.read().get("view").as_deref() == Some("map")
     });
 
+    // Parse address coords from URL query param (per D-07)
+    let address_coords = Signal::derive(move || {
+        query.read().get("from").and_then(|v| {
+            let parts: Vec<&str> = v.split(',').collect();
+            if parts.len() == 2 {
+                Some((parts[0].parse::<f64>().ok()?, parts[1].parse::<f64>().ok()?))
+            } else {
+                None
+            }
+        })
+    });
+
+    // Travel time state signals
+    let travel_times = RwSignal::new(Option::<HashMap<String, TravelTimes>>::None);
+    let travel_loading = RwSignal::new(false);
+    let travel_error = RwSignal::new(Option::<String>::None);
+
     // Count active filters
     let active_filter_count = Signal::derive(move || {
         let mut count = 0;
@@ -215,7 +284,7 @@ pub fn ListingPage() -> impl IntoView {
         count
     });
 
-    // Helper to navigate with updated filters (now includes view parameter)
+    // Helper to navigate with updated filters (includes view and from parameters)
     let nav = navigate.clone();
     let navigate_with_filters = move |districts: Vec<String>,
                                        profiles: Vec<String>,
@@ -223,8 +292,9 @@ pub fn ListingPage() -> impl IntoView {
                                        languages: Vec<String>,
                                        ganztag: Option<bool>,
                                        sort: SortField,
-                                       view: &str| {
-        let qs = build_query_string(&districts, &profiles, grundstaendig, &languages, ganztag, &sort, view);
+                                       view: &str,
+                                       from_coords: Option<(f64, f64)>| {
+        let qs = build_query_string(&districts, &profiles, grundstaendig, &languages, ganztag, &sort, view, from_coords);
         let path = if qs.is_empty() {
             "/".to_string()
         } else {
@@ -239,7 +309,7 @@ pub fn ListingPage() -> impl IntoView {
         );
     };
 
-    // Callbacks for filter changes — preserve current view mode
+    // Callbacks for filter changes -- preserve current view mode and address coords
     let nav_fn = navigate_with_filters.clone();
     let on_toggle_district = Callback::new(move |district: String| {
         let new_districts = toggle_in_list(&selected_districts.get(), &district);
@@ -252,6 +322,7 @@ pub fn ListingPage() -> impl IntoView {
             selected_ganztag.get(),
             current_sort.get(),
             view,
+            address_coords.get(),
         );
     });
 
@@ -267,6 +338,7 @@ pub fn ListingPage() -> impl IntoView {
             selected_ganztag.get(),
             current_sort.get(),
             view,
+            address_coords.get(),
         );
     });
 
@@ -281,6 +353,7 @@ pub fn ListingPage() -> impl IntoView {
             selected_ganztag.get(),
             current_sort.get(),
             view,
+            address_coords.get(),
         );
     });
 
@@ -296,6 +369,7 @@ pub fn ListingPage() -> impl IntoView {
             selected_ganztag.get(),
             current_sort.get(),
             view,
+            address_coords.get(),
         );
     });
 
@@ -310,6 +384,7 @@ pub fn ListingPage() -> impl IntoView {
             val,
             current_sort.get(),
             view,
+            address_coords.get(),
         );
     });
 
@@ -324,6 +399,7 @@ pub fn ListingPage() -> impl IntoView {
             selected_ganztag.get(),
             sort,
             view,
+            address_coords.get(),
         );
     });
 
@@ -338,10 +414,11 @@ pub fn ListingPage() -> impl IntoView {
             None,
             SortField::Name,
             view,
+            address_coords.get(),
         );
     });
 
-    // View toggle callback — switches between list and map views
+    // View toggle callback -- switches between list and map views
     let nav_fn = navigate_with_filters.clone();
     let on_toggle_view = Callback::new(move |_: ()| {
         let new_view = if is_map_view.get() { "" } else { "map" };
@@ -353,10 +430,85 @@ pub fn ListingPage() -> impl IntoView {
             selected_ganztag.get(),
             current_sort.get(),
             new_view,
+            address_coords.get(),
         );
     });
 
+    // Address selected callback: navigate with from= param
+    let nav_fn = navigate_with_filters.clone();
+    let on_address_selected = Callback::new(move |(lat, lng): (f64, f64)| {
+        let view = if is_map_view.get() { "map" } else { "" };
+        nav_fn(
+            selected_districts.get(),
+            selected_profiles.get(),
+            selected_grundstaendig.get(),
+            selected_languages.get(),
+            selected_ganztag.get(),
+            current_sort.get(),
+            view,
+            Some((lat, lng)),
+        );
+    });
+
+    // Address cleared callback: remove travel times and from= param
+    let nav_fn = navigate_with_filters.clone();
+    let on_address_cleared = Callback::new(move |_: ()| {
+        travel_times.set(None);
+        travel_loading.set(false);
+        travel_error.set(None);
+        let view = if is_map_view.get() { "map" } else { "" };
+        nav_fn(
+            selected_districts.get(),
+            selected_profiles.get(),
+            selected_grundstaendig.get(),
+            selected_languages.get(),
+            selected_ganztag.get(),
+            current_sort.get(),
+            view,
+            None,
+        );
+    });
+
+    // Effect: when address_coords changes, fetch travel times (per D-20, D-21)
+    let all_schools_for_effect = all_schools.clone();
+    Effect::new(move |_| {
+        if let Some((lat, lng)) = address_coords.get() {
+            travel_loading.set(true);
+            travel_error.set(None);
+
+            // Build school_coords vec: (school_id, lat, lng) for schools with coords
+            let school_coords: Vec<(String, f64, f64)> = all_schools_for_effect
+                .iter()
+                .filter_map(|s| {
+                    s.coords.as_ref().map(|c| (s.school_id.clone(), c.lat, c.lng))
+                })
+                .collect();
+
+            spawn_local(async move {
+                match fetch_all_travel_times(lat, lng, school_coords).await {
+                    Ok(times) => {
+                        travel_times.set(Some(times));
+                        travel_error.set(None);
+                    }
+                    Err(e) => {
+                        // Per D-14: graceful degradation
+                        travel_error.set(Some(e));
+                        travel_times.set(None);
+                    }
+                }
+                travel_loading.set(false);
+            });
+        } else {
+            travel_times.set(None);
+            travel_loading.set(false);
+        }
+    });
+
+    // Signal for whether travel times are available (for sort controls)
+    let has_travel_times = Signal::derive(move || travel_times.get().is_some());
+
     // Filtered + sorted schools memo
+    // Per Pitfall 5: travel_times.get() MUST be read inside the Memo closure
     let schools_for_memo = all_schools.clone();
     let filtered_schools = Memo::new(move |_| {
         filter_and_sort(
@@ -367,6 +519,7 @@ pub fn ListingPage() -> impl IntoView {
             &selected_languages.get(),
             selected_ganztag.get(),
             &current_sort.get(),
+            &travel_times.get(),
         )
     });
 
@@ -377,9 +530,19 @@ pub fn ListingPage() -> impl IntoView {
             <header class="listing-header">
                 <h1>"Berliner Gymnasien"</h1>
                 <p class="school-count">{move || format!("{} Schulen gefunden", school_count())}</p>
+                <AddressInput
+                    on_address_selected=on_address_selected
+                    on_address_cleared=on_address_cleared
+                    initial_coords=Signal::derive(move || address_coords.get())
+                />
+                {move || travel_error.get().map(|e| view! { <p class="travel-error">{e}</p> })}
                 <div class="header-controls">
                     <FilterChips active_count=active_filter_count on_clear_all=on_clear_all />
-                    <SortControls current_sort=current_sort on_sort_change=on_sort_change />
+                    <SortControls
+                        current_sort=current_sort
+                        on_sort_change=on_sort_change
+                        has_travel_times=has_travel_times
+                    />
                     <ViewToggle is_map_view=is_map_view on_toggle=on_toggle_view />
                 </div>
             </header>
@@ -414,7 +577,14 @@ pub fn ListingPage() -> impl IntoView {
                         key=|s| s.school_id.clone()
                         let:school
                     >
-                        <SchoolCard school=school />
+                        {
+                            let school_id = school.school_id.clone();
+                            let tt = Signal::derive(move || {
+                                travel_times.get().and_then(|m| m.get(&school_id).cloned())
+                            });
+                            let loading = Signal::derive(move || travel_loading.get());
+                            view! { <SchoolCard school=school travel_times=tt travel_loading=loading /> }
+                        }
                     </For>
                 </section>
             </div>

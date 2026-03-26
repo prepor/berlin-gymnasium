@@ -7,6 +7,7 @@ use crate::models::SortField;
 pub fn SortControls(
     current_sort: Signal<SortField>,
     on_sort_change: Callback<SortField>,
+    #[prop(optional)] has_travel_times: Option<Signal<bool>>,
 ) -> impl IntoView {
     let selected_value = move || current_sort.get().to_query().to_string();
 
@@ -27,6 +28,18 @@ pub fn SortControls(
                 <option value="name">"Name (A-Z)"</option>
                 <option value="district">"Bezirk"</option>
                 <option value="students">"Schueleranzahl"</option>
+                {move || {
+                    let show = has_travel_times.map(|s| s.get()).unwrap_or(false);
+                    if show {
+                        Some(view! {
+                            <option value="travel_walk">"Fahrzeit (zu Fuss)"</option>
+                            <option value="travel_bike">"Fahrzeit (Fahrrad)"</option>
+                            <option value="travel_car">"Fahrzeit (Auto)"</option>
+                        })
+                    } else {
+                        None
+                    }
+                }}
             </select>
         </div>
     }

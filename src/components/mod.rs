@@ -1,4 +1,5 @@
 // Components module.
+pub mod address_input;
 pub mod detail_section;
 pub mod filter_chips;
 pub mod filter_panel;
