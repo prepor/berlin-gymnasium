@@ -29,6 +29,7 @@ pub fn SchoolCard(
     let district = school.district.clone();
     let profiles = school.profile.clone();
     let grundstaendig = school.accepts_after_4th_grade == Some(true);
+    let thumbnail = school.image_urls.first().cloned();
     let student_count = school.student_count;
     let teacher_count = school.teacher_count;
     let completeness = school.completeness_score.unwrap_or(0.0);
@@ -48,6 +49,11 @@ pub fn SchoolCard(
 
     view! {
         <a class="school-card" href=href>
+            {thumbnail.map(|url| view! {
+                <div class="card-thumbnail">
+                    <img src=url alt="" loading="lazy" />
+                </div>
+            })}
             <h3 class="card-title">{name}</h3>
             <p class="card-district">{district}</p>
 

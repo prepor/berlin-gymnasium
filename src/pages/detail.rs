@@ -136,6 +136,7 @@ fn render_detail(s: School, lang: Language) -> impl IntoView {
     let has_admission = s.admission_requirements.is_some();
     let has_ratings = !s.ratings.is_empty() || s.abitur_average.is_some();
     let has_open_day = s.open_day.is_some();
+    let has_photos = !s.image_urls.is_empty();
 
     // Hero section values
     let address_display = s
@@ -322,6 +323,21 @@ fn render_detail(s: School, lang: Language) -> impl IntoView {
                     }}
                 </div>
             </section>
+
+            // Photos
+            {has_photos.then(|| {
+                let photos: Vec<_> = s.image_urls.iter().map(|url| {
+                    let src = url.clone();
+                    view! {
+                        <img class="detail-photo" src=src alt="" loading="lazy" />
+                    }
+                }).collect();
+                view! {
+                    <div class="detail-photos">
+                        {photos}
+                    </div>
+                }
+            })}
 
             // Map
             {s.coords.as_ref().map(|c| {
