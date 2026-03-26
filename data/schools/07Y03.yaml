@@ -1,0 +1,23 @@
+school_id: 07Y03
+name: Rheingau-Gymnasium
+district: Tempelhof-Schöneberg
+last_updated: '2026-03-26'
+address: Schwalbacher Straße 3, 12161 Berlin
+coords:
+  lat: 52.47027097
+  lng: 13.32235953
+website: https://www.rheingau-gymnasium.de
+phone: +49 30 902777920
+email: sekretariat@rheingau-gymnasium.de
+traeger: öffentlich
+profile: []
+languages: []
+image_urls: []
+social_media: {}
+ratings: {}
+completeness_score: 0.353
+field_confidence: {}
+data_sources:
+- wfs_berlin
+unverified_fields: []
+_pinned_fields: []

@@ -1,0 +1,63 @@
+school_id: 04Y03
+name: Sophie-Charlotte-Gymnasium
+district: Charlottenburg-Wilmersdorf
+last_updated: '2026-03-26'
+address: Sybelstraße 2, 10629 Berlin
+coords:
+  lat: 52.50218823
+  lng: 13.31245311
+website: http://www.scgberlin.de
+phone: +49 30 902928600
+email: sekretariat@scg.schule.berlin.de
+traeger: öffentlich
+accepts_after_4th_grade: false
+profile:
+- bilingual_english
+- MINT
+- music
+ganztag: false
+languages:
+- name: Englisch
+  from_grade: 5
+- name: Französisch
+  from_grade: 7
+- name: Spanisch
+  from_grade: 7
+- name: Latein
+  from_grade: 9
+- name: Spanisch
+  from_grade: 9
+admission_requirements:
+  selection_criteria: Förderprognose Durchschnittsnote used in oversubscription situations. Public Gymnasium; standard 
+    Berlin admission rules apply.
+  probeunterricht: true
+  entrance_test: false
+  notes: Public Gymnasium; starts at grade 7. Five-stream school. Choice between Regelzug and bilingual Deutsch-Englisch
+    stream. Reinforced English instruction in grades 7 and 8 for all students. MINT subjects offered in bilingual 
+    profile. Music Leistungskurs available. Chor and Orchester AGs. English from grade 5 per schulen.de data (likely 
+    reflects SESB/bilingual entry — official Berlin data lists no grade-5 start for this school; grades 7 entry 
+    confirmed).
+image_urls: []
+social_media: {}
+ratings: {}
+completeness_score: 0.647
+field_confidence:
+  accepts_after_4th_grade: high
+  profile: high
+  languages: medium
+  admission_requirements: medium
+data_sources:
+- wfs_berlin
+- agent_research
+unverified_fields:
+- social_media
+- unverified_fields
+- ganztag
+- accepts_after_4th_grade
+- ratings
+- field_confidence
+- image_urls
+- admission_requirements
+- languages
+- profile
+_pinned_fields: []

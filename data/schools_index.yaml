@@ -1,0 +1,1378 @@
+- school_id: 01P03
+  name: Jüdisches Gymnasium Moses Mendelssohn
+  district: Mitte
+  address: Große Hamburger Straße 27, 10115 Berlin
+  coords:
+    lat: 52.52497627
+    lng: 13.3993558
+  website: https://jgmm.de
+  phone: +49 30 726265700
+  email: info@jgmm.de
+  traeger: privat
+  student_count:
+  teacher_count:
+- school_id: 01P06
+  name: Canisius-Kolleg
+  district: Mitte
+  address: Tiergartenstraße 30, 10785 Berlin
+  coords:
+    lat: 52.50927364
+    lng: 13.3549969
+  website: https://canisius.de
+  phone: +49 30 26481105
+  email: schulleitung@canisius.de
+  traeger: privat
+  student_count:
+  teacher_count:
+- school_id: 01P18
+  name: Bilinguale Schule Phorms Berlin Mitte
+  district: Mitte
+  address: Ackerstraße 76, 13355 Berlin
+  coords:
+    lat: 52.53854465
+    lng: 13.38439977
+  website: https://berlin-mitte.phorms.de
+  phone: +49 30 318737100
+  email: berlin-mitte@phorms.de
+  traeger: privat
+  student_count:
+  teacher_count:
+- school_id: 01P22
+  name: Berlin Cosmopolitan School
+  district: Mitte
+  address: Rückerstraße 9, 10119 Berlin
+  coords:
+    lat: 52.52774654
+    lng: 13.40669387
+  website: https://www.cosmopolitanschool.de
+  phone: +49 30 688332324
+  email: mail@cosmopolitanschool.de
+  traeger: privat
+  student_count:
+  teacher_count:
+- school_id: 01Y02
+  name: John-Lennon-Gymnasium
+  district: Mitte
+  address: Zehdenicker Straße 17, 10119 Berlin
+  coords:
+    lat: 52.53082149
+    lng: 13.40435932
+  website: https://www.jlgym-berlin.de
+  phone: +49 30 40500110
+  email: sekretariat@jlgym-berlin.de
+  traeger: öffentlich
+  student_count:
+  teacher_count:
+- school_id: 01Y04
+  name: Musikgymnasium Carl Philipp Emanuel Bach
+  district: Mitte
+  address: Rheinsberger Straße 4, 10115 Berlin
+  coords:
+    lat: 52.53663054
+    lng: 13.39550961
+  website: https://musikgymnasium-berlin.de
+  phone: +49 30 901891530
+  email: sekretariat@musikgymnasium-bach.de
+  traeger: öffentlich
+  student_count:
+  teacher_count:
+- school_id: 01Y07
+  name: Französisches Gymnasium
+  district: Mitte
+  address: Derfflingerstraße 7, 10785 Berlin
+  coords:
+    lat: 52.50326557
+    lng: 13.35550118
+  website: https://www.fg-berlin.eu
+  phone: +49 30 25758910
+  email: sekretariat@fg-berlin.eu
+  traeger: öffentlich
+  student_count:
+  teacher_count:
+- school_id: 01Y08
+  name: Lessing-Gymnasium
+  district: Mitte
+  address: Schöningstraße 17, 13349 Berlin
+  coords:
+    lat: 52.55731337
+    lng: 13.34392567
+  website: https://lessing-gymnasium-berlin.de
+  phone: +49 30 45798510
+  email: post@lessing-gymnasium-berlin.de
+  traeger: öffentlich
+  student_count:
+  teacher_count:
+- school_id: 01Y09
+  name: Diesterweg-Gymnasium
+  district: Mitte
+  address: Böttgerstraße 2, 13357 Berlin
+  coords:
+    lat: 52.55017213
+    lng: 13.37850062
+  website: https://www.dwgym.berlin
+  phone: +49 30 46309620
+  email: sekretariat@dwgym.berlin
+  traeger: öffentlich
+  student_count:
+  teacher_count:
+- school_id: 01Y11
+  name: Max-Planck-Gymnasium
+  district: Mitte
+  address: Singerstraße 8A, 10179 Berlin
+  coords:
+    lat: 52.51648617
+    lng: 13.4233428
+  website: http://www.mpg-berlin.de
+  phone: +49 30 847118830
+  email: sekretariat@mpg-berlin.de
+  traeger: öffentlich
+  student_count:
+  teacher_count:
+- school_id: 01Y12
+  name: Gymnasium Tiergarten
+  district: Mitte
+  address: Altonaer Straße 26, 10555 Berlin
+  coords:
+    lat: 52.51989945
+    lng: 13.33974699
+  website: https://www.gymnasium-tiergarten.de
+  phone: +49 30 398009710
+  email: sekretariat@gymnasium-tiergarten.de
+  traeger: öffentlich
+  student_count:
+  teacher_count:
+- school_id: 01Y13
+  name: Rosalind-Franklin-Gymnasium
+  district: Mitte
+  address: Turmstraße 75, 10551 Berlin
+  coords:
+    lat: 52.52667866
+    lng: 13.33391746
+  website: https://gymnasium-13.de
+  phone: +49 30 9018 38210
+  email: schulleitung@gymnasium-13.de
+  traeger: öffentlich
+  student_count:
+  teacher_count:
+- school_id: 02Y01
+  name: Andreas-Gymnasium
+  district: Friedrichshain-Kreuzberg
+  address: Koppenstraße 76, 10243 Berlin
+  coords:
+    lat: 52.51401448
+    lng: 13.43471566
+  website: https://www.andreas-schule.org
+  phone: +49 30 29369020
+  email: sekretariat@andreas.schule.berlin.de
+  traeger: öffentlich
+  student_count:
+  teacher_count:
+- school_id: 02Y03
+  name: Heinrich-Hertz-Gymnasium
+  district: Friedrichshain-Kreuzberg
+  address: Rigaer Straße 81, 10247 Berlin
+  coords:
+    lat: 52.51689044
+    lng: 13.4630907
+  website: https://hhgym.de
+  phone: +49 30 42262080
+  email: sekretariat@hhgym.de
+  traeger: öffentlich
+  student_count:
+  teacher_count:
+- school_id: 02Y04
+  name: Georg-Friedrich-Händel-Gymnasium
+  district: Friedrichshain-Kreuzberg
+  address: Frankfurter Allee 6A, 10247 Berlin
+  coords:
+    lat: 52.51482011
+    lng: 13.45572491
+  website: http://www.haendelgym.de
+  phone: +49 30 2250279011
+  email: sekretariat@haendelgym.de
+  traeger: öffentlich
+  student_count:
+  teacher_count:
+- school_id: 02Y05
+  name: Dathe-Gymnasium
+  district: Friedrichshain-Kreuzberg
+  address: Helsingforser Straße 11, 10243 Berlin
+  coords:
+    lat: 52.51024808
+    lng: 13.44541821
+  website: https://www.dathe-gymnasium.de
+  phone: +49 30 2936063
+  email: sek@dathe-gymnasium.de
+  traeger: öffentlich
+  student_count:
+  teacher_count:
+- school_id: 02Y06
+  name: Leibniz-Gymnasium
+  district: Friedrichshain-Kreuzberg
+  address: Schleiermacherstraße 23, 10961 Berlin
+  coords:
+    lat: 52.48992527
+    lng: 13.39748568
+  website: http://www.leibnizschule-berlin.de
+  phone: +49 30 50586711
+  email: sekretariat@leibniz-gymnasium.berlin
+  traeger: öffentlich
+  student_count:
+  teacher_count:
+- school_id: 02Y07
+  name: Robert-Koch-Gymnasium
+  district: Friedrichshain-Kreuzberg
+  address: Dieffenbachstraße 60, 10967 Berlin
+  coords:
+    lat: 52.4929895
+    lng: 13.41571354
+  website: https://www.robert-koch-gymnasium.berlin
+  phone: +49 30 50585731
+  email: sekretariat@robert-koch-gymnasium.berlin
+  traeger: öffentlich
+  student_count:
+  teacher_count:
+- school_id: 02Y08
+  name: Hermann-Hesse-Gymnasium
+  district: Friedrichshain-Kreuzberg
+  address: Böckhstraße 16, 10967 Berlin
+  coords:
+    lat: 52.49346618
+    lng: 13.41921994
+  website: https://hesse-kreuzberg.de
+  phone: +49 30 666434090
+  email: kontakt@hhg-kreuzberg.de
+  traeger: öffentlich
+  student_count:
+  teacher_count:
+- school_id: 03P10
+  name: Katholische Theresienschule (Gymnasium)
+  district: Pankow
+  address: Behaimstraße 29, 13086 Berlin
+  coords:
+    lat: 52.55048164
+    lng: 13.44656148
+  website: http://www.Theresienschule.de
+  phone: +49 30 9246425
+  email: sekretariat@ksth.schulerzbistum.de
+  traeger: privat
+  student_count:
+  teacher_count:
+- school_id: 03Y03
+  name: Käthe-Kollwitz-Gymnasium
+  district: Pankow
+  address: Dunckerstraße 65, 10439 Berlin
+  coords:
+    lat: 52.5456103
+    lng: 13.42330498
+  website: https://www.kaethe-kollwitz-gymnasium.de
+  phone: +49 30 4447671
+  email: sekretariat@kkos.net
+  traeger: öffentlich
+  student_count:
+  teacher_count:
+- school_id: 03Y04
+  name: Heinrich-Schliemann-Gymnasium
+  district: Pankow
+  address: Dunckerstraße 64, 10439 Berlin
+  coords:
+    lat: 52.54635939
+    lng: 13.42399047
+  website: http://www.hsg-berlin.de
+  phone: +49 30 4468950
+  email: sekretariat@hsg-berlin.eu
+  traeger: öffentlich
+  student_count:
+  teacher_count:
+- school_id: 03Y08
+  name: Carl-von-Ossietzky-Gymnasium
+  district: Pankow
+  address: Görschstraße 42, 13187 Berlin
+  coords:
+    lat: 52.56643073
+    lng: 13.40051588
+  website: https://cvo.berlin
+  phone: +49 30 49400390
+  email: sekretariat@cvo.berlin
+  traeger: öffentlich
+  student_count:
+  teacher_count:
+- school_id: 03Y10
+  name: Rosa-Luxemburg-Gymnasium
+  district: Pankow
+  address: Kissingenstraße 12, 13189 Berlin
+  coords:
+    lat: 52.56676388
+    lng: 13.41956433
+  website: https://www.rosa-luxemburg-gymnasium.de
+  phone: +49 30 91607730
+  email: sekretariat@rlg.berlin
+  traeger: öffentlich
+  student_count:
+  teacher_count:
+- school_id: 03Y13
+  name: Felix-Mendelssohn-Bartholdy-Gymnasium
+  district: Pankow
+  address: Pasteurstraße 7, 10407 Berlin
+  coords:
+    lat: 52.53409226
+    lng: 13.43246826
+  website: http://www.fmbg-berlin.de
+  phone: +49 30 420827400
+  email: sekretariat@fmbg.schule.berlin.de
+  traeger: öffentlich
+  student_count:
+  teacher_count:
+- school_id: 03Y14
+  name: Primo-Levi-Gymnasium
+  district: Pankow
+  address: Pistoriusstraße 133, 13086 Berlin
+  coords:
+    lat: 52.55130979
+    lng: 13.45425964
+  website: http://www.plg-berlin.de
+  phone: +49 30 9290168111
+  email: sekretariat@plg-berlin.de
+  traeger: öffentlich
+  student_count:
+  teacher_count:
+- school_id: 03Y15
+  name: Max-Delbrück-Gymnasium
+  district: Pankow
+  address: Kuckhoffstraße 2, 13156 Berlin
+  coords:
+    lat: 52.58381839
+    lng: 13.40211322
+  website: https://max-delbrueck-gymnasium.de
+  phone: +49 30 47596720
+  email: sekretariat@max-delbrueck-gymnasium.de
+  traeger: öffentlich
+  student_count:
+  teacher_count:
+- school_id: 03Y16
+  name: Robert-Havemann-Gymnasium
+  district: Pankow
+  address: Achillesstraße 79, 13125 Berlin
+  coords:
+    lat: 52.61611368
+    lng: 13.49277081
+  website: http://www.robert-havemann-gymnasium.de
+  phone: +49 30 94878511
+  email: 03Y16@03Y16.schule.berlin.de
+  traeger: öffentlich
+  student_count:
+  teacher_count:
+- school_id: 03Y17
+  name: Inge-Deutschkron-Gymnasium
+  district: Pankow
+  address: Kopenhagener Straße 83, 13158 Berlin
+  coords:
+    lat: 52.58210713
+    lng: 13.36410433
+  website: https://www.idg.berlin
+  phone: +49 30 405771260
+  email: 03Y17@03Y17.schule.berlin.de
+  traeger: öffentlich
+  student_count:
+  teacher_count:
+- school_id: 04P04
+  name: Katholische Schule Liebfrauen (Gymnasium)
+  district: Charlottenburg-Wilmersdorf
+  address: Ahornallee 33, 14050 Berlin
+  coords:
+    lat: 52.5112153
+    lng: 13.27503868
+  website: https://ksliebfrauen.de
+  phone: +49 30 30613013
+  email: sekretariat@ksl.schulerzbistum.de
+  traeger: privat
+  student_count:
+  teacher_count:
+- school_id: 04P11
+  name: Evangelisches Gymnasium zum Grauen Kloster
+  district: Charlottenburg-Wilmersdorf
+  address: Salzbrunner Straße 41, 14193 Berlin
+  coords:
+    lat: 52.48535876
+    lng: 13.29310859
+  website: http://www.graues-kloster.de
+  phone: +49 30 8254011
+  email: sekretariat@graues-kloster.de
+  traeger: privat
+  student_count:
+  teacher_count:
+- school_id: 04P24
+  name: Moser-Schule - Schweizer Gymnasium
+  district: Charlottenburg-Wilmersdorf
+  address: Badenallee 31, 14052 Berlin
+  coords:
+    lat: 52.50962923
+    lng: 13.26317629
+  website: http://www.moserschule.de
+  phone: +49 30 30838282
+  email: info@moserschule.de
+  traeger: privat
+  student_count:
+  teacher_count:
+- school_id: 04P35
+  name: Mentora Gymnasium (KEIN Schulbetrieb)
+  district: Charlottenburg-Wilmersdorf
+  address: Salzufer 6, 10587 Berlin
+  coords:
+    lat: 52.51591261
+    lng: 13.32798593
+  website: https://www.mentora-gymnasium.de
+  phone: +49 30 810580838
+  email: info@mentora-gymnasium.de
+  traeger: privat
+  student_count:
+  teacher_count:
+- school_id: 04P47
+  name: Privates Europa-Gymnasium Berlin
+  district: Charlottenburg-Wilmersdorf
+  address: Haubachstraße 8, 10585 Berlin
+  coords:
+    lat: 52.51575785
+    lng: 13.30554122
+  website: https://www.europa-gymnasium.eu
+  phone: +49 30 74073717
+  email: info@europa-gymnasium.eu
+  traeger: privat
+  student_count:
+  teacher_count:
+- school_id: 04Y01
+  name: Schiller-Gymnasium
+  district: Charlottenburg-Wilmersdorf
+  address: Schillerstraße 125, 10625 Berlin
+  coords:
+    lat: 52.5110362
+    lng: 13.32153667
+  website: http://www.sgym.de
+  phone: +49 30 902925920
+  email: sekretariat@sgym.schule.berlin.de
+  traeger: öffentlich
+  student_count:
+  teacher_count:
+- school_id: 04Y02
+  name: Wald-Gymnasium
+  district: Charlottenburg-Wilmersdorf
+  address: Waldschulallee 95, 14055 Berlin
+  coords:
+    lat: 52.50339457
+    lng: 13.25558944
+  website: http://www.waldgymnasium.de
+  phone: +49 30 902926930
+  email: sekretariat@waldgymnasium.schule.berlin.de
+  traeger: öffentlich
+  student_count:
+  teacher_count:
+- school_id: 04Y03
+  name: Sophie-Charlotte-Gymnasium
+  district: Charlottenburg-Wilmersdorf
+  address: Sybelstraße 2, 10629 Berlin
+  coords:
+    lat: 52.50218823
+    lng: 13.31245311
+  website: http://www.scgberlin.de
+  phone: +49 30 902928600
+  email: sekretariat@scg.schule.berlin.de
+  traeger: öffentlich
+  student_count:
+  teacher_count:
+- school_id: 04Y04
+  name: Gottfried-Keller-Gymnasium
+  district: Charlottenburg-Wilmersdorf
+  address: Olbersstraße 38, 10589 Berlin
+  coords:
+    lat: 52.52891604
+    lng: 13.30225132
+  website: http://www.gks-berlin.de
+  phone: +49 30 902927310
+  email: kontakt@gks-berlin.de
+  traeger: öffentlich
+  student_count:
+  teacher_count:
+- school_id: 04Y05
+  name: Herder-Gymnasium
+  district: Charlottenburg-Wilmersdorf
+  address: Westendallee 45, 14052 Berlin
+  coords:
+    lat: 52.51058094
+    lng: 13.25843487
+  website: https://www.herder-gymnasium.eu
+  phone: +49 30 902927800
+  email: sekretariat@herder-gymnasium.eu
+  traeger: öffentlich
+  student_count:
+  teacher_count:
+- school_id: 04Y06
+  name: Heinz-Berggruen-Gymnasium
+  district: Charlottenburg-Wilmersdorf
+  address: Bayernallee 4, 14052 Berlin
+  coords:
+    lat: 52.51143503
+    lng: 13.26675685
+  website: http://hbgym.de
+  phone: +49 30 902928702
+  email: info@hbgym.de
+  traeger: öffentlich
+  student_count:
+  teacher_count:
+- school_id: 04Y07
+  name: Friedrich-Ebert-Gymnasium
+  district: Charlottenburg-Wilmersdorf
+  address: Blissestraße 22, 10713 Berlin
+  coords:
+    lat: 52.4841801
+    lng: 13.31948862
+  website: https://feoberlin.de
+  phone: +49 30 8974510
+  email: bock@feo-berlin.de
+  traeger: öffentlich
+  student_count:
+  teacher_count:
+- school_id: 04Y08
+  name: Hildegard-Wegscheider-Gymnasium
+  district: Charlottenburg-Wilmersdorf
+  address: Lassenstraße 16, 14193 Berlin
+  coords:
+    lat: 52.48511672
+    lng: 13.27629423
+  website: https://www.wegscheider-gymnasium.de
+  phone: +49 30 897454210
+  email: wegscheider-gymnasium@gmx.de
+  traeger: öffentlich
+  student_count:
+  teacher_count:
+- school_id: 04Y09
+  name: Walther-Rathenau-Gymnasium
+  district: Charlottenburg-Wilmersdorf
+  address: Herbertstraße 2, 14193 Berlin
+  coords:
+    lat: 52.4913927
+    lng: 13.28118075
+  website: https://www.wrg-berlin.de
+  phone: +49 30 8902990
+  email: sekretariat@wrg.schule.berlin.de
+  traeger: öffentlich
+  student_count:
+  teacher_count:
+- school_id: 04Y10
+  name: Marie-Curie-Gymnasium
+  district: Charlottenburg-Wilmersdorf
+  address: Weimarische Straße 21, 10715 Berlin
+  coords:
+    lat: 52.48041647
+    lng: 13.32456537
+  website: http://www.mcg-berlin.de
+  phone: +49 30 8599497110
+  email: schulleitung@mcg-berlin.de
+  traeger: öffentlich
+  student_count:
+  teacher_count:
+- school_id: 04Y11
+  name: Goethe-Gymnasium
+  district: Charlottenburg-Wilmersdorf
+  address: Gasteiner Straße 23, 10717 Berlin
+  coords:
+    lat: 52.48727872
+    lng: 13.32165932
+  website: https://goethe-gymnasium.berlin
+  phone: +49 30 8649960
+  email: info.goethe-gymnasium@t-online.de
+  traeger: öffentlich
+  student_count:
+  teacher_count:
+- school_id: 05Y01
+  name: Freiherr-vom-Stein-Gymnasium
+  district: Spandau
+  address: Galenstraße 40, 13597 Berlin
+  coords:
+    lat: 52.54054006
+    lng: 13.1999306
+  website: http://www.steingymnasium.de
+  phone: +49 30 3309653
+  email: freiherr-vom-stein-gymnasium@t-online.de
+  traeger: öffentlich
+  student_count:
+  teacher_count:
+- school_id: 05Y02
+  name: Kant-Gymnasium
+  district: Spandau
+  address: Bismarckstraße 54, 13585 Berlin
+  coords:
+    lat: 52.54301213
+    lng: 13.20054617
+  website: http://www.Kant-gymnasium-berlin.de
+  phone: +49 30 3539480
+  email: info@kant-gym.de
+  traeger: öffentlich
+  student_count:
+  teacher_count:
+- school_id: 05Y03
+  name: Hans-Carossa-Gymnasium
+  district: Spandau
+  address: Am Landschaftspark Gatow 40, 14089 Berlin
+  coords:
+    lat: 52.47250597
+    lng: 13.13019456
+  website: http://www.hcg-berlin.de
+  phone: +49 30 36996511
+  email: Sekretariat@05Y03.schule.berlin.de
+  traeger: öffentlich
+  student_count:
+  teacher_count:
+- school_id: 05Y04
+  name: Carl-Friedrich-von-Siemens-Gymnasium
+  district: Spandau
+  address: Jungfernheideweg 79, 13629 Berlin
+  coords:
+    lat: 52.54589501
+    lng: 13.2712618
+  website: http://www.cfvsiemens.de
+  phone: +49 30 34505680
+  email: mail@cfvsiemens.de
+  traeger: öffentlich
+  student_count:
+  teacher_count:
+- school_id: 05Y05
+  name: Lily-Braun-Gymnasium
+  district: Spandau
+  address: Münsingerstraße 2, 13597 Berlin
+  coords:
+    lat: 52.53827059
+    lng: 13.19921684
+  website: http://www.lily-braun-gymnasium.de
+  phone: +49 30 3389040
+  email: e-post@lily-braun-gymnasium.de
+  traeger: öffentlich
+  student_count:
+  teacher_count:
+- school_id: 06Y01
+  name: Schadow-Gymnasium
+  district: Steglitz-Zehlendorf
+  address: Beuckestraße 27, 14163 Berlin
+  coords:
+    lat: 52.43154058
+    lng: 13.25480398
+  website: https://schadow-gymnasium-berlin.de
+  phone: +49 30 902995463
+  email: sekretariat@schadow-gymnasium-berlin.de
+  traeger: öffentlich
+  student_count:
+  teacher_count:
+- school_id: 06Y02
+  name: Droste-Hülshoff-Gymnasium
+  district: Steglitz-Zehlendorf
+  address: Schönower Straße 8, 14165 Berlin
+  coords:
+    lat: 52.42881267
+    lng: 13.2571858
+  website: https://droste-berlin.de
+  phone: +49 30 84508466
+  email: schulbuero@droste-berlin.de
+  traeger: öffentlich
+  student_count:
+  teacher_count:
+- school_id: 06Y03
+  name: Arndt-Gymnasium Dahlem
+  district: Steglitz-Zehlendorf
+  address: Königin-Luise-Straße 80, 14195 Berlin
+  coords:
+    lat: 52.45910067
+    lng: 13.28026188
+  website: https://arndt-gymnasium.de
+  phone: +49 30 8315052
+  email: sekretariat@arndt-gymnasium.de
+  traeger: öffentlich
+  student_count:
+  teacher_count:
+- school_id: 06Y04
+  name: Dreilinden-Gymnasium
+  district: Steglitz-Zehlendorf
+  address: Dreilindenstraße 49, 14109 Berlin
+  coords:
+    lat: 52.42055395
+    lng: 13.18781142
+  website: http://www.dreilinden-gymnasium.de
+  phone: +49 30 8031087
+  email: sekretariat@dreilinden-gymnasium.de
+  traeger: öffentlich
+  student_count:
+  teacher_count:
+- school_id: 06Y05
+  name: Werner-von-Siemens-Gymnasium
+  district: Steglitz-Zehlendorf
+  address: Beskidenstraße 3, 14129 Berlin
+  coords:
+    lat: 52.43201166
+    lng: 13.21160027
+  website: http://www.siemens-gymnasium-berlin.de
+  phone: +49 30 8039066
+  email: leitung@siemens-gymnasium-berlin.de
+  traeger: öffentlich
+  student_count:
+  teacher_count:
+- school_id: 06Y06
+  name: Beethoven-Gymnasium
+  district: Steglitz-Zehlendorf
+  address: Barbarastraße 9, 12249 Berlin
+  coords:
+    lat: 52.4325648
+    lng: 13.34221524
+  website: http://www.beethoven-gymnasium.eu
+  phone: +49 30 76890530
+  email: Leitung@beethoven-gymnasium.eu
+  traeger: öffentlich
+  student_count:
+  teacher_count:
+- school_id: 06Y07
+  name: Paulsen-Gymnasium
+  district: Steglitz-Zehlendorf
+  address: Gritznerstraße 57, 12163 Berlin
+  coords:
+    lat: 52.46159977
+    lng: 13.31426203
+  website: https://wp.paulsen-gymnasium.de
+  phone: +49 30 79742530
+  email: paulsengymnasium@pg-berlin.de
+  traeger: öffentlich
+  student_count:
+  teacher_count:
+- school_id: 06Y08
+  name: Hermann-Ehlers-Gymnasium
+  district: Steglitz-Zehlendorf
+  address: Elisenstraße 3, 12169 Berlin
+  coords:
+    lat: 52.45293976
+    lng: 13.33370005
+  website: https://hermann-ehlers-schule.de
+  phone: +49 30 902992353
+  email: sekretariat@heg.schule.berlin.de
+  traeger: öffentlich
+  student_count:
+  teacher_count:
+- school_id: 06Y09
+  name: Fichtenberg-Oberschule
+  district: Steglitz-Zehlendorf
+  address: Rothenburgstraße 18, 12165 Berlin
+  coords:
+    lat: 52.45396647
+    lng: 13.31314661
+  website: http://fichtenberg-oberschule.net
+  phone: +49 30 902992354
+  email: info@fichtenberg-oberschule.net
+  traeger: öffentlich
+  student_count:
+  teacher_count:
+- school_id: 06Y10
+  name: Lilienthal-Gymnasium
+  district: Steglitz-Zehlendorf
+  address: Ringstraße 2, 12203 Berlin
+  coords:
+    lat: 52.43576317
+    lng: 13.31248411
+  website: http://www.lilienthal-gymnasium-berlin.de
+  phone: +49 30 84415360
+  email: sekretariat@lilienthal-gymnasium-berlin.de
+  traeger: öffentlich
+  student_count:
+  teacher_count:
+- school_id: 06Y11
+  name: Goethe-Gymnasium Lichterfelde
+  district: Steglitz-Zehlendorf
+  address: Drakestraße 72, 12205 Berlin
+  coords:
+    lat: 52.43458062
+    lng: 13.30542975
+  website: https://www.goethe-gymnasium-lichterfelde.de
+  phone: +49 30 84416730
+  email: sekretariat@goethe-lichterfelde.schule.berlin.de
+  traeger: öffentlich
+  student_count:
+  teacher_count:
+- school_id: 06Y12
+  name: Willi-Graf-Gymnasium
+  district: Steglitz-Zehlendorf
+  address: Ostpreußendamm 166, 12207 Berlin
+  coords:
+    lat: 52.43471609
+    lng: 13.32110213
+  website: https://willi-graf-gymnasium.de
+  phone: +49 30 7729004
+  email: sekretariat@willi-graf-os.de
+  traeger: öffentlich
+  student_count:
+  teacher_count:
+- school_id: 06Y13
+  name: Gymnasium Steglitz
+  district: Steglitz-Zehlendorf
+  address: Heesestraße 15, 12169 Berlin
+  coords:
+    lat: 52.45689995
+    lng: 13.32660048
+  website: http://www.gymnasiumsteglitz.de
+  phone: +49 30 93951937
+  email: sekretariat@gymnasiumsteglitz.de
+  traeger: öffentlich
+  student_count:
+  teacher_count:
+- school_id: 07Y01
+  name: Robert-Blum-Gymnasium
+  district: Tempelhof-Schöneberg
+  address: Kolonnenstraße 21, 10829 Berlin
+  coords:
+    lat: 52.48493259
+    lng: 13.36470953
+  website: http://www.robert-blum-schule.de
+  phone: +49 30 902777172
+  email: sekretariat@robert-blum-schule.de
+  traeger: öffentlich
+  student_count:
+  teacher_count:
+- school_id: 07Y02
+  name: Rückert-Gymnasium
+  district: Tempelhof-Schöneberg
+  address: Mettestraße 8, 10825 Berlin
+  coords:
+    lat: 52.47972182
+    lng: 13.3380396
+  website: http://www.rueckert-gymnasium.berlin
+  phone: +49 30 902777173
+  email: schulleitung@rueckert-gymnasium-berlin.de
+  traeger: öffentlich
+  student_count:
+  teacher_count:
+- school_id: 07Y03
+  name: Rheingau-Gymnasium
+  district: Tempelhof-Schöneberg
+  address: Schwalbacher Straße 3, 12161 Berlin
+  coords:
+    lat: 52.47027097
+    lng: 13.32235953
+  website: https://www.rheingau-gymnasium.de
+  phone: +49 30 902777920
+  email: sekretariat@rheingau-gymnasium.de
+  traeger: öffentlich
+  student_count:
+  teacher_count:
+- school_id: 07Y04
+  name: Paul-Natorp-Gymnasium
+  district: Tempelhof-Schöneberg
+  address: Goßlerstraße 13, 12161 Berlin
+  coords:
+    lat: 52.46931135
+    lng: 13.32424371
+  website: https://www.natorp-gymnasium.de
+  phone: +49 30 902777921
+  email: sekretariat@natorp-gymnasium.de
+  traeger: öffentlich
+  student_count:
+  teacher_count:
+- school_id: 07Y05
+  name: Luise-Henriette-Gymnasium
+  district: Tempelhof-Schöneberg
+  address: Kurfürstenstraße 53, 12105 Berlin
+  coords:
+    lat: 52.44800053
+    lng: 13.38374965
+  website: http://www.luise-henriette-berlin.de
+  phone: +49 30 902772678
+  email: sekretariat@l-h-g.de
+  traeger: öffentlich
+  student_count:
+  teacher_count:
+- school_id: 07Y06
+  name: Askanisches Gymnasium
+  district: Tempelhof-Schöneberg
+  address: Kaiserin-Augusta-Straße 19, 12103 Berlin
+  coords:
+    lat: 52.45987633
+    lng: 13.38015299
+  website: http://www.askanisches-gymnasium.de
+  phone: +49 30 902772679
+  email: sekretariat@askanisches-gymnasium.de
+  traeger: öffentlich
+  student_count:
+  teacher_count:
+- school_id: 07Y07
+  name: Eckener-Gymnasium
+  district: Tempelhof-Schöneberg
+  address: Kaiserstraße 17, 12105 Berlin
+  coords:
+    lat: 52.44510283
+    lng: 13.38027866
+  website: https://eckener-gymnasium.de
+  phone: +49 30 902777448
+  email: info@eckener-gymnasium.de
+  traeger: öffentlich
+  student_count:
+  teacher_count:
+- school_id: 07Y08
+  name: Ulrich-von-Hutten-Gymnasium
+  district: Tempelhof-Schöneberg
+  address: Rehagener Straße 35, 12307 Berlin
+  coords:
+    lat: 52.38611311
+    lng: 13.40347162
+  website: https://www.ulrich-von-hutten-gymnasium.de
+  phone: +49 30 902778244
+  email: uvh@uvh-online.de
+  traeger: öffentlich
+  student_count:
+  teacher_count:
+- school_id: 07Y09
+  name: Georg-Büchner-Gymnasium
+  district: Tempelhof-Schöneberg
+  address: Lichtenrader Damm 224, 12305 Berlin
+  coords:
+    lat: 52.39260517
+    lng: 13.4054977
+  website: http://www.gbgonline.de
+  phone: +49 30 902778208
+  email: sekretariat@gbgonline.de
+  traeger: öffentlich
+  student_count:
+  teacher_count:
+- school_id: 08Y01
+  name: Albrecht-Dürer-Gymnasium
+  district: Neukölln
+  address: Emser Straße 132, 12051 Berlin
+  coords:
+    lat: 52.46943808
+    lng: 13.43917024
+  website: https://albrecht-duerer-gymnasium.de
+  phone: +49 30 221994310
+  email: 08Y01@08Y01.schule.berlin.de
+  traeger: öffentlich
+  student_count:
+  teacher_count:
+- school_id: 08Y02
+  name: Albert-Schweitzer-Gymnasium
+  district: Neukölln
+  address: Karl-Marx-Straße 14, 12043 Berlin
+  coords:
+    lat: 52.48471786
+    lng: 13.42636868
+  website: https://www.die-schweitzer.de
+  phone: +49 30 225009830
+  email: sekretariat@08Y02.schule.berlin.de
+  traeger: öffentlich
+  student_count:
+  teacher_count:
+- school_id: 08Y03
+  name: Albert-Einstein-Gymnasium
+  district: Neukölln
+  address: Parchimer Allee 109, 12359 Berlin
+  coords:
+    lat: 52.44542849
+    lng: 13.44232786
+  website: https://www.aeo.de
+  phone: +49 30 6009020
+  email: sekretariat@aeo.de
+  traeger: öffentlich
+  student_count:
+  teacher_count:
+- school_id: 08Y04
+  name: Ernst-Abbe-Gymnasium
+  district: Neukölln
+  address: Sonnenallee 79, 12045 Berlin
+  coords:
+    lat: 52.48344383
+    lng: 13.4370162
+  website: https://www.ernst-abbe.de
+  phone: +49 30 225013030
+  email: sekretariat@ernst-abbe.schule.berlin.de
+  traeger: öffentlich
+  student_count:
+  teacher_count:
+- school_id: 08Y05
+  name: Leonardo-da-Vinci-Gymnasium
+  district: Neukölln
+  address: Christoph-Ruden-Straße 3, 12349 Berlin
+  coords:
+    lat: 52.41874809
+    lng: 13.43571715
+  website: https://www.leonardo-da-vinci-gymnasium.de
+  phone: +49 30 742010
+  email: sekretariat@08y05.schule.berlin.de
+  traeger: öffentlich
+  student_count:
+  teacher_count:
+- school_id: 08Y06
+  name: Hannah-Arendt-Gymnasium
+  district: Neukölln
+  address: Elfriede-Kuhr-Straße 17, 12355 Berlin
+  coords:
+    lat: 52.40385189
+    lng: 13.50815021
+  website: https://www.hag-berlin.net
+  phone: +49 30 6097180
+  email: sekretariat@hag-berlin.net
+  traeger: öffentlich
+  student_count:
+  teacher_count:
+- school_id: 09P07
+  name: Evangelische Schule Köpenick (Gymnasium)
+  district: Treptow-Köpenick
+  address: Grüne Trift 169, 12557 Berlin
+  coords:
+    lat: 52.42338498
+    lng: 13.59231709
+  website: http://www.ev-schule-koepenick.de
+  phone: +49 30 32532401
+  email: leitung@ev-schule-koepenick.de
+  traeger: privat
+  student_count:
+  teacher_count:
+- school_id: 09Y03
+  name: Archenhold-Gymnasium
+  district: Treptow-Köpenick
+  address: Rudower Straße 7, 12439 Berlin
+  coords:
+    lat: 52.45136959
+    lng: 13.52289161
+  website: https://archenhold.de
+  phone: +49 30 6360195
+  email: sekretariat@archenhold.de
+  traeger: öffentlich
+  student_count:
+  teacher_count:
+- school_id: 09Y04
+  name: Anne-Frank-Gymnasium
+  district: Treptow-Köpenick
+  address: Uranusstraße 15, 12524 Berlin
+  coords:
+    lat: 52.3999325
+    lng: 13.52454113
+  website: http://www.anne-frank-schule-berlin.de
+  phone: +49 30 51653360
+  email: sekretariat@afg.schule.berlin.de
+  traeger: öffentlich
+  student_count:
+  teacher_count:
+- school_id: 09Y05
+  name: Alexander-von-Humboldt-Gymnasium
+  district: Treptow-Köpenick
+  address: Oberspreestraße 173, 12555 Berlin
+  coords:
+    lat: 52.44519832
+    lng: 13.56718901
+  website: https://www.avh.berlin
+  phone: +49 30 6519788
+  email: sekretariat@avh.berlin
+  traeger: öffentlich
+  student_count:
+  teacher_count:
+- school_id: 09Y06
+  name: Gerhart-Hauptmann-Gymnasium
+  district: Treptow-Köpenick
+  address: Bruno-Wille-Straße 37, 12587 Berlin
+  coords:
+    lat: 52.4522751
+    lng: 13.63272842
+  website: http://www.ghs-berlin.de
+  phone: +49 30 6451839
+  email: sekretariat@ghs-berlin.de
+  traeger: öffentlich
+  student_count:
+  teacher_count:
+- school_id: 09Y10
+  name: Gebrüder-Montgolfier-Gymnasium
+  district: Treptow-Köpenick
+  address: Ellernweg 20, 12487 Berlin
+  coords:
+    lat: 52.44831039
+    lng: 13.50361842
+  website: https://www.gemont.de
+  phone: +49 30 6316677
+  email: sekretariat@gemont.de
+  traeger: öffentlich
+  student_count:
+  teacher_count:
+- school_id: 09Y11
+  name: Emmy-Noether-Gymnasium
+  district: Treptow-Köpenick
+  address: Pablo-Neruda-Straße 6, 12559 Berlin
+  coords:
+    lat: 52.4427715
+    lng: 13.58878445
+  website: http://www.noether-gymnasium.de
+  phone: +49 30 6542160
+  email: sekretariat@noether-gymnasium.de
+  traeger: öffentlich
+  student_count:
+  teacher_count:
+- school_id: 09Y12
+  name: 12. Schule (Gymnasium)
+  district: Treptow-Köpenick
+  address: Kiefholzstraße 274, 12437 Berlin
+  coords:
+    lat: 52.46797294
+    lng: 13.4839236
+  website: https://gymnasium09y12.de
+  phone: +49 30 5329141
+  email: schulleitung@gymnasium09y12.de
+  traeger: öffentlich
+  student_count:
+  teacher_count:
+- school_id: 10Y01
+  name: Tagore-Gymnasium
+  district: Marzahn-Hellersdorf
+  address: Sella-Hasse-Straße 25, 12687 Berlin
+  coords:
+    lat: 52.55301457
+    lng: 13.55674062
+  website: https://www.tagore-gymnasium.de
+  phone: +49 30 9321069
+  email: schulleitung@tagore-gymnasium.de
+  traeger: öffentlich
+  student_count:
+  teacher_count:
+- school_id: 10Y02
+  name: Otto-Nagel-Gymnasium
+  district: Marzahn-Hellersdorf
+  address: Schulstraße 11, 12683 Berlin
+  coords:
+    lat: 52.51185563
+    lng: 13.54956907
+  website: https://ong.berlin
+  phone: +49 30 5143864
+  email: sekretariat@ong.berlin
+  traeger: öffentlich
+  student_count:
+  teacher_count:
+- school_id: 10Y03
+  name: Wilhelm-von-Siemens-Gymnasium
+  district: Marzahn-Hellersdorf
+  address: Allee der Kosmonauten 134, 12683 Berlin
+  coords:
+    lat: 52.53329175
+    lng: 13.55074401
+  website: https://www.wvsiemens-berlin.de/
+  phone: +49 30 549791340
+  email: schulleitung@wvsg.schule.berlin.de
+  traeger: öffentlich
+  student_count:
+  teacher_count:
+- school_id: 10Y08
+  name: Sartre-Gymnasium
+  district: Marzahn-Hellersdorf
+  address: Kyritzer Straße 103, 12629 Berlin
+  coords:
+    lat: 52.54256235
+    lng: 13.59066014
+  website: http://sartre-gymnasium.de
+  phone: +49 30 99281416
+  email: sekretariat@sartre-gymnasium.de
+  traeger: öffentlich
+  student_count:
+  teacher_count:
+- school_id: 10Y11
+  name: Melanchthon-Gymnasium
+  district: Marzahn-Hellersdorf
+  address: Adele-Sandrock-Straße 73, 12627 Berlin
+  coords:
+    lat: 52.534338
+    lng: 13.61868764
+  website: http://www.melanchthon-schule-berlin.de
+  phone: +49 30 9918008
+  email: spieler@melanchthon-schule-berlin.de
+  traeger: öffentlich
+  student_count:
+  teacher_count:
+- school_id: 10Y12
+  name: 12. Schule (Gymnasium)
+  district: Marzahn-Hellersdorf
+  address: Erich-Kästner-Straße 52, 12619 Berlin
+  coords:
+    lat: 52.52654408
+    lng: 13.59276064
+  website: https://adw.berlin
+  phone: +49 30 30323310
+  email: 10Y12@10Y12.schule.berlin.de
+  traeger: öffentlich
+  student_count:
+  teacher_count:
+- school_id: 11Y02
+  name: Johann-Gottfried-Herder-Gymnasium
+  district: Lichtenberg
+  address: Franz-Jacob-Straße 8, 10369 Berlin
+  coords:
+    lat: 52.52698384
+    lng: 13.46705025
+  website: http://www.jgherder.de
+  phone: +49 30 97609567
+  email: sekretariat@jgherder.de
+  traeger: öffentlich
+  student_count:
+  teacher_count:
+- school_id: 11Y05
+  name: Hans-und-Hilde-Coppi-Gymnasium
+  district: Lichtenberg
+  address: Römerweg 30, 10318 Berlin
+  coords:
+    lat: 52.49188012
+    lng: 13.52323275
+  website: http://www.coppi-gym.de
+  phone: +49 30 5098116
+  email: sekretariat@coppi-gym.de
+  traeger: öffentlich
+  student_count:
+  teacher_count:
+- school_id: 11Y09
+  name: Barnim-Gymnasium
+  district: Lichtenberg
+  address: Ahrensfelder Chaussee 41, 13057 Berlin
+  coords:
+    lat: 52.56916654
+    lng: 13.5493047
+  website: https://www.barnim-gymnasium.net
+  phone: +49 30 9366690
+  email: kontakt@barnim-gym.de
+  traeger: öffentlich
+  student_count:
+  teacher_count:
+- school_id: 11Y10
+  name: Manfred-von-Ardenne-Gymnasium
+  district: Lichtenberg
+  address: Werneuchener Straße 27, 13055 Berlin
+  coords:
+    lat: 52.54176101
+    lng: 13.49306446
+  website: https://www.ardenne-gymnasium.de
+  phone: +49 30 9865002
+  email: info@ardenne-gymnasium.de
+  traeger: öffentlich
+  student_count:
+  teacher_count:
+- school_id: 11Y11
+  name: Immanuel-Kant-Gymnasium
+  district: Lichtenberg
+  address: Lückstraße 63, 10317 Berlin
+  coords:
+    lat: 52.50198795
+    lng: 13.48941876
+  website: http://www.kant-gymnasium.de
+  phone: +49 30 5139748
+  email: 'sekretariat@kant-gymnasium.de '
+  traeger: öffentlich
+  student_count:
+  teacher_count:
+- school_id: 11Y12
+  name: 12. Schule (Gymnasium)
+  district: Lichtenberg
+  address: Allee der Kosmonauten 20, 10315 Berlin
+  coords:
+    lat: 52.52438752
+    lng: 13.51201281
+  website: https://gym.adkosmos.eu
+  phone: +49 30 2639114000
+  email: 11Y12@11Y12.schule.berlin.de
+  traeger: öffentlich
+  student_count:
+  teacher_count:
+- school_id: 12Y01
+  name: Friedrich-Engels-Gymnasium
+  district: Reinickendorf
+  address: Emmentaler Straße 67, 13407 Berlin
+  coords:
+    lat: 52.56938341
+    lng: 13.35718518
+  website: https://www.feg.berlin
+  phone: +49 30 4955056
+  email: 12Y01@12Y01.schule.berlin.de
+  traeger: öffentlich
+  student_count:
+  teacher_count:
+- school_id: 12Y02
+  name: Europäisches Gymnasium Bertha-von-Suttner
+  district: Reinickendorf
+  address: Reginhardstraße 172, 13409 Berlin
+  coords:
+    lat: 52.57148115
+    lng: 13.36863767
+  website: https://www.bertha-von-suttner.de
+  phone: +49 30 4916057
+  email: 12Y02@12Y02.schule.berlin.de
+  traeger: öffentlich
+  student_count:
+  teacher_count:
+- school_id: 12Y03
+  name: Humboldt-Gymnasium
+  district: Reinickendorf
+  address: Hatzfeldtallee 2, 13509 Berlin
+  coords:
+    lat: 52.59183867
+    lng: 13.28863774
+  website: https://www.humboldtschule-berlin.de
+  phone: +49 30 4337008
+  email: 12Y03@12Y03.schule.berlin.de
+  traeger: öffentlich
+  student_count:
+  teacher_count:
+- school_id: 12Y04
+  name: Gabriele-von-Bülow-Gymnasium
+  district: Reinickendorf
+  address: Tile-Brügge-Weg 63, 13509 Berlin
+  coords:
+    lat: 52.59214042
+    lng: 13.296532
+  website: https://www.gvb-berlin.de
+  phone: +49 30 210052460
+  email: 12Y04@12Y04.schule.berlin.de
+  traeger: öffentlich
+  student_count:
+  teacher_count:
+- school_id: 12Y05
+  name: Georg-Herwegh-Gymnasium
+  district: Reinickendorf
+  address: Fellbacher Straße 18, 13467 Berlin
+  coords:
+    lat: 52.61680983
+    lng: 13.30277428
+  website: http://www.herwegh-gymnasium.de
+  phone: +49 30 4042070
+  email: mail@herwegh-gymnasium.de
+  traeger: öffentlich
+  student_count:
+  teacher_count:
+- school_id: 12Y06
+  name: Schulfarm Insel Scharfenberg
+  district: Reinickendorf
+  address: Schwarzer Weg 101, 13505 Berlin
+  coords:
+    lat: 52.57499733
+    lng: 13.24739402
+  website: http://www.insel-scharfenberg.de
+  phone: +49 30 430944330
+  email: sekretariat@berlin-sis.de
+  traeger: öffentlich
+  student_count:
+  teacher_count:
+- school_id: 12Y07
+  name: Romain-Rolland-Gymnasium
+  district: Reinickendorf
+  address: Place Molière 4, 13469 Berlin
+  coords:
+    lat: 52.59951059
+    lng: 13.31761282
+  website: https://www.romain-rolland-gymnasium.eu
+  phone: +49 30 4140170
+  email: 12Y07@12Y07.schule.berlin.de
+  traeger: öffentlich
+  student_count:
+  teacher_count:
+- school_id: 12Y08
+  name: Thomas-Mann-Gymnasium
+  district: Reinickendorf
+  address: Königshorster Straße 10, 13439 Berlin
+  coords:
+    lat: 52.59860825
+    lng: 13.35177877
+  website: https://www.tmgberlin.de
+  phone: +49 30 414763670
+  email: 12Y08@12Y08.schule.berlin.de
+  traeger: öffentlich
+  student_count:
+  teacher_count:

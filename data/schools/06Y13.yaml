@@ -1,0 +1,32 @@
+school_id: 06Y13
+name: Gymnasium Steglitz
+district: Steglitz-Zehlendorf
+last_updated: '2026-03-26'
+address: Heesestraße 15, 12169 Berlin
+coords:
+  lat: 52.45689995
+  lng: 13.32660048
+website: http://www.gymnasiumsteglitz.de
+phone: +49 30 93951937
+email: sekretariat@gymnasiumsteglitz.de
+traeger: öffentlich
+profile: []
+languages: []
+admission_requirements:
+  notes: No data retrieved in this research session.
+image_urls: []
+social_media: {}
+ratings: {}
+completeness_score: 0.412
+field_confidence: {}
+data_sources:
+- wfs_berlin
+- agent_research
+unverified_fields:
+- unverified_fields
+- social_media
+- ratings
+- field_confidence
+- image_urls
+- admission_requirements
+_pinned_fields: []

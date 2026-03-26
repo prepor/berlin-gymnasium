@@ -1,0 +1,60 @@
+school_id: 01P06
+name: Canisius-Kolleg
+district: Mitte
+last_updated: '2026-03-26'
+address: Tiergartenstraße 30, 10785 Berlin
+coords:
+  lat: 52.50927364
+  lng: 13.3549969
+website: https://canisius.de
+phone: +49 30 26481105
+email: schulleitung@canisius.de
+traeger: privat
+accepts_after_4th_grade: true
+profile:
+- altsprachlich
+- other
+ganztag: true
+languages:
+- name: Englisch
+  from_grade: 5
+- name: Latein
+  from_grade: 5
+- name: Französisch
+  from_grade: 7
+- name: Griechisch
+admission_requirements:
+  oversubscribed: true
+  selection_criteria: Entrance test (Aufnahmetest) combined with primary school reports. Aufnahmekonferenz advises 
+    rector on admissions (typically late February/early March). Lateral entrants above grade 5 accepted if Latein was 
+    taught from grade 5 at previous school.
+  probeunterricht: false
+  entrance_test: true
+  notes: Jesuit Catholic school (christlich-humanistische Prägung). Gym starts at grade 5 since 1925. Also has 
+    integrated Sekundarschule 'Pedro Arrupe' from grade 9. Large oversubscription, separate selection conference 
+    required.
+image_urls: []
+social_media: {}
+ratings: {}
+completeness_score: 0.647
+field_confidence:
+  accepts_after_4th_grade: high
+  profile: high
+  languages: medium
+  ganztag: high
+  admission_requirements: high
+data_sources:
+- wfs_berlin
+- agent_research
+unverified_fields:
+- social_media
+- unverified_fields
+- ganztag
+- accepts_after_4th_grade
+- ratings
+- field_confidence
+- image_urls
+- admission_requirements
+- languages
+- profile
+_pinned_fields: []

@@ -1,0 +1,23 @@
+school_id: 11Y10
+name: Manfred-von-Ardenne-Gymnasium
+district: Lichtenberg
+last_updated: '2026-03-26'
+address: Werneuchener Straße 27, 13055 Berlin
+coords:
+  lat: 52.54176101
+  lng: 13.49306446
+website: https://www.ardenne-gymnasium.de
+phone: +49 30 9865002
+email: info@ardenne-gymnasium.de
+traeger: öffentlich
+profile: []
+languages: []
+image_urls: []
+social_media: {}
+ratings: {}
+completeness_score: 0.353
+field_confidence: {}
+data_sources:
+- wfs_berlin
+unverified_fields: []
+_pinned_fields: []

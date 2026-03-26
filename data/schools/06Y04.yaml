@@ -1,0 +1,55 @@
+school_id: 06Y04
+name: Dreilinden-Gymnasium
+district: Steglitz-Zehlendorf
+last_updated: '2026-03-26'
+address: Dreilindenstraße 49, 14109 Berlin
+coords:
+  lat: 52.42055395
+  lng: 13.18781142
+website: http://www.dreilinden-gymnasium.de
+phone: +49 30 8031087
+email: sekretariat@dreilinden-gymnasium.de
+traeger: öffentlich
+accepts_after_4th_grade: false
+profile:
+- bilingual_english
+- other
+ganztag: false
+languages:
+- name: Englisch
+  from_grade: 7
+- name: Französisch
+  from_grade: 7
+- name: Latein
+  from_grade: 7
+admission_requirements:
+  selection_criteria: Durchschnittsnote der Förderprognose
+  probeunterricht: false
+  entrance_test: false
+  notes: No grundständige Züge confirmed in Steglitz-Zehlendorf district records for this school. Data on this school is
+    limited; web search exhausted before dedicated search.
+image_urls: []
+social_media: {}
+ratings: {}
+completeness_score: 0.647
+field_confidence:
+  accepts_after_4th_grade: medium
+  profile: low
+  languages: low
+  ganztag: low
+  admission_requirements: low
+data_sources:
+- wfs_berlin
+- agent_research
+unverified_fields:
+- social_media
+- unverified_fields
+- ganztag
+- accepts_after_4th_grade
+- ratings
+- field_confidence
+- image_urls
+- admission_requirements
+- languages
+- profile
+_pinned_fields: []

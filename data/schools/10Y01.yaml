@@ -1,0 +1,69 @@
+school_id: 10Y01
+name: Tagore-Gymnasium
+district: Marzahn-Hellersdorf
+last_updated: '2026-03-26'
+address: Sella-Hasse-Straße 25, 12687 Berlin
+coords:
+  lat: 52.55301457
+  lng: 13.55674062
+website: https://www.tagore-gymnasium.de
+phone: +49 30 9321069
+email: schulleitung@tagore-gymnasium.de
+traeger: öffentlich
+accepts_after_4th_grade: false
+profile:
+- bilingual_english
+- altsprachlich
+- kunst
+- other
+ganztag: true
+languages:
+- name: Englisch
+  from_grade: 7
+- name: Französisch
+  from_grade: 7
+- name: Spanisch
+  from_grade: 7
+- name: Latein
+  from_grade: 7
+- name: Italienisch
+admission_requirements:
+  notendurchschnitt: 2.2
+  selection_criteria: Students with a Förderprognose average of up to 2.2 are directly eligible to enroll. Those 
+    exceeding 2.2 may register for a Probeunterricht (trial assessment) held Berlin-wide, covering written tests in 
+    German and Mathematics as well as cross-disciplinary competencies.
+  probeunterricht: true
+  entrance_test: false
+  notes: Admission is to grade 7 (Klasse 7). The Probeunterricht is only required for applicants whose Förderprognose 
+    average exceeds 2.2; it is not a separate entrance exam but a Berlin-wide eligibility assessment. No grundständig 
+    (grade 5) intake offered.
+image_urls: []
+social_media: {}
+ratings: {}
+completeness_score: 0.647
+field_confidence:
+  accepts_after_4th_grade: high
+  profile: high
+  languages: high
+  ganztag: medium
+  open_day: low
+  admission_requirements: high
+  ratings: high
+  abitur_average: low
+  image_urls: low
+  social_media: low
+data_sources:
+- wfs_berlin
+- agent_research
+unverified_fields:
+- social_media
+- unverified_fields
+- ganztag
+- accepts_after_4th_grade
+- ratings
+- field_confidence
+- image_urls
+- admission_requirements
+- languages
+- profile
+_pinned_fields: []

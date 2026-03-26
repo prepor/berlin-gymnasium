@@ -1,0 +1,63 @@
+school_id: 04Y01
+name: Schiller-Gymnasium
+district: Charlottenburg-Wilmersdorf
+last_updated: '2026-03-26'
+address: Schillerstraße 125, 10625 Berlin
+coords:
+  lat: 52.5110362
+  lng: 13.32153667
+website: http://www.sgym.de
+phone: +49 30 902925920
+email: sekretariat@sgym.schule.berlin.de
+traeger: öffentlich
+accepts_after_4th_grade: false
+profile:
+- bilingual_english
+- bilingual_french
+ganztag: false
+languages:
+- name: Englisch
+  from_grade: 7
+- name: Französisch
+  from_grade: 7
+- name: Latein
+  from_grade: 8
+- name: Italienisch
+  from_grade: 8
+admission_requirements:
+  notendurchschnitt: 2.1
+  oversubscribed: true
+  selection_criteria: 'Förderprognose Durchschnittsnote; in years of oversubscription lottery from approximately 2.1 average.
+    Main subjects (Deutsch, Mathematik, Englisch) should typically be grade 2 or better. SESB branch: language test in Deutsch
+    and Englisch for lateral entrants. Regular branch: Aufnahmetest for lateral entrants (Seiteneinsteiger).'
+  probeunterricht: true
+  entrance_test: true
+  notes: 'Public Gymnasium; starts at grade 7. Bilingual SESB Deutsch-Englisch track since 1999; new bilingual class (English)
+    added from school year 2026/27. Two language sequences offered: English-French or French-English as first language. Third
+    language: Latin or Italian from grade 8.'
+image_urls: []
+social_media: {}
+ratings: {}
+completeness_score: 0.647
+field_confidence:
+  accepts_after_4th_grade: high
+  profile: high
+  languages: high
+  admission_requirements: high
+  notendurchschnitt: medium
+  oversubscribed: high
+data_sources:
+- wfs_berlin
+- agent_research
+unverified_fields:
+- social_media
+- unverified_fields
+- ganztag
+- accepts_after_4th_grade
+- ratings
+- field_confidence
+- image_urls
+- admission_requirements
+- languages
+- profile
+_pinned_fields: []

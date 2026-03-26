@@ -1,0 +1,52 @@
+school_id: 03P10
+name: Katholische Theresienschule (Gymnasium)
+district: Pankow
+last_updated: '2026-03-26'
+address: Behaimstraße 29, 13086 Berlin
+coords:
+  lat: 52.55048164
+  lng: 13.44656148
+website: http://www.Theresienschule.de
+phone: +49 30 9246425
+email: sekretariat@ksth.schulerzbistum.de
+traeger: privat
+accepts_after_4th_grade: true
+profile:
+- other
+languages:
+- name: Englisch
+  from_grade: 5
+- name: Französisch
+  from_grade: 7
+- name: Latein
+  from_grade: 7
+admission_requirements:
+  selection_criteria: Aufnahmetest für Klasse 5; Eltern und Schüler werden zu einem Gespräch eingeladen.
+  probeunterricht: false
+  entrance_test: true
+  notes: Catholic private school (Erzbistum Berlin). Entrance test for grade 5 admission. Three-week social internship 
+    in grade 10.
+image_urls: []
+social_media: {}
+ratings: {}
+completeness_score: 0.588
+field_confidence:
+  accepts_after_4th_grade: high
+  entrance_test: high
+  admission_requirements: high
+  languages: low
+  profile: low
+data_sources:
+- wfs_berlin
+- agent_research
+unverified_fields:
+- social_media
+- unverified_fields
+- accepts_after_4th_grade
+- ratings
+- field_confidence
+- image_urls
+- admission_requirements
+- languages
+- profile
+_pinned_fields: []

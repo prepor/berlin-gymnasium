@@ -1,0 +1,68 @@
+school_id: 12Y06
+name: Schulfarm Insel Scharfenberg
+district: Reinickendorf
+last_updated: '2026-03-26'
+address: Schwarzer Weg 101, 13505 Berlin
+coords:
+  lat: 52.57499733
+  lng: 13.24739402
+website: http://www.insel-scharfenberg.de
+phone: +49 30 430944330
+email: sekretariat@berlin-sis.de
+traeger: öffentlich
+accepts_after_4th_grade: false
+profile:
+- MINT
+- music
+- sports
+- kunst
+- other
+ganztag: true
+languages:
+- name: Englisch
+  from_grade: 7
+- name: Französisch
+  from_grade: 7
+open_day: '2026-11-28'
+admission_requirements:
+  oversubscribed: true
+  selection_criteria: Admission from grade 7 only; Englisch as first foreign language is mandatory. Students choose a 
+    profile (Biologie, Sport, Kunst, or Musik) and rank 1st/2nd/3rd preference at registration. Admission requires at 
+    least 'good' (gut) performance in subjects relevant to chosen profile (Naturwissenschaften, Sport, Kunst, or Musik) 
+    plus gymnasium eligibility. At oversubscription within a profile, ranking based on Notensumme of last two school 
+    reports in Deutsch, Englisch, Mathematik, and the profile-specific subject. 30 boarding places reserved 
+    (Internatskontingent) as priority. No Geschwisterbonus or standard Härtefallregelung.
+  probeunterricht: false
+  entrance_test: false
+  notes: Unique island school (Insel Scharfenberg in Tegeler See) with boarding school (Internat, ~90 places). Gebundene
+    Ganztagsschule. 'Schule besonderer pädagogischer Prägung'. Practical learning includes agriculture, riding, sailing,
+    rowing, beekeeping. Fremdsprachenfolge strictly Englisch (1st FS) then Französisch (2nd FS from grade 7) — no 
+    deviations permitted. A handwritten Motivationsschreiben from the child is required at application. From grade 10, 
+    students from abroad (EU citizens) can also be admitted to the boarding school.
+image_urls: []
+social_media: {}
+ratings: {}
+completeness_score: 0.706
+field_confidence:
+  accepts_after_4th_grade: high
+  profile: high
+  languages: high
+  ganztag: high
+  open_day: medium
+  admission_requirements: high
+data_sources:
+- wfs_berlin
+- agent_research
+unverified_fields:
+- open_day
+- social_media
+- unverified_fields
+- ganztag
+- accepts_after_4th_grade
+- ratings
+- field_confidence
+- image_urls
+- admission_requirements
+- languages
+- profile
+_pinned_fields: []

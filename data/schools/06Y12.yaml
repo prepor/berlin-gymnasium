@@ -1,0 +1,33 @@
+school_id: 06Y12
+name: Willi-Graf-Gymnasium
+district: Steglitz-Zehlendorf
+last_updated: '2026-03-26'
+address: Ostpreußendamm 166, 12207 Berlin
+coords:
+  lat: 52.43471609
+  lng: 13.32110213
+website: https://willi-graf-gymnasium.de
+phone: +49 30 7729004
+email: sekretariat@willi-graf-os.de
+traeger: öffentlich
+profile: []
+languages: []
+admission_requirements:
+  notes: No data retrieved in this research session. Cooperates with Goethe-Gymnasium Lichterfelde and 
+    Lilienthal-Gymnasium for Oberstufe (noted in Goethe-Gymnasium source).
+image_urls: []
+social_media: {}
+ratings: {}
+completeness_score: 0.412
+field_confidence: {}
+data_sources:
+- wfs_berlin
+- agent_research
+unverified_fields:
+- unverified_fields
+- social_media
+- ratings
+- field_confidence
+- image_urls
+- admission_requirements
+_pinned_fields: []

@@ -1,0 +1,59 @@
+school_id: 03Y03
+name: Käthe-Kollwitz-Gymnasium
+district: Pankow
+last_updated: '2026-03-26'
+address: Dunckerstraße 65, 10439 Berlin
+coords:
+  lat: 52.5456103
+  lng: 13.42330498
+website: https://www.kaethe-kollwitz-gymnasium.de
+phone: +49 30 4447671
+email: sekretariat@kkos.net
+traeger: öffentlich
+accepts_after_4th_grade: true
+profile:
+- MINT
+ganztag: true
+languages:
+- name: Englisch
+  from_grade: 5
+- name: Mathematik/Naturwissenschaften (vertieft)
+  from_grade: 5
+- name: Französisch
+  from_grade: 7
+- name: Latein
+  from_grade: 7
+admission_requirements:
+  oversubscribed: true
+  selection_criteria: Standardisierter Eingangstest (50 Minuten) für Aufnahme in Klasse 5. Notensumme (Mathematik x3 + 
+    Deutsch x2 + Fremdsprache + Sachkunde) ≤ 15 für Zulassung zum Test. Auswahl nach Testergebnis (doppelt gewichtet), 
+    Zeugnisnoten und Kompetenzkriterien der Förderprognose.
+  probeunterricht: false
+  entrance_test: true
+  notes: One of Berlin's most sought-after gymnasiums (2025/26). Mathematik grade must be at least 'gut'. Teilgebundener
+    Ganztag.
+image_urls: []
+social_media: {}
+ratings: {}
+completeness_score: 0.647
+field_confidence:
+  accepts_after_4th_grade: high
+  profile: high
+  ganztag: high
+  entrance_test: high
+  admission_requirements: high
+data_sources:
+- wfs_berlin
+- agent_research
+unverified_fields:
+- social_media
+- unverified_fields
+- ganztag
+- accepts_after_4th_grade
+- ratings
+- field_confidence
+- image_urls
+- admission_requirements
+- languages
+- profile
+_pinned_fields: []

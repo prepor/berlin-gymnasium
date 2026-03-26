@@ -1,0 +1,58 @@
+school_id: 03Y16
+name: Robert-Havemann-Gymnasium
+district: Pankow
+last_updated: '2026-03-26'
+address: Achillesstraße 79, 13125 Berlin
+coords:
+  lat: 52.61611368
+  lng: 13.49277081
+website: http://www.robert-havemann-gymnasium.de
+phone: +49 30 94878511
+email: 03Y16@03Y16.schule.berlin.de
+traeger: öffentlich
+accepts_after_4th_grade: false
+profile:
+- MINT
+ganztag: true
+languages:
+- name: Englisch
+  from_grade: 7
+- name: Französisch
+  from_grade: 7
+- name: Latein
+  from_grade: 7
+- name: Spanisch
+  from_grade: 7
+admission_requirements:
+  oversubscribed: false
+  selection_criteria: Durchschnittsnote der Förderprognose bei Übernachfrage; in 2025/26 not oversubscribed (224 places,
+    175 first-choice applications)
+  probeunterricht: false
+  entrance_test: false
+  notes: Located in Karow; lower demand reported due to peripheral location. No NC required in recent cycle.
+image_urls: []
+social_media: {}
+ratings: {}
+completeness_score: 0.647
+field_confidence:
+  accepts_after_4th_grade: high
+  profile: high
+  languages: high
+  ganztag: medium
+  oversubscribed: high
+  admission_requirements: medium
+data_sources:
+- wfs_berlin
+- agent_research
+unverified_fields:
+- social_media
+- unverified_fields
+- ganztag
+- accepts_after_4th_grade
+- ratings
+- field_confidence
+- image_urls
+- admission_requirements
+- languages
+- profile
+_pinned_fields: []

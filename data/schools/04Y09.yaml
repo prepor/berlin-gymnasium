@@ -1,0 +1,54 @@
+school_id: 04Y09
+name: Walther-Rathenau-Gymnasium
+district: Charlottenburg-Wilmersdorf
+last_updated: '2026-03-26'
+address: Herbertstraße 2, 14193 Berlin
+coords:
+  lat: 52.4913927
+  lng: 13.28118075
+website: https://www.wrg-berlin.de
+phone: +49 30 8902990
+email: sekretariat@wrg.schule.berlin.de
+traeger: öffentlich
+accepts_after_4th_grade: false
+profile:
+- bilingual_english
+- music
+languages:
+- name: Englisch
+  from_grade: 7
+- name: Französisch
+  from_grade: 7
+- name: Latein
+  from_grade: 7
+admission_requirements:
+  selection_criteria: Durchschnittsnote der Förderprognose bei Übernachfrage. Probeunterricht required for applicants 
+    with Notensumme ≥ 15 in Deutsch, Mathematik, Englisch.
+  probeunterricht: true
+  entrance_test: false
+  notes: 'Notensumme of at most 14 in Deutsch, Mathematik, Englisch required for direct admission. Bilingual English stream:
+    more English hours initially, then Biology and Geography taught in English from class 8. Keyboard lessons integrated into
+    regular curriculum. Cooperation with Hildegard-Wegscheider-Gymnasium for broader Leistungskurs selection.'
+image_urls: []
+social_media: {}
+ratings: {}
+completeness_score: 0.588
+field_confidence:
+  accepts_after_4th_grade: high
+  profile: high
+  languages: medium
+  admission_requirements: high
+data_sources:
+- wfs_berlin
+- agent_research
+unverified_fields:
+- social_media
+- unverified_fields
+- accepts_after_4th_grade
+- ratings
+- field_confidence
+- image_urls
+- admission_requirements
+- languages
+- profile
+_pinned_fields: []

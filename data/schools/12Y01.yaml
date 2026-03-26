@@ -1,0 +1,57 @@
+school_id: 12Y01
+name: Friedrich-Engels-Gymnasium
+district: Reinickendorf
+last_updated: '2026-03-26'
+address: Emmentaler Straße 67, 13407 Berlin
+coords:
+  lat: 52.56938341
+  lng: 13.35718518
+website: https://www.feg.berlin
+phone: +49 30 4955056
+email: 12Y01@12Y01.schule.berlin.de
+traeger: öffentlich
+accepts_after_4th_grade: true
+profile:
+- bilingual_english
+- bilingual_other
+ganztag: true
+languages:
+- name: Spanisch
+  from_grade: 5
+- name: Englisch
+  from_grade: 7
+- name: Französisch
+  from_grade: 9
+- name: Latein
+  from_grade: 9
+admission_requirements:
+  selection_criteria: 'Standard Berlin process: Durchschnittsnote der Förderprognose used as primary criterion when oversubscribed.'
+  entrance_test: false
+  notes: Schule besonderer pädagogischer Prägung since 1991. Two grundständige classes from grade 5 with bilingual 
+    Deutsch-Spanisch track. Offene Ganztagsgymnasium since school year 2011/12. Berlin.de lists bilingual offers 
+    Deutsch/Englisch and Deutsch/Spanisch.
+image_urls: []
+social_media: {}
+ratings: {}
+completeness_score: 0.647
+field_confidence:
+  accepts_after_4th_grade: high
+  profile: high
+  languages: medium
+  ganztag: high
+  admission_requirements: medium
+data_sources:
+- wfs_berlin
+- agent_research
+unverified_fields:
+- social_media
+- unverified_fields
+- ganztag
+- accepts_after_4th_grade
+- ratings
+- field_confidence
+- image_urls
+- admission_requirements
+- languages
+- profile
+_pinned_fields: []

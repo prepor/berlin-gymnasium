@@ -1,0 +1,44 @@
+school_id: 10Y12
+name: 12. Schule (Gymnasium)
+district: Marzahn-Hellersdorf
+last_updated: '2026-03-26'
+address: Erich-Kästner-Straße 52, 12619 Berlin
+coords:
+  lat: 52.52654408
+  lng: 13.59276064
+website: https://adw.berlin
+phone: +49 30 30323310
+email: 10Y12@10Y12.schule.berlin.de
+traeger: öffentlich
+accepts_after_4th_grade: false
+profile:
+- other
+languages: []
+admission_requirements:
+  selection_criteria: Aufnahme in Jahrgangsstufe 7 nach Berliner Standard-Gymnasialaufnahmeverfahren 
+    (Förderprognose-Durchschnittsnote)
+  entrance_test: false
+  notes: 'Neugründung: Schule eröffnete zum Schuljahr 2025/2026 als Neubau in der Erich-Kästner-Straße 52, 12619 Berlin (Kaulsdorf),
+    geplante Kapazität 5 Züge (830 Plätze). Website: adw.berlin. Schwerpunkte: Nachhaltigkeit, Demokratiebildung, Gemeinwohl.'
+image_urls: []
+social_media: {}
+ratings: {}
+completeness_score: 0.529
+field_confidence:
+  accepts_after_4th_grade: medium
+  profile: medium
+  admission_requirements: medium
+data_sources:
+- wfs_berlin
+- agent_research
+unverified_fields:
+- social_media
+- unverified_fields
+- accepts_after_4th_grade
+- ratings
+- field_confidence
+- image_urls
+- admission_requirements
+- languages
+- profile
+_pinned_fields: []

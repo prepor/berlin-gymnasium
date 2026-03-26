@@ -1,0 +1,23 @@
+school_id: 08Y03
+name: Albert-Einstein-Gymnasium
+district: Neukölln
+last_updated: '2026-03-26'
+address: Parchimer Allee 109, 12359 Berlin
+coords:
+  lat: 52.44542849
+  lng: 13.44232786
+website: https://www.aeo.de
+phone: +49 30 6009020
+email: sekretariat@aeo.de
+traeger: öffentlich
+profile: []
+languages: []
+image_urls: []
+social_media: {}
+ratings: {}
+completeness_score: 0.353
+field_confidence: {}
+data_sources:
+- wfs_berlin
+unverified_fields: []
+_pinned_fields: []

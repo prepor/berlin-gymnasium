@@ -1,0 +1,23 @@
+school_id: 10Y02
+name: Otto-Nagel-Gymnasium
+district: Marzahn-Hellersdorf
+last_updated: '2026-03-26'
+address: Schulstraße 11, 12683 Berlin
+coords:
+  lat: 52.51185563
+  lng: 13.54956907
+website: https://ong.berlin
+phone: +49 30 5143864
+email: sekretariat@ong.berlin
+traeger: öffentlich
+profile: []
+languages: []
+image_urls: []
+social_media: {}
+ratings: {}
+completeness_score: 0.353
+field_confidence: {}
+data_sources:
+- wfs_berlin
+unverified_fields: []
+_pinned_fields: []

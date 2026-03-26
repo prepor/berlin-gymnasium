@@ -1,0 +1,32 @@
+school_id: 07Y01
+name: Robert-Blum-Gymnasium
+district: Tempelhof-Schöneberg
+last_updated: '2026-03-26'
+address: Kolonnenstraße 21, 10829 Berlin
+coords:
+  lat: 52.48493259
+  lng: 13.36470953
+website: http://www.robert-blum-schule.de
+phone: +49 30 902777172
+email: sekretariat@robert-blum-schule.de
+traeger: öffentlich
+profile: []
+languages: []
+admission_requirements:
+  notes: No data retrieved in this research session.
+image_urls: []
+social_media: {}
+ratings: {}
+completeness_score: 0.412
+field_confidence: {}
+data_sources:
+- wfs_berlin
+- agent_research
+unverified_fields:
+- unverified_fields
+- social_media
+- ratings
+- field_confidence
+- image_urls
+- admission_requirements
+_pinned_fields: []

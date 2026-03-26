@@ -1,0 +1,23 @@
+school_id: 09Y06
+name: Gerhart-Hauptmann-Gymnasium
+district: Treptow-Köpenick
+last_updated: '2026-03-26'
+address: Bruno-Wille-Straße 37, 12587 Berlin
+coords:
+  lat: 52.4522751
+  lng: 13.63272842
+website: http://www.ghs-berlin.de
+phone: +49 30 6451839
+email: sekretariat@ghs-berlin.de
+traeger: öffentlich
+profile: []
+languages: []
+image_urls: []
+social_media: {}
+ratings: {}
+completeness_score: 0.353
+field_confidence: {}
+data_sources:
+- wfs_berlin
+unverified_fields: []
+_pinned_fields: []

@@ -1,0 +1,23 @@
+school_id: 07Y07
+name: Eckener-Gymnasium
+district: Tempelhof-Schöneberg
+last_updated: '2026-03-26'
+address: Kaiserstraße 17, 12105 Berlin
+coords:
+  lat: 52.44510283
+  lng: 13.38027866
+website: https://eckener-gymnasium.de
+phone: +49 30 902777448
+email: info@eckener-gymnasium.de
+traeger: öffentlich
+profile: []
+languages: []
+image_urls: []
+social_media: {}
+ratings: {}
+completeness_score: 0.353
+field_confidence: {}
+data_sources:
+- wfs_berlin
+unverified_fields: []
+_pinned_fields: []

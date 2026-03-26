@@ -1,0 +1,66 @@
+school_id: 07Y09
+name: Georg-Büchner-Gymnasium
+district: Tempelhof-Schöneberg
+last_updated: '2026-03-26'
+address: Lichtenrader Damm 224, 12305 Berlin
+coords:
+  lat: 52.39260517
+  lng: 13.4054977
+website: http://www.gbgonline.de
+phone: +49 30 902778208
+email: sekretariat@gbgonline.de
+traeger: öffentlich
+accepts_after_4th_grade: false
+profile:
+- bilingual_english
+- MINT
+- musik
+- kunst
+ganztag: true
+languages:
+- name: Englisch
+  from_grade: 7
+- name: Französisch
+  from_grade: 7
+- name: Latein
+  from_grade: 7
+admission_requirements:
+  selection_criteria: Förderprognose Durchschnittsnote used as criterion in case of oversubscription, per berlin.de 
+    school portrait
+  probeunterricht: false
+  entrance_test: false
+  notes: School is dreizügig (3 tracks). In case of oversubscription, the Förderprognose grade average is the selection 
+    criterion. No grundständig (grade-5-entry) tracks exist. Admission visits/Hospitationen offered for prospective 
+    students in grades 7–8.
+abitur_average: 2.3
+image_urls: []
+social_media: {}
+ratings: {}
+completeness_score: 0.706
+field_confidence:
+  accepts_after_4th_grade: high
+  profile: high
+  languages: medium
+  ganztag: high
+  open_day: high
+  admission_requirements: medium
+  ratings: high
+  abitur_average: medium
+  image_urls: high
+  social_media: medium
+data_sources:
+- wfs_berlin
+- agent_research
+unverified_fields:
+- social_media
+- abitur_average
+- unverified_fields
+- ganztag
+- accepts_after_4th_grade
+- ratings
+- field_confidence
+- image_urls
+- admission_requirements
+- languages
+- profile
+_pinned_fields: []

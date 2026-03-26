@@ -1,0 +1,33 @@
+school_id: 05Y03
+name: Hans-Carossa-Gymnasium
+district: Spandau
+last_updated: '2026-03-26'
+address: Am Landschaftspark Gatow 40, 14089 Berlin
+coords:
+  lat: 52.47250597
+  lng: 13.13019456
+website: http://www.hcg-berlin.de
+phone: +49 30 36996511
+email: Sekretariat@05Y03.schule.berlin.de
+traeger: öffentlich
+profile: []
+languages: []
+admission_requirements: {}
+image_urls: []
+social_media: {}
+ratings: {}
+completeness_score: 0.412
+field_confidence: {}
+data_sources:
+- wfs_berlin
+- agent_research
+unverified_fields:
+- social_media
+- unverified_fields
+- ratings
+- field_confidence
+- image_urls
+- admission_requirements
+- languages
+- profile
+_pinned_fields: []

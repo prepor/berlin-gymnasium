@@ -1,0 +1,63 @@
+school_id: 12Y05
+name: Georg-Herwegh-Gymnasium
+district: Reinickendorf
+last_updated: '2026-03-26'
+address: Fellbacher Straße 18, 13467 Berlin
+coords:
+  lat: 52.61680983
+  lng: 13.30277428
+website: http://www.herwegh-gymnasium.de
+phone: +49 30 4042070
+email: mail@herwegh-gymnasium.de
+traeger: öffentlich
+accepts_after_4th_grade: false
+profile:
+- MINT
+- music
+languages:
+- name: Englisch
+  from_grade: 7
+- name: Französisch
+  from_grade: 7
+- name: Latein
+  from_grade: 7
+- name: Italienisch
+  from_grade: 9
+admission_requirements:
+  selection_criteria: Admission from grade 7; gymnasial recommendation required. If Notensumme of Deutsch, Mathematik, 
+    and first foreign language from Halbjahrszeugnisse 5.2 and 6.1 exceeds 14 (average worse than ~2.3), a 
+    Probeunterricht certificate is required. At oversubscription, multi-stage selection applies. For music and MINT 
+    profile classes, a separate selection procedure is always conducted. Profile preference (Regelklasse, MINT, music) 
+    indicated at registration.
+  probeunterricht: true
+  entrance_test: false
+  notes: 'Three class profiles offered per year: Regelklasse, MINT-profilierte Klasse, and musische Klasse. Music profile
+    has long tradition since 1997; includes mandatory ensemble participation, instrument lessons. MINT profile includes special
+    science promotion, partnerships with TU Berlin and Berlin Zoo. School located in Berlin-Hermsdorf. Digital registration
+    introduced.'
+image_urls: []
+social_media: {}
+ratings: {}
+completeness_score: 0.588
+field_confidence:
+  accepts_after_4th_grade: high
+  profile: high
+  languages: high
+  ganztag: low
+  open_day: low
+  admission_requirements: high
+  probeunterricht: high
+data_sources:
+- wfs_berlin
+- agent_research
+unverified_fields:
+- social_media
+- unverified_fields
+- accepts_after_4th_grade
+- ratings
+- field_confidence
+- image_urls
+- admission_requirements
+- languages
+- profile
+_pinned_fields: []

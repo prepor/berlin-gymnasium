@@ -1,0 +1,65 @@
+school_id: 12Y02
+name: Europäisches Gymnasium Bertha-von-Suttner
+district: Reinickendorf
+last_updated: '2026-03-26'
+address: Reginhardstraße 172, 13409 Berlin
+coords:
+  lat: 52.57148115
+  lng: 13.36863767
+website: https://www.bertha-von-suttner.de
+phone: +49 30 4916057
+email: 12Y02@12Y02.schule.berlin.de
+traeger: öffentlich
+accepts_after_4th_grade: true
+profile:
+- altsprachlich
+- bilingual_english
+- MINT
+ganztag: true
+languages:
+- name: Englisch
+  from_grade: 5
+- name: Latein
+  from_grade: 5
+- name: Französisch
+  from_grade: 8
+- name: Altgriechisch
+  from_grade: 8
+- name: Spanisch
+  from_grade: 9
+- name: Chinesisch
+  from_grade: 9
+admission_requirements:
+  selection_criteria: 'Berlin standard process for grade-5 grundständig track: Gymnasium recommendation in Förderprognose
+    required; grade sum from Deutsch, Fremdsprache, Mathematik, Sachunterricht used for ranking; lottery among equally ranked
+    applicants if places remain oversubscribed.'
+  probeunterricht: false
+  entrance_test: false
+  notes: 'Offers both a grundständiger Zweig (from grade 5, altsprachlich: Latin + English then Ancient Greek or French) and
+    a standard Regelzug (from grade 7, bilingual English track). CertiLingua excellence label awarded at Abitur. MINT-freundliche
+    Schule since 2013.'
+image_urls: []
+social_media: {}
+ratings: {}
+completeness_score: 0.647
+field_confidence:
+  accepts_after_4th_grade: high
+  profile: high
+  languages: high
+  ganztag: high
+  admission_requirements: high
+data_sources:
+- wfs_berlin
+- agent_research
+unverified_fields:
+- social_media
+- unverified_fields
+- ganztag
+- accepts_after_4th_grade
+- ratings
+- field_confidence
+- image_urls
+- admission_requirements
+- languages
+- profile
+_pinned_fields: []

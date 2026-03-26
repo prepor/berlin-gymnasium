@@ -1,0 +1,64 @@
+school_id: 05Y05
+name: Lily-Braun-Gymnasium
+district: Spandau
+last_updated: '2026-03-26'
+address: Münsingerstraße 2, 13597 Berlin
+coords:
+  lat: 52.53827059
+  lng: 13.19921684
+website: http://www.lily-braun-gymnasium.de
+phone: +49 30 3389040
+email: e-post@lily-braun-gymnasium.de
+traeger: öffentlich
+accepts_after_4th_grade: false
+profile:
+- bilingual_english
+- bilingual_french
+- bilingual_other
+- music
+- kunst
+ganztag: false
+languages:
+- name: Englisch
+  from_grade: 7
+- name: Französisch
+  from_grade: 7
+- name: Spanisch
+  from_grade: 7
+- name: Latein
+  from_grade: 8
+- name: Chinesisch
+  from_grade: 8
+admission_requirements:
+  selection_criteria: Durchschnittsnote der Förderprognose (GPA of school recommendation); brief admission interview 
+    with headteacher required for all applicants
+  probeunterricht: false
+  entrance_test: false
+  notes: School starts at grade 7. Admission interview (kurzes Gespräch mit der Schulleiterin) required for all 
+    applicants during the registration period. Students choose between a Sprachenklasse (language/bilingual focus) and a
+    musisch-künstlerische Klasse (arts/music focus) upon entry to grade 7.
+image_urls: []
+social_media: {}
+ratings: {}
+completeness_score: 0.647
+field_confidence:
+  accepts_after_4th_grade: high
+  profile: high
+  languages: high
+  ganztag: high
+  admission_requirements: high
+data_sources:
+- wfs_berlin
+- agent_research
+unverified_fields:
+- social_media
+- unverified_fields
+- ganztag
+- accepts_after_4th_grade
+- ratings
+- field_confidence
+- image_urls
+- admission_requirements
+- languages
+- profile
+_pinned_fields: []

@@ -1,0 +1,58 @@
+school_id: 04Y11
+name: Goethe-Gymnasium
+district: Charlottenburg-Wilmersdorf
+last_updated: '2026-03-26'
+address: Gasteiner Straße 23, 10717 Berlin
+coords:
+  lat: 52.48727872
+  lng: 13.32165932
+website: https://goethe-gymnasium.berlin
+phone: +49 30 8649960
+email: info.goethe-gymnasium@t-online.de
+traeger: öffentlich
+accepts_after_4th_grade: true
+profile:
+- altsprachlich
+- MINT
+ganztag: true
+languages:
+- name: Latein
+  from_grade: 5
+- name: Englisch
+  from_grade: 7
+- name: Altgriechisch
+  from_grade: 7
+- name: Französisch
+  from_grade: 8
+admission_requirements:
+  selection_criteria: Standard Berlin Gymnasium admission criteria apply. Admission from class 4 (grundständig). 
+    Siblings and Härtefall cases considered.
+  entrance_test: false
+  notes: Humanistisches Gymnasium with altsprachlich profile; Latein as first foreign language from class 5, 
+    Altgriechisch from class 7 (can switch to Französisch in class 8). Received MINT-freundliche Schule award in 2023. 
+    Offener Ganztag.
+image_urls: []
+social_media: {}
+ratings: {}
+completeness_score: 0.647
+field_confidence:
+  accepts_after_4th_grade: high
+  profile: high
+  languages: high
+  ganztag: high
+  admission_requirements: medium
+data_sources:
+- wfs_berlin
+- agent_research
+unverified_fields:
+- social_media
+- unverified_fields
+- ganztag
+- accepts_after_4th_grade
+- ratings
+- field_confidence
+- image_urls
+- admission_requirements
+- languages
+- profile
+_pinned_fields: []

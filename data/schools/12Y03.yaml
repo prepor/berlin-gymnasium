@@ -1,0 +1,59 @@
+school_id: 12Y03
+name: Humboldt-Gymnasium
+district: Reinickendorf
+last_updated: '2026-03-26'
+address: Hatzfeldtallee 2, 13509 Berlin
+coords:
+  lat: 52.59183867
+  lng: 13.28863774
+website: https://www.humboldtschule-berlin.de
+phone: +49 30 4337008
+email: 12Y03@12Y03.schule.berlin.de
+traeger: öffentlich
+accepts_after_4th_grade: true
+profile:
+- altsprachlich
+- other
+languages:
+- name: Englisch
+  from_grade: 5
+- name: Latein
+  from_grade: 6
+- name: Französisch
+  from_grade: 8
+- name: Chinesisch
+  from_grade: 8
+admission_requirements:
+  selection_criteria: 'Schnelllerner track (from grade 5): entrance test (Eignungstest) required; Regelklassen track (from
+    grade 7): points-based system using Förderprognose average grade, a practical exercise (praktische Übung), and additional
+    competences; mandatory advisory meeting if ISS recommendation and average ≥ 3.0'
+  probeunterricht: false
+  entrance_test: true
+  notes: 'Two parallel tracks: Schnelllerner (gifted, starting grade 5, entrance test required, 3 classes) and Regelklassen
+    (starting grade 7, 3 classes). Schnelllerner complete Abitur in 12 years. Latein is mandatory second language (unique
+    among most Berlin schools). Third language choice: Français or Chinesisch from grade 8.'
+image_urls: []
+social_media: {}
+ratings: {}
+completeness_score: 0.588
+field_confidence:
+  accepts_after_4th_grade: high
+  profile: medium
+  languages: high
+  ganztag: low
+  open_day: low
+  admission_requirements: high
+data_sources:
+- wfs_berlin
+- agent_research
+unverified_fields:
+- social_media
+- unverified_fields
+- accepts_after_4th_grade
+- ratings
+- field_confidence
+- image_urls
+- admission_requirements
+- languages
+- profile
+_pinned_fields: []

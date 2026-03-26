@@ -1,0 +1,69 @@
+school_id: 08Y02
+name: Albert-Schweitzer-Gymnasium
+district: Neukölln
+last_updated: '2026-03-26'
+address: Karl-Marx-Straße 14, 12043 Berlin
+coords:
+  lat: 52.48471786
+  lng: 13.42636868
+website: https://www.die-schweitzer.de
+phone: +49 30 225009830
+email: sekretariat@08Y02.schule.berlin.de
+traeger: öffentlich
+accepts_after_4th_grade: false
+profile:
+- bilingual_french
+- bilingual_english
+- other
+ganztag: true
+languages:
+- name: Englisch
+  from_grade: 7
+- name: Französisch
+  from_grade: 7
+- name: Spanisch
+  from_grade: 7
+- name: Französisch
+  from_grade: 8
+- name: Spanisch
+  from_grade: 8
+admission_requirements:
+  notendurchschnitt: 2.1
+  oversubscribed: true
+  selection_criteria: Durchschnittsnote der Grundschulförderprognose; direct admission without lottery typically 
+    requires average between 1.8 and 2.1; otherwise lottery among qualified applicants
+  probeunterricht: false
+  entrance_test: false
+  notes: School accepts 3 or 4 classes of grade 7 per year (approx. 90 students). Standard Berlin Gymnasium admission 
+    process; no grundständig (grade 5) entry.
+image_urls: []
+social_media:
+  instagram: https://www.instagram.com/die.schweitzer.berlin/
+ratings: {}
+completeness_score: 0.647
+field_confidence:
+  accepts_after_4th_grade: high
+  profile: high
+  languages: high
+  ganztag: high
+  open_day: low
+  admission_requirements: high
+  ratings: high
+  abitur_average: low
+  image_urls: low
+  social_media: medium
+data_sources:
+- wfs_berlin
+- agent_research
+unverified_fields:
+- social_media
+- unverified_fields
+- ganztag
+- accepts_after_4th_grade
+- ratings
+- field_confidence
+- image_urls
+- admission_requirements
+- languages
+- profile
+_pinned_fields: []

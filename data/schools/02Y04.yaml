@@ -1,0 +1,49 @@
+school_id: 02Y04
+name: Georg-Friedrich-Händel-Gymnasium
+district: Friedrichshain-Kreuzberg
+last_updated: '2026-03-26'
+address: Frankfurter Allee 6A, 10247 Berlin
+coords:
+  lat: 52.51482011
+  lng: 13.45572491
+website: http://www.haendelgym.de
+phone: +49 30 2250279011
+email: sekretariat@haendelgym.de
+traeger: öffentlich
+accepts_after_4th_grade: false
+profile:
+- music
+- bilingual_other
+languages:
+- name: Englisch
+  from_grade: 7
+- name: Französisch
+  from_grade: 7
+- name: Latein
+  from_grade: 7
+admission_requirements:
+  notes: Gymnasien-Berlin.net lists no Klasse-5 tracks. School named after composer Georg Friedrich Händel; music 
+    profile expected. Website haendelgym.de not fully indexed in search results.
+image_urls: []
+social_media: {}
+ratings: {}
+completeness_score: 0.588
+field_confidence:
+  accepts_after_4th_grade: medium
+  profile: low
+  languages: low
+  admission_requirements: low
+data_sources:
+- wfs_berlin
+- agent_research
+unverified_fields:
+- social_media
+- unverified_fields
+- accepts_after_4th_grade
+- ratings
+- field_confidence
+- image_urls
+- admission_requirements
+- languages
+- profile
+_pinned_fields: []

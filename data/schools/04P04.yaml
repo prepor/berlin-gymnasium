@@ -1,0 +1,32 @@
+school_id: 04P04
+name: Katholische Schule Liebfrauen (Gymnasium)
+district: Charlottenburg-Wilmersdorf
+last_updated: '2026-03-26'
+address: Ahornallee 33, 14050 Berlin
+coords:
+  lat: 52.5112153
+  lng: 13.27503868
+website: https://ksliebfrauen.de
+phone: +49 30 30613013
+email: sekretariat@ksl.schulerzbistum.de
+traeger: privat
+profile: []
+languages: []
+admission_requirements:
+  notes: No search results retrieved in this session; data not available.
+image_urls: []
+social_media: {}
+ratings: {}
+completeness_score: 0.412
+field_confidence: {}
+data_sources:
+- wfs_berlin
+- agent_research
+unverified_fields:
+- unverified_fields
+- social_media
+- ratings
+- field_confidence
+- image_urls
+- admission_requirements
+_pinned_fields: []

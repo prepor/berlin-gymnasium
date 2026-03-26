@@ -1,0 +1,58 @@
+school_id: 02Y08
+name: Hermann-Hesse-Gymnasium
+district: Friedrichshain-Kreuzberg
+last_updated: '2026-03-26'
+address: Böckhstraße 16, 10967 Berlin
+coords:
+  lat: 52.49346618
+  lng: 13.41921994
+website: https://hesse-kreuzberg.de
+phone: +49 30 666434090
+email: kontakt@hhg-kreuzberg.de
+traeger: öffentlich
+accepts_after_4th_grade: false
+profile:
+- MINT
+- bilingual_french
+ganztag: true
+languages:
+- name: Englisch
+  from_grade: 7
+- name: Französisch
+  from_grade: 7
+- name: Latein
+  from_grade: 9
+- name: Italienisch
+  from_grade: 9
+admission_requirements:
+  notendurchschnitt: 1.4
+  oversubscribed: true
+  selection_criteria: 'Bei Übernachfrage: 60% nach Durchschnittsnote der Förderprognose, 10% Härtefälle, 30% Losverfahren.
+    Für 2023/24: Notendurchschnitt 1.4 und besser direkt aufgenommen, ab 1.5 Losverfahren.'
+  entrance_test: false
+  notes: 206 applicants for 96 places in 2023/24. Gebundene Ganztagsschule since 01.08.2008.
+image_urls: []
+social_media: {}
+ratings: {}
+completeness_score: 0.647
+field_confidence:
+  accepts_after_4th_grade: high
+  profile: high
+  ganztag: high
+  languages: medium
+  admission_requirements: high
+data_sources:
+- wfs_berlin
+- agent_research
+unverified_fields:
+- social_media
+- unverified_fields
+- ganztag
+- accepts_after_4th_grade
+- ratings
+- field_confidence
+- image_urls
+- admission_requirements
+- languages
+- profile
+_pinned_fields: []

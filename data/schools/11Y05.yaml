@@ -1,0 +1,68 @@
+school_id: 11Y05
+name: Hans-und-Hilde-Coppi-Gymnasium
+district: Lichtenberg
+last_updated: '2026-03-26'
+address: Römerweg 30, 10318 Berlin
+coords:
+  lat: 52.49188012
+  lng: 13.52323275
+website: http://www.coppi-gym.de
+phone: +49 30 5098116
+email: sekretariat@coppi-gym.de
+traeger: öffentlich
+accepts_after_4th_grade: false
+profile:
+- music
+- bilingual_english
+- bilingual_french
+- kunst
+ganztag: true
+languages:
+- name: Englisch
+  from_grade: 7
+- name: Französisch
+  from_grade: 7
+- name: Latein
+  from_grade: 8
+- name: Spanisch
+  from_grade: 9
+admission_requirements:
+  selection_criteria: 'Primary criterion is the Durchschnittsnote der Förderprognose (GPA of the primary school recommendation).
+    For Musikklasse admission: 60% GPA score, 10% prior attendance of music-oriented primary school stream, 30% result of
+    a school-administered Musiktest. In case of tied scores, a lottery decides. Lottery (§56(6)3 SchulG) does not apply to
+    the Musikklasse.'
+  probeunterricht: false
+  entrance_test: true
+  notes: Entrance test (Musiktest) applies only to applicants for the Musikklasse, not for Regelklassen. Maximum one 
+    Musikklasse per year with 29 criteria-based places. Admission for Regelklassen is solely GPA-based.
+image_urls: []
+social_media:
+  instagram: https://www.instagram.com/coppi_gym/
+ratings: {}
+completeness_score: 0.647
+field_confidence:
+  accepts_after_4th_grade: high
+  profile: high
+  languages: medium
+  ganztag: high
+  open_day: high
+  admission_requirements: high
+  ratings: high
+  abitur_average: high
+  image_urls: high
+  social_media: medium
+data_sources:
+- wfs_berlin
+- agent_research
+unverified_fields:
+- social_media
+- unverified_fields
+- ganztag
+- accepts_after_4th_grade
+- ratings
+- field_confidence
+- image_urls
+- admission_requirements
+- languages
+- profile
+_pinned_fields: []

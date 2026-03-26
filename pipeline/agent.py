@@ -160,7 +160,7 @@ async def _call_api(
         max_tokens=8000,
         messages=[{"role": "user", "content": build_prompt(batch)}],
         tools=[{
-            "type": "web_search_20260209",
+            "type": "web_search_20250305",
             "name": "web_search",
             "max_uses": max_uses,
             "user_location": {
@@ -223,8 +223,8 @@ async def enrich_batch(
 
         # Retry wrapper (D-11)
         @retry(
-            stop=stop_after_attempt(3),
-            wait=wait_exponential(multiplier=2, min=4, max=60),
+            stop=stop_after_attempt(5),
+            wait=wait_exponential(multiplier=2, min=15, max=120),
             retry=retry_if_exception_type((anthropic.RateLimitError, anthropic.APIStatusError)),
         )
         async def call_with_retry() -> list[dict]:
@@ -303,6 +303,7 @@ if __name__ == "__main__":
         sys.exit(1)
 
     schools = yaml.load(index_path)
-    test_schools = schools[:1]  # test with 1 school
-    results = asyncio.run(run_enrich(test_schools, config, force=True))
+    # Pass --force to bypass cache, --all to process all schools
+    force = "--force" in sys.argv
+    results = asyncio.run(run_enrich(schools, config, force=force))
     print(json.dumps(results, indent=2, ensure_ascii=False))

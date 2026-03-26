@@ -1,0 +1,83 @@
+school_id: 11Y02
+name: Johann-Gottfried-Herder-Gymnasium
+district: Lichtenberg
+last_updated: '2026-03-26'
+address: Franz-Jacob-Straße 8, 10369 Berlin
+coords:
+  lat: 52.52698384
+  lng: 13.46705025
+website: http://www.jgherder.de
+phone: +49 30 97609567
+email: sekretariat@jgherder.de
+traeger: öffentlich
+accepts_after_4th_grade: true
+profile:
+- bilingual_english
+- other
+ganztag: true
+languages:
+- name: Englisch
+  from_grade: 5
+- name: Russisch
+  from_grade: 5
+- name: Spanisch
+  from_grade: 5
+- name: Französisch
+  from_grade: 7
+- name: Spanisch
+  from_grade: 7
+- name: Latein
+  from_grade: 9
+admission_requirements:
+  oversubscribed: true
+  selection_criteria: "Admission to grade 5 (grundständiger Zweig) regulated as 'Schule besonderer pädagogischer Prägung':
+    priority to pupils continuing their grade-3 foreign language; ranked by sum of grades in Deutsch, Fremdsprache, Mathematik,
+    Sachunterricht from the grade-4 mid-year report (Notensumme 4–6 first, then 7–9, then higher). If more than 60 applicants
+    with Notensumme 4–6, a standardised selection interview (up to 50 points) is held; top 60 scores are admitted. Grade 7
+    admission follows §56 Schulgesetz. School has been consistently oversubscribed; listing as second or third choice has
+    not been successful in recent years."
+  probeunterricht: false
+  entrance_test: false
+  notes: Standardised selection interview (ca. 20 min, reading aloud, language knowledge, logical reasoning, up to 50 
+    points) is used only as a tiebreaker when grade-sum group exceeds capacity. No fixed GPA threshold can be stated in 
+    advance due to variable application numbers. Bilingual Abitur (CertiLingua) available.
+abitur_average: 1.86
+image_urls: []
+social_media:
+  facebook: https://www.facebook.com/herderberlin/
+ratings:
+  golocal:
+    source: golocal.de
+    score: 4.0
+    scale_min: 1.0
+    scale_max: 5.0
+    review_count: 2
+    retrieved: '2026-03-26'
+completeness_score: 0.765
+field_confidence:
+  accepts_after_4th_grade: high
+  profile: high
+  languages: medium
+  ganztag: high
+  open_day: high
+  admission_requirements: high
+  ratings: medium
+  abitur_average: high
+  image_urls: low
+  social_media: medium
+data_sources:
+- wfs_berlin
+- agent_research
+unverified_fields:
+- social_media
+- abitur_average
+- unverified_fields
+- ganztag
+- accepts_after_4th_grade
+- ratings
+- field_confidence
+- image_urls
+- admission_requirements
+- languages
+- profile
+_pinned_fields: []

@@ -1,0 +1,60 @@
+school_id: 06Y09
+name: Fichtenberg-Oberschule
+district: Steglitz-Zehlendorf
+last_updated: '2026-03-26'
+address: Rothenburgstraße 18, 12165 Berlin
+coords:
+  lat: 52.45396647
+  lng: 13.31314661
+website: http://fichtenberg-oberschule.net
+phone: +49 30 902992354
+email: info@fichtenberg-oberschule.net
+traeger: öffentlich
+accepts_after_4th_grade: false
+profile:
+- other
+languages:
+- name: Englisch
+  from_grade: 7
+- name: Französisch
+  from_grade: 7
+- name: Spanisch
+  from_grade: 7
+- name: Latein
+  from_grade: 8
+admission_requirements:
+  notendurchschnitt: 2.3
+  oversubscribed: true
+  selection_criteria: The sole admission criterion is the Förderprognose from primary school. Children with a 
+    Förderprognose of 2.3 or worse must pass a Probeunterricht (trial lesson) before applying. Typically oversubscribed.
+    No pre-selection for profiles required at admission.
+  probeunterricht: true
+  entrance_test: false
+  notes: Notably integrates blind and visually impaired students since 1980. Cooperates with Paulsen-Gymnasium for 
+    Oberstufe course offerings. No profile choice required at admission; profiling via Wahlpflichtfächer from classes 
+    8–10.
+image_urls: []
+social_media: {}
+ratings: {}
+completeness_score: 0.588
+field_confidence:
+  accepts_after_4th_grade: high
+  profile: medium
+  languages: high
+  admission_requirements: high
+  oversubscribed: high
+  notendurchschnitt: high
+data_sources:
+- wfs_berlin
+- agent_research
+unverified_fields:
+- social_media
+- unverified_fields
+- accepts_after_4th_grade
+- ratings
+- field_confidence
+- image_urls
+- admission_requirements
+- languages
+- profile
+_pinned_fields: []

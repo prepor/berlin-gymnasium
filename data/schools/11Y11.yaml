@@ -1,0 +1,59 @@
+school_id: 11Y11
+name: Immanuel-Kant-Gymnasium
+district: Lichtenberg
+last_updated: '2026-03-26'
+address: Lückstraße 63, 10317 Berlin
+coords:
+  lat: 52.50198795
+  lng: 13.48941876
+website: http://www.kant-gymnasium.de
+phone: +49 30 5139748
+email: 'sekretariat@kant-gymnasium.de '
+traeger: öffentlich
+accepts_after_4th_grade: true
+profile:
+- MINT
+ganztag: true
+languages:
+- name: Englisch
+  from_grade: 5
+- name: Französisch
+  from_grade: 7
+- name: Latein
+  from_grade: 7
+admission_requirements:
+  oversubscribed: true
+  selection_criteria: Entrance test (Aufnahmetest) required; up to 60 students with the highest combined score are 
+    admitted when oversubscribed.
+  probeunterricht: false
+  entrance_test: true
+  notes: School was among the nine most sought-after Gymnasien in Berlin for 2023/24 enrolment. Grundständige (from 
+    grade 5) and standard (from grade 7) tracks both available.
+image_urls: []
+social_media: {}
+ratings: {}
+completeness_score: 0.647
+field_confidence:
+  accepts_after_4th_grade: high
+  profile: high
+  languages: medium
+  ganztag: high
+  open_day: low
+  admission_requirements: high
+  ratings: high
+  abitur_average: low
+data_sources:
+- wfs_berlin
+- agent_research
+unverified_fields:
+- social_media
+- unverified_fields
+- ganztag
+- accepts_after_4th_grade
+- ratings
+- field_confidence
+- image_urls
+- admission_requirements
+- languages
+- profile
+_pinned_fields: []

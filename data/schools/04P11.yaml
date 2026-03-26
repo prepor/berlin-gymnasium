@@ -1,0 +1,32 @@
+school_id: 04P11
+name: Evangelisches Gymnasium zum Grauen Kloster
+district: Charlottenburg-Wilmersdorf
+last_updated: '2026-03-26'
+address: Salzbrunner Straße 41, 14193 Berlin
+coords:
+  lat: 52.48535876
+  lng: 13.29310859
+website: http://www.graues-kloster.de
+phone: +49 30 8254011
+email: sekretariat@graues-kloster.de
+traeger: privat
+profile: []
+languages: []
+admission_requirements:
+  notes: No search results retrieved in this session; data not available.
+image_urls: []
+social_media: {}
+ratings: {}
+completeness_score: 0.412
+field_confidence: {}
+data_sources:
+- wfs_berlin
+- agent_research
+unverified_fields:
+- unverified_fields
+- social_media
+- ratings
+- field_confidence
+- image_urls
+- admission_requirements
+_pinned_fields: []

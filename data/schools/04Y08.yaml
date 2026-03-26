@@ -1,0 +1,54 @@
+school_id: 04Y08
+name: Hildegard-Wegscheider-Gymnasium
+district: Charlottenburg-Wilmersdorf
+last_updated: '2026-03-26'
+address: Lassenstraße 16, 14193 Berlin
+coords:
+  lat: 52.48511672
+  lng: 13.27629423
+website: https://www.wegscheider-gymnasium.de
+phone: +49 30 897454210
+email: wegscheider-gymnasium@gmx.de
+traeger: öffentlich
+accepts_after_4th_grade: true
+profile:
+- MINT
+languages:
+- name: Englisch
+  from_grade: 5
+- name: Französisch
+  from_grade: 7
+- name: Latein
+  from_grade: 7
+- name: Italienisch
+admission_requirements:
+  selection_criteria: "Durchschnittsnote der Förderprognose bei Übernachfrage. For the MINT Profilzug from class 5: weighted
+    GPA from Maths (×3), German (×2), Sachunterricht and 1st foreign language (sum ≤ 15 required); Maths must be at least
+    'gut'. Qualifying pupils then sit a centralised entrance test (Eingangstest)."
+  probeunterricht: false
+  entrance_test: true
+  notes: Entrance test for the grundständig MINT profile (class 5) is held at all grundständig MINT schools 
+    simultaneously each March. Regular (class 7) intake uses standard Förderprognose GPA criterion.
+image_urls: []
+social_media: {}
+ratings: {}
+completeness_score: 0.588
+field_confidence:
+  accepts_after_4th_grade: high
+  profile: high
+  languages: high
+  admission_requirements: high
+data_sources:
+- wfs_berlin
+- agent_research
+unverified_fields:
+- social_media
+- unverified_fields
+- accepts_after_4th_grade
+- ratings
+- field_confidence
+- image_urls
+- admission_requirements
+- languages
+- profile
+_pinned_fields: []

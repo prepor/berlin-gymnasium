@@ -1,0 +1,55 @@
+school_id: 02Y01
+name: Andreas-Gymnasium
+district: Friedrichshain-Kreuzberg
+last_updated: '2026-03-26'
+address: Koppenstraße 76, 10243 Berlin
+coords:
+  lat: 52.51401448
+  lng: 13.43471566
+website: https://www.andreas-schule.org
+phone: +49 30 29369020
+email: sekretariat@andreas.schule.berlin.de
+traeger: öffentlich
+accepts_after_4th_grade: true
+profile:
+- MINT
+languages:
+- name: Englisch
+  from_grade: 5
+- name: Französisch
+  from_grade: 7
+- name: Latein
+  from_grade: 7
+admission_requirements:
+  oversubscribed: true
+  selection_criteria: "Klasse 5 (MINT-Profilklasse, 30 Plätze): Auswahl nach Eingangstest (50%), Zeugnisnoten (25%), Kompetenzkriterien
+    der Förderprognose (25%); Mathematiknote mindestens 'gut'; Notensumme (Mathe×3 + Deutsch×2 + Fremdsprache + Sachkunde)
+    ≤ 15. Klasse 7 (96 Plätze): 60% nach Förderprognose, 30% Losverfahren, 10% Härtefälle/Geschwister (nur bei Durchschnitt
+    besser 2,3 oder bestandenem Probeunterricht)"
+  probeunterricht: true
+  entrance_test: true
+  notes: 'MINT-Profilklasse ab Klasse 5 in Kooperation mit der Humboldt-Universität Berlin; Tag der offenen Tür für Klasse
+    5 war 16.01.2026 (vergangen); Anmeldezeitraum Klasse 5: 10.–13.02.2026'
+image_urls: []
+social_media: {}
+ratings: {}
+completeness_score: 0.588
+field_confidence:
+  accepts_after_4th_grade: high
+  profile: high
+  languages: high
+  admission_requirements: high
+data_sources:
+- wfs_berlin
+- agent_research
+unverified_fields:
+- social_media
+- unverified_fields
+- accepts_after_4th_grade
+- ratings
+- field_confidence
+- image_urls
+- admission_requirements
+- languages
+- profile
+_pinned_fields: []

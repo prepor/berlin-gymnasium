@@ -1,0 +1,48 @@
+school_id: 11Y12
+name: 12. Schule (Gymnasium)
+district: Lichtenberg
+last_updated: '2026-03-26'
+address: Allee der Kosmonauten 20, 10315 Berlin
+coords:
+  lat: 52.52438752
+  lng: 13.51201281
+website: https://gym.adkosmos.eu
+phone: +49 30 2639114000
+email: 11Y12@11Y12.schule.berlin.de
+traeger: öffentlich
+accepts_after_4th_grade: false
+profile:
+- other
+languages: []
+admission_requirements:
+  selection_criteria: 'Standard Berlin process: Förderprognose required; applicants without Gymnasium recommendation must
+    present a Probetag result. All applications during the registration window are treated equally regardless of submission
+    date.'
+  probeunterricht: true
+  entrance_test: false
+  notes: Very new school (opened recently at Allee der Kosmonauten 20-22, campus ADKosmos shared with ISS 15. Schule). 
+    Admission form found only for class 7 entry; no grundständig (class 5) track identified. School emphasises 'Lernen 
+    durch Engagement' (LdE) pedagogical approach.
+image_urls: []
+social_media: {}
+ratings: {}
+completeness_score: 0.529
+field_confidence:
+  accepts_after_4th_grade: medium
+  profile: low
+  ganztag: low
+  admission_requirements: medium
+data_sources:
+- wfs_berlin
+- agent_research
+unverified_fields:
+- social_media
+- unverified_fields
+- accepts_after_4th_grade
+- ratings
+- field_confidence
+- image_urls
+- admission_requirements
+- languages
+- profile
+_pinned_fields: []

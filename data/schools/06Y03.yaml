@@ -1,0 +1,63 @@
+school_id: 06Y03
+name: Arndt-Gymnasium Dahlem
+district: Steglitz-Zehlendorf
+last_updated: '2026-03-26'
+address: Königin-Luise-Straße 80, 14195 Berlin
+coords:
+  lat: 52.45910067
+  lng: 13.28026188
+website: https://arndt-gymnasium.de
+phone: +49 30 8315052
+email: sekretariat@arndt-gymnasium.de
+traeger: öffentlich
+accepts_after_4th_grade: true
+profile:
+- altsprachlich
+- music
+- kunst
+ganztag: false
+languages:
+- name: Englisch
+  from_grade: 5
+- name: Latein
+  from_grade: 5
+- name: Latein
+  from_grade: 7
+- name: Altgriechisch
+  from_grade: 8
+- name: Französisch
+  from_grade: 8
+admission_requirements:
+  selection_criteria: Durchschnittsnote der Förderprognose as primary criterion for grundständige Klasse 5 
+    (altsprachlicher Bildungszweig) and grade 7 classes
+  probeunterricht: false
+  entrance_test: false
+  notes: Grundständiger Zug (grade 5 entry) introduced in school year 2006/07 in the altsprachlicher Bildungszweig. 
+    Latin as 2nd language from grade 5, Ancient Greek as mandatory 3rd language from grade 8. Grade 7 also has a 
+    Werkstatt Ästhetische Bildung profile (DS, Kunst, Musik). Strong music programme with 3 choirs, 6 orchestras, 6 
+    bands.
+image_urls: []
+social_media: {}
+ratings: {}
+completeness_score: 0.647
+field_confidence:
+  accepts_after_4th_grade: high
+  profile: high
+  languages: high
+  ganztag: low
+  admission_requirements: medium
+data_sources:
+- wfs_berlin
+- agent_research
+unverified_fields:
+- social_media
+- unverified_fields
+- ganztag
+- accepts_after_4th_grade
+- ratings
+- field_confidence
+- image_urls
+- admission_requirements
+- languages
+- profile
+_pinned_fields: []

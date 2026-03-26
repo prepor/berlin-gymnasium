@@ -1,0 +1,56 @@
+school_id: 02Y06
+name: Leibniz-Gymnasium
+district: Friedrichshain-Kreuzberg
+last_updated: '2026-03-26'
+address: Schleiermacherstraße 23, 10961 Berlin
+coords:
+  lat: 52.48992527
+  lng: 13.39748568
+website: http://www.leibnizschule-berlin.de
+phone: +49 30 50586711
+email: sekretariat@leibniz-gymnasium.berlin
+traeger: öffentlich
+accepts_after_4th_grade: false
+profile:
+- MINT
+- music
+- kunst
+- bilingual_english
+- bilingual_french
+ganztag: true
+languages:
+- name: Englisch
+  from_grade: 7
+- name: Französisch
+  from_grade: 7
+- name: Latein
+  from_grade: 7
+admission_requirements:
+  selection_criteria: Durchschnittsnote der Förderprognose bei Übernachfrage
+  entrance_test: false
+  notes: Bilingual modules in grades 8–10 in English or French; Cambridge and DELF certificates offered
+image_urls: []
+social_media: {}
+ratings: {}
+completeness_score: 0.647
+field_confidence:
+  accepts_after_4th_grade: high
+  profile: high
+  ganztag: high
+  languages: medium
+  admission_requirements: medium
+data_sources:
+- wfs_berlin
+- agent_research
+unverified_fields:
+- social_media
+- unverified_fields
+- ganztag
+- accepts_after_4th_grade
+- ratings
+- field_confidence
+- image_urls
+- admission_requirements
+- languages
+- profile
+_pinned_fields: []
