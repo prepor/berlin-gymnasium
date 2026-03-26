@@ -105,49 +105,49 @@ Which phases cover which requirements. Updated during roadmap creation.
 
 | Requirement | Phase | Status |
 |-------------|-------|--------|
-| DATA-01 | — | Pending |
-| DATA-02 | — | Pending |
-| DATA-03 | — | Pending |
-| DATA-04 | — | Pending |
-| DATA-05 | — | Pending |
-| DATA-06 | — | Pending |
-| DATA-07 | — | Pending |
-| DATA-08 | — | Pending |
-| DATA-09 | — | Pending |
-| DATA-10 | — | Pending |
-| DATA-11 | — | Pending |
-| DATA-12 | — | Pending |
-| LIST-01 | — | Pending |
-| LIST-02 | — | Pending |
-| LIST-03 | — | Pending |
-| LIST-04 | — | Pending |
-| LIST-05 | — | Pending |
-| LIST-06 | — | Pending |
-| LIST-07 | — | Pending |
-| DETL-01 | — | Pending |
-| DETL-02 | — | Pending |
-| DETL-03 | — | Pending |
-| DETL-04 | — | Pending |
-| DETL-05 | — | Pending |
-| DETL-06 | — | Pending |
-| MAP-01 | — | Pending |
-| MAP-02 | — | Pending |
-| MAP-03 | — | Pending |
-| TRVL-01 | — | Pending |
-| TRVL-02 | — | Pending |
-| TRVL-03 | — | Pending |
-| COMP-01 | — | Pending |
-| COMP-02 | — | Pending |
-| COMP-03 | — | Pending |
-| DEPL-01 | — | Pending |
-| DEPL-02 | — | Pending |
-| DEPL-03 | — | Pending |
+| DATA-01 | Phase 1 | Pending |
+| DATA-02 | Phase 1 | Pending |
+| DATA-03 | Phase 1 | Pending |
+| DATA-04 | Phase 1 | Pending |
+| DATA-05 | Phase 1 | Pending |
+| DATA-06 | Phase 1 | Pending |
+| DATA-07 | Phase 1 | Pending |
+| DATA-08 | Phase 1 | Pending |
+| DATA-09 | Phase 1 | Pending |
+| DATA-10 | Phase 1 | Pending |
+| DATA-11 | Phase 1 | Pending |
+| DATA-12 | Phase 1 | Pending |
+| LIST-01 | Phase 2 | Pending |
+| LIST-02 | Phase 2 | Pending |
+| LIST-03 | Phase 2 | Pending |
+| LIST-04 | Phase 2 | Pending |
+| LIST-05 | Phase 2 | Pending |
+| LIST-06 | Phase 2 | Pending |
+| LIST-07 | Phase 2 | Pending |
+| DETL-01 | Phase 2 | Pending |
+| DETL-02 | Phase 2 | Pending |
+| DETL-03 | Phase 2 | Pending |
+| DETL-04 | Phase 2 | Pending |
+| DETL-05 | Phase 2 | Pending |
+| DETL-06 | Phase 2 | Pending |
+| MAP-01 | Phase 3 | Pending |
+| MAP-02 | Phase 3 | Pending |
+| MAP-03 | Phase 3 | Pending |
+| TRVL-01 | Phase 4 | Pending |
+| TRVL-02 | Phase 4 | Pending |
+| TRVL-03 | Phase 4 | Pending |
+| COMP-01 | Phase 5 | Pending |
+| COMP-02 | Phase 5 | Pending |
+| COMP-03 | Phase 5 | Pending |
+| DEPL-01 | Phase 2 | Pending |
+| DEPL-02 | Phase 2 | Pending |
+| DEPL-03 | Phase 2 | Pending |
 
 **Coverage:**
 - v1 requirements: 36 total
-- Mapped to phases: 0
-- Unmapped: 36 ⚠️
+- Mapped to phases: 36
+- Unmapped: 0
 
 ---
 *Requirements defined: 2026-03-26*
-*Last updated: 2026-03-26 after initial definition*
+*Last updated: 2026-03-26 after roadmap creation*

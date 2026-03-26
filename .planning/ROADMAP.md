@@ -1,0 +1,97 @@
+# Roadmap: Berlin Gymnasien
+
+## Overview
+
+Two-milestone project. Milestone 1 (M1) builds a reproducible Python scraping pipeline that produces a validated YAML corpus of all ~90 Berlin Gymnasien — this is the data contract everything else depends on. Milestone 2 (M2) builds a Rust/Leptos WASM SPA deployed to GitHub Pages that consumes that corpus and gives parents a fast, filterable directory with an interactive map, travel time routing, and side-by-side school comparison.
+
+## Milestones
+
+- **M1: Data Pipeline** — Phases 1 (complete, reproducible YAML corpus)
+- **M2: Website SPA** — Phases 2–5 (filterable directory → map → travel time → comparison)
+
+## Phases
+
+**Phase Numbering:**
+- Integer phases (1, 2, 3): Planned milestone work
+- Decimal phases (2.1, 2.2): Urgent insertions (marked with INSERTED)
+
+Decimal phases appear between their surrounding integers in numeric order.
+
+- [ ] **Phase 1: Data Pipeline** - Reproducible Python pipeline producing a validated YAML corpus of all Berlin Gymnasien
+- [ ] **Phase 2: SPA Foundation and School Directory** - Leptos WASM SPA deployed to GitHub Pages with filterable school listing and detail pages
+- [ ] **Phase 3: Interactive Map** - OpenStreetMap map with clickable pins synced to active filters
+- [ ] **Phase 4: Travel Time Routing** - User address input with travel time matrix (walk, transit, car) and sort-by-commute
+- [ ] **Phase 5: Comparison, Favorites, and Sharing** - Side-by-side comparison, favorites shortlist, and shareable permalinks
+
+## Phase Details
+
+### Phase 1: Data Pipeline
+**Goal**: A complete, validated, reproducible YAML corpus of all Berlin Gymnasien exists and can be re-run to produce a field-level changelog
+**Depends on**: Nothing (first phase)
+**Requirements**: DATA-01, DATA-02, DATA-03, DATA-04, DATA-05, DATA-06, DATA-07, DATA-08, DATA-09, DATA-10, DATA-11, DATA-12
+**Success Criteria** (what must be TRUE):
+  1. Running the pipeline with a single command produces one YAML file per school in `data/schools/` for all ~90 Berlin Gymnasien
+  2. Each school YAML file contains coordinates, district, grundständig flag, contact info, profile/specialization, languages, Ganztag status, open day dates, ratings (with source attribution), and admission requirements where available
+  3. All YAML files pass Pydantic schema validation with no errors before being written
+  4. Re-running the pipeline produces `data/CHANGELOG.md` with field-level diffs showing exactly what changed
+  5. Pipeline setup and execution are documented so a new developer can reproduce the corpus from scratch
+**Plans**: TBD
+
+### Phase 2: SPA Foundation and School Directory
+**Goal**: Parents can browse, filter, and read detailed information about all Berlin Gymnasien on a live GitHub Pages site
+**Depends on**: Phase 1
+**Requirements**: LIST-01, LIST-02, LIST-03, LIST-04, LIST-05, LIST-06, LIST-07, DETL-01, DETL-02, DETL-03, DETL-04, DETL-05, DETL-06, DEPL-01, DEPL-02, DEPL-03
+**Success Criteria** (what must be TRUE):
+  1. A user can open the GitHub Pages URL and see a listing of all Berlin Gymnasien with name, district, profile, and grundständig flag
+  2. A user can filter schools by district, profile, grundständig status, language offered, and Ganztag mode — combinations work correctly
+  3. A user can click any school to view a detail page showing all available fields (contact info, ratings by source, admission requirements, open day date, data freshness)
+  4. The site loads and is fully usable on a mobile phone screen
+  5. Deploying a new version is triggered by pushing to main (Trunk build → GitHub Pages)
+**Plans**: TBD
+**UI hint**: yes
+
+### Phase 3: Interactive Map
+**Goal**: Parents can see all (filtered) schools on an interactive map and navigate to school detail pages from map pins
+**Depends on**: Phase 2
+**Requirements**: MAP-01, MAP-02, MAP-03
+**Success Criteria** (what must be TRUE):
+  1. A user can switch to a map view and see pins for all schools at their correct coordinates on an OpenStreetMap base layer
+  2. A user can click any pin to see the school name and navigate to its detail page
+  3. Applying filters in the listing view removes the corresponding pins from the map in real time
+**Plans**: TBD
+**UI hint**: yes
+
+### Phase 4: Travel Time Routing
+**Goal**: Parents can enter their home address and see how long it takes to reach each school by walking, public transport, and car — and sort/filter schools by commute time
+**Depends on**: Phase 3
+**Requirements**: TRVL-01, TRVL-02, TRVL-03
+**Success Criteria** (what must be TRUE):
+  1. A user can type their home address into an input field and have it geocoded to coordinates via Photon/komoot
+  2. After entering an address, each school in the listing shows travel time for walking, public transport, and car
+  3. A user can sort the school listing by any travel mode's commute time from their entered address
+**Plans**: TBD
+**UI hint**: yes
+
+### Phase 5: Comparison, Favorites, and Sharing
+**Goal**: Parents can compare 2–3 schools side by side, save a favorites shortlist, and share school links
+**Depends on**: Phase 4
+**Requirements**: COMP-01, COMP-02, COMP-03
+**Success Criteria** (what must be TRUE):
+  1. A user can select 2–3 schools and view them in a side-by-side comparison layout showing all key fields
+  2. Each school has a shareable permalink URL that opens directly to its detail page
+  3. A user can save schools to a favorites shortlist that persists across browser sessions (localStorage) and can be reviewed at any time
+**Plans**: TBD
+**UI hint**: yes
+
+## Progress
+
+**Execution Order:**
+Phases execute in numeric order: 1 → 2 → 3 → 4 → 5
+
+| Phase | Plans Complete | Status | Completed |
+|-------|----------------|--------|-----------|
+| 1. Data Pipeline | 0/TBD | Not started | - |
+| 2. SPA Foundation and School Directory | 0/TBD | Not started | - |
+| 3. Interactive Map | 0/TBD | Not started | - |
+| 4. Travel Time Routing | 0/TBD | Not started | - |
+| 5. Comparison, Favorites, and Sharing | 0/TBD | Not started | - |
