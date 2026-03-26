@@ -112,3 +112,11 @@ None — pipeline/run.py requires no external services beyond what was already r
 ---
 *Phase: 01-data-pipeline*
 *Completed: 2026-03-26*
+
+## Self-Check: PASSED
+
+- FOUND: pipeline/run.py
+- FOUND: README.md
+- FOUND: .planning/phases/01-data-pipeline/01-05-SUMMARY.md
+- FOUND: commit 843f5d6 (feat: pipeline/run.py)
+- FOUND: commit 23cf3f9 (docs: README.md)
