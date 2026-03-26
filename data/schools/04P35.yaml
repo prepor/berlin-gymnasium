@@ -16,7 +16,6 @@ accepts_after_4th_grade: false
 profile:
 - MINT
 - kunst
-- other
 ganztag: true
 languages:
 - name: Englisch

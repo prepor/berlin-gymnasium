@@ -260,8 +260,6 @@ pub fn profile_label<'a>(profile: &'a str, lang: Language) -> &'a str {
         ("music", En) => "Music",
         ("sports", De) => "Sport",
         ("sports", En) => "Sports",
-        ("other", De) => "Sonstiges",
-        ("other", En) => "Other",
         (p, _) => p,
     }
 }

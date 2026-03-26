@@ -78,7 +78,8 @@ For EACH school, find:
    Source: Official berlin.de list of grundständige Gymnasien is most reliable.
 
 2. profile (list of strings): School specializations. Values from: ["MINT", "music", "sports",
-   "bilingual_english", "bilingual_french", "bilingual_other", "altsprachlich", "kunst", "IB", "other"]
+   "bilingual_english", "bilingual_french", "bilingual_other", "altsprachlich", "kunst", "IB"]
+   Only include profiles that genuinely match. Leave empty [] if no specific specialization.
    Search: school website, official description.
 
 3. languages (list): Foreign languages offered. Format: [{{"name": "Englisch", "from_grade": 5}}]

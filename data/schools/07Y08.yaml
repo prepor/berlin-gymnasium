@@ -17,7 +17,6 @@ profile:
 - MINT
 - music
 - bilingual_english
-- other
 languages:
 - name: Englisch
   from_grade: 5

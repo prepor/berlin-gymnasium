@@ -17,7 +17,6 @@ profile:
 - bilingual_english
 - altsprachlich
 - kunst
-- other
 ganztag: true
 languages:
 - name: Englisch

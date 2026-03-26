@@ -15,7 +15,6 @@ teacher_count: 69
 accepts_after_4th_grade: false
 profile:
 - MINT
-- other
 languages:
 - name: Englisch
   from_grade: 7

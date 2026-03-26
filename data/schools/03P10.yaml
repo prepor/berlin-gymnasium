@@ -13,8 +13,7 @@ traeger: privat
 student_count: 676
 teacher_count: 56
 accepts_after_4th_grade: true
-profile:
-- other
+profile: []
 languages:
 - name: Englisch
   from_grade: 5

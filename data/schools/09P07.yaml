@@ -14,7 +14,7 @@ student_count: 611
 teacher_count: 65
 accepts_after_4th_grade: true
 profile:
-- musik
+- music
 - kunst
 ganztag: false
 languages:

@@ -16,7 +16,6 @@ accepts_after_4th_grade: false
 profile:
 - MINT
 - bilingual_english
-- other
 languages:
 - name: Englisch
   from_grade: 7

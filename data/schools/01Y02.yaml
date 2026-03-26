@@ -16,7 +16,6 @@ accepts_after_4th_grade: false
 profile:
 - bilingual_english
 - bilingual_french
-- other
 ganztag: true
 languages:
 - name: Englisch
