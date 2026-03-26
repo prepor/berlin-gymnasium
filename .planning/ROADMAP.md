@@ -42,7 +42,7 @@ Plans:
 - [x] 01-02-PLAN.md — Seed step: WFS fetch + Eckdaten XLSX merge → schools_index.yaml
 - [ ] 01-03-PLAN.md — Agent enrichment: Claude claude-sonnet-4-6 batches with web_search_20260209
 - [x] 01-04-PLAN.md — Validate + merge (D-17 structured wins) + YAML writer + changelog
-- [ ] 01-05-PLAN.md — Orchestrator (run.py wiring all steps) + README + end-to-end verification
+- [x] 01-05-PLAN.md — Orchestrator (run.py wiring all steps) + README + end-to-end verification
 
 ### Phase 2: SPA Foundation and School Directory
 **Goal**: Parents can browse, filter, and read detailed information about all Berlin Gymnasien on a live GitHub Pages site
@@ -97,7 +97,7 @@ Phases execute in numeric order: 1 → 2 → 3 → 4 → 5
 
 | Phase | Plans Complete | Status | Completed |
 |-------|----------------|--------|-----------|
-| 1. Data Pipeline | 1/5 | In Progress|  |
+| 1. Data Pipeline | 4/5 | In Progress|  |
 | 2. SPA Foundation and School Directory | 0/TBD | Not started | - |
 | 3. Interactive Map | 0/TBD | Not started | - |
 | 4. Travel Time Routing | 0/TBD | Not started | - |
