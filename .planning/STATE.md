@@ -2,15 +2,15 @@
 gsd_state_version: 1.0
 milestone: v1.0
 milestone_name: milestone
-status: executing
-stopped_at: Completed 04-01-PLAN.md
-last_updated: "2026-03-26T20:18:29.817Z"
+status: verifying
+stopped_at: Completed 04-02-PLAN.md
+last_updated: "2026-03-26T20:26:49.008Z"
 last_activity: 2026-03-26
 progress:
   total_phases: 5
-  completed_phases: 3
+  completed_phases: 4
   total_plans: 11
-  completed_plans: 10
+  completed_plans: 11
   percent: 0
 ---
 
@@ -27,7 +27,7 @@ See: .planning/PROJECT.md (updated 2026-03-26)
 
 Phase: 04 (travel-time-routing) — EXECUTING
 Plan: 2 of 2
-Status: Ready to execute
+Status: Phase complete — ready for verification
 Last activity: 2026-03-26
 
 Progress: [░░░░░░░░░░] 0%
@@ -61,6 +61,7 @@ Progress: [░░░░░░░░░░] 0%
 | Phase 02 P03 | 4 | 2 tasks | 5 files |
 | Phase 03 P01 | 7 | 2 tasks | 8 files |
 | Phase 04 P01 | 3 | 2 tasks | 7 files |
+| Phase 04 P02 | 5 | 3 tasks | 6 files |
 
 ## Accumulated Context
 
@@ -94,6 +95,7 @@ Recent decisions affecting current work:
 - [Phase 04]: Use gloo-net for WASM HTTP (ergonomic, lightweight) over raw web-sys fetch
 - [Phase 04]: Bicycle instead of transit for third travel time mode (Valhalla matrix does not support multimodal)
 - [Phase 04]: POST+GET fallback for Valhalla CORS (per research Pitfall 3)
+- [Phase 04]: AddressInput uses leptos-use debounce (500ms) for Photon geocoding; travel_times read inside Memo for reactive sort; all callbacks preserve from= URL param
 
 ### Pending Todos
 
@@ -107,6 +109,6 @@ None yet.
 
 ## Session Continuity
 
-Last session: 2026-03-26T20:18:29.814Z
-Stopped at: Completed 04-01-PLAN.md
+Last session: 2026-03-26T20:26:49.000Z
+Stopped at: Completed 04-02-PLAN.md
 Resume file: None
