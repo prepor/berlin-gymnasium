@@ -2,6 +2,7 @@ use leptos::prelude::*;
 
 mod app;
 mod components;
+mod hash_router;
 mod models;
 mod pages;
 mod services;
