@@ -20,7 +20,7 @@ Decimal phases appear between their surrounding integers in numeric order.
 - [x] **Phase 1: Data Pipeline** - Reproducible Python pipeline producing a validated YAML corpus of all Berlin Gymnasien
 - [ ] **Phase 2: SPA Foundation and School Directory** - Leptos WASM SPA deployed to GitHub Pages with filterable school listing and detail pages
 - [x] **Phase 3: Interactive Map** - OpenStreetMap map with clickable pins synced to active filters (completed 2026-03-26)
-- [ ] **Phase 4: Travel Time Routing** - User address input with travel time matrix (walk, transit, car) and sort-by-commute
+- [ ] **Phase 4: Travel Time Routing** - User address input with travel time matrix (walk, bike, car) and sort-by-commute
 - [ ] **Phase 5: Comparison, Favorites, and Sharing** - Side-by-side comparison, favorites shortlist, and shareable permalinks
 
 ## Phase Details
@@ -77,14 +77,18 @@ Plans:
 **UI hint**: yes
 
 ### Phase 4: Travel Time Routing
-**Goal**: Parents can enter their home address and see how long it takes to reach each school by walking, public transport, and car — and sort/filter schools by commute time
+**Goal**: Parents can enter their home address and see how long it takes to reach each school by walking, cycling, and driving — and sort schools by commute time
 **Depends on**: Phase 3
 **Requirements**: TRVL-01, TRVL-02, TRVL-03
 **Success Criteria** (what must be TRUE):
   1. A user can type their home address into an input field and have it geocoded to coordinates via Photon/komoot
-  2. After entering an address, each school in the listing shows travel time for walking, public transport, and car
+  2. After entering an address, each school in the listing shows travel time for walking, cycling, and driving
   3. A user can sort the school listing by any travel mode's commute time from their entered address
-**Plans**: TBD
+**Plans**: 2 plans
+
+Plans:
+- [ ] 04-01-PLAN.md — Data model (TravelTimes, SortField extension), Cargo deps (gloo-net, wasm-bindgen-futures), Photon geocoding + Valhalla routing service modules
+- [ ] 04-02-PLAN.md — AddressInput component, listing page integration (URL params, reactive signals, travel time fetch), SchoolCard travel row, sort controls extension, CSS
 **UI hint**: yes
 
 ### Phase 5: Comparison, Favorites, and Sharing
@@ -108,5 +112,5 @@ Phases execute in numeric order: 1 → 2 → 3 → 4 → 5
 | 1. Data Pipeline | 5/5 | Complete | 2026-03-26 |
 | 2. SPA Foundation and School Directory | 3/3 | Complete | 2026-03-26 |
 | 3. Interactive Map | 1/1 | Complete   | 2026-03-26 |
-| 4. Travel Time Routing | 0/TBD | Not started | - |
+| 4. Travel Time Routing | 0/2 | Planned | - |
 | 5. Comparison, Favorites, and Sharing | 0/TBD | Not started | - |
