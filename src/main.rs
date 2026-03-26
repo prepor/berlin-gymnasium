@@ -4,6 +4,7 @@ mod app;
 mod components;
 mod models;
 mod pages;
+mod services;
 mod state;
 
 fn main() {
