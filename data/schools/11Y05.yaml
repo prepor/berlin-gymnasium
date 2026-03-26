@@ -29,15 +29,12 @@ languages:
 - name: Spanisch
   from_grade: 9
 admission_requirements:
-  selection_criteria: 'Primary criterion is the Durchschnittsnote der Förderprognose (GPA of the primary school recommendation).
-    For Musikklasse admission: 60% GPA score, 10% prior attendance of music-oriented primary school stream, 30% result of
-    a school-administered Musiktest. In case of tied scores, a lottery decides. Lottery (§56(6)3 SchulG) does not apply to
-    the Musikklasse.'
+  selection_criteria: 'Primary criterion is the Durchschnittsnote der Förderprognose (GPA of the primary school recommendation). For Musikklasse admission: 60% GPA score, 10% prior attendance of music-oriented primary school stream, 30% result of a school-administered Musiktest. In case of tied scores, a lottery decides. Lottery (§56(6)3 SchulG) does not apply to the Musikklasse.'
   probeunterricht: false
   entrance_test: true
-  notes: Entrance test (Musiktest) applies only to applicants for the Musikklasse, not for Regelklassen. Maximum one 
-    Musikklasse per year with 29 criteria-based places. Admission for Regelklassen is solely GPA-based.
-image_urls: []
+  notes: Entrance test (Musiktest) applies only to applicants for the Musikklasse, not for Regelklassen. Maximum one Musikklasse per year with 29 criteria-based places. Admission for Regelklassen is solely GPA-based.
+image_urls:
+- https://upload.wikimedia.org/wikipedia/commons/thumb/2/28/Treskowallee_Roemerweg_Schule.jpg/800px-Treskowallee_Roemerweg_Schule.jpg
 social_media:
   instagram: https://www.instagram.com/coppi_gym/
 ratings: {}
@@ -56,6 +53,7 @@ field_confidence:
 data_sources:
 - wfs_berlin
 - agent_research
+- wikimedia
 unverified_fields:
 - social_media
 - unverified_fields

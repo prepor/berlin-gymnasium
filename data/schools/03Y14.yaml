@@ -27,13 +27,12 @@ languages:
 - name: Latein
   from_grade: 9
 admission_requirements:
-  selection_criteria: Durchschnittsnote der Förderprognose bei Übernachfrage; bilingual track starts grade 5 with 
-    entrance test
+  selection_criteria: Durchschnittsnote der Förderprognose bei Übernachfrage; bilingual track starts grade 5 with entrance test
   probeunterricht: false
   entrance_test: true
-  notes: Bilingual (Kl.5) track requires entrance test for MINT/bilingual classes. Standard track from grade 7 via 
-    Förderprognose GPA.
-image_urls: []
+  notes: Bilingual (Kl.5) track requires entrance test for MINT/bilingual classes. Standard track from grade 7 via Förderprognose GPA.
+image_urls:
+- https://commons.wikimedia.org/wiki/Special:FilePath/Berlin_Weißensee_Pistoriusstraße_133-137_(09040547).JPG?width=800
 social_media: {}
 ratings: {}
 completeness_score: 0.647
@@ -46,6 +45,7 @@ field_confidence:
 data_sources:
 - wfs_berlin
 - agent_research
+- wikimedia
 unverified_fields:
 - social_media
 - unverified_fields

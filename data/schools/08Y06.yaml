@@ -14,12 +14,14 @@ student_count: 796
 teacher_count: 62
 profile: []
 languages: []
-image_urls: []
+image_urls:
+- https://upload.wikimedia.org/wikipedia/commons/thumb/7/71/Hannah-Arendt-Gymnasium.jpg/800px-Hannah-Arendt-Gymnasium.jpg
 social_media: {}
 ratings: {}
 completeness_score: 0.353
 field_confidence: {}
 data_sources:
 - wfs_berlin
+- wikimedia
 unverified_fields: []
 _pinned_fields: []

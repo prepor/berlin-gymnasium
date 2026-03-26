@@ -15,9 +15,10 @@ teacher_count: 49
 profile: []
 languages: []
 admission_requirements:
-  notes: No data retrieved in this research session. Cooperates with Goethe-Gymnasium Lichterfelde and 
-    Lilienthal-Gymnasium for Oberstufe (noted in Goethe-Gymnasium source).
-image_urls: []
+  notes: No data retrieved in this research session. Cooperates with Goethe-Gymnasium Lichterfelde and Lilienthal-Gymnasium for Oberstufe (noted in Goethe-Gymnasium source).
+image_urls:
+- https://commons.wikimedia.org/wiki/Special:FilePath/Frontansicht%20Schulgebäude%20Willi-Graf-Gymnasium.jpg?width=800
+- https://commons.wikimedia.org/wiki/Special:FilePath/Willy-Graf-Gymnasium%20Frontansicht.jpg?width=800
 social_media: {}
 ratings: {}
 completeness_score: 0.412
@@ -25,6 +26,7 @@ field_confidence: {}
 data_sources:
 - wfs_berlin
 - agent_research
+- wikimedia
 unverified_fields:
 - unverified_fields
 - social_media

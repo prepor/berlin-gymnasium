@@ -24,14 +24,13 @@ languages:
 - name: Latein
   from_grade: 7
 admission_requirements:
-  selection_criteria: Entrance audition/test required for musikbetonte classes; Durchschnittsnote der Förderprognose for
-    standard classes
+  selection_criteria: Entrance audition/test required for musikbetonte classes; Durchschnittsnote der Förderprognose for standard classes
   probeunterricht: false
   entrance_test: true
-  notes: The Beethoven-Gymnasium is known as a music-oriented Gymnasium (Musikgymnasium) in Steglitz-Zehlendorf. 
-    Referenced in district 2017 brochure as one of the Musikgymnasien with separate early registration schedule. No 
-    grundständige Züge confirmed. Web search exhausted before dedicated search for this school.
-image_urls: []
+  notes: The Beethoven-Gymnasium is known as a music-oriented Gymnasium (Musikgymnasium) in Steglitz-Zehlendorf. Referenced in district 2017 brochure as one of the Musikgymnasien with separate early registration schedule. No grundständige Züge confirmed. Web search exhausted before dedicated search for this school.
+image_urls:
+- https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/Beethoven-Oberschule.JPG/800px-Beethoven-Oberschule.JPG
+- https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/Berlin-Lankwitz_Beethoven-Schule_asv2021-10_img1.jpg/800px-Berlin-Lankwitz_Beethoven-Schule_asv2021-10_img1.jpg
 social_media: {}
 ratings: {}
 completeness_score: 0.647
@@ -45,6 +44,7 @@ field_confidence:
 data_sources:
 - wfs_berlin
 - agent_research
+- wikimedia
 unverified_fields:
 - social_media
 - unverified_fields

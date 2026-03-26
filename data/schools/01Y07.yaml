@@ -29,15 +29,12 @@ languages:
 - name: Spanisch
 admission_requirements:
   oversubscribed: true
-  selection_criteria: Entry from grade 5 (grundständig) requires strong academic record. School uses French as a primary
-    language of instruction (historically Franco-German institution). Admission criteria include academic performance 
-    and language aptitude.
+  selection_criteria: Entry from grade 5 (grundständig) requires strong academic record. School uses French as a primary language of instruction (historically Franco-German institution). Admission criteria include academic performance and language aptitude.
   probeunterricht: false
   entrance_test: true
-  notes: One of the oldest Franco-German schools in Berlin, under joint French-German governance. Awards French 
-    Baccalauréat and German Abitur (Doppelabschluss). Teaching in both French and German from grade 5. Historically 
-    known as Lycée français de Berlin.
-image_urls: []
+  notes: One of the oldest Franco-German schools in Berlin, under joint French-German governance. Awards French Baccalauréat and German Abitur (Doppelabschluss). Teaching in both French and German from grade 5. Historically known as Lycée français de Berlin.
+image_urls:
+- https://commons.wikimedia.org/wiki/Special:FilePath/TiergartenDerfflingerstraßeFranzösischesGymnasium.jpg?width=800
 social_media: {}
 ratings: {}
 completeness_score: 0.647
@@ -50,6 +47,7 @@ field_confidence:
 data_sources:
 - wfs_berlin
 - agent_research
+- wikimedia
 unverified_fields:
 - social_media
 - unverified_fields

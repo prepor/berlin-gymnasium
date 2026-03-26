@@ -14,12 +14,14 @@ student_count: 1235
 teacher_count: 101
 profile: []
 languages: []
-image_urls: []
+image_urls:
+- https://upload.wikimedia.org/wikipedia/commons/thumb/d/d6/Barnim-gymnasium.jpg/800px-Barnim-gymnasium.jpg
 social_media: {}
 ratings: {}
 completeness_score: 0.353
 field_confidence: {}
 data_sources:
 - wfs_berlin
+- wikimedia
 unverified_fields: []
 _pinned_fields: []

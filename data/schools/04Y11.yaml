@@ -27,13 +27,12 @@ languages:
 - name: Französisch
   from_grade: 8
 admission_requirements:
-  selection_criteria: Standard Berlin Gymnasium admission criteria apply. Admission from class 4 (grundständig). 
-    Siblings and Härtefall cases considered.
+  selection_criteria: Standard Berlin Gymnasium admission criteria apply. Admission from class 4 (grundständig). Siblings and Härtefall cases considered.
   entrance_test: false
-  notes: Humanistisches Gymnasium with altsprachlich profile; Latein as first foreign language from class 5, 
-    Altgriechisch from class 7 (can switch to Französisch in class 8). Received MINT-freundliche Schule award in 2023. 
-    Offener Ganztag.
-image_urls: []
+  notes: Humanistisches Gymnasium with altsprachlich profile; Latein as first foreign language from class 5, Altgriechisch from class 7 (can switch to Französisch in class 8). Received MINT-freundliche Schule award in 2023. Offener Ganztag.
+image_urls:
+- https://commons.wikimedia.org/wiki/Special:FilePath/Berlin%20Goethe-Gymnasium%20GasteinerStra%C3%9Fe.jpg?width=800
+- https://commons.wikimedia.org/wiki/Special:FilePath/Berlin%20Goethe-Gymnasium%20Eingang.jpg?width=800
 social_media: {}
 ratings: {}
 completeness_score: 0.647
@@ -46,6 +45,7 @@ field_confidence:
 data_sources:
 - wfs_berlin
 - agent_research
+- wikimedia
 unverified_fields:
 - social_media
 - unverified_fields

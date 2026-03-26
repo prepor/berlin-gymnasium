@@ -16,7 +16,8 @@ profile: []
 languages: []
 admission_requirements:
   notes: No data retrieved in this research session.
-image_urls: []
+image_urls:
+- https://commons.wikimedia.org/wiki/Special:FilePath/Berlin,%20Schoeneberg,%20Kolonnenstrasse%2021-23,%20Robert-Blum-Gymnasium.jpg?width=800
 social_media: {}
 ratings: {}
 completeness_score: 0.412
@@ -24,6 +25,7 @@ field_confidence: {}
 data_sources:
 - wfs_berlin
 - agent_research
+- wikimedia
 unverified_fields:
 - unverified_fields
 - social_media

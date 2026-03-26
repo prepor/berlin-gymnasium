@@ -30,13 +30,12 @@ languages:
 - name: Latein
   from_grade: 8
 admission_requirements:
-  selection_criteria: Durchschnittsnote der Förderprognose is the primary criterion at oversubscription. UNESCO project 
-    school with three profile classes (Theatre/Film, bilingual English/Social Sciences, Natural Sciences).
+  selection_criteria: Durchschnittsnote der Förderprognose is the primary criterion at oversubscription. UNESCO project school with three profile classes (Theatre/Film, bilingual English/Social Sciences, Natural Sciences).
   probeunterricht: false
   entrance_test: false
-  notes: 'Sprachbetontes Profil (language-focused). Three profile classes: Theatre/Film, bilingual Gesellschaftswissenschaften
-    (English/German), and Naturwissenschaften (MINT).'
-image_urls: []
+  notes: 'Sprachbetontes Profil (language-focused). Three profile classes: Theatre/Film, bilingual Gesellschaftswissenschaften (English/German), and Naturwissenschaften (MINT).'
+image_urls:
+- https://upload.wikimedia.org/wikipedia/commons/thumb/a/ac/130901-Steglitz_Hermann-Ehlers-Gymnasium_Elisenstra%C3%9Fe.JPG/800px-130901-Steglitz_Hermann-Ehlers-Gymnasium_Elisenstra%C3%9Fe.JPG
 social_media: {}
 ratings: {}
 completeness_score: 0.588
@@ -48,6 +47,7 @@ field_confidence:
 data_sources:
 - wfs_berlin
 - agent_research
+- wikimedia
 unverified_fields:
 - social_media
 - unverified_fields

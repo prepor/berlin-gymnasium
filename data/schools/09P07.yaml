@@ -28,16 +28,13 @@ languages:
   from_grade: 8
 admission_requirements:
   oversubscribed: true
-  selection_criteria: Application-based; school selects from applicants. More applications than places available every 
-    year. Private school (Ersatzschule) with income-based tuition fee (Schulgeld). Christian values alignment 
-    considered.
+  selection_criteria: Application-based; school selects from applicants. More applications than places available every year. Private school (Ersatzschule) with income-based tuition fee (Schulgeld). Christian values alignment considered.
   probeunterricht: false
   entrance_test: false
-  notes: School accepts up to 60 students per year from grade 5 and up to 30 additional students from grade 7. 
-    Admissions for 2026/27 (grades 5 and 7) are already closed as of March 2026. Individual lateral-entry places may 
-    exist in grades 8–11.
+  notes: School accepts up to 60 students per year from grade 5 and up to 30 additional students from grade 7. Admissions for 2026/27 (grades 5 and 7) are already closed as of March 2026. Individual lateral-entry places may exist in grades 8–11.
 abitur_average: 1.9
-image_urls: []
+image_urls:
+- https://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/Gr%C3%BCne_Trift_K%C3%B6penick_ev_Gymnasium_2013-12-09_ama_fec.JPG/800px-Gr%C3%BCne_Trift_K%C3%B6penick_ev_Gymnasium_2013-12-09_ama_fec.JPG
 social_media:
   instagram: https://www.instagram.com/ev.schule.koepenick
 ratings: {}
@@ -61,6 +58,7 @@ field_confidence:
 data_sources:
 - wfs_berlin
 - agent_research
+- wikimedia
 unverified_fields:
 - social_media
 - abitur_average

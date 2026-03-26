@@ -26,15 +26,12 @@ languages:
 - name: Polnisch
   from_grade: 8
 admission_requirements:
-  selection_criteria: Admission from grade 7; gymnasial recommendation (Förderprognose) required; selection criterion at
-    oversubscription is Durchschnittsnote der Förderprognose (GPA of school recommendation). Online appointment booking 
-    from 16 Feb 2026; in-person registration 5–12 March 2026.
+  selection_criteria: Admission from grade 7; gymnasial recommendation (Förderprognose) required; selection criterion at oversubscription is Durchschnittsnote der Förderprognose (GPA of school recommendation). Online appointment booking from 16 Feb 2026; in-person registration 5–12 March 2026.
   probeunterricht: false
   entrance_test: false
-  notes: Bilingual Deutsch-Englisch track available from grade 7 (two bilingual classes per year). Twice awarded 
-    'MINT-freundliche Schule' by Initiative MINT-Zukunft schaffen. European Encounter School with Poland; Polish 
-    language offered as elective from grade 8. Six 7th classes planned for 2026/27.
-image_urls: []
+  notes: Bilingual Deutsch-Englisch track available from grade 7 (two bilingual classes per year). Twice awarded 'MINT-freundliche Schule' by Initiative MINT-Zukunft schaffen. European Encounter School with Poland; Polish language offered as elective from grade 8. Six 7th classes planned for 2026/27.
+image_urls:
+- https://upload.wikimedia.org/wikipedia/commons/thumb/f/fd/Berlin_GVBuelowGymnasium_Tegel_asv2021-03.jpg/800px-Berlin_GVBuelowGymnasium_Tegel_asv2021-03.jpg
 social_media: {}
 ratings: {}
 completeness_score: 0.588
@@ -48,6 +45,7 @@ field_confidence:
 data_sources:
 - wfs_berlin
 - agent_research
+- wikimedia
 unverified_fields:
 - social_media
 - unverified_fields

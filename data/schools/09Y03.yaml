@@ -14,12 +14,15 @@ student_count: 741
 teacher_count: 63
 profile: []
 languages: []
-image_urls: []
+image_urls:
+- https://upload.wikimedia.org/wikipedia/commons/thumb/5/58/Main_building_Archenhold_School%2C_Berlin.jpg/800px-Main_building_Archenhold_School%2C_Berlin.jpg
+- https://upload.wikimedia.org/wikipedia/commons/thumb/b/b5/12-03-20-archenhold-oberschule-by-RalfR-30.jpg/800px-12-03-20-archenhold-oberschule-by-RalfR-30.jpg
 social_media: {}
 ratings: {}
 completeness_score: 0.353
 field_confidence: {}
 data_sources:
 - wfs_berlin
+- wikimedia
 unverified_fields: []
 _pinned_fields: []

@@ -15,7 +15,9 @@ teacher_count: 71
 profile: []
 languages: []
 admission_requirements: {}
-image_urls: []
+image_urls:
+- https://upload.wikimedia.org/wikipedia/commons/thumb/7/71/Kant-gymn-spandau.jpg/800px-Kant-gymn-spandau.jpg
+- https://upload.wikimedia.org/wikipedia/commons/thumb/f/f4/Spandau_Bismarckstra%C3%9Fe.jpg/800px-Spandau_Bismarckstra%C3%9Fe.jpg
 social_media: {}
 ratings: {}
 completeness_score: 0.412
@@ -23,6 +25,7 @@ field_confidence: {}
 data_sources:
 - wfs_berlin
 - agent_research
+- wikimedia
 unverified_fields:
 - social_media
 - unverified_fields

@@ -25,15 +25,13 @@ languages:
 - name: Chinesisch
   from_grade: 8
 admission_requirements:
-  selection_criteria: 'Schnelllerner track (from grade 5): entrance test (Eignungstest) required; Regelklassen track (from
-    grade 7): points-based system using Förderprognose average grade, a practical exercise (praktische Übung), and additional
-    competences; mandatory advisory meeting if ISS recommendation and average ≥ 3.0'
+  selection_criteria: 'Schnelllerner track (from grade 5): entrance test (Eignungstest) required; Regelklassen track (from grade 7): points-based system using Förderprognose average grade, a practical exercise (praktische Übung), and additional competences; mandatory advisory meeting if ISS recommendation and average ≥ 3.0'
   probeunterricht: false
   entrance_test: true
-  notes: 'Two parallel tracks: Schnelllerner (gifted, starting grade 5, entrance test required, 3 classes) and Regelklassen
-    (starting grade 7, 3 classes). Schnelllerner complete Abitur in 12 years. Latein is mandatory second language (unique
-    among most Berlin schools). Third language choice: Français or Chinesisch from grade 8.'
-image_urls: []
+  notes: 'Two parallel tracks: Schnelllerner (gifted, starting grade 5, entrance test required, 3 classes) and Regelklassen (starting grade 7, 3 classes). Schnelllerner complete Abitur in 12 years. Latein is mandatory second language (unique among most Berlin schools). Third language choice: Français or Chinesisch from grade 8.'
+image_urls:
+- https://upload.wikimedia.org/wikipedia/commons/thumb/d/d8/Berlin_HumboldtGymnasium_Tegel_asv2021-03.jpg/800px-Berlin_HumboldtGymnasium_Tegel_asv2021-03.jpg
+- https://upload.wikimedia.org/wikipedia/commons/thumb/f/f2/Tegel_Hatzfeldtallee_Humboldt-Gymnasium.JPG/800px-Tegel_Hatzfeldtallee_Humboldt-Gymnasium.JPG
 social_media: {}
 ratings: {}
 completeness_score: 0.588
@@ -47,6 +45,7 @@ field_confidence:
 data_sources:
 - wfs_berlin
 - agent_research
+- wikimedia
 unverified_fields:
 - social_media
 - unverified_fields

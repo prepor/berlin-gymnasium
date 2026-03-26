@@ -31,19 +31,14 @@ languages:
   from_grade: 9
 admission_requirements:
   oversubscribed: true
-  selection_criteria: "Admission to grade 5 (grundständiger Zweig) regulated as 'Schule besonderer pädagogischer Prägung':
-    priority to pupils continuing their grade-3 foreign language; ranked by sum of grades in Deutsch, Fremdsprache, Mathematik,
-    Sachunterricht from the grade-4 mid-year report (Notensumme 4–6 first, then 7–9, then higher). If more than 60 applicants
-    with Notensumme 4–6, a standardised selection interview (up to 50 points) is held; top 60 scores are admitted. Grade 7
-    admission follows §56 Schulgesetz. School has been consistently oversubscribed; listing as second or third choice has
-    not been successful in recent years."
+  selection_criteria: "Admission to grade 5 (grundständiger Zweig) regulated as 'Schule besonderer pädagogischer Prägung': priority to pupils continuing their grade-3 foreign language; ranked by sum of grades in Deutsch, Fremdsprache, Mathematik, Sachunterricht from the grade-4 mid-year report (Notensumme 4–6 first, then 7–9, then higher). If more than 60 applicants with Notensumme 4–6, a standardised selection interview (up to 50 points) is held; top 60 scores are admitted. Grade 7 admission follows §56 Schulgesetz. School has been consistently oversubscribed; listing as second or third choice has not been successful in recent years."
   probeunterricht: false
   entrance_test: false
-  notes: Standardised selection interview (ca. 20 min, reading aloud, language knowledge, logical reasoning, up to 50 
-    points) is used only as a tiebreaker when grade-sum group exceeds capacity. No fixed GPA threshold can be stated in 
-    advance due to variable application numbers. Bilingual Abitur (CertiLingua) available.
+  notes: Standardised selection interview (ca. 20 min, reading aloud, language knowledge, logical reasoning, up to 50 points) is used only as a tiebreaker when grade-sum group exceeds capacity. No fixed GPA threshold can be stated in advance due to variable application numbers. Bilingual Abitur (CertiLingua) available.
 abitur_average: 1.86
-image_urls: []
+image_urls:
+- https://upload.wikimedia.org/wikipedia/commons/thumb/5/50/Johann-Gottfried-Herder-Gymnasium_%28Berlin-Lichtenberg%29.jpg/800px-Johann-Gottfried-Herder-Gymnasium_%28Berlin-Lichtenberg%29.jpg
+- https://upload.wikimedia.org/wikipedia/commons/thumb/7/77/Johann-Gottfried-Herder-Gymnasium_in_Berlin-Lichtenberg.jpg/800px-Johann-Gottfried-Herder-Gymnasium_in_Berlin-Lichtenberg.jpg
 social_media:
   facebook: https://www.facebook.com/herderberlin/
 ratings:
@@ -69,6 +64,7 @@ field_confidence:
 data_sources:
 - wfs_berlin
 - agent_research
+- wikimedia
 unverified_fields:
 - social_media
 - abitur_average

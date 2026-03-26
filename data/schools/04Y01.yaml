@@ -29,15 +29,14 @@ languages:
 admission_requirements:
   notendurchschnitt: 2.1
   oversubscribed: true
-  selection_criteria: 'Förderprognose Durchschnittsnote; in years of oversubscription lottery from approximately 2.1 average.
-    Main subjects (Deutsch, Mathematik, Englisch) should typically be grade 2 or better. SESB branch: language test in Deutsch
-    and Englisch for lateral entrants. Regular branch: Aufnahmetest for lateral entrants (Seiteneinsteiger).'
+  selection_criteria: 'Förderprognose Durchschnittsnote; in years of oversubscription lottery from approximately 2.1 average. Main subjects (Deutsch, Mathematik, Englisch) should typically be grade 2 or better. SESB branch: language test in Deutsch and Englisch for lateral entrants. Regular branch: Aufnahmetest for lateral entrants (Seiteneinsteiger).'
   probeunterricht: true
   entrance_test: true
-  notes: 'Public Gymnasium; starts at grade 7. Bilingual SESB Deutsch-Englisch track since 1999; new bilingual class (English)
-    added from school year 2026/27. Two language sequences offered: English-French or French-English as first language. Third
-    language: Latin or Italian from grade 8.'
-image_urls: []
+  notes: 'Public Gymnasium; starts at grade 7. Bilingual SESB Deutsch-Englisch track since 1999; new bilingual class (English) added from school year 2026/27. Two language sequences offered: English-French or French-English as first language. Third language: Latin or Italian from grade 8.'
+image_urls:
+- https://commons.wikimedia.org/wiki/Special:FilePath/Schiller-Oberschule%20Berlin-Charlottenburg%20Feb%202015.jpg?width=800
+- https://commons.wikimedia.org/wiki/Special:FilePath/Charlottenburg%20Schillerstra%C3%9Fe%20Schiller-Oberschule%202021.jpg?width=800
+- https://commons.wikimedia.org/wiki/Special:FilePath/Charlottenburg%20Schillerstra%C3%9Fe%20Schiller-Oberschule.JPG?width=800
 social_media: {}
 ratings: {}
 completeness_score: 0.647
@@ -51,6 +50,7 @@ field_confidence:
 data_sources:
 - wfs_berlin
 - agent_research
+- wikimedia
 unverified_fields:
 - social_media
 - unverified_fields

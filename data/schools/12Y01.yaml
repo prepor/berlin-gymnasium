@@ -29,10 +29,10 @@ languages:
 admission_requirements:
   selection_criteria: 'Standard Berlin process: Durchschnittsnote der Förderprognose used as primary criterion when oversubscribed.'
   entrance_test: false
-  notes: Schule besonderer pädagogischer Prägung since 1991. Two grundständige classes from grade 5 with bilingual 
-    Deutsch-Spanisch track. Offene Ganztagsgymnasium since school year 2011/12. Berlin.de lists bilingual offers 
-    Deutsch/Englisch and Deutsch/Spanisch.
-image_urls: []
+  notes: Schule besonderer pädagogischer Prägung since 1991. Two grundständige classes from grade 5 with bilingual Deutsch-Spanisch track. Offene Ganztagsgymnasium since school year 2011/12. Berlin.de lists bilingual offers Deutsch/Englisch and Deutsch/Spanisch.
+image_urls:
+- https://upload.wikimedia.org/wikipedia/commons/thumb/3/3d/Engels-gymn-rdorf.jpg/800px-Engels-gymn-rdorf.jpg
+- https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Schulgeb%C3%A4ude_Emmentaler_Stra%C3%9Fe_63-69_c._um_1915.jpg/800px-Schulgeb%C3%A4ude_Emmentaler_Stra%C3%9Fe_63-69_c._um_1915.jpg
 social_media: {}
 ratings: {}
 completeness_score: 0.647
@@ -45,6 +45,7 @@ field_confidence:
 data_sources:
 - wfs_berlin
 - agent_research
+- wikimedia
 unverified_fields:
 - social_media
 - unverified_fields

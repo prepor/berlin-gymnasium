@@ -14,12 +14,15 @@ student_count: 907
 teacher_count: 75
 profile: []
 languages: []
-image_urls: []
+image_urls:
+- https://upload.wikimedia.org/wikipedia/commons/thumb/1/12/Anne-Frank-Gymnasium_-_Haus_A_-_au%C3%9Fen.jpg/800px-Anne-Frank-Gymnasium_-_Haus_A_-_au%C3%9Fen.jpg
+- https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/Berlin_szkola_Anny_Frank.jpg/800px-Berlin_szkola_Anny_Frank.jpg
 social_media: {}
 ratings: {}
 completeness_score: 0.353
 field_confidence: {}
 data_sources:
 - wfs_berlin
+- wikimedia
 unverified_fields: []
 _pinned_fields: []

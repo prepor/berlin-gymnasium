@@ -34,7 +34,8 @@ admission_requirements:
   probeunterricht: false
   entrance_test: false
   notes: No special entrance test or trial lesson noted; accepts from grade 7 (not grundständig)
-image_urls: []
+image_urls:
+- https://commons.wikimedia.org/wiki/Special:FilePath/Berlin_Prenzlauer_Berg_Pasteurstraße_7-11_(09050108).JPG?width=800
 social_media: {}
 ratings: {}
 completeness_score: 0.588
@@ -46,6 +47,7 @@ field_confidence:
 data_sources:
 - wfs_berlin
 - agent_research
+- wikimedia
 unverified_fields:
 - social_media
 - unverified_fields

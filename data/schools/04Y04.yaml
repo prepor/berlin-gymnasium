@@ -26,13 +26,13 @@ languages:
 - name: Altgriechisch
   from_grade: 9
 admission_requirements:
-  selection_criteria: 'Standard Berlin Gymnasium admission via Förderprognose. Altsprachliches Profil: Latin as compulsory
-    second language from grade 7.'
+  selection_criteria: 'Standard Berlin Gymnasium admission via Förderprognose. Altsprachliches Profil: Latin as compulsory second language from grade 7.'
   probeunterricht: true
   entrance_test: false
-  notes: 'Public Gymnasium (Gottfried-Keller-Gymnasium); starts at grade 7. Known for its classical-language (altsprachlich)
-    profile. No grade-5 grundständig track confirmed. Website: http://www.gks-berlin.de'
-image_urls: []
+  notes: 'Public Gymnasium (Gottfried-Keller-Gymnasium); starts at grade 7. Known for its classical-language (altsprachlich) profile. No grade-5 grundständig track confirmed. Website: http://www.gks-berlin.de'
+image_urls:
+- https://commons.wikimedia.org/wiki/Special:FilePath/Gottfried-Keller-Gymnasium%20Au%C3%9Fenansicht.jpg?width=800
+- https://commons.wikimedia.org/wiki/Special:FilePath/Gottfried-Keller-Gymnasium%20in%20Berlin.jpg?width=800
 social_media: {}
 ratings: {}
 completeness_score: 0.647
@@ -44,6 +44,7 @@ field_confidence:
 data_sources:
 - wfs_berlin
 - agent_research
+- wikimedia
 unverified_fields:
 - social_media
 - unverified_fields

@@ -30,16 +30,12 @@ languages:
   from_grade: 8
 admission_requirements:
   oversubscribed: true
-  selection_criteria: 'Förderprognose Durchschnittsnote; lottery in case of oversubscription. Probeunterricht required if
-    Eignungsfeststellung not met (Notensumme Deutsch, Mathe, 1. Fremdsprache exceeds 14). Lateral entrants require motivation
-    letter, last two reports plus grade-7 report, and follow-up interview. Prerequisite: continuation of 2nd foreign language
-    Latin or Italian.'
+  selection_criteria: 'Förderprognose Durchschnittsnote; lottery in case of oversubscription. Probeunterricht required if Eignungsfeststellung not met (Notensumme Deutsch, Mathe, 1. Fremdsprache exceeds 14). Lateral entrants require motivation letter, last two reports plus grade-7 report, and follow-up interview. Prerequisite: continuation of 2nd foreign language Latin or Italian.'
   probeunterricht: true
   entrance_test: false
-  notes: 'Public Gymnasium; starts at grade 7. English continued from grade 3; Latin or Italian compulsory from grade 7; French
-    or Spanish as optional 3rd language from grade 8 (or MINT focus track). Optional instrumental class (string instrument,
-    ~30€/month, binding for 2 years). Partner school: Sportschule im Olympiapark.'
-image_urls: []
+  notes: 'Public Gymnasium; starts at grade 7. English continued from grade 3; Latin or Italian compulsory from grade 7; French or Spanish as optional 3rd language from grade 8 (or MINT focus track). Optional instrumental class (string instrument, ~30€/month, binding for 2 years). Partner school: Sportschule im Olympiapark.'
+image_urls:
+- https://commons.wikimedia.org/wiki/Special:FilePath/Westend%20Waldschulallee%20Wald-Gymnasium.JPG?width=800
 social_media: {}
 ratings: {}
 completeness_score: 0.647
@@ -52,6 +48,7 @@ field_confidence:
 data_sources:
 - wfs_berlin
 - agent_research
+- wikimedia
 unverified_fields:
 - social_media
 - unverified_fields

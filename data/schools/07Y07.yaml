@@ -14,12 +14,14 @@ student_count: 740
 teacher_count: 59
 profile: []
 languages: []
-image_urls: []
+image_urls:
+- https://commons.wikimedia.org/wiki/Special:FilePath/Eckener%20Gymnasium.JPG?width=800
 social_media: {}
 ratings: {}
 completeness_score: 0.353
 field_confidence: {}
 data_sources:
 - wfs_berlin
+- wikimedia
 unverified_fields: []
 _pinned_fields: []

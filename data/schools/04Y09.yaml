@@ -24,14 +24,12 @@ languages:
 - name: Latein
   from_grade: 7
 admission_requirements:
-  selection_criteria: Durchschnittsnote der Förderprognose bei Übernachfrage. Probeunterricht required for applicants 
-    with Notensumme ≥ 15 in Deutsch, Mathematik, Englisch.
+  selection_criteria: Durchschnittsnote der Förderprognose bei Übernachfrage. Probeunterricht required for applicants with Notensumme ≥ 15 in Deutsch, Mathematik, Englisch.
   probeunterricht: true
   entrance_test: false
-  notes: 'Notensumme of at most 14 in Deutsch, Mathematik, Englisch required for direct admission. Bilingual English stream:
-    more English hours initially, then Biology and Geography taught in English from class 8. Keyboard lessons integrated into
-    regular curriculum. Cooperation with Hildegard-Wegscheider-Gymnasium for broader Leistungskurs selection.'
-image_urls: []
+  notes: 'Notensumme of at most 14 in Deutsch, Mathematik, Englisch required for direct admission. Bilingual English stream: more English hours initially, then Biology and Geography taught in English from class 8. Keyboard lessons integrated into regular curriculum. Cooperation with Hildegard-Wegscheider-Gymnasium for broader Leistungskurs selection.'
+image_urls:
+- https://commons.wikimedia.org/wiki/Special:FilePath/GrunewaldHerbertstra%C3%9Fe.JPG?width=800
 social_media: {}
 ratings: {}
 completeness_score: 0.588
@@ -43,6 +41,7 @@ field_confidence:
 data_sources:
 - wfs_berlin
 - agent_research
+- wikimedia
 unverified_fields:
 - social_media
 - unverified_fields

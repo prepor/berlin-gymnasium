@@ -28,15 +28,13 @@ languages:
   from_grade: 8
 - name: Russisch
 admission_requirements:
-  selection_criteria: 'Bei Übernachfrage: Durchschnittsnote der Förderprognose (GPA of primary school recommendation) used
-    as selection criterion per berlin.de Schulportrait'
+  selection_criteria: 'Bei Übernachfrage: Durchschnittsnote der Förderprognose (GPA of primary school recommendation) used as selection criterion per berlin.de Schulportrait'
   probeunterricht: false
   entrance_test: false
-  notes: Standard Berlin Gymnasium admission from grade 7. No grundständig track (no intake at grade 5). Berlin.de lists
-    'Durchschnittsnote der Förderprognose' and 'andere Details' as oversubscription criteria; specific GPA threshold not
-    publicly listed.
+  notes: Standard Berlin Gymnasium admission from grade 7. No grundständig track (no intake at grade 5). Berlin.de lists 'Durchschnittsnote der Förderprognose' and 'andere Details' as oversubscription criteria; specific GPA threshold not publicly listed.
 abitur_average: 2.4
-image_urls: []
+image_urls:
+- https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/Johannisthal_Ellernweg-003.JPG/800px-Johannisthal_Ellernweg-003.JPG
 social_media:
   instagram: https://www.instagram.com/gemont.official/
 ratings: {}
@@ -55,6 +53,7 @@ field_confidence:
 data_sources:
 - wfs_berlin
 - agent_research
+- wikimedia
 unverified_fields:
 - social_media
 - abitur_average

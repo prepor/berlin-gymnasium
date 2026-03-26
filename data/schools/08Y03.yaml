@@ -14,12 +14,15 @@ student_count: 1041
 teacher_count: 95
 profile: []
 languages: []
-image_urls: []
+image_urls:
+- https://commons.wikimedia.org/wiki/Special:FilePath/Einsteingymn-b.jpg?width=800
+- https://commons.wikimedia.org/wiki/Special:FilePath/ALbert%20EInstein%20OBerschule.jpg?width=800
 social_media: {}
 ratings: {}
 completeness_score: 0.353
 field_confidence: {}
 data_sources:
 - wfs_berlin
+- wikimedia
 unverified_fields: []
 _pinned_fields: []
