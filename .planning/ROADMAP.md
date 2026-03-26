@@ -17,7 +17,7 @@ Two-milestone project. Milestone 1 (M1) builds a reproducible Python scraping pi
 
 Decimal phases appear between their surrounding integers in numeric order.
 
-- [ ] **Phase 1: Data Pipeline** - Reproducible Python pipeline producing a validated YAML corpus of all Berlin Gymnasien
+- [x] **Phase 1: Data Pipeline** - Reproducible Python pipeline producing a validated YAML corpus of all Berlin Gymnasien
 - [ ] **Phase 2: SPA Foundation and School Directory** - Leptos WASM SPA deployed to GitHub Pages with filterable school listing and detail pages
 - [ ] **Phase 3: Interactive Map** - OpenStreetMap map with clickable pins synced to active filters
 - [ ] **Phase 4: Travel Time Routing** - User address input with travel time matrix (walk, transit, car) and sort-by-commute
@@ -40,7 +40,7 @@ Decimal phases appear between their surrounding integers in numeric order.
 Plans:
 - [x] 01-01-PLAN.md — Python scaffold (pyproject.toml, justfile, pipeline.yaml) + Pydantic SchoolRecord schema
 - [x] 01-02-PLAN.md — Seed step: WFS fetch + Eckdaten XLSX merge → schools_index.yaml
-- [ ] 01-03-PLAN.md — Agent enrichment: Claude claude-sonnet-4-6 batches with web_search_20260209
+- [x] 01-03-PLAN.md — Agent enrichment: Claude claude-sonnet-4-6 batches with web_search_20260209
 - [x] 01-04-PLAN.md — Validate + merge (D-17 structured wins) + YAML writer + changelog
 - [x] 01-05-PLAN.md — Orchestrator (run.py wiring all steps) + README + end-to-end verification
 
@@ -54,7 +54,12 @@ Plans:
   3. A user can click any school to view a detail page showing all available fields (contact info, ratings by source, admission requirements, open day date, data freshness)
   4. The site loads and is fully usable on a mobile phone screen
   5. Deploying a new version is triggered by pushing to main (Trunk build → GitHub Pages)
-**Plans**: TBD
+**Plans**: 3 plans
+
+Plans:
+- [ ] 02-01-PLAN.md — Rust project scaffold + build.rs data embedding + app shell with router + GitHub Actions deploy workflow
+- [ ] 02-02-PLAN.md — School listing page with card grid, filter panel, sort controls, and URL-persisted filter state
+- [ ] 02-03-PLAN.md — School detail page with all data sections, ratings, admission, contact, and "Keine Angabe" handling
 **UI hint**: yes
 
 ### Phase 3: Interactive Map
@@ -97,8 +102,8 @@ Phases execute in numeric order: 1 → 2 → 3 → 4 → 5
 
 | Phase | Plans Complete | Status | Completed |
 |-------|----------------|--------|-----------|
-| 1. Data Pipeline | 4/5 | In Progress|  |
-| 2. SPA Foundation and School Directory | 0/TBD | Not started | - |
+| 1. Data Pipeline | 5/5 | Complete | 2026-03-26 |
+| 2. SPA Foundation and School Directory | 0/3 | In progress | - |
 | 3. Interactive Map | 0/TBD | Not started | - |
 | 4. Travel Time Routing | 0/TBD | Not started | - |
 | 5. Comparison, Favorites, and Sharing | 0/TBD | Not started | - |
