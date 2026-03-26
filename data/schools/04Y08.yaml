@@ -10,6 +10,8 @@ website: https://www.wegscheider-gymnasium.de
 phone: +49 30 897454210
 email: wegscheider-gymnasium@gmx.de
 traeger: öffentlich
+student_count: 619
+teacher_count: 47
 accepts_after_4th_grade: true
 profile:
 - MINT

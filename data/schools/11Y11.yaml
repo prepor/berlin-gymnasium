@@ -10,6 +10,8 @@ website: http://www.kant-gymnasium.de
 phone: +49 30 5139748
 email: 'sekretariat@kant-gymnasium.de '
 traeger: öffentlich
+student_count: 901
+teacher_count: 82
 accepts_after_4th_grade: true
 profile:
 - MINT

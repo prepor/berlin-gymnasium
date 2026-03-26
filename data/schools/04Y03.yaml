@@ -10,6 +10,8 @@ website: http://www.scgberlin.de
 phone: +49 30 902928600
 email: sekretariat@scg.schule.berlin.de
 traeger: öffentlich
+student_count: 730
+teacher_count: 61
 accepts_after_4th_grade: false
 profile:
 - bilingual_english

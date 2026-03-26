@@ -7,19 +7,17 @@ Run via: just seed  (or: uv run python pipeline/seed.py)
 from __future__ import annotations
 
 import asyncio
-import io
 import logging
 from pathlib import Path
 from typing import Any
 
 import httpx
-import openpyxl
 from ruamel.yaml import YAML
 
 logger = logging.getLogger(__name__)
 
 WFS_URL = "https://gdi.berlin.de/services/wfs/schulen"
-ECKDATEN_URL = "https://www.berlin.de/sen/bildung/service/daten/od-eckdaten-allg-2024.xlsx"
+ECKDATEN_URL = "https://www.bildungsstatistik.berlin.de/statistik/ListGen/SVZ_Fakt5.aspx"
 
 
 async def fetch_gymnasien(include_private: bool = True) -> list[dict]:
@@ -66,48 +64,52 @@ async def fetch_gymnasien(include_private: bool = True) -> list[dict]:
 
 async def fetch_eckdaten() -> dict[str, dict]:
     """
-    Fetch Eckdaten XLSX and return dict keyed by BSN (str) with student/teacher counts.
-    Returns empty dict if fetch fails (non-blocking — XLSX is optional data).
+    Fetch per-school student/teacher counts from bildungsstatistik.berlin.de.
+
+    The page renders an HTML table with columns:
+    Schuljahr | BSN | NAME | Schüler (m/w/d) | ... | Lehrkräfte (m,w,d) | ...
+
+    Returns dict keyed by BSN (str) with student/teacher counts.
+    Returns empty dict if fetch fails (non-blocking — counts are optional data).
     """
-    async with httpx.AsyncClient(timeout=30) as client:
+    import re
+
+    async with httpx.AsyncClient(timeout=30, verify=False) as client:
         try:
             resp = await client.get(ECKDATEN_URL)
             resp.raise_for_status()
         except httpx.HTTPError as e:
-            logger.warning("Eckdaten XLSX fetch failed: %s — student/teacher counts will be null", e)
+            logger.warning("Eckdaten fetch failed: %s — student/teacher counts will be null", e)
             return {}
 
-    wb = openpyxl.load_workbook(io.BytesIO(resp.content))
-    ws = wb.active
-    headers = [str(cell.value).strip() if cell.value else "" for cell in next(ws.iter_rows(min_row=1, max_row=1))]
+    html = resp.text
+    rows = re.findall(r'<tr[^>]*>(.*?)</tr>', html, re.DOTALL)
 
-    # Find BSN, student count, and teacher count column indices
-    # Column names vary — check multiple possibilities
-    bsn_col = next((i for i, h in enumerate(headers) if h in ("BSN", "Schulnummer", "bsn")), None)
-    student_col = next((i for i, h in enumerate(headers) if "Schüler" in h or "schueler" in h.lower() or "SuS" in h), None)
-    teacher_col = next((i for i, h in enumerate(headers) if "Lehrkräfte" in h or "Lehrer" in h or "lehrkraefte" in h.lower()), None)
-
-    if bsn_col is None:
-        logger.warning("BSN column not found in Eckdaten XLSX. Headers: %s", headers[:10])
-        return {}
-
-    result = {}
-    for row in ws.iter_rows(min_row=2, values_only=True):
-        bsn = row[bsn_col]
-        if bsn is None:
+    result: dict[str, dict] = {}
+    for row in rows:
+        cells = re.findall(r'<td[^>]*>(.*?)</td>', row, re.DOTALL)
+        if len(cells) < 7:
+            continue
+        clean = [re.sub(r'<[^>]+>', '', c).strip() for c in cells]
+        bsn = clean[1]
+        if not bsn:
             continue
         entry: dict[str, Any] = {}
-        if student_col is not None and row[student_col] is not None:
-            try:
-                entry["student_count"] = int(row[student_col])
-            except (ValueError, TypeError):
-                pass
-        if teacher_col is not None and row[teacher_col] is not None:
-            try:
-                entry["teacher_count"] = int(row[teacher_col])
-            except (ValueError, TypeError):
-                pass
-        result[str(bsn).strip()] = entry
+        try:
+            entry["student_count"] = int(clean[3])
+        except (ValueError, TypeError):
+            pass
+        try:
+            entry["teacher_count"] = int(clean[6])
+        except (ValueError, TypeError):
+            pass
+        if entry:
+            result[bsn] = entry
+
+    if not result:
+        logger.warning("No per-school rows parsed from Eckdaten HTML (columns may have changed)")
+    else:
+        logger.info("Parsed %d schools from Eckdaten HTML", len(result))
     return result
 
 

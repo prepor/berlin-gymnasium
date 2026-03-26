@@ -9,8 +9,8 @@
   phone: +49 30 726265700
   email: info@jgmm.de
   traeger: privat
-  student_count:
-  teacher_count:
+  student_count: 536
+  teacher_count: 58
 - school_id: 01P06
   name: Canisius-Kolleg
   district: Mitte
@@ -22,8 +22,8 @@
   phone: +49 30 26481105
   email: schulleitung@canisius.de
   traeger: privat
-  student_count:
-  teacher_count:
+  student_count: 896
+  teacher_count: 83
 - school_id: 01P18
   name: Bilinguale Schule Phorms Berlin Mitte
   district: Mitte
@@ -35,8 +35,8 @@
   phone: +49 30 318737100
   email: berlin-mitte@phorms.de
   traeger: privat
-  student_count:
-  teacher_count:
+  student_count: 768
+  teacher_count: 84
 - school_id: 01P22
   name: Berlin Cosmopolitan School
   district: Mitte
@@ -48,8 +48,8 @@
   phone: +49 30 688332324
   email: mail@cosmopolitanschool.de
   traeger: privat
-  student_count:
-  teacher_count:
+  student_count: 602
+  teacher_count: 62
 - school_id: 01Y02
   name: John-Lennon-Gymnasium
   district: Mitte
@@ -61,8 +61,8 @@
   phone: +49 30 40500110
   email: sekretariat@jlgym-berlin.de
   traeger: öffentlich
-  student_count:
-  teacher_count:
+  student_count: 761
+  teacher_count: 66
 - school_id: 01Y04
   name: Musikgymnasium Carl Philipp Emanuel Bach
   district: Mitte
@@ -74,8 +74,8 @@
   phone: +49 30 901891530
   email: sekretariat@musikgymnasium-bach.de
   traeger: öffentlich
-  student_count:
-  teacher_count:
+  student_count: 164
+  teacher_count: 19
 - school_id: 01Y07
   name: Französisches Gymnasium
   district: Mitte
@@ -87,8 +87,8 @@
   phone: +49 30 25758910
   email: sekretariat@fg-berlin.eu
   traeger: öffentlich
-  student_count:
-  teacher_count:
+  student_count: 812
+  teacher_count: 67
 - school_id: 01Y08
   name: Lessing-Gymnasium
   district: Mitte
@@ -100,8 +100,8 @@
   phone: +49 30 45798510
   email: post@lessing-gymnasium-berlin.de
   traeger: öffentlich
-  student_count:
-  teacher_count:
+  student_count: 775
+  teacher_count: 74
 - school_id: 01Y09
   name: Diesterweg-Gymnasium
   district: Mitte
@@ -113,8 +113,8 @@
   phone: +49 30 46309620
   email: sekretariat@dwgym.berlin
   traeger: öffentlich
-  student_count:
-  teacher_count:
+  student_count: 660
+  teacher_count: 56
 - school_id: 01Y11
   name: Max-Planck-Gymnasium
   district: Mitte
@@ -126,8 +126,8 @@
   phone: +49 30 847118830
   email: sekretariat@mpg-berlin.de
   traeger: öffentlich
-  student_count:
-  teacher_count:
+  student_count: 880
+  teacher_count: 76
 - school_id: 01Y12
   name: Gymnasium Tiergarten
   district: Mitte
@@ -139,8 +139,8 @@
   phone: +49 30 398009710
   email: sekretariat@gymnasium-tiergarten.de
   traeger: öffentlich
-  student_count:
-  teacher_count:
+  student_count: 1059
+  teacher_count: 89
 - school_id: 01Y13
   name: Rosalind-Franklin-Gymnasium
   district: Mitte
@@ -152,8 +152,8 @@
   phone: +49 30 9018 38210
   email: schulleitung@gymnasium-13.de
   traeger: öffentlich
-  student_count:
-  teacher_count:
+  student_count: 105
+  teacher_count: 11
 - school_id: 02Y01
   name: Andreas-Gymnasium
   district: Friedrichshain-Kreuzberg
@@ -165,8 +165,8 @@
   phone: +49 30 29369020
   email: sekretariat@andreas.schule.berlin.de
   traeger: öffentlich
-  student_count:
-  teacher_count:
+  student_count: 804
+  teacher_count: 64
 - school_id: 02Y03
   name: Heinrich-Hertz-Gymnasium
   district: Friedrichshain-Kreuzberg
@@ -178,8 +178,8 @@
   phone: +49 30 42262080
   email: sekretariat@hhgym.de
   traeger: öffentlich
-  student_count:
-  teacher_count:
+  student_count: 680
+  teacher_count: 51
 - school_id: 02Y04
   name: Georg-Friedrich-Händel-Gymnasium
   district: Friedrichshain-Kreuzberg
@@ -191,8 +191,8 @@
   phone: +49 30 2250279011
   email: sekretariat@haendelgym.de
   traeger: öffentlich
-  student_count:
-  teacher_count:
+  student_count: 548
+  teacher_count: 46
 - school_id: 02Y05
   name: Dathe-Gymnasium
   district: Friedrichshain-Kreuzberg
@@ -204,8 +204,8 @@
   phone: +49 30 2936063
   email: sek@dathe-gymnasium.de
   traeger: öffentlich
-  student_count:
-  teacher_count:
+  student_count: 907
+  teacher_count: 71
 - school_id: 02Y06
   name: Leibniz-Gymnasium
   district: Friedrichshain-Kreuzberg
@@ -217,8 +217,8 @@
   phone: +49 30 50586711
   email: sekretariat@leibniz-gymnasium.berlin
   traeger: öffentlich
-  student_count:
-  teacher_count:
+  student_count: 827
+  teacher_count: 69
 - school_id: 02Y07
   name: Robert-Koch-Gymnasium
   district: Friedrichshain-Kreuzberg
@@ -230,8 +230,8 @@
   phone: +49 30 50585731
   email: sekretariat@robert-koch-gymnasium.berlin
   traeger: öffentlich
-  student_count:
-  teacher_count:
+  student_count: 653
+  teacher_count: 54
 - school_id: 02Y08
   name: Hermann-Hesse-Gymnasium
   district: Friedrichshain-Kreuzberg
@@ -243,8 +243,8 @@
   phone: +49 30 666434090
   email: kontakt@hhg-kreuzberg.de
   traeger: öffentlich
-  student_count:
-  teacher_count:
+  student_count: 593
+  teacher_count: 57
 - school_id: 03P10
   name: Katholische Theresienschule (Gymnasium)
   district: Pankow
@@ -256,8 +256,8 @@
   phone: +49 30 9246425
   email: sekretariat@ksth.schulerzbistum.de
   traeger: privat
-  student_count:
-  teacher_count:
+  student_count: 676
+  teacher_count: 56
 - school_id: 03Y03
   name: Käthe-Kollwitz-Gymnasium
   district: Pankow
@@ -269,8 +269,8 @@
   phone: +49 30 4447671
   email: sekretariat@kkos.net
   traeger: öffentlich
-  student_count:
-  teacher_count:
+  student_count: 943
+  teacher_count: 78
 - school_id: 03Y04
   name: Heinrich-Schliemann-Gymnasium
   district: Pankow
@@ -282,8 +282,8 @@
   phone: +49 30 4468950
   email: sekretariat@hsg-berlin.eu
   traeger: öffentlich
-  student_count:
-  teacher_count:
+  student_count: 1204
+  teacher_count: 93
 - school_id: 03Y08
   name: Carl-von-Ossietzky-Gymnasium
   district: Pankow
@@ -295,8 +295,8 @@
   phone: +49 30 49400390
   email: sekretariat@cvo.berlin
   traeger: öffentlich
-  student_count:
-  teacher_count:
+  student_count: 1123
+  teacher_count: 101
 - school_id: 03Y10
   name: Rosa-Luxemburg-Gymnasium
   district: Pankow
@@ -308,8 +308,8 @@
   phone: +49 30 91607730
   email: sekretariat@rlg.berlin
   traeger: öffentlich
-  student_count:
-  teacher_count:
+  student_count: 1259
+  teacher_count: 116
 - school_id: 03Y13
   name: Felix-Mendelssohn-Bartholdy-Gymnasium
   district: Pankow
@@ -321,8 +321,8 @@
   phone: +49 30 420827400
   email: sekretariat@fmbg.schule.berlin.de
   traeger: öffentlich
-  student_count:
-  teacher_count:
+  student_count: 1358
+  teacher_count: 106
 - school_id: 03Y14
   name: Primo-Levi-Gymnasium
   district: Pankow
@@ -334,8 +334,8 @@
   phone: +49 30 9290168111
   email: sekretariat@plg-berlin.de
   traeger: öffentlich
-  student_count:
-  teacher_count:
+  student_count: 1331
+  teacher_count: 109
 - school_id: 03Y15
   name: Max-Delbrück-Gymnasium
   district: Pankow
@@ -347,8 +347,8 @@
   phone: +49 30 47596720
   email: sekretariat@max-delbrueck-gymnasium.de
   traeger: öffentlich
-  student_count:
-  teacher_count:
+  student_count: 1056
+  teacher_count: 84
 - school_id: 03Y16
   name: Robert-Havemann-Gymnasium
   district: Pankow
@@ -360,8 +360,8 @@
   phone: +49 30 94878511
   email: 03Y16@03Y16.schule.berlin.de
   traeger: öffentlich
-  student_count:
-  teacher_count:
+  student_count: 1154
+  teacher_count: 85
 - school_id: 03Y17
   name: Inge-Deutschkron-Gymnasium
   district: Pankow
@@ -373,8 +373,8 @@
   phone: +49 30 405771260
   email: 03Y17@03Y17.schule.berlin.de
   traeger: öffentlich
-  student_count:
-  teacher_count:
+  student_count: 771
+  teacher_count: 64
 - school_id: 04P04
   name: Katholische Schule Liebfrauen (Gymnasium)
   district: Charlottenburg-Wilmersdorf
@@ -386,8 +386,8 @@
   phone: +49 30 30613013
   email: sekretariat@ksl.schulerzbistum.de
   traeger: privat
-  student_count:
-  teacher_count:
+  student_count: 735
+  teacher_count: 65
 - school_id: 04P11
   name: Evangelisches Gymnasium zum Grauen Kloster
   district: Charlottenburg-Wilmersdorf
@@ -399,8 +399,8 @@
   phone: +49 30 8254011
   email: sekretariat@graues-kloster.de
   traeger: privat
-  student_count:
-  teacher_count:
+  student_count: 591
+  teacher_count: 57
 - school_id: 04P24
   name: Moser-Schule - Schweizer Gymnasium
   district: Charlottenburg-Wilmersdorf
@@ -412,8 +412,8 @@
   phone: +49 30 30838282
   email: info@moserschule.de
   traeger: privat
-  student_count:
-  teacher_count:
+  student_count: 334
+  teacher_count: 36
 - school_id: 04P35
   name: Mentora Gymnasium (KEIN Schulbetrieb)
   district: Charlottenburg-Wilmersdorf
@@ -425,8 +425,8 @@
   phone: +49 30 810580838
   email: info@mentora-gymnasium.de
   traeger: privat
-  student_count:
-  teacher_count:
+  student_count: 72
+  teacher_count: 10
 - school_id: 04P47
   name: Privates Europa-Gymnasium Berlin
   district: Charlottenburg-Wilmersdorf
@@ -438,8 +438,8 @@
   phone: +49 30 74073717
   email: info@europa-gymnasium.eu
   traeger: privat
-  student_count:
-  teacher_count:
+  student_count: 84
+  teacher_count: 16
 - school_id: 04Y01
   name: Schiller-Gymnasium
   district: Charlottenburg-Wilmersdorf
@@ -451,8 +451,8 @@
   phone: +49 30 902925920
   email: sekretariat@sgym.schule.berlin.de
   traeger: öffentlich
-  student_count:
-  teacher_count:
+  student_count: 1005
+  teacher_count: 89
 - school_id: 04Y02
   name: Wald-Gymnasium
   district: Charlottenburg-Wilmersdorf
@@ -464,8 +464,8 @@
   phone: +49 30 902926930
   email: sekretariat@waldgymnasium.schule.berlin.de
   traeger: öffentlich
-  student_count:
-  teacher_count:
+  student_count: 734
+  teacher_count: 68
 - school_id: 04Y03
   name: Sophie-Charlotte-Gymnasium
   district: Charlottenburg-Wilmersdorf
@@ -477,8 +477,8 @@
   phone: +49 30 902928600
   email: sekretariat@scg.schule.berlin.de
   traeger: öffentlich
-  student_count:
-  teacher_count:
+  student_count: 730
+  teacher_count: 61
 - school_id: 04Y04
   name: Gottfried-Keller-Gymnasium
   district: Charlottenburg-Wilmersdorf
@@ -490,8 +490,8 @@
   phone: +49 30 902927310
   email: kontakt@gks-berlin.de
   traeger: öffentlich
-  student_count:
-  teacher_count:
+  student_count: 858
+  teacher_count: 81
 - school_id: 04Y05
   name: Herder-Gymnasium
   district: Charlottenburg-Wilmersdorf
@@ -503,8 +503,8 @@
   phone: +49 30 902927800
   email: sekretariat@herder-gymnasium.eu
   traeger: öffentlich
-  student_count:
-  teacher_count:
+  student_count: 900
+  teacher_count: 72
 - school_id: 04Y06
   name: Heinz-Berggruen-Gymnasium
   district: Charlottenburg-Wilmersdorf
@@ -516,8 +516,8 @@
   phone: +49 30 902928702
   email: info@hbgym.de
   traeger: öffentlich
-  student_count:
-  teacher_count:
+  student_count: 874
+  teacher_count: 74
 - school_id: 04Y07
   name: Friedrich-Ebert-Gymnasium
   district: Charlottenburg-Wilmersdorf
@@ -529,8 +529,8 @@
   phone: +49 30 8974510
   email: bock@feo-berlin.de
   traeger: öffentlich
-  student_count:
-  teacher_count:
+  student_count: 791
+  teacher_count: 64
 - school_id: 04Y08
   name: Hildegard-Wegscheider-Gymnasium
   district: Charlottenburg-Wilmersdorf
@@ -542,8 +542,8 @@
   phone: +49 30 897454210
   email: wegscheider-gymnasium@gmx.de
   traeger: öffentlich
-  student_count:
-  teacher_count:
+  student_count: 619
+  teacher_count: 47
 - school_id: 04Y09
   name: Walther-Rathenau-Gymnasium
   district: Charlottenburg-Wilmersdorf
@@ -555,8 +555,8 @@
   phone: +49 30 8902990
   email: sekretariat@wrg.schule.berlin.de
   traeger: öffentlich
-  student_count:
-  teacher_count:
+  student_count: 555
+  teacher_count: 49
 - school_id: 04Y10
   name: Marie-Curie-Gymnasium
   district: Charlottenburg-Wilmersdorf
@@ -568,8 +568,8 @@
   phone: +49 30 8599497110
   email: schulleitung@mcg-berlin.de
   traeger: öffentlich
-  student_count:
-  teacher_count:
+  student_count: 717
+  teacher_count: 64
 - school_id: 04Y11
   name: Goethe-Gymnasium
   district: Charlottenburg-Wilmersdorf
@@ -581,8 +581,8 @@
   phone: +49 30 8649960
   email: info.goethe-gymnasium@t-online.de
   traeger: öffentlich
-  student_count:
-  teacher_count:
+  student_count: 836
+  teacher_count: 61
 - school_id: 05Y01
   name: Freiherr-vom-Stein-Gymnasium
   district: Spandau
@@ -594,8 +594,8 @@
   phone: +49 30 3309653
   email: freiherr-vom-stein-gymnasium@t-online.de
   traeger: öffentlich
-  student_count:
-  teacher_count:
+  student_count: 942
+  teacher_count: 89
 - school_id: 05Y02
   name: Kant-Gymnasium
   district: Spandau
@@ -607,8 +607,8 @@
   phone: +49 30 3539480
   email: info@kant-gym.de
   traeger: öffentlich
-  student_count:
-  teacher_count:
+  student_count: 833
+  teacher_count: 71
 - school_id: 05Y03
   name: Hans-Carossa-Gymnasium
   district: Spandau
@@ -620,8 +620,8 @@
   phone: +49 30 36996511
   email: Sekretariat@05Y03.schule.berlin.de
   traeger: öffentlich
-  student_count:
-  teacher_count:
+  student_count: 1120
+  teacher_count: 92
 - school_id: 05Y04
   name: Carl-Friedrich-von-Siemens-Gymnasium
   district: Spandau
@@ -633,8 +633,8 @@
   phone: +49 30 34505680
   email: mail@cfvsiemens.de
   traeger: öffentlich
-  student_count:
-  teacher_count:
+  student_count: 790
+  teacher_count: 65
 - school_id: 05Y05
   name: Lily-Braun-Gymnasium
   district: Spandau
@@ -646,8 +646,8 @@
   phone: +49 30 3389040
   email: e-post@lily-braun-gymnasium.de
   traeger: öffentlich
-  student_count:
-  teacher_count:
+  student_count: 696
+  teacher_count: 57
 - school_id: 06Y01
   name: Schadow-Gymnasium
   district: Steglitz-Zehlendorf
@@ -659,8 +659,8 @@
   phone: +49 30 902995463
   email: sekretariat@schadow-gymnasium-berlin.de
   traeger: öffentlich
-  student_count:
-  teacher_count:
+  student_count: 1050
+  teacher_count: 90
 - school_id: 06Y02
   name: Droste-Hülshoff-Gymnasium
   district: Steglitz-Zehlendorf
@@ -672,8 +672,8 @@
   phone: +49 30 84508466
   email: schulbuero@droste-berlin.de
   traeger: öffentlich
-  student_count:
-  teacher_count:
+  student_count: 830
+  teacher_count: 69
 - school_id: 06Y03
   name: Arndt-Gymnasium Dahlem
   district: Steglitz-Zehlendorf
@@ -685,8 +685,8 @@
   phone: +49 30 8315052
   email: sekretariat@arndt-gymnasium.de
   traeger: öffentlich
-  student_count:
-  teacher_count:
+  student_count: 878
+  teacher_count: 70
 - school_id: 06Y04
   name: Dreilinden-Gymnasium
   district: Steglitz-Zehlendorf
@@ -698,8 +698,8 @@
   phone: +49 30 8031087
   email: sekretariat@dreilinden-gymnasium.de
   traeger: öffentlich
-  student_count:
-  teacher_count:
+  student_count: 766
+  teacher_count: 72
 - school_id: 06Y05
   name: Werner-von-Siemens-Gymnasium
   district: Steglitz-Zehlendorf
@@ -711,8 +711,8 @@
   phone: +49 30 8039066
   email: leitung@siemens-gymnasium-berlin.de
   traeger: öffentlich
-  student_count:
-  teacher_count:
+  student_count: 908
+  teacher_count: 66
 - school_id: 06Y06
   name: Beethoven-Gymnasium
   district: Steglitz-Zehlendorf
@@ -724,8 +724,8 @@
   phone: +49 30 76890530
   email: Leitung@beethoven-gymnasium.eu
   traeger: öffentlich
-  student_count:
-  teacher_count:
+  student_count: 876
+  teacher_count: 72
 - school_id: 06Y07
   name: Paulsen-Gymnasium
   district: Steglitz-Zehlendorf
@@ -737,8 +737,8 @@
   phone: +49 30 79742530
   email: paulsengymnasium@pg-berlin.de
   traeger: öffentlich
-  student_count:
-  teacher_count:
+  student_count: 698
+  teacher_count: 57
 - school_id: 06Y08
   name: Hermann-Ehlers-Gymnasium
   district: Steglitz-Zehlendorf
@@ -750,8 +750,8 @@
   phone: +49 30 902992353
   email: sekretariat@heg.schule.berlin.de
   traeger: öffentlich
-  student_count:
-  teacher_count:
+  student_count: 608
+  teacher_count: 54
 - school_id: 06Y09
   name: Fichtenberg-Oberschule
   district: Steglitz-Zehlendorf
@@ -763,8 +763,8 @@
   phone: +49 30 902992354
   email: info@fichtenberg-oberschule.net
   traeger: öffentlich
-  student_count:
-  teacher_count:
+  student_count: 809
+  teacher_count: 78
 - school_id: 06Y10
   name: Lilienthal-Gymnasium
   district: Steglitz-Zehlendorf
@@ -776,8 +776,8 @@
   phone: +49 30 84415360
   email: sekretariat@lilienthal-gymnasium-berlin.de
   traeger: öffentlich
-  student_count:
-  teacher_count:
+  student_count: 767
+  teacher_count: 64
 - school_id: 06Y11
   name: Goethe-Gymnasium Lichterfelde
   district: Steglitz-Zehlendorf
@@ -789,8 +789,8 @@
   phone: +49 30 84416730
   email: sekretariat@goethe-lichterfelde.schule.berlin.de
   traeger: öffentlich
-  student_count:
-  teacher_count:
+  student_count: 726
+  teacher_count: 69
 - school_id: 06Y12
   name: Willi-Graf-Gymnasium
   district: Steglitz-Zehlendorf
@@ -802,8 +802,8 @@
   phone: +49 30 7729004
   email: sekretariat@willi-graf-os.de
   traeger: öffentlich
-  student_count:
-  teacher_count:
+  student_count: 585
+  teacher_count: 49
 - school_id: 06Y13
   name: Gymnasium Steglitz
   district: Steglitz-Zehlendorf
@@ -815,8 +815,8 @@
   phone: +49 30 93951937
   email: sekretariat@gymnasiumsteglitz.de
   traeger: öffentlich
-  student_count:
-  teacher_count:
+  student_count: 816
+  teacher_count: 73
 - school_id: 07Y01
   name: Robert-Blum-Gymnasium
   district: Tempelhof-Schöneberg
@@ -828,8 +828,8 @@
   phone: +49 30 902777172
   email: sekretariat@robert-blum-schule.de
   traeger: öffentlich
-  student_count:
-  teacher_count:
+  student_count: 768
+  teacher_count: 68
 - school_id: 07Y02
   name: Rückert-Gymnasium
   district: Tempelhof-Schöneberg
@@ -841,8 +841,8 @@
   phone: +49 30 902777173
   email: schulleitung@rueckert-gymnasium-berlin.de
   traeger: öffentlich
-  student_count:
-  teacher_count:
+  student_count: 791
+  teacher_count: 68
 - school_id: 07Y03
   name: Rheingau-Gymnasium
   district: Tempelhof-Schöneberg
@@ -854,8 +854,8 @@
   phone: +49 30 902777920
   email: sekretariat@rheingau-gymnasium.de
   traeger: öffentlich
-  student_count:
-  teacher_count:
+  student_count: 725
+  teacher_count: 60
 - school_id: 07Y04
   name: Paul-Natorp-Gymnasium
   district: Tempelhof-Schöneberg
@@ -867,8 +867,8 @@
   phone: +49 30 902777921
   email: sekretariat@natorp-gymnasium.de
   traeger: öffentlich
-  student_count:
-  teacher_count:
+  student_count: 811
+  teacher_count: 68
 - school_id: 07Y05
   name: Luise-Henriette-Gymnasium
   district: Tempelhof-Schöneberg
@@ -880,8 +880,8 @@
   phone: +49 30 902772678
   email: sekretariat@l-h-g.de
   traeger: öffentlich
-  student_count:
-  teacher_count:
+  student_count: 473
+  teacher_count: 46
 - school_id: 07Y06
   name: Askanisches Gymnasium
   district: Tempelhof-Schöneberg
@@ -893,8 +893,8 @@
   phone: +49 30 902772679
   email: sekretariat@askanisches-gymnasium.de
   traeger: öffentlich
-  student_count:
-  teacher_count:
+  student_count: 741
+  teacher_count: 57
 - school_id: 07Y07
   name: Eckener-Gymnasium
   district: Tempelhof-Schöneberg
@@ -906,8 +906,8 @@
   phone: +49 30 902777448
   email: info@eckener-gymnasium.de
   traeger: öffentlich
-  student_count:
-  teacher_count:
+  student_count: 740
+  teacher_count: 59
 - school_id: 07Y08
   name: Ulrich-von-Hutten-Gymnasium
   district: Tempelhof-Schöneberg
@@ -919,8 +919,8 @@
   phone: +49 30 902778244
   email: uvh@uvh-online.de
   traeger: öffentlich
-  student_count:
-  teacher_count:
+  student_count: 839
+  teacher_count: 69
 - school_id: 07Y09
   name: Georg-Büchner-Gymnasium
   district: Tempelhof-Schöneberg
@@ -932,8 +932,8 @@
   phone: +49 30 902778208
   email: sekretariat@gbgonline.de
   traeger: öffentlich
-  student_count:
-  teacher_count:
+  student_count: 580
+  teacher_count: 50
 - school_id: 08Y01
   name: Albrecht-Dürer-Gymnasium
   district: Neukölln
@@ -945,8 +945,8 @@
   phone: +49 30 221994310
   email: 08Y01@08Y01.schule.berlin.de
   traeger: öffentlich
-  student_count:
-  teacher_count:
+  student_count: 711
+  teacher_count: 58
 - school_id: 08Y02
   name: Albert-Schweitzer-Gymnasium
   district: Neukölln
@@ -958,8 +958,8 @@
   phone: +49 30 225009830
   email: sekretariat@08Y02.schule.berlin.de
   traeger: öffentlich
-  student_count:
-  teacher_count:
+  student_count: 609
+  teacher_count: 60
 - school_id: 08Y03
   name: Albert-Einstein-Gymnasium
   district: Neukölln
@@ -971,8 +971,8 @@
   phone: +49 30 6009020
   email: sekretariat@aeo.de
   traeger: öffentlich
-  student_count:
-  teacher_count:
+  student_count: 1041
+  teacher_count: 95
 - school_id: 08Y04
   name: Ernst-Abbe-Gymnasium
   district: Neukölln
@@ -984,8 +984,8 @@
   phone: +49 30 225013030
   email: sekretariat@ernst-abbe.schule.berlin.de
   traeger: öffentlich
-  student_count:
-  teacher_count:
+  student_count: 667
+  teacher_count: 58
 - school_id: 08Y05
   name: Leonardo-da-Vinci-Gymnasium
   district: Neukölln
@@ -997,8 +997,8 @@
   phone: +49 30 742010
   email: sekretariat@08y05.schule.berlin.de
   traeger: öffentlich
-  student_count:
-  teacher_count:
+  student_count: 740
+  teacher_count: 63
 - school_id: 08Y06
   name: Hannah-Arendt-Gymnasium
   district: Neukölln
@@ -1010,8 +1010,8 @@
   phone: +49 30 6097180
   email: sekretariat@hag-berlin.net
   traeger: öffentlich
-  student_count:
-  teacher_count:
+  student_count: 796
+  teacher_count: 62
 - school_id: 09P07
   name: Evangelische Schule Köpenick (Gymnasium)
   district: Treptow-Köpenick
@@ -1023,8 +1023,8 @@
   phone: +49 30 32532401
   email: leitung@ev-schule-koepenick.de
   traeger: privat
-  student_count:
-  teacher_count:
+  student_count: 611
+  teacher_count: 65
 - school_id: 09Y03
   name: Archenhold-Gymnasium
   district: Treptow-Köpenick
@@ -1036,8 +1036,8 @@
   phone: +49 30 6360195
   email: sekretariat@archenhold.de
   traeger: öffentlich
-  student_count:
-  teacher_count:
+  student_count: 741
+  teacher_count: 63
 - school_id: 09Y04
   name: Anne-Frank-Gymnasium
   district: Treptow-Köpenick
@@ -1049,8 +1049,8 @@
   phone: +49 30 51653360
   email: sekretariat@afg.schule.berlin.de
   traeger: öffentlich
-  student_count:
-  teacher_count:
+  student_count: 907
+  teacher_count: 75
 - school_id: 09Y05
   name: Alexander-von-Humboldt-Gymnasium
   district: Treptow-Köpenick
@@ -1062,8 +1062,8 @@
   phone: +49 30 6519788
   email: sekretariat@avh.berlin
   traeger: öffentlich
-  student_count:
-  teacher_count:
+  student_count: 805
+  teacher_count: 63
 - school_id: 09Y06
   name: Gerhart-Hauptmann-Gymnasium
   district: Treptow-Köpenick
@@ -1075,8 +1075,8 @@
   phone: +49 30 6451839
   email: sekretariat@ghs-berlin.de
   traeger: öffentlich
-  student_count:
-  teacher_count:
+  student_count: 819
+  teacher_count: 63
 - school_id: 09Y10
   name: Gebrüder-Montgolfier-Gymnasium
   district: Treptow-Köpenick
@@ -1088,8 +1088,8 @@
   phone: +49 30 6316677
   email: sekretariat@gemont.de
   traeger: öffentlich
-  student_count:
-  teacher_count:
+  student_count: 962
+  teacher_count: 79
 - school_id: 09Y11
   name: Emmy-Noether-Gymnasium
   district: Treptow-Köpenick
@@ -1101,8 +1101,8 @@
   phone: +49 30 6542160
   email: sekretariat@noether-gymnasium.de
   traeger: öffentlich
-  student_count:
-  teacher_count:
+  student_count: 824
+  teacher_count: 71
 - school_id: 09Y12
   name: 12. Schule (Gymnasium)
   district: Treptow-Köpenick
@@ -1114,8 +1114,8 @@
   phone: +49 30 5329141
   email: schulleitung@gymnasium09y12.de
   traeger: öffentlich
-  student_count:
-  teacher_count:
+  student_count: 130
+  teacher_count: 3
 - school_id: 10Y01
   name: Tagore-Gymnasium
   district: Marzahn-Hellersdorf
@@ -1127,8 +1127,8 @@
   phone: +49 30 9321069
   email: schulleitung@tagore-gymnasium.de
   traeger: öffentlich
-  student_count:
-  teacher_count:
+  student_count: 915
+  teacher_count: 78
 - school_id: 10Y02
   name: Otto-Nagel-Gymnasium
   district: Marzahn-Hellersdorf
@@ -1140,8 +1140,8 @@
   phone: +49 30 5143864
   email: sekretariat@ong.berlin
   traeger: öffentlich
-  student_count:
-  teacher_count:
+  student_count: 948
+  teacher_count: 77
 - school_id: 10Y03
   name: Wilhelm-von-Siemens-Gymnasium
   district: Marzahn-Hellersdorf
@@ -1153,8 +1153,8 @@
   phone: +49 30 549791340
   email: schulleitung@wvsg.schule.berlin.de
   traeger: öffentlich
-  student_count:
-  teacher_count:
+  student_count: 895
+  teacher_count: 74
 - school_id: 10Y08
   name: Sartre-Gymnasium
   district: Marzahn-Hellersdorf
@@ -1166,8 +1166,8 @@
   phone: +49 30 99281416
   email: sekretariat@sartre-gymnasium.de
   traeger: öffentlich
-  student_count:
-  teacher_count:
+  student_count: 902
+  teacher_count: 72
 - school_id: 10Y11
   name: Melanchthon-Gymnasium
   district: Marzahn-Hellersdorf
@@ -1179,8 +1179,8 @@
   phone: +49 30 9918008
   email: spieler@melanchthon-schule-berlin.de
   traeger: öffentlich
-  student_count:
-  teacher_count:
+  student_count: 1101
+  teacher_count: 84
 - school_id: 10Y12
   name: 12. Schule (Gymnasium)
   district: Marzahn-Hellersdorf
@@ -1192,8 +1192,8 @@
   phone: +49 30 30323310
   email: 10Y12@10Y12.schule.berlin.de
   traeger: öffentlich
-  student_count:
-  teacher_count:
+  student_count: 125
+  teacher_count: 2
 - school_id: 11Y02
   name: Johann-Gottfried-Herder-Gymnasium
   district: Lichtenberg
@@ -1205,8 +1205,8 @@
   phone: +49 30 97609567
   email: sekretariat@jgherder.de
   traeger: öffentlich
-  student_count:
-  teacher_count:
+  student_count: 999
+  teacher_count: 87
 - school_id: 11Y05
   name: Hans-und-Hilde-Coppi-Gymnasium
   district: Lichtenberg
@@ -1218,8 +1218,8 @@
   phone: +49 30 5098116
   email: sekretariat@coppi-gym.de
   traeger: öffentlich
-  student_count:
-  teacher_count:
+  student_count: 742
+  teacher_count: 74
 - school_id: 11Y09
   name: Barnim-Gymnasium
   district: Lichtenberg
@@ -1231,8 +1231,8 @@
   phone: +49 30 9366690
   email: kontakt@barnim-gym.de
   traeger: öffentlich
-  student_count:
-  teacher_count:
+  student_count: 1235
+  teacher_count: 101
 - school_id: 11Y10
   name: Manfred-von-Ardenne-Gymnasium
   district: Lichtenberg
@@ -1244,8 +1244,8 @@
   phone: +49 30 9865002
   email: info@ardenne-gymnasium.de
   traeger: öffentlich
-  student_count:
-  teacher_count:
+  student_count: 849
+  teacher_count: 71
 - school_id: 11Y11
   name: Immanuel-Kant-Gymnasium
   district: Lichtenberg
@@ -1257,8 +1257,8 @@
   phone: +49 30 5139748
   email: 'sekretariat@kant-gymnasium.de '
   traeger: öffentlich
-  student_count:
-  teacher_count:
+  student_count: 901
+  teacher_count: 82
 - school_id: 11Y12
   name: 12. Schule (Gymnasium)
   district: Lichtenberg
@@ -1270,8 +1270,8 @@
   phone: +49 30 2639114000
   email: 11Y12@11Y12.schule.berlin.de
   traeger: öffentlich
-  student_count:
-  teacher_count:
+  student_count: 152
+  teacher_count: 13
 - school_id: 12Y01
   name: Friedrich-Engels-Gymnasium
   district: Reinickendorf
@@ -1283,8 +1283,8 @@
   phone: +49 30 4955056
   email: 12Y01@12Y01.schule.berlin.de
   traeger: öffentlich
-  student_count:
-  teacher_count:
+  student_count: 918
+  teacher_count: 83
 - school_id: 12Y02
   name: Europäisches Gymnasium Bertha-von-Suttner
   district: Reinickendorf
@@ -1296,8 +1296,8 @@
   phone: +49 30 4916057
   email: 12Y02@12Y02.schule.berlin.de
   traeger: öffentlich
-  student_count:
-  teacher_count:
+  student_count: 1206
+  teacher_count: 95
 - school_id: 12Y03
   name: Humboldt-Gymnasium
   district: Reinickendorf
@@ -1309,8 +1309,8 @@
   phone: +49 30 4337008
   email: 12Y03@12Y03.schule.berlin.de
   traeger: öffentlich
-  student_count:
-  teacher_count:
+  student_count: 1123
+  teacher_count: 114
 - school_id: 12Y04
   name: Gabriele-von-Bülow-Gymnasium
   district: Reinickendorf
@@ -1322,8 +1322,8 @@
   phone: +49 30 210052460
   email: 12Y04@12Y04.schule.berlin.de
   traeger: öffentlich
-  student_count:
-  teacher_count:
+  student_count: 946
+  teacher_count: 80
 - school_id: 12Y05
   name: Georg-Herwegh-Gymnasium
   district: Reinickendorf
@@ -1335,8 +1335,8 @@
   phone: +49 30 4042070
   email: mail@herwegh-gymnasium.de
   traeger: öffentlich
-  student_count:
-  teacher_count:
+  student_count: 925
+  teacher_count: 81
 - school_id: 12Y06
   name: Schulfarm Insel Scharfenberg
   district: Reinickendorf
@@ -1348,8 +1348,8 @@
   phone: +49 30 430944330
   email: sekretariat@berlin-sis.de
   traeger: öffentlich
-  student_count:
-  teacher_count:
+  student_count: 422
+  teacher_count: 44
 - school_id: 12Y07
   name: Romain-Rolland-Gymnasium
   district: Reinickendorf
@@ -1361,8 +1361,8 @@
   phone: +49 30 4140170
   email: 12Y07@12Y07.schule.berlin.de
   traeger: öffentlich
-  student_count:
-  teacher_count:
+  student_count: 1109
+  teacher_count: 90
 - school_id: 12Y08
   name: Thomas-Mann-Gymnasium
   district: Reinickendorf
@@ -1374,5 +1374,5 @@
   phone: +49 30 414763670
   email: 12Y08@12Y08.schule.berlin.de
   traeger: öffentlich
-  student_count:
-  teacher_count:
+  student_count: 929
+  teacher_count: 79

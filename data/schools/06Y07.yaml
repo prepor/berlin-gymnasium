@@ -10,6 +10,8 @@ website: https://wp.paulsen-gymnasium.de
 phone: +49 30 79742530
 email: paulsengymnasium@pg-berlin.de
 traeger: öffentlich
+student_count: 698
+teacher_count: 57
 accepts_after_4th_grade: false
 profile:
 - bilingual_english

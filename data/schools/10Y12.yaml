@@ -10,6 +10,8 @@ website: https://adw.berlin
 phone: +49 30 30323310
 email: 10Y12@10Y12.schule.berlin.de
 traeger: öffentlich
+student_count: 125
+teacher_count: 2
 accepts_after_4th_grade: false
 profile:
 - other

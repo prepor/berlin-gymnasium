@@ -10,6 +10,8 @@ website: http://www.ev-schule-koepenick.de
 phone: +49 30 32532401
 email: leitung@ev-schule-koepenick.de
 traeger: privat
+student_count: 611
+teacher_count: 65
 accepts_after_4th_grade: true
 profile:
 - musik

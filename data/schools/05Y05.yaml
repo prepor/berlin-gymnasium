@@ -10,6 +10,8 @@ website: http://www.lily-braun-gymnasium.de
 phone: +49 30 3389040
 email: e-post@lily-braun-gymnasium.de
 traeger: öffentlich
+student_count: 696
+teacher_count: 57
 accepts_after_4th_grade: false
 profile:
 - bilingual_english
