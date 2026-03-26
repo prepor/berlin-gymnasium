@@ -12,15 +12,42 @@ email: info@moserschule.de
 traeger: privat
 student_count: 334
 teacher_count: 36
-profile: []
-languages: []
+profile:
+- bilingual_french
+- bilingual_english
+- other
+languages:
+- name: Französisch
+  from_grade: 5
+- name: Englisch
+  from_grade: 5
+- name: Spanisch
+  from_grade: 8
 admission_requirements:
   notes: No search results retrieved in this session; data not available.
 image_urls: []
-social_media: {}
-ratings: {}
-completeness_score: 0.412
-field_confidence: {}
+social_media:
+  facebook: https://www.facebook.com/pages/Moser-Schule/174013029277678
+  instagram: https://www.instagram.com/ecolemoser_officiel/
+ratings:
+  schulen.de:
+    source: schulen.de
+    score:
+    scale_min: 1.0
+    scale_max: 6.0
+    review_count:
+    retrieved: '2026-03-26'
+completeness_score: 0.824
+field_confidence:
+  accepts_after_4th_grade: high
+  profile: high
+  languages: high
+  ganztag: high
+  abitur_average: low
+  open_day: low
+  social_media: medium
+  ratings: low
+  admission_requirements: medium
 data_sources:
 - wfs_berlin
 - agent_research
@@ -31,4 +58,8 @@ unverified_fields:
 - field_confidence
 - image_urls
 - admission_requirements
+- open_day
+- abitur_average
 _pinned_fields: []
+accepts_after_4th_grade: true
+ganztag: true

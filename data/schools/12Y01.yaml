@@ -29,19 +29,27 @@ languages:
 admission_requirements:
   selection_criteria: 'Standard Berlin process: Durchschnittsnote der Förderprognose used as primary criterion when oversubscribed.'
   entrance_test: false
-  notes: Schule besonderer pädagogischer Prägung since 1991. Two grundständige classes from grade 5 with bilingual Deutsch-Spanisch track. Offene Ganztagsgymnasium since school year 2011/12. Berlin.de lists bilingual offers Deutsch/Englisch and Deutsch/Spanisch.
+  notes: Schule besonderer pädagogischer Prägung since 1991. Two grundständige classes from grade 5 with bilingual 
+    Deutsch-Spanisch track. Offene Ganztagsgymnasium since school year 2011/12. Berlin.de lists bilingual offers 
+    Deutsch/Englisch and Deutsch/Spanisch.
 image_urls:
-- https://upload.wikimedia.org/wikipedia/commons/thumb/3/3d/Engels-gymn-rdorf.jpg/800px-Engels-gymn-rdorf.jpg
-- https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Schulgeb%C3%A4ude_Emmentaler_Stra%C3%9Fe_63-69_c._um_1915.jpg/800px-Schulgeb%C3%A4ude_Emmentaler_Stra%C3%9Fe_63-69_c._um_1915.jpg
-social_media: {}
+- photos/12Y01_0.jpg
+- photos/12Y01_1.jpg
+social_media:
+  instagram: https://www.instagram.com/feg.berlin/
+  facebook: https://www.facebook.com/pages/Friedrich-Engels-Gymnasium/104008429635407/
 ratings: {}
-completeness_score: 0.647
+completeness_score: 0.882
 field_confidence:
   accepts_after_4th_grade: high
   profile: high
   languages: medium
   ganztag: high
   admission_requirements: medium
+  abitur_average: low
+  open_day: high
+  social_media: high
+  ratings: low
 data_sources:
 - wfs_berlin
 - agent_research
@@ -57,4 +65,6 @@ unverified_fields:
 - admission_requirements
 - languages
 - profile
+- abitur_average
 _pinned_fields: []
+open_day: '2026-01-24'

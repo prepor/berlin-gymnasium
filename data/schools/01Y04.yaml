@@ -33,15 +33,21 @@ admission_requirements:
   notes: One of two state music gymnasiums in Berlin. Specialises in classical music; instrumental and vocal training 
     integrated into timetable. Named after Carl Philipp Emanuel Bach. State public school, no fees.
 image_urls: []
-social_media: {}
+social_media:
+  instagram: https://www.instagram.com/musikgymnasium_berlin/
+  facebook: https://www.facebook.com/MusikgymnasiumBerlin/
 ratings: {}
-completeness_score: 0.647
+completeness_score: 0.824
 field_confidence:
   accepts_after_4th_grade: medium
   profile: high
   languages: low
   ganztag: medium
   admission_requirements: medium
+  abitur_average: low
+  open_day: medium
+  social_media: high
+  ratings: low
 data_sources:
 - wfs_berlin
 - agent_research
@@ -56,4 +62,6 @@ unverified_fields:
 - admission_requirements
 - languages
 - profile
+- open_day
 _pinned_fields: []
+open_day: '2026-01-05'

@@ -13,15 +13,43 @@ traeger: öffentlich
 student_count: 667
 teacher_count: 58
 profile: []
-languages: []
+languages:
+- name: Englisch
+  from_grade: 7
+- name: Französisch
+  from_grade: 7
+- name: Latein
+  from_grade: 7
 image_urls:
-- https://commons.wikimedia.org/wiki/Special:FilePath/Sonnenallee%2079%203.JPG?width=800
+- photos/08Y04_0.jpg
 social_media: {}
 ratings: {}
-completeness_score: 0.353
-field_confidence: {}
+completeness_score: 0.824
+field_confidence:
+  accepts_after_4th_grade: high
+  profile: medium
+  languages: high
+  ganztag: medium
+  admission_requirements: medium
+  abitur_average: low
+  open_day: high
+  social_media: low
+  ratings: low
 data_sources:
 - wfs_berlin
 - wikimedia
-unverified_fields: []
+- agent_research
+unverified_fields:
+- ganztag
+- admission_requirements
 _pinned_fields: []
+ganztag: false
+accepts_after_4th_grade: false
+open_day: '2026-01-15'
+admission_requirements:
+  notendurchschnitt:
+  oversubscribed:
+  selection_criteria: Durchschnittsnote der Förderprognose
+  probeunterricht: false
+  entrance_test: false
+  notes: Probezeit erforderlich

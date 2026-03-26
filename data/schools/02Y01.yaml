@@ -33,14 +33,21 @@ admission_requirements:
   notes: 'MINT-Profilklasse ab Klasse 5 in Kooperation mit der Humboldt-Universität Berlin; Tag der offenen Tür für Klasse
     5 war 16.01.2026 (vergangen); Anmeldezeitraum Klasse 5: 10.–13.02.2026'
 image_urls: []
-social_media: {}
+social_media:
+  facebook: https://www.facebook.com/andgym/
+  instagram: https://www.instagram.com/agym.sv/
 ratings: {}
-completeness_score: 0.588
+completeness_score: 0.765
 field_confidence:
   accepts_after_4th_grade: high
   profile: high
   languages: high
   admission_requirements: high
+  ganztag: medium
+  abitur_average: low
+  open_day: medium
+  social_media: medium
+  ratings: low
 data_sources:
 - wfs_berlin
 - agent_research
@@ -54,4 +61,6 @@ unverified_fields:
 - admission_requirements
 - languages
 - profile
+- ganztag
 _pinned_fields: []
+ganztag: true

@@ -13,7 +13,8 @@ traeger: öffentlich
 student_count: 775
 teacher_count: 74
 accepts_after_4th_grade: false
-profile: []
+profile:
+- other
 ganztag: false
 languages:
 - name: Englisch
@@ -24,21 +25,24 @@ languages:
   from_grade: 7
 - name: Spanisch
 admission_requirements:
-  selection_criteria: 'Standard Berlin public gymnasium admission: based on Förderprognose from primary school; Probeunterricht required if Notensumme exceeds 14. Entry from grade 7.'
+  selection_criteria: 'Standard Berlin public gymnasium admission: based on Förderprognose from primary school; Probeunterricht
+    required if Notensumme exceeds 14. Entry from grade 7.'
   probeunterricht: true
   entrance_test: false
   notes: Public gymnasium in Berlin-Mitte. Standard Berlin admission procedure applies.
 image_urls:
-- https://commons.wikimedia.org/wiki/Special:FilePath/Wedding_Schöningstraße_Lessing-Gymnasium-001.jpg?width=800
-social_media: {}
+- photos/01Y08_0.jpg
+social_media:
+  facebook: https://facebook.com/LessingGymnasium.Berlin/
 ratings: {}
-completeness_score: 0.647
+completeness_score: 0.824
 field_confidence:
   accepts_after_4th_grade: low
   profile: low
   languages: low
   ganztag: low
   admission_requirements: low
+  social_media: medium
 data_sources:
 - wfs_berlin
 - agent_research

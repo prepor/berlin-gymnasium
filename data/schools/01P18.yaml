@@ -33,17 +33,22 @@ admission_requirements:
   notes: 'Private fee-paying school (Phorms network). Bilingual German/English. Two pathways: bilingual-natural-sciences gymnasium
     from grade 5, and bilingual gymnasium from grade 7. Both lead to bilingual Berliner Abitur. Cambridge Advanced English
     (CAE) offered. Sibling discounts and loyalty discounts available.'
-image_urls:
-- https://berlin-mitte.phorms.de/wp-content/uploads/sites/3/2023/04/phorms-berlin-mitte-campus.jpg
-social_media: {}
+image_urls: []
+social_media:
+  instagram: https://www.instagram.com/phorms_berlin_mitte/
+  facebook: https://www.facebook.com/PhormsBerlinMitte/
 ratings: {}
-completeness_score: 0.706
+completeness_score: 0.882
 field_confidence:
   accepts_after_4th_grade: high
   profile: high
   languages: medium
   ganztag: high
   admission_requirements: high
+  abitur_average: low
+  open_day: medium
+  social_media: high
+  ratings: low
 data_sources:
 - wfs_berlin
 - agent_research
@@ -58,4 +63,6 @@ unverified_fields:
 - admission_requirements
 - languages
 - profile
+- open_day
 _pinned_fields: []
+open_day: '2026-09-26'

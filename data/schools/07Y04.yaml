@@ -12,16 +12,48 @@ email: sekretariat@natorp-gymnasium.de
 traeger: öffentlich
 student_count: 811
 teacher_count: 68
-profile: []
-languages: []
+profile:
+- other
+languages:
+- name: Englisch
+  from_grade: 7
+- name: Französisch
+  from_grade: 7
+- name: Latein
+  from_grade: 7
+- name: Italienisch
+  from_grade: 9
 image_urls:
-- https://commons.wikimedia.org/wiki/Special:FilePath/Paul-Natorp-Oberschule%20in%20Friedenau.JPG?width=800
-social_media: {}
+- photos/07Y04_0.jpg
+social_media:
+  instagram: https://www.instagram.com/sv_natorp/
 ratings: {}
-completeness_score: 0.353
-field_confidence: {}
+completeness_score: 0.824
+field_confidence:
+  accepts_after_4th_grade: high
+  profile: low
+  languages: high
+  ganztag: medium
+  admission_requirements: medium
+  abitur_average: low
+  open_day: low
+  social_media: medium
+  ratings: low
 data_sources:
 - wfs_berlin
 - wikimedia
-unverified_fields: []
+- agent_research
+unverified_fields:
+- ganztag
+- profile
+- admission_requirements
 _pinned_fields: []
+ganztag: false
+accepts_after_4th_grade: false
+admission_requirements:
+  notendurchschnitt:
+  oversubscribed: true
+  selection_criteria: Durchschnittsnote der Förderprognose
+  probeunterricht: true
+  entrance_test: false
+  notes: Probeunterricht required if note sum >= 14 in first foreign language from semesters 5.2 and 6.1

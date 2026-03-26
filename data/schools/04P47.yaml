@@ -34,15 +34,20 @@ admission_requirements:
     Deutsch/Englisch instruction from class 7; music, art, sport taught predominantly in English. Offene 
     Ganztagsbetreuung (OGB). Income-adjusted fees.
 image_urls: []
-social_media: {}
+social_media:
+  facebook: https://www.facebook.com/p/Privates-Europa-Gymnasium-European-Business-Academy-gGmbH-100063911867615/
 ratings: {}
-completeness_score: 0.647
+completeness_score: 0.765
 field_confidence:
   accepts_after_4th_grade: high
   profile: high
   languages: high
   ganztag: high
   admission_requirements: high
+  abitur_average: low
+  open_day: low
+  social_media: medium
+  ratings: low
 data_sources:
 - wfs_berlin
 - agent_research

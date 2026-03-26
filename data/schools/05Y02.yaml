@@ -12,16 +12,42 @@ email: info@kant-gym.de
 traeger: öffentlich
 student_count: 833
 teacher_count: 71
-profile: []
-languages: []
-admission_requirements: {}
+profile:
+- altsprachlich
+- music
+languages:
+- name: Englisch
+  from_grade: 5
+- name: Französisch
+  from_grade: 5
+- name: Latein
+  from_grade: 5
+- name: Spanisch
+  from_grade: 9
+admission_requirements:
+  notendurchschnitt:
+  oversubscribed: true
+  selection_criteria: Durchschnittsnote der Förderprognose
+  probeunterricht: false
+  entrance_test: false
+  notes: Oldest gymnasium in Spandau. Class 5 entry available (grundstaendig). Music classes from grade 7.
 image_urls:
-- https://upload.wikimedia.org/wikipedia/commons/thumb/7/71/Kant-gymn-spandau.jpg/800px-Kant-gymn-spandau.jpg
-- https://upload.wikimedia.org/wikipedia/commons/thumb/f/f4/Spandau_Bismarckstra%C3%9Fe.jpg/800px-Spandau_Bismarckstra%C3%9Fe.jpg
-social_media: {}
+- photos/05Y02_0.jpg
+- photos/05Y02_1.jpg
+social_media:
+  instagram: https://www.instagram.com/kant_gymnasium/
 ratings: {}
-completeness_score: 0.412
-field_confidence: {}
+completeness_score: 0.765
+field_confidence:
+  accepts_after_4th_grade: high
+  profile: high
+  languages: high
+  ganztag: low
+  admission_requirements: medium
+  abitur_average: low
+  open_day: low
+  social_media: high
+  ratings: low
 data_sources:
 - wfs_berlin
 - agent_research
@@ -35,4 +61,6 @@ unverified_fields:
 - admission_requirements
 - languages
 - profile
+- ganztag
 _pinned_fields: []
+accepts_after_4th_grade: true

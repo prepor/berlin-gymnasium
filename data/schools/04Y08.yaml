@@ -24,20 +24,28 @@ languages:
   from_grade: 7
 - name: Italienisch
 admission_requirements:
-  selection_criteria: "Durchschnittsnote der Förderprognose bei Übernachfrage. For the MINT Profilzug from class 5: weighted GPA from Maths (×3), German (×2), Sachunterricht and 1st foreign language (sum ≤ 15 required); Maths must be at least 'gut'. Qualifying pupils then sit a centralised entrance test (Eingangstest)."
+  selection_criteria: "Durchschnittsnote der Förderprognose bei Übernachfrage. For the MINT Profilzug from class 5: weighted
+    GPA from Maths (×3), German (×2), Sachunterricht and 1st foreign language (sum ≤ 15 required); Maths must be at least
+    'gut'. Qualifying pupils then sit a centralised entrance test (Eingangstest)."
   probeunterricht: false
   entrance_test: true
-  notes: Entrance test for the grundständig MINT profile (class 5) is held at all grundständig MINT schools simultaneously each March. Regular (class 7) intake uses standard Förderprognose GPA criterion.
+  notes: Entrance test for the grundständig MINT profile (class 5) is held at all grundständig MINT schools 
+    simultaneously each March. Regular (class 7) intake uses standard Förderprognose GPA criterion.
 image_urls:
-- https://commons.wikimedia.org/wiki/Special:FilePath/Lassenstra%C3%9Fe%2018%20Berlin-Grunewald.jpg?width=800
+- photos/04Y08_0.jpg
 social_media: {}
 ratings: {}
-completeness_score: 0.588
+completeness_score: 0.824
 field_confidence:
   accepts_after_4th_grade: high
   profile: high
   languages: high
   admission_requirements: high
+  ganztag: medium
+  abitur_average: low
+  open_day: high
+  social_media: low
+  ratings: low
 data_sources:
 - wfs_berlin
 - agent_research
@@ -52,4 +60,8 @@ unverified_fields:
 - admission_requirements
 - languages
 - profile
+- ganztag
+- abitur_average
 _pinned_fields: []
+ganztag: false
+open_day: '2026-01-16'

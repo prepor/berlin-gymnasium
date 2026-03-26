@@ -41,15 +41,28 @@ admission_requirements:
     entry from grade 7). School opened as secondary school in 2009. Non-profit, private fee-paying. Students 
     specialising in sciences and music/dance given admission priority.
 image_urls: []
-social_media: {}
-ratings: {}
-completeness_score: 0.647
+social_media:
+  instagram: https://www.instagram.com/berlin.cosmopolitan.school/
+  facebook: https://www.facebook.com/berlincosmopolitanschool/
+ratings:
+  ischooladvisor.com:
+    source: ischooladvisor.com
+    score: 3.8
+    scale_min: 1.0
+    scale_max: 5.0
+    review_count: 6
+    retrieved: '2026-03-26'
+completeness_score: 0.882
 field_confidence:
   accepts_after_4th_grade: medium
   profile: high
   languages: high
   ganztag: medium
   admission_requirements: high
+  abitur_average: medium
+  open_day: low
+  social_media: high
+  ratings: high
 data_sources:
 - wfs_berlin
 - agent_research
@@ -64,4 +77,6 @@ unverified_fields:
 - admission_requirements
 - languages
 - profile
+- abitur_average
 _pinned_fields: []
+abitur_average: 1.5

@@ -25,15 +25,19 @@ languages:
   from_grade: 7
 admission_requirements:
   oversubscribed: true
-  selection_criteria: Entrance test (Aufnahmetest) required; up to 60 students with the highest combined score are admitted when oversubscribed.
+  selection_criteria: Entrance test (Aufnahmetest) required; up to 60 students with the highest combined score are 
+    admitted when oversubscribed.
   probeunterricht: false
   entrance_test: true
-  notes: School was among the nine most sought-after Gymnasien in Berlin for 2023/24 enrolment. Grundständige (from grade 5) and standard (from grade 7) tracks both available.
+  notes: School was among the nine most sought-after Gymnasien in Berlin for 2023/24 enrolment. Grundständige (from 
+    grade 5) and standard (from grade 7) tracks both available.
 image_urls:
-- https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/Lueckstr_Schule1.jpg/800px-Lueckstr_Schule1.jpg
-social_media: {}
+- photos/11Y11_0.jpg
+social_media:
+  instagram: https://www.instagram.com/immanuelkantgymnasium/
+  facebook: https://www.facebook.com/Immanuel-Kant-Gymnasium-Berlin-Lichtenberg-293018637396106/
 ratings: {}
-completeness_score: 0.647
+completeness_score: 0.824
 field_confidence:
   accepts_after_4th_grade: high
   profile: high
@@ -43,6 +47,7 @@ field_confidence:
   admission_requirements: high
   ratings: high
   abitur_average: low
+  social_media: high
 data_sources:
 - wfs_berlin
 - agent_research
@@ -58,4 +63,5 @@ unverified_fields:
 - admission_requirements
 - languages
 - profile
+- open_day
 _pinned_fields: []

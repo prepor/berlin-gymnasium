@@ -29,18 +29,24 @@ languages:
 admission_requirements:
   selection_criteria: Durchschnittsnote der Förderprognose bei Übernachfrage
   entrance_test: false
-  notes: 'Half-day school; lessons end at 14:30 up to grade 10. Language tracks: S1 English/French, S4 English/Spanish, S7 English/Turkish'
+  notes: 'Half-day school; lessons end at 14:30 up to grade 10. Language tracks: S1 English/French, S4 English/Spanish, S7
+    English/Turkish'
 image_urls:
-- https://commons.wikimedia.org/wiki/Special:FilePath/2019-04-19-Schule-Dieffenbachstr.jpg?width=800
-social_media: {}
+- photos/02Y07_0.jpg
+social_media:
+  instagram: https://www.instagram.com/robert_koch_gymnasium_berlin/
 ratings: {}
-completeness_score: 0.647
+completeness_score: 0.824
 field_confidence:
   accepts_after_4th_grade: high
   profile: medium
   ganztag: high
   languages: high
   admission_requirements: medium
+  abitur_average: low
+  open_day: medium
+  social_media: high
+  ratings: low
 data_sources:
 - wfs_berlin
 - agent_research

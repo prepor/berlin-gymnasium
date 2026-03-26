@@ -34,15 +34,20 @@ admission_requirements:
   entrance_test: false
   notes: 206 applicants for 96 places in 2023/24. Gebundene Ganztagsschule since 01.08.2008.
 image_urls: []
-social_media: {}
+social_media:
+  instagram: https://www.instagram.com/hermann_hesse_gymnasium/
 ratings: {}
-completeness_score: 0.647
+completeness_score: 0.765
 field_confidence:
   accepts_after_4th_grade: high
   profile: high
   ganztag: high
   languages: medium
   admission_requirements: high
+  abitur_average: low
+  open_day: low
+  social_media: high
+  ratings: low
 data_sources:
 - wfs_berlin
 - agent_research
@@ -57,4 +62,6 @@ unverified_fields:
 - admission_requirements
 - languages
 - profile
+- abitur_average
+- open_day
 _pinned_fields: []

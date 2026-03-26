@@ -25,17 +25,24 @@ languages:
 admission_requirements:
   selection_criteria: MINT-Profilklasse ab Klasse 5 mit Eingangstest; bei Übernachfrage Aufnahme nach Förderprognose
   entrance_test: true
-  notes: Gymnasium besonderer pädagogischer Prägung mit mathematisch-naturwissenschaftlichem Profil (MINT-Klassen ab Kl. 5 und Kl. 7) in Kooperation mit der Humboldt-Universität Berlin
+  notes: Gymnasium besonderer pädagogischer Prägung mit mathematisch-naturwissenschaftlichem Profil (MINT-Klassen ab Kl.
+    5 und Kl. 7) in Kooperation mit der Humboldt-Universität Berlin
 image_urls:
-- https://commons.wikimedia.org/wiki/Special:FilePath/Rigaer_Str_Schule_F'hain_110311_AMA_fec_(15).JPG?width=800
-social_media: {}
+- photos/02Y03_0.jpg
+social_media:
+  instagram: https://www.instagram.com/hhgym_berlin/
 ratings: {}
-completeness_score: 0.588
+completeness_score: 0.882
 field_confidence:
   accepts_after_4th_grade: high
   profile: high
   languages: medium
   admission_requirements: low
+  ganztag: low
+  abitur_average: medium
+  open_day: high
+  social_media: high
+  ratings: low
 data_sources:
 - wfs_berlin
 - agent_research
@@ -50,4 +57,7 @@ unverified_fields:
 - admission_requirements
 - languages
 - profile
+- ganztag
 _pinned_fields: []
+abitur_average: 1.85
+open_day: '2026-01-17'

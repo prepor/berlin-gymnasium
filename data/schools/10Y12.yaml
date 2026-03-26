@@ -13,8 +13,15 @@ traeger: öffentlich
 student_count: 125
 teacher_count: 2
 accepts_after_4th_grade: false
-profile: []
-languages: []
+profile:
+- other
+languages:
+- name: Englisch
+  from_grade: 7
+- name: Spanisch
+  from_grade: 7
+- name: Französisch
+  from_grade: 7
 admission_requirements:
   selection_criteria: Aufnahme in Jahrgangsstufe 7 nach Berliner Standard-Gymnasialaufnahmeverfahren 
     (Förderprognose-Durchschnittsnote)
@@ -24,11 +31,13 @@ admission_requirements:
 image_urls: []
 social_media: {}
 ratings: {}
-completeness_score: 0.529
+completeness_score: 0.765
 field_confidence:
   accepts_after_4th_grade: medium
   profile: medium
   admission_requirements: medium
+  languages: low
+  open_day: medium
 data_sources:
 - wfs_berlin
 - agent_research
@@ -42,4 +51,6 @@ unverified_fields:
 - admission_requirements
 - languages
 - profile
+- open_day
 _pinned_fields: []
+open_day: '2026-02-28'

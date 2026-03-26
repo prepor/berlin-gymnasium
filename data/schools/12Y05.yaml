@@ -26,15 +26,30 @@ languages:
 - name: Italienisch
   from_grade: 9
 admission_requirements:
-  selection_criteria: Admission from grade 7; gymnasial recommendation required. If Notensumme of Deutsch, Mathematik, and first foreign language from Halbjahrszeugnisse 5.2 and 6.1 exceeds 14 (average worse than ~2.3), a Probeunterricht certificate is required. At oversubscription, multi-stage selection applies. For music and MINT profile classes, a separate selection procedure is always conducted. Profile preference (Regelklasse, MINT, music) indicated at registration.
+  selection_criteria: Admission from grade 7; gymnasial recommendation required. If Notensumme of Deutsch, Mathematik, 
+    and first foreign language from Halbjahrszeugnisse 5.2 and 6.1 exceeds 14 (average worse than ~2.3), a 
+    Probeunterricht certificate is required. At oversubscription, multi-stage selection applies. For music and MINT 
+    profile classes, a separate selection procedure is always conducted. Profile preference (Regelklasse, MINT, music) 
+    indicated at registration.
   probeunterricht: true
   entrance_test: false
-  notes: 'Three class profiles offered per year: Regelklasse, MINT-profilierte Klasse, and musische Klasse. Music profile has long tradition since 1997; includes mandatory ensemble participation, instrument lessons. MINT profile includes special science promotion, partnerships with TU Berlin and Berlin Zoo. School located in Berlin-Hermsdorf. Digital registration introduced.'
+  notes: 'Three class profiles offered per year: Regelklasse, MINT-profilierte Klasse, and musische Klasse. Music profile
+    has long tradition since 1997; includes mandatory ensemble participation, instrument lessons. MINT profile includes special
+    science promotion, partnerships with TU Berlin and Berlin Zoo. School located in Berlin-Hermsdorf. Digital registration
+    introduced.'
 image_urls:
-- https://upload.wikimedia.org/wikipedia/commons/thumb/1/1e/Georg_herwegh_oberschule.jpg/800px-Georg_herwegh_oberschule.jpg
-social_media: {}
-ratings: {}
-completeness_score: 0.588
+- photos/12Y05_0.jpg
+social_media:
+  instagram: https://www.instagram.com/herweghgymnasium/
+ratings:
+  golocal:
+    source: golocal
+    score: 3.0
+    scale_min: 1.0
+    scale_max: 5.0
+    review_count: 6
+    retrieved: '2026-03-26'
+completeness_score: 0.882
 field_confidence:
   accepts_after_4th_grade: high
   profile: high
@@ -43,6 +58,9 @@ field_confidence:
   open_day: low
   admission_requirements: high
   probeunterricht: high
+  abitur_average: low
+  social_media: high
+  ratings: medium
 data_sources:
 - wfs_berlin
 - agent_research
@@ -57,4 +75,6 @@ unverified_fields:
 - admission_requirements
 - languages
 - profile
+- ganztag
 _pinned_fields: []
+ganztag: true

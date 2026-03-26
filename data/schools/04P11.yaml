@@ -12,16 +12,37 @@ email: sekretariat@graues-kloster.de
 traeger: privat
 student_count: 591
 teacher_count: 57
-profile: []
-languages: []
+profile:
+- altsprachlich
+languages:
+- name: Latein
+  from_grade: 5
+- name: Englisch
+  from_grade: 5
+- name: Altgriechisch
+  from_grade: 8
+- name: Französisch
+  from_grade: 8
+- name: Hebräisch
+  from_grade: 8
 admission_requirements:
   notes: No search results retrieved in this session; data not available.
 image_urls:
-- https://commons.wikimedia.org/wiki/Special:FilePath/Schmargendorf_Salzbrunner_Straße_Gymnasium_zum_grauen_Kloster.jpg?width=800
-social_media: {}
+- photos/04P11_0.jpg
+social_media:
+  instagram: https://www.instagram.com/graues_kloster_official/
+  facebook: https://www.facebook.com/graueskloster/
 ratings: {}
-completeness_score: 0.412
-field_confidence: {}
+completeness_score: 0.824
+field_confidence:
+  accepts_after_4th_grade: high
+  profile: high
+  languages: high
+  ganztag: medium
+  abitur_average: low
+  open_day: low
+  social_media: high
+  ratings: low
 data_sources:
 - wfs_berlin
 - agent_research
@@ -33,4 +54,8 @@ unverified_fields:
 - field_confidence
 - image_urls
 - admission_requirements
+- ganztag
+- abitur_average
 _pinned_fields: []
+ganztag: true
+accepts_after_4th_grade: true

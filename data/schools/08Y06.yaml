@@ -12,16 +12,48 @@ email: sekretariat@hag-berlin.net
 traeger: öffentlich
 student_count: 796
 teacher_count: 62
-profile: []
-languages: []
+profile:
+- bilingual_english
+languages:
+- name: Englisch
+  from_grade: 7
+- name: Französisch
+  from_grade: 7
+- name: Spanisch
+  from_grade: 7
+- name: Latein
+  from_grade: 8
 image_urls:
-- https://upload.wikimedia.org/wikipedia/commons/thumb/7/71/Hannah-Arendt-Gymnasium.jpg/800px-Hannah-Arendt-Gymnasium.jpg
-social_media: {}
+- photos/08Y06_0.jpg
+social_media:
+  instagram: https://www.instagram.com/hannah_arendt_gymnasium_berlin/
 ratings: {}
-completeness_score: 0.353
-field_confidence: {}
+completeness_score: 0.824
+field_confidence:
+  accepts_after_4th_grade: high
+  profile: medium
+  languages: high
+  ganztag: medium
+  admission_requirements: medium
+  abitur_average: low
+  open_day: low
+  social_media: high
+  ratings: low
 data_sources:
 - wfs_berlin
 - wikimedia
-unverified_fields: []
+- agent_research
+unverified_fields:
+- ganztag
+- open_day
+- admission_requirements
 _pinned_fields: []
+ganztag: false
+accepts_after_4th_grade: false
+admission_requirements:
+  notendurchschnitt:
+  oversubscribed:
+  selection_criteria: Förderprognose
+  probeunterricht: false
+  entrance_test: false
+  notes: Aufnahmekriterium bei Übernachfrage ist der Notendurchschnitt der Förderprognose

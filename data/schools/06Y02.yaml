@@ -29,16 +29,21 @@ languages:
   from_grade: 7
 admission_requirements:
   oversubscribed: true
-  selection_criteria: 'Admissions split by first foreign language chosen (Englisch or Französisch). For music profile (C-Klassen): entrance test in music required (Aufnahmeprüfung). For other tracks: Durchschnittsnote der Förderprognose used; ties broken by lottery. Sibling priority applies.'
+  selection_criteria: 'Admissions split by first foreign language chosen (Englisch or Französisch). For music profile (C-Klassen):
+    entrance test in music required (Aufnahmeprüfung). For other tracks: Durchschnittsnote der Förderprognose used; ties broken
+    by lottery. Sibling priority applies.'
   probeunterricht: false
   entrance_test: true
-  notes: 5 classes of 29 students each for school year 2026/27. Entrance music test required for musikbetonte Klassen. For non-music tracks, GPA-based selection with lottery for ties. Profilklasse Französisch offers bilingual instruction in French from grade 9 in Geography and History.
+  notes: 5 classes of 29 students each for school year 2026/27. Entrance music test required for musikbetonte Klassen. 
+    For non-music tracks, GPA-based selection with lottery for ties. Profilklasse Französisch offers bilingual 
+    instruction in French from grade 9 in Geography and History.
 image_urls:
-- https://upload.wikimedia.org/wikipedia/commons/thumb/4/46/Zehlendorf_Sch%C3%B6nower_Stra%C3%9Fe_Droste-H%C3%BClshoff-Schule.JPG/800px-Zehlendorf_Sch%C3%B6nower_Stra%C3%9Fe_Droste-H%C3%BClshoff-Schule.JPG
-- https://upload.wikimedia.org/wikipedia/commons/thumb/0/07/Zehlendorf_Sch%C3%B6nower_Stra%C3%9Fe_8_Droste-H%C3%BClshoff-Schule-001.JPG/800px-Zehlendorf_Sch%C3%B6nower_Stra%C3%9Fe_8_Droste-H%C3%BClshoff-Schule-001.JPG
-social_media: {}
+- photos/06Y02_0.jpg
+- photos/06Y02_1.jpg
+social_media:
+  facebook: https://www.facebook.com/profile.php?id=119250951474979
 ratings: {}
-completeness_score: 0.647
+completeness_score: 0.824
 field_confidence:
   accepts_after_4th_grade: high
   profile: high
@@ -47,6 +52,10 @@ field_confidence:
   oversubscribed: high
   admission_requirements: high
   entrance_test: high
+  abitur_average: low
+  open_day: low
+  social_media: high
+  ratings: low
 data_sources:
 - wfs_berlin
 - agent_research

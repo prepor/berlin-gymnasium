@@ -34,12 +34,11 @@ admission_requirements:
   probeunterricht: true
   entrance_test: true
   notes: 'School publishes transparent admission criteria for 2026/2027 on its website. Two separate intake tracks exist: bilingual French/AbiBac track (grade 5) and standard/MINT track (grade 7). For the bilingual grade-5 track, prior French or English as first foreign language at primary school is both accepted.'
-image_urls:
-- https://commons.wikimedia.org/wiki/Special:FilePath/Rückert-Gymnasium%20Berlin%20Mettestraße.jpg?width=800
+image_urls: []
 social_media:
   facebook: https://www.facebook.com/p/R%C3%BCckert-Gymnasium-100045653813436/
 ratings: {}
-completeness_score: 0.647
+completeness_score: 0.824
 field_confidence:
   accepts_after_4th_grade: high
   profile: high
@@ -66,4 +65,6 @@ unverified_fields:
 - admission_requirements
 - languages
 - profile
+- open_day
 _pinned_fields: []
+open_day: '2026-01-05'

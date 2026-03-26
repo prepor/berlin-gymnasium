@@ -27,17 +27,25 @@ languages:
 admission_requirements:
   selection_criteria: Durchschnittsnote der Förderprognose bei Übernachfrage
   entrance_test: false
-  notes: Bilingual streams S1 (Englisch/Französisch), S4 (Englisch/Spanisch), S5 (Französisch/Englisch). Offers Zweiter Bildungsweg (evening/adult education) in same building.
+  notes: Bilingual streams S1 (Englisch/Französisch), S4 (Englisch/Spanisch), S5 (Französisch/Englisch). Offers Zweiter 
+    Bildungsweg (evening/adult education) in same building.
 image_urls:
-- https://commons.wikimedia.org/wiki/Special:FilePath/Friedrich%20ebert%20schule%20berlin%2015.01.2015%2013-15-46.JPG?width=800
-social_media: {}
+- photos/04Y07_0.jpg
+social_media:
+  instagram: https://www.instagram.com/friedrich.ebert.gymnasium/
+  facebook: https://www.facebook.com/105546469478836
 ratings: {}
-completeness_score: 0.588
+completeness_score: 0.882
 field_confidence:
   accepts_after_4th_grade: high
   profile: high
   languages: high
   admission_requirements: high
+  ganztag: medium
+  abitur_average: low
+  open_day: high
+  social_media: high
+  ratings: low
 data_sources:
 - wfs_berlin
 - agent_research
@@ -52,4 +60,7 @@ unverified_fields:
 - admission_requirements
 - languages
 - profile
+- ganztag
 _pinned_fields: []
+ganztag: false
+open_day: '2026-01-17'

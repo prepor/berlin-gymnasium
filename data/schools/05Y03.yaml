@@ -12,17 +12,46 @@ email: Sekretariat@05Y03.schule.berlin.de
 traeger: öffentlich
 student_count: 1120
 teacher_count: 92
-profile: []
-languages: []
-admission_requirements: {}
+profile:
+- bilingual_english
+- MINT
+languages:
+- name: Englisch
+  from_grade: 5
+- name: Französisch
+  from_grade: 5
+- name: Latein
+  from_grade: 9
+- name: Russisch
+  from_grade: 9
+- name: Spanisch
+  from_grade: 9
+admission_requirements:
+  notendurchschnitt:
+  oversubscribed:
+  selection_criteria:
+  probeunterricht: false
+  entrance_test: false
+  notes: Fünfzügiges Gymnasium mit offenem Ganztagsbetrieb. Zwei grundständige Klassen ab Klasse 5 (eine 
+    bilingual/sprachlich, eine naturwissenschaftlich).
 image_urls:
-- https://upload.wikimedia.org/wikipedia/commons/thumb/4/41/Hans_Carossa_Gymnasium.jpg/800px-Hans_Carossa_Gymnasium.jpg
-- https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/Gatow_-_Hans-Carossa-Gymnasium_-_geo.hlipp.de_-_38380.jpg/800px-Gatow_-_Hans-Carossa-Gymnasium_-_geo.hlipp.de_-_38380.jpg
-- https://upload.wikimedia.org/wikipedia/commons/thumb/0/03/Leonardo-da-Vinci-Stra%C3%9Fe_Hans-Carossa-Gymnasium-001.jpg/800px-Leonardo-da-Vinci-Stra%C3%9Fe_Hans-Carossa-Gymnasium-001.jpg
-social_media: {}
+- photos/05Y03_0.jpg
+- photos/05Y03_1.jpg
+- photos/05Y03_2.jpg
+social_media:
+  facebook: https://www.facebook.com/p/Hans-Carossa-Gymnasium-Berlin-100066967621606/
 ratings: {}
-completeness_score: 0.412
-field_confidence: {}
+completeness_score: 0.824
+field_confidence:
+  accepts_after_4th_grade: high
+  profile: high
+  languages: high
+  ganztag: high
+  admission_requirements: medium
+  abitur_average: low
+  open_day: low
+  social_media: medium
+  ratings: low
 data_sources:
 - wfs_berlin
 - agent_research
@@ -36,4 +65,8 @@ unverified_fields:
 - admission_requirements
 - languages
 - profile
+- abitur_average
+- open_day
 _pinned_fields: []
+ganztag: true
+accepts_after_4th_grade: true

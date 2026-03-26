@@ -12,16 +12,54 @@ email: sekretariat@08y05.schule.berlin.de
 traeger: öffentlich
 student_count: 740
 teacher_count: 63
-profile: []
-languages: []
+profile:
+- kunst
+languages:
+- name: Englisch
+  from_grade: 7
+- name: Französisch
+  from_grade: 7
+- name: Latein
+  from_grade: 7
+- name: Spanisch
+  from_grade: 7
+- name: Chinesisch
+  from_grade: 7
 image_urls:
-- https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Leonardo-da-Vinci-Gymnasium_Berlin.JPG/800px-Leonardo-da-Vinci-Gymnasium_Berlin.JPG
-social_media: {}
+- photos/08Y05_0.jpg
+social_media:
+  instagram: https://instagram.com/ldvg.goes.insta.berlin
+  facebook: https://facebook.com/LdV.Berlin/
 ratings: {}
-completeness_score: 0.353
-field_confidence: {}
+completeness_score: 0.882
+field_confidence:
+  accepts_after_4th_grade: high
+  profile: medium
+  languages: medium
+  ganztag: medium
+  open_day: medium
+  admission_requirements: medium
+  social_media: medium
 data_sources:
 - wfs_berlin
 - wikimedia
-unverified_fields: []
+- agent_research
+unverified_fields:
+- accepts_after_4th_grade
+- profile
+- languages
+- ganztag
+- open_day
+- admission_requirements
+- social_media
 _pinned_fields: []
+ganztag: true
+accepts_after_4th_grade: false
+open_day: '2026-01-24'
+admission_requirements:
+  notendurchschnitt:
+  oversubscribed: true
+  selection_criteria: Selection by Förderprognose average
+  probeunterricht: false
+  entrance_test: false
+  notes: Theater/arts-focused profile, also has Math-NaWi class

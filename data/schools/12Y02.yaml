@@ -32,21 +32,30 @@ languages:
 - name: Chinesisch
   from_grade: 9
 admission_requirements:
-  selection_criteria: 'Berlin standard process for grade-5 grundständig track: Gymnasium recommendation in Förderprognose required; grade sum from Deutsch, Fremdsprache, Mathematik, Sachunterricht used for ranking; lottery among equally ranked applicants if places remain oversubscribed.'
+  selection_criteria: 'Berlin standard process for grade-5 grundständig track: Gymnasium recommendation in Förderprognose
+    required; grade sum from Deutsch, Fremdsprache, Mathematik, Sachunterricht used for ranking; lottery among equally ranked
+    applicants if places remain oversubscribed.'
   probeunterricht: false
   entrance_test: false
-  notes: 'Offers both a grundständiger Zweig (from grade 5, altsprachlich: Latin + English then Ancient Greek or French) and a standard Regelzug (from grade 7, bilingual English track). CertiLingua excellence label awarded at Abitur. MINT-freundliche Schule since 2013.'
+  notes: 'Offers both a grundständiger Zweig (from grade 5, altsprachlich: Latin + English then Ancient Greek or French) and
+    a standard Regelzug (from grade 7, bilingual English track). CertiLingua excellence label awarded at Abitur. MINT-freundliche
+    Schule since 2013.'
 image_urls:
-- https://upload.wikimedia.org/wikipedia/commons/thumb/f/f7/Europ%C3%A4isches_Gymnasium_Bertha_von_Suttner.jpg/800px-Europ%C3%A4isches_Gymnasium_Bertha_von_Suttner.jpg
-social_media: {}
+- photos/12Y02_0.jpg
+social_media:
+  instagram: https://www.instagram.com/berthavonsuttnergymnasium/
 ratings: {}
-completeness_score: 0.647
+completeness_score: 0.882
 field_confidence:
   accepts_after_4th_grade: high
   profile: high
   languages: high
   ganztag: high
   admission_requirements: high
+  abitur_average: low
+  open_day: high
+  social_media: medium
+  ratings: low
 data_sources:
 - wfs_berlin
 - agent_research
@@ -62,4 +71,6 @@ unverified_fields:
 - admission_requirements
 - languages
 - profile
+- open_day
 _pinned_fields: []
+open_day: '2026-01-17'

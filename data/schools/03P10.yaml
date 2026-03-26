@@ -13,7 +13,8 @@ traeger: privat
 student_count: 676
 teacher_count: 56
 accepts_after_4th_grade: true
-profile: []
+profile:
+- other
 languages:
 - name: Englisch
   from_grade: 5
@@ -25,19 +26,27 @@ admission_requirements:
   selection_criteria: Aufnahmetest für Klasse 5; Eltern und Schüler werden zu einem Gespräch eingeladen.
   probeunterricht: false
   entrance_test: true
-  notes: Catholic private school (Erzbistum Berlin). Entrance test for grade 5 admission. Three-week social internship in grade 10.
+  notes: Catholic private school (Erzbistum Berlin). Entrance test for grade 5 admission. Three-week social internship 
+    in grade 10.
 image_urls:
-- https://commons.wikimedia.org/wiki/Special:FilePath/Katholische_Theresienschule_Berlin_Weißensee.jpg?width=800
-- https://commons.wikimedia.org/wiki/Special:FilePath/Behaimstraße_29-39_(Berlin-Weißensee)_Theresienschule.jpg?width=800
-social_media: {}
+- photos/03P10_0.jpg
+- photos/03P10_1.jpg
+social_media:
+  instagram: https://www.instagram.com/kts.berlin/
+  facebook: https://www.facebook.com/kts.berlin/
 ratings: {}
-completeness_score: 0.588
+completeness_score: 0.765
 field_confidence:
   accepts_after_4th_grade: high
   entrance_test: high
   admission_requirements: high
   languages: low
   profile: low
+  ganztag: low
+  abitur_average: low
+  open_day: low
+  social_media: high
+  ratings: low
 data_sources:
 - wfs_berlin
 - agent_research
@@ -52,4 +61,5 @@ unverified_fields:
 - admission_requirements
 - languages
 - profile
+- ganztag
 _pinned_fields: []

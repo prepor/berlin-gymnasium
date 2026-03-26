@@ -12,16 +12,37 @@ email: sekretariat@robert-blum-schule.de
 traeger: öffentlich
 student_count: 768
 teacher_count: 68
-profile: []
-languages: []
+profile:
+- MINT
+- kunst
+- music
+- other
+languages:
+- name: Englisch
+  from_grade: 7
+- name: Französisch
+  from_grade: 7
+- name: Spanisch
+  from_grade: 7
+- name: Latein
+  from_grade: 9
 admission_requirements:
   notes: No data retrieved in this research session.
 image_urls:
-- https://commons.wikimedia.org/wiki/Special:FilePath/Berlin,%20Schoeneberg,%20Kolonnenstrasse%2021-23,%20Robert-Blum-Gymnasium.jpg?width=800
-social_media: {}
+- photos/07Y01_0.jpg
+social_media:
+  instagram: https://www.instagram.com/blum_preis_rbg/
 ratings: {}
-completeness_score: 0.412
-field_confidence: {}
+completeness_score: 0.824
+field_confidence:
+  accepts_after_4th_grade: medium
+  profile: medium
+  languages: medium
+  ganztag: low
+  abitur_average: low
+  open_day: high
+  social_media: low
+  ratings: low
 data_sources:
 - wfs_berlin
 - agent_research
@@ -33,4 +54,9 @@ unverified_fields:
 - field_confidence
 - image_urls
 - admission_requirements
+- ganztag
+- profile
+- languages
 _pinned_fields: []
+accepts_after_4th_grade: false
+open_day: '2026-01-23'

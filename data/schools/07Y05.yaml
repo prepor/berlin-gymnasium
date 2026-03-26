@@ -31,17 +31,20 @@ languages:
   from_grade: 8
 admission_requirements:
   oversubscribed: true
-  selection_criteria: Ranked by Durchschnittsnote der Förderprognose (predicted GPA); lottery used to break ties among equally ranked applicants. Decision made by Schulkonferenz 17.10.2025.
+  selection_criteria: Ranked by Durchschnittsnote der Förderprognose (predicted GPA); lottery used to break ties among 
+    equally ranked applicants. Decision made by Schulkonferenz 17.10.2025.
   probeunterricht: false
   entrance_test: false
-  notes: Accepts students from grade 7 only (not grundständig). Registration period March 2026 for school year 2026/27. Härtefallantrag possible at time of registration. Up to 128 places (4 classes) available from SY 2026/27 after return to renovated main building.
+  notes: Accepts students from grade 7 only (not grundständig). Registration period March 2026 for school year 2026/27. 
+    Härtefallantrag possible at time of registration. Up to 128 places (4 classes) available from SY 2026/27 after 
+    return to renovated main building.
 abitur_average: 2.47
 image_urls:
-- https://commons.wikimedia.org/wiki/Special:FilePath/Tempelhof%20Germaniastraße%20Luise-Henriette-Schule.JPG?width=800
+- photos/07Y05_0.jpg
 social_media:
   instagram: https://www.instagram.com/lhgberlin/
 ratings: {}
-completeness_score: 0.706
+completeness_score: 0.882
 field_confidence:
   accepts_after_4th_grade: high
   profile: medium
@@ -69,4 +72,6 @@ unverified_fields:
 - admission_requirements
 - languages
 - profile
+- open_day
 _pinned_fields: []
+open_day: '2026-01-17'
