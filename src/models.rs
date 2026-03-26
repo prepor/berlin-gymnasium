@@ -119,3 +119,66 @@ fn default_scale_min() -> f64 {
 fn default_scale_max() -> f64 {
     5.0
 }
+
+/// Sort field for the school listing.
+#[derive(Clone, Debug, PartialEq, Default)]
+pub enum SortField {
+    #[default]
+    Name,
+    District,
+    StudentCount,
+}
+
+impl SortField {
+    pub fn from_query(s: &str) -> Self {
+        match s {
+            "district" => SortField::District,
+            "students" => SortField::StudentCount,
+            _ => SortField::Name,
+        }
+    }
+
+    pub fn to_query(&self) -> &'static str {
+        match self {
+            SortField::Name => "name",
+            SortField::District => "district",
+            SortField::StudentCount => "students",
+        }
+    }
+}
+
+/// Extract sorted unique district names from all schools.
+pub fn all_districts(schools: &[School]) -> Vec<String> {
+    let mut districts: Vec<String> = schools
+        .iter()
+        .map(|s| s.district.clone())
+        .collect::<std::collections::HashSet<_>>()
+        .into_iter()
+        .collect();
+    districts.sort();
+    districts
+}
+
+/// Extract sorted unique profile names from all schools.
+pub fn all_profiles(schools: &[School]) -> Vec<String> {
+    let mut profiles: Vec<String> = schools
+        .iter()
+        .flat_map(|s| s.profile.iter().cloned())
+        .collect::<std::collections::HashSet<_>>()
+        .into_iter()
+        .collect();
+    profiles.sort();
+    profiles
+}
+
+/// Extract sorted unique language names from all schools.
+pub fn all_languages(schools: &[School]) -> Vec<String> {
+    let mut languages: Vec<String> = schools
+        .iter()
+        .flat_map(|s| s.languages.iter().map(|l| l.name.clone()))
+        .collect::<std::collections::HashSet<_>>()
+        .into_iter()
+        .collect();
+    languages.sort();
+    languages
+}
