@@ -1,3 +1,4 @@
+.claude/worktrees/
 .venv/
 pipeline/cache/*.json
 __pycache__/
