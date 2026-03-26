@@ -117,9 +117,20 @@ pub async fn fetch_all_travel_times(
         }
     }
 
-    let walk_times = walk.unwrap_or_default();
-    let bike_times = bike.unwrap_or_default();
+    // If ALL three modes failed, propagate the error so the UI shows the error state.
+    // If only some failed, we still show partial data (the modes that succeeded).
+    let walk_err = walk.as_ref().err().map(|e| e.clone());
+    let bike_err = bike.as_ref().err().map(|e| e.clone());
+    let car_all_failed = car_times_all.iter().all(|t| t.is_none()) && !car_times_all.is_empty();
+
+    let walk_times = walk.unwrap_or_else(|_| vec![None; targets.len()]);
+    let bike_times = bike.unwrap_or_else(|_| vec![None; targets.len()]);
     let car_times = car_times_all;
+
+    // If walk AND bike both errored, that's a full outage — return error
+    if walk_err.is_some() && bike_err.is_some() {
+        return Err(walk_err.unwrap_or_else(|| "Alle Valhalla-Anfragen fehlgeschlagen".into()));
+    }
 
     let mut result = HashMap::new();
     for (i, (school_id, _, _)) in school_coords.iter().enumerate() {
@@ -131,6 +142,17 @@ pub async fn fetch_all_travel_times(
                 car_minutes: car_times.get(i).copied().flatten(),
             },
         );
+    }
+
+    // Log partial failures but still return data
+    if let Some(e) = walk_err {
+        log::warn!("Valhalla pedestrian failed (partial): {e}");
+    }
+    if let Some(e) = bike_err {
+        log::warn!("Valhalla bicycle failed (partial): {e}");
+    }
+    if car_all_failed {
+        log::warn!("Valhalla auto: all batches returned no data");
     }
 
     Ok(result)

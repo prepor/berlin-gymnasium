@@ -17,6 +17,8 @@ pub fn AddressInput(
     let suggestions = RwSignal::new(Vec::<PhotonFeature>::new());
     let show_suggestions = RwSignal::new(false);
     let is_loading = RwSignal::new(false);
+    // Generation counter: incremented on submit to invalidate any pending debounced request
+    let geocode_epoch = RwSignal::new(0u64);
 
     // Debounced geocoding: fires 500ms after user stops typing (per D-19)
     let debounced_geocode = use_debounce_fn_with_arg(
@@ -26,20 +28,28 @@ pub fn AddressInput(
                 show_suggestions.set(false);
                 return;
             }
+            let epoch = geocode_epoch.get();
             is_loading.set(true);
             spawn_local(async move {
                 match geocode_address(&query).await {
                     Ok(results) => {
-                        suggestions.set(results);
-                        show_suggestions.set(true);
+                        // Only apply if no submit has fired since we started
+                        if geocode_epoch.get() == epoch {
+                            suggestions.set(results);
+                            show_suggestions.set(true);
+                        }
                     }
                     Err(e) => {
-                        log::error!("[AddressInput] geocode error: {e}");
-                        suggestions.set(vec![]);
-                        show_suggestions.set(false);
+                        if geocode_epoch.get() == epoch {
+                            log::error!("[AddressInput] geocode error: {e}");
+                            suggestions.set(vec![]);
+                            show_suggestions.set(false);
+                        }
                     }
                 }
-                is_loading.set(false);
+                if geocode_epoch.get() == epoch {
+                    is_loading.set(false);
+                }
             });
         },
         500.0,
@@ -56,6 +66,8 @@ pub fn AddressInput(
     // On form submit (Enter key or Suchen button): select first suggestion or trigger immediate geocode
     let on_submit = move |ev: leptos::ev::SubmitEvent| {
         ev.prevent_default();
+        // Invalidate any pending debounced geocode
+        geocode_epoch.update(|g| *g += 1);
         let current_suggestions = suggestions.get();
         if !current_suggestions.is_empty() && show_suggestions.get() {
             // Select the first suggestion
@@ -68,21 +80,28 @@ pub fn AddressInput(
         } else {
             // Trigger geocoding directly (bypass debounce for immediate feedback)
             let val = input_value.get();
+            let epoch = geocode_epoch.get();
             if val.len() >= 3 {
                 is_loading.set(true);
                 spawn_local(async move {
                     match geocode_address(&val).await {
                         Ok(results) => {
-                            suggestions.set(results);
-                            show_suggestions.set(true);
+                            if geocode_epoch.get() == epoch {
+                                suggestions.set(results);
+                                show_suggestions.set(true);
+                            }
                         }
                         Err(e) => {
-                            log::error!("[AddressInput] submit geocode error: {e}");
-                            suggestions.set(vec![]);
-                            show_suggestions.set(false);
+                            if geocode_epoch.get() == epoch {
+                                log::error!("[AddressInput] submit geocode error: {e}");
+                                suggestions.set(vec![]);
+                                show_suggestions.set(false);
+                            }
                         }
                     }
-                    is_loading.set(false);
+                    if geocode_epoch.get() == epoch {
+                        is_loading.set(false);
+                    }
                 });
             }
         }
