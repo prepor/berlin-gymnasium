@@ -35,7 +35,14 @@ Decimal phases appear between their surrounding integers in numeric order.
   3. All YAML files pass Pydantic schema validation with no errors before being written
   4. Re-running the pipeline produces `data/CHANGELOG.md` with field-level diffs showing exactly what changed
   5. Pipeline setup and execution are documented so a new developer can reproduce the corpus from scratch
-**Plans**: TBD
+**Plans**: 5 plans
+
+Plans:
+- [ ] 01-01-PLAN.md — Python scaffold (pyproject.toml, justfile, pipeline.yaml) + Pydantic SchoolRecord schema
+- [ ] 01-02-PLAN.md — Seed step: WFS fetch + Eckdaten XLSX merge → schools_index.yaml
+- [ ] 01-03-PLAN.md — Agent enrichment: Claude claude-sonnet-4-6 batches with web_search_20260209
+- [ ] 01-04-PLAN.md — Validate + merge (D-17 structured wins) + YAML writer + changelog
+- [ ] 01-05-PLAN.md — Orchestrator (run.py wiring all steps) + README + end-to-end verification
 
 ### Phase 2: SPA Foundation and School Directory
 **Goal**: Parents can browse, filter, and read detailed information about all Berlin Gymnasien on a live GitHub Pages site
