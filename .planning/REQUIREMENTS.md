@@ -34,12 +34,12 @@ Requirements for initial release. Each maps to roadmap phases.
 
 ### School Detail
 
-- [ ] **DETL-01**: User can view a detail page for each school showing all available data fields
-- [ ] **DETL-02**: Detail page shows contact info (phone, email, website link)
-- [ ] **DETL-03**: Detail page shows ratings from each source with source name, score, scale, and review count
-- [ ] **DETL-04**: Detail page shows admission requirements where available
-- [ ] **DETL-05**: Detail page shows next open day date where available
-- [ ] **DETL-06**: Detail page shows data freshness indicator (last updated date)
+- [x] **DETL-01**: User can view a detail page for each school showing all available data fields
+- [x] **DETL-02**: Detail page shows contact info (phone, email, website link)
+- [x] **DETL-03**: Detail page shows ratings from each source with source name, score, scale, and review count
+- [x] **DETL-04**: Detail page shows admission requirements where available
+- [x] **DETL-05**: Detail page shows next open day date where available
+- [x] **DETL-06**: Detail page shows data freshness indicator (last updated date)
 
 ### Map
 
@@ -124,12 +124,12 @@ Which phases cover which requirements. Updated during roadmap creation.
 | LIST-05 | Phase 2 | Pending |
 | LIST-06 | Phase 2 | Pending |
 | LIST-07 | Phase 2 | Pending |
-| DETL-01 | Phase 2 | Pending |
-| DETL-02 | Phase 2 | Pending |
-| DETL-03 | Phase 2 | Pending |
-| DETL-04 | Phase 2 | Pending |
-| DETL-05 | Phase 2 | Pending |
-| DETL-06 | Phase 2 | Pending |
+| DETL-01 | Phase 2 | Complete |
+| DETL-02 | Phase 2 | Complete |
+| DETL-03 | Phase 2 | Complete |
+| DETL-04 | Phase 2 | Complete |
+| DETL-05 | Phase 2 | Complete |
+| DETL-06 | Phase 2 | Complete |
 | MAP-01 | Phase 3 | Pending |
 | MAP-02 | Phase 3 | Pending |
 | MAP-03 | Phase 3 | Pending |
