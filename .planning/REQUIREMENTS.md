@@ -12,15 +12,15 @@ Requirements for initial release. Each maps to roadmap phases.
 - [ ] **DATA-01**: Pipeline seeds canonical list of all Berlin Gymnasien from Berlin Open Data WFS with school IDs, coordinates, and district
 - [ ] **DATA-02**: Pipeline scrapes structured data (address, phone, website, student count, teacher count) from official sources
 - [ ] **DATA-03**: Claude AI agents enrich each school with profile/specialization, languages offered, Ganztag status, open day dates, and ratings from discoverable sources
-- [ ] **DATA-04**: Each school stored as one YAML file in `data/schools/{school_id}.yaml` with defined schema
-- [ ] **DATA-05**: YAML schema includes provenance tracking (data_sources, last_updated per school)
+- [x] **DATA-04**: Each school stored as one YAML file in `data/schools/{school_id}.yaml` with defined schema
+- [x] **DATA-05**: YAML schema includes provenance tracking (data_sources, last_updated per school)
 - [ ] **DATA-06**: Pipeline re-run produces field-level changelog (`data/CHANGELOG.md`) showing what changed
-- [ ] **DATA-07**: Pipeline runs reproducibly with documented setup and single command execution
-- [ ] **DATA-08**: Pipeline validates all school records against Pydantic schema before writing
-- [ ] **DATA-09**: Pipeline collects ratings from multiple permitted sources (not Google Maps scraping) with source attribution, scale, and review count
-- [ ] **DATA-10**: Pipeline flags which schools accept students after 4th grade (grundständig)
-- [ ] **DATA-11**: Pipeline collects admission requirements per school (Notendurchschnitt, selection criteria, oversubscription info) where publicly available
-- [ ] **DATA-12**: Pipeline collects open day (Tag der offenen Tür) dates from school websites
+- [x] **DATA-07**: Pipeline runs reproducibly with documented setup and single command execution
+- [x] **DATA-08**: Pipeline validates all school records against Pydantic schema before writing
+- [x] **DATA-09**: Pipeline collects ratings from multiple permitted sources (not Google Maps scraping) with source attribution, scale, and review count
+- [x] **DATA-10**: Pipeline flags which schools accept students after 4th grade (grundständig)
+- [x] **DATA-11**: Pipeline collects admission requirements per school (Notendurchschnitt, selection criteria, oversubscription info) where publicly available
+- [x] **DATA-12**: Pipeline collects open day (Tag der offenen Tür) dates from school websites
 
 ### School Listing & Filters
 
@@ -108,15 +108,15 @@ Which phases cover which requirements. Updated during roadmap creation.
 | DATA-01 | Phase 1 | Pending |
 | DATA-02 | Phase 1 | Pending |
 | DATA-03 | Phase 1 | Pending |
-| DATA-04 | Phase 1 | Pending |
-| DATA-05 | Phase 1 | Pending |
+| DATA-04 | Phase 1 | Complete |
+| DATA-05 | Phase 1 | Complete |
 | DATA-06 | Phase 1 | Pending |
-| DATA-07 | Phase 1 | Pending |
-| DATA-08 | Phase 1 | Pending |
-| DATA-09 | Phase 1 | Pending |
-| DATA-10 | Phase 1 | Pending |
-| DATA-11 | Phase 1 | Pending |
-| DATA-12 | Phase 1 | Pending |
+| DATA-07 | Phase 1 | Complete |
+| DATA-08 | Phase 1 | Complete |
+| DATA-09 | Phase 1 | Complete |
+| DATA-10 | Phase 1 | Complete |
+| DATA-11 | Phase 1 | Complete |
+| DATA-12 | Phase 1 | Complete |
 | LIST-01 | Phase 2 | Pending |
 | LIST-02 | Phase 2 | Pending |
 | LIST-03 | Phase 2 | Pending |
