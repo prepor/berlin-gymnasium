@@ -17,6 +17,8 @@ console_error_panic_hook = "0.1"
 log = "0.4"
 leaflet = "0.5"
 js-sys = "0.3"
+wasm-bindgen-futures = "0.4"
+gloo-net = { version = "0.6", features = ["json"] }
 
 [build-dependencies]
 serde = { version = "1", features = ["derive"] }

@@ -145,6 +145,13 @@ fn filter_and_sort(
                 .unwrap_or(0)
                 .cmp(&a.student_count.unwrap_or(0))
         }),
+        // Travel time sorts -- will be wired with actual data in Plan 04-02.
+        // For now, fall back to name sort when travel times are not yet available.
+        SortField::TravelTimeWalk
+        | SortField::TravelTimeBike
+        | SortField::TravelTimeCar => {
+            filtered.sort_by(|a, b| a.name.cmp(&b.name));
+        }
     }
 
     filtered

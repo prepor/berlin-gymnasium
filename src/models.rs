@@ -120,6 +120,15 @@ fn default_scale_max() -> f64 {
     5.0
 }
 
+/// Travel times from user's address to a school, in minutes.
+/// Stored separately from School -- ephemeral per-session data.
+#[derive(Clone, Debug, Default, PartialEq)]
+pub struct TravelTimes {
+    pub walk_minutes: Option<u32>,
+    pub bike_minutes: Option<u32>,
+    pub car_minutes: Option<u32>,
+}
+
 /// Sort field for the school listing.
 #[derive(Clone, Debug, PartialEq, Default)]
 pub enum SortField {
@@ -127,6 +136,9 @@ pub enum SortField {
     Name,
     District,
     StudentCount,
+    TravelTimeWalk,
+    TravelTimeBike,
+    TravelTimeCar,
 }
 
 impl SortField {
@@ -134,6 +146,9 @@ impl SortField {
         match s {
             "district" => SortField::District,
             "students" => SortField::StudentCount,
+            "travel_walk" => SortField::TravelTimeWalk,
+            "travel_bike" => SortField::TravelTimeBike,
+            "travel_car" => SortField::TravelTimeCar,
             _ => SortField::Name,
         }
     }
@@ -143,7 +158,18 @@ impl SortField {
             SortField::Name => "name",
             SortField::District => "district",
             SortField::StudentCount => "students",
+            SortField::TravelTimeWalk => "travel_walk",
+            SortField::TravelTimeBike => "travel_bike",
+            SortField::TravelTimeCar => "travel_car",
         }
+    }
+
+    /// Returns true if this sort field is a travel time variant.
+    pub fn is_travel_time(&self) -> bool {
+        matches!(
+            self,
+            SortField::TravelTimeWalk | SortField::TravelTimeBike | SortField::TravelTimeCar
+        )
     }
 }
 
