@@ -11,6 +11,7 @@ pub fn AddressInput(
     on_address_selected: Callback<(f64, f64)>,
     on_address_cleared: Callback<()>,
     initial_coords: Signal<Option<(f64, f64)>>,
+    travel_loading: Signal<bool>,
 ) -> impl IntoView {
     let input_value = RwSignal::new(String::new());
     let suggestions = RwSignal::new(Vec::<PhotonFeature>::new());
@@ -32,7 +33,8 @@ pub fn AddressInput(
                         suggestions.set(results);
                         show_suggestions.set(true);
                     }
-                    Err(_) => {
+                    Err(e) => {
+                        log::error!("[AddressInput] geocode error: {e}");
                         suggestions.set(vec![]);
                         show_suggestions.set(false);
                     }
@@ -51,8 +53,7 @@ pub fn AddressInput(
         debounced_for_input(val);
     };
 
-    // On form submit (Enter key): select first suggestion or trigger immediate geocode
-    let debounced_for_submit = debounced_geocode.clone();
+    // On form submit (Enter key or Suchen button): select first suggestion or trigger immediate geocode
     let on_submit = move |ev: leptos::ev::SubmitEvent| {
         ev.prevent_default();
         let current_suggestions = suggestions.get();
@@ -65,10 +66,24 @@ pub fn AddressInput(
             show_suggestions.set(false);
             on_address_selected.run((lat, lng));
         } else {
-            // Trigger geocoding immediately (bypass debounce)
+            // Trigger geocoding directly (bypass debounce for immediate feedback)
             let val = input_value.get();
             if val.len() >= 3 {
-                debounced_for_submit(val);
+                is_loading.set(true);
+                spawn_local(async move {
+                    match geocode_address(&val).await {
+                        Ok(results) => {
+                            suggestions.set(results);
+                            show_suggestions.set(true);
+                        }
+                        Err(e) => {
+                            log::error!("[AddressInput] submit geocode error: {e}");
+                            suggestions.set(vec![]);
+                            show_suggestions.set(false);
+                        }
+                    }
+                    is_loading.set(false);
+                });
             }
         }
     };
@@ -131,7 +146,21 @@ pub fn AddressInput(
                     }
                 }}
             </div>
-            <button type="submit" class="address-search-btn">"Suchen"</button>
+            <button
+                type="submit"
+                class="address-search-btn"
+                disabled=move || travel_loading.get() || is_loading.get()
+            >
+                {move || {
+                    if travel_loading.get() {
+                        view! { <span class="spinner"></span> " Berechne..." }.into_any()
+                    } else if is_loading.get() {
+                        view! { <span class="spinner"></span> " Suche..." }.into_any()
+                    } else {
+                        view! { "Suchen" }.into_any()
+                    }
+                }}
+            </button>
             // Clear button: visible when address is active (initial_coords is Some)
             {move || {
                 if initial_coords.get().is_some() {

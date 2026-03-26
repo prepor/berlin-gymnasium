@@ -534,8 +534,20 @@ pub fn ListingPage() -> impl IntoView {
                     on_address_selected=on_address_selected
                     on_address_cleared=on_address_cleared
                     initial_coords=Signal::derive(move || address_coords.get())
+                    travel_loading=Signal::derive(move || travel_loading.get())
                 />
-                {move || travel_error.get().map(|e| view! { <p class="travel-error">{e}</p> })}
+                {move || {
+                    if travel_loading.get() {
+                        Some(view! {
+                            <div class="travel-loading-banner">
+                                <span class="spinner spinner-lg"></span>
+                                <span>" Fahrzeiten werden berechnet..."</span>
+                            </div>
+                        }.into_any())
+                    } else {
+                        travel_error.get().map(|e| view! { <p class="travel-error">{e}</p> }.into_any())
+                    }
+                }}
                 <div class="header-controls">
                     <FilterChips active_count=active_filter_count on_clear_all=on_clear_all />
                     <SortControls
