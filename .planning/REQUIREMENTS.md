@@ -9,8 +9,8 @@ Requirements for initial release. Each maps to roadmap phases.
 
 ### Data Pipeline
 
-- [ ] **DATA-01**: Pipeline seeds canonical list of all Berlin Gymnasien from Berlin Open Data WFS with school IDs, coordinates, and district
-- [ ] **DATA-02**: Pipeline scrapes structured data (address, phone, website, student count, teacher count) from official sources
+- [x] **DATA-01**: Pipeline seeds canonical list of all Berlin Gymnasien from Berlin Open Data WFS with school IDs, coordinates, and district
+- [x] **DATA-02**: Pipeline scrapes structured data (address, phone, website, student count, teacher count) from official sources
 - [ ] **DATA-03**: Claude AI agents enrich each school with profile/specialization, languages offered, Ganztag status, open day dates, and ratings from discoverable sources
 - [x] **DATA-04**: Each school stored as one YAML file in `data/schools/{school_id}.yaml` with defined schema
 - [x] **DATA-05**: YAML schema includes provenance tracking (data_sources, last_updated per school)
@@ -105,8 +105,8 @@ Which phases cover which requirements. Updated during roadmap creation.
 
 | Requirement | Phase | Status |
 |-------------|-------|--------|
-| DATA-01 | Phase 1 | Pending |
-| DATA-02 | Phase 1 | Pending |
+| DATA-01 | Phase 1 | Complete |
+| DATA-02 | Phase 1 | Complete |
 | DATA-03 | Phase 1 | Pending |
 | DATA-04 | Phase 1 | Complete |
 | DATA-05 | Phase 1 | Complete |
