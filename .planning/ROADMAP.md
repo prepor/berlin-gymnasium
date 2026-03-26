@@ -58,7 +58,7 @@ Plans:
 
 Plans:
 - [x] 02-01-PLAN.md — Rust project scaffold + build.rs data embedding + app shell with router + GitHub Actions deploy workflow
-- [ ] 02-02-PLAN.md — School listing page with card grid, filter panel, sort controls, and URL-persisted filter state
+- [x] 02-02-PLAN.md — School listing page with card grid, filter panel, sort controls, and URL-persisted filter state
 - [x] 02-03-PLAN.md — School detail page with all data sections, ratings, admission, contact, and "Keine Angabe" handling
 **UI hint**: yes
 
@@ -103,7 +103,7 @@ Phases execute in numeric order: 1 → 2 → 3 → 4 → 5
 | Phase | Plans Complete | Status | Completed |
 |-------|----------------|--------|-----------|
 | 1. Data Pipeline | 5/5 | Complete | 2026-03-26 |
-| 2. SPA Foundation and School Directory | 0/3 | In progress | - |
+| 2. SPA Foundation and School Directory | 3/3 | Complete | 2026-03-26 |
 | 3. Interactive Map | 0/TBD | Not started | - |
 | 4. Travel Time Routing | 0/TBD | Not started | - |
 | 5. Comparison, Favorites, and Sharing | 0/TBD | Not started | - |

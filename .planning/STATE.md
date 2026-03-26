@@ -57,6 +57,7 @@ Progress: [░░░░░░░░░░] 0%
 | Phase 01-data-pipeline P04 | 2 | 2 tasks | 2 files |
 | Phase 01-data-pipeline P05 | 5 | 2 tasks | 2 files |
 | Phase 02 P01 | 7 | 3 tasks | 17 files |
+| Phase 02 P02 | 5 | 2 tasks | 9 files |
 | Phase 02 P03 | 4 | 2 tasks | 5 files |
 
 ## Accumulated Context
@@ -80,6 +81,9 @@ Recent decisions affecting current work:
 - [Phase 02]: Path-based routing with 404.html fallback (Leptos 0.8 has no hash routing)
 - [Phase 02]: build.rs with serde-saphyr for YAML-to-JSON at compile time, embedded via include_str!
 - [Phase 02]: Minimal initial deps: no reactive_stores or leptos-use yet (lean compile)
+- [Phase 02]: Filter state in URL query params with comma-separated multi-values for shareability
+- [Phase 02]: Memo-based derived signal for filtered+sorted school list
+- [Phase 02]: CSS details/summary for mobile filter collapse (no JS state needed)
 - [Phase 02]: history.back() for detail page back navigation to preserve filter state
 - [Phase 02]: Definition lists (dl/dt/dd) for admission requirements and contact sections layout
 

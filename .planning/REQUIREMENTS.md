@@ -24,13 +24,13 @@ Requirements for initial release. Each maps to roadmap phases.
 
 ### School Listing & Filters
 
-- [ ] **LIST-01**: User can view a listing of all Berlin Gymnasien with name, district, profile, and grundständig flag
-- [ ] **LIST-02**: User can filter schools by district (Bezirk)
-- [ ] **LIST-03**: User can filter schools by profile/specialization (MINT, music, sports, bilingual, altsprachlich)
-- [ ] **LIST-04**: User can filter schools by grundständig status (accepts after 4th grade)
-- [ ] **LIST-05**: User can filter schools by foreign language offered
-- [ ] **LIST-06**: User can filter schools by Ganztag (full-day) vs half-day
-- [ ] **LIST-07**: Listing is mobile-responsive and usable on phone screens
+- [x] **LIST-01**: User can view a listing of all Berlin Gymnasien with name, district, profile, and grundständig flag
+- [x] **LIST-02**: User can filter schools by district (Bezirk)
+- [x] **LIST-03**: User can filter schools by profile/specialization (MINT, music, sports, bilingual, altsprachlich)
+- [x] **LIST-04**: User can filter schools by grundständig status (accepts after 4th grade)
+- [x] **LIST-05**: User can filter schools by foreign language offered
+- [x] **LIST-06**: User can filter schools by Ganztag (full-day) vs half-day
+- [x] **LIST-07**: Listing is mobile-responsive and usable on phone screens
 
 ### School Detail
 
@@ -117,13 +117,13 @@ Which phases cover which requirements. Updated during roadmap creation.
 | DATA-10 | Phase 1 | Complete |
 | DATA-11 | Phase 1 | Complete |
 | DATA-12 | Phase 1 | Complete |
-| LIST-01 | Phase 2 | Pending |
-| LIST-02 | Phase 2 | Pending |
-| LIST-03 | Phase 2 | Pending |
-| LIST-04 | Phase 2 | Pending |
-| LIST-05 | Phase 2 | Pending |
-| LIST-06 | Phase 2 | Pending |
-| LIST-07 | Phase 2 | Pending |
+| LIST-01 | Phase 2 | Complete |
+| LIST-02 | Phase 2 | Complete |
+| LIST-03 | Phase 2 | Complete |
+| LIST-04 | Phase 2 | Complete |
+| LIST-05 | Phase 2 | Complete |
+| LIST-06 | Phase 2 | Complete |
+| LIST-07 | Phase 2 | Complete |
 | DETL-01 | Phase 2 | Complete |
 | DETL-02 | Phase 2 | Complete |
 | DETL-03 | Phase 2 | Complete |
