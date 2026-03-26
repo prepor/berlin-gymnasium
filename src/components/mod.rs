@@ -1,1 +1,3 @@
-// Components module. Plan 02 will add school_card, filter_panel, etc.
+// Components module.
+pub mod detail_section;
+pub mod rating_display;
