@@ -19,7 +19,7 @@ Decimal phases appear between their surrounding integers in numeric order.
 
 - [x] **Phase 1: Data Pipeline** - Reproducible Python pipeline producing a validated YAML corpus of all Berlin Gymnasien
 - [ ] **Phase 2: SPA Foundation and School Directory** - Leptos WASM SPA deployed to GitHub Pages with filterable school listing and detail pages
-- [ ] **Phase 3: Interactive Map** - OpenStreetMap map with clickable pins synced to active filters
+- [x] **Phase 3: Interactive Map** - OpenStreetMap map with clickable pins synced to active filters (completed 2026-03-26)
 - [ ] **Phase 4: Travel Time Routing** - User address input with travel time matrix (walk, transit, car) and sort-by-commute
 - [ ] **Phase 5: Comparison, Favorites, and Sharing** - Side-by-side comparison, favorites shortlist, and shareable permalinks
 
@@ -73,7 +73,7 @@ Plans:
 **Plans**: 1 plan
 
 Plans:
-- [ ] 03-01-PLAN.md — Leaflet.js map integration via wasm-bindgen with color-coded pins, popups, filter sync, and list/map view toggle
+- [x] 03-01-PLAN.md — Leaflet.js map integration via wasm-bindgen with color-coded pins, popups, filter sync, and list/map view toggle
 **UI hint**: yes
 
 ### Phase 4: Travel Time Routing
@@ -107,6 +107,6 @@ Phases execute in numeric order: 1 → 2 → 3 → 4 → 5
 |-------|----------------|--------|-----------|
 | 1. Data Pipeline | 5/5 | Complete | 2026-03-26 |
 | 2. SPA Foundation and School Directory | 3/3 | Complete | 2026-03-26 |
-| 3. Interactive Map | 0/1 | In Progress | - |
+| 3. Interactive Map | 1/1 | Complete   | 2026-03-26 |
 | 4. Travel Time Routing | 0/TBD | Not started | - |
 | 5. Comparison, Favorites, and Sharing | 0/TBD | Not started | - |

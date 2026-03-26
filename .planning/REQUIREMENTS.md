@@ -43,9 +43,9 @@ Requirements for initial release. Each maps to roadmap phases.
 
 ### Map
 
-- [ ] **MAP-01**: User can view all schools on an interactive OpenStreetMap-based map
-- [ ] **MAP-02**: User can click a map pin to see school name and navigate to detail page
-- [ ] **MAP-03**: Map reflects active filters (only shows filtered schools)
+- [x] **MAP-01**: User can view all schools on an interactive OpenStreetMap-based map
+- [x] **MAP-02**: User can click a map pin to see school name and navigate to detail page
+- [x] **MAP-03**: Map reflects active filters (only shows filtered schools)
 
 ### Travel Time
 
@@ -130,9 +130,9 @@ Which phases cover which requirements. Updated during roadmap creation.
 | DETL-04 | Phase 2 | Complete |
 | DETL-05 | Phase 2 | Complete |
 | DETL-06 | Phase 2 | Complete |
-| MAP-01 | Phase 3 | Pending |
-| MAP-02 | Phase 3 | Pending |
-| MAP-03 | Phase 3 | Pending |
+| MAP-01 | Phase 3 | Complete |
+| MAP-02 | Phase 3 | Complete |
+| MAP-03 | Phase 3 | Complete |
 | TRVL-01 | Phase 4 | Pending |
 | TRVL-02 | Phase 4 | Pending |
 | TRVL-03 | Phase 4 | Pending |
