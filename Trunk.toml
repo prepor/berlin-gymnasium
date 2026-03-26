@@ -3,3 +3,7 @@ dist = "dist"
 
 [serve]
 port = 8080
+
+[[build.extra_assets]]
+path = "public/photos"
+dest = "photos"
