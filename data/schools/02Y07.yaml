@@ -1,0 +1,56 @@
+school_id: 02Y07
+name: Robert-Koch-Gymnasium
+district: Friedrichshain-Kreuzberg
+last_updated: '2026-03-26'
+address: Dieffenbachstraße 60, 10967 Berlin
+coords:
+  lat: 52.4929895
+  lng: 13.41571354
+website: https://www.robert-koch-gymnasium.berlin
+phone: +49 30 50585731
+email: sekretariat@robert-koch-gymnasium.berlin
+traeger: öffentlich
+accepts_after_4th_grade: false
+profile:
+- bilingual_french
+- bilingual_other
+ganztag: false
+languages:
+- name: Englisch
+  from_grade: 7
+- name: Französisch
+  from_grade: 7
+- name: Spanisch
+  from_grade: 7
+- name: Türkisch
+  from_grade: 7
+admission_requirements:
+  selection_criteria: Durchschnittsnote der Förderprognose bei Übernachfrage
+  entrance_test: false
+  notes: 'Half-day school; lessons end at 14:30 up to grade 10. Language tracks: S1 English/French, S4 English/Spanish, S7
+    English/Turkish'
+image_urls: []
+social_media: {}
+ratings: {}
+completeness_score: 0.647
+field_confidence:
+  accepts_after_4th_grade: high
+  profile: medium
+  ganztag: high
+  languages: high
+  admission_requirements: medium
+data_sources:
+- wfs_berlin
+- agent_research
+unverified_fields:
+- social_media
+- unverified_fields
+- ganztag
+- accepts_after_4th_grade
+- ratings
+- field_confidence
+- image_urls
+- admission_requirements
+- languages
+- profile
+_pinned_fields: []

@@ -1,0 +1,11 @@
+.claude/worktrees/
+.venv/
+pipeline/cache/*.json
+__pycache__/
+*.pyc
+*.pyo
+.env
+
+# Rust
+target/
+dist/

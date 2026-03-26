@@ -1,0 +1,49 @@
+school_id: 01Y13
+name: Rosalind-Franklin-Gymnasium
+district: Mitte
+last_updated: '2026-03-26'
+address: Turmstraße 75, 10551 Berlin
+coords:
+  lat: 52.52667866
+  lng: 13.33391746
+website: https://gymnasium-13.de
+phone: +49 30 9018 38210
+email: schulleitung@gymnasium-13.de
+traeger: öffentlich
+accepts_after_4th_grade: false
+profile:
+- MINT
+- other
+languages:
+- name: Englisch
+  from_grade: 7
+- name: Spanisch
+  from_grade: 7
+- name: Französisch
+  from_grade: 7
+admission_requirements:
+  notes: 'Schule im Aufbau (gegründet Schuljahr 2024/25 als 13. Gymnasium, seit 2025/26 Rosalind-Franklin-Gymnasium); aktuell
+    nur Klassen 7–8 vorhanden; Profil: MINT+, Klimabildung, Kultur'
+image_urls: []
+social_media: {}
+ratings: {}
+completeness_score: 0.588
+field_confidence:
+  accepts_after_4th_grade: high
+  profile: high
+  languages: high
+  admission_requirements: low
+data_sources:
+- wfs_berlin
+- agent_research
+unverified_fields:
+- social_media
+- unverified_fields
+- accepts_after_4th_grade
+- ratings
+- field_confidence
+- image_urls
+- admission_requirements
+- languages
+- profile
+_pinned_fields: []

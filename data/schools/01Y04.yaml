@@ -1,0 +1,57 @@
+school_id: 01Y04
+name: Musikgymnasium Carl Philipp Emanuel Bach
+district: Mitte
+last_updated: '2026-03-26'
+address: Rheinsberger Straße 4, 10115 Berlin
+coords:
+  lat: 52.53663054
+  lng: 13.39550961
+website: https://musikgymnasium-berlin.de
+phone: +49 30 901891530
+email: sekretariat@musikgymnasium-bach.de
+traeger: öffentlich
+accepts_after_4th_grade: true
+profile:
+- music
+ganztag: true
+languages:
+- name: Englisch
+  from_grade: 5
+- name: Französisch
+  from_grade: 7
+- name: Latein
+  from_grade: 7
+admission_requirements:
+  oversubscribed: true
+  selection_criteria: Specialised music gymnasium (Sondergymnasium) requiring proof of musical talent. Entrance 
+    audition/examination required. Accepts students from grade 5 (grundständig). Admission is highly selective based on 
+    musical aptitude.
+  probeunterricht: false
+  entrance_test: true
+  notes: One of two state music gymnasiums in Berlin. Specialises in classical music; instrumental and vocal training 
+    integrated into timetable. Named after Carl Philipp Emanuel Bach. State public school, no fees.
+image_urls: []
+social_media: {}
+ratings: {}
+completeness_score: 0.647
+field_confidence:
+  accepts_after_4th_grade: medium
+  profile: high
+  languages: low
+  ganztag: medium
+  admission_requirements: medium
+data_sources:
+- wfs_berlin
+- agent_research
+unverified_fields:
+- social_media
+- unverified_fields
+- ganztag
+- accepts_after_4th_grade
+- ratings
+- field_confidence
+- image_urls
+- admission_requirements
+- languages
+- profile
+_pinned_fields: []

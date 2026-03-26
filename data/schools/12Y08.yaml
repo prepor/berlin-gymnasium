@@ -1,0 +1,23 @@
+school_id: 12Y08
+name: Thomas-Mann-Gymnasium
+district: Reinickendorf
+last_updated: '2026-03-26'
+address: Königshorster Straße 10, 13439 Berlin
+coords:
+  lat: 52.59860825
+  lng: 13.35177877
+website: https://www.tmgberlin.de
+phone: +49 30 414763670
+email: 12Y08@12Y08.schule.berlin.de
+traeger: öffentlich
+profile: []
+languages: []
+image_urls: []
+social_media: {}
+ratings: {}
+completeness_score: 0.353
+field_confidence: {}
+data_sources:
+- wfs_berlin
+unverified_fields: []
+_pinned_fields: []

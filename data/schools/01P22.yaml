@@ -1,0 +1,65 @@
+school_id: 01P22
+name: Berlin Cosmopolitan School
+district: Mitte
+last_updated: '2026-03-26'
+address: Rückerstraße 9, 10119 Berlin
+coords:
+  lat: 52.52774654
+  lng: 13.40669387
+website: https://www.cosmopolitanschool.de
+phone: +49 30 688332324
+email: mail@cosmopolitanschool.de
+traeger: privat
+accepts_after_4th_grade: false
+profile:
+- bilingual_english
+- MINT
+- music
+- IB
+ganztag: true
+languages:
+- name: Englisch
+  from_grade: 7
+- name: Deutsch
+  from_grade: 7
+- name: Französisch
+  from_grade: 7
+- name: Spanisch
+  from_grade: 7
+admission_requirements:
+  oversubscribed: true
+  selection_criteria: Applicants must demonstrate good to very good academic results (grades, conduct, social skills), 
+    and bilingual proficiency in English and German at near-native level. From grade 5, one of French or Spanish as 
+    second foreign language also required. Gymnasium applicants invited to entrance test and trial day if a place 
+    becomes available. Sibling preference applied.
+  probeunterricht: true
+  entrance_test: true
+  notes: IB World School (PYP and Diploma Programme) as well as bilingual Abitur (Deutsch/Englisch). Only Berlin 
+    international gymnasium offering both IB Diploma and bilingual Abitur. Gymnasium started grade 7 onwards (secondary 
+    entry from grade 7). School opened as secondary school in 2009. Non-profit, private fee-paying. Students 
+    specialising in sciences and music/dance given admission priority.
+image_urls: []
+social_media: {}
+ratings: {}
+completeness_score: 0.647
+field_confidence:
+  accepts_after_4th_grade: medium
+  profile: high
+  languages: high
+  ganztag: medium
+  admission_requirements: high
+data_sources:
+- wfs_berlin
+- agent_research
+unverified_fields:
+- social_media
+- unverified_fields
+- ganztag
+- accepts_after_4th_grade
+- ratings
+- field_confidence
+- image_urls
+- admission_requirements
+- languages
+- profile
+_pinned_fields: []

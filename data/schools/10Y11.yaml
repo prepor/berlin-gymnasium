@@ -1,0 +1,61 @@
+school_id: 10Y11
+name: Melanchthon-Gymnasium
+district: Marzahn-Hellersdorf
+last_updated: '2026-03-26'
+address: Adele-Sandrock-Straße 73, 12627 Berlin
+coords:
+  lat: 52.534338
+  lng: 13.61868764
+website: http://www.melanchthon-schule-berlin.de
+phone: +49 30 9918008
+email: spieler@melanchthon-schule-berlin.de
+traeger: öffentlich
+accepts_after_4th_grade: true
+profile:
+- MINT
+- music
+languages:
+- name: Englisch
+  from_grade: 5
+- name: Französisch
+  from_grade: 7
+- name: Spanisch
+  from_grade: 7
+- name: Latein
+  from_grade: 9
+- name: Japanisch
+  from_grade: 9
+admission_requirements:
+  oversubscribed: true
+  selection_criteria: 'MINT-Profilklasse (ab Kl. 5): gewichtete Notensumme ≤ 15 (Mathe x3, Deutsch x2, Englisch/Sachkunde
+    x1) plus Aufnahmetest. Musik-Profilklasse (ab Kl. 5): musikalischer Eignungstest (min. 60/100 Punkte), mindestens gute
+    Noten in Deutsch, Mathe, Sachkunde, Musik. Regelklassen ab Kl. 7 nach Förderprognose-Durchschnitt.'
+  probeunterricht: true
+  entrance_test: true
+  notes: 'Musikprofilklasse: Schüler müssen Bereitschaft zur Mitwirkung in Schulensembles schriftlich erklären. In Kl. 5 ist
+    Instrumentalunterricht obligatorisch und kostenfrei. Aufnahme in MINT-Klasse auf Probe. Deutliche Übernachfrage für Profilklassen
+    – nur bei Erstwunsch realistisch.'
+image_urls: []
+social_media: {}
+ratings: {}
+completeness_score: 0.588
+field_confidence:
+  accepts_after_4th_grade: high
+  profile: high
+  languages: high
+  admission_requirements: high
+  oversubscribed: high
+data_sources:
+- wfs_berlin
+- agent_research
+unverified_fields:
+- social_media
+- unverified_fields
+- accepts_after_4th_grade
+- ratings
+- field_confidence
+- image_urls
+- admission_requirements
+- languages
+- profile
+_pinned_fields: []

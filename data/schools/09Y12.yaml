@@ -1,0 +1,64 @@
+school_id: 09Y12
+name: 12. Schule (Gymnasium)
+district: Treptow-Köpenick
+last_updated: '2026-03-26'
+address: Kiefholzstraße 274, 12437 Berlin
+coords:
+  lat: 52.46797294
+  lng: 13.4839236
+website: https://gymnasium09y12.de
+phone: +49 30 5329141
+email: schulleitung@gymnasium09y12.de
+traeger: öffentlich
+accepts_after_4th_grade: false
+profile:
+- MINT
+ganztag: true
+languages:
+- name: Englisch
+  from_grade: 7
+- name: Französisch
+  from_grade: 9
+- name: Spanisch
+  from_grade: 9
+open_day: '2026-03-27'
+admission_requirements:
+  oversubscribed: true
+  selection_criteria: 'Berlin-wide procedure: Förderprognose (sum of grades in Deutsch, Mathematik and first foreign language
+    from 2nd half of grade 5 and 1st half of grade 6 must not exceed 14); 10% of places for Härtefälle, 60% by school-defined
+    criteria, remainder by lottery. District Treptow-Köpenick has historically had high demand exceeding supply.'
+  probeunterricht: true
+  entrance_test: false
+  notes: Probeunterricht is required only for applicants whose Förderprognose notensumme exceeds 14. School founded 
+    2023/24; max 28 pupils per class. Enrollment period for grade 7 (2026/27) was 05.–12.03.2026.
+image_urls: []
+social_media: {}
+ratings: {}
+completeness_score: 0.706
+field_confidence:
+  accepts_after_4th_grade: high
+  profile: medium
+  languages: high
+  ganztag: high
+  open_day: medium
+  admission_requirements: medium
+  ratings: high
+  abitur_average: high
+  image_urls: high
+  social_media: medium
+data_sources:
+- wfs_berlin
+- agent_research
+unverified_fields:
+- open_day
+- social_media
+- unverified_fields
+- ganztag
+- accepts_after_4th_grade
+- ratings
+- field_confidence
+- image_urls
+- admission_requirements
+- languages
+- profile
+_pinned_fields: []

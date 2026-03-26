@@ -1,0 +1,894 @@
+/* Berlin Gymnasien - Global Styles */
+
+/* === Reset === */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    line-height: 1.6;
+    color: #1a1a1a;
+    background-color: #f5f5f5;
+}
+
+a {
+    color: #2563eb;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* === Listing Page Layout === */
+.listing-page {
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.listing-header {
+    padding: 1.5rem 1rem 0.5rem;
+}
+
+.listing-header h1 {
+    margin: 0 0 0.25rem;
+    font-size: 1.75rem;
+    color: #1e293b;
+}
+
+.school-count {
+    margin: 0 0 0.75rem;
+    color: #64748b;
+    font-size: 0.95rem;
+}
+
+.header-controls {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+/* === Listing Content: Sidebar + Grid === */
+.listing-content {
+    display: flex;
+    gap: 1.5rem;
+    padding: 0 1rem 2rem;
+}
+
+.filter-sidebar {
+    width: 280px;
+    flex-shrink: 0;
+}
+
+/* === School Card Grid === */
+.school-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    flex: 1;
+    min-width: 0;
+}
+
+@media (min-width: 768px) {
+    .school-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 1200px) {
+    .school-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+/* === School Card === */
+.school-card {
+    background: #fff;
+    border-radius: 8px;
+    padding: 1.25rem;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.2s;
+    cursor: pointer;
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}
+
+.school-card:hover {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    text-decoration: none;
+}
+
+.card-title {
+    margin: 0 0 0.25rem;
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #1e293b;
+    line-height: 1.3;
+}
+
+.card-district {
+    margin: 0 0 0.5rem;
+    color: #64748b;
+    font-size: 0.875rem;
+}
+
+.card-badges {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px;
+    margin-bottom: 0.75rem;
+}
+
+.card-meta {
+    margin-bottom: 0.5rem;
+    font-size: 0.85rem;
+    color: #475569;
+}
+
+.card-students {
+    display: inline-block;
+}
+
+/* === Completeness Bar === */
+.card-completeness {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.completeness-bar-bg {
+    flex: 1;
+    height: 6px;
+    background: #e2e8f0;
+    border-radius: 3px;
+    overflow: hidden;
+}
+
+.completeness-bar-fill {
+    height: 100%;
+    background: #2563eb;
+    border-radius: 3px;
+    transition: width 0.3s;
+}
+
+.completeness-text {
+    font-size: 0.75rem;
+    color: #94a3b8;
+    white-space: nowrap;
+}
+
+/* === Filter Panel === */
+.filter-panel {
+    background: #fff;
+    border-radius: 8px;
+    padding: 1rem 1.25rem;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.filter-heading {
+    margin: 0 0 1rem;
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #1e293b;
+}
+
+.filter-group {
+    border: none;
+    padding: 0;
+    margin: 0 0 1rem;
+}
+
+.filter-group-label {
+    font-weight: 600;
+    font-size: 0.875rem;
+    color: #334155;
+    margin-bottom: 0.5rem;
+    display: block;
+}
+
+.filter-options {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+    max-height: 200px;
+    overflow-y: auto;
+}
+
+.filter-checkbox,
+.filter-radio {
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+    font-size: 0.85rem;
+    color: #475569;
+    cursor: pointer;
+    padding: 2px 0;
+}
+
+.filter-checkbox input,
+.filter-radio input {
+    margin: 0;
+    cursor: pointer;
+}
+
+.filter-radios {
+    display: flex;
+    gap: 1rem;
+}
+
+/* === Filter Chips === */
+.filter-chips {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+.filter-count-badge {
+    background: #2563eb;
+    color: #fff;
+    padding: 2px 10px;
+    border-radius: 12px;
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+
+.filter-clear-btn {
+    background: none;
+    border: 1px solid #cbd5e1;
+    color: #64748b;
+    padding: 4px 12px;
+    border-radius: 6px;
+    font-size: 0.8rem;
+    cursor: pointer;
+    transition: all 0.15s;
+}
+
+.filter-clear-btn:hover {
+    border-color: #2563eb;
+    color: #2563eb;
+}
+
+/* === Sort Controls === */
+.sort-controls {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.sort-label {
+    font-size: 0.85rem;
+    color: #64748b;
+    white-space: nowrap;
+}
+
+.sort-select {
+    padding: 4px 8px;
+    border: 1px solid #cbd5e1;
+    border-radius: 6px;
+    font-size: 0.85rem;
+    color: #334155;
+    background: #fff;
+    cursor: pointer;
+}
+
+.sort-select:focus {
+    outline: 2px solid #2563eb;
+    outline-offset: 1px;
+}
+
+/* === Mobile Filter Toggle === */
+.filter-panel-mobile {
+    border: none;
+}
+
+.filter-panel-mobile > summary {
+    display: none;
+}
+
+.filter-toggle {
+    display: none;
+    padding: 0.75rem 1rem;
+    background: #fff;
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: #334155;
+    cursor: pointer;
+    margin-bottom: 0.5rem;
+    list-style: none;
+}
+
+.filter-toggle::-webkit-details-marker {
+    display: none;
+}
+
+/* === Mobile Responsive === */
+@media (max-width: 767px) {
+    .listing-header h1 {
+        font-size: 1.4rem;
+    }
+
+    .listing-content {
+        flex-direction: column;
+    }
+
+    .filter-sidebar {
+        width: 100%;
+    }
+
+    .filter-panel-mobile > summary {
+        display: block;
+    }
+
+    .filter-toggle {
+        display: block;
+    }
+
+    .filter-panel-mobile:not([open]) .filter-panel {
+        display: none;
+    }
+
+    .school-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .header-controls {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
+
+/* === Detail Page === */
+.detail-page {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+.back-link {
+    display: inline-block;
+    margin-bottom: 1rem;
+    color: #2563eb;
+    text-decoration: none;
+    font-size: 0.95rem;
+}
+
+.back-link:hover {
+    text-decoration: underline;
+}
+
+.detail-section {
+    background: #fff;
+    border-radius: 8px;
+    padding: 1.5rem;
+    margin-bottom: 1rem;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.detail-section h2 {
+    margin-top: 0;
+    font-size: 1.25rem;
+    color: #1e293b;
+    border-bottom: 1px solid #e2e8f0;
+    padding-bottom: 0.5rem;
+}
+
+.keine-angabe {
+    color: #94a3b8;
+    font-style: italic;
+}
+
+.detail-hero {
+    padding-bottom: 1rem;
+}
+
+.detail-hero h1 {
+    margin: 0 0 0.25rem;
+    font-size: 1.75rem;
+    color: #0f172a;
+}
+
+.detail-district {
+    color: #64748b;
+    font-size: 1.1rem;
+    margin: 0 0 0.5rem;
+}
+
+.detail-address {
+    color: #334155;
+    margin: 0 0 0.75rem;
+}
+
+.detail-badges {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-bottom: 0.75rem;
+}
+
+.badge {
+    display: inline-block;
+    padding: 0.25rem 0.75rem;
+    border-radius: 9999px;
+    font-size: 0.85rem;
+    font-weight: 500;
+}
+
+.badge-traeger {
+    background: #e0e7ff;
+    color: #3730a3;
+}
+
+.badge-grundstaendig {
+    background: #fef3c7;
+    color: #92400e;
+    font-weight: 600;
+}
+
+.badge-ganztag {
+    background: #ecfdf5;
+    color: #065f46;
+}
+
+.detail-counts {
+    color: #475569;
+    margin: 0 0 0.5rem;
+}
+
+.detail-website-row {
+    margin-top: 0.25rem;
+}
+
+.detail-website {
+    color: #2563eb;
+    word-break: break-all;
+}
+
+/* Profile chips */
+.profile-chips {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.profile-badge {
+    display: inline-block;
+    padding: 0.25rem 0.75rem;
+    border-radius: 9999px;
+    font-size: 0.85rem;
+    font-weight: 500;
+    color: #fff;
+}
+
+.profile-mint {
+    background: #22c55e;
+}
+
+.profile-musik {
+    background: #a855f7;
+}
+
+.profile-sport {
+    background: #3b82f6;
+}
+
+.profile-bilingual {
+    background: #f97316;
+}
+
+.profile-altsprachlich {
+    background: #ef4444;
+}
+
+.profile-other {
+    background: #64748b;
+}
+
+/* Languages table */
+.languages-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 0.5rem;
+}
+
+.languages-table th,
+.languages-table td {
+    text-align: left;
+    padding: 0.5rem;
+    border-bottom: 1px solid #e2e8f0;
+}
+
+.languages-table th {
+    color: #64748b;
+    font-weight: 600;
+    font-size: 0.9rem;
+}
+
+/* Rating entries */
+.rating-entry {
+    padding: 0.75rem;
+    border: 1px solid #e2e8f0;
+    border-radius: 6px;
+    margin-bottom: 0.5rem;
+}
+
+.rating-score {
+    color: #334155;
+}
+
+.rating-reviews {
+    color: #64748b;
+    font-size: 0.9rem;
+}
+
+.rating-retrieved {
+    color: #94a3b8;
+    font-size: 0.85rem;
+    margin-top: 0.25rem;
+}
+
+.abitur-average {
+    margin-top: 0.75rem;
+    font-weight: 600;
+    color: #1e293b;
+}
+
+/* Admission and contact definition lists */
+.admission-list,
+.contact-list,
+.provenance-list {
+    margin: 0;
+}
+
+.admission-list dt,
+.contact-list dt,
+.provenance-list dt {
+    font-weight: 600;
+    margin-top: 0.75rem;
+    color: #1e293b;
+}
+
+.admission-list dt:first-child,
+.contact-list dt:first-child,
+.provenance-list dt:first-child {
+    margin-top: 0;
+}
+
+.admission-list dd,
+.contact-list dd,
+.provenance-list dd {
+    margin-left: 0;
+    color: #334155;
+    margin-bottom: 0.25rem;
+}
+
+/* Detail page responsive */
+@media (max-width: 640px) {
+    .detail-page {
+        padding: 0.75rem;
+    }
+
+    .detail-hero h1 {
+        font-size: 1.4rem;
+    }
+
+    .detail-section {
+        padding: 1rem;
+    }
+}
+
+/* === Not Found Page === */
+.not-found {
+    text-align: center;
+    padding: 4rem 1rem;
+}
+
+.not-found h1 {
+    font-size: 3rem;
+    color: #e2e8f0;
+}
+
+/* === Map View === */
+.map-container {
+    width: 100%;
+    height: 500px;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 767px) {
+    .map-container {
+        height: 70vh;
+        border-radius: 0;
+    }
+}
+
+/* View toggle tabs */
+.view-toggle {
+    display: inline-flex;
+    border: 1px solid #e2e8f0;
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+.view-toggle-btn {
+    padding: 6px 16px;
+    border: none;
+    background: #fff;
+    color: #64748b;
+    font-size: 0.85rem;
+    cursor: pointer;
+    transition: all 0.15s;
+}
+
+.view-toggle-btn:hover {
+    background: #f1f5f9;
+}
+
+.view-toggle-btn.active {
+    background: #2563eb;
+    color: #fff;
+}
+
+/* Map popup styling */
+.map-popup strong {
+    font-size: 0.95rem;
+    color: #1e293b;
+}
+
+.popup-district {
+    color: #64748b;
+    font-size: 0.8rem;
+}
+
+.popup-grundstaendig {
+    background: #0d9488;
+    color: #fff;
+    padding: 1px 6px;
+    border-radius: 8px;
+    font-size: 0.7rem;
+    font-weight: 600;
+    display: inline-block;
+}
+
+.popup-profiles {
+    margin: 4px 0;
+}
+
+.popup-detail-link {
+    color: #2563eb;
+    font-size: 0.85rem;
+    font-weight: 500;
+}
+
+.popup-detail-link:hover {
+    text-decoration: underline;
+}
+
+/* === Address Input === */
+.address-input-container {
+    position: relative;
+    display: flex;
+    gap: 0.5rem;
+    align-items: flex-start;
+    margin-bottom: 1rem;
+    max-width: 500px;
+}
+
+.address-input {
+    flex: 1;
+    padding: 0.6rem 0.75rem;
+    border: 1px solid #cbd5e1;
+    border-radius: 6px;
+    font-size: 0.95rem;
+    color: #334155;
+    background: #fff;
+}
+
+.address-input:focus {
+    outline: 2px solid #2563eb;
+    outline-offset: 1px;
+}
+
+.address-input::placeholder {
+    color: #94a3b8;
+}
+
+.address-search-btn {
+    padding: 0.6rem 1rem;
+    background: #2563eb;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    cursor: pointer;
+    white-space: nowrap;
+}
+
+.address-search-btn:hover:not(:disabled) {
+    background: #1d4ed8;
+}
+
+.address-search-btn:disabled {
+    background: #93c5fd;
+    cursor: not-allowed;
+    opacity: 0.8;
+}
+
+/* Spinner animation */
+.spinner {
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    border-top-color: #fff;
+    border-radius: 50%;
+    animation: spin 0.6s linear infinite;
+    vertical-align: middle;
+}
+
+.spinner-lg {
+    width: 20px;
+    height: 20px;
+    border-width: 3px;
+    border-color: rgba(37, 99, 235, 0.2);
+    border-top-color: #2563eb;
+}
+
+@keyframes spin {
+    to { transform: rotate(360deg); }
+}
+
+/* Travel time loading banner */
+.travel-loading-banner {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.6rem 1rem;
+    background: #eff6ff;
+    border: 1px solid #bfdbfe;
+    border-radius: 8px;
+    color: #1e40af;
+    font-size: 0.9rem;
+    font-weight: 500;
+    margin: 0.5rem 0;
+    animation: pulse-bg 1.5s ease-in-out infinite;
+}
+
+@keyframes pulse-bg {
+    0%, 100% { background: #eff6ff; }
+    50% { background: #dbeafe; }
+}
+
+.address-clear-btn {
+    padding: 0.6rem 0.75rem;
+    background: none;
+    border: 1px solid #cbd5e1;
+    border-radius: 6px;
+    font-size: 0.85rem;
+    color: #64748b;
+    cursor: pointer;
+    white-space: nowrap;
+}
+
+.address-clear-btn:hover {
+    border-color: #ef4444;
+    color: #ef4444;
+}
+
+/* Suggestion Dropdown */
+.address-suggestions {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    max-width: 100%;
+    background: #fff;
+    border: 1px solid #cbd5e1;
+    border-top: none;
+    border-radius: 0 0 8px 8px;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12);
+    z-index: 1000;
+    list-style: none;
+    margin: 0;
+    padding: 4px 0;
+    max-height: 280px;
+    overflow-y: auto;
+}
+
+.address-suggestion-item {
+    padding: 0.55rem 0.85rem;
+    cursor: pointer;
+    font-size: 0.875rem;
+    color: #334155;
+    line-height: 1.4;
+    transition: background 0.1s, color 0.1s;
+}
+
+.address-suggestion-item:hover {
+    background: #eff6ff;
+    color: #1e40af;
+}
+
+.address-suggestion-item:active {
+    background: #dbeafe;
+}
+
+.address-suggestion-item:last-child {
+    border-bottom: none;
+}
+
+/* Legacy loading text (replaced by banner) */
+.address-loading-text {
+    font-size: 0.8rem;
+    color: #64748b;
+    font-style: italic;
+    padding: 0.25rem 0;
+}
+
+/* === Travel Time Row on Cards === */
+.card-travel-times {
+    display: flex;
+    gap: 0.75rem;
+    padding: 0.5rem 0;
+    margin: 0.5rem 0;
+    border-top: 1px solid #f1f5f9;
+    font-size: 0.85rem;
+    color: #475569;
+    flex-wrap: wrap;
+}
+
+.card-travel-times.loading {
+    color: #94a3b8;
+    font-style: italic;
+}
+
+.card-travel-times.no-data {
+    color: #94a3b8;
+    font-style: italic;
+}
+
+.travel-mode {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.2rem;
+    white-space: nowrap;
+}
+
+.travel-spinner {
+    display: inline-block;
+}
+
+.keine-fahrzeit {
+    font-style: italic;
+}
+
+/* === Travel Error === */
+.travel-error {
+    background: #fef2f2;
+    color: #991b1b;
+    padding: 0.5rem 0.75rem;
+    border-radius: 6px;
+    font-size: 0.85rem;
+    margin-bottom: 0.75rem;
+    border: 1px solid #fecaca;
+}
+
+/* === Mobile adjustments for address input === */
+@media (max-width: 767px) {
+    .address-input-container {
+        max-width: 100%;
+    }
+}

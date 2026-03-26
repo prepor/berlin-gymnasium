@@ -1,0 +1,23 @@
+school_id: 11Y09
+name: Barnim-Gymnasium
+district: Lichtenberg
+last_updated: '2026-03-26'
+address: Ahrensfelder Chaussee 41, 13057 Berlin
+coords:
+  lat: 52.56916654
+  lng: 13.5493047
+website: https://www.barnim-gymnasium.net
+phone: +49 30 9366690
+email: kontakt@barnim-gym.de
+traeger: öffentlich
+profile: []
+languages: []
+image_urls: []
+social_media: {}
+ratings: {}
+completeness_score: 0.353
+field_confidence: {}
+data_sources:
+- wfs_berlin
+unverified_fields: []
+_pinned_fields: []

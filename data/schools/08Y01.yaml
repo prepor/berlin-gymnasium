@@ -1,0 +1,23 @@
+school_id: 08Y01
+name: Albrecht-Dürer-Gymnasium
+district: Neukölln
+last_updated: '2026-03-26'
+address: Emser Straße 132, 12051 Berlin
+coords:
+  lat: 52.46943808
+  lng: 13.43917024
+website: https://albrecht-duerer-gymnasium.de
+phone: +49 30 221994310
+email: 08Y01@08Y01.schule.berlin.de
+traeger: öffentlich
+profile: []
+languages: []
+image_urls: []
+social_media: {}
+ratings: {}
+completeness_score: 0.353
+field_confidence: {}
+data_sources:
+- wfs_berlin
+unverified_fields: []
+_pinned_fields: []

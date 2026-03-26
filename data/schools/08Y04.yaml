@@ -1,0 +1,23 @@
+school_id: 08Y04
+name: Ernst-Abbe-Gymnasium
+district: Neukölln
+last_updated: '2026-03-26'
+address: Sonnenallee 79, 12045 Berlin
+coords:
+  lat: 52.48344383
+  lng: 13.4370162
+website: https://www.ernst-abbe.de
+phone: +49 30 225013030
+email: sekretariat@ernst-abbe.schule.berlin.de
+traeger: öffentlich
+profile: []
+languages: []
+image_urls: []
+social_media: {}
+ratings: {}
+completeness_score: 0.353
+field_confidence: {}
+data_sources:
+- wfs_berlin
+unverified_fields: []
+_pinned_fields: []

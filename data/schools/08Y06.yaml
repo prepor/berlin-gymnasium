@@ -1,0 +1,23 @@
+school_id: 08Y06
+name: Hannah-Arendt-Gymnasium
+district: Neukölln
+last_updated: '2026-03-26'
+address: Elfriede-Kuhr-Straße 17, 12355 Berlin
+coords:
+  lat: 52.40385189
+  lng: 13.50815021
+website: https://www.hag-berlin.net
+phone: +49 30 6097180
+email: sekretariat@hag-berlin.net
+traeger: öffentlich
+profile: []
+languages: []
+image_urls: []
+social_media: {}
+ratings: {}
+completeness_score: 0.353
+field_confidence: {}
+data_sources:
+- wfs_berlin
+unverified_fields: []
+_pinned_fields: []

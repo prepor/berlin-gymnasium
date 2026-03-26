@@ -1,0 +1,55 @@
+school_id: 01Y08
+name: Lessing-Gymnasium
+district: Mitte
+last_updated: '2026-03-26'
+address: Schöningstraße 17, 13349 Berlin
+coords:
+  lat: 52.55731337
+  lng: 13.34392567
+website: https://lessing-gymnasium-berlin.de
+phone: +49 30 45798510
+email: post@lessing-gymnasium-berlin.de
+traeger: öffentlich
+accepts_after_4th_grade: false
+profile:
+- other
+ganztag: false
+languages:
+- name: Englisch
+  from_grade: 7
+- name: Französisch
+  from_grade: 7
+- name: Latein
+  from_grade: 7
+- name: Spanisch
+admission_requirements:
+  selection_criteria: 'Standard Berlin public gymnasium admission: based on Förderprognose from primary school; Probeunterricht
+    required if Notensumme exceeds 14. Entry from grade 7.'
+  probeunterricht: true
+  entrance_test: false
+  notes: Public gymnasium in Berlin-Mitte. Standard Berlin admission procedure applies.
+image_urls: []
+social_media: {}
+ratings: {}
+completeness_score: 0.647
+field_confidence:
+  accepts_after_4th_grade: low
+  profile: low
+  languages: low
+  ganztag: low
+  admission_requirements: low
+data_sources:
+- wfs_berlin
+- agent_research
+unverified_fields:
+- social_media
+- unverified_fields
+- ganztag
+- accepts_after_4th_grade
+- ratings
+- field_confidence
+- image_urls
+- admission_requirements
+- languages
+- profile
+_pinned_fields: []

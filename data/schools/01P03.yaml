@@ -1,0 +1,78 @@
+school_id: 01P03
+name: Jüdisches Gymnasium Moses Mendelssohn
+district: Mitte
+last_updated: '2026-03-26'
+address: Große Hamburger Straße 27, 10115 Berlin
+coords:
+  lat: 52.52497627
+  lng: 13.3993558
+website: https://jgmm.de
+phone: +49 30 726265700
+email: info@jgmm.de
+traeger: privat
+accepts_after_4th_grade: true
+profile:
+- altsprachlich
+- other
+ganztag: true
+languages:
+- name: Englisch
+  from_grade: 5
+- name: Hebräisch
+  from_grade: 5
+- name: Französisch
+  from_grade: 7
+- name: Russisch
+  from_grade: 7
+admission_requirements:
+  notendurchschnitt: 2.2
+  oversubscribed: true
+  selection_criteria: 'For grade 5 (grundständig): Grundschule prognosis of at least 2.2, a motivational letter from the student,
+    and an admission interview with the principal. For grade 7: sum of grades in Deutsch, Mathematik and Englisch across the
+    year-5 report and mid-year grade-6 report must not exceed 14. A lateral entry (Quereinstieg) is possible in principle
+    if a place is available, primarily in grades 7–8 with French or Russian as the second foreign language. Entry to the Oberstufe
+    requires MSA plus grade-10 promotion certificate; newcomers must additionally demonstrate basic knowledge of Judaism.'
+  probeunterricht: true
+  entrance_test: true
+  notes: Probeunterricht is available in cases where the required Förderprognose is missing (grade 7 entry). Admission 
+    interview (Aufnahmegespräch) is required for the grundständig grade-5 track. Hebrew is mandatory for all students in
+    grades 5–10 regardless of religious background; lateral entrants without Hebrew must take a remedial course. The 
+    school is a state-recognised private Jewish school; all students (Jewish and non-Jewish) participate in Hebrew and 
+    Jewish religious education and kosher lunch. Approximately 70% of students are Jewish.
+abitur_average: 1.97
+image_urls: []
+social_media:
+  instagram: https://www.instagram.com/jgmmberlin/
+ratings: {}
+completeness_score: 0.706
+field_confidence:
+  accepts_after_4th_grade: high
+  profile: high
+  languages: high
+  ganztag: high
+  open_day: high
+  admission_requirements: high
+  notendurchschnitt: high
+  probeunterricht: high
+  entrance_test: high
+  oversubscribed: medium
+  ratings: high
+  abitur_average: high
+  image_urls: high
+  social_media: high
+data_sources:
+- wfs_berlin
+- agent_research
+unverified_fields:
+- social_media
+- abitur_average
+- unverified_fields
+- ganztag
+- accepts_after_4th_grade
+- ratings
+- field_confidence
+- image_urls
+- admission_requirements
+- languages
+- profile
+_pinned_fields: []

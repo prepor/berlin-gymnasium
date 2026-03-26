@@ -1,0 +1,60 @@
+school_id: 06Y08
+name: Hermann-Ehlers-Gymnasium
+district: Steglitz-Zehlendorf
+last_updated: '2026-03-26'
+address: Elisenstraße 3, 12169 Berlin
+coords:
+  lat: 52.45293976
+  lng: 13.33370005
+website: https://hermann-ehlers-schule.de
+phone: +49 30 902992353
+email: sekretariat@heg.schule.berlin.de
+traeger: öffentlich
+accepts_after_4th_grade: false
+profile:
+- MINT
+- bilingual_english
+- other
+languages:
+- name: Englisch
+  from_grade: 7
+- name: Französisch
+  from_grade: 7
+- name: Spanisch
+  from_grade: 7
+- name: Italienisch
+  from_grade: 8
+- name: Russisch
+  from_grade: 8
+- name: Latein
+  from_grade: 8
+admission_requirements:
+  selection_criteria: Durchschnittsnote der Förderprognose is the primary criterion at oversubscription. UNESCO project 
+    school with three profile classes (Theatre/Film, bilingual English/Social Sciences, Natural Sciences).
+  probeunterricht: false
+  entrance_test: false
+  notes: 'Sprachbetontes Profil (language-focused). Three profile classes: Theatre/Film, bilingual Gesellschaftswissenschaften
+    (English/German), and Naturwissenschaften (MINT).'
+image_urls: []
+social_media: {}
+ratings: {}
+completeness_score: 0.588
+field_confidence:
+  accepts_after_4th_grade: high
+  profile: high
+  languages: high
+  admission_requirements: medium
+data_sources:
+- wfs_berlin
+- agent_research
+unverified_fields:
+- social_media
+- unverified_fields
+- accepts_after_4th_grade
+- ratings
+- field_confidence
+- image_urls
+- admission_requirements
+- languages
+- profile
+_pinned_fields: []

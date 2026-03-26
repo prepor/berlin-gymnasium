@@ -1,0 +1,57 @@
+school_id: 01Y09
+name: Diesterweg-Gymnasium
+district: Mitte
+last_updated: '2026-03-26'
+address: Böttgerstraße 2, 13357 Berlin
+coords:
+  lat: 52.55017213
+  lng: 13.37850062
+website: https://www.dwgym.berlin
+phone: +49 30 46309620
+email: sekretariat@dwgym.berlin
+traeger: öffentlich
+accepts_after_4th_grade: true
+profile:
+- altsprachlich
+- bilingual_french
+- kunst
+ganztag: true
+languages:
+- name: Französisch
+  from_grade: 5
+- name: Latein
+  from_grade: 5
+- name: Englisch
+  from_grade: 7
+admission_requirements:
+  selection_criteria: Aufnahmegespräch mit dem Schulleiter; Sprachaffinität und Leistungsbereitschaft werden geprüft; 
+    Schulversuch, auch ohne Vorkenntnisse in Französisch möglich
+  probeunterricht: false
+  entrance_test: false
+  notes: 'Altsprachlicher Zug ab Klasse 5 (Schulversuch): Sprachenfolge Französisch–Latein–Englisch. Regelklassen beginnen
+    ab Klasse 7 mit Englisch.'
+image_urls: []
+social_media: {}
+ratings: {}
+completeness_score: 0.647
+field_confidence:
+  accepts_after_4th_grade: high
+  profile: high
+  languages: high
+  ganztag: high
+  admission_requirements: medium
+data_sources:
+- wfs_berlin
+- agent_research
+unverified_fields:
+- social_media
+- unverified_fields
+- ganztag
+- accepts_after_4th_grade
+- ratings
+- field_confidence
+- image_urls
+- admission_requirements
+- languages
+- profile
+_pinned_fields: []

@@ -1,0 +1,53 @@
+school_id: 01Y12
+name: Gymnasium Tiergarten
+district: Mitte
+last_updated: '2026-03-26'
+address: Altonaer Straße 26, 10555 Berlin
+coords:
+  lat: 52.51989945
+  lng: 13.33974699
+website: https://www.gymnasium-tiergarten.de
+phone: +49 30 398009710
+email: sekretariat@gymnasium-tiergarten.de
+traeger: öffentlich
+accepts_after_4th_grade: false
+profile:
+- bilingual_english
+languages:
+- name: Englisch
+  from_grade: 7
+- name: Französisch
+  from_grade: 7
+- name: Latein
+  from_grade: 7
+admission_requirements:
+  notendurchschnitt: 2.0
+  oversubscribed: true
+  selection_criteria: 'Bilingualer Zug: Förderprognose ≤ 2,0, Summe Mathe+Deutsch+Englisch ≤ 5; Regelklassen: Förderprognose
+    max. 2,1'
+  entrance_test: false
+  notes: Bilingualer Zug (Englisch) seit Schuljahr 2015/16; CertiLingua-Label; Schach-Auszeichnung (Bronze, Deutsche 
+    Schachjugend 2025)
+image_urls: []
+social_media: {}
+ratings: {}
+completeness_score: 0.588
+field_confidence:
+  accepts_after_4th_grade: high
+  profile: high
+  languages: medium
+  admission_requirements: high
+data_sources:
+- wfs_berlin
+- agent_research
+unverified_fields:
+- social_media
+- unverified_fields
+- accepts_after_4th_grade
+- ratings
+- field_confidence
+- image_urls
+- admission_requirements
+- languages
+- profile
+_pinned_fields: []

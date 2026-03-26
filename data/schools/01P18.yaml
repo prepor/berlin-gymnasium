@@ -1,0 +1,59 @@
+school_id: 01P18
+name: Bilinguale Schule Phorms Berlin Mitte
+district: Mitte
+last_updated: '2026-03-26'
+address: Ackerstraße 76, 13355 Berlin
+coords:
+  lat: 52.53854465
+  lng: 13.38439977
+website: https://berlin-mitte.phorms.de
+phone: +49 30 318737100
+email: berlin-mitte@phorms.de
+traeger: privat
+accepts_after_4th_grade: true
+profile:
+- bilingual_english
+- MINT
+ganztag: true
+languages:
+- name: Englisch
+  from_grade: 5
+- name: Französisch
+  from_grade: 7
+- name: Spanisch
+  from_grade: 7
+admission_requirements:
+  selection_criteria: Online application form, review of last three school reports, introductory meeting with school 
+    management, optional entrance test, and three trial school days (Probetage) to assess social and academic skills. 
+    Lateral entry possible at any grade if English at B2/C1 level and German proficiency given.
+  probeunterricht: true
+  entrance_test: true
+  notes: 'Private fee-paying school (Phorms network). Bilingual German/English. Two pathways: bilingual-natural-sciences gymnasium
+    from grade 5, and bilingual gymnasium from grade 7. Both lead to bilingual Berliner Abitur. Cambridge Advanced English
+    (CAE) offered. Sibling discounts and loyalty discounts available.'
+image_urls:
+- https://berlin-mitte.phorms.de/wp-content/uploads/sites/3/2023/04/phorms-berlin-mitte-campus.jpg
+social_media: {}
+ratings: {}
+completeness_score: 0.706
+field_confidence:
+  accepts_after_4th_grade: high
+  profile: high
+  languages: medium
+  ganztag: high
+  admission_requirements: high
+data_sources:
+- wfs_berlin
+- agent_research
+unverified_fields:
+- social_media
+- unverified_fields
+- ganztag
+- accepts_after_4th_grade
+- ratings
+- field_confidence
+- image_urls
+- admission_requirements
+- languages
+- profile
+_pinned_fields: []

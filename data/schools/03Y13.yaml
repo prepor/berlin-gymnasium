@@ -1,0 +1,57 @@
+school_id: 03Y13
+name: Felix-Mendelssohn-Bartholdy-Gymnasium
+district: Pankow
+last_updated: '2026-03-26'
+address: Pasteurstraße 7, 10407 Berlin
+coords:
+  lat: 52.53409226
+  lng: 13.43246826
+website: http://www.fmbg-berlin.de
+phone: +49 30 420827400
+email: sekretariat@fmbg.schule.berlin.de
+traeger: öffentlich
+accepts_after_4th_grade: false
+profile:
+- music
+- kunst
+languages:
+- name: Englisch
+  from_grade: 7
+- name: Französisch
+  from_grade: 7
+- name: Spanisch
+  from_grade: 7
+- name: Japanisch
+  from_grade: 9
+- name: Latein
+  from_grade: 9
+- name: Norwegisch
+  from_grade: 9
+admission_requirements:
+  selection_criteria: Durchschnittsnote der Förderprognose bei Übernachfrage (standard Berlin process)
+  probeunterricht: false
+  entrance_test: false
+  notes: No special entrance test or trial lesson noted; accepts from grade 7 (not grundständig)
+image_urls: []
+social_media: {}
+ratings: {}
+completeness_score: 0.588
+field_confidence:
+  accepts_after_4th_grade: high
+  profile: high
+  languages: high
+  admission_requirements: medium
+data_sources:
+- wfs_berlin
+- agent_research
+unverified_fields:
+- social_media
+- unverified_fields
+- accepts_after_4th_grade
+- ratings
+- field_confidence
+- image_urls
+- admission_requirements
+- languages
+- profile
+_pinned_fields: []

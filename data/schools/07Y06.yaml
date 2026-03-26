@@ -1,0 +1,23 @@
+school_id: 07Y06
+name: Askanisches Gymnasium
+district: Tempelhof-Schöneberg
+last_updated: '2026-03-26'
+address: Kaiserin-Augusta-Straße 19, 12103 Berlin
+coords:
+  lat: 52.45987633
+  lng: 13.38015299
+website: http://www.askanisches-gymnasium.de
+phone: +49 30 902772679
+email: sekretariat@askanisches-gymnasium.de
+traeger: öffentlich
+profile: []
+languages: []
+image_urls: []
+social_media: {}
+ratings: {}
+completeness_score: 0.353
+field_confidence: {}
+data_sources:
+- wfs_berlin
+unverified_fields: []
+_pinned_fields: []

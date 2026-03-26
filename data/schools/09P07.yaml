@@ -1,0 +1,74 @@
+school_id: 09P07
+name: Evangelische Schule Köpenick (Gymnasium)
+district: Treptow-Köpenick
+last_updated: '2026-03-26'
+address: Grüne Trift 169, 12557 Berlin
+coords:
+  lat: 52.42338498
+  lng: 13.59231709
+website: http://www.ev-schule-koepenick.de
+phone: +49 30 32532401
+email: leitung@ev-schule-koepenick.de
+traeger: privat
+accepts_after_4th_grade: true
+profile:
+- musik
+- kunst
+ganztag: false
+languages:
+- name: Englisch
+  from_grade: 5
+- name: Französisch
+  from_grade: 7
+- name: Spanisch
+  from_grade: 7
+- name: Latein
+  from_grade: 8
+admission_requirements:
+  oversubscribed: true
+  selection_criteria: Application-based; school selects from applicants. More applications than places available every 
+    year. Private school (Ersatzschule) with income-based tuition fee (Schulgeld). Christian values alignment 
+    considered.
+  probeunterricht: false
+  entrance_test: false
+  notes: School accepts up to 60 students per year from grade 5 and up to 30 additional students from grade 7. 
+    Admissions for 2026/27 (grades 5 and 7) are already closed as of March 2026. Individual lateral-entry places may 
+    exist in grades 8–11.
+abitur_average: 1.9
+image_urls: []
+social_media:
+  instagram: https://www.instagram.com/ev.schule.koepenick
+ratings: {}
+completeness_score: 0.706
+field_confidence:
+  accepts_after_4th_grade: high
+  profile: high
+  languages: high
+  ganztag: low
+  open_day: low
+  admission_requirements.oversubscribed: high
+  admission_requirements.selection_criteria: medium
+  admission_requirements.notendurchschnitt: low
+  admission_requirements.probeunterricht: low
+  admission_requirements.entrance_test: low
+  admission_requirements.notes: high
+  abitur_average: medium
+  ratings: high
+  social_media.instagram: low
+  image_urls: low
+data_sources:
+- wfs_berlin
+- agent_research
+unverified_fields:
+- social_media
+- abitur_average
+- unverified_fields
+- ganztag
+- accepts_after_4th_grade
+- ratings
+- field_confidence
+- image_urls
+- admission_requirements
+- languages
+- profile
+_pinned_fields: []

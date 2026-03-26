@@ -1,0 +1,23 @@
+school_id: 09Y04
+name: Anne-Frank-Gymnasium
+district: Treptow-Köpenick
+last_updated: '2026-03-26'
+address: Uranusstraße 15, 12524 Berlin
+coords:
+  lat: 52.3999325
+  lng: 13.52454113
+website: http://www.anne-frank-schule-berlin.de
+phone: +49 30 51653360
+email: sekretariat@afg.schule.berlin.de
+traeger: öffentlich
+profile: []
+languages: []
+image_urls: []
+social_media: {}
+ratings: {}
+completeness_score: 0.353
+field_confidence: {}
+data_sources:
+- wfs_berlin
+unverified_fields: []
+_pinned_fields: []

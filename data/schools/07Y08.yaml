@@ -1,0 +1,70 @@
+school_id: 07Y08
+name: Ulrich-von-Hutten-Gymnasium
+district: Tempelhof-Schöneberg
+last_updated: '2026-03-26'
+address: Rehagener Straße 35, 12307 Berlin
+coords:
+  lat: 52.38611311
+  lng: 13.40347162
+website: https://www.ulrich-von-hutten-gymnasium.de
+phone: +49 30 902778244
+email: uvh@uvh-online.de
+traeger: öffentlich
+accepts_after_4th_grade: false
+profile:
+- MINT
+- music
+- bilingual_english
+- other
+languages:
+- name: Englisch
+  from_grade: 5
+- name: Französisch
+  from_grade: 7
+- name: Latein
+  from_grade: 7
+- name: Französisch
+  from_grade: 9
+- name: Italienisch
+  from_grade: 9
+- name: Latein
+  from_grade: 9
+- name: Italienisch
+  from_grade: 11
+admission_requirements:
+  selection_criteria: 'Bei Übernachfrage: Durchschnittsnote der Förderprognose (GPA of primary school recommendation used
+    as tiebreaker). Admission is to grade 7 (not grundständig).'
+  probeunterricht: false
+  entrance_test: false
+  notes: Standard Berlin Gymnasium admission from grade 7 (Klasse 7). Registration period was 06–14 March 2025 for 
+    school year 2025/26. No grundständig (grade 5) intake.
+image_urls: []
+social_media:
+  facebook: https://www.facebook.com/p/Ulrich-von-Hutten-Oberschule-Gymnasium-100069906122561/
+ratings: {}
+completeness_score: 0.588
+field_confidence:
+  accepts_after_4th_grade: high
+  profile: medium
+  languages: medium
+  ganztag: low
+  open_day: high
+  admission_requirements: high
+  ratings: high
+  abitur_average: low
+  image_urls: low
+  social_media: medium
+data_sources:
+- wfs_berlin
+- agent_research
+unverified_fields:
+- social_media
+- unverified_fields
+- accepts_after_4th_grade
+- ratings
+- field_confidence
+- image_urls
+- admission_requirements
+- languages
+- profile
+_pinned_fields: []

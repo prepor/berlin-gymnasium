@@ -1,0 +1,23 @@
+school_id: 07Y04
+name: Paul-Natorp-Gymnasium
+district: Tempelhof-Schöneberg
+last_updated: '2026-03-26'
+address: Goßlerstraße 13, 12161 Berlin
+coords:
+  lat: 52.46931135
+  lng: 13.32424371
+website: https://www.natorp-gymnasium.de
+phone: +49 30 902777921
+email: sekretariat@natorp-gymnasium.de
+traeger: öffentlich
+profile: []
+languages: []
+image_urls: []
+social_media: {}
+ratings: {}
+completeness_score: 0.353
+field_confidence: {}
+data_sources:
+- wfs_berlin
+unverified_fields: []
+_pinned_fields: []

@@ -1,0 +1,33 @@
+school_id: 05Y01
+name: Freiherr-vom-Stein-Gymnasium
+district: Spandau
+last_updated: '2026-03-26'
+address: Galenstraße 40, 13597 Berlin
+coords:
+  lat: 52.54054006
+  lng: 13.1999306
+website: http://www.steingymnasium.de
+phone: +49 30 3309653
+email: freiherr-vom-stein-gymnasium@t-online.de
+traeger: öffentlich
+profile: []
+languages: []
+admission_requirements: {}
+image_urls: []
+social_media: {}
+ratings: {}
+completeness_score: 0.412
+field_confidence: {}
+data_sources:
+- wfs_berlin
+- agent_research
+unverified_fields:
+- social_media
+- unverified_fields
+- ratings
+- field_confidence
+- image_urls
+- admission_requirements
+- languages
+- profile
+_pinned_fields: []

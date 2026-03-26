@@ -1,0 +1,23 @@
+school_id: 08Y05
+name: Leonardo-da-Vinci-Gymnasium
+district: Neukölln
+last_updated: '2026-03-26'
+address: Christoph-Ruden-Straße 3, 12349 Berlin
+coords:
+  lat: 52.41874809
+  lng: 13.43571715
+website: https://www.leonardo-da-vinci-gymnasium.de
+phone: +49 30 742010
+email: sekretariat@08y05.schule.berlin.de
+traeger: öffentlich
+profile: []
+languages: []
+image_urls: []
+social_media: {}
+ratings: {}
+completeness_score: 0.353
+field_confidence: {}
+data_sources:
+- wfs_berlin
+unverified_fields: []
+_pinned_fields: []

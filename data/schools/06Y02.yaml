@@ -1,0 +1,64 @@
+school_id: 06Y02
+name: Droste-Hülshoff-Gymnasium
+district: Steglitz-Zehlendorf
+last_updated: '2026-03-26'
+address: Schönower Straße 8, 14165 Berlin
+coords:
+  lat: 52.42881267
+  lng: 13.2571858
+website: https://droste-berlin.de
+phone: +49 30 84508466
+email: schulbuero@droste-berlin.de
+traeger: öffentlich
+accepts_after_4th_grade: false
+profile:
+- music
+- bilingual_french
+- bilingual_english
+ganztag: false
+languages:
+- name: Englisch
+  from_grade: 7
+- name: Französisch
+  from_grade: 7
+- name: Latein
+  from_grade: 8
+- name: Spanisch
+  from_grade: 7
+admission_requirements:
+  oversubscribed: true
+  selection_criteria: 'Admissions split by first foreign language chosen (Englisch or Französisch). For music profile (C-Klassen):
+    entrance test in music required (Aufnahmeprüfung). For other tracks: Durchschnittsnote der Förderprognose used; ties broken
+    by lottery. Sibling priority applies.'
+  probeunterricht: false
+  entrance_test: true
+  notes: 5 classes of 29 students each for school year 2026/27. Entrance music test required for musikbetonte Klassen. 
+    For non-music tracks, GPA-based selection with lottery for ties. Profilklasse Französisch offers bilingual 
+    instruction in French from grade 9 in Geography and History.
+image_urls: []
+social_media: {}
+ratings: {}
+completeness_score: 0.647
+field_confidence:
+  accepts_after_4th_grade: high
+  profile: high
+  languages: high
+  ganztag: medium
+  oversubscribed: high
+  admission_requirements: high
+  entrance_test: high
+data_sources:
+- wfs_berlin
+- agent_research
+unverified_fields:
+- social_media
+- unverified_fields
+- ganztag
+- accepts_after_4th_grade
+- ratings
+- field_confidence
+- image_urls
+- admission_requirements
+- languages
+- profile
+_pinned_fields: []

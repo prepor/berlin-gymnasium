@@ -1,0 +1,62 @@
+school_id: 01Y07
+name: Französisches Gymnasium
+district: Mitte
+last_updated: '2026-03-26'
+address: Derfflingerstraße 7, 10785 Berlin
+coords:
+  lat: 52.50326557
+  lng: 13.35550118
+website: https://www.fg-berlin.eu
+phone: +49 30 25758910
+email: sekretariat@fg-berlin.eu
+traeger: öffentlich
+accepts_after_4th_grade: true
+profile:
+- bilingual_french
+- altsprachlich
+ganztag: false
+languages:
+- name: Französisch
+  from_grade: 5
+- name: Deutsch
+  from_grade: 5
+- name: Englisch
+  from_grade: 7
+- name: Latein
+  from_grade: 7
+- name: Spanisch
+admission_requirements:
+  oversubscribed: true
+  selection_criteria: Entry from grade 5 (grundständig) requires strong academic record. School uses French as a primary
+    language of instruction (historically Franco-German institution). Admission criteria include academic performance 
+    and language aptitude.
+  probeunterricht: false
+  entrance_test: true
+  notes: One of the oldest Franco-German schools in Berlin, under joint French-German governance. Awards French 
+    Baccalauréat and German Abitur (Doppelabschluss). Teaching in both French and German from grade 5. Historically 
+    known as Lycée français de Berlin.
+image_urls: []
+social_media: {}
+ratings: {}
+completeness_score: 0.647
+field_confidence:
+  accepts_after_4th_grade: medium
+  profile: high
+  languages: medium
+  ganztag: low
+  admission_requirements: low
+data_sources:
+- wfs_berlin
+- agent_research
+unverified_fields:
+- social_media
+- unverified_fields
+- ganztag
+- accepts_after_4th_grade
+- ratings
+- field_confidence
+- image_urls
+- admission_requirements
+- languages
+- profile
+_pinned_fields: []

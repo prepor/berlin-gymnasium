@@ -1,0 +1,68 @@
+school_id: 09Y10
+name: Gebrüder-Montgolfier-Gymnasium
+district: Treptow-Köpenick
+last_updated: '2026-03-26'
+address: Ellernweg 20, 12487 Berlin
+coords:
+  lat: 52.44831039
+  lng: 13.50361842
+website: https://www.gemont.de
+phone: +49 30 6316677
+email: sekretariat@gemont.de
+traeger: öffentlich
+accepts_after_4th_grade: false
+profile:
+- MINT
+- music
+- kunst
+- bilingual_english
+ganztag: true
+languages:
+- name: Englisch
+  from_grade: 7
+- name: Französisch
+  from_grade: 7
+- name: Latein
+  from_grade: 8
+- name: Russisch
+admission_requirements:
+  selection_criteria: 'Bei Übernachfrage: Durchschnittsnote der Förderprognose (GPA of primary school recommendation) used
+    as selection criterion per berlin.de Schulportrait'
+  probeunterricht: false
+  entrance_test: false
+  notes: Standard Berlin Gymnasium admission from grade 7. No grundständig track (no intake at grade 5). Berlin.de lists
+    'Durchschnittsnote der Förderprognose' and 'andere Details' as oversubscription criteria; specific GPA threshold not
+    publicly listed.
+abitur_average: 2.4
+image_urls: []
+social_media:
+  instagram: https://www.instagram.com/gemont.official/
+ratings: {}
+completeness_score: 0.706
+field_confidence:
+  accepts_after_4th_grade: high
+  profile: high
+  languages: high
+  ganztag: high
+  open_day: high
+  admission_requirements: medium
+  ratings: high
+  abitur_average: low
+  image_urls: high
+  social_media: medium
+data_sources:
+- wfs_berlin
+- agent_research
+unverified_fields:
+- social_media
+- abitur_average
+- unverified_fields
+- ganztag
+- accepts_after_4th_grade
+- ratings
+- field_confidence
+- image_urls
+- admission_requirements
+- languages
+- profile
+_pinned_fields: []

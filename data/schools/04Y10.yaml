@@ -1,0 +1,57 @@
+school_id: 04Y10
+name: Marie-Curie-Gymnasium
+district: Charlottenburg-Wilmersdorf
+last_updated: '2026-03-26'
+address: Weimarische Straße 21, 10715 Berlin
+coords:
+  lat: 52.48041647
+  lng: 13.32456537
+website: http://www.mcg-berlin.de
+phone: +49 30 8599497110
+email: schulleitung@mcg-berlin.de
+traeger: öffentlich
+accepts_after_4th_grade: false
+profile:
+- MINT
+- bilingual_english
+- other
+ganztag: true
+languages:
+- name: Englisch
+  from_grade: 5
+- name: Französisch
+  from_grade: 6
+- name: Latein
+  from_grade: 7
+- name: Italienisch
+  from_grade: 8
+admission_requirements:
+  selection_criteria: Durchschnittsnote der Förderprognose bei Übernachfrage
+  entrance_test: false
+  notes: UNESCO-Projektschule. Bilingual Deutsch/Englisch stream. Offers Darstellendes Spiel and Psychologie in 
+    Sekundarstufe II. MINT focus (Mathematik, Informatik, Naturwissenschaften, Technik). Gebundenes Ganztagskonzept.
+image_urls: []
+social_media: {}
+ratings: {}
+completeness_score: 0.647
+field_confidence:
+  accepts_after_4th_grade: high
+  profile: high
+  languages: medium
+  ganztag: high
+  admission_requirements: high
+data_sources:
+- wfs_berlin
+- agent_research
+unverified_fields:
+- social_media
+- unverified_fields
+- ganztag
+- accepts_after_4th_grade
+- ratings
+- field_confidence
+- image_urls
+- admission_requirements
+- languages
+- profile
+_pinned_fields: []

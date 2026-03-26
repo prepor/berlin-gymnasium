@@ -1,0 +1,23 @@
+school_id: 09Y11
+name: Emmy-Noether-Gymnasium
+district: Treptow-Köpenick
+last_updated: '2026-03-26'
+address: Pablo-Neruda-Straße 6, 12559 Berlin
+coords:
+  lat: 52.4427715
+  lng: 13.58878445
+website: http://www.noether-gymnasium.de
+phone: +49 30 6542160
+email: sekretariat@noether-gymnasium.de
+traeger: öffentlich
+profile: []
+languages: []
+image_urls: []
+social_media: {}
+ratings: {}
+completeness_score: 0.353
+field_confidence: {}
+data_sources:
+- wfs_berlin
+unverified_fields: []
+_pinned_fields: []

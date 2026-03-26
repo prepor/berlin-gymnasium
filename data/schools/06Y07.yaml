@@ -1,0 +1,58 @@
+school_id: 06Y07
+name: Paulsen-Gymnasium
+district: Steglitz-Zehlendorf
+last_updated: '2026-03-26'
+address: Gritznerstraße 57, 12163 Berlin
+coords:
+  lat: 52.46159977
+  lng: 13.31426203
+website: https://wp.paulsen-gymnasium.de
+phone: +49 30 79742530
+email: paulsengymnasium@pg-berlin.de
+traeger: öffentlich
+accepts_after_4th_grade: false
+profile:
+- bilingual_english
+- MINT
+languages:
+- name: Englisch
+  from_grade: 7
+- name: Französisch
+  from_grade: 7
+- name: Latein
+  from_grade: 7
+- name: Spanisch
+  from_grade: 9
+admission_requirements:
+  oversubscribed: false
+  selection_criteria: 'Förderprognose (GPA of school report) is the primary criterion. For profile classes: weighted grades
+    in core subjects (Englisch double-weighted for bilingual profile) plus an interview process. Not typically oversubscribed
+    in recent years.'
+  probeunterricht: false
+  entrance_test: false
+  notes: Applicants must be in Klasse 6, must have Förderprognose, English must be first foreign language. Profile 
+    classes use an interview and weighted subject grades.
+image_urls: []
+social_media: {}
+ratings: {}
+completeness_score: 0.588
+field_confidence:
+  accepts_after_4th_grade: high
+  profile: high
+  languages: high
+  admission_requirements: high
+  oversubscribed: medium
+data_sources:
+- wfs_berlin
+- agent_research
+unverified_fields:
+- social_media
+- unverified_fields
+- accepts_after_4th_grade
+- ratings
+- field_confidence
+- image_urls
+- admission_requirements
+- languages
+- profile
+_pinned_fields: []

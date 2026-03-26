@@ -1,0 +1,63 @@
+school_id: 01Y02
+name: John-Lennon-Gymnasium
+district: Mitte
+last_updated: '2026-03-26'
+address: Zehdenicker Straße 17, 10119 Berlin
+coords:
+  lat: 52.53082149
+  lng: 13.40435932
+website: https://www.jlgym-berlin.de
+phone: +49 30 40500110
+email: sekretariat@jlgym-berlin.de
+traeger: öffentlich
+accepts_after_4th_grade: false
+profile:
+- bilingual_english
+- bilingual_french
+- other
+ganztag: true
+languages:
+- name: Englisch
+  from_grade: 7
+- name: Französisch
+  from_grade: 7
+- name: Spanisch
+  from_grade: 7
+- name: Latein
+  from_grade: 8
+admission_requirements:
+  notendurchschnitt: 1.3
+  oversubscribed: true
+  selection_criteria: Up to 70% of places awarded on basis of Förderprognose (grade average); remaining 30% by lottery. 
+    Sibling children given priority. No entrance test. Probeunterricht required only if Notensumme of German, Maths, 
+    English in Klasse 5 and 6 Halbjahr exceeds 14.
+  probeunterricht: true
+  entrance_test: false
+  notes: Heavily oversubscribed; school recommends listing only as first-choice school. In recent years, direct 
+    admission (60% quota) typically required average up to 1.3. English/French bilingual track (S1) and English/Spanish 
+    bilingual track (S4) available. Public school, no fees.
+image_urls: []
+social_media: {}
+ratings: {}
+completeness_score: 0.647
+field_confidence:
+  accepts_after_4th_grade: high
+  profile: high
+  languages: high
+  ganztag: high
+  admission_requirements: high
+data_sources:
+- wfs_berlin
+- agent_research
+unverified_fields:
+- social_media
+- unverified_fields
+- ganztag
+- accepts_after_4th_grade
+- ratings
+- field_confidence
+- image_urls
+- admission_requirements
+- languages
+- profile
+_pinned_fields: []

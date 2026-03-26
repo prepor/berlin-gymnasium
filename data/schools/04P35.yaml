@@ -1,0 +1,56 @@
+school_id: 04P35
+name: Mentora Gymnasium (KEIN Schulbetrieb)
+district: Charlottenburg-Wilmersdorf
+last_updated: '2026-03-26'
+address: Salzufer 6, 10587 Berlin
+coords:
+  lat: 52.51591261
+  lng: 13.32798593
+website: https://www.mentora-gymnasium.de
+phone: +49 30 810580838
+email: info@mentora-gymnasium.de
+traeger: privat
+accepts_after_4th_grade: false
+profile:
+- MINT
+- kunst
+- other
+ganztag: true
+languages:
+- name: Englisch
+  from_grade: 7
+- name: Spanisch
+  from_grade: 7
+admission_requirements:
+  selection_criteria: Gymnasiale Empfehlung (Förderprognose) erforderlich; Aufnahme ab Klasse 7; bei Übernachfrage 
+    Auswahl nach Durchschnittsnote
+  probeunterricht: true
+  entrance_test: false
+  notes: Private school (Ugur Bildungsgesellschaft mbH); school listed as 'KEIN Schulbetrieb' – operations status 
+    uncertain. Starts at grade 7 (Klassen 7–12). Probeunterricht applies under Berlin-wide rules if Förderprognose 
+    threshold exceeded. Open Ganztag (offener Ganztag) offered.
+image_urls: []
+social_media: {}
+ratings: {}
+completeness_score: 0.647
+field_confidence:
+  accepts_after_4th_grade: high
+  profile: high
+  languages: high
+  ganztag: medium
+  admission_requirements: medium
+data_sources:
+- wfs_berlin
+- agent_research
+unverified_fields:
+- social_media
+- unverified_fields
+- ganztag
+- accepts_after_4th_grade
+- ratings
+- field_confidence
+- image_urls
+- admission_requirements
+- languages
+- profile
+_pinned_fields: []

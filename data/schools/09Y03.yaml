@@ -1,0 +1,23 @@
+school_id: 09Y03
+name: Archenhold-Gymnasium
+district: Treptow-Köpenick
+last_updated: '2026-03-26'
+address: Rudower Straße 7, 12439 Berlin
+coords:
+  lat: 52.45136959
+  lng: 13.52289161
+website: https://archenhold.de
+phone: +49 30 6360195
+email: sekretariat@archenhold.de
+traeger: öffentlich
+profile: []
+languages: []
+image_urls: []
+social_media: {}
+ratings: {}
+completeness_score: 0.353
+field_confidence: {}
+data_sources:
+- wfs_berlin
+unverified_fields: []
+_pinned_fields: []

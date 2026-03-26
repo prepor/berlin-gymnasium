@@ -1,0 +1,59 @@
+school_id: 04P47
+name: Privates Europa-Gymnasium Berlin
+district: Charlottenburg-Wilmersdorf
+last_updated: '2026-03-26'
+address: Haubachstraße 8, 10585 Berlin
+coords:
+  lat: 52.51575785
+  lng: 13.30554122
+website: https://www.europa-gymnasium.eu
+phone: +49 30 74073717
+email: info@europa-gymnasium.eu
+traeger: privat
+accepts_after_4th_grade: false
+profile:
+- bilingual_english
+- other
+ganztag: true
+languages:
+- name: Englisch
+  from_grade: 7
+- name: Französisch
+  from_grade: 7
+- name: Spanisch
+  from_grade: 7
+admission_requirements:
+  oversubscribed: false
+  selection_criteria: Individual admission interviews; school looks beyond grades to consider full personality, 
+    motivation, and social behaviour. Probeunterricht offered optionally. Lateral entry possible at any time from 
+    another Gymnasium; from ISS/Gemeinschaftsschule only at start of school year.
+  probeunterricht: true
+  entrance_test: false
+  notes: Private school (gGmbH), staatlich anerkannte Ersatzschule. Starts at grade 7 (Klassen 7–12). Bilingual 
+    Deutsch/Englisch instruction from class 7; music, art, sport taught predominantly in English. Offene 
+    Ganztagsbetreuung (OGB). Income-adjusted fees.
+image_urls: []
+social_media: {}
+ratings: {}
+completeness_score: 0.647
+field_confidence:
+  accepts_after_4th_grade: high
+  profile: high
+  languages: high
+  ganztag: high
+  admission_requirements: high
+data_sources:
+- wfs_berlin
+- agent_research
+unverified_fields:
+- social_media
+- unverified_fields
+- ganztag
+- accepts_after_4th_grade
+- ratings
+- field_confidence
+- image_urls
+- admission_requirements
+- languages
+- profile
+_pinned_fields: []

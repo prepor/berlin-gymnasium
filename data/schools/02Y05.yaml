@@ -1,0 +1,51 @@
+school_id: 02Y05
+name: Dathe-Gymnasium
+district: Friedrichshain-Kreuzberg
+last_updated: '2026-03-26'
+address: Helsingforser Straße 11, 10243 Berlin
+coords:
+  lat: 52.51024808
+  lng: 13.44541821
+website: https://www.dathe-gymnasium.de
+phone: +49 30 2936063
+email: sek@dathe-gymnasium.de
+traeger: öffentlich
+accepts_after_4th_grade: false
+profile:
+- MINT
+- other
+languages:
+- name: Englisch
+  from_grade: 7
+- name: Französisch
+  from_grade: 7
+- name: Latein
+  from_grade: 7
+admission_requirements:
+  selection_criteria: Aufnahme nach Durchschnittsnote der Förderprognose bei Übernachfrage
+  entrance_test: false
+  notes: Das Dathe-Gymnasium ist bekannt für sein Schnelllerner-/MINT-Konzept; Kooperation mit der Humboldt-Universität 
+    Berlin im Rahmen des Schulversuchs zur Förderung besonderer Begabungen (begabungslotse.de)
+image_urls: []
+social_media: {}
+ratings: {}
+completeness_score: 0.588
+field_confidence:
+  accepts_after_4th_grade: medium
+  profile: medium
+  languages: low
+  admission_requirements: low
+data_sources:
+- wfs_berlin
+- agent_research
+unverified_fields:
+- social_media
+- unverified_fields
+- accepts_after_4th_grade
+- ratings
+- field_confidence
+- image_urls
+- admission_requirements
+- languages
+- profile
+_pinned_fields: []

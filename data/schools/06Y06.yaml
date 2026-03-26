@@ -1,0 +1,57 @@
+school_id: 06Y06
+name: Beethoven-Gymnasium
+district: Steglitz-Zehlendorf
+last_updated: '2026-03-26'
+address: Barbarastraße 9, 12249 Berlin
+coords:
+  lat: 52.4325648
+  lng: 13.34221524
+website: http://www.beethoven-gymnasium.eu
+phone: +49 30 76890530
+email: Leitung@beethoven-gymnasium.eu
+traeger: öffentlich
+accepts_after_4th_grade: false
+profile:
+- music
+ganztag: false
+languages:
+- name: Englisch
+  from_grade: 7
+- name: Französisch
+  from_grade: 7
+- name: Latein
+  from_grade: 7
+admission_requirements:
+  selection_criteria: Entrance audition/test required for musikbetonte classes; Durchschnittsnote der Förderprognose for
+    standard classes
+  probeunterricht: false
+  entrance_test: true
+  notes: The Beethoven-Gymnasium is known as a music-oriented Gymnasium (Musikgymnasium) in Steglitz-Zehlendorf. 
+    Referenced in district 2017 brochure as one of the Musikgymnasien with separate early registration schedule. No 
+    grundständige Züge confirmed. Web search exhausted before dedicated search for this school.
+image_urls: []
+social_media: {}
+ratings: {}
+completeness_score: 0.647
+field_confidence:
+  accepts_after_4th_grade: medium
+  profile: medium
+  entrance_test: medium
+  languages: low
+  ganztag: low
+  admission_requirements: medium
+data_sources:
+- wfs_berlin
+- agent_research
+unverified_fields:
+- social_media
+- unverified_fields
+- ganztag
+- accepts_after_4th_grade
+- ratings
+- field_confidence
+- image_urls
+- admission_requirements
+- languages
+- profile
+_pinned_fields: []

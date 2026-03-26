@@ -1,0 +1,65 @@
+school_id: 09Y05
+name: Alexander-von-Humboldt-Gymnasium
+district: Treptow-Köpenick
+last_updated: '2026-03-26'
+address: Oberspreestraße 173, 12555 Berlin
+coords:
+  lat: 52.44519832
+  lng: 13.56718901
+website: https://www.avh.berlin
+phone: +49 30 6519788
+email: sekretariat@avh.berlin
+traeger: öffentlich
+accepts_after_4th_grade: false
+profile:
+- MINT
+- altsprachlich
+- other
+ganztag: false
+languages:
+- name: Englisch
+  from_grade: 7
+- name: Französisch
+  from_grade: 7
+- name: Latein
+- name: Russisch
+- name: Spanisch
+admission_requirements:
+  selection_criteria: 'Bei Übernachfrage: Durchschnittsnote der Förderprognose (Grundschulempfehlung). Aufnahme in die Profilklasse
+    (MINT) nach besonderen leistungsorientierten Kriterien (schulinterner NC aus Mathematik, Deutsch und Naturwissenschaft).'
+  probeunterricht: false
+  entrance_test: false
+  notes: Profilklasse (MINT-Spitzenförderung) hat separate leistungsorientierte Aufnahmekriterien. Schwerpunktklassen 
+    (mathematisch-naturwissenschaftlich, Sprachen, Universal) werden nach Schülerwunsch eingeteilt. Beratungsgespräch 
+    mit Schulleitung vor Anmeldung empfohlen.
+image_urls: []
+social_media:
+  instagram: https://www.instagram.com/avh.berlin/
+ratings: {}
+completeness_score: 0.647
+field_confidence:
+  accepts_after_4th_grade: high
+  profile: high
+  languages: medium
+  ganztag: low
+  open_day: low
+  admission_requirements: high
+  ratings: high
+  abitur_average: low
+  image_urls: low
+  social_media: high
+data_sources:
+- wfs_berlin
+- agent_research
+unverified_fields:
+- social_media
+- unverified_fields
+- ganztag
+- accepts_after_4th_grade
+- ratings
+- field_confidence
+- image_urls
+- admission_requirements
+- languages
+- profile
+_pinned_fields: []
