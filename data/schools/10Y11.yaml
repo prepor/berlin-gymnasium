@@ -27,15 +27,12 @@ languages:
   from_grade: 9
 admission_requirements:
   oversubscribed: true
-  selection_criteria: 'MINT-Profilklasse (ab Kl. 5): gewichtete Notensumme ≤ 15 (Mathe x3, Deutsch x2, Englisch/Sachkunde
-    x1) plus Aufnahmetest. Musik-Profilklasse (ab Kl. 5): musikalischer Eignungstest (min. 60/100 Punkte), mindestens gute
-    Noten in Deutsch, Mathe, Sachkunde, Musik. Regelklassen ab Kl. 7 nach Förderprognose-Durchschnitt.'
+  selection_criteria: 'MINT-Profilklasse (ab Kl. 5): gewichtete Notensumme ≤ 15 (Mathe x3, Deutsch x2, Englisch/Sachkunde x1) plus Aufnahmetest. Musik-Profilklasse (ab Kl. 5): musikalischer Eignungstest (min. 60/100 Punkte), mindestens gute Noten in Deutsch, Mathe, Sachkunde, Musik. Regelklassen ab Kl. 7 nach Förderprognose-Durchschnitt.'
   probeunterricht: true
   entrance_test: true
-  notes: 'Musikprofilklasse: Schüler müssen Bereitschaft zur Mitwirkung in Schulensembles schriftlich erklären. In Kl. 5 ist
-    Instrumentalunterricht obligatorisch und kostenfrei. Aufnahme in MINT-Klasse auf Probe. Deutliche Übernachfrage für Profilklassen
-    – nur bei Erstwunsch realistisch.'
-image_urls: []
+  notes: 'Musikprofilklasse: Schüler müssen Bereitschaft zur Mitwirkung in Schulensembles schriftlich erklären. In Kl. 5 ist Instrumentalunterricht obligatorisch und kostenfrei. Aufnahme in MINT-Klasse auf Probe. Deutliche Übernachfrage für Profilklassen – nur bei Erstwunsch realistisch.'
+image_urls:
+- https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/Melanchthon-Gymnasium_Berlin_Haupteingang_Haus1_Aula_2016.jpg/800px-Melanchthon-Gymnasium_Berlin_Haupteingang_Haus1_Aula_2016.jpg
 social_media: {}
 ratings: {}
 completeness_score: 0.588
@@ -48,6 +45,7 @@ field_confidence:
 data_sources:
 - wfs_berlin
 - agent_research
+- wikimedia
 unverified_fields:
 - social_media
 - unverified_fields

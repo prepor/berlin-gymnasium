@@ -26,9 +26,9 @@ admission_requirements:
   selection_criteria: Durchschnittsnote der Förderprognose
   probeunterricht: false
   entrance_test: false
-  notes: No grundständige Züge confirmed in Steglitz-Zehlendorf district records for this school. Data on this school is
-    limited; web search exhausted before dedicated search.
-image_urls: []
+  notes: No grundständige Züge confirmed in Steglitz-Zehlendorf district records for this school. Data on this school is limited; web search exhausted before dedicated search.
+image_urls:
+- https://upload.wikimedia.org/wikipedia/commons/thumb/b/b3/Nikolassee_Dreilindenstra%C3%9Fe_Dreilinden-Gymnasium.JPG/800px-Nikolassee_Dreilindenstra%C3%9Fe_Dreilinden-Gymnasium.JPG
 social_media: {}
 ratings: {}
 completeness_score: 0.647
@@ -41,6 +41,7 @@ field_confidence:
 data_sources:
 - wfs_berlin
 - agent_research
+- wikimedia
 unverified_fields:
 - social_media
 - unverified_fields

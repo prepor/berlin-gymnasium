@@ -15,6 +15,14 @@ scrape:
 enrich:
     uv run --project pipeline python pipeline/run.py --step enrich
 
+# Photos: dedicated photo enrichment for schools missing images
+photos:
+    uv run --project pipeline python pipeline/run.py --step photos
+
+# Photos (force): re-search photos for all schools
+photos-force:
+    uv run --project pipeline python pipeline/run.py --step photos --force
+
 # Validate: Pydantic validation of all school records
 validate:
     uv run --project pipeline python pipeline/run.py --step validate

@@ -26,20 +26,13 @@ languages:
 open_day: '2026-11-28'
 admission_requirements:
   oversubscribed: true
-  selection_criteria: Admission from grade 7 only; Englisch as first foreign language is mandatory. Students choose a 
-    profile (Biologie, Sport, Kunst, or Musik) and rank 1st/2nd/3rd preference at registration. Admission requires at 
-    least 'good' (gut) performance in subjects relevant to chosen profile (Naturwissenschaften, Sport, Kunst, or Musik) 
-    plus gymnasium eligibility. At oversubscription within a profile, ranking based on Notensumme of last two school 
-    reports in Deutsch, Englisch, Mathematik, and the profile-specific subject. 30 boarding places reserved 
-    (Internatskontingent) as priority. No Geschwisterbonus or standard Härtefallregelung.
+  selection_criteria: Admission from grade 7 only; Englisch as first foreign language is mandatory. Students choose a profile (Biologie, Sport, Kunst, or Musik) and rank 1st/2nd/3rd preference at registration. Admission requires at least 'good' (gut) performance in subjects relevant to chosen profile (Naturwissenschaften, Sport, Kunst, or Musik) plus gymnasium eligibility. At oversubscription within a profile, ranking based on Notensumme of last two school reports in Deutsch, Englisch, Mathematik, and the profile-specific subject. 30 boarding places reserved (Internatskontingent) as priority. No Geschwisterbonus or standard Härtefallregelung.
   probeunterricht: false
   entrance_test: false
-  notes: Unique island school (Insel Scharfenberg in Tegeler See) with boarding school (Internat, ~90 places). Gebundene
-    Ganztagsschule. 'Schule besonderer pädagogischer Prägung'. Practical learning includes agriculture, riding, sailing,
-    rowing, beekeeping. Fremdsprachenfolge strictly Englisch (1st FS) then Französisch (2nd FS from grade 7) — no 
-    deviations permitted. A handwritten Motivationsschreiben from the child is required at application. From grade 10, 
-    students from abroad (EU citizens) can also be admitted to the boarding school.
-image_urls: []
+  notes: Unique island school (Insel Scharfenberg in Tegeler See) with boarding school (Internat, ~90 places). Gebundene Ganztagsschule. 'Schule besonderer pädagogischer Prägung'. Practical learning includes agriculture, riding, sailing, rowing, beekeeping. Fremdsprachenfolge strictly Englisch (1st FS) then Französisch (2nd FS from grade 7) — no deviations permitted. A handwritten Motivationsschreiben from the child is required at application. From grade 10, students from abroad (EU citizens) can also be admitted to the boarding school.
+image_urls:
+- https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Lehrgeb%C3%A4ude_%26_Werkstatt%2C_Schulfarm_Scharfenberg.jpg/800px-Lehrgeb%C3%A4ude_%26_Werkstatt%2C_Schulfarm_Scharfenberg.jpg
+- https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/F%C3%A4hranleger%2C_Insel_Scharfenberg.jpg/800px-F%C3%A4hranleger%2C_Insel_Scharfenberg.jpg
 social_media: {}
 ratings: {}
 completeness_score: 0.706
@@ -53,6 +46,7 @@ field_confidence:
 data_sources:
 - wfs_berlin
 - agent_research
+- wikimedia
 unverified_fields:
 - open_day
 - social_media

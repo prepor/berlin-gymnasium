@@ -22,13 +22,13 @@ languages:
 - name: Latein
   from_grade: 8
 admission_requirements:
-  selection_criteria: Durchschnittsnote der Förderprognose is the primary oversubscription criterion per Berlin.de 
-    school portrait.
+  selection_criteria: Durchschnittsnote der Förderprognose is the primary oversubscription criterion per Berlin.de school portrait.
   probeunterricht: false
   entrance_test: false
-  notes: 'Two profiles: MINT and Futur3 (BNE/sustainability profile — first such class in Berlin). Certified Umweltschule
-    (20+ times) and IT-Musterschule. Cooperates with Lilienthal-Gymnasium and Willi-Graf-Gymnasium for Oberstufe.'
-image_urls: []
+  notes: 'Two profiles: MINT and Futur3 (BNE/sustainability profile — first such class in Berlin). Certified Umweltschule (20+ times) and IT-Musterschule. Cooperates with Lilienthal-Gymnasium and Willi-Graf-Gymnasium for Oberstufe.'
+image_urls:
+- https://upload.wikimedia.org/wikipedia/commons/thumb/f/f9/Lichterfelde_Drakestra%C3%9Fe_Goethe-Gymnasium_2020-001.jpg/800px-Lichterfelde_Drakestra%C3%9Fe_Goethe-Gymnasium_2020-001.jpg
+- https://upload.wikimedia.org/wikipedia/commons/thumb/a/ac/Lichterfelde_Drakestra%C3%9Fe_Goethe-Schule-001.JPG/800px-Lichterfelde_Drakestra%C3%9Fe_Goethe-Schule-001.JPG
 social_media: {}
 ratings: {}
 completeness_score: 0.588
@@ -40,6 +40,7 @@ field_confidence:
 data_sources:
 - wfs_berlin
 - agent_research
+- wikimedia
 unverified_fields:
 - social_media
 - unverified_fields

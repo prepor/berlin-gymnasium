@@ -12,12 +12,14 @@ email: 08Y01@08Y01.schule.berlin.de
 traeger: öffentlich
 profile: []
 languages: []
-image_urls: []
+image_urls:
+- https://commons.wikimedia.org/wiki/Special:FilePath/Albrecht-Dürer-Schule-01.jpg?width=800
 social_media: {}
 ratings: {}
 completeness_score: 0.353
 field_confidence: {}
 data_sources:
 - wfs_berlin
+- wikimedia
 unverified_fields: []
 _pinned_fields: []

@@ -12,12 +12,15 @@ email: sekretariat@askanisches-gymnasium.de
 traeger: öffentlich
 profile: []
 languages: []
-image_urls: []
+image_urls:
+- https://commons.wikimedia.org/wiki/Special:FilePath/Askanischeschule-tempelhof.jpg?width=800
+- https://commons.wikimedia.org/wiki/Special:FilePath/09075206%20Berlin%20Tempelhof,%20Friedrich-Franz-Straße%2040%20004.JPG?width=800
 social_media: {}
 ratings: {}
 completeness_score: 0.353
 field_confidence: {}
 data_sources:
 - wfs_berlin
+- wikimedia
 unverified_fields: []
 _pinned_fields: []

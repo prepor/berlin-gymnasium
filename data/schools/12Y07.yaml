@@ -30,17 +30,12 @@ languages:
   from_grade: 8
 admission_requirements:
   oversubscribed: true
-  selection_criteria: Admission to the grundständig bilingual French track (Klasse 5) is by ranked application list; 
-    admission to the MINT profile class is also by ranked list. Regular tracks (Klasse 7) accept students with first 
-    foreign language French or English. Entry into the bilingual track at Klasse 7 requires an advisory interview 
-    regarding French proficiency and is subject to available places.
+  selection_criteria: Admission to the grundständig bilingual French track (Klasse 5) is by ranked application list; admission to the MINT profile class is also by ranked list. Regular tracks (Klasse 7) accept students with first foreign language French or English. Entry into the bilingual track at Klasse 7 requires an advisory interview regarding French proficiency and is subject to available places.
   probeunterricht: false
   entrance_test: false
-  notes: The grundständig bilingual track starts in Klasse 5 regardless of the foreign language begun in Grundschule. 
-    The school has ~1100 students across ~95 teachers, making it one of the largest Gymnasien in Reinickendorf. AbiBac 
-    (German-French double qualification) is available for bilingual track students. CertiLingua excellence label also 
-    attainable.
-image_urls: []
+  notes: The grundständig bilingual track starts in Klasse 5 regardless of the foreign language begun in Grundschule. The school has ~1100 students across ~95 teachers, making it one of the largest Gymnasien in Reinickendorf. AbiBac (German-French double qualification) is available for bilingual track students. CertiLingua excellence label also attainable.
+image_urls:
+- https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/RoRo_Entr%C3%A9e_b%C3%A2timent_principal.jpg/800px-RoRo_Entr%C3%A9e_b%C3%A2timent_principal.jpg
 social_media: {}
 ratings: {}
 completeness_score: 0.647
@@ -58,6 +53,7 @@ field_confidence:
 data_sources:
 - wfs_berlin
 - agent_research
+- wikimedia
 unverified_fields:
 - social_media
 - unverified_fields

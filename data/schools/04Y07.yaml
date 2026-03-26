@@ -25,9 +25,9 @@ languages:
 admission_requirements:
   selection_criteria: Durchschnittsnote der Förderprognose bei Übernachfrage
   entrance_test: false
-  notes: Bilingual streams S1 (Englisch/Französisch), S4 (Englisch/Spanisch), S5 (Französisch/Englisch). Offers Zweiter 
-    Bildungsweg (evening/adult education) in same building.
-image_urls: []
+  notes: Bilingual streams S1 (Englisch/Französisch), S4 (Englisch/Spanisch), S5 (Französisch/Englisch). Offers Zweiter Bildungsweg (evening/adult education) in same building.
+image_urls:
+- https://commons.wikimedia.org/wiki/Special:FilePath/Friedrich%20ebert%20schule%20berlin%2015.01.2015%2013-15-46.JPG?width=800
 social_media: {}
 ratings: {}
 completeness_score: 0.588
@@ -39,6 +39,7 @@ field_confidence:
 data_sources:
 - wfs_berlin
 - agent_research
+- wikimedia
 unverified_fields:
 - social_media
 - unverified_fields

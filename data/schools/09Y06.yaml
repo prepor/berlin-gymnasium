@@ -12,12 +12,14 @@ email: sekretariat@ghs-berlin.de
 traeger: öffentlich
 profile: []
 languages: []
-image_urls: []
+image_urls:
+- https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/Friedrichshagen_Bruno-Wille-Stra%C3%9Fe_Gerhard-Hauptmann-Schule.JPG/800px-Friedrichshagen_Bruno-Wille-Stra%C3%9Fe_Gerhard-Hauptmann-Schule.JPG
 social_media: {}
 ratings: {}
 completeness_score: 0.353
 field_confidence: {}
 data_sources:
 - wfs_berlin
+- wikimedia
 unverified_fields: []
 _pinned_fields: []

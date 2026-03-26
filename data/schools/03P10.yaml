@@ -24,9 +24,10 @@ admission_requirements:
   selection_criteria: Aufnahmetest für Klasse 5; Eltern und Schüler werden zu einem Gespräch eingeladen.
   probeunterricht: false
   entrance_test: true
-  notes: Catholic private school (Erzbistum Berlin). Entrance test for grade 5 admission. Three-week social internship 
-    in grade 10.
-image_urls: []
+  notes: Catholic private school (Erzbistum Berlin). Entrance test for grade 5 admission. Three-week social internship in grade 10.
+image_urls:
+- https://commons.wikimedia.org/wiki/Special:FilePath/Katholische_Theresienschule_Berlin_Weißensee.jpg?width=800
+- https://commons.wikimedia.org/wiki/Special:FilePath/Behaimstraße_29-39_(Berlin-Weißensee)_Theresienschule.jpg?width=800
 social_media: {}
 ratings: {}
 completeness_score: 0.588
@@ -39,6 +40,7 @@ field_confidence:
 data_sources:
 - wfs_berlin
 - agent_research
+- wikimedia
 unverified_fields:
 - social_media
 - unverified_fields

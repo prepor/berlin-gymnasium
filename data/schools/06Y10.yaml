@@ -27,15 +27,13 @@ languages:
   from_grade: 8
 admission_requirements:
   notendurchschnitt: 2.2
-  selection_criteria: At oversubscription, places in class 7 are allocated by Förderprognose. Children whose 
-    Förderprognose exceeds 2.2 may only enrol after passing a Probeunterricht. Four classes (128 places) per year group.
-    Lateral entry requires last four reports and a motivation letter.
+  selection_criteria: At oversubscription, places in class 7 are allocated by Förderprognose. Children whose Förderprognose exceeds 2.2 may only enrol after passing a Probeunterricht. Four classes (128 places) per year group. Lateral entry requires last four reports and a motivation letter.
   probeunterricht: true
   entrance_test: false
-  notes: Media, theatre and music-focused profile alongside MINT and languages. Bilingual English stream in classes 9/10
-    (History in English). No fixed profile class choice required at enrolment; profiling via Wahlpflichtfächer from 
-    class 8.
-image_urls: []
+  notes: Media, theatre and music-focused profile alongside MINT and languages. Bilingual English stream in classes 9/10 (History in English). No fixed profile class choice required at enrolment; profiling via Wahlpflichtfächer from class 8.
+image_urls:
+- https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/Lichterfelde_Ringstra%C3%9Fe_Lilienthal-Gymnasium.JPG/800px-Lichterfelde_Ringstra%C3%9Fe_Lilienthal-Gymnasium.JPG
+- https://upload.wikimedia.org/wikipedia/commons/thumb/a/ad/Lichterfelde_W%C3%BCllenweberstra%C3%9Fe_Lilienthal-Gymnasium.JPG/800px-Lichterfelde_W%C3%BCllenweberstra%C3%9Fe_Lilienthal-Gymnasium.JPG
 social_media: {}
 ratings: {}
 completeness_score: 0.588
@@ -48,6 +46,7 @@ field_confidence:
 data_sources:
 - wfs_berlin
 - agent_research
+- wikimedia
 unverified_fields:
 - social_media
 - unverified_fields

@@ -12,12 +12,14 @@ email: sekretariat@ernst-abbe.schule.berlin.de
 traeger: öffentlich
 profile: []
 languages: []
-image_urls: []
+image_urls:
+- https://commons.wikimedia.org/wiki/Special:FilePath/Sonnenallee%2079%203.JPG?width=800
 social_media: {}
 ratings: {}
 completeness_score: 0.353
 field_confidence: {}
 data_sources:
 - wfs_berlin
+- wikimedia
 unverified_fields: []
 _pinned_fields: []

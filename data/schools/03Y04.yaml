@@ -20,9 +20,9 @@ languages:
 - name: Latein
   from_grade: 7
 admission_requirements:
-  notes: Listed as grundständiges Gymnasium by Tagesspiegel (Pankow, Prenzlauer Berg). Further details not found in 
-    available search results.
-image_urls: []
+  notes: Listed as grundständiges Gymnasium by Tagesspiegel (Pankow, Prenzlauer Berg). Further details not found in available search results.
+image_urls:
+- https://commons.wikimedia.org/wiki/Special:FilePath/Mk_Berlin_Dunckerstraße.jpg?width=800
 social_media: {}
 ratings: {}
 completeness_score: 0.529
@@ -31,6 +31,7 @@ field_confidence:
 data_sources:
 - wfs_berlin
 - agent_research
+- wikimedia
 unverified_fields:
 - social_media
 - unverified_fields

@@ -12,12 +12,15 @@ email: sekretariat@ong.berlin
 traeger: öffentlich
 profile: []
 languages: []
-image_urls: []
+image_urls:
+- https://upload.wikimedia.org/wikipedia/commons/thumb/7/7b/Otto-nagel-gymn01.jpg/800px-Otto-nagel-gymn01.jpg
+- https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Otto-nagel-gymn02.jpg/800px-Otto-nagel-gymn02.jpg
 social_media: {}
 ratings: {}
 completeness_score: 0.353
 field_confidence: {}
 data_sources:
 - wfs_berlin
+- wikimedia
 unverified_fields: []
 _pinned_fields: []

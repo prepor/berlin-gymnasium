@@ -23,13 +23,12 @@ languages:
   from_grade: 7
 admission_requirements:
   oversubscribed: true
-  selection_criteria: Entrance test (Aufnahmetest) required; up to 60 students with the highest combined score are 
-    admitted when oversubscribed.
+  selection_criteria: Entrance test (Aufnahmetest) required; up to 60 students with the highest combined score are admitted when oversubscribed.
   probeunterricht: false
   entrance_test: true
-  notes: School was among the nine most sought-after Gymnasien in Berlin for 2023/24 enrolment. Grundständige (from 
-    grade 5) and standard (from grade 7) tracks both available.
-image_urls: []
+  notes: School was among the nine most sought-after Gymnasien in Berlin for 2023/24 enrolment. Grundständige (from grade 5) and standard (from grade 7) tracks both available.
+image_urls:
+- https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/Lueckstr_Schule1.jpg/800px-Lueckstr_Schule1.jpg
 social_media: {}
 ratings: {}
 completeness_score: 0.647
@@ -45,6 +44,7 @@ field_confidence:
 data_sources:
 - wfs_berlin
 - agent_research
+- wikimedia
 unverified_fields:
 - social_media
 - unverified_fields

@@ -14,7 +14,8 @@ profile: []
 languages: []
 admission_requirements:
   notes: No search results retrieved in this session; data not available.
-image_urls: []
+image_urls:
+- https://commons.wikimedia.org/wiki/Special:FilePath/Schmargendorf_Salzbrunner_Straße_Gymnasium_zum_grauen_Kloster.jpg?width=800
 social_media: {}
 ratings: {}
 completeness_score: 0.412
@@ -22,6 +23,7 @@ field_confidence: {}
 data_sources:
 - wfs_berlin
 - agent_research
+- wikimedia
 unverified_fields:
 - unverified_fields
 - social_media

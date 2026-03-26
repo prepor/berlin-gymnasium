@@ -12,12 +12,15 @@ email: 12Y08@12Y08.schule.berlin.de
 traeger: öffentlich
 profile: []
 languages: []
-image_urls: []
+image_urls:
+- https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Thomas-Mann-Gymnasium_Berlin_Haupteingang.jpg/800px-Thomas-Mann-Gymnasium_Berlin_Haupteingang.jpg
+- https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/Thomas-Mann-Gymnasium_Eingang.jpg/800px-Thomas-Mann-Gymnasium_Eingang.jpg
 social_media: {}
 ratings: {}
 completeness_score: 0.353
 field_confidence: {}
 data_sources:
 - wfs_berlin
+- wikimedia
 unverified_fields: []
 _pinned_fields: []

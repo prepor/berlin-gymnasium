@@ -30,15 +30,12 @@ languages:
 - name: Chinesisch
   from_grade: 9
 admission_requirements:
-  selection_criteria: 'Berlin standard process for grade-5 grundständig track: Gymnasium recommendation in Förderprognose
-    required; grade sum from Deutsch, Fremdsprache, Mathematik, Sachunterricht used for ranking; lottery among equally ranked
-    applicants if places remain oversubscribed.'
+  selection_criteria: 'Berlin standard process for grade-5 grundständig track: Gymnasium recommendation in Förderprognose required; grade sum from Deutsch, Fremdsprache, Mathematik, Sachunterricht used for ranking; lottery among equally ranked applicants if places remain oversubscribed.'
   probeunterricht: false
   entrance_test: false
-  notes: 'Offers both a grundständiger Zweig (from grade 5, altsprachlich: Latin + English then Ancient Greek or French) and
-    a standard Regelzug (from grade 7, bilingual English track). CertiLingua excellence label awarded at Abitur. MINT-freundliche
-    Schule since 2013.'
-image_urls: []
+  notes: 'Offers both a grundständiger Zweig (from grade 5, altsprachlich: Latin + English then Ancient Greek or French) and a standard Regelzug (from grade 7, bilingual English track). CertiLingua excellence label awarded at Abitur. MINT-freundliche Schule since 2013.'
+image_urls:
+- https://upload.wikimedia.org/wikipedia/commons/thumb/f/f7/Europ%C3%A4isches_Gymnasium_Bertha_von_Suttner.jpg/800px-Europ%C3%A4isches_Gymnasium_Bertha_von_Suttner.jpg
 social_media: {}
 ratings: {}
 completeness_score: 0.647
@@ -51,6 +48,7 @@ field_confidence:
 data_sources:
 - wfs_berlin
 - agent_research
+- wikimedia
 unverified_fields:
 - social_media
 - unverified_fields

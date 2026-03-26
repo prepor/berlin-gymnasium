@@ -23,12 +23,12 @@ languages:
 - name: Latein
   from_grade: 9
 admission_requirements:
-  selection_criteria: Aufnahme nach Durchschnittsnote der Förderprognose; Probeunterricht erforderlich bei Notenschnitt 
-    ab 2,66 in Klasse 4
+  selection_criteria: Aufnahme nach Durchschnittsnote der Förderprognose; Probeunterricht erforderlich bei Notenschnitt ab 2,66 in Klasse 4
   probeunterricht: true
   entrance_test: false
   notes: Kooperation mit Siemens AG; naturwissenschaftliches Profil und IT-Profil. First foreign language Englisch only.
-image_urls: []
+image_urls:
+- https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/Wilhelm_von_Siemens_Gymnasium%2C_Berlin-Biesdorf%2C_537-643.jpg/800px-Wilhelm_von_Siemens_Gymnasium%2C_Berlin-Biesdorf%2C_537-643.jpg
 social_media: {}
 ratings: {}
 completeness_score: 0.647
@@ -41,6 +41,7 @@ field_confidence:
 data_sources:
 - wfs_berlin
 - agent_research
+- wikimedia
 unverified_fields:
 - social_media
 - unverified_fields

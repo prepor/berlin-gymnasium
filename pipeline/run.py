@@ -31,7 +31,7 @@ def load_config(config_path: str) -> dict:
 
 def check_api_key(step: str) -> None:
     """Fail fast if ANTHROPIC_API_KEY missing for steps that need it (D-27)."""
-    if step in ("enrich", "all"):
+    if step in ("enrich", "photos", "all"):
         key = os.environ.get("ANTHROPIC_API_KEY")
         if not key:
             print(
@@ -58,6 +58,11 @@ async def step_scrape(config: dict) -> None:
 async def step_enrich(schools: list[dict], config: dict, force: bool) -> list[dict]:
     from pipeline.agent import run_enrich
     return await run_enrich(schools, config, force)
+
+
+async def step_photos(config: dict, force: bool) -> None:
+    from pipeline.photos import run_photos_step
+    await run_photos_step(config, force)
 
 
 def step_validate_and_merge(
@@ -106,25 +111,29 @@ def load_enriched_cache(schools: list[dict], config: dict) -> list[dict]:
 
 
 async def run_all(config: dict, force: bool) -> None:
-    """Run complete pipeline: seed → scrape → enrich → validate+merge → write."""
+    """Run complete pipeline: seed → scrape → enrich → validate+merge → write → photos."""
     print("=== Berlin Gymnasien Pipeline ===")
 
     # Step 1: Seed
-    print("\n[1/4] Seeding school list from WFS + Eckdaten XLSX...")
+    print("\n[1/5] Seeding school list from WFS + Eckdaten XLSX...")
     schools = await step_seed(config)
 
     # Step 2: Scrape (no-op)
-    print("\n[2/4] Structured scrape...")
+    print("\n[2/5] Structured scrape...")
     await step_scrape(config)
 
     # Step 3: Enrich
-    print(f"\n[3/4] Enriching {len(schools)} schools with Claude agents...")
+    print(f"\n[3/5] Enriching {len(schools)} schools with Claude agents...")
     agent_results = await step_enrich(schools, config, force)
 
     # Step 4: Validate + Merge + Write
-    print("\n[4/4] Validating, merging, and writing YAML files...")
+    print("\n[4/5] Validating, merging, and writing YAML files...")
     records, all_conflicts = step_validate_and_merge(schools, agent_results)
     step_write(records, all_conflicts, config)
+
+    # Step 5: Photo enrichment (runs after YAML files exist)
+    print("\n[5/5] Finding school photos...")
+    await step_photos(config, force)
 
     print(f"\n=== Pipeline complete: {len(records)} school YAML files in {config.get('data_dir', 'data/schools')} ===")
 
@@ -133,7 +142,7 @@ async def main() -> None:
     parser = argparse.ArgumentParser(description="Berlin Gymnasien scraping pipeline")
     parser.add_argument(
         "--step",
-        choices=["seed", "scrape", "enrich", "validate", "write", "all"],
+        choices=["seed", "scrape", "enrich", "photos", "validate", "write", "all"],
         required=True,
         help="Pipeline step to run",
     )
@@ -170,6 +179,9 @@ async def main() -> None:
     elif args.step == "enrich":
         schools = load_schools_index(config)
         await step_enrich(schools, config, args.force)
+
+    elif args.step == "photos":
+        await step_photos(config, args.force)
 
     elif args.step == "validate":
         schools = load_schools_index(config)

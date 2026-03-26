@@ -25,15 +25,13 @@ languages:
 admission_requirements:
   notendurchschnitt: 2.3
   oversubscribed: true
-  selection_criteria: The sole admission criterion is the Förderprognose from primary school. Children with a 
-    Förderprognose of 2.3 or worse must pass a Probeunterricht (trial lesson) before applying. Typically oversubscribed.
-    No pre-selection for profiles required at admission.
+  selection_criteria: The sole admission criterion is the Förderprognose from primary school. Children with a Förderprognose of 2.3 or worse must pass a Probeunterricht (trial lesson) before applying. Typically oversubscribed. No pre-selection for profiles required at admission.
   probeunterricht: true
   entrance_test: false
-  notes: Notably integrates blind and visually impaired students since 1980. Cooperates with Paulsen-Gymnasium for 
-    Oberstufe course offerings. No profile choice required at admission; profiling via Wahlpflichtfächer from classes 
-    8–10.
-image_urls: []
+  notes: Notably integrates blind and visually impaired students since 1980. Cooperates with Paulsen-Gymnasium for Oberstufe course offerings. No profile choice required at admission; profiling via Wahlpflichtfächer from classes 8–10.
+image_urls:
+- https://upload.wikimedia.org/wikipedia/commons/thumb/1/1c/130908-Steglitz-Fichtenberg-Oberschule.JPG/800px-130908-Steglitz-Fichtenberg-Oberschule.JPG
+- https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/Fichtenberg_Oberschule1_Berlin.JPG/800px-Fichtenberg_Oberschule1_Berlin.JPG
 social_media: {}
 ratings: {}
 completeness_score: 0.588
@@ -47,6 +45,7 @@ field_confidence:
 data_sources:
 - wfs_berlin
 - agent_research
+- wikimedia
 unverified_fields:
 - social_media
 - unverified_fields

@@ -25,14 +25,12 @@ languages:
   from_grade: 7
 admission_requirements:
   oversubscribed: true
-  selection_criteria: Standardisierter Eingangstest (50 Minuten) für Aufnahme in Klasse 5. Notensumme (Mathematik x3 + 
-    Deutsch x2 + Fremdsprache + Sachkunde) ≤ 15 für Zulassung zum Test. Auswahl nach Testergebnis (doppelt gewichtet), 
-    Zeugnisnoten und Kompetenzkriterien der Förderprognose.
+  selection_criteria: Standardisierter Eingangstest (50 Minuten) für Aufnahme in Klasse 5. Notensumme (Mathematik x3 + Deutsch x2 + Fremdsprache + Sachkunde) ≤ 15 für Zulassung zum Test. Auswahl nach Testergebnis (doppelt gewichtet), Zeugnisnoten und Kompetenzkriterien der Förderprognose.
   probeunterricht: false
   entrance_test: true
-  notes: One of Berlin's most sought-after gymnasiums (2025/26). Mathematik grade must be at least 'gut'. Teilgebundener
-    Ganztag.
-image_urls: []
+  notes: One of Berlin's most sought-after gymnasiums (2025/26). Mathematik grade must be at least 'gut'. Teilgebundener Ganztag.
+image_urls:
+- https://commons.wikimedia.org/wiki/Special:FilePath/Prenzlauer_Berg_Dunckerstraße_Käthe-Kollwitz-Gymnasium.jpg?width=800
 social_media: {}
 ratings: {}
 completeness_score: 0.647
@@ -45,6 +43,7 @@ field_confidence:
 data_sources:
 - wfs_berlin
 - agent_research
+- wikimedia
 unverified_fields:
 - social_media
 - unverified_fields
