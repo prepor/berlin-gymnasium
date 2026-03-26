@@ -1,8 +1,6 @@
 use std::collections::HashMap;
 
 use leptos::prelude::*;
-use leptos_router::hooks::{use_navigate, use_query_map};
-use leptos_router::NavigateOptions;
 use wasm_bindgen_futures::spawn_local;
 
 use crate::components::address_input::AddressInput;
@@ -11,13 +9,14 @@ use crate::components::filter_panel::FilterPanel;
 use crate::components::school_card::SchoolCard;
 use crate::components::sort_controls::SortControls;
 use crate::components::view_toggle::ViewToggle;
+use crate::hash_router::{navigate_hash, HashLocation};
 use crate::models::{all_districts, all_languages, all_profiles, School, SortField, TravelTimes};
 use crate::pages::map::MapView;
 use crate::services::routing::fetch_all_travel_times;
 use crate::state::AppState;
 
 /// Parse a comma-separated query param value into a Vec<String>.
-fn parse_csv_param(query: &leptos_router::params::ParamsMap, key: &str) -> Vec<String> {
+fn parse_csv_param(query: &HashMap<String, String>, key: &str) -> Vec<String> {
     query
         .get(key)
         .filter(|v| !v.is_empty())
@@ -26,8 +25,8 @@ fn parse_csv_param(query: &leptos_router::params::ParamsMap, key: &str) -> Vec<S
 }
 
 /// Parse a tri-state query param (ja/nein/absent) into Option<bool>.
-fn parse_tristate_param(query: &leptos_router::params::ParamsMap, key: &str) -> Option<bool> {
-    match query.get(key).as_deref() {
+fn parse_tristate_param(query: &HashMap<String, String>, key: &str) -> Option<bool> {
+    match query.get(key).map(|s| s.as_str()) {
         Some("ja") => Some(true),
         Some("nein") => Some(false),
         _ => None,
@@ -220,41 +219,39 @@ pub fn ListingPage() -> impl IntoView {
     let profiles_list = all_profiles(&all_schools);
     let languages_list = all_languages(&all_schools);
 
-    let query = use_query_map();
-    let navigate = use_navigate();
+    let location = use_context::<HashLocation>().expect("HashLocation must be provided");
 
     // Read filter state from URL query params
     let selected_districts = Signal::derive(move || {
-        parse_csv_param(&query.read(), "district")
+        parse_csv_param(&location.query.get(), "district")
     });
     let selected_profiles = Signal::derive(move || {
-        parse_csv_param(&query.read(), "profile")
+        parse_csv_param(&location.query.get(), "profile")
     });
     let selected_grundstaendig = Signal::derive(move || {
-        parse_tristate_param(&query.read(), "grundstaendig")
+        parse_tristate_param(&location.query.get(), "grundstaendig")
     });
     let selected_languages = Signal::derive(move || {
-        parse_csv_param(&query.read(), "language")
+        parse_csv_param(&location.query.get(), "language")
     });
     let selected_ganztag = Signal::derive(move || {
-        parse_tristate_param(&query.read(), "ganztag")
+        parse_tristate_param(&location.query.get(), "ganztag")
     });
     let current_sort = Signal::derive(move || {
-        query
-            .read()
+        location.query.get()
             .get("sort")
-            .map(|s| SortField::from_query(&s))
+            .map(|s| SortField::from_query(s))
             .unwrap_or_default()
     });
 
     // Read view mode from URL query param
     let is_map_view = Signal::derive(move || {
-        query.read().get("view").as_deref() == Some("map")
+        location.query.get().get("view").map(|s| s.as_str()) == Some("map")
     });
 
-    // Parse address coords from URL query param (per D-07)
+    // Parse address coords from URL query param
     let address_coords = Signal::derive(move || {
-        query.read().get("from").and_then(|v| {
+        location.query.get().get("from").and_then(|v| {
             let parts: Vec<&str> = v.split(',').collect();
             if parts.len() == 2 {
                 Some((parts[0].parse::<f64>().ok()?, parts[1].parse::<f64>().ok()?))
@@ -285,7 +282,6 @@ pub fn ListingPage() -> impl IntoView {
     });
 
     // Helper to navigate with updated filters (includes view and from parameters)
-    let nav = navigate.clone();
     let navigate_with_filters = move |districts: Vec<String>,
                                        profiles: Vec<String>,
                                        grundstaendig: Option<bool>,
@@ -300,13 +296,7 @@ pub fn ListingPage() -> impl IntoView {
         } else {
             format!("/?{}", qs)
         };
-        nav(
-            &path,
-            NavigateOptions {
-                replace: true,
-                ..Default::default()
-            },
-        );
+        navigate_hash(&path, true);
     };
 
     // Callbacks for filter changes -- preserve current view mode and address coords

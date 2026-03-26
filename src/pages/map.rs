@@ -65,7 +65,7 @@ fn build_popup_html(school: &School) -> String {
     }
 
     html.push_str(&format!(
-        "<br><a href='/school/{}' class='popup-detail-link'>Details &rarr;</a>",
+        "<br><a href='#/school/{}' class='popup-detail-link'>Details &rarr;</a>",
         school.school_id
     ));
     html.push_str("</div>");

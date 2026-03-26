@@ -36,7 +36,7 @@ pub fn SchoolCard(
     #[prop(optional)] travel_loading: Option<Signal<bool>>,
 ) -> impl IntoView {
     let has_coords = school.coords.is_some();
-    let href = format!("/school/{}", school.school_id);
+    let href = format!("#/school/{}", school.school_id);
     let name = school.name.clone();
     let district = school.district.clone();
     let profiles = school.profile.clone();

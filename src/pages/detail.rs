@@ -1,5 +1,4 @@
 use leptos::prelude::*;
-use leptos_router::hooks::use_params_map;
 use wasm_bindgen::prelude::*;
 use wasm_bindgen::JsCast;
 
@@ -49,13 +48,11 @@ fn bool_display(val: Option<bool>) -> &'static str {
 }
 
 #[component]
-pub fn DetailPage() -> impl IntoView {
-    let params = use_params_map();
+pub fn DetailPage(id: String) -> impl IntoView {
     let state = use_context::<AppState>().expect("AppState must be provided");
 
     let school = move || {
-        let id = params.read().get("id");
-        id.and_then(|id| state.schools.iter().find(|s| s.school_id == id).cloned())
+        state.schools.iter().find(|s| s.school_id == id).cloned()
     };
 
     view! {
@@ -65,10 +62,10 @@ pub fn DetailPage() -> impl IntoView {
                 None => {
                     view! {
                         <main class="detail-page">
-                            <a href="/" class="back-link">"← Zurueck zur Liste"</a>
+                            <a href="#/" class="back-link">"← Zurueck zur Liste"</a>
                             <h1>"Schule nicht gefunden"</h1>
                             <p>"Die angeforderte Schule konnte nicht gefunden werden."</p>
-                            <a href="/">"Zur Schuluebersicht"</a>
+                            <a href="#/">"Zur Schuluebersicht"</a>
                         </main>
                     }
                         .into_any()
