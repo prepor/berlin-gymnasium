@@ -79,8 +79,10 @@ pub fn t(key: &'static str, lang: Language) -> &'static str {
         ("searching", En) => " Searching...",
         ("search", De) => "Suchen",
         ("search", En) => "Search",
-        ("clear_address", De) => "Adresse loeschen",
-        ("clear_address", En) => "Clear address",
+        ("clear_address", De) => "Loeschen",
+        ("clear_address", En) => "Clear",
+        ("travel_from_address", De) => "Anfahrt von Ihrer Adresse",
+        ("travel_from_address", En) => "Travel from your address",
 
         // --- Filter Panel ---
         ("show_hide_filters", De) => "Filter anzeigen / verbergen",
@@ -245,6 +247,12 @@ pub fn t(key: &'static str, lang: Language) -> &'static str {
         ("demand_undersubscribed", En) => "places available",
         ("abitur_grade", De) => "Abi {0}",
         ("abitur_grade", En) => "Abi {0}",
+        ("n_min_walk", De) => "{0} Min. zu Fuss",
+        ("n_min_walk", En) => "{0} min walk",
+        ("n_min_bike", De) => "{0} Min. Fahrrad",
+        ("n_min_bike", En) => "{0} min bike",
+        ("n_min_car", De) => "{0} Min. Auto",
+        ("n_min_car", En) => "{0} min car",
 
         // Fallback: return the key itself
         (other, _) => other,

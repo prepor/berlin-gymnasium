@@ -1,5 +1,6 @@
 use leptos::prelude::*;
 
+mod address_state;
 mod app;
 mod components;
 mod hash_router;

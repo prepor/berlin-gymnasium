@@ -2,10 +2,12 @@ use leptos::prelude::*;
 use wasm_bindgen::prelude::*;
 use wasm_bindgen::JsCast;
 
+use crate::address_state::use_saved_address;
 use crate::components::detail_section::DetailSection;
 use crate::components::rating_display::RatingDisplay;
 use crate::i18n::{profile_label, t, t_fmt, use_language, Language};
-use crate::models::School;
+use crate::models::{School, TravelTimes};
+use crate::services::routing::fetch_all_travel_times;
 use crate::state::AppState;
 
 /// Format an ISO date (YYYY-MM-DD) to DD.MM.YYYY.
@@ -48,11 +50,97 @@ fn bool_display(val: Option<bool>, lang: Language) -> &'static str {
     }
 }
 
+/// Travel info component: fetches and displays travel times from saved address.
+#[component]
+fn TravelInfo(school_id: String, school_lat: f64, school_lng: f64) -> impl IntoView {
+    let lang = use_language();
+    let saved_address = use_saved_address();
+    let travel = RwSignal::new(Option::<TravelTimes>::None);
+    let loading = RwSignal::new(false);
+
+    Effect::new(move |_| {
+        let addr = saved_address.get();
+        if let Some(addr) = addr {
+            loading.set(true);
+            let sid = school_id.clone();
+            let slat = school_lat;
+            let slng = school_lng;
+            wasm_bindgen_futures::spawn_local(async move {
+                let coords = vec![(sid, slat, slng)];
+                match fetch_all_travel_times(addr.lat, addr.lng, coords).await {
+                    Ok(times) => {
+                        let tt = times.values().next().cloned();
+                        travel.set(tt);
+                    }
+                    Err(e) => {
+                        log::error!("[TravelInfo] fetch error: {e}");
+                        travel.set(None);
+                    }
+                }
+                loading.set(false);
+            });
+        } else {
+            travel.set(None);
+            loading.set(false);
+        }
+    });
+
+    move || {
+        let l = lang.get();
+        let addr = saved_address.get();
+        let addr = addr?;
+        Some(view! {
+            <section class="detail-section travel-info-card">
+                <div class="travel-info-header">
+                    <span class="travel-info-icon">"\u{1F4CD}"</span>
+                    <strong>{t("travel_from_address", l)}</strong>
+                </div>
+                <p class="travel-info-address">{addr.text}</p>
+                {move || {
+                    let l = lang.get();
+                    if loading.get() {
+                        view! {
+                            <div class="travel-info-modes">
+                                <span class="spinner spinner-lg"></span>
+                                <span>{t("calculating_travel", l)}</span>
+                            </div>
+                        }.into_any()
+                    } else if let Some(tt) = travel.get() {
+                        view! {
+                            <div class="travel-info-modes">
+                                {tt.walk_minutes.map(|m| {
+                                    let text = t_fmt("n_min_walk", l, &[&m.to_string()]);
+                                    view! { <span class="travel-mode">"\u{1F6B6} " {text}</span> }
+                                })}
+                                {tt.bike_minutes.map(|m| {
+                                    let text = t_fmt("n_min_bike", l, &[&m.to_string()]);
+                                    view! { <span class="travel-mode">"\u{1F6B2} " {text}</span> }
+                                })}
+                                {tt.car_minutes.map(|m| {
+                                    let text = t_fmt("n_min_car", l, &[&m.to_string()]);
+                                    view! { <span class="travel-mode">"\u{1F697} " {text}</span> }
+                                })}
+                            </div>
+                        }.into_any()
+                    } else {
+                        view! {
+                            <div class="travel-info-modes">
+                                <span class="keine-angabe">{t("no_travel_time", l)}</span>
+                            </div>
+                        }.into_any()
+                    }
+                }}
+            </section>
+        })
+    }
+}
+
 #[component]
 pub fn DetailPage(id: String) -> impl IntoView {
     let state = use_context::<AppState>().expect("AppState must be provided");
     let lang = use_language();
 
+    let school_id = id.clone();
     let school = move || {
         state.schools.iter().find(|s| s.school_id == id).cloned()
     };
@@ -61,7 +149,7 @@ pub fn DetailPage(id: String) -> impl IntoView {
         {move || {
             let l = lang.get();
             match school() {
-                Some(s) => render_detail(s, l).into_any(),
+                Some(s) => render_detail(s, l, school_id.clone()).into_any(),
                 None => {
                     view! {
                         <main class="detail-page">
@@ -130,7 +218,7 @@ fn SchoolMap(lat: f64, lng: f64, _name: String) -> impl IntoView {
     }
 }
 
-fn render_detail(s: School, lang: Language) -> impl IntoView {
+fn render_detail(s: School, lang: Language, school_id: String) -> impl IntoView {
     // Pre-compute values for sections
     let has_profiles_or_languages = !s.profile.is_empty() || !s.languages.is_empty();
     let has_admission = s.admission_requirements.is_some();
@@ -379,6 +467,12 @@ fn render_detail(s: School, lang: Language) -> impl IntoView {
                         {photos}
                     </div>
                 }
+            })}
+
+            // Travel info from saved address
+            {s.coords.as_ref().map(|c| {
+                let sid = school_id.clone();
+                view! { <TravelInfo school_id=sid school_lat=c.lat school_lng=c.lng /> }
             })}
 
             // Map
