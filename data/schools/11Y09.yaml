@@ -67,8 +67,8 @@ admission_requirements:
   probeunterricht: false
   entrance_test: false
   notes: 'Altsprachliches Gymnasium (§6 Abs. 10 Sek I-VO). 2 Klassen ab Klasse 5 (64 Plätze) mit Latein als 2. FS.
-    Kein Eignungstest. Auswahl nach Förderprognose, dann Notensumme, dann Los. Probehalbjahr. Empfohlen: Schnitt 2.0.
-    besser.
+    Kein Eignungstest. Auswahl nach Förderprognose, dann Notensumme, dann Los. Probehalbjahr. Empfohlen: Schnitt 2.0
+    oder besser.'
   first_choices: 185
   places: 128
   demand_ratio: 1.45
