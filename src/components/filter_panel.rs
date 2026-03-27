@@ -13,8 +13,8 @@ fn CheckboxGroup(
 ) -> impl IntoView {
     let lang = use_language();
     view! {
-        <fieldset class="filter-group">
-            <legend class="filter-group-label">{move || t(label_key, lang.get())}</legend>
+        <details class="filter-group" open=true>
+            <summary class="filter-group-label">{move || t(label_key, lang.get())}</summary>
             <div class="filter-options">
                 {options
                     .into_iter()
@@ -43,7 +43,7 @@ fn CheckboxGroup(
                     })
                     .collect::<Vec<_>>()}
             </div>
-        </fieldset>
+        </details>
     }
 }
 
@@ -61,8 +61,8 @@ fn TriStateRadio(
     let is_no = move || selected.get() == Some(false);
 
     view! {
-        <fieldset class="filter-group">
-            <legend class="filter-group-label">{move || t(label_key, lang.get())}</legend>
+        <details class="filter-group" open=true>
+            <summary class="filter-group-label">{move || t(label_key, lang.get())}</summary>
             <div class="filter-radios">
                 <label class="filter-radio">
                     <input
@@ -92,7 +92,7 @@ fn TriStateRadio(
                     {move || t("no", lang.get())}
                 </label>
             </div>
-        </fieldset>
+        </details>
     }
 }
 
