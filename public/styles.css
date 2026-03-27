@@ -751,18 +751,17 @@ a:hover {
 .address-input-container {
     position: relative;
     display: flex;
-    gap: 0.5rem;
-    align-items: flex-start;
+    gap: 0.75rem;
+    align-items: center;
     margin-bottom: 1rem;
-    max-width: 500px;
 }
 
 .address-input {
-    flex: 1;
-    padding: 0.6rem 0.75rem;
+    width: 100%;
+    padding: 0.625rem 0.75rem;
     border: 1px solid #cbd5e1;
     border-radius: 6px;
-    font-size: 0.95rem;
+    font-size: 0.875rem;
     color: #334155;
     background: #fff;
 }
@@ -777,12 +776,12 @@ a:hover {
 }
 
 .address-search-btn {
-    padding: 0.6rem 1rem;
+    padding: 0.625rem 1.25rem;
     background: #2563eb;
     color: #fff;
     border: none;
     border-radius: 6px;
-    font-size: 0.9rem;
+    font-size: 0.875rem;
     font-weight: 500;
     cursor: pointer;
     white-space: nowrap;
@@ -993,14 +992,93 @@ a:hover {
     color: #fff;
 }
 
+/* === Active Address Bar === */
+.active-address-bar {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.5rem 0.75rem;
+    background: #eff6ff;
+    border-radius: 8px;
+    margin-bottom: 0.5rem;
+}
+
+.active-address-icon {
+    font-size: 1rem;
+    flex-shrink: 0;
+}
+
+.active-address-text {
+    color: #1e40af;
+    font-size: 0.875rem;
+    font-weight: 500;
+    flex: 1;
+}
+
+.active-address-clear {
+    background: none;
+    border: none;
+    color: #64748b;
+    font-size: 0.8rem;
+    cursor: pointer;
+    padding: 2px 6px;
+    border-radius: 4px;
+    white-space: nowrap;
+}
+
+.active-address-clear:hover {
+    color: #ef4444;
+    background: #fef2f2;
+}
+
+/* === Travel Info Card (Detail Page) === */
+.travel-info-card {
+    border-left: 3px solid #2563eb;
+}
+
+.travel-info-header {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 0.25rem;
+}
+
+.travel-info-header strong {
+    font-size: 1rem;
+    color: #1e293b;
+}
+
+.travel-info-icon {
+    font-size: 1rem;
+}
+
+.travel-info-address {
+    color: #64748b;
+    font-size: 0.875rem;
+    margin: 0 0 0.5rem;
+}
+
+.travel-info-modes {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.travel-info-modes .travel-mode {
+    font-size: 0.875rem;
+    color: #475569;
+    white-space: nowrap;
+}
+
 /* === Mobile adjustments for address input === */
 @media (max-width: 767px) {
-    .address-input-container {
-        max-width: 100%;
-    }
-
     .language-switcher-wrapper {
         top: 0.5rem;
         right: 0.5rem;
+    }
+
+    .active-address-bar {
+        flex-wrap: wrap;
     }
 }

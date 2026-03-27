@@ -3,6 +3,7 @@ use std::collections::HashMap;
 use leptos::prelude::*;
 use wasm_bindgen_futures::spawn_local;
 
+use crate::address_state::{clear_address, use_saved_address};
 use crate::components::address_input::AddressInput;
 use crate::components::filter_chips::FilterChips;
 use crate::components::filter_panel::FilterPanel;
@@ -262,6 +263,8 @@ pub fn ListingPage() -> impl IntoView {
         })
     });
 
+    let saved_address = use_saved_address();
+
     // Travel time state signals
     let travel_times = RwSignal::new(Option::<HashMap<String, TravelTimes>>::None);
     let travel_loading = RwSignal::new(false);
@@ -299,6 +302,25 @@ pub fn ListingPage() -> impl IntoView {
         };
         navigate_hash(&path, true);
     };
+
+    // Restore address from localStorage if URL doesn't have from= param
+    {
+        let nav_fn_restore = navigate_with_filters.clone();
+        if address_coords.get_untracked().is_none() {
+            if let Some(addr) = saved_address.get_untracked() {
+                nav_fn_restore(
+                    selected_districts.get_untracked(),
+                    selected_profiles.get_untracked(),
+                    selected_grundstaendig.get_untracked(),
+                    selected_languages.get_untracked(),
+                    selected_ganztag.get_untracked(),
+                    current_sort.get_untracked(),
+                    if is_map_view.get_untracked() { "map" } else { "" },
+                    Some((addr.lat, addr.lng)),
+                );
+            }
+        }
+    }
 
     // Callbacks for filter changes -- preserve current view mode and address coords
     let nav_fn = navigate_with_filters.clone();
@@ -441,12 +463,13 @@ pub fn ListingPage() -> impl IntoView {
         );
     });
 
-    // Address cleared callback: remove travel times and from= param
+    // Address cleared callback: remove travel times, saved address, and from= param
     let nav_fn = navigate_with_filters.clone();
     let on_address_cleared = Callback::new(move |_: ()| {
         travel_times.set(None);
         travel_loading.set(false);
         travel_error.set(None);
+        clear_address(saved_address);
         let view = if is_map_view.get() { "map" } else { "" };
         nav_fn(
             selected_districts.get(),
@@ -527,6 +550,45 @@ pub fn ListingPage() -> impl IntoView {
                     initial_coords=Signal::derive(move || address_coords.get())
                     travel_loading=Signal::derive(move || travel_loading.get())
                 />
+                // Active address bar: shows saved address when set
+                {move || {
+                    let l = lang.get();
+                    saved_address.get().map(|addr| {
+                        let clear_saved = saved_address;
+                        let on_clear_bar = move |_: leptos::ev::MouseEvent| {
+                            clear_address(clear_saved);
+                            travel_times.set(None);
+                            travel_loading.set(false);
+                            travel_error.set(None);
+                            let view = if is_map_view.get() { "map" } else { "" };
+                            let qs = build_query_string(
+                                &selected_districts.get(),
+                                &selected_profiles.get(),
+                                selected_grundstaendig.get(),
+                                &selected_languages.get(),
+                                selected_ganztag.get(),
+                                &current_sort.get(),
+                                view,
+                                None,
+                            );
+                            let path = if qs.is_empty() { "/".to_string() } else { format!("/?{}", qs) };
+                            navigate_hash(&path, true);
+                        };
+                        view! {
+                            <div class="active-address-bar">
+                                <span class="active-address-icon">"\u{1F4CD}"</span>
+                                <span class="active-address-text">{addr.text}</span>
+                                <button
+                                    type="button"
+                                    class="active-address-clear"
+                                    on:click=on_clear_bar
+                                >
+                                    {t("clear_address", l)}
+                                </button>
+                            </div>
+                        }
+                    })
+                }}
                 {move || {
                     let l = lang.get();
                     if travel_loading.get() {
@@ -571,7 +633,7 @@ pub fn ListingPage() -> impl IntoView {
                 <div style:display=move || {
                     if is_map_view.get() { "block" } else { "none" }
                 } style="flex:1;min-width:0">
-                    <MapView filtered_schools=filtered_schools is_visible=Signal::derive(move || is_map_view.get()) />
+                    <MapView filtered_schools=filtered_schools is_visible=Signal::derive(move || is_map_view.get()) user_coords=Signal::derive(move || address_coords.get()) />
                 </div>
                 <section class="school-grid" style:display=move || {
                     if is_map_view.get() { "none" } else { "" }

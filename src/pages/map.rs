@@ -5,6 +5,18 @@ use wasm_bindgen::JsCast;
 use crate::i18n::{profile_label, t, use_language, Language};
 use crate::models::School;
 
+/// Build CircleMarker options for the user's home location.
+fn home_marker_options() -> JsValue {
+    let obj = js_sys::Object::new();
+    let _ = js_sys::Reflect::set(&obj, &"radius".into(), &JsValue::from_f64(10.0));
+    let _ = js_sys::Reflect::set(&obj, &"fillColor".into(), &JsValue::from_str("#dc2626"));
+    let _ = js_sys::Reflect::set(&obj, &"color".into(), &JsValue::from_str("#fff"));
+    let _ = js_sys::Reflect::set(&obj, &"weight".into(), &JsValue::from_f64(3.0));
+    let _ = js_sys::Reflect::set(&obj, &"opacity".into(), &JsValue::from_f64(1.0));
+    let _ = js_sys::Reflect::set(&obj, &"fillOpacity".into(), &JsValue::from_f64(0.9));
+    obj.into()
+}
+
 /// Determine the pin color based on the school's first profile.
 /// Matches the exact colors used in school_card.rs for visual consistency.
 fn profile_color_for_map(profiles: &[String]) -> &'static str {
@@ -76,7 +88,11 @@ fn circle_marker_options(color: &str) -> JsValue {
 /// Interactive map view showing filtered schools as color-coded CircleMarker pins
 /// on an OpenStreetMap base layer. Pins are clickable with popup info.
 #[component]
-pub fn MapView(filtered_schools: Memo<Vec<School>>, is_visible: Signal<bool>) -> impl IntoView {
+pub fn MapView(
+    filtered_schools: Memo<Vec<School>>,
+    is_visible: Signal<bool>,
+    user_coords: Signal<Option<(f64, f64)>>,
+) -> impl IntoView {
     let lang = use_language();
     let map_ref = NodeRef::<leptos::html::Div>::new();
 
@@ -84,6 +100,8 @@ pub fn MapView(filtered_schools: Memo<Vec<School>>, is_visible: Signal<bool>) ->
     let map_instance: StoredValue<Option<leaflet::Map>> = StoredValue::new(None);
     // Store current markers for cleanup on filter change
     let markers: StoredValue<Vec<leaflet::CircleMarker>> = StoredValue::new(vec![]);
+    // Store home marker separately
+    let home_marker: StoredValue<Option<leaflet::CircleMarker>> = StoredValue::new(None);
 
     // Effect 1: Initialize the map once after mount
     Effect::new(move |_| {
@@ -196,6 +214,33 @@ pub fn MapView(filtered_schools: Memo<Vec<School>>, is_visible: Signal<bool>) ->
         }
 
         markers.set_value(new_markers);
+    });
+
+    // Effect 3: Update home marker when user_coords changes
+    Effect::new(move |_| {
+        let Some(map) = map_instance.get_value() else {
+            return;
+        };
+        // Remove old home marker
+        if let Some(old) = home_marker.get_value() {
+            let layer: &leaflet::Layer = old.unchecked_ref();
+            layer.remove();
+        }
+
+        if let Some((lat, lng)) = user_coords.get() {
+            let latlng = leaflet::LatLng::new(lat, lng);
+            let opts = home_marker_options();
+            let marker = leaflet::CircleMarker::new_with_options(&latlng, &opts);
+            let marker_as_layer: &leaflet::Layer = marker.unchecked_ref();
+            marker_as_layer.bind_popup_with_options(
+                &JsValue::from_str("<div class='map-popup'><strong>Mein Standort</strong></div>"),
+                &JsValue::NULL,
+            );
+            marker_as_layer.add_to(&map);
+            home_marker.set_value(Some(marker));
+        } else {
+            home_marker.set_value(None);
+        }
     });
 
     // The div is ALWAYS in the DOM; parent uses CSS display to show/hide

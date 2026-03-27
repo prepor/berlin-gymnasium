@@ -1,5 +1,6 @@
 use leptos::prelude::*;
 
+use crate::address_state::provide_saved_address;
 use crate::components::language_switcher::LanguageSwitcher;
 use crate::hash_router::{provide_hash_router, HashLocation};
 use crate::i18n::provide_i18n;
@@ -13,6 +14,7 @@ pub fn App() -> impl IntoView {
     provide_app_state();
     provide_hash_router();
     provide_i18n();
+    provide_saved_address();
 
     let location = use_context::<HashLocation>().expect("HashLocation must be provided");
 

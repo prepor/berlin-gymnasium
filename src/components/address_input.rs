@@ -2,11 +2,13 @@ use leptos::prelude::*;
 use leptos_use::use_debounce_fn_with_arg;
 use wasm_bindgen_futures::spawn_local;
 
+use crate::address_state::{clear_address, save_address, use_saved_address};
 use crate::i18n::{t, use_language};
 use crate::services::geocoding::{geocode_address, PhotonFeature};
 
 /// Address input component with debounced geocoding and suggestion dropdown.
 /// Lets the user type an address, see up to 5 suggestions, and select one.
+/// Persists the selected address to localStorage via address_state.
 #[component]
 pub fn AddressInput(
     on_address_selected: Callback<(f64, f64)>,
@@ -15,7 +17,15 @@ pub fn AddressInput(
     travel_loading: Signal<bool>,
 ) -> impl IntoView {
     let lang = use_language();
-    let input_value = RwSignal::new(String::new());
+    let saved_address = use_saved_address();
+
+    // Initialize input value from saved address if available
+    let initial_text = saved_address
+        .get_untracked()
+        .map(|a| a.text.clone())
+        .unwrap_or_default();
+    let input_value = RwSignal::new(initial_text);
+
     let suggestions = RwSignal::new(Vec::<PhotonFeature>::new());
     let show_suggestions = RwSignal::new(false);
     let is_loading = RwSignal::new(false);
@@ -65,6 +75,18 @@ pub fn AddressInput(
         debounced_for_input(val);
     };
 
+    // Helper: select a feature (used by both submit and suggestion click)
+    let select_feature = move |feature: &PhotonFeature| {
+        let lat = feature.lat();
+        let lng = feature.lng();
+        let label = feature.display_label();
+        input_value.set(label.clone());
+        show_suggestions.set(false);
+        suggestions.set(vec![]);
+        save_address(saved_address, label, lat, lng);
+        on_address_selected.run((lat, lng));
+    };
+
     // On form submit (Enter key or Search button): select first suggestion or trigger immediate geocode
     let on_submit = move |ev: leptos::ev::SubmitEvent| {
         ev.prevent_default();
@@ -73,12 +95,7 @@ pub fn AddressInput(
         let current_suggestions = suggestions.get();
         if !current_suggestions.is_empty() && show_suggestions.get() {
             // Select the first suggestion
-            let first = &current_suggestions[0];
-            let lat = first.lat();
-            let lng = first.lng();
-            input_value.set(first.display_label());
-            show_suggestions.set(false);
-            on_address_selected.run((lat, lng));
+            select_feature(&current_suggestions[0]);
         } else {
             // Trigger geocoding directly (bypass debounce for immediate feedback)
             let val = input_value.get();
@@ -111,12 +128,7 @@ pub fn AddressInput(
 
     // Handle suggestion click
     let on_select_suggestion = move |feature: PhotonFeature| {
-        let lat = feature.lat();
-        let lng = feature.lng();
-        input_value.set(feature.display_label());
-        show_suggestions.set(false);
-        suggestions.set(vec![]);
-        on_address_selected.run((lat, lng));
+        select_feature(&feature);
     };
 
     // Clear button handler (per D-08)
@@ -124,6 +136,7 @@ pub fn AddressInput(
         input_value.set(String::new());
         suggestions.set(vec![]);
         show_suggestions.set(false);
+        clear_address(saved_address);
         on_address_cleared.run(());
     };
 
