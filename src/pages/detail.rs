@@ -4,7 +4,6 @@ use wasm_bindgen::JsCast;
 
 use crate::address_state::use_saved_address;
 use crate::components::detail_section::DetailSection;
-use crate::components::rating_display::RatingDisplay;
 use crate::i18n::{profile_label, t, t_fmt, use_language, Language};
 use crate::models::{School, TravelTimes};
 use crate::services::routing::fetch_all_travel_times;
@@ -112,17 +111,26 @@ fn TravelInfo(school_id: String, school_lat: f64, school_lng: f64) -> impl IntoV
                     } else if let Some(tt) = travel.get() {
                         view! {
                             <div class="travel-info-modes">
-                                {tt.walk_minutes.map(|m| {
-                                    let text = t_fmt("n_min_walk", l, &[&m.to_string()]);
-                                    view! { <span class="travel-mode">"\u{1F6B6} " {text}</span> }
+                                {tt.walk_minutes.map(|m| view! {
+                                    <div class="travel-mode-card">
+                                        <span class="travel-mode-icon">"\u{1F6B6}"</span>
+                                        <span class="travel-mode-time">{m.to_string()} " Min."</span>
+                                        <span class="travel-mode-label">{t("walk", l)}</span>
+                                    </div>
                                 })}
-                                {tt.bike_minutes.map(|m| {
-                                    let text = t_fmt("n_min_bike", l, &[&m.to_string()]);
-                                    view! { <span class="travel-mode">"\u{1F6B2} " {text}</span> }
+                                {tt.bike_minutes.map(|m| view! {
+                                    <div class="travel-mode-card">
+                                        <span class="travel-mode-icon">"\u{1F6B2}"</span>
+                                        <span class="travel-mode-time">{m.to_string()} " Min."</span>
+                                        <span class="travel-mode-label">{t("bike", l)}</span>
+                                    </div>
                                 })}
-                                {tt.car_minutes.map(|m| {
-                                    let text = t_fmt("n_min_car", l, &[&m.to_string()]);
-                                    view! { <span class="travel-mode">"\u{1F697} " {text}</span> }
+                                {tt.car_minutes.map(|m| view! {
+                                    <div class="travel-mode-card">
+                                        <span class="travel-mode-icon">"\u{1F697}"</span>
+                                        <span class="travel-mode-time">{m.to_string()} " Min."</span>
+                                        <span class="travel-mode-label">{t("car", l)}</span>
+                                    </div>
                                 })}
                             </div>
                         }.into_any()
@@ -218,7 +226,7 @@ fn SchoolMap(lat: f64, lng: f64, _name: String) -> impl IntoView {
     });
 
     view! {
-        <div node_ref=map_ref class="detail-map" style="height: 250px; width: 100%; border-radius: 8px; margin: 1rem 0;"></div>
+        <div node_ref=map_ref class="detail-map" style="height: 220px; width: 100%; border-radius: 16px; margin: 0; border: 1px solid #C4C6CF;"></div>
     }
 }
 
@@ -228,7 +236,6 @@ fn render_detail(s: School, lang: Language, school_id: String) -> impl IntoView 
     let has_admission = s.admission_requirements.is_some();
     let has_ratings = !s.ratings.is_empty() || s.abitur_average.is_some();
     let has_open_day = s.open_day.is_some();
-    let has_photos = !s.image_urls.is_empty();
 
     // Hero section values
     let address_display = s
@@ -241,14 +248,6 @@ fn render_detail(s: School, lang: Language, school_id: String) -> impl IntoView 
         Some(_) => Some(t("unknown", lang)),
         None => None,
     };
-    let student_teacher = match (s.student_count, s.teacher_count) {
-        (Some(st), Some(te)) => {
-            t_fmt("n_students_n_teachers", lang, &[&st.to_string(), &te.to_string()])
-        }
-        (Some(st), None) => t_fmt("n_students", lang, &[&st.to_string()]),
-        (None, Some(te)) => t_fmt("n_teachers", lang, &[&te.to_string()]),
-        (None, None) => t("no_data", lang).to_string(),
-    };
     let ganztag_label = match s.ganztag {
         Some(true) => Some(t("all_day_school", lang)),
         Some(false) => Some(t("half_day_school", lang)),
@@ -256,6 +255,8 @@ fn render_detail(s: School, lang: Language, school_id: String) -> impl IntoView 
     };
 
     // Website
+    let website_domain = s.website.as_ref().map(|url| extract_domain(url));
+    let website_url = s.website.clone();
     let website_view = s.website.clone().map(|url| {
         let domain = extract_domain(&url);
         view! {
@@ -267,6 +268,15 @@ fn render_detail(s: School, lang: Language, school_id: String) -> impl IntoView 
 
     // Grundstaendig badge
     let grundstaendig = s.accepts_after_4th_grade == Some(true);
+
+    // Hero photo: use first image or a placeholder
+    let hero_photo_url = s.image_urls.first().cloned();
+
+    // Stats bar values
+    let stat_students = s.student_count.map(|n| n.to_string());
+    let stat_teachers = s.teacher_count.map(|n| n.to_string());
+    let stat_languages = if s.languages.is_empty() { None } else { Some(s.languages.len().to_string()) };
+    let stat_grundstaendig = if grundstaendig { Some(t_fmt("grade_n", lang, &["5"])) } else { None };
 
     // Profile chips
     let profile_chips: Vec<_> = s
@@ -367,37 +377,88 @@ fn render_detail(s: School, lang: Language, school_id: String) -> impl IntoView 
         }
     });
 
-    // Ratings entries
+    // Ratings: build horizontal rows with stars
+    fn render_stars(score: f64, max: f64) -> Vec<leptos::tachys::view::any_view::AnyView> {
+        let full_stars = (score / max * 5.0).round() as usize;
+        (0..5).map(|i| {
+            if i < full_stars {
+                view! { <span class="star-filled">"\u{2605}"</span> }.into_any()
+            } else {
+                view! { <span class="star-empty">"\u{2605}"</span> }.into_any()
+            }
+        }).collect()
+    }
+
     let mut rating_keys: Vec<String> = s.ratings.keys().cloned().collect();
     rating_keys.sort();
     let rating_entries: Vec<_> = rating_keys
         .into_iter()
         .filter_map(|key| {
             s.ratings.get(&key).map(|entry| {
-                let k = key.clone();
-                let e = entry.clone();
-                view! { <RatingDisplay source_key={k} entry={e} /> }
+                let source_name = key.split('_')
+                    .map(|w| {
+                        let mut c = w.chars();
+                        match c.next() {
+                            Some(ch) => format!("{}{}", ch.to_uppercase().collect::<String>(), c.collect::<String>()),
+                            None => String::new(),
+                        }
+                    })
+                    .collect::<Vec<_>>()
+                    .join(" ");
+                let stars = entry.score.map(|s| render_stars(s, entry.scale_max));
+                let score_text = entry.score.map(|s| format!("{:.1}", s));
+                let review_text = entry.review_count.map(|n| format!("({} {})", n, t("reviews", lang)));
+                view! {
+                    <div class="rating-row">
+                        <span class="rating-row-label">{source_name}</span>
+                        <span class="rating-row-value">
+                            {stars.map(|s| view! { <span class="rating-stars">{s}</span> })}
+                            {score_text.map(|s| view! { <strong>{s}</strong> })}
+                            {review_text.map(|r| view! { <span style="color:#64748b;font-size:0.8125rem">{r}</span> })}
+                        </span>
+                    </div>
+                    <div class="rating-divider"></div>
+                }
             })
         })
         .collect();
 
     let abitur_view = s.abitur_average.map(|avg| {
-        let avg_text = t_fmt("abitur_avg", lang, &[&format!("{:.2}", avg)]);
-        let pass_text = s.abitur_pass_rate.map(|r| t_fmt("abitur_pass_rate", lang, &[&format!("{:.1}", r)]));
-        let count_text = s.abitur_student_count.map(|n| t_fmt("abitur_students", lang, &[&n.to_string()]));
-        let avg_color = if avg <= 1.8 { "#16a34a" } else if avg <= 2.3 { "#ca8a04" } else { "#6b7280" };
+        let quality = if avg <= 1.5 { t("excellent", lang) } else if avg <= 2.0 { t("very_good", lang) } else if avg <= 2.5 { t("good", lang) } else { t("satisfactory", lang) };
         view! {
-            <div class="abitur-stats">
-                <span class="abitur-average" style=format!("color:{};font-size:1.5rem;font-weight:700", avg_color)>
-                    {format!("{:.2}", avg)}
+            <div class="rating-row">
+                <span class="rating-row-label">{t("abitur_average", lang)}</span>
+                <span class="rating-row-value">
+                    <span class="abitur-value">{format!("{:.2}", avg)}</span>
+                    <span class="abitur-quality">{quality}</span>
                 </span>
-                <div class="abitur-details">
-                    <p>{avg_text}</p>
-                    {pass_text.map(|t| view! { <p>{t}</p> })}
-                    {count_text.map(|t| view! { <p>{t}</p> })}
-                </div>
             </div>
+            <div class="rating-divider"></div>
         }
+    });
+
+    // Demand row for ratings section
+    let demand_view = s.admission_requirements.as_ref().and_then(|adm| {
+        adm.demand_ratio.or_else(|| {
+            match (adm.first_choices, adm.places) {
+                (Some(fc), Some(pl)) if pl > 0 => Some(fc as f64 / pl as f64),
+                _ => None,
+            }
+        }).map(|ratio| {
+            let (label, class) = if ratio > 1.0 {
+                (t("demand_high", lang), "demand-badge")
+            } else {
+                (t("demand_low", lang), "demand-badge demand-low")
+            };
+            view! {
+                <div class="rating-row">
+                    <span class="rating-row-label">{t("demand_label", lang)}</span>
+                    <span class="rating-row-value">
+                        <span class={class}>{label}</span>
+                    </span>
+                </div>
+            }
+        })
     });
 
     // Open day
@@ -431,44 +492,84 @@ fn render_detail(s: School, lang: Language, school_id: String) -> impl IntoView 
         .map(|c| t_fmt("pct_complete", lang, &[&format!("{:.0}", c * 100.0)]))
         .unwrap_or_else(|| t("no_data", lang).to_string());
 
-    let no_data_label = t("no_data", lang);
+    // Remaining photos (skip the first one used in hero)
+    let remaining_photos: Vec<_> = s.image_urls.iter().skip(1).cloned().collect();
+    let has_remaining_photos = !remaining_photos.is_empty();
 
     view! {
         <main class="detail-page">
-            // Back navigation
-            <a href="javascript:history.back()" class="back-link">{t("back_to_list", lang)}</a>
-
-            // Section 1: Hero
-            <section class="detail-section detail-hero">
-                <h1>{s.name.clone()}</h1>
-                <p class="detail-district">{s.district.clone()}</p>
-                <p class="detail-address">{address_display}</p>
-
-                <div class="detail-badges">
-                    {traeger_label.map(|label| view! {
-                        <span class="badge badge-traeger">{label}</span>
-                    })}
-                    {grundstaendig.then(|| view! {
-                        <span class="badge badge-grundstaendig">{t("grundstaendig", lang)}</span>
-                    })}
-                    {ganztag_label.map(|label| view! {
-                        <span class="badge badge-ganztag">{label}</span>
-                    })}
+            // Hero Banner with photo, gradient overlay, and content
+            <div class="detail-hero-banner">
+                {hero_photo_url.map(|url| view! {
+                    <img class="hero-photo" src={url} alt="" />
+                })}
+                <div class="hero-gradient"></div>
+                <a href="javascript:history.back()" class="hero-back-pill">
+                    {t("back_to_list", lang)}
+                </a>
+                <div class="hero-content">
+                    <h1 class="hero-title">{s.name.clone()}</h1>
+                    <p class="hero-district">{s.district.clone()}</p>
+                    <p class="hero-address">{address_display}</p>
+                    <div class="hero-badges">
+                        {traeger_label.map(|label| view! {
+                            <span class="hero-badge">{label}</span>
+                        })}
+                        {grundstaendig.then(|| view! {
+                            <span class="hero-badge">{t("grundstaendig", lang)}</span>
+                        })}
+                        {ganztag_label.map(|label| view! {
+                            <span class="hero-badge">{label}</span>
+                        })}
+                    </div>
                 </div>
+            </div>
 
-                <p class="detail-counts">{student_teacher}</p>
+            // Stats Bar
+            <div class="detail-stats-bar">
+                {stat_students.map(|n| view! {
+                    <div class="stat-item">
+                        <span class="stat-value">{n}</span>
+                        <span class="stat-label">{t("students_label", lang)}</span>
+                    </div>
+                    <div class="stat-divider"></div>
+                })}
+                {stat_teachers.map(|n| view! {
+                    <div class="stat-item">
+                        <span class="stat-value">{n}</span>
+                        <span class="stat-label">{t("teachers_label", lang)}</span>
+                    </div>
+                    <div class="stat-divider"></div>
+                })}
+                {stat_languages.map(|n| view! {
+                    <div class="stat-item">
+                        <span class="stat-value">{n}</span>
+                        <span class="stat-label">{t("languages_label", lang)}</span>
+                    </div>
+                    <div class="stat-divider"></div>
+                })}
+                {stat_grundstaendig.map(|g| view! {
+                    <div class="stat-item">
+                        <span class="stat-value">{g}</span>
+                        <span class="stat-label">{t("grundstaendig", lang)}</span>
+                    </div>
+                    <div class="stat-divider"></div>
+                })}
+                {website_url.as_ref().map(|url| {
+                    let href = url.clone();
+                    let domain = website_domain.clone().unwrap_or_default();
+                    view! {
+                        <a href={href} target="_blank" rel="noopener noreferrer" class="stat-item" style="text-decoration:none">
+                            <span class="stat-value" style="font-size:1.25rem">"🌐"</span>
+                            <span class="stat-label">{domain}</span>
+                        </a>
+                    }
+                })}
+            </div>
 
-                <div class="detail-website-row">
-                    {match website_view {
-                        Some(v) => v.into_any(),
-                        None => view! { <span class="keine-angabe">{no_data_label}</span> }.into_any(),
-                    }}
-                </div>
-            </section>
-
-            // Photos
-            {has_photos.then(|| {
-                let photos: Vec<_> = s.image_urls.iter().map(|url| {
+            // Photos (remaining, after hero photo)
+            {has_remaining_photos.then(|| {
+                let photos: Vec<_> = remaining_photos.iter().map(|url| {
                     let src = url.clone();
                     view! {
                         <img class="detail-photo" src=src alt="" loading="lazy" />
@@ -524,8 +625,9 @@ fn render_detail(s: School, lang: Language, school_id: String) -> impl IntoView 
 
             // Section 4: Ratings
             <DetailSection title=t("ratings", lang) empty={!has_ratings}>
-                {rating_entries}
                 {abitur_view}
+                {rating_entries}
+                {demand_view}
             </DetailSection>
 
             // Section 5: Open Day
@@ -534,27 +636,30 @@ fn render_detail(s: School, lang: Language, school_id: String) -> impl IntoView 
             </DetailSection>
 
             // Section 6: Contact
-            <DetailSection title=t("contact", lang) empty={s.phone.is_none() && s.email.is_none()}>
-                <dl class="contact-list">
-                    <dt>{t("telephone", lang)}</dt>
-                    <dd>
-                        {match phone_view {
-                            Some(v) => v.into_any(),
-                            None => view! { <span class="keine-angabe">{no_data_label}</span> }.into_any(),
-                        }}
-                    </dd>
-                    <dt>{t("email_label", lang)}</dt>
-                    <dd>
-                        {match email_view {
-                            Some(v) => v.into_any(),
-                            None => view! { <span class="keine-angabe">{no_data_label}</span> }.into_any(),
-                        }}
-                    </dd>
-                </dl>
+            <DetailSection title=t("contact", lang) empty={s.phone.is_none() && s.email.is_none() && s.website.is_none()}>
+                {phone_view.map(|v| view! {
+                    <div class="contact-row">
+                        <span class="contact-icon">"\u{1F4DE}"</span>
+                        {v}
+                    </div>
+                })}
+                {email_view.map(|v| view! {
+                    <div class="contact-row">
+                        <span class="contact-icon">"\u{2709}\u{FE0F}"</span>
+                        {v}
+                    </div>
+                })}
+                {website_view.map(|v| view! {
+                    <div class="contact-row">
+                        <span class="contact-icon">"\u{1F310}"</span>
+                        {v}
+                    </div>
+                })}
             </DetailSection>
 
-            // Section 7: Data Provenance
-            <DetailSection title=t("data_provenance", lang) empty=false>
+            // Section 7: Data Provenance (muted styling)
+            <section class="detail-section provenance">
+                <h2>{t("data_provenance", lang)}</h2>
                 <dl class="provenance-list">
                     <dt>{t("last_updated", lang)}</dt>
                     <dd>{last_updated_display}</dd>
@@ -563,7 +668,7 @@ fn render_detail(s: School, lang: Language, school_id: String) -> impl IntoView 
                     <dt>{t("completeness_label", lang)}</dt>
                     <dd>{completeness_display}</dd>
                 </dl>
-            </DetailSection>
+            </section>
         </main>
     }
 }

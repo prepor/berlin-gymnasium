@@ -393,6 +393,8 @@ a:hover {
     max-width: 800px;
     margin: 0 auto;
     padding: 1rem;
+    background: #F0F2F5;
+    padding-bottom: 2rem;
 }
 
 .back-link {
@@ -409,10 +411,10 @@ a:hover {
 
 .detail-section {
     background: #fff;
-    border-radius: 8px;
+    border-radius: 16px;
     padding: 1.5rem;
-    margin-bottom: 1rem;
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    margin-bottom: 1.25rem;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
 }
 
 .detail-section h2 {
@@ -452,6 +454,103 @@ a:hover {
     margin: 0 0 0.25rem;
     font-size: 1.75rem;
     color: #0f172a;
+}
+
+/* Hero Banner - full-bleed photo with gradient overlay */
+.detail-hero-banner {
+    position: relative;
+    border-radius: 0 0 16px 16px;
+    overflow: hidden;
+    height: 420px;
+    margin-bottom: 1.25rem;
+}
+
+.detail-hero-banner .hero-photo {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.detail-hero-banner .hero-gradient {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to top, rgba(0,0,0,0.8) 0%, transparent 65%);
+    pointer-events: none;
+}
+
+.detail-hero-banner .hero-back-pill {
+    position: absolute;
+    top: 20px;
+    left: 24px;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    background: rgba(255,255,255,0.2);
+    color: #fff;
+    border-radius: 9999px;
+    padding: 6px 16px;
+    font-size: 0.8125rem;
+    font-weight: 500;
+    text-decoration: none;
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    transition: background 0.2s;
+    z-index: 2;
+}
+
+.detail-hero-banner .hero-back-pill:hover {
+    background: rgba(255,255,255,0.35);
+}
+
+.detail-hero-banner .hero-content {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 0 32px 32px 32px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    z-index: 1;
+}
+
+.detail-hero-banner .hero-title {
+    color: #fff;
+    font-size: 2rem;
+    font-weight: 700;
+    margin: 0;
+    line-height: 1.2;
+}
+
+.detail-hero-banner .hero-district {
+    color: rgba(255,255,255,0.8);
+    font-size: 1.125rem;
+    font-weight: 500;
+    margin: 0;
+}
+
+.detail-hero-banner .hero-address {
+    color: rgba(255,255,255,0.67);
+    font-size: 0.9375rem;
+    margin: 0;
+}
+
+.detail-hero-banner .hero-badges {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 6px;
+}
+
+.detail-hero-banner .hero-badge {
+    background: rgba(255,255,255,0.13);
+    border: 1px solid rgba(255,255,255,0.27);
+    color: #fff;
+    border-radius: 9999px;
+    padding: 4px 12px;
+    font-size: 0.8125rem;
+    font-weight: 500;
 }
 
 .detail-district {
@@ -653,8 +752,39 @@ a:hover {
         font-size: 1.4rem;
     }
 
+    .detail-hero-banner {
+        height: 320px;
+        border-radius: 0 0 12px 12px;
+    }
+
+    .detail-hero-banner .hero-title {
+        font-size: 1.5rem;
+    }
+
+    .detail-hero-banner .hero-content {
+        padding: 0 20px 20px 20px;
+    }
+
+    .detail-stats-bar {
+        padding: 16px;
+        gap: 4px;
+    }
+
+    .stat-value {
+        font-size: 1.25rem;
+    }
+
+    .stat-label {
+        font-size: 0.625rem;
+    }
+
+    .travel-info-modes {
+        flex-direction: column;
+    }
+
     .detail-section {
         padding: 1rem;
+        border-radius: 12px;
     }
 }
 
@@ -1033,7 +1163,8 @@ a:hover {
 
 /* === Travel Info Card (Detail Page) === */
 .travel-info-card {
-    border-left: 3px solid #2563eb;
+    border-left: none;
+    border-radius: 16px;
 }
 
 .travel-info-header {
@@ -1044,8 +1175,9 @@ a:hover {
 }
 
 .travel-info-header strong {
-    font-size: 1rem;
-    color: #1e293b;
+    font-size: 1.125rem;
+    font-weight: 700;
+    color: #181C1E;
 }
 
 .travel-info-icon {
@@ -1060,15 +1192,190 @@ a:hover {
 
 .travel-info-modes {
     display: flex;
-    gap: 1rem;
-    flex-wrap: wrap;
-    align-items: center;
+    gap: 12px;
+    width: 100%;
 }
 
 .travel-info-modes .travel-mode {
     font-size: 0.875rem;
     color: #475569;
     white-space: nowrap;
+}
+
+/* Travel Mode Cards (detail page redesign) */
+.travel-mode-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    background: #F1F4F6;
+    border-radius: 12px;
+    padding: 16px 20px;
+    flex: 1;
+}
+
+.travel-mode-card .travel-mode-icon {
+    font-size: 1.5rem;
+    color: #2563EB;
+}
+
+.travel-mode-card .travel-mode-time {
+    font-size: 0.9375rem;
+    font-weight: 600;
+    color: #181C1E;
+}
+
+.travel-mode-card .travel-mode-label {
+    font-size: 0.6875rem;
+    font-weight: 500;
+    color: #64748B;
+}
+
+/* Stats Bar */
+.detail-stats-bar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: #002045;
+    border-radius: 12px;
+    padding: 20px 24px;
+    margin-bottom: 1.25rem;
+    box-shadow: 0 4px 12px rgba(0,32,69,0.2);
+}
+
+.stat-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+}
+
+.stat-value {
+    color: #fff;
+    font-size: 1.625rem;
+    font-weight: 700;
+    line-height: 1;
+}
+
+.stat-label {
+    color: rgba(255,255,255,0.6);
+    font-size: 0.75rem;
+    font-weight: 500;
+}
+
+.stat-divider {
+    width: 1px;
+    height: 40px;
+    background: rgba(255,255,255,0.13);
+    flex-shrink: 0;
+}
+
+/* Rating rows */
+.rating-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.rating-row-label {
+    font-size: 0.9375rem;
+    font-weight: 600;
+    color: #1e293b;
+}
+
+.rating-row-value {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.rating-stars {
+    display: inline-flex;
+    gap: 1px;
+    font-size: 1rem;
+}
+
+.star-filled {
+    color: #F59E0B;
+}
+
+.star-empty {
+    color: #e2e8f0;
+}
+
+.abitur-value {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: #002045;
+}
+
+.abitur-quality {
+    font-size: 0.8125rem;
+    font-weight: 500;
+    color: #16A34A;
+}
+
+.demand-badge {
+    display: inline-block;
+    background: #fef3c7;
+    color: #92400e;
+    border-radius: 9999px;
+    padding: 2px 10px;
+    font-size: 0.8125rem;
+    font-weight: 600;
+}
+
+.demand-badge.demand-low {
+    background: #ecfdf5;
+    color: #065f46;
+}
+
+.rating-divider {
+    height: 1px;
+    background: #f1f5f9;
+    width: 100%;
+}
+
+/* Contact icon rows */
+.contact-row {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.contact-icon {
+    color: #64748B;
+    font-size: 1rem;
+    width: 20px;
+    text-align: center;
+    flex-shrink: 0;
+}
+
+/* Data Provenance - subtle muted section */
+.detail-section.provenance {
+    background: #F1F4F6;
+    box-shadow: none;
+}
+
+.provenance .provenance-list dt {
+    color: #64748B;
+    font-size: 0.8125rem;
+}
+
+.provenance .provenance-list dd {
+    font-size: 0.8125rem;
+}
+
+.provenance h2 {
+    font-size: 1rem;
+}
+
+/* Detail map (redesign) */
+.detail-map {
+    border-radius: 16px !important;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    border: 1px solid #C4C6CF;
 }
 
 /* === Mobile adjustments for address input === */
