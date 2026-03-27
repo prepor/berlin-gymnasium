@@ -37,6 +37,10 @@ admission_requirements:
     has long tradition since 1997; includes mandatory ensemble participation, instrument lessons. MINT profile includes special
     science promotion, partnerships with TU Berlin and Berlin Zoo. School located in Berlin-Hermsdorf. Digital registration
     introduced.'
+  first_choices: 138
+  places: 192
+  demand_ratio: 0.72
+  oversubscribed: false
 image_urls:
 - photos/12Y05_0.jpg
 social_media:
@@ -49,6 +53,18 @@ ratings:
     scale_max: 5.0
     review_count: 6
     retrieved: '2026-03-26'
+  schulen_de:
+    source: schulen.de
+    score: 4.0
+    scale_min: 1.0
+    scale_max: 5.0
+    retrieved: '2026-03-27'
+  schulen_de_users:
+    source: schulen.de (user reviews)
+    score: 4.7
+    scale_min: 1.0
+    scale_max: 6.0
+    retrieved: '2026-03-27'
 completeness_score: 0.882
 field_confidence:
   accepts_after_4th_grade: high
@@ -65,6 +81,9 @@ data_sources:
 - wfs_berlin
 - agent_research
 - wikimedia
+- abitur_xlsx_2025
+- gymnasium_berlin_net
+- schulen_de
 unverified_fields:
 - social_media
 - unverified_fields
@@ -78,3 +97,6 @@ unverified_fields:
 - ganztag
 _pinned_fields: []
 ganztag: true
+abitur_average: 2.38
+abitur_pass_rate: 99.1
+abitur_student_count: 115

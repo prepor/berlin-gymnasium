@@ -31,7 +31,13 @@ image_urls:
 - photos/04P04_2.jpg
 social_media:
   instagram: https://instagram.com/ksl_berlin
-ratings: {}
+ratings:
+  schulen_de:
+    source: schulen.de
+    score: 3.0
+    scale_min: 1.0
+    scale_max: 5.0
+    retrieved: '2026-03-27'
 completeness_score: 0.824
 field_confidence:
   accepts_after_4th_grade: high
@@ -43,6 +49,8 @@ data_sources:
 - wfs_berlin
 - agent_research
 - wikimedia
+- abitur_xlsx_2025
+- schulen_de
 unverified_fields:
 - unverified_fields
 - social_media
@@ -57,3 +65,6 @@ unverified_fields:
 _pinned_fields: []
 ganztag: true
 accepts_after_4th_grade: true
+abitur_average: 2.08
+abitur_pass_rate: 100.0
+abitur_student_count: 96

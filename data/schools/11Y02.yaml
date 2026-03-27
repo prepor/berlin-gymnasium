@@ -42,7 +42,10 @@ admission_requirements:
   notes: Standardised selection interview (ca. 20 min, reading aloud, language knowledge, logical reasoning, up to 50 
     points) is used only as a tiebreaker when grade-sum group exceeds capacity. No fixed GPA threshold can be stated in 
     advance due to variable application numbers. Bilingual Abitur (CertiLingua) available.
-abitur_average: 1.86
+  first_choices: 108
+  places: 96
+  demand_ratio: 1.12
+abitur_average: 1.84
 image_urls:
 - photos/11Y02_0.jpg
 - photos/11Y02_1.jpg
@@ -56,6 +59,12 @@ ratings:
     scale_max: 5.0
     review_count: 2
     retrieved: '2026-03-26'
+  schulen_de:
+    source: schulen.de
+    score: 3.5
+    scale_min: 1.0
+    scale_max: 5.0
+    retrieved: '2026-03-27'
 completeness_score: 0.941
 field_confidence:
   accepts_after_4th_grade: high
@@ -72,6 +81,9 @@ data_sources:
 - wfs_berlin
 - agent_research
 - wikimedia
+- abitur_xlsx_2025
+- gymnasium_berlin_net
+- schulen_de
 unverified_fields:
 - social_media
 - abitur_average
@@ -86,3 +98,5 @@ unverified_fields:
 - profile
 _pinned_fields: []
 open_day: '2026-01-10'
+abitur_pass_rate: 100.0
+abitur_student_count: 119

@@ -34,7 +34,11 @@ admission_requirements:
   notes: School is dreizügig (3 tracks). In case of oversubscription, the Förderprognose grade average is the selection 
     criterion. No grundständig (grade-5-entry) tracks exist. Admission visits/Hospitationen offered for prospective 
     students in grades 7–8.
-abitur_average: 2.3
+  first_choices: 96
+  places: 96
+  demand_ratio: 1.0
+  oversubscribed: false
+abitur_average: 2.15
 image_urls: []
 social_media:
   facebook: https://www.facebook.com/103120406395388
@@ -46,6 +50,12 @@ ratings:
     scale_max: 6.0
     review_count:
     retrieved: '2026-03-26'
+  schulen_de:
+    source: schulen.de
+    score: 3.5
+    scale_min: 1.0
+    scale_max: 5.0
+    retrieved: '2026-03-27'
 completeness_score: 0.882
 field_confidence:
   accepts_after_4th_grade: high
@@ -61,6 +71,9 @@ field_confidence:
 data_sources:
 - wfs_berlin
 - agent_research
+- abitur_xlsx_2025
+- gymnasium_berlin_net
+- schulen_de
 unverified_fields:
 - social_media
 - abitur_average
@@ -75,3 +88,5 @@ unverified_fields:
 - profile
 - open_day
 _pinned_fields: []
+abitur_pass_rate: 95.7
+abitur_student_count: 70

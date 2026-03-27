@@ -31,6 +31,10 @@ admission_requirements:
   entrance_test: false
   notes: 'Half-day school; lessons end at 14:30 up to grade 10. Language tracks: S1 English/French, S4 English/Spanish, S7
     English/Turkish'
+  first_choices: 88
+  places: 128
+  demand_ratio: 0.69
+  oversubscribed: false
 image_urls:
 - photos/02Y07_0.jpg
 social_media:
@@ -51,6 +55,8 @@ data_sources:
 - wfs_berlin
 - agent_research
 - wikimedia
+- abitur_xlsx_2025
+- gymnasium_berlin_net
 unverified_fields:
 - social_media
 - unverified_fields
@@ -63,3 +69,6 @@ unverified_fields:
 - languages
 - profile
 _pinned_fields: []
+abitur_average: 2.76
+abitur_pass_rate: 92.4
+abitur_student_count: 79

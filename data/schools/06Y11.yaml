@@ -29,13 +29,23 @@ admission_requirements:
   entrance_test: false
   notes: 'Two profiles: MINT and Futur3 (BNE/sustainability profile — first such class in Berlin). Certified Umweltschule
     (20+ times) and IT-Musterschule. Cooperates with Lilienthal-Gymnasium and Willi-Graf-Gymnasium for Oberstufe.'
+  first_choices: 148
+  places: 128
+  demand_ratio: 1.16
+  oversubscribed: true
 image_urls:
 - photos/06Y11_0.jpg
 - photos/06Y11_1.jpg
 social_media:
   instagram: https://www.instagram.com/goethe_gymnasium_lichterfelde/
   facebook: https://www.facebook.com/Goethe-Gymnasium-Berlin-Lichterfelde-109557012397213/
-ratings: {}
+ratings:
+  schulen_de:
+    source: schulen.de
+    score: 5.0
+    scale_min: 1.0
+    scale_max: 5.0
+    retrieved: '2026-03-27'
 completeness_score: 0.882
 field_confidence:
   accepts_after_4th_grade: high
@@ -50,6 +60,9 @@ data_sources:
 - wfs_berlin
 - agent_research
 - wikimedia
+- abitur_xlsx_2025
+- gymnasium_berlin_net
+- schulen_de
 unverified_fields:
 - social_media
 - unverified_fields
@@ -65,3 +78,6 @@ unverified_fields:
 _pinned_fields: []
 ganztag: false
 open_day: '2026-01-24'
+abitur_average: 2.26
+abitur_pass_rate: 99.0
+abitur_student_count: 105

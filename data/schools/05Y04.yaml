@@ -34,10 +34,26 @@ admission_requirements:
   entrance_test: false
   notes: From school year 2026/2027 the school is grundständig, accepting students from grade 5 with a natural sciences 
     (NaWi) focus. The NaWi grundständige class is new as of 2026/27.
+  first_choices: 110
+  places: 128
+  demand_ratio: 0.86
+  oversubscribed: false
 image_urls: []
 social_media:
   instagram: https://www.instagram.com/cfvsgymnasium/
-ratings: {}
+ratings:
+  schulen_de:
+    source: schulen.de
+    score: 5.0
+    scale_min: 1.0
+    scale_max: 5.0
+    retrieved: '2026-03-27'
+  schulen_de_users:
+    source: schulen.de (user reviews)
+    score: 2.5
+    scale_min: 1.0
+    scale_max: 6.0
+    retrieved: '2026-03-27'
 completeness_score: 0.824
 field_confidence:
   accepts_after_4th_grade: high
@@ -52,6 +68,9 @@ field_confidence:
 data_sources:
 - wfs_berlin
 - agent_research
+- abitur_xlsx_2025
+- gymnasium_berlin_net
+- schulen_de
 unverified_fields:
 - social_media
 - unverified_fields
@@ -66,3 +85,6 @@ unverified_fields:
 - open_day
 _pinned_fields: []
 open_day: '2026-01-10'
+abitur_average: 2.56
+abitur_pass_rate: 87.4
+abitur_student_count: 87

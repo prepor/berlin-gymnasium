@@ -37,12 +37,27 @@ admission_requirements:
   notes: 'Musikprofilklasse: Schüler müssen Bereitschaft zur Mitwirkung in Schulensembles schriftlich erklären. In Kl. 5 ist
     Instrumentalunterricht obligatorisch und kostenfrei. Aufnahme in MINT-Klasse auf Probe. Deutliche Übernachfrage für Profilklassen
     – nur bei Erstwunsch realistisch.'
+  first_choices: 114
+  places: 94
+  demand_ratio: 1.21
 image_urls:
 - photos/10Y11_0.jpg
 social_media:
   instagram: https://www.instagram.com/melanchthongymnasium/
   facebook: https://www.facebook.com/melanchthongymnasium/
-ratings: {}
+ratings:
+  schulen_de:
+    source: schulen.de
+    score: 4.0
+    scale_min: 1.0
+    scale_max: 5.0
+    retrieved: '2026-03-27'
+  schulen_de_users:
+    source: schulen.de (user reviews)
+    score: 1.8
+    scale_min: 1.0
+    scale_max: 6.0
+    retrieved: '2026-03-27'
 completeness_score: 0.882
 field_confidence:
   accepts_after_4th_grade: high
@@ -59,6 +74,9 @@ data_sources:
 - wfs_berlin
 - agent_research
 - wikimedia
+- abitur_xlsx_2025
+- gymnasium_berlin_net
+- schulen_de
 unverified_fields:
 - social_media
 - unverified_fields
@@ -73,3 +91,6 @@ unverified_fields:
 _pinned_fields: []
 ganztag: true
 open_day: '2026-01-24'
+abitur_average: 2.3
+abitur_pass_rate: 99.2
+abitur_student_count: 133

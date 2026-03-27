@@ -39,6 +39,8 @@ data_sources:
 - wfs_berlin
 - wikimedia
 - agent_research
+- abitur_xlsx_2025
+- gymnasium_berlin_net
 unverified_fields:
 - ganztag
 - admission_requirements
@@ -48,8 +50,14 @@ accepts_after_4th_grade: false
 open_day: '2026-01-15'
 admission_requirements:
   notendurchschnitt:
-  oversubscribed:
+  oversubscribed: false
   selection_criteria: Durchschnittsnote der Förderprognose
   probeunterricht: false
   entrance_test: false
   notes: Probezeit erforderlich
+  first_choices: 79
+  places: 120
+  demand_ratio: 0.66
+abitur_average: 2.67
+abitur_pass_rate: 100.0
+abitur_student_count: 69

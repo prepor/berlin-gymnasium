@@ -34,11 +34,27 @@ admission_requirements:
   notes: Bilingual Deutsch-Englisch track available from grade 7 (two bilingual classes per year). Twice awarded 
     'MINT-freundliche Schule' by Initiative MINT-Zukunft schaffen. European Encounter School with Poland; Polish 
     language offered as elective from grade 8. Six 7th classes planned for 2026/27.
+  first_choices: 183
+  places: 160
+  demand_ratio: 1.14
+  oversubscribed: true
 image_urls:
 - photos/12Y04_0.jpg
 social_media:
   instagram: https://www.instagram.com/teamgvbuelow/
-ratings: {}
+ratings:
+  schulen_de:
+    source: schulen.de
+    score: 3.5
+    scale_min: 1.0
+    scale_max: 5.0
+    retrieved: '2026-03-27'
+  schulen_de_users:
+    source: schulen.de (user reviews)
+    score: 1.3
+    scale_min: 1.0
+    scale_max: 6.0
+    retrieved: '2026-03-27'
 completeness_score: 0.882
 field_confidence:
   accepts_after_4th_grade: high
@@ -53,6 +69,9 @@ data_sources:
 - wfs_berlin
 - agent_research
 - wikimedia
+- abitur_xlsx_2025
+- gymnasium_berlin_net
+- schulen_de
 unverified_fields:
 - social_media
 - unverified_fields
@@ -68,3 +87,6 @@ unverified_fields:
 _pinned_fields: []
 ganztag: true
 open_day: '2026-01-17'
+abitur_average: 2.23
+abitur_pass_rate: 97.7
+abitur_student_count: 132

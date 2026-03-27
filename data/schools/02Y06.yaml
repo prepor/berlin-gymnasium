@@ -31,6 +31,10 @@ admission_requirements:
   selection_criteria: Durchschnittsnote der Förderprognose bei Übernachfrage
   entrance_test: false
   notes: Bilingual modules in grades 8–10 in English or French; Cambridge and DELF certificates offered
+  first_choices: 127
+  places: 160
+  demand_ratio: 0.79
+  oversubscribed: false
 image_urls:
 - photos/02Y06_0.jpg
 social_media:
@@ -59,6 +63,8 @@ data_sources:
 - wfs_berlin
 - agent_research
 - wikimedia
+- abitur_xlsx_2025
+- gymnasium_berlin_net
 unverified_fields:
 - social_media
 - unverified_fields
@@ -73,3 +79,6 @@ unverified_fields:
 - abitur_average
 _pinned_fields: []
 open_day: '2026-01-17'
+abitur_average: 1.94
+abitur_pass_rate: 100.0
+abitur_student_count: 114

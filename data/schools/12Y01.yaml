@@ -32,13 +32,29 @@ admission_requirements:
   notes: Schule besonderer pädagogischer Prägung since 1991. Two grundständige classes from grade 5 with bilingual 
     Deutsch-Spanisch track. Offene Ganztagsgymnasium since school year 2011/12. Berlin.de lists bilingual offers 
     Deutsch/Englisch and Deutsch/Spanisch.
+  first_choices: 106
+  places: 96
+  demand_ratio: 1.1
+  oversubscribed: true
 image_urls:
 - photos/12Y01_0.jpg
 - photos/12Y01_1.jpg
 social_media:
   instagram: https://www.instagram.com/feg.berlin/
   facebook: https://www.facebook.com/pages/Friedrich-Engels-Gymnasium/104008429635407/
-ratings: {}
+ratings:
+  schulen_de:
+    source: schulen.de
+    score: 4.5
+    scale_min: 1.0
+    scale_max: 5.0
+    retrieved: '2026-03-27'
+  schulen_de_users:
+    source: schulen.de (user reviews)
+    score: 6.0
+    scale_min: 1.0
+    scale_max: 6.0
+    retrieved: '2026-03-27'
 completeness_score: 0.882
 field_confidence:
   accepts_after_4th_grade: high
@@ -54,6 +70,9 @@ data_sources:
 - wfs_berlin
 - agent_research
 - wikimedia
+- abitur_xlsx_2025
+- gymnasium_berlin_net
+- schulen_de
 unverified_fields:
 - social_media
 - unverified_fields
@@ -68,3 +87,6 @@ unverified_fields:
 - abitur_average
 _pinned_fields: []
 open_day: '2026-01-24'
+abitur_average: 2.42
+abitur_pass_rate: 86.5
+abitur_student_count: 96

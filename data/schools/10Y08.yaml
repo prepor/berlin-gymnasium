@@ -33,12 +33,28 @@ admission_requirements:
   entrance_test: false
   notes: Schule trägt seit 2017 den Titel 'Schule ohne Rassismus'. Profil Berufsvorbereitung mit 
     Qualifizierungsbausteinen. Block lessons 8:00–15:15 Uhr.
+  first_choices: 99
+  places: 196
+  demand_ratio: 0.51
+  oversubscribed: false
 image_urls:
 - photos/10Y08_0.jpg
 social_media:
   facebook: https://www.facebook.com/sartregymnasium/
   instagram: https://www.instagram.com/sartre.gymnasium.berlin/
-ratings: {}
+ratings:
+  schulen_de:
+    source: schulen.de
+    score: 5.0
+    scale_min: 1.0
+    scale_max: 5.0
+    retrieved: '2026-03-27'
+  schulen_de_users:
+    source: schulen.de (user reviews)
+    score: 1.0
+    scale_min: 1.0
+    scale_max: 6.0
+    retrieved: '2026-03-27'
 completeness_score: 0.765
 field_confidence:
   accepts_after_4th_grade: high
@@ -54,6 +70,9 @@ data_sources:
 - wfs_berlin
 - agent_research
 - wikimedia
+- abitur_xlsx_2025
+- gymnasium_berlin_net
+- schulen_de
 unverified_fields:
 - social_media
 - unverified_fields
@@ -66,3 +85,6 @@ unverified_fields:
 - languages
 - profile
 _pinned_fields: []
+abitur_average: 2.56
+abitur_pass_rate: 92.6
+abitur_student_count: 95

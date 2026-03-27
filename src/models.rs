@@ -49,6 +49,10 @@ pub struct School {
     #[serde(default)]
     pub abitur_average: Option<f64>,
     #[serde(default)]
+    pub abitur_pass_rate: Option<f64>,
+    #[serde(default)]
+    pub abitur_student_count: Option<u32>,
+    #[serde(default)]
     pub image_urls: Vec<String>,
     #[serde(default)]
     pub social_media: HashMap<String, String>,
@@ -97,6 +101,12 @@ pub struct AdmissionRequirements {
     pub entrance_test: Option<bool>,
     #[serde(default)]
     pub notes: Option<String>,
+    #[serde(default)]
+    pub first_choices: Option<u32>,
+    #[serde(default)]
+    pub places: Option<u32>,
+    #[serde(default)]
+    pub demand_ratio: Option<f64>,
 }
 
 #[derive(Clone, Debug, Serialize, Deserialize, PartialEq)]

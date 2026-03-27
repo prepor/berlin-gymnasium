@@ -30,11 +30,27 @@ admission_requirements:
   probeunterricht: true
   entrance_test: false
   notes: Public gymnasium in Berlin-Mitte. Standard Berlin admission procedure applies.
+  first_choices: 85
+  places: 64
+  demand_ratio: 1.33
+  oversubscribed: true
 image_urls:
 - photos/01Y08_0.jpg
 social_media:
   facebook: https://facebook.com/LessingGymnasium.Berlin/
-ratings: {}
+ratings:
+  schulen_de:
+    source: schulen.de
+    score: 3.5
+    scale_min: 1.0
+    scale_max: 5.0
+    retrieved: '2026-03-27'
+  schulen_de_users:
+    source: schulen.de (user reviews)
+    score: 2.9
+    scale_min: 1.0
+    scale_max: 6.0
+    retrieved: '2026-03-27'
 completeness_score: 0.824
 field_confidence:
   accepts_after_4th_grade: low
@@ -47,6 +63,9 @@ data_sources:
 - wfs_berlin
 - agent_research
 - wikimedia
+- abitur_xlsx_2025
+- gymnasium_berlin_net
+- schulen_de
 unverified_fields:
 - social_media
 - unverified_fields
@@ -59,3 +78,6 @@ unverified_fields:
 - languages
 - profile
 _pinned_fields: []
+abitur_average: 2.35
+abitur_pass_rate: 93.1
+abitur_student_count: 102

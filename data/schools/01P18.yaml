@@ -52,6 +52,7 @@ field_confidence:
 data_sources:
 - wfs_berlin
 - agent_research
+- abitur_xlsx_2025
 unverified_fields:
 - social_media
 - unverified_fields
@@ -66,3 +67,6 @@ unverified_fields:
 - open_day
 _pinned_fields: []
 open_day: '2026-09-26'
+abitur_average: 2.04
+abitur_pass_rate: 100.0
+abitur_student_count: 42

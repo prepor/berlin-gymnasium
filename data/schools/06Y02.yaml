@@ -28,7 +28,7 @@ languages:
 - name: Spanisch
   from_grade: 7
 admission_requirements:
-  oversubscribed: true
+  oversubscribed: false
   selection_criteria: 'Admissions split by first foreign language chosen (Englisch or Französisch). For music profile (C-Klassen):
     entrance test in music required (Aufnahmeprüfung). For other tracks: Durchschnittsnote der Förderprognose used; ties broken
     by lottery. Sibling priority applies.'
@@ -37,12 +37,27 @@ admission_requirements:
   notes: 5 classes of 29 students each for school year 2026/27. Entrance music test required for musikbetonte Klassen. 
     For non-music tracks, GPA-based selection with lottery for ties. Profilklasse Französisch offers bilingual 
     instruction in French from grade 9 in Geography and History.
+  first_choices: 111
+  places: 128
+  demand_ratio: 0.87
 image_urls:
 - photos/06Y02_0.jpg
 - photos/06Y02_1.jpg
 social_media:
   facebook: https://www.facebook.com/profile.php?id=119250951474979
-ratings: {}
+ratings:
+  schulen_de:
+    source: schulen.de
+    score: 3.5
+    scale_min: 1.0
+    scale_max: 5.0
+    retrieved: '2026-03-27'
+  schulen_de_users:
+    source: schulen.de (user reviews)
+    score: 1.1
+    scale_min: 1.0
+    scale_max: 6.0
+    retrieved: '2026-03-27'
 completeness_score: 0.824
 field_confidence:
   accepts_after_4th_grade: high
@@ -60,6 +75,9 @@ data_sources:
 - wfs_berlin
 - agent_research
 - wikimedia
+- abitur_xlsx_2025
+- gymnasium_berlin_net
+- schulen_de
 unverified_fields:
 - social_media
 - unverified_fields
@@ -72,3 +90,6 @@ unverified_fields:
 - languages
 - profile
 _pinned_fields: []
+abitur_average: 2.2
+abitur_pass_rate: 100.0
+abitur_student_count: 113

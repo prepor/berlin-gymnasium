@@ -29,11 +29,27 @@ admission_requirements:
   entrance_test: false
   notes: No grundständige Züge confirmed in Steglitz-Zehlendorf district records for this school. Data on this school is
     limited; web search exhausted before dedicated search.
+  first_choices: 98
+  places: 128
+  demand_ratio: 0.77
+  oversubscribed: false
 image_urls:
 - photos/06Y04_0.jpg
 social_media:
   instagram: https://www.instagram.com/dreilinden_gymnasium/
-ratings: {}
+ratings:
+  schulen_de:
+    source: schulen.de
+    score: 3.5
+    scale_min: 1.0
+    scale_max: 5.0
+    retrieved: '2026-03-27'
+  schulen_de_users:
+    source: schulen.de (user reviews)
+    score: 3.5
+    scale_min: 1.0
+    scale_max: 6.0
+    retrieved: '2026-03-27'
 completeness_score: 0.824
 field_confidence:
   accepts_after_4th_grade: medium
@@ -49,6 +65,9 @@ data_sources:
 - wfs_berlin
 - agent_research
 - wikimedia
+- abitur_xlsx_2025
+- gymnasium_berlin_net
+- schulen_de
 unverified_fields:
 - social_media
 - unverified_fields
@@ -62,3 +81,6 @@ unverified_fields:
 - profile
 - open_day
 _pinned_fields: []
+abitur_average: 2.14
+abitur_pass_rate: 98.1
+abitur_student_count: 108

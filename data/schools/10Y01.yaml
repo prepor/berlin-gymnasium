@@ -38,6 +38,10 @@ admission_requirements:
   notes: Admission is to grade 7 (Klasse 7). The Probeunterricht is only required for applicants whose Förderprognose 
     average exceeds 2.2; it is not a separate entrance exam but a Berlin-wide eligibility assessment. No grundständig 
     (grade 5) intake offered.
+  first_choices: 116
+  places: 160
+  demand_ratio: 0.72
+  oversubscribed: false
 image_urls:
 - photos/10Y01_0.jpg
 - photos/10Y01_1.jpg
@@ -51,6 +55,18 @@ ratings:
     scale_max: 6.0
     review_count:
     retrieved: '2026-03-26'
+  schulen_de:
+    source: schulen.de
+    score: 3.0
+    scale_min: 1.0
+    scale_max: 5.0
+    retrieved: '2026-03-27'
+  schulen_de_users:
+    source: schulen.de (user reviews)
+    score: 5.2
+    scale_min: 1.0
+    scale_max: 6.0
+    retrieved: '2026-03-27'
 completeness_score: 0.882
 field_confidence:
   accepts_after_4th_grade: high
@@ -67,6 +83,9 @@ data_sources:
 - wfs_berlin
 - agent_research
 - wikimedia
+- abitur_xlsx_2025
+- gymnasium_berlin_net
+- schulen_de
 unverified_fields:
 - social_media
 - unverified_fields
@@ -81,3 +100,6 @@ unverified_fields:
 - abitur_average
 - open_day
 _pinned_fields: []
+abitur_average: 2.51
+abitur_pass_rate: 97.7
+abitur_student_count: 86

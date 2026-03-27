@@ -30,7 +30,19 @@ image_urls:
 - photos/07Y06_1.jpg
 social_media:
   facebook: https://www.facebook.com/pages/Askanisches-Gymnasium/106032096104225
-ratings: {}
+ratings:
+  schulen_de:
+    source: schulen.de
+    score: 3.5
+    scale_min: 1.0
+    scale_max: 5.0
+    retrieved: '2026-03-27'
+  schulen_de_users:
+    source: schulen.de (user reviews)
+    score: 4.4
+    scale_min: 1.0
+    scale_max: 6.0
+    retrieved: '2026-03-27'
 completeness_score: 0.882
 field_confidence:
   accepts_after_4th_grade: high
@@ -46,6 +58,9 @@ data_sources:
 - wfs_berlin
 - wikimedia
 - agent_research
+- abitur_xlsx_2025
+- gymnasium_berlin_net
+- schulen_de
 unverified_fields:
 - ganztag
 - profile
@@ -56,9 +71,15 @@ accepts_after_4th_grade: false
 open_day: '2026-01-16'
 admission_requirements:
   notendurchschnitt:
-  oversubscribed:
+  oversubscribed: false
   selection_criteria: Fremdsprachenfolge und Durchschnittsnote der Förderprognose
   probeunterricht: false
   entrance_test: false
   notes: Aufnahme von 128 Schülern in vier neue Klassen im 7. Jahrgang. Englisch als 1. Fremdsprache erforderlich, Wahl 
     zwischen Französisch oder Spanisch als 2. Fremdsprache.
+  first_choices: 110
+  places: 128
+  demand_ratio: 0.86
+abitur_average: 2.49
+abitur_pass_rate: 82.4
+abitur_student_count: 85

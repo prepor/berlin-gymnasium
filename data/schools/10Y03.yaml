@@ -29,6 +29,10 @@ admission_requirements:
   probeunterricht: true
   entrance_test: false
   notes: Kooperation mit Siemens AG; naturwissenschaftliches Profil und IT-Profil. First foreign language Englisch only.
+  first_choices: 169
+  places: 160
+  demand_ratio: 1.06
+  oversubscribed: true
 image_urls:
 - photos/10Y03_0.jpg
 social_media:
@@ -49,6 +53,8 @@ data_sources:
 - wfs_berlin
 - agent_research
 - wikimedia
+- abitur_xlsx_2025
+- gymnasium_berlin_net
 unverified_fields:
 - social_media
 - unverified_fields
@@ -63,3 +69,6 @@ unverified_fields:
 - open_day
 _pinned_fields: []
 open_day: '2026-01-10'
+abitur_average: 2.3
+abitur_pass_rate: 100.0
+abitur_student_count: 121

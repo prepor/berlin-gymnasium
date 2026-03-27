@@ -28,11 +28,27 @@ languages:
   from_grade: 9
 admission_requirements:
   notes: No data retrieved in this research session.
+  first_choices: 103
+  places: 128
+  demand_ratio: 0.8
+  oversubscribed: false
 image_urls:
 - photos/07Y01_0.jpg
 social_media:
   instagram: https://www.instagram.com/blum_preis_rbg/
-ratings: {}
+ratings:
+  schulen_de:
+    source: schulen.de
+    score: 3.5
+    scale_min: 1.0
+    scale_max: 5.0
+    retrieved: '2026-03-27'
+  schulen_de_users:
+    source: schulen.de (user reviews)
+    score: 2.7
+    scale_min: 1.0
+    scale_max: 6.0
+    retrieved: '2026-03-27'
 completeness_score: 0.824
 field_confidence:
   accepts_after_4th_grade: medium
@@ -47,6 +63,9 @@ data_sources:
 - wfs_berlin
 - agent_research
 - wikimedia
+- abitur_xlsx_2025
+- gymnasium_berlin_net
+- schulen_de
 unverified_fields:
 - unverified_fields
 - social_media
@@ -60,3 +79,6 @@ unverified_fields:
 _pinned_fields: []
 accepts_after_4th_grade: false
 open_day: '2026-01-23'
+abitur_average: 2.18
+abitur_pass_rate: 95.8
+abitur_student_count: 119

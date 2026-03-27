@@ -29,11 +29,20 @@ admission_requirements:
   entrance_test: true
   notes: Rosa-Luxemburg-Gymnasium is noted as conducting the most Schnelllerner-class entrance tests in Berlin annually 
     (per Tagesspiegel). Anmeldung zur Testung must happen in advance of general application period.
+  first_choices: 102
+  places: 64
+  demand_ratio: 1.59
 image_urls:
 - photos/03Y10_0.jpg
 - photos/03Y10_1.jpg
 social_media: {}
-ratings: {}
+ratings:
+  schulen_de:
+    source: schulen.de
+    score: 3.0
+    scale_min: 1.0
+    scale_max: 5.0
+    retrieved: '2026-03-27'
 completeness_score: 0.588
 field_confidence:
   accepts_after_4th_grade: high
@@ -44,6 +53,9 @@ data_sources:
 - wfs_berlin
 - agent_research
 - wikimedia
+- abitur_xlsx_2025
+- gymnasium_berlin_net
+- schulen_de
 unverified_fields:
 - social_media
 - unverified_fields
@@ -55,3 +67,6 @@ unverified_fields:
 - languages
 - profile
 _pinned_fields: []
+abitur_average: 1.73
+abitur_pass_rate: 100.0
+abitur_student_count: 167

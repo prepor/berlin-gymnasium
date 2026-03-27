@@ -26,7 +26,13 @@ languages:
 image_urls:
 - photos/09Y11_0.jpg
 social_media: {}
-ratings: {}
+ratings:
+  schulen_de:
+    source: schulen.de
+    score: 3.0
+    scale_min: 1.0
+    scale_max: 5.0
+    retrieved: '2026-03-27'
 completeness_score: 0.765
 field_confidence:
   accepts_after_4th_grade: high
@@ -42,6 +48,9 @@ data_sources:
 - wfs_berlin
 - wikimedia
 - agent_research
+- abitur_xlsx_2025
+- gymnasium_berlin_net
+- schulen_de
 unverified_fields:
 - ganztag
 - social_media
@@ -51,10 +60,16 @@ _pinned_fields: []
 accepts_after_4th_grade: true
 admission_requirements:
   notendurchschnitt:
-  oversubscribed: true
+  oversubscribed: false
   selection_criteria: Durchschnittsnote der Förderprognose, Noten aus zwei Schulhalbjahren, inner- und außerschulische 
     Kompetenzen, profilbezogene Tests
   probeunterricht: false
   entrance_test: true
   notes: Gymnasium besonderer pädagogischer Prägung mit naturwissenschaftlichem Profil seit 2015. MINT-Profilklassen ab 
     Klasse 5 oder 7.
+  first_choices: 81
+  places: 128
+  demand_ratio: 0.63
+abitur_average: 2.3
+abitur_pass_rate: 93.3
+abitur_student_count: 90

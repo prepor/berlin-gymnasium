@@ -29,7 +29,19 @@ image_urls:
 social_media:
   instagram: https://www.instagram.com/ongofficial/
   facebook: https://www.facebook.com/ongofficial/
-ratings: {}
+ratings:
+  schulen_de:
+    source: schulen.de
+    score: 5.0
+    scale_min: 1.0
+    scale_max: 5.0
+    retrieved: '2026-03-27'
+  schulen_de_users:
+    source: schulen.de (user reviews)
+    score: 1.6
+    scale_min: 1.0
+    scale_max: 6.0
+    retrieved: '2026-03-27'
 completeness_score: 0.882
 field_confidence:
   accepts_after_4th_grade: high
@@ -44,10 +56,13 @@ data_sources:
 - wfs_berlin
 - wikimedia
 - agent_research
+- abitur_xlsx_2025
+- gymnasium_berlin_net
+- schulen_de
 unverified_fields:
 - abitur_average
 _pinned_fields: []
-abitur_average: 1.98
+abitur_average: 1.8
 ganztag: true
 accepts_after_4th_grade: true
 admission_requirements:
@@ -58,3 +73,8 @@ admission_requirements:
   probeunterricht: false
   entrance_test: true
   notes: Schnelllernerklassen ab Klasse 5; eines der 3 gefragtesten Gymnasien Berlins 2023/24
+  first_choices: 94
+  places: 64
+  demand_ratio: 1.47
+abitur_pass_rate: 100.0
+abitur_student_count: 115

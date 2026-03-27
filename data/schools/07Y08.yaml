@@ -39,10 +39,26 @@ admission_requirements:
   entrance_test: false
   notes: Standard Berlin Gymnasium admission from grade 7 (Klasse 7). Registration period was 06–14 March 2025 for 
     school year 2025/26. No grundständig (grade 5) intake.
+  first_choices: 122
+  places: 128
+  demand_ratio: 0.95
+  oversubscribed: false
 image_urls: []
 social_media:
   facebook: https://www.facebook.com/p/Ulrich-von-Hutten-Oberschule-Gymnasium-100069906122561/
-ratings: {}
+ratings:
+  schulen_de:
+    source: schulen.de
+    score: 3.5
+    scale_min: 1.0
+    scale_max: 5.0
+    retrieved: '2026-03-27'
+  schulen_de_users:
+    source: schulen.de (user reviews)
+    score: 4.3
+    scale_min: 1.0
+    scale_max: 6.0
+    retrieved: '2026-03-27'
 completeness_score: 0.765
 field_confidence:
   accepts_after_4th_grade: high
@@ -58,6 +74,9 @@ field_confidence:
 data_sources:
 - wfs_berlin
 - agent_research
+- abitur_xlsx_2025
+- gymnasium_berlin_net
+- schulen_de
 unverified_fields:
 - social_media
 - unverified_fields
@@ -71,3 +90,6 @@ unverified_fields:
 - open_day
 _pinned_fields: []
 open_day: '2026-01-23'
+abitur_average: 2.34
+abitur_pass_rate: 94.8
+abitur_student_count: 96

@@ -24,12 +24,15 @@ languages:
   from_grade: 7
 admission_requirements:
   notendurchschnitt: 2.0
-  oversubscribed: true
+  oversubscribed: false
   selection_criteria: 'Bilingualer Zug: Förderprognose ≤ 2,0, Summe Mathe+Deutsch+Englisch ≤ 5; Regelklassen: Förderprognose
     max. 2,1'
   entrance_test: false
   notes: Bilingualer Zug (Englisch) seit Schuljahr 2015/16; CertiLingua-Label; Schach-Auszeichnung (Bronze, Deutsche 
     Schachjugend 2025)
+  first_choices: 87
+  places: 128
+  demand_ratio: 0.68
 image_urls: []
 social_media:
   facebook: https://www.facebook.com/GymnasiumAmTiergartenBerlin/
@@ -48,6 +51,8 @@ field_confidence:
 data_sources:
 - wfs_berlin
 - agent_research
+- abitur_xlsx_2025
+- gymnasium_berlin_net
 unverified_fields:
 - social_media
 - unverified_fields
@@ -62,3 +67,6 @@ unverified_fields:
 - open_day
 _pinned_fields: []
 ganztag: true
+abitur_average: 2.53
+abitur_pass_rate: 85.4
+abitur_student_count: 123
