@@ -34,10 +34,9 @@ admission_requirements:
     (altsprachlicher Bildungszweig) and grade 7 classes
   probeunterricht: false
   entrance_test: false
-  notes: Grundständiger Zug (grade 5 entry) introduced in school year 2006/07 in the altsprachlicher Bildungszweig. 
-    Latin as 2nd language from grade 5, Ancient Greek as mandatory 3rd language from grade 8. Grade 7 also has a 
-    Werkstatt Ästhetische Bildung profile (DS, Kunst, Musik). Strong music programme with 3 choirs, 6 orchestras, 6 
-    bands.
+  notes: 'Altsprachliches Gymnasium (§6 Abs. 10 Sek I-VO). 1 grundständige "g-Klasse" ab Klasse 5 (seit 2006/07).
+    Latein als 2. FS ab Kl. 5, Altgriechisch als Pflicht-3. FS ab Kl. 8. Latinum bis Ende Kl. 10, Graecum in der
+    Oberstufe möglich. Kein Eignungstest. Kl. 7 hat zusätzlich Werkstatt Ästhetische Bildung (DS, Kunst, Musik).'
   first_choices: 89
   places: 96
   demand_ratio: 0.93

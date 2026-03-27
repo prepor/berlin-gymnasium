@@ -31,8 +31,9 @@ admission_requirements:
     entrance test
   probeunterricht: false
   entrance_test: true
-  notes: Bilingual (Kl.5) track requires entrance test for MINT/bilingual classes. Standard track from grade 7 via 
-    Förderprognose GPA.
+  notes: 'Grundständiges bilinguales Gymnasium Englisch (§5 AufnahmeVO-SbP). 2 Klassen ab Klasse 5 (~60 Plätze).
+    Auswahl nach Notensumme (De+FS+Ma+SU), Auswahlgespräch als Tiebreaker. Intensiv-Englisch in Kl. 5-8, Bio auf
+    Englisch ab Kl. 7, Geschichte ab Kl. 9. MINT-EC Schule.'
   first_choices: 186
   places: 128
   demand_ratio: 1.45

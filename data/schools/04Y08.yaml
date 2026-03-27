@@ -29,8 +29,9 @@ admission_requirements:
     'gut'. Qualifying pupils then sit a centralised entrance test (Eingangstest)."
   probeunterricht: false
   entrance_test: true
-  notes: Entrance test for the grundständig MINT profile (class 5) is held at all grundständig MINT schools 
-    simultaneously each March. Regular (class 7) intake uses standard Förderprognose GPA criterion.
+  notes: 'Naturwissenschaftlich profiliertes Gymnasium (§6 AufnahmeVO-SbP). 1 Klasse ab Klasse 5 (~32 Plätze).
+    Zentraler Eingangstest (gleichzeitig an allen §6-Schulen, Feb 17, 2026 um 15:00). Mathe mind. "gut", gewichtete
+    Notensumme (Ma×3+De×2+SU+FS) ≤ 15. Stark überbucht (75 Erstwünsche auf 32 Plätze).'
   first_choices: 75
   places: 32
   demand_ratio: 2.34

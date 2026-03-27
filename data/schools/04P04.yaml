@@ -24,7 +24,11 @@ languages:
 - name: Spanisch
   from_grade: 7
 admission_requirements:
-  notes: No search results retrieved in this session; data not available.
+  selection_criteria: 'Klasse 5: Bewerbung (Anschreiben + Zeugnisse Kl. 1-4) + 2 Kennenlerntage an der Schule.'
+  entrance_test: false
+  notes: Integrative Profilklasse ab Klasse 5 (Begabtenförderung, seit 2009). 1 Klasse (~20-24 Schüler), ca. 1/4
+    Plätze für Kinder mit Hochbegabung (inkl. Begleitproblematik). Privatgymnasium des Erzbistums Berlin.
+    ECHA-zertifizierte Profilklassenleitung. Latein ab Kl. 6.
 image_urls:
 - photos/04P04_0.jpg
 - photos/04P04_1.jpg

@@ -12,7 +12,7 @@ email: sekretariat@herder-gymnasium.eu
 traeger: öffentlich
 student_count: 900
 teacher_count: 72
-accepts_after_4th_grade: false
+accepts_after_4th_grade: true
 profile:
 - bilingual_french
 ganztag: false
@@ -26,12 +26,14 @@ languages:
 - name: Spanisch
   from_grade: 9
 admission_requirements:
-  selection_criteria: Standard Berlin Gymnasium admission via Förderprognose. Known for its French-bilingual profile 
-    (Deutsch-Französisch). Probeunterricht applies under Berlin-wide rules.
+  selection_criteria: 'Klasse 5 Profilklassen: Aufnahme per Eignungstest (math-science aptitude). Klasse 7: Förderprognose,
+    Probeunterricht bei Übernachfrage.'
   probeunterricht: true
-  entrance_test: false
-  notes: 'Public Gymnasium (Herder-Gymnasium); starts at grade 7. Known as a school with a French bilingual profile. No grade-5
-    grundständig track confirmed. Website: https://www.herder-gymnasium.eu'
+  entrance_test: true
+  notes: Grundständiges Gymnasium mit mathematisch-naturwissenschaftlichem Profil. Two Profilklassen (30 students each)
+    per year from Klasse 5, targeting mathematically gifted students. Admission by Eignungstest. Part of a network of
+    math-science profiled schools cooperating with Humboldt-Universität Berlin. Also has French-bilingual profile from
+    Klasse 7.
   first_choices: 67
   places: 64
   demand_ratio: 1.05

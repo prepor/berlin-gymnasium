@@ -26,7 +26,12 @@ languages:
 - name: Hebräisch
   from_grade: 8
 admission_requirements:
-  notes: No search results retrieved in this session; data not available.
+  selection_criteria: 'Klasse 5: Förderprognose + Halbjahreszeugnis Kl. 4 + Aufnahmegespräch (Noten, Interesse
+    an religiösen/ethischen Fragen, persönliches Gespräch). Kein Eignungstest.'
+  entrance_test: false
+  notes: Altsprachliches Privatgymnasium der Ev. Schulstiftung EKBO (gegr. 1574). Dreizügig ab Klasse 5 mit Latein
+    + Englisch ab Kl. 5, Altgriechisch/Französisch/Hebräisch ab Kl. 8. Seit 2025/26 zusätzlich 4. Zug ab Kl. 7
+    (Englisch + Latein).
 image_urls:
 - photos/04P11_0.jpg
 social_media:

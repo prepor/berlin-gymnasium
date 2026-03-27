@@ -12,7 +12,7 @@ email: leitung@siemens-gymnasium-berlin.de
 traeger: öffentlich
 student_count: 908
 teacher_count: 66
-accepts_after_4th_grade: false
+accepts_after_4th_grade: true
 profile: []
 ganztag: false
 languages:
@@ -27,9 +27,9 @@ admission_requirements:
     school in district 2014 and 2017 brochures
   probeunterricht: false
   entrance_test: true
-  notes: The Werner-von-Siemens-Gymnasium is listed in official Steglitz-Zehlendorf district brochures as a 
-    Schnelllerner school (accelerated learner track), with early registration and an aptitude test (Eignungstest) on a 
-    Saturday. No grundständige Züge confirmed. Web search exhausted before dedicated search for this school.
+  notes: One of 7 official Berlin Schnelllerner-Gymnasien (§15 AufnahmeVO-SbP). Schnelllernerklassen ab Klasse 5 for
+    gifted students, admission by Eignungstest. Listed in official Steglitz-Zehlendorf district brochures as Schnelllerner
+    school.
   first_choices: 72
   places: 96
   demand_ratio: 0.75

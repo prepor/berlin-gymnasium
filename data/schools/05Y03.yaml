@@ -32,8 +32,9 @@ admission_requirements:
   selection_criteria:
   probeunterricht: false
   entrance_test: false
-  notes: Fünfzügiges Gymnasium mit offenem Ganztagsbetrieb. Zwei grundständige Klassen ab Klasse 5 (eine 
-    bilingual/sprachlich, eine naturwissenschaftlich).
+  notes: 'Zwei grundständige Klassen ab Klasse 5: (1) Bilingual Englisch (§5 AufnahmeVO-SbP) mit verstärktem
+    Englisch in Kl. 5-6, ab Kl. 7 Geographie/Geschichte auf Englisch, Cambridge Certificate; (2) Naturwissenschaftlich
+    mit frühem experimentellem NaWi-Unterricht. Aufnahmegespräch für bilingualen Zug erforderlich. Fünfzügig ab Kl. 7.'
   first_choices: 94
   places: 122
   demand_ratio: 0.77

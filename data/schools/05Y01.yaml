@@ -27,10 +27,12 @@ languages:
 admission_requirements:
   notendurchschnitt:
   oversubscribed: true
-  selection_criteria: 'Notendurchschnitt der Förderprognose; für Kl. 5 Mathe-NaWi: Ranking der 32 besten'
+  selection_criteria: 'Klasse 5: Eignungstest (~60 Min, max 10 Pkt) 50%, Zeugnisnoten 25%, Kompetenzkriterien 25%.
+    Mathe mind. "gut", Notensumme (Ma×3+De×2+SU+EN) ≤ 15. 32 Plätze (2 Klassen à 16).'
   probeunterricht: false
-  entrance_test: false
-  notes: 'Für Klasse 5 Mathe-NaWi-Profil: Ranking nach Leistung, 32 Plätze'
+  entrance_test: true
+  notes: Mathematisch-naturwissenschaftlich profiliertes Gymnasium (§7 AufnahmeVO-SbP). 2 MINT-Profilklassen ab
+    Klasse 5 (je ~16 Schüler, 32 Plätze). Vertiefte Mathematik + 2h NaWi (Physik/Bio ab Kl. 5, Chemie ab Kl. 6).
   first_choices: 130
   places: 128
   demand_ratio: 1.02

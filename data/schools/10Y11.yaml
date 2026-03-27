@@ -34,9 +34,10 @@ admission_requirements:
     Noten in Deutsch, Mathe, Sachkunde, Musik. Regelklassen ab Kl. 7 nach Förderprognose-Durchschnitt.'
   probeunterricht: true
   entrance_test: true
-  notes: 'Musikprofilklasse: Schüler müssen Bereitschaft zur Mitwirkung in Schulensembles schriftlich erklären. In Kl. 5 ist
-    Instrumentalunterricht obligatorisch und kostenfrei. Aufnahme in MINT-Klasse auf Probe. Deutliche Übernachfrage für Profilklassen
-    – nur bei Erstwunsch realistisch.'
+  notes: 'Duales Profilgymnasium: MINT (§6 AufnahmeVO-SbP) + Musik (§11 AufnahmeVO-SbP). Je 1 Klasse ab Kl. 5.
+    MINT: Aufnahmetest + gewichtete Notensumme ≤ 15, Aufnahme auf Probe. 6h NaWi/Woche (Teamteaching), 5h Mathe.
+    Musik: Eignungstest mind. 60/100 Pkt (Melodie, Rhythmus, Gesang), Instrumentalunterricht in Kl. 5 kostenfrei.
+    Pflicht zur Mitwirkung in Schulensembles (schriftl. Erklärung). Nur bei Erstwunsch realistisch.'
   first_choices: 114
   places: 94
   demand_ratio: 1.21

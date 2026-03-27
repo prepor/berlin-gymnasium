@@ -32,8 +32,9 @@ admission_requirements:
     Zeugnisnoten und Kompetenzkriterien der Förderprognose.
   probeunterricht: false
   entrance_test: true
-  notes: One of Berlin's most sought-after gymnasiums (2025/26). Mathematik grade must be at least 'gut'. Teilgebundener
-    Ganztag.
+  notes: Mathematisch-naturwissenschaftlich profiliertes Gymnasium (§7 AufnahmeVO-SbP). Bis zu 2 MINT-Profilklassen
+    ab Klasse 5 (~64 Plätze) in Kooperation mit der Humboldt-Universität Berlin. MINT-EC zertifiziert. Grundständig
+    seit 2010. Teilgebundener Ganztag.
   first_choices: 95
   places: 64
   demand_ratio: 1.48

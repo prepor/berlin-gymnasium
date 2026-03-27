@@ -24,7 +24,12 @@ languages:
 - name: Spanisch
   from_grade: 8
 admission_requirements:
-  notes: No search results retrieved in this session; data not available.
+  selection_criteria: 'Klasse 5: Aufnahmegespräch (Eltern, Kind, Schulleitung). Keine Französisch-Vorkenntnisse nötig.
+    Gymnasiale Eignung nach Abschluss Kl. 1-4 erforderlich.'
+  entrance_test: false
+  notes: 'Schweizer Privatgymnasium mit Immersionsmethode (Deutsch-Französisch-Englisch). 2 Klassen ab Kl. 5 (~20
+    Schüler/Klasse). 50% Unterricht auf Französisch/Englisch. AbiBac (Abitur + Baccalauréat) möglich. Schulgeld:
+    445€/Monat (Kl. 5).'
 image_urls: []
 social_media:
   facebook: https://www.facebook.com/pages/Moser-Schule/174013029277678

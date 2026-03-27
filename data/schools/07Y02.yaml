@@ -37,9 +37,9 @@ admission_requirements:
     the last two half-year reports.'
   probeunterricht: true
   entrance_test: true
-  notes: 'School publishes transparent admission criteria for 2026/2027 on its website. Two separate intake tracks exist:
-    bilingual French/AbiBac track (grade 5) and standard/MINT track (grade 7). For the bilingual grade-5 track, prior French
-    or English as first foreign language at primary school is both accepted.'
+  notes: 'Grundständiges bilinguales Gymnasium Deutsch-Französisch (§5 AufnahmeVO-SbP). 2 Klassen ab Klasse 5.
+    AbiBac (Abitur + Baccalauréat) für bilingualen Zug. Eignungstest erforderlich (50% Test, 50% Noten). Ab Kl. 7-8
+    Geographie und Geschichte bilingual auf Französisch. Französisch- oder Englisch-Vorkenntnisse beide akzeptiert.'
   first_choices: 37
   places: 64
   demand_ratio: 0.58

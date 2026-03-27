@@ -23,8 +23,11 @@ languages:
 - name: Latein
   from_grade: 7
 admission_requirements:
-  notes: Listed as grundständiges Gymnasium by Tagesspiegel (Pankow, Prenzlauer Berg). Further details not found in 
-    available search results.
+  selection_criteria: 'Klasse 5: Kein Eignungstest. Auswahl bei Übernachfrage nach Notensumme (De+FS+Ma+SU).
+    Wahl von Latein als 2. FS und Teilnahme am altsprachlichen Pflichtwahlprogramm erforderlich.'
+  entrance_test: false
+  notes: Altsprachliches Gymnasium (§6 Abs. 10 Sek I-VO). Zweizügig ab Klasse 5 mit Latein als 2. Fremdsprache.
+    Alt-Griechisch oder Französisch als 3. Fremdsprache ab Klasse 8. Stark überbucht (208 Erstwünsche auf 96 Plätze).
   first_choices: 208
   places: 96
   demand_ratio: 2.17

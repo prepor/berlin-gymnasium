@@ -39,9 +39,9 @@ admission_requirements:
     not been successful in recent years."
   probeunterricht: false
   entrance_test: false
-  notes: Standardised selection interview (ca. 20 min, reading aloud, language knowledge, logical reasoning, up to 50 
-    points) is used only as a tiebreaker when grade-sum group exceeds capacity. No fixed GPA threshold can be stated in 
-    advance due to variable application numbers. Bilingual Abitur (CertiLingua) available.
+  notes: 'Grundständiges bilinguales Gymnasium Englisch (§5 AufnahmeVO-SbP). 2 Klassen ab Klasse 5 (~60 Plätze).
+    Auswahl nach Notensumme (De+FS+Ma+SU), bei Gleichstand standardisiertes Auswahlgespräch (~20 Min, max 50 Pkt).
+    Ab Kl. 8 Geographie, ab Kl. 9 Geschichte auf Englisch. CertiLingua bilinguales Abitur.'
   first_choices: 108
   places: 96
   demand_ratio: 1.12

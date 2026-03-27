@@ -29,9 +29,9 @@ languages:
 admission_requirements:
   selection_criteria: 'Standard Berlin process: Durchschnittsnote der Förderprognose used as primary criterion when oversubscribed.'
   entrance_test: false
-  notes: Schule besonderer pädagogischer Prägung since 1991. Two grundständige classes from grade 5 with bilingual 
-    Deutsch-Spanisch track. Offene Ganztagsgymnasium since school year 2011/12. Berlin.de lists bilingual offers 
-    Deutsch/Englisch and Deutsch/Spanisch.
+  notes: Grundständiges bilinguales Gymnasium Deutsch-Spanisch (§5 AufnahmeVO-SbP). Bis zu 2 Klassen ab Klasse 5.
+    Einziges Gymnasium in Deutschland mit deutschem Abitur und spanischem Bachillerato. 6h Spanisch/Woche ab Kl. 5,
+    Geschichte und Geographie auf Spanisch ab Kl. 6. Bilingual seit 1991. Kein Eignungstest, Auswahl nach Notensumme.
   first_choices: 106
   places: 96
   demand_ratio: 1.1

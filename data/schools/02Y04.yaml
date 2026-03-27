@@ -12,7 +12,7 @@ email: sekretariat@haendelgym.de
 traeger: öffentlich
 student_count: 548
 teacher_count: 46
-accepts_after_4th_grade: false
+accepts_after_4th_grade: true
 profile:
 - music
 - bilingual_other
@@ -24,8 +24,12 @@ languages:
 - name: Latein
   from_grade: 7
 admission_requirements:
-  notes: Gymnasien-Berlin.net lists no Klasse-5 tracks. School named after composer Georg Friedrich Händel; music 
-    profile expected. Website haendelgym.de not fully indexed in search results.
+  selection_criteria: 'Klasse 5: Aufnahme per musikalischer Eignungsprüfung (mind. 60/100 Punkte). Gute Noten in Deutsch,
+    Mathematik, Sachunterricht und Musik erforderlich. Probezeit 1 Jahr.'
+  entrance_test: true
+  notes: Grundständiges Gymnasium mit musikalischem Profil (§11 AufnahmeVO-SbP). Zweizügig ab Klasse 5 (max. 30
+    Schüler pro Klasse). Admission to Klasse 5 by music aptitude test. One-year probation period; students must achieve
+    at least befriedigend in Music.
 image_urls:
 - photos/02Y04_0.jpg
 social_media: {}

@@ -66,7 +66,8 @@ admission_requirements:
   selection_criteria: Durchschnittsnote der Förderprognose
   probeunterricht: false
   entrance_test: false
-  notes: Klasse 5 altsprachlich mit Latein, 2. Fremdsprache immer Französisch. Empfohlen wird Notendurchschnitt 2.0 oder
+  notes: 'Altsprachliches Gymnasium (§6 Abs. 10 Sek I-VO). 2 Klassen ab Klasse 5 (64 Plätze) mit Latein als 2. FS.
+    Kein Eignungstest. Auswahl nach Förderprognose, dann Notensumme, dann Los. Probehalbjahr. Empfohlen: Schnitt 2.0.
     besser.
   first_choices: 185
   places: 128
