@@ -47,6 +47,15 @@ pub fn AcademicExcellence(schools: Vec<School>) -> impl IntoView {
     let schools_rated = data.schools_rated;
     let total_schools = data.total_schools;
 
+    let pass_95 = data.pass_rate_95_plus;
+    let pass_90 = data.pass_rate_90_95;
+    let pass_below = data.pass_rate_below_90;
+    let pct_95 = data.pct_above_95;
+
+    let total_with_pass = pass_95 + pass_90 + pass_below;
+    let seg1 = if total_with_pass > 0 { pass_95 as f64 / total_with_pass as f64 * 100.0 } else { 0.0 };
+    let seg2 = if total_with_pass > 0 { pass_90 as f64 / total_with_pass as f64 * 100.0 } else { 0.0 };
+
     view! {
         <div class="ig-card">
             <div class="ig-header">
@@ -59,6 +68,31 @@ pub fn AcademicExcellence(schools: Vec<School>) -> impl IntoView {
                 <p class="ig-section-hint">"Lower score = stronger performance (German grading scale)"</p>
                 <div class="ig-bar-chart">
                     {top_schools_view}
+                </div>
+            </div>
+            <div class="ig-section">
+                <h3 class="ig-section-title">"Abitur Pass Rates"</h3>
+                <div class="ig-donut-container">
+                    <div class="ig-donut" style=format!("background: conic-gradient(#A855F7 0% {}%, #7C3AED {}% {}%, #3F3F46 {}% 100%)", seg1, seg1, seg1 + seg2, seg1 + seg2)>
+                        <div class="ig-donut-center">
+                            <span class="ig-donut-value">{format!("{:.1}%", pct_95)}</span>
+                            <span class="ig-donut-label">"above 95%"</span>
+                        </div>
+                    </div>
+                    <div class="ig-donut-legend">
+                        <div class="ig-donut-legend-item">
+                            <span class="ig-donut-dot" style="background: #A855F7"></span>
+                            <span class="ig-donut-legend-text">{format!("95%+ pass rate ({})", pass_95)}</span>
+                        </div>
+                        <div class="ig-donut-legend-item">
+                            <span class="ig-donut-dot" style="background: #7C3AED"></span>
+                            <span class="ig-donut-legend-text">{format!("90–95% ({})", pass_90)}</span>
+                        </div>
+                        <div class="ig-donut-legend-item">
+                            <span class="ig-donut-dot" style="background: #3F3F46"></span>
+                            <span class="ig-donut-legend-text">{format!("Below 90% ({})", pass_below)}</span>
+                        </div>
+                    </div>
                 </div>
             </div>
             <div class="ig-stats-row">

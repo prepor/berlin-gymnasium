@@ -8,6 +8,15 @@ pub struct SchoolEntry {
     pub value: f64,
 }
 
+/// A school entry for hype/quality analysis with both abitur and demand values.
+#[derive(Clone, Debug)]
+pub struct HypeEntry {
+    pub school_id: String,
+    pub name: String,
+    pub abitur: f64,
+    pub demand: f64,
+}
+
 // ── Academic Excellence ──────────────────────────────────────────────
 
 #[derive(Clone, Debug)]
@@ -17,6 +26,10 @@ pub struct AcademicData {
     pub median_avg: f64,
     pub schools_rated: usize,
     pub total_schools: usize,
+    pub pass_rate_95_plus: usize,
+    pub pass_rate_90_95: usize,
+    pub pass_rate_below_90: usize,
+    pub pct_above_95: f64,
 }
 
 pub fn compute_academic(schools: &[School]) -> AcademicData {
@@ -47,12 +60,22 @@ pub fn compute_academic(schools: &[School]) -> AcademicData {
         })
         .collect();
 
+    let with_pass_rate: Vec<f64> = schools.iter().filter_map(|s| s.abitur_pass_rate).collect();
+    let pass_rate_95_plus = with_pass_rate.iter().filter(|&&r| r >= 95.0).count();
+    let pass_rate_90_95 = with_pass_rate.iter().filter(|&&r| r >= 90.0 && r < 95.0).count();
+    let pass_rate_below_90 = with_pass_rate.iter().filter(|&&r| r < 90.0).count();
+    let pct_above_95 = if with_pass_rate.is_empty() { 0.0 } else { pass_rate_95_plus as f64 / with_pass_rate.len() as f64 * 100.0 };
+
     AcademicData {
         top_schools,
         best_avg,
         median_avg,
         schools_rated,
         total_schools: schools.len(),
+        pass_rate_95_plus,
+        pass_rate_90_95,
+        pass_rate_below_90,
+        pct_above_95,
     }
 }
 
@@ -137,10 +160,12 @@ pub fn compute_supply_demand(schools: &[School]) -> SupplyDemandData {
 #[derive(Clone, Debug)]
 pub struct HypeQualityData {
     pub correlation_r: f64,
-    pub hidden_gems: Vec<SchoolEntry>,
-    pub overhyped: Vec<SchoolEntry>,
+    pub hidden_gems: Vec<HypeEntry>,
+    pub overhyped: Vec<HypeEntry>,
     pub best_combo: Option<SchoolEntry>,
     pub worst_combo: Option<SchoolEntry>,
+    pub best_combo_demand: Option<f64>,
+    pub worst_combo_demand: Option<f64>,
     pub schools_analyzed: usize,
 }
 
@@ -186,51 +211,57 @@ pub fn compute_hype_quality(schools: &[School]) -> HypeQualityData {
         }
     };
 
-    let mut hidden_gems: Vec<SchoolEntry> = pairs
+    let mut hidden_gems: Vec<HypeEntry> = pairs
         .iter()
         .filter(|p| p.2 < median_abitur && p.3 < 1.0)
-        .map(|p| SchoolEntry {
+        .map(|p| HypeEntry {
             school_id: p.0.clone(),
             name: p.1.clone(),
-            value: p.2,
+            abitur: p.2,
+            demand: p.3,
         })
         .collect();
-    hidden_gems.sort_by(|a, b| a.value.partial_cmp(&b.value).unwrap());
+    hidden_gems.sort_by(|a, b| a.abitur.partial_cmp(&b.abitur).unwrap());
     hidden_gems.truncate(3);
 
-    let mut overhyped: Vec<SchoolEntry> = pairs
+    let mut overhyped: Vec<HypeEntry> = pairs
         .iter()
         .filter(|p| p.2 > median_abitur && p.3 > 1.2)
-        .map(|p| SchoolEntry {
+        .map(|p| HypeEntry {
             school_id: p.0.clone(),
             name: p.1.clone(),
-            value: p.3,
+            abitur: p.2,
+            demand: p.3,
         })
         .collect();
-    overhyped.sort_by(|a, b| b.value.partial_cmp(&a.value).unwrap());
+    overhyped.sort_by(|a, b| b.demand.partial_cmp(&a.demand).unwrap());
     overhyped.truncate(3);
 
     // Best combo: lowest abitur among high-demand schools
-    let best_combo = pairs
+    let best_combo_pair = pairs
         .iter()
         .filter(|p| p.3 > 1.2)
-        .min_by(|a, b| a.2.partial_cmp(&b.2).unwrap())
-        .map(|p| SchoolEntry {
-            school_id: p.0.clone(),
-            name: p.1.clone(),
-            value: p.2,
-        });
+        .min_by(|a, b| a.2.partial_cmp(&b.2).unwrap());
+
+    let best_combo = best_combo_pair.map(|p| SchoolEntry {
+        school_id: p.0.clone(),
+        name: p.1.clone(),
+        value: p.2,
+    });
+    let best_combo_demand = best_combo_pair.map(|p| p.3);
 
     // Worst combo: highest abitur among low-demand schools
-    let worst_combo = pairs
+    let worst_combo_pair = pairs
         .iter()
         .filter(|p| p.3 < 0.8)
-        .max_by(|a, b| a.2.partial_cmp(&b.2).unwrap())
-        .map(|p| SchoolEntry {
-            school_id: p.0.clone(),
-            name: p.1.clone(),
-            value: p.2,
-        });
+        .max_by(|a, b| a.2.partial_cmp(&b.2).unwrap());
+
+    let worst_combo = worst_combo_pair.map(|p| SchoolEntry {
+        school_id: p.0.clone(),
+        name: p.1.clone(),
+        value: p.2,
+    });
+    let worst_combo_demand = worst_combo_pair.map(|p| p.3);
 
     HypeQualityData {
         correlation_r,
@@ -238,6 +269,8 @@ pub fn compute_hype_quality(schools: &[School]) -> HypeQualityData {
         overhyped,
         best_combo,
         worst_combo,
+        best_combo_demand,
+        worst_combo_demand,
         schools_analyzed,
     }
 }
@@ -261,6 +294,8 @@ pub struct ComparisonMetric {
     pub left_value: String,
     pub right_value: String,
     pub left_wins: bool,
+    pub left_num: f64,
+    pub right_num: f64,
 }
 
 pub fn compute_private_public(schools: &[School]) -> ComparisonData {
@@ -306,6 +341,8 @@ pub fn compute_private_public(schools: &[School]) -> ComparisonData {
             left_value: format!("{:.2}", priv_abitur),
             right_value: format!("{:.2}", pub_abitur),
             left_wins: priv_abitur < pub_abitur && priv_abitur > 0.0,
+            left_num: priv_abitur,
+            right_num: pub_abitur,
         },
         ComparisonMetric {
             label: "Pass Rate".into(),
@@ -313,6 +350,8 @@ pub fn compute_private_public(schools: &[School]) -> ComparisonData {
             left_value: format!("{:.1}%", priv_pass),
             right_value: format!("{:.1}%", pub_pass),
             left_wins: priv_pass > pub_pass,
+            left_num: priv_pass,
+            right_num: pub_pass,
         },
         ComparisonMetric {
             label: "Student / Teacher Ratio".into(),
@@ -320,6 +359,8 @@ pub fn compute_private_public(schools: &[School]) -> ComparisonData {
             left_value: format!("{:.1}", priv_ratio),
             right_value: format!("{:.1}", pub_ratio),
             left_wins: priv_ratio < pub_ratio && priv_ratio > 0.0,
+            left_num: priv_ratio,
+            right_num: pub_ratio,
         },
         ComparisonMetric {
             label: "Avg School Size".into(),
@@ -327,6 +368,8 @@ pub fn compute_private_public(schools: &[School]) -> ComparisonData {
             left_value: format!("{:.0}", priv_size),
             right_value: format!("{:.0}", pub_size),
             left_wins: false,
+            left_num: priv_size,
+            right_num: pub_size,
         },
     ];
 
@@ -388,6 +431,8 @@ pub fn compute_grade4(schools: &[School]) -> ComparisonData {
             left_value: format!("{:.2}", g_abitur),
             right_value: format!("{:.2}", s_abitur),
             left_wins: g_abitur < s_abitur && g_abitur > 0.0,
+            left_num: g_abitur,
+            right_num: s_abitur,
         },
         ComparisonMetric {
             label: "Demand Ratio".into(),
@@ -395,6 +440,8 @@ pub fn compute_grade4(schools: &[School]) -> ComparisonData {
             left_value: format!("{:.2}", g_demand),
             right_value: format!("{:.2}", s_demand),
             left_wins: g_demand > s_demand,
+            left_num: g_demand,
+            right_num: s_demand,
         },
         ComparisonMetric {
             label: "Pass Rate".into(),
@@ -402,6 +449,8 @@ pub fn compute_grade4(schools: &[School]) -> ComparisonData {
             left_value: format!("{:.1}%", g_pass),
             right_value: format!("{:.1}%", s_pass),
             left_wins: g_pass > s_pass,
+            left_num: g_pass,
+            right_num: s_pass,
         },
         ComparisonMetric {
             label: "Avg School Size".into(),
@@ -409,6 +458,8 @@ pub fn compute_grade4(schools: &[School]) -> ComparisonData {
             left_value: format!("{:.0}", g_size),
             right_value: format!("{:.0}", s_size),
             left_wins: false,
+            left_num: g_size,
+            right_num: s_size,
         },
     ];
 

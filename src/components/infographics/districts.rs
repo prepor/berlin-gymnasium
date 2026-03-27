@@ -35,15 +35,35 @@ pub fn DistrictPowerRankings(schools: Vec<School>) -> impl IntoView {
             let avg_demand = format!("{:.2}", row.avg_demand);
             let avg_pass = format!("{:.1}%", row.avg_pass);
             let students_formatted = format_students(row.total_students);
+            let is_bottom = rank > last_rank - 2;
             let row_class = if rank <= 3 {
                 "ig-table-row ig-table-top3"
+            } else if is_bottom {
+                "ig-table-row ig-table-bottom"
             } else {
                 "ig-table-row"
             };
 
+            let rank_view = if rank <= 3 {
+                view! { <span class="ig-td"><span class="ig-rank-badge">{rank}</span></span> }.into_any()
+            } else if is_bottom {
+                view! { <span class="ig-td ig-rank-bottom">{rank}</span> }.into_any()
+            } else {
+                view! { <span class="ig-td ig-rank">{rank}</span> }.into_any()
+            };
+
+            let abitur_class = if is_bottom { "ig-td ig-td-red" } else { "ig-td" };
+
+            let separator = if rank == last_rank - 1 {
+                Some(view! { <div class="ig-table-sep"></div> })
+            } else {
+                None
+            };
+
             view! {
+                {separator}
                 <div class=row_class>
-                    <span class="ig-td ig-rank">{rank}</span>
+                    {rank_view}
                     <a
                         class="ig-link ig-td"
                         href="javascript:void(0)"
@@ -57,7 +77,7 @@ pub fn DistrictPowerRankings(schools: Vec<School>) -> impl IntoView {
                     >
                         {name}
                     </a>
-                    <span class="ig-td">{avg_abitur}</span>
+                    <span class=abitur_class>{avg_abitur}</span>
                     <span class="ig-td">{avg_demand}</span>
                     <span class="ig-td">{avg_pass}</span>
                     <span class="ig-td">{students_formatted}</span>

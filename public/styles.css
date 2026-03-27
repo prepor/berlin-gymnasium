@@ -1468,6 +1468,15 @@ a:hover {
   display: flex;
   flex-direction: column;
   gap: 12px;
+  background: #1A1A1A;
+  border-radius: 12px;
+  padding: 20px;
+}
+
+.ig-section--flat {
+  background: none;
+  padding: 0;
+  border-radius: 0;
 }
 
 .ig-section-title {
@@ -1547,16 +1556,17 @@ a:hover {
 /* === Stats Row === */
 .ig-stats-row {
   display: flex;
-  justify-content: space-around;
-  padding: 20px 0;
-  border-top: 1px solid #27272A;
+  gap: 12px;
 }
 
 .ig-stat {
   display: flex;
   flex-direction: column;
-  align-items: center;
   gap: 4px;
+  background: #1A1A1A;
+  border-radius: 12px;
+  padding: 16px;
+  flex: 1;
 }
 
 .ig-stat-value {
@@ -1581,24 +1591,29 @@ a:hover {
 /* === Count Row (Private vs Public, Grade 4) === */
 .ig-count-row {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 32px;
-  padding: 16px 0;
+  align-items: stretch;
+  gap: 16px;
 }
 
 .ig-count {
   display: flex;
   flex-direction: column;
-  align-items: center;
   gap: 4px;
+  background: #1A1A1A;
+  border-radius: 12px;
+  padding: 24px 20px;
+  flex: 1;
+}
+
+.ig-count-vs {
+  display: none;
 }
 
 .ig-count-value {
-  font-family: 'Playfair Display', Georgia, serif;
+  font-family: 'SF Mono', 'Menlo', 'Courier New', monospace;
   font-size: 48px;
   font-weight: 700;
-  color: #fff;
+  color: #A855F7;
 }
 
 .ig-count-label {
@@ -1675,10 +1690,9 @@ a:hover {
 .ig-correlation {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  gap: 6px;
+  gap: 8px;
   padding: 24px;
-  background: #18181B;
+  background: #1A1A1A;
   border-radius: 12px;
 }
 
@@ -1705,9 +1719,9 @@ a:hover {
   display: flex;
   flex-direction: column;
   gap: 8px;
-  background: #18181B;
+  background: #1A1A1A;
   border-radius: 12px;
-  padding: 16px;
+  padding: 24px;
 }
 
 .ig-column-title {
@@ -1738,10 +1752,15 @@ a:hover {
 
 /* === Insight Box === */
 .ig-insight {
-  padding: 16px;
-  border-left: 3px solid #A855F7;
-  background: #18181B;
-  border-radius: 0 8px 8px 0;
+  padding: 16px 20px;
+  background: #1A1A1A;
+  border-radius: 12px;
+}
+
+.ig-insight--flat {
+  background: none;
+  padding: 0;
+  border-radius: 0;
 }
 
 .ig-insight-label {
@@ -1764,19 +1783,19 @@ a:hover {
 /* === Callout Box === */
 .ig-callout {
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   gap: 12px;
-  padding: 12px 16px;
-  background: #18181B;
-  border-radius: 8px;
+  padding: 16px 20px;
+  background: #1A1A1A;
+  border-radius: 12px;
 }
 
 .ig-callout-icon {
-  width: 20px;
-  height: 20px;
-  border-radius: 50%;
-  background: #3B82F6;
-  color: #fff;
+  width: 24px;
+  height: 24px;
+  border-radius: 12px;
+  background: #A855F7;
+  color: #0A0A0A;
   font-size: 12px;
   font-weight: 700;
   display: flex;
@@ -1800,14 +1819,14 @@ a:hover {
 
 .ig-table-header {
   display: flex;
-  padding: 10px 0;
-  border-bottom: 2px solid #27272A;
+  padding: 12px 20px;
+  background: #1A1A1A;
+  border-radius: 12px;
 }
 
 .ig-table-row {
   display: flex;
-  padding: 10px 0;
-  border-bottom: 1px solid #1C1C1F;
+  padding: 14px 20px;
   transition: background 0.15s;
 }
 
@@ -1816,7 +1835,27 @@ a:hover {
 }
 
 .ig-table-top3 {
-  background: rgba(168, 85, 247, 0.05);
+  background: #1A1A1A;
+  border-radius: 12px;
+}
+
+.ig-table-sep {
+  height: 1px;
+  background: #2A2A2A;
+  margin: 4px 0;
+}
+
+.ig-table-bottom {
+  opacity: 0.7;
+}
+
+.ig-rank-bottom {
+  color: #DC2626;
+  font-weight: 700;
+}
+
+.ig-td-red {
+  color: #DC2626 !important;
 }
 
 .ig-th,
@@ -1855,6 +1894,229 @@ a:hover {
 .ig-rank {
   color: #A855F7;
   font-weight: 700;
+}
+
+/* === Donut Chart === */
+.ig-donut-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 32px;
+  padding: 8px 0;
+}
+
+.ig-donut {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  position: relative;
+  flex-shrink: 0;
+}
+
+.ig-donut-center {
+  position: absolute;
+  inset: 28px;
+  border-radius: 50%;
+  background: #1A1A1A;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.ig-donut-value {
+  font-family: 'SF Mono', 'Menlo', 'Courier New', monospace;
+  font-size: 22px;
+  font-weight: 700;
+  color: #A855F7;
+}
+
+.ig-donut-label {
+  font-size: 10px;
+  color: #71717A;
+}
+
+.ig-donut-legend {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.ig-donut-legend-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.ig-donut-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+.ig-donut-legend-text {
+  font-size: 12px;
+  color: #A1A1AA;
+}
+
+/* === Hype Value Rows === */
+.ig-hype-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 4px 0;
+  border-bottom: 1px solid rgba(255,255,255,0.05);
+}
+
+.ig-hype-row:last-child {
+  border-bottom: none;
+}
+
+.ig-hype-name {
+  flex: 1;
+  font-size: 12px;
+  color: #A1A1AA;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.ig-hype-abitur {
+  font-family: 'SF Mono', 'Menlo', 'Courier New', monospace;
+  font-size: 12px;
+  font-weight: 600;
+  padding: 2px 6px;
+  border-radius: 4px;
+  background: rgba(255,255,255,0.05);
+}
+
+.ig-hype-abitur.ig-green {
+  color: #22C55E;
+}
+
+.ig-hype-abitur.ig-red {
+  color: #EF4444;
+}
+
+.ig-hype-demand {
+  font-family: 'SF Mono', 'Menlo', 'Courier New', monospace;
+  font-size: 11px;
+  color: #71717A;
+  min-width: 40px;
+  text-align: right;
+}
+
+/* === Bar Comparison (Head to Head) === */
+.ig-compare-legend {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 8px;
+}
+
+.ig-compare-legend-item {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 12px;
+  color: #A1A1AA;
+}
+
+.ig-compare-legend-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 2px;
+  flex-shrink: 0;
+}
+
+.ig-bar-compare {
+  padding: 12px 0;
+  border-bottom: 1px solid #27272A;
+}
+
+.ig-bar-compare:last-child {
+  border-bottom: none;
+}
+
+.ig-bar-compare-label {
+  margin-bottom: 8px;
+}
+
+.ig-bar-compare-name {
+  font-size: 13px;
+  font-weight: 600;
+  color: #fff;
+}
+
+.ig-bar-compare-hint {
+  font-size: 11px;
+  color: #71717A;
+}
+
+.ig-bar-compare-bars {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.ig-bar-compare-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.ig-bar-compare-row .ig-bar-track {
+  flex: 1;
+  height: 20px;
+  background: #2A2A2A;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.ig-bar-compare-row .ig-bar-value {
+  min-width: 50px;
+  text-align: right;
+  font-family: 'SF Mono', 'Menlo', 'Courier New', monospace;
+  font-size: 12px;
+  font-weight: 600;
+  color: #A1A1AA;
+}
+
+/* === Big Stat Display === */
+.ig-big-stat {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  padding: 28px 32px;
+  background: #1A1A1A;
+  border-radius: 12px;
+}
+
+.ig-big-stat-value {
+  font-family: 'SF Mono', 'Menlo', 'Courier New', monospace;
+  font-size: 48px;
+  font-weight: 700;
+  color: #A855F7;
+}
+
+.ig-big-stat-label {
+  font-size: 14px;
+  color: #A1A1AA;
+}
+
+/* === Rank Badge === */
+.ig-rank-badge {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background: #A855F7;
+  color: #fff;
+  font-size: 11px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'SF Mono', 'Menlo', 'Courier New', monospace;
 }
 
 /* === CTA Button === */
@@ -2042,11 +2304,13 @@ a:hover {
   flex: 1;
   display: flex;
   justify-content: center;
+  align-items: flex-start;
   padding: 20px;
 }
 
 .ig-modal-body .ig-card {
   max-width: 100%;
+  min-height: fit-content;
 }
 
 .ig-modal-bottom {
@@ -2179,5 +2443,20 @@ a:hover {
   .ig-th:nth-child(6),
   .ig-td:nth-child(6) {
     display: none;
+  }
+
+  .ig-donut-container {
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .ig-big-stat {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .ig-big-stat-value {
+    font-size: 36px;
   }
 }
