@@ -30,8 +30,9 @@ admission_requirements:
     besser 2,3 oder bestandenem Probeunterricht)"
   probeunterricht: true
   entrance_test: true
-  notes: 'MINT-Profilklasse ab Klasse 5 in Kooperation mit der Humboldt-Universität Berlin; Tag der offenen Tür für Klasse
-    5 war 16.01.2026 (vergangen); Anmeldezeitraum Klasse 5: 10.–13.02.2026'
+  notes: 'Mathematisch-naturwissenschaftlich profiliertes Gymnasium (§7 AufnahmeVO-SbP). MINT-Profilklasse ab Klasse 5
+    (1 Klasse, 30 Plätze) in Kooperation mit dem Institut für Mathematik der Humboldt-Universität Berlin. Eines von 5
+    HU-Netzwerkschulen.'
   first_choices: 89
   places: 96
   demand_ratio: 0.93

@@ -29,14 +29,13 @@ languages:
 - name: Spanisch
 admission_requirements:
   oversubscribed: true
-  selection_criteria: Entry from grade 5 (grundständig) requires strong academic record. School uses French as a primary
-    language of instruction (historically Franco-German institution). Admission criteria include academic performance 
-    and language aptitude.
+  selection_criteria: 'Klasse 5: Förderprognose + mind. "gut" in Deutsch + Aufnahmetest (2/3 Sprache, 1/3 Mathe)
+    + Aufnahmegespräch. Bilingual DE/FR Kinder bevorzugt.'
   probeunterricht: false
   entrance_test: true
-  notes: One of the oldest Franco-German schools in Berlin, under joint French-German governance. Awards French 
-    Baccalauréat and German Abitur (Doppelabschluss). Teaching in both French and German from grade 5. Historically 
-    known as Lycée français de Berlin.
+  notes: Bilinguales Gymnasium unter deutsch-französischer Verwaltung (§4 AufnahmeVO-SbP). Dreizügig ab Klasse 5
+    (Klasse 5a deutschsprachig, 5b/c französischsprachig). Ab Klasse 7 fünfzügig (2 Klassen von der Ecole Voltaire).
+    Awards both French Baccalauréat and German Abitur (AbiBac/Doppelabschluss).
 image_urls:
 - photos/01Y07_0.jpg
 social_media:

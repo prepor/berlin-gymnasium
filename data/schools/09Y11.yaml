@@ -65,8 +65,9 @@ admission_requirements:
     Kompetenzen, profilbezogene Tests
   probeunterricht: false
   entrance_test: true
-  notes: Gymnasium besonderer pädagogischer Prägung mit naturwissenschaftlichem Profil seit 2015. MINT-Profilklassen ab 
-    Klasse 5 oder 7.
+  notes: Naturwissenschaftlich profiliertes Gymnasium (§6 AufnahmeVO-SbP, seit 2015/16). 1 MINT-Profilklasse ab
+    Klasse 5 (5h/Woche NaWi in Kl. 5-6). Profilbezogene Tests (mündl., schriftl., prakt.) erforderlich, mind. 5/10
+    Punkte. Weitere MINT-Profilklasse ab Kl. 7.
   first_choices: 81
   places: 128
   demand_ratio: 0.63

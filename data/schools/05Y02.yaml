@@ -30,7 +30,8 @@ admission_requirements:
   selection_criteria: Durchschnittsnote der Förderprognose
   probeunterricht: false
   entrance_test: false
-  notes: Oldest gymnasium in Spandau. Class 5 entry available (grundstaendig). Music classes from grade 7.
+  notes: Altsprachliches Gymnasium (§6 Abs. 10 Sek I-VO). Einzügig ab Klasse 5 mit Latein als 2. Fremdsprache.
+    Französisch als 3. Fremdsprache ab Klasse 8 Pflicht. Kein Eignungstest. Ältestes Gymnasium Spandaus.
   first_choices: 100
   places: 128
   demand_ratio: 0.78

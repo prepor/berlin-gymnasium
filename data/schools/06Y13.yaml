@@ -24,7 +24,11 @@ languages:
 - name: Neugriechisch
   from_grade: 7
 admission_requirements:
-  notes: No data retrieved in this research session.
+  selection_criteria: 'Kein Eignungstest. Auswahl bei Übernachfrage nach Notensumme (De+FS+Ma+SU).'
+  entrance_test: false
+  notes: Rein altsprachliches Gymnasium (§6 Abs. 10 Sek I-VO). Alle Schüler treten in Klasse 5 ein (kein separater
+    Kl.-7-Einstieg). Vierzügig ab Klasse 5. Latein als 2. FS in allen Klassen, Altgriechisch ab Kl. 8. Neugriechisch
+    ab Kl. 7 möglich.
   first_choices: 7
   places: 32
   demand_ratio: 0.22

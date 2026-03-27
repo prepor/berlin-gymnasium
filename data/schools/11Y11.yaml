@@ -29,8 +29,9 @@ admission_requirements:
     admitted when oversubscribed.
   probeunterricht: false
   entrance_test: true
-  notes: School was among the nine most sought-after Gymnasien in Berlin for 2023/24 enrolment. Grundständige (from 
-    grade 5) and standard (from grade 7) tracks both available.
+  notes: Mathematisch-naturwissenschaftlich profiliertes Gymnasium (§7 AufnahmeVO-SbP). 1 MINT-Profilklasse ab
+    Klasse 5 (~30 Schüler), Mathe mind. "gut", Notensumme (Ma×3+De×2+SU+FS) < 15. MINT-EC Mitglied seit 2025.
+    Kooperation mit dem Institut für Mathematik der Humboldt-Universität Berlin.
   first_choices: 222
   places: 160
   demand_ratio: 1.39

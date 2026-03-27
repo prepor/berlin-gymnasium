@@ -27,12 +27,12 @@ languages:
 - name: Französisch
   from_grade: 8
 admission_requirements:
-  selection_criteria: Standard Berlin Gymnasium admission criteria apply. Admission from class 4 (grundständig). 
-    Siblings and Härtefall cases considered.
+  selection_criteria: 'Kein Eignungstest. Auswahl nach Förderprognose, bei Übernachfrage Notensumme (De+FS+Ma+SU).
+    Geschwister und Härtefälle berücksichtigt.'
   entrance_test: false
-  notes: Humanistisches Gymnasium with altsprachlich profile; Latein as first foreign language from class 5, 
-    Altgriechisch from class 7 (can switch to Französisch in class 8). Received MINT-freundliche Schule award in 2023. 
-    Offener Ganztag.
+  notes: Rein altsprachliches (humanistisches) Gymnasium (§6 Abs. 10 Sek I-VO). Alle Schüler treten in Klasse 5 ein,
+    kein Klasse-7-Einstieg. Vierzügig ab Klasse 5. Latein ab Kl. 5, Altgriechisch ab Kl. 7 (Wechsel zu Französisch
+    ab Kl. 8 möglich). 8-jähriger Weg zum Abitur. MINT-freundliche Schule (2023). Offener Ganztag.
 image_urls:
 - photos/04Y11_0.jpg
 - photos/04Y11_1.jpg

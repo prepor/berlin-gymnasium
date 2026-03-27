@@ -23,11 +23,11 @@ languages:
 - name: Latein
   from_grade: 7
 admission_requirements:
-  selection_criteria: Aufnahmetest für Klasse 5; Eltern und Schüler werden zu einem Gespräch eingeladen.
+  selection_criteria: 'Klasse 5: Aufnahmetest + Elterngespräch. Förderprognose und Halbjahreszeugnis Kl. 4 erforderlich.'
   probeunterricht: false
   entrance_test: true
-  notes: Catholic private school (Erzbistum Berlin). Entrance test for grade 5 admission. Three-week social internship 
-    in grade 10.
+  notes: Altsprachlich profiliertes Privatgymnasium des Erzbistums Berlin. Zweizügig ab Klasse 5 (~30 Schüler/Klasse),
+    dreizügig ab Klasse 7. Latein als 2. Fremdsprache ab Klasse 5. Grundständig seit 1998/99.
 image_urls:
 - photos/03P10_0.jpg
 - photos/03P10_1.jpg

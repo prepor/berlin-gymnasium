@@ -26,14 +26,13 @@ languages:
 - name: Griechisch
 admission_requirements:
   oversubscribed: true
-  selection_criteria: Entrance test (Aufnahmetest) combined with primary school reports. Aufnahmekonferenz advises 
-    rector on admissions (typically late February/early March). Lateral entrants above grade 5 accepted if Latein was 
-    taught from grade 5 at previous school.
+  selection_criteria: 'Klasse 5: Mehrstufiges Verfahren — Online-Anmeldung (Sep–Dez), Aufnahmegespräch (Jan),
+    Aufnahmetest (Aufsatz, Diktat, Mathematik), Aufnahmekonferenz berät Rektor (Feb/März).'
   probeunterricht: false
   entrance_test: true
-  notes: Jesuit Catholic school (christlich-humanistische Prägung). Gym starts at grade 5 since 1925. Also has 
-    integrated Sekundarschule 'Pedro Arrupe' from grade 9. Large oversubscription, separate selection conference 
-    required.
+  notes: Altsprachlich-humanistisches Gymnasium der Jesuiten (privat). Gymnasium ab Klasse 5 seit 1925. Ca. 3 Klassen
+    pro Jahr (~90 Schüler). Latein und Englisch ab Klasse 5, Griechisch oder Französisch ab Klasse 8. Also has ISS
+    'Pedro Arrupe' from grade 9.
 image_urls:
 - photos/01P06_0.jpg
 - photos/01P06_1.jpg

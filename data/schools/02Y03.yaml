@@ -23,10 +23,12 @@ languages:
 - name: Latein
   from_grade: 7
 admission_requirements:
-  selection_criteria: MINT-Profilklasse ab Klasse 5 mit Eingangstest; bei Übernachfrage Aufnahme nach Förderprognose
+  selection_criteria: 'Klasse 5: Eignungstest (3 Mathe- + 1 NaWi-Aufgabe), Mathe mind. "gut", Notensumme
+    (Ma×3+De×2+FS+SU) ≤ 15. Bis zu 2 Klassen (~64 Plätze).'
   entrance_test: true
-  notes: Gymnasium besonderer pädagogischer Prägung mit mathematisch-naturwissenschaftlichem Profil (MINT-Klassen ab Kl.
-    5 und Kl. 7) in Kooperation mit der Humboldt-Universität Berlin
+  notes: Mathematisch-naturwissenschaftlich profiliertes Gymnasium (§7 AufnahmeVO-SbP). MINT-EC zertifiziert.
+    Bis zu 2 MINT-Profilklassen ab Klasse 5 in Kooperation mit der Humboldt-Universität Berlin. Eines von 5
+    HU-Netzwerkschulen.
   first_choices: 70
   places: 64
   demand_ratio: 1.09

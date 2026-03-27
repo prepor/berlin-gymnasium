@@ -12,7 +12,7 @@ email: sek@dathe-gymnasium.de
 traeger: öffentlich
 student_count: 907
 teacher_count: 71
-accepts_after_4th_grade: false
+accepts_after_4th_grade: true
 profile:
 - MINT
 languages:
@@ -24,9 +24,10 @@ languages:
   from_grade: 7
 admission_requirements:
   selection_criteria: Aufnahme nach Durchschnittsnote der Förderprognose bei Übernachfrage
-  entrance_test: false
-  notes: Das Dathe-Gymnasium ist bekannt für sein Schnelllerner-/MINT-Konzept; Kooperation mit der Humboldt-Universität 
-    Berlin im Rahmen des Schulversuchs zur Förderung besonderer Begabungen (begabungslotse.de)
+  entrance_test: true
+  notes: One of 7 official Berlin Schnelllerner-Gymnasien (§15 AufnahmeVO-SbP). Schnelllernerklassen ab Klasse 5 with
+    MINT focus. Admission to Klasse 5 by Eignungstest. Kooperation mit der Humboldt-Universität Berlin im Rahmen des
+    Schulversuchs zur Förderung besonderer Begabungen.
   first_choices: 96
   places: 64
   demand_ratio: 1.5

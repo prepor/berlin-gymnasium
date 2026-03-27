@@ -32,8 +32,8 @@ admission_requirements:
     oversubscribed
   probeunterricht: false
   entrance_test: false
-  notes: From school year 2026/2027 the school is grundständig, accepting students from grade 5 with a natural sciences 
-    (NaWi) focus. The NaWi grundständige class is new as of 2026/27.
+  notes: 'NEU ab Schuljahr 2026/27: 1 grundständige NaWi-Klasse ab Klasse 5. Naturwissenschaftlicher Schwerpunkt.
+    Gebundener Ganztag. Genehmigung durch BVV Spandau und Senatsverwaltung.'
   first_choices: 110
   places: 128
   demand_ratio: 0.86

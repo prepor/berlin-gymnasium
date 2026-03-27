@@ -30,8 +30,9 @@ admission_requirements:
     Schulversuch, auch ohne Vorkenntnisse in Französisch möglich
   probeunterricht: false
   entrance_test: false
-  notes: 'Altsprachlicher Zug ab Klasse 5 (Schulversuch): Sprachenfolge Französisch–Latein–Englisch. Regelklassen beginnen
-    ab Klasse 7 mit Englisch.'
+  notes: 'Altsprachlicher Zug ab Klasse 5 — Schulversuch (10 Jahre, ab 2021/22, wiss. begleitet durch HU Berlin).
+    Sprachenfolge Französisch–Latein–Englisch. Einzügig (1 Klasse 5a pro Jahr). Keine Französisch-Vorkenntnisse nötig.
+    Regelklassen beginnen ab Klasse 7 mit Englisch.'
   first_choices: 95
   places: 128
   demand_ratio: 0.74

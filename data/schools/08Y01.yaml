@@ -57,7 +57,9 @@ admission_requirements:
   selection_criteria: Schnelllernertest für Klasse 5; Notendurchschnitt der Förderprognose bei Übernachfrage
   probeunterricht: false
   entrance_test: true
-  notes: Schnelllernerklassen ab Klasse 5; Dalton-Pädagogik
+  notes: 'Schnelllerner-Gymnasium (§15 AufnahmeVO-SbP). 2 Schnelllernerklassen ab Klasse 5 (max. 30/Klasse, 60
+    Plätze). Eignungstest durch SIBUZ (max 20 Pkt: Test 10 + Noten 5 + Förderprognose 5). Abitur in 12 Jahren,
+    5h/Woche Enrichment statt Regelunterricht. Musikschwerpunkt (Bläser/Streicher) in Kl. 6-7. Dalton-Pädagogik.'
   first_choices: 66
   places: 60
   demand_ratio: 1.1

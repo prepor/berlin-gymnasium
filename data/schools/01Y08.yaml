@@ -12,7 +12,7 @@ email: post@lessing-gymnasium-berlin.de
 traeger: öffentlich
 student_count: 775
 teacher_count: 74
-accepts_after_4th_grade: false
+accepts_after_4th_grade: true
 profile:
 - other
 ganztag: false
@@ -25,11 +25,12 @@ languages:
   from_grade: 7
 - name: Spanisch
 admission_requirements:
-  selection_criteria: 'Standard Berlin public gymnasium admission: based on Förderprognose from primary school; Probeunterricht
-    required if Notensumme exceeds 14. Entry from grade 7.'
+  selection_criteria: 'Schnelllernerklassen ab Klasse 5: Aufnahme per Eignungstest (mind. 10 Punkte aus Schulbewertung und
+    Test). Klasse 7: Förderprognose, Probeunterricht bei Notensumme über 14.'
   probeunterricht: true
-  entrance_test: false
-  notes: Public gymnasium in Berlin-Mitte. Standard Berlin admission procedure applies.
+  entrance_test: true
+  notes: One of 7 official Berlin Schnelllerner-Gymnasien (§15 AufnahmeVO-SbP). Offers accelerated learner classes from
+    Klasse 5 for gifted students, with enrichment and accelerated curriculum. Two Klasse-5 and two Klasse-7 classes per year.
   first_choices: 85
   places: 64
   demand_ratio: 1.33

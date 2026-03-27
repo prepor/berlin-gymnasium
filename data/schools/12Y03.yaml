@@ -30,9 +30,10 @@ admission_requirements:
     competences; mandatory advisory meeting if ISS recommendation and average ≥ 3.0'
   probeunterricht: false
   entrance_test: true
-  notes: 'Two parallel tracks: Schnelllerner (gifted, starting grade 5, entrance test required, 3 classes) and Regelklassen
-    (starting grade 7, 3 classes). Schnelllerner complete Abitur in 12 years. Latein is mandatory second language (unique
-    among most Berlin schools). Third language choice: Français or Chinesisch from grade 8.'
+  notes: 'Schnelllerner-Gymnasium (§15 AufnahmeVO-SbP). 3 Schnelllernerklassen ab Klasse 5 (~90 Plätze) für
+    begabte Schüler, Abitur in 12 Jahren. Eignungstest durch SIBUZ (Test 50%, Zeugnis 25%, Beurteilung 25%).
+    Latein als Pflicht-2. FS ab Kl. 6 (einzigartig unter Schnelllerner-Schulen). 3. FS Französisch oder Chinesisch
+    ab Kl. 8. Dazu ~3 Regelklassen ab Kl. 7.'
   first_choices: 115
   places: 96
   demand_ratio: 1.2

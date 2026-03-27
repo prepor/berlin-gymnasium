@@ -72,7 +72,9 @@ admission_requirements:
     30% Los'
   probeunterricht: false
   entrance_test: true
-  notes: Schnelllernerklassen ab Klasse 5; eines der 3 gefragtesten Gymnasien Berlins 2023/24
+  notes: 'Schnelllerner-Gymnasium (§15 AufnahmeVO-SbP). 2 Schnelllernerklassen ab Klasse 5 (~60 Plätze).
+    Ranking: Kompetenzgutachten (max 10 Pkt) + Schnelllernertest durch SIBUZ (max 10 Pkt, Wortschatz, logische
+    Reihen, räumliches Denken). Eines der 3 gefragtesten Gymnasien Berlins 2023/24.'
   first_choices: 94
   places: 64
   demand_ratio: 1.47

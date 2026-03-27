@@ -12,7 +12,7 @@ email: info@hbgym.de
 traeger: öffentlich
 student_count: 874
 teacher_count: 74
-accepts_after_4th_grade: false
+accepts_after_4th_grade: true
 profile:
 - MINT
 ganztag: false
@@ -26,12 +26,13 @@ languages:
 - name: Spanisch
   from_grade: 9
 admission_requirements:
-  selection_criteria: Standard Berlin Gymnasium admission via Förderprognose. Probeunterricht applies under Berlin-wide 
-    rules.
+  selection_criteria: 'Klasse 5: Aufnahme nach Noten in Deutsch, Mathematik, Englisch und Sachkunde. Altsprachlicher
+    Bildungsgang mit Latein als 2. Fremdsprache ab Klasse 5. Klasse 7: Förderprognose, Probeunterricht bei Übernachfrage.'
   probeunterricht: true
   entrance_test: false
-  notes: 'Public Gymnasium (Heinz-Berggruen-Gymnasium) named after art patron Heinz Berggruen; starts at grade 7. No grade-5
-    grundständig track confirmed. Website: http://hbgym.de'
+  notes: Grundständiges Gymnasium mit altsprachlichem Profil. Two Klasse-5 classes per year with classical languages
+    track (Latin from Klasse 5, mandatory third language Ancient Greek or French from Klasse 8). Named after art patron
+    Heinz Berggruen.
   first_choices: 99
   places: 64
   demand_ratio: 1.55

@@ -25,13 +25,13 @@ languages:
   from_grade: 7
 admission_requirements:
   oversubscribed: true
-  selection_criteria: Specialised music gymnasium (Sondergymnasium) requiring proof of musical talent. Entrance 
-    audition/examination required. Accepts students from grade 5 (grundständig). Admission is highly selective based on 
-    musical aptitude.
+  selection_criteria: 'Klasse 5: Eignungsprüfung (Audition) an der Hochschule für Musik "Hanns Eisler" or UdK.
+    Gasthörerstatus an einer Musikhochschule erforderlich. Anmeldeschluss Dezember, Auditions im Januar.'
   probeunterricht: false
   entrance_test: true
-  notes: One of two state music gymnasiums in Berlin. Specialises in classical music; instrumental and vocal training 
-    integrated into timetable. Named after Carl Philipp Emanuel Bach. State public school, no fees.
+  notes: Musik-Sondergymnasium (§10 AufnahmeVO-SbP). Einzügig ab Klasse 5, max. 165 Schüler gesamt (Kl. 5-12).
+    Students must hold Gasthörerstatus at HfM Hanns Eisler or UdK. Classical music training (instrumental/vocal)
+    integrated into timetable. Pflicht zur Teilnahme an Chor/Orchester/Jazzensemble und Kammermusik.
 image_urls: []
 social_media:
   instagram: https://www.instagram.com/musikgymnasium_berlin/
