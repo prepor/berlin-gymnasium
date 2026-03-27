@@ -1486,6 +1486,14 @@ a:hover {
   margin: 0;
 }
 
+.ig-section-title.ig-green {
+  color: #22C55E;
+}
+
+.ig-section-title.ig-red {
+  color: #EF4444;
+}
+
 .ig-section-hint {
   font-size: 11px;
   color: #71717A;
@@ -1571,9 +1579,9 @@ a:hover {
 
 .ig-stat-value {
   font-family: 'SF Mono', 'Menlo', 'Courier New', monospace;
-  font-size: 24px;
+  font-size: 32px;
   font-weight: 700;
-  color: #fff;
+  color: #A855F7;
 }
 
 .ig-stat-label {
@@ -1696,9 +1704,15 @@ a:hover {
   border-radius: 12px;
 }
 
+.ig-correlation-top {
+  display: flex;
+  align-items: baseline;
+  gap: 12px;
+}
+
 .ig-correlation-value {
   font-family: 'SF Mono', 'Menlo', 'Courier New', monospace;
-  font-size: 36px;
+  font-size: 32px;
   font-weight: 700;
   color: #A855F7;
 }
@@ -2435,9 +2449,30 @@ a:hover {
     transform: scale(0.171);
   }
 
+  .ig-stats-row {
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .ig-count-row {
+    gap: 8px;
+  }
+
+  .ig-section {
+    padding: 16px;
+  }
+
   .ig-table-header,
   .ig-table-row {
     font-size: 10px;
+  }
+
+  .ig-table-header {
+    padding: 10px 12px;
+  }
+
+  .ig-table-row {
+    padding: 10px 12px;
   }
 
   .ig-th:nth-child(6),

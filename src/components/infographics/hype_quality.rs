@@ -128,9 +128,11 @@ pub fn HypeQuality(schools: Vec<School>) -> impl IntoView {
                 <p class="ig-subtitle">"Correlation between school demand and Abitur performance"</p>
             </div>
             <div class="ig-correlation">
-                <span class="ig-correlation-value">{format!("r = {:.2}", correlation_r)}</span>
-                <span class="ig-correlation-sig">"significant · p < 0.001"</span>
-                <p class="ig-insight-text">"Higher demand → better grades (but not always)"</p>
+                <div class="ig-correlation-top">
+                    <span class="ig-correlation-value">{format!("r = {:.2}", correlation_r)}</span>
+                    <span class="ig-correlation-sig">"significant · p < 0.001"</span>
+                </div>
+                <p class="ig-insight-text">"Higher demand \u{2192} better grades (but not always)"</p>
             </div>
             <div class="ig-section">
                 <h3 class="ig-section-title ig-green">"Hidden Gems"</h3>
