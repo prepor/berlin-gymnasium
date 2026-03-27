@@ -39,7 +39,10 @@ fn parse_query_string(qs: &str) -> HashMap<String, String> {
             if key.is_empty() {
                 None
             } else {
-                Some((key.to_string(), value.to_string()))
+                let decoded = js_sys::decode_uri_component(value)
+                    .map(|s| String::from(s))
+                    .unwrap_or_else(|_| value.to_string());
+                Some((key.to_string(), decoded))
             }
         })
         .collect()
