@@ -5,16 +5,20 @@ use wasm_bindgen::JsCast;
 use crate::i18n::{profile_label, t, use_language, Language};
 use crate::models::School;
 
-/// Build CircleMarker options for the user's home location.
-fn home_marker_options() -> JsValue {
-    let obj = js_sys::Object::new();
-    let _ = js_sys::Reflect::set(&obj, &"radius".into(), &JsValue::from_f64(10.0));
-    let _ = js_sys::Reflect::set(&obj, &"fillColor".into(), &JsValue::from_str("#dc2626"));
-    let _ = js_sys::Reflect::set(&obj, &"color".into(), &JsValue::from_str("#fff"));
-    let _ = js_sys::Reflect::set(&obj, &"weight".into(), &JsValue::from_f64(3.0));
-    let _ = js_sys::Reflect::set(&obj, &"opacity".into(), &JsValue::from_f64(1.0));
-    let _ = js_sys::Reflect::set(&obj, &"fillOpacity".into(), &JsValue::from_f64(0.9));
-    obj.into()
+/// Build a DivIcon-based Marker for the user's home location,
+/// showing a red house icon with a "Mein Standort" label underneath.
+fn home_marker_icon() -> leaflet::DivIcon {
+    let opts = leaflet::DivIconOptions::new();
+    opts.set_html(
+        r##"<div class="home-marker">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#dc2626" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 21v-8a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v8"/><path d="M3 10a2 2 0 0 1 .709-1.528l7-5.999a2 2 0 0 1 2.582 0l7 5.999A2 2 0 0 1 21 10v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></svg>
+            <div class="home-marker-label">Mein Standort</div>
+        </div>"##.to_string(),
+    );
+    opts.set_icon_size(leaflet::Point::new(24.0, 40.0));
+    opts.set_icon_anchor(leaflet::Point::new(12.0, 24.0));
+    opts.set_class_name("home-marker-wrapper".to_string());
+    leaflet::DivIcon::new(&opts)
 }
 
 /// Determine the pin color based on the school's first profile.
@@ -101,7 +105,7 @@ pub fn MapView(
     // Store current markers for cleanup on filter change
     let markers: StoredValue<Vec<leaflet::CircleMarker>> = StoredValue::new(vec![]);
     // Store home marker separately
-    let home_marker: StoredValue<Option<leaflet::CircleMarker>> = StoredValue::new(None);
+    let home_marker: StoredValue<Option<leaflet::Marker>> = StoredValue::new(None);
 
     // Effect 1: Initialize the map once after mount
     Effect::new(move |_| {
@@ -229,13 +233,11 @@ pub fn MapView(
 
         if let Some((lat, lng)) = user_coords.get() {
             let latlng = leaflet::LatLng::new(lat, lng);
-            let opts = home_marker_options();
-            let marker = leaflet::CircleMarker::new_with_options(&latlng, &opts);
+            let icon = home_marker_icon();
+            let opts = leaflet::MarkerOptions::new();
+            opts.set_icon(icon.unchecked_into());
+            let marker = leaflet::Marker::new_with_options(&latlng, &opts);
             let marker_as_layer: &leaflet::Layer = marker.unchecked_ref();
-            marker_as_layer.bind_popup_with_options(
-                &JsValue::from_str("<div class='map-popup'><strong>Mein Standort</strong></div>"),
-                &JsValue::NULL,
-            );
             marker_as_layer.add_to(&map);
             home_marker.set_value(Some(marker));
         } else {
