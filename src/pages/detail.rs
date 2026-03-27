@@ -34,9 +34,13 @@ fn profile_color(profile: &str) -> &'static str {
     match profile.to_lowercase().as_str() {
         "mint" => "profile-mint",
         "musik" | "music" => "profile-musik",
+        "kunst" => "profile-kunst",
         "sport" | "sports" => "profile-sport",
-        "bilingual" => "profile-bilingual",
+        "bilingual_english" | "bilingual_french" | "bilingual_other" | "bilingual" => {
+            "profile-bilingual"
+        }
         "altsprachlich" => "profile-altsprachlich",
+        "ib" => "profile-ib",
         _ => "profile-other",
     }
 }
@@ -268,10 +272,14 @@ fn render_detail(s: School, lang: Language, school_id: String) -> impl IntoView 
     let profile_chips: Vec<_> = s
         .profile
         .iter()
-        .map(|p| {
+        .filter_map(|p| {
+            let label = profile_label(p, lang);
+            if label.is_empty() {
+                return None;
+            }
             let class = format!("profile-badge {}", profile_color(p));
-            let label = profile_label(p, lang).to_string();
-            view! { <span class={class}>{label}</span> }
+            let label = label.to_string();
+            Some(view! { <span class={class}>{label}</span> })
         })
         .collect();
 

@@ -67,7 +67,7 @@ fn build_query_string(
         Some(false) => params.push("ganztag=nein".to_string()),
         None => {}
     }
-    if *sort != SortField::Name {
+    if *sort != SortField::default() {
         params.push(format!("sort={}", sort.to_query()));
     }
     if view == "map" {
@@ -425,7 +425,7 @@ pub fn ListingPage() -> impl IntoView {
             None,
             vec![],
             None,
-            SortField::Name,
+            SortField::default(),
             view,
             address_coords.get(),
         );
