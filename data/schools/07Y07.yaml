@@ -69,7 +69,6 @@ admission_requirements:
   oversubscribed: false
   selection_criteria: Auswahlverfahren für MINT-Profil Klasse 5
   probeunterricht: false
-  entrance_test: false
   entrance_test: true
   notes: 'Zwei grundständige Züge ab Klasse 5: (1) Latein-Zug (altsprachlich, §6 Abs. 10 Sek I-VO, kein Eignungstest)
     und (2) MINT-Zug (seit 2014, MINT-Test erforderlich, +1h Mathe +2h Robotik in Kl. 5/6). Je 1 Klasse pro Zug,
