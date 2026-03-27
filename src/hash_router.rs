@@ -58,8 +58,7 @@ pub fn provide_hash_router() {
     // Listen for hashchange events (covers link clicks + back/forward)
     let update = Closure::wrap(Box::new(move |_: web_sys::Event| {
         let (new_path, new_query) = current_hash();
-        location.path.set(new_path);
-        location.query.set(new_query);
+        update_location_signals(&location, new_path, new_query);
     }) as Box<dyn FnMut(_)>);
 
     let window = web_sys::window().unwrap();
@@ -69,8 +68,7 @@ pub fn provide_hash_router() {
     // Also listen to popstate for replaceState-based navigations
     let update2 = Closure::wrap(Box::new(move |_: web_sys::Event| {
         let (new_path, new_query) = current_hash();
-        location.path.set(new_path);
-        location.query.set(new_query);
+        update_location_signals(&location, new_path, new_query);
     }) as Box<dyn FnMut(_)>);
     window
         .add_event_listener_with_callback("popstate", update2.as_ref().unchecked_ref())
@@ -78,6 +76,21 @@ pub fn provide_hash_router() {
 
     update.forget();
     update2.forget();
+}
+
+/// Only set signals when their values actually change, to avoid unnecessary
+/// re-renders (e.g., recreating the entire ListingPage on every filter change).
+fn update_location_signals(
+    location: &HashLocation,
+    new_path: String,
+    new_query: HashMap<String, String>,
+) {
+    if location.path.get_untracked() != new_path {
+        location.path.set(new_path);
+    }
+    if location.query.get_untracked() != new_query {
+        location.query.set(new_query);
+    }
 }
 
 /// Navigate to a hash URL. If `replace` is true, replaces current history entry.
@@ -99,8 +112,7 @@ pub fn navigate_hash(url: &str, replace: bool) {
         // replaceState doesn't fire hashchange, so manually update signals
         let location = use_context::<HashLocation>().expect("HashLocation not provided");
         let (new_path, new_query) = current_hash();
-        location.path.set(new_path);
-        location.query.set(new_query);
+        update_location_signals(&location, new_path, new_query);
     } else {
         // set_hash fires hashchange, which updates signals via listener
         window.location().set_hash(&hash_url).unwrap();
