@@ -3,6 +3,7 @@ pub mod address_input;
 pub mod detail_section;
 pub mod filter_chips;
 pub mod filter_panel;
+pub mod infographics;
 pub mod language_switcher;
 pub mod rating_display;
 pub mod school_card;

@@ -7,6 +7,7 @@ use crate::address_state::{clear_address, use_saved_address};
 use crate::components::address_input::AddressInput;
 use crate::components::filter_chips::FilterChips;
 use crate::components::filter_panel::FilterPanel;
+use crate::components::infographics::InfographicThumbnails;
 use crate::components::school_card::SchoolCard;
 use crate::components::sort_controls::SortControls;
 use crate::components::view_toggle::ViewToggle;
@@ -539,10 +540,15 @@ pub fn ListingPage() -> impl IntoView {
 
     let school_count = move || filtered_schools.get().len();
 
+    let schools_for_infographics = all_schools.clone();
+
     view! {
         <main class="listing-page">
             <header class="listing-header">
-                <h1>{move || t("berlin_gymnasien", lang.get())}</h1>
+                <div class="listing-title-row">
+                    <h1>{move || t("berlin_gymnasien", lang.get())}</h1>
+                    <InfographicThumbnails schools=schools_for_infographics />
+                </div>
                 <p class="school-count">{move || t_fmt("n_schools_found", lang.get(), &[&school_count().to_string()])}</p>
                 <AddressInput
                     on_address_selected=on_address_selected
