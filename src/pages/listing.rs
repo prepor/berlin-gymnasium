@@ -571,7 +571,7 @@ pub fn ListingPage() -> impl IntoView {
                 <div style:display=move || {
                     if is_map_view.get() { "block" } else { "none" }
                 } style="flex:1;min-width:0">
-                    <MapView filtered_schools=filtered_schools />
+                    <MapView filtered_schools=filtered_schools is_visible=Signal::derive(move || is_map_view.get()) />
                 </div>
                 <section class="school-grid" style:display=move || {
                     if is_map_view.get() { "none" } else { "" }

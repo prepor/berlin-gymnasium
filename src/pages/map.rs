@@ -76,7 +76,7 @@ fn circle_marker_options(color: &str) -> JsValue {
 /// Interactive map view showing filtered schools as color-coded CircleMarker pins
 /// on an OpenStreetMap base layer. Pins are clickable with popup info.
 #[component]
-pub fn MapView(filtered_schools: Memo<Vec<School>>) -> impl IntoView {
+pub fn MapView(filtered_schools: Memo<Vec<School>>, is_visible: Signal<bool>) -> impl IntoView {
     let lang = use_language();
     let map_ref = NodeRef::<leptos::html::Div>::new();
 
@@ -122,9 +122,13 @@ pub fn MapView(filtered_schools: Memo<Vec<School>>) -> impl IntoView {
         map_instance.set_value(Some(map));
     });
 
-    // Effect 2: Update markers whenever filtered_schools or language changes
+    // Effect 2: Update markers whenever filtered_schools, language, or visibility changes.
+    // Subscribes to is_visible so that when the container transitions from hidden to
+    // shown we can call invalidateSize (Leaflet needs correct container dimensions)
+    // and then place markers / fitBounds with the real viewport.
     Effect::new(move |_| {
         let current_lang = lang.get();
+        let visible = is_visible.get();
         let Some(map) = map_instance.get_value() else {
             return;
         };
@@ -135,6 +139,16 @@ pub fn MapView(filtered_schools: Memo<Vec<School>>) -> impl IntoView {
             let layer: &leaflet::Layer = m.unchecked_ref();
             layer.remove();
         }
+
+        // Don't render markers while hidden — Leaflet has 0×0 dimensions
+        // and fitBounds/setView would produce wrong results.
+        if !visible {
+            markers.set_value(vec![]);
+            return;
+        }
+
+        // Tell Leaflet to recalculate container size (needed after display:none → block)
+        map.invalidate_size(false);
 
         let mut new_markers = Vec::new();
         let mut latlngs: Vec<leaflet::LatLng> = Vec::new();
