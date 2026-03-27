@@ -142,9 +142,9 @@ pub struct TravelTimes {
 /// Sort field for the school listing.
 #[derive(Clone, Debug, PartialEq, Default)]
 pub enum SortField {
-    #[default]
     Name,
     District,
+    #[default]
     StudentCount,
     TravelTimeWalk,
     TravelTimeBike,
@@ -159,7 +159,7 @@ impl SortField {
             "travel_walk" => SortField::TravelTimeWalk,
             "travel_bike" => SortField::TravelTimeBike,
             "travel_car" => SortField::TravelTimeCar,
-            _ => SortField::Name,
+            _ => SortField::default(),
         }
     }
 

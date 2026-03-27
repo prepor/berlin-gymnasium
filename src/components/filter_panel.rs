@@ -1,6 +1,6 @@
 use leptos::prelude::*;
 
-use crate::i18n::{t, use_language};
+use crate::i18n::{profile_label, t, use_language};
 
 /// Multi-select checkbox group for filtering.
 #[component]
@@ -9,6 +9,7 @@ fn CheckboxGroup(
     options: Vec<String>,
     selected: Signal<Vec<String>>,
     on_toggle: Callback<String>,
+    #[prop(optional)] display_fn: Option<Callback<String, String>>,
 ) -> impl IntoView {
     let lang = use_language();
     view! {
@@ -20,6 +21,10 @@ fn CheckboxGroup(
                     .map(|opt| {
                         let opt_for_check = opt.clone();
                         let opt_for_cb = opt.clone();
+                        let label = match &display_fn {
+                            Some(f) => f.run(opt.clone()),
+                            None => opt.clone(),
+                        };
                         let is_checked = move || {
                             selected.get().contains(&opt_for_check)
                         };
@@ -32,7 +37,7 @@ fn CheckboxGroup(
                                         on_toggle.run(opt_for_cb.clone());
                                     }
                                 />
-                                {opt.clone()}
+                                {label}
                             </label>
                         }
                     })
@@ -128,6 +133,10 @@ pub fn FilterPanel(
                     options=profiles
                     selected=selected_profiles
                     on_toggle=on_toggle_profile
+                    display_fn=Callback::new(move |opt: String| {
+                        let label = profile_label(&opt, lang.get()).to_string();
+                        if label.is_empty() { opt } else { label }
+                    })
                 />
 
                 <TriStateRadio

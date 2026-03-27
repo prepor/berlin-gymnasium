@@ -7,10 +7,12 @@ use crate::models::{School, TravelTimes};
 fn profile_color(profile: &str) -> &'static str {
     match profile {
         "MINT" => "#22c55e",
-        "bilingual_english" | "bilingual_french" => "#f97316",
+        "bilingual_english" | "bilingual_french" | "bilingual_other" => "#f97316",
         "altsprachlich" => "#ef4444",
-        "music" => "#a855f7",
+        "music" | "musik" => "#a855f7",
+        "kunst" => "#ec4899",
         "sports" => "#3b82f6",
+        "IB" => "#0ea5e9",
         _ => "#6b7280",
     }
 }
@@ -66,14 +68,18 @@ pub fn SchoolCard(
                     let l = lang.get();
                     profiles
                         .iter()
-                        .map(|p| {
+                        .filter_map(|p| {
+                            let label = profile_label(p, l);
+                            if label.is_empty() {
+                                return None;
+                            }
                             let color = profile_color(p);
-                            let label = profile_label(p, l).to_string();
+                            let label = label.to_string();
                             let style = format!(
                                 "background:{};color:#fff;padding:2px 8px;border-radius:12px;font-size:0.75rem;font-weight:600;display:inline-block;margin:2px",
                                 color,
                             );
-                            view! { <span class="profile-badge" style=style>{label}</span> }
+                            Some(view! { <span class="profile-badge" style=style>{label}</span> })
                         })
                         .collect::<Vec<_>>()
                 }}

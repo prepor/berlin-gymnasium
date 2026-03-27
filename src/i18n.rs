@@ -274,14 +274,20 @@ pub fn profile_label<'a>(profile: &'a str, lang: Language) -> &'a str {
     use Language::*;
     match (profile, lang) {
         ("MINT", _) => "MINT",
+        ("IB", _) => "IB",
         ("bilingual_english", _) => "Bilingual EN",
         ("bilingual_french", _) => "Bilingual FR",
+        ("bilingual_other", De) => "Bilingual",
+        ("bilingual_other", En) => "Bilingual",
         ("altsprachlich", De) => "Altsprachlich",
         ("altsprachlich", En) => "Classical Languages",
-        ("music", De) => "Musik",
-        ("music", En) => "Music",
+        ("musik" | "music", De) => "Musik",
+        ("musik" | "music", En) => "Music",
+        ("kunst", De) => "Kunst",
+        ("kunst", En) => "Art",
         ("sports", De) => "Sport",
         ("sports", En) => "Sports",
+        ("other", _) => "",
         (p, _) => p,
     }
 }
