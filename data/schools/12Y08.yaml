@@ -25,7 +25,19 @@ image_urls:
 - photos/12Y08_0.jpg
 - photos/12Y08_1.jpg
 social_media: {}
-ratings: {}
+ratings:
+  schulen_de:
+    source: schulen.de
+    score: 3.5
+    scale_min: 1.0
+    scale_max: 5.0
+    retrieved: '2026-03-27'
+  schulen_de_users:
+    source: schulen.de (user reviews)
+    score: 3.2
+    scale_min: 1.0
+    scale_max: 6.0
+    retrieved: '2026-03-27'
 completeness_score: 0.882
 field_confidence:
   accepts_after_4th_grade: high
@@ -41,6 +53,9 @@ data_sources:
 - wfs_berlin
 - wikimedia
 - agent_research
+- abitur_xlsx_2025
+- gymnasium_berlin_net
+- schulen_de
 unverified_fields:
 - profile
 - languages
@@ -52,8 +67,14 @@ accepts_after_4th_grade: false
 open_day: '2026-01-24'
 admission_requirements:
   notendurchschnitt:
-  oversubscribed:
+  oversubscribed: false
   selection_criteria: Durchschnittsnote der Förderprognose
   probeunterricht: false
   entrance_test: false
   notes: 'Schwerpunkte ab Klasse 7: Kultur, Naturwissenschaften, Sport, Sprachen oder Wirtschaft'
+  first_choices: 100
+  places: 192
+  demand_ratio: 0.52
+abitur_average: 2.63
+abitur_pass_rate: 91.7
+abitur_student_count: 108

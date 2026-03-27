@@ -30,7 +30,19 @@ image_urls:
 social_media:
   instagram: https://instagram.com/ldvg.goes.insta.berlin
   facebook: https://facebook.com/LdV.Berlin/
-ratings: {}
+ratings:
+  schulen_de:
+    source: schulen.de
+    score: 3.5
+    scale_min: 1.0
+    scale_max: 5.0
+    retrieved: '2026-03-27'
+  schulen_de_users:
+    source: schulen.de (user reviews)
+    score: 5.3
+    scale_min: 1.0
+    scale_max: 6.0
+    retrieved: '2026-03-27'
 completeness_score: 0.882
 field_confidence:
   accepts_after_4th_grade: high
@@ -44,6 +56,9 @@ data_sources:
 - wfs_berlin
 - wikimedia
 - agent_research
+- abitur_xlsx_2025
+- gymnasium_berlin_net
+- schulen_de
 unverified_fields:
 - accepts_after_4th_grade
 - profile
@@ -58,8 +73,14 @@ accepts_after_4th_grade: false
 open_day: '2026-01-24'
 admission_requirements:
   notendurchschnitt:
-  oversubscribed: true
+  oversubscribed: false
   selection_criteria: Selection by Förderprognose average
   probeunterricht: false
   entrance_test: false
   notes: Theater/arts-focused profile, also has Math-NaWi class
+  first_choices: 130
+  places: 150
+  demand_ratio: 0.87
+abitur_average: 2.84
+abitur_pass_rate: 100.0
+abitur_student_count: 60

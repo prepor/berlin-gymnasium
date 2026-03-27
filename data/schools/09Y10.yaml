@@ -35,12 +35,28 @@ admission_requirements:
   notes: Standard Berlin Gymnasium admission from grade 7. No grundständig track (no intake at grade 5). Berlin.de lists
     'Durchschnittsnote der Förderprognose' and 'andere Details' as oversubscription criteria; specific GPA threshold not
     publicly listed.
-abitur_average: 2.4
+  first_choices: 154
+  places: 160
+  demand_ratio: 0.96
+  oversubscribed: false
+abitur_average: 2.38
 image_urls:
 - photos/09Y10_0.jpg
 social_media:
   instagram: https://www.instagram.com/gemont.official/
-ratings: {}
+ratings:
+  schulen_de:
+    source: schulen.de
+    score: 4.0
+    scale_min: 1.0
+    scale_max: 5.0
+    retrieved: '2026-03-27'
+  schulen_de_users:
+    source: schulen.de (user reviews)
+    score: 3.5
+    scale_min: 1.0
+    scale_max: 6.0
+    retrieved: '2026-03-27'
 completeness_score: 0.882
 field_confidence:
   accepts_after_4th_grade: high
@@ -57,6 +73,9 @@ data_sources:
 - wfs_berlin
 - agent_research
 - wikimedia
+- abitur_xlsx_2025
+- gymnasium_berlin_net
+- schulen_de
 unverified_fields:
 - social_media
 - abitur_average
@@ -71,3 +90,5 @@ unverified_fields:
 - profile
 _pinned_fields: []
 open_day: '2026-01-24'
+abitur_pass_rate: 89.7
+abitur_student_count: 116

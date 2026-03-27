@@ -31,6 +31,10 @@ admission_requirements:
   notes: 'Notensumme of at most 14 in Deutsch, Mathematik, Englisch required for direct admission. Bilingual English stream:
     more English hours initially, then Biology and Geography taught in English from class 8. Keyboard lessons integrated into
     regular curriculum. Cooperation with Hildegard-Wegscheider-Gymnasium for broader Leistungskurs selection.'
+  first_choices: 43
+  places: 96
+  demand_ratio: 0.45
+  oversubscribed: false
 image_urls:
 - photos/04Y09_0.jpg
 social_media:
@@ -51,6 +55,8 @@ data_sources:
 - wfs_berlin
 - agent_research
 - wikimedia
+- abitur_xlsx_2025
+- gymnasium_berlin_net
 unverified_fields:
 - social_media
 - unverified_fields
@@ -63,3 +69,6 @@ unverified_fields:
 - profile
 - ganztag
 _pinned_fields: []
+abitur_average: 2.46
+abitur_pass_rate: 94.3
+abitur_student_count: 87

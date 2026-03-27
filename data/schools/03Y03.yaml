@@ -34,12 +34,27 @@ admission_requirements:
   entrance_test: true
   notes: One of Berlin's most sought-after gymnasiums (2025/26). Mathematik grade must be at least 'gut'. Teilgebundener
     Ganztag.
+  first_choices: 95
+  places: 64
+  demand_ratio: 1.48
 image_urls:
 - photos/03Y03_0.jpg
 social_media:
   instagram: https://www.instagram.com/kkgberlin/
   facebook: https://www.facebook.com/profile.php?id=100086460708452
-ratings: {}
+ratings:
+  schulen_de:
+    source: schulen.de
+    score: 4.0
+    scale_min: 1.0
+    scale_max: 5.0
+    retrieved: '2026-03-27'
+  schulen_de_users:
+    source: schulen.de (user reviews)
+    score: 2.3
+    scale_min: 1.0
+    scale_max: 6.0
+    retrieved: '2026-03-27'
 completeness_score: 0.941
 field_confidence:
   accepts_after_4th_grade: high
@@ -54,6 +69,9 @@ data_sources:
 - wfs_berlin
 - agent_research
 - wikimedia
+- abitur_xlsx_2025
+- gymnasium_berlin_net
+- schulen_de
 unverified_fields:
 - social_media
 - unverified_fields
@@ -68,5 +86,7 @@ unverified_fields:
 - abitur_average
 - open_day
 _pinned_fields: []
-abitur_average: 1.64
+abitur_average: 1.66
 open_day: '2026-01-29'
+abitur_pass_rate: 100.0
+abitur_student_count: 120

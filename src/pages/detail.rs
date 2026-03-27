@@ -220,11 +220,41 @@ fn render_detail(s: School, lang: Language) -> impl IntoView {
         let probe = bool_display(adm.probeunterricht, lang);
         let aufnahme = bool_display(adm.entrance_test, lang);
         let notes = adm.notes.clone();
+        let demand_view = match (adm.first_choices, adm.places) {
+            (Some(fc), Some(pl)) => {
+                let ratio = adm.demand_ratio.unwrap_or(fc as f64 / pl as f64);
+                let status = if ratio > 1.0 {
+                    t("demand_oversubscribed", lang)
+                } else {
+                    t("demand_undersubscribed", lang)
+                };
+                let color = if ratio > 1.5 {
+                    "#dc2626"
+                } else if ratio > 1.0 {
+                    "#ca8a04"
+                } else {
+                    "#16a34a"
+                };
+                Some(view! {
+                    <dt>{t("demand_label", lang)}</dt>
+                    <dd>
+                        <span style=format!("font-weight:600;color:{}", color)>
+                            {format!("{:.1}x", ratio)}
+                        </span>
+                        " ("
+                        {t_fmt("demand_ratio_fmt", lang, &[&fc.to_string(), &pl.to_string()])}
+                        " \u{2014} " {status} ")"
+                    </dd>
+                })
+            }
+            _ => None,
+        };
 
         view! {
             <dl class="admission-list">
                 <dt>{t("grade_average", lang)}</dt>
                 <dd>{noten}</dd>
+                {demand_view}
                 <dt>{t("oversubscribed", lang)}</dt>
                 <dd>{ueberbucht}</dd>
                 <dt>{t("selection_process", lang)}</dt>
@@ -255,12 +285,24 @@ fn render_detail(s: School, lang: Language) -> impl IntoView {
         })
         .collect();
 
-    let abitur_view = s
-        .abitur_average
-        .map(|avg| {
-            let text = t_fmt("abitur_avg", lang, &[&format!("{:.2}", avg)]);
-            view! { <p class="abitur-average">{text}</p> }
-        });
+    let abitur_view = s.abitur_average.map(|avg| {
+        let avg_text = t_fmt("abitur_avg", lang, &[&format!("{:.2}", avg)]);
+        let pass_text = s.abitur_pass_rate.map(|r| t_fmt("abitur_pass_rate", lang, &[&format!("{:.1}", r)]));
+        let count_text = s.abitur_student_count.map(|n| t_fmt("abitur_students", lang, &[&n.to_string()]));
+        let avg_color = if avg <= 1.8 { "#16a34a" } else if avg <= 2.3 { "#ca8a04" } else { "#6b7280" };
+        view! {
+            <div class="abitur-stats">
+                <span class="abitur-average" style=format!("color:{};font-size:1.5rem;font-weight:700", avg_color)>
+                    {format!("{:.2}", avg)}
+                </span>
+                <div class="abitur-details">
+                    <p>{avg_text}</p>
+                    {pass_text.map(|t| view! { <p>{t}</p> })}
+                    {count_text.map(|t| view! { <p>{t}</p> })}
+                </div>
+            </div>
+        }
+    });
 
     // Open day
     let open_day_view = s

@@ -30,9 +30,25 @@ admission_requirements:
   notes: The Werner-von-Siemens-Gymnasium is listed in official Steglitz-Zehlendorf district brochures as a 
     Schnelllerner school (accelerated learner track), with early registration and an aptitude test (Eignungstest) on a 
     Saturday. No grundständige Züge confirmed. Web search exhausted before dedicated search for this school.
+  first_choices: 72
+  places: 96
+  demand_ratio: 0.75
+  oversubscribed: false
 image_urls: []
 social_media: {}
-ratings: {}
+ratings:
+  schulen_de:
+    source: schulen.de
+    score: 3.5
+    scale_min: 1.0
+    scale_max: 5.0
+    retrieved: '2026-03-27'
+  schulen_de_users:
+    source: schulen.de (user reviews)
+    score: 2.5
+    scale_min: 1.0
+    scale_max: 6.0
+    retrieved: '2026-03-27'
 completeness_score: 0.882
 field_confidence:
   accepts_after_4th_grade: medium
@@ -48,6 +64,9 @@ field_confidence:
 data_sources:
 - wfs_berlin
 - agent_research
+- abitur_xlsx_2025
+- gymnasium_berlin_net
+- schulen_de
 unverified_fields:
 - social_media
 - unverified_fields
@@ -62,5 +81,7 @@ unverified_fields:
 - abitur_average
 - open_day
 _pinned_fields: []
-abitur_average: 1.9
+abitur_average: 1.94
 open_day: '2026-01-10'
+abitur_pass_rate: 99.2
+abitur_student_count: 121

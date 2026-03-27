@@ -25,6 +25,10 @@ languages:
 admission_requirements:
   notes: 'Schule im Aufbau (gegründet Schuljahr 2024/25 als 13. Gymnasium, seit 2025/26 Rosalind-Franklin-Gymnasium); aktuell
     nur Klassen 7–8 vorhanden; Profil: MINT+, Klimabildung, Kultur'
+  first_choices: 64
+  places: 128
+  demand_ratio: 0.5
+  oversubscribed: false
 image_urls: []
 social_media: {}
 ratings: {}
@@ -42,6 +46,7 @@ field_confidence:
 data_sources:
 - wfs_berlin
 - agent_research
+- gymnasium_berlin_net
 unverified_fields:
 - social_media
 - unverified_fields

@@ -37,13 +37,28 @@ admission_requirements:
   notes: 'Public Gymnasium; starts at grade 7. Bilingual SESB Deutsch-Englisch track since 1999; new bilingual class (English)
     added from school year 2026/27. Two language sequences offered: English-French or French-English as first language. Third
     language: Latin or Italian from grade 8.'
+  first_choices: 213
+  places: 188
+  demand_ratio: 1.13
 image_urls:
 - photos/04Y01_0.jpg
 - photos/04Y01_1.jpg
 - photos/04Y01_2.jpg
 social_media:
   instagram: https://www.instagram.com/schillergymnasiumberlin/
-ratings: {}
+ratings:
+  schulen_de:
+    source: schulen.de
+    score: 3.5
+    scale_min: 1.0
+    scale_max: 5.0
+    retrieved: '2026-03-27'
+  schulen_de_users:
+    source: schulen.de (user reviews)
+    score: 3.9
+    scale_min: 1.0
+    scale_max: 6.0
+    retrieved: '2026-03-27'
 completeness_score: 0.882
 field_confidence:
   accepts_after_4th_grade: high
@@ -60,6 +75,9 @@ data_sources:
 - wfs_berlin
 - agent_research
 - wikimedia
+- abitur_xlsx_2025
+- gymnasium_berlin_net
+- schulen_de
 unverified_fields:
 - social_media
 - unverified_fields
@@ -74,3 +92,6 @@ unverified_fields:
 - open_day
 _pinned_fields: []
 open_day: '2026-01-08'
+abitur_average: 2.08
+abitur_pass_rate: 97.1
+abitur_student_count: 136

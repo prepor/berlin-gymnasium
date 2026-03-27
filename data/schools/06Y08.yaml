@@ -36,6 +36,10 @@ admission_requirements:
   entrance_test: false
   notes: 'Sprachbetontes Profil (language-focused). Three profile classes: Theatre/Film, bilingual Gesellschaftswissenschaften
     (English/German), and Naturwissenschaften (MINT).'
+  first_choices: 56
+  places: 96
+  demand_ratio: 0.58
+  oversubscribed: false
 image_urls:
 - photos/06Y08_0.jpg
 social_media:
@@ -48,6 +52,12 @@ ratings:
     scale_max: 5.0
     review_count: 4
     retrieved: '2026-03-26'
+  schulen_de:
+    source: schulen.de
+    score: 4.0
+    scale_min: 1.0
+    scale_max: 5.0
+    retrieved: '2026-03-27'
 completeness_score: 1.0
 field_confidence:
   accepts_after_4th_grade: high
@@ -63,6 +73,9 @@ data_sources:
 - wfs_berlin
 - agent_research
 - wikimedia
+- abitur_xlsx_2025
+- gymnasium_berlin_net
+- schulen_de
 unverified_fields:
 - social_media
 - unverified_fields
@@ -76,6 +89,8 @@ unverified_fields:
 - ganztag
 - abitur_average
 _pinned_fields: []
-abitur_average: 2.6
+abitur_average: 2.55
 ganztag: false
 open_day: '2026-01-15'
+abitur_pass_rate: 86.3
+abitur_student_count: 73

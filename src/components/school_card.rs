@@ -1,6 +1,6 @@
 use leptos::prelude::*;
 
-use crate::i18n::{profile_label, t, t_fmt, use_language};
+use crate::i18n::{t, t_fmt, profile_label, use_language};
 use crate::models::{School, TravelTimes};
 
 /// Returns the badge color for a given profile type.
@@ -32,6 +32,10 @@ pub fn SchoolCard(
     let thumbnail = school.image_urls.first().cloned();
     let student_count = school.student_count;
     let teacher_count = school.teacher_count;
+    let abitur_avg = school.abitur_average;
+    let abitur_pass = school.abitur_pass_rate;
+    let schulen_de_stars = school.ratings.get("schulen_de").and_then(|r| r.score);
+    let demand_ratio = school.admission_requirements.as_ref().and_then(|a| a.demand_ratio);
     let completeness = school.completeness_score.unwrap_or(0.0);
     let completeness_pct = (completeness * 100.0) as u32;
 
@@ -83,6 +87,50 @@ pub fn SchoolCard(
                         </span>
                     })
                 }}
+            </div>
+
+            <div class="card-metrics">
+                {abitur_avg.map(|avg| {
+                    let color = if avg <= 1.8 { "#16a34a" } else if avg <= 2.3 { "#ca8a04" } else { "#6b7280" };
+                    view! {
+                        <span class="metric" style=format!("color:{}", color) title=move || t("abitur_avg", lang.get())>
+                            {format!("{:.1}", avg)}
+                        </span>
+                    }
+                })}
+                {abitur_pass.map(|rate| {
+                    let color = if rate >= 98.0 { "#16a34a" } else if rate >= 90.0 { "#ca8a04" } else { "#dc2626" };
+                    view! {
+                        <span class="metric" style=format!("color:{}", color) title=move || t("abitur_pass_rate", lang.get())>
+                            {format!("{:.0}%", rate)}
+                        </span>
+                    }
+                })}
+                {schulen_de_stars.map(|stars| {
+                    let full = stars as u32;
+                    let half = if stars - (full as f64) >= 0.5 { 1 } else { 0 };
+                    let empty = 5 - full - half;
+                    view! {
+                        <span class="metric metric-stars" title="schulen.de">
+                            {"\u{2605}".repeat(full as usize)}
+                            {if half > 0 { "\u{00BD}" } else { "" }}
+                            {"\u{2606}".repeat(empty as usize)}
+                        </span>
+                    }
+                })}
+                {demand_ratio.map(|ratio| {
+                    let color = if ratio > 1.5 { "#dc2626" } else if ratio > 1.0 { "#ca8a04" } else { "#16a34a" };
+                    let label = if ratio > 1.0 {
+                        format!("{:.1}x", ratio)
+                    } else {
+                        "\u{2714}".to_string()
+                    };
+                    view! {
+                        <span class="metric" style=format!("color:{}", color) title=move || t("demand_label", lang.get())>
+                            {label}
+                        </span>
+                    }
+                })}
             </div>
 
             <div class="card-meta">

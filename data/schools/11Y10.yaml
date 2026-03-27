@@ -26,7 +26,19 @@ image_urls: []
 social_media:
   instagram: https://www.instagram.com/instardenne/
   facebook: https://www.facebook.com/manfredvonardenne/
-ratings: {}
+ratings:
+  schulen_de:
+    source: schulen.de
+    score: 3.0
+    scale_min: 1.0
+    scale_max: 5.0
+    retrieved: '2026-03-27'
+  schulen_de_users:
+    source: schulen.de (user reviews)
+    score: 1.8
+    scale_min: 1.0
+    scale_max: 6.0
+    retrieved: '2026-03-27'
 completeness_score: 0.824
 field_confidence:
   accepts_after_4th_grade: high
@@ -41,6 +53,9 @@ field_confidence:
 data_sources:
 - wfs_berlin
 - agent_research
+- abitur_xlsx_2025
+- gymnasium_berlin_net
+- schulen_de
 unverified_fields:
 - ganztag
 - languages
@@ -50,10 +65,16 @@ accepts_after_4th_grade: false
 ganztag: true
 admission_requirements:
   notendurchschnitt:
-  oversubscribed:
+  oversubscribed: false
   selection_criteria: Sprachbetontes Profil, MINT-Profil, musikalisches Profil
   probeunterricht: false
   entrance_test: false
   notes: Open all-day school (Offene Ganztagsbetreuung). Instrumental class offered each year. MINT-Schule with 
     comprehensive divided instruction in natural sciences.
+  first_choices: 109
+  places: 160
+  demand_ratio: 0.68
 open_day: '2026-01-22'
+abitur_average: 2.51
+abitur_pass_rate: 94.2
+abitur_student_count: 103

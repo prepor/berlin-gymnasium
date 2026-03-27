@@ -31,6 +31,10 @@ admission_requirements:
   entrance_test: false
   notes: UNESCO-Projektschule. Bilingual Deutsch/Englisch stream. Offers Darstellendes Spiel and Psychologie in 
     Sekundarstufe II. MINT focus (Mathematik, Informatik, Naturwissenschaften, Technik). Gebundenes Ganztagskonzept.
+  first_choices: 53
+  places: 128
+  demand_ratio: 0.41
+  oversubscribed: false
 image_urls:
 - photos/04Y10_0.jpg
 - photos/04Y10_1.jpg
@@ -58,6 +62,8 @@ data_sources:
 - wfs_berlin
 - agent_research
 - wikimedia
+- abitur_xlsx_2025
+- gymnasium_berlin_net
 unverified_fields:
 - social_media
 - unverified_fields
@@ -73,3 +79,6 @@ unverified_fields:
 - open_day
 _pinned_fields: []
 open_day: '2026-03-27'
+abitur_average: 2.49
+abitur_pass_rate: 96.1
+abitur_student_count: 76

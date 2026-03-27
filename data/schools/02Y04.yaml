@@ -45,6 +45,7 @@ data_sources:
 - wfs_berlin
 - agent_research
 - wikimedia
+- abitur_xlsx_2025
 unverified_fields:
 - social_media
 - unverified_fields
@@ -59,4 +60,6 @@ unverified_fields:
 - abitur_average
 _pinned_fields: []
 ganztag: true
-abitur_average: 1.92
+abitur_average: 1.77
+abitur_pass_rate: 97.9
+abitur_student_count: 48

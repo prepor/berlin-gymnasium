@@ -31,10 +31,20 @@ admission_requirements:
   entrance_test: true
   notes: Entrance test for the grundständig MINT profile (class 5) is held at all grundständig MINT schools 
     simultaneously each March. Regular (class 7) intake uses standard Förderprognose GPA criterion.
+  first_choices: 75
+  places: 32
+  demand_ratio: 2.34
+  oversubscribed: true
 image_urls:
 - photos/04Y08_0.jpg
 social_media: {}
-ratings: {}
+ratings:
+  schulen_de:
+    source: schulen.de
+    score: 3.5
+    scale_min: 1.0
+    scale_max: 5.0
+    retrieved: '2026-03-27'
 completeness_score: 0.824
 field_confidence:
   accepts_after_4th_grade: high
@@ -50,6 +60,9 @@ data_sources:
 - wfs_berlin
 - agent_research
 - wikimedia
+- abitur_xlsx_2025
+- gymnasium_berlin_net
+- schulen_de
 unverified_fields:
 - social_media
 - unverified_fields
@@ -65,3 +78,6 @@ unverified_fields:
 _pinned_fields: []
 ganztag: false
 open_day: '2026-01-16'
+abitur_average: 2.25
+abitur_pass_rate: 100.0
+abitur_student_count: 62

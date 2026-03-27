@@ -32,13 +32,23 @@ admission_requirements:
   entrance_test: false
   notes: 'Public Gymnasium (Gottfried-Keller-Gymnasium); starts at grade 7. Known for its classical-language (altsprachlich)
     profile. No grade-5 grundständig track confirmed. Website: http://www.gks-berlin.de'
+  first_choices: 94
+  places: 160
+  demand_ratio: 0.59
+  oversubscribed: false
 image_urls:
 - photos/04Y04_0.jpg
 - photos/04Y04_1.jpg
 social_media:
   instagram: https://www.instagram.com/gks_berlin_official/
   facebook: https://www.facebook.com/gksberlin/
-ratings: {}
+ratings:
+  schulen_de:
+    source: schulen.de
+    score: 4.5
+    scale_min: 1.0
+    scale_max: 5.0
+    retrieved: '2026-03-27'
 completeness_score: 0.882
 field_confidence:
   accepts_after_4th_grade: medium
@@ -53,6 +63,9 @@ data_sources:
 - wfs_berlin
 - agent_research
 - wikimedia
+- abitur_xlsx_2025
+- gymnasium_berlin_net
+- schulen_de
 unverified_fields:
 - social_media
 - unverified_fields
@@ -66,3 +79,6 @@ unverified_fields:
 - profile
 _pinned_fields: []
 open_day: '2026-01-17'
+abitur_average: 2.68
+abitur_pass_rate: 97.1
+abitur_student_count: 70

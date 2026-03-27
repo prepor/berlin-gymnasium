@@ -30,14 +30,36 @@ languages:
   from_grade: 8
 - name: Latein
 admission_requirements:
-  selection_criteria: 'For grade 5 (grundständig track): admission based on Förderprognose average grade, at least grade 2 in German, and passing an entrance aptitude test (Eignungstest); in case of oversubscription, 50% weighting on test result and 50% on core subject grades. For grade 7 (standard entry): Förderprognose Durchschnittsnote is the primary ranking criterion; Probeunterricht required if Notensumme in Deutsch, Mathematik and first foreign language exceeds 14 across the last two half-year reports.'
+  selection_criteria: 'For grade 5 (grundständig track): admission based on Förderprognose average grade, at least grade 2
+    in German, and passing an entrance aptitude test (Eignungstest); in case of oversubscription, 50% weighting on test result
+    and 50% on core subject grades. For grade 7 (standard entry): Förderprognose Durchschnittsnote is the primary ranking
+    criterion; Probeunterricht required if Notensumme in Deutsch, Mathematik and first foreign language exceeds 14 across
+    the last two half-year reports.'
   probeunterricht: true
   entrance_test: true
-  notes: 'School publishes transparent admission criteria for 2026/2027 on its website. Two separate intake tracks exist: bilingual French/AbiBac track (grade 5) and standard/MINT track (grade 7). For the bilingual grade-5 track, prior French or English as first foreign language at primary school is both accepted.'
+  notes: 'School publishes transparent admission criteria for 2026/2027 on its website. Two separate intake tracks exist:
+    bilingual French/AbiBac track (grade 5) and standard/MINT track (grade 7). For the bilingual grade-5 track, prior French
+    or English as first foreign language at primary school is both accepted.'
+  first_choices: 37
+  places: 64
+  demand_ratio: 0.58
+  oversubscribed: false
 image_urls: []
 social_media:
   facebook: https://www.facebook.com/p/R%C3%BCckert-Gymnasium-100045653813436/
-ratings: {}
+ratings:
+  schulen_de:
+    source: schulen.de
+    score: 4.5
+    scale_min: 1.0
+    scale_max: 5.0
+    retrieved: '2026-03-27'
+  schulen_de_users:
+    source: schulen.de (user reviews)
+    score: 2.8
+    scale_min: 1.0
+    scale_max: 6.0
+    retrieved: '2026-03-27'
 completeness_score: 0.824
 field_confidence:
   accepts_after_4th_grade: high
@@ -54,6 +76,9 @@ data_sources:
 - wfs_berlin
 - agent_research
 - wikimedia
+- abitur_xlsx_2025
+- gymnasium_berlin_net
+- schulen_de
 unverified_fields:
 - social_media
 - unverified_fields
@@ -68,3 +93,6 @@ unverified_fields:
 - open_day
 _pinned_fields: []
 open_day: '2026-01-05'
+abitur_average: 2.36
+abitur_pass_rate: 95.4
+abitur_student_count: 65

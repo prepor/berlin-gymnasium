@@ -27,7 +27,19 @@ image_urls:
 - photos/08Y03_1.jpg
 social_media:
   instagram: https://www.instagram.com/alberteinstein.sv/
-ratings: {}
+ratings:
+  schulen_de:
+    source: schulen.de
+    score: 4.5
+    scale_min: 1.0
+    scale_max: 5.0
+    retrieved: '2026-03-27'
+  schulen_de_users:
+    source: schulen.de (user reviews)
+    score: 4.5
+    scale_min: 1.0
+    scale_max: 6.0
+    retrieved: '2026-03-27'
 completeness_score: 0.882
 field_confidence:
   accepts_after_4th_grade: high
@@ -43,6 +55,9 @@ data_sources:
 - wfs_berlin
 - wikimedia
 - agent_research
+- abitur_xlsx_2025
+- gymnasium_berlin_net
+- schulen_de
 unverified_fields:
 - ganztag
 - admission_requirements
@@ -52,9 +67,15 @@ accepts_after_4th_grade: true
 open_day: '2026-01-17'
 admission_requirements:
   notendurchschnitt:
-  oversubscribed: true
+  oversubscribed: false
   selection_criteria: Staatliche Europa-Schule Berlin (SESB) Deutsch-Italienisch; musikalisches Profil
   probeunterricht: false
   entrance_test: false
   notes: 'Registration for 5th grade: March 9-11, 2026. Registration for 7th grade also available. SESB bilingual German-Italian
     stream.'
+  first_choices: 173
+  places: 192
+  demand_ratio: 0.9
+abitur_average: 2.25
+abitur_pass_rate: 97.3
+abitur_student_count: 146

@@ -38,11 +38,26 @@ admission_requirements:
   notes: Two grundständige (grade 5) classes per year with altsprachlicher Bildungsgang (Latin from grade 5). Four grade
     7 classes in the neusprachlicher Bildungsgang. One of the oldest and most sought-after Gymnasien in 
     Steglitz-Zehlendorf.
+  first_choices: 138
+  places: 96
+  demand_ratio: 1.44
 image_urls:
 - photos/06Y01_0.jpg
 - photos/06Y01_1.jpg
 social_media: {}
-ratings: {}
+ratings:
+  schulen_de:
+    source: schulen.de
+    score: 4.0
+    scale_min: 1.0
+    scale_max: 5.0
+    retrieved: '2026-03-27'
+  schulen_de_users:
+    source: schulen.de (user reviews)
+    score: 4.8
+    scale_min: 1.0
+    scale_max: 6.0
+    retrieved: '2026-03-27'
 completeness_score: 0.824
 field_confidence:
   accepts_after_4th_grade: high
@@ -59,6 +74,9 @@ data_sources:
 - wfs_berlin
 - agent_research
 - wikimedia
+- abitur_xlsx_2025
+- gymnasium_berlin_net
+- schulen_de
 unverified_fields:
 - social_media
 - unverified_fields
@@ -72,3 +90,6 @@ unverified_fields:
 - profile
 _pinned_fields: []
 open_day: '2026-01-17'
+abitur_average: 2.0
+abitur_pass_rate: 98.0
+abitur_student_count: 147

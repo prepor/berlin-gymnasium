@@ -38,11 +38,21 @@ admission_requirements:
     Latin as 2nd language from grade 5, Ancient Greek as mandatory 3rd language from grade 8. Grade 7 also has a 
     Werkstatt Ästhetische Bildung profile (DS, Kunst, Musik). Strong music programme with 3 choirs, 6 orchestras, 6 
     bands.
+  first_choices: 89
+  places: 96
+  demand_ratio: 0.93
+  oversubscribed: false
 image_urls:
 - photos/06Y03_0.jpg
 social_media:
   instagram: https://www.instagram.com/arndt.gymnasium.dahlem/
-ratings: {}
+ratings:
+  schulen_de:
+    source: schulen.de
+    score: 3.5
+    scale_min: 1.0
+    scale_max: 5.0
+    retrieved: '2026-03-27'
 completeness_score: 0.824
 field_confidence:
   accepts_after_4th_grade: high
@@ -58,6 +68,9 @@ data_sources:
 - wfs_berlin
 - agent_research
 - wikimedia
+- abitur_xlsx_2025
+- gymnasium_berlin_net
+- schulen_de
 unverified_fields:
 - social_media
 - unverified_fields
@@ -72,3 +85,6 @@ unverified_fields:
 - abitur_average
 - open_day
 _pinned_fields: []
+abitur_average: 1.82
+abitur_pass_rate: 100.0
+abitur_student_count: 114

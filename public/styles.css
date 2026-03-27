@@ -144,6 +144,28 @@ a:hover {
     padding: 0 1.25rem;
 }
 
+.card-metrics {
+    display: flex;
+    gap: 0.5rem;
+    padding: 0 1.25rem;
+    margin-bottom: 0.5rem;
+    flex-wrap: wrap;
+}
+
+.card-metrics .metric {
+    font-size: 0.8rem;
+    font-weight: 700;
+    background: #f1f5f9;
+    padding: 2px 8px;
+    border-radius: 6px;
+    white-space: nowrap;
+}
+
+.card-metrics .metric-stars {
+    color: #f59e0b;
+    letter-spacing: -1px;
+}
+
 .card-meta {
     margin-bottom: 0.5rem;
     padding: 0 1.25rem;
@@ -572,10 +594,24 @@ a:hover {
     margin-top: 0.25rem;
 }
 
-.abitur-average {
+.abitur-stats {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
     margin-top: 0.75rem;
-    font-weight: 600;
-    color: #1e293b;
+    padding: 0.75rem;
+    background: #f8fafc;
+    border-radius: 8px;
+}
+
+.abitur-stats .abitur-average {
+    font-weight: 700;
+}
+
+.abitur-stats .abitur-details p {
+    margin: 0.15rem 0;
+    font-size: 0.9rem;
+    color: #475569;
 }
 
 /* Admission and contact definition lists */

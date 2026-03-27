@@ -39,6 +39,10 @@ admission_requirements:
     profile. Music Leistungskurs available. Chor and Orchester AGs. English from grade 5 per schulen.de data (likely 
     reflects SESB/bilingual entry — official Berlin data lists no grade-5 start for this school; grades 7 entry 
     confirmed).
+  first_choices: 129
+  places: 160
+  demand_ratio: 0.81
+  oversubscribed: false
 image_urls:
 - photos/04Y03_0.jpg
 social_media:
@@ -59,6 +63,8 @@ data_sources:
 - wfs_berlin
 - agent_research
 - wikimedia
+- abitur_xlsx_2025
+- gymnasium_berlin_net
 unverified_fields:
 - social_media
 - unverified_fields
@@ -73,3 +79,6 @@ unverified_fields:
 - abitur_average
 _pinned_fields: []
 open_day: '2026-01-24'
+abitur_average: 2.41
+abitur_pass_rate: 96.9
+abitur_student_count: 96

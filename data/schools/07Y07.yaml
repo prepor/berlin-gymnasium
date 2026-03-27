@@ -25,7 +25,19 @@ image_urls:
 - photos/07Y07_0.jpg
 social_media:
   facebook: https://www.facebook.com/108389745855255/
-ratings: {}
+ratings:
+  schulen_de:
+    source: schulen.de
+    score: 3.5
+    scale_min: 1.0
+    scale_max: 5.0
+    retrieved: '2026-03-27'
+  schulen_de_users:
+    source: schulen.de (user reviews)
+    score: 1.3
+    scale_min: 1.0
+    scale_max: 6.0
+    retrieved: '2026-03-27'
 completeness_score: 0.882
 field_confidence:
   accepts_after_4th_grade: high
@@ -41,6 +53,9 @@ data_sources:
 - wfs_berlin
 - wikimedia
 - agent_research
+- abitur_xlsx_2025
+- gymnasium_berlin_net
+- schulen_de
 unverified_fields:
 - ganztag
 - abitur_average
@@ -51,8 +66,14 @@ accepts_after_4th_grade: true
 open_day: '2026-01-15'
 admission_requirements:
   notendurchschnitt:
-  oversubscribed:
+  oversubscribed: false
   selection_criteria: Auswahlverfahren für MINT-Profil Klasse 5
   probeunterricht: false
   entrance_test: false
   notes: 'Zwei Züge ab Klasse 5: Latein oder MINT'
+  first_choices: 50
+  places: 64
+  demand_ratio: 0.78
+abitur_average: 2.29
+abitur_pass_rate: 95.2
+abitur_student_count: 63

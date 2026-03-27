@@ -34,11 +34,26 @@ admission_requirements:
   entrance_test: false
   notes: Applicants must be in Klasse 6, must have Förderprognose, English must be first foreign language. Profile 
     classes use an interview and weighted subject grades.
+  first_choices: 91
+  places: 128
+  demand_ratio: 0.71
 image_urls:
 - photos/06Y07_0.jpg
 - photos/06Y07_1.jpg
 social_media: {}
-ratings: {}
+ratings:
+  schulen_de:
+    source: schulen.de
+    score: 3.5
+    scale_min: 1.0
+    scale_max: 5.0
+    retrieved: '2026-03-27'
+  schulen_de_users:
+    source: schulen.de (user reviews)
+    score: 4.8
+    scale_min: 1.0
+    scale_max: 6.0
+    retrieved: '2026-03-27'
 completeness_score: 0.588
 field_confidence:
   accepts_after_4th_grade: high
@@ -50,6 +65,9 @@ data_sources:
 - wfs_berlin
 - agent_research
 - wikimedia
+- abitur_xlsx_2025
+- gymnasium_berlin_net
+- schulen_de
 unverified_fields:
 - social_media
 - unverified_fields
@@ -61,3 +79,6 @@ unverified_fields:
 - languages
 - profile
 _pinned_fields: []
+abitur_average: 2.33
+abitur_pass_rate: 100.0
+abitur_student_count: 102

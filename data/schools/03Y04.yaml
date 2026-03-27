@@ -25,12 +25,28 @@ languages:
 admission_requirements:
   notes: Listed as grundständiges Gymnasium by Tagesspiegel (Pankow, Prenzlauer Berg). Further details not found in 
     available search results.
+  first_choices: 208
+  places: 96
+  demand_ratio: 2.17
+  oversubscribed: true
 image_urls:
 - photos/03Y04_0.jpg
 social_media:
   instagram: https://www.instagram.com/hsg.berlin/
   facebook: https://www.facebook.com/HeinrichSchliemannGymnasiumBerlin/
-ratings: {}
+ratings:
+  schulen_de:
+    source: schulen.de
+    score: 3.5
+    scale_min: 1.0
+    scale_max: 5.0
+    retrieved: '2026-03-27'
+  schulen_de_users:
+    source: schulen.de (user reviews)
+    score: 2.3
+    scale_min: 1.0
+    scale_max: 6.0
+    retrieved: '2026-03-27'
 completeness_score: 0.882
 field_confidence:
   accepts_after_4th_grade: medium
@@ -44,6 +60,9 @@ data_sources:
 - wfs_berlin
 - agent_research
 - wikimedia
+- abitur_xlsx_2025
+- gymnasium_berlin_net
+- schulen_de
 unverified_fields:
 - social_media
 - unverified_fields
@@ -58,3 +77,6 @@ unverified_fields:
 _pinned_fields: []
 ganztag: true
 open_day: '2026-01-17'
+abitur_average: 2.15
+abitur_pass_rate: 100.0
+abitur_student_count: 139

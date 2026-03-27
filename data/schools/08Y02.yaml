@@ -30,13 +30,16 @@ languages:
   from_grade: 8
 admission_requirements:
   notendurchschnitt: 2.1
-  oversubscribed: true
+  oversubscribed: false
   selection_criteria: Durchschnittsnote der Grundschulförderprognose; direct admission without lottery typically 
     requires average between 1.8 and 2.1; otherwise lottery among qualified applicants
   probeunterricht: false
   entrance_test: false
   notes: School accepts 3 or 4 classes of grade 7 per year (approx. 90 students). Standard Berlin Gymnasium admission 
     process; no grundständig (grade 5) entry.
+  first_choices: 69
+  places: 90
+  demand_ratio: 0.77
 image_urls:
 - photos/08Y02_0.jpg
 social_media:
@@ -59,6 +62,8 @@ data_sources:
 - wfs_berlin
 - agent_research
 - wikimedia
+- abitur_xlsx_2025
+- gymnasium_berlin_net
 unverified_fields:
 - social_media
 - unverified_fields
@@ -73,3 +78,6 @@ unverified_fields:
 - open_day
 _pinned_fields: []
 open_day: '2026-01-14'
+abitur_average: 2.74
+abitur_pass_rate: 85.3
+abitur_student_count: 75

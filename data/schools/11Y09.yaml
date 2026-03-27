@@ -29,7 +29,13 @@ image_urls:
 social_media:
   instagram: https://www.instagram.com/barnimgymnasium/
   facebook: https://www.facebook.com/BarnimOS/
-ratings: {}
+ratings:
+  schulen_de:
+    source: schulen.de
+    score: 3.5
+    scale_min: 1.0
+    scale_max: 5.0
+    retrieved: '2026-03-27'
 completeness_score: 0.882
 field_confidence:
   accepts_after_4th_grade: high
@@ -45,6 +51,9 @@ data_sources:
 - wfs_berlin
 - wikimedia
 - agent_research
+- abitur_xlsx_2025
+- gymnasium_berlin_net
+- schulen_de
 unverified_fields:
 - admission_requirements
 _pinned_fields: []
@@ -59,3 +68,9 @@ admission_requirements:
   entrance_test: false
   notes: Klasse 5 altsprachlich mit Latein, 2. Fremdsprache immer Französisch. Empfohlen wird Notendurchschnitt 2.0 oder
     besser.
+  first_choices: 185
+  places: 128
+  demand_ratio: 1.45
+abitur_average: 2.15
+abitur_pass_rate: 99.2
+abitur_student_count: 123

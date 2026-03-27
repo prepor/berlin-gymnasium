@@ -29,10 +29,26 @@ admission_requirements:
   entrance_test: false
   notes: UNESCO-Projektschule; Schule ohne Rassismus – Schule mit Courage; teilgebundener Ganztagsbetrieb für Klassen 
     7–8 (zwei Tage/Woche verpflichtend)
+  first_choices: 163
+  places: 160
+  demand_ratio: 1.02
+  oversubscribed: true
 image_urls:
 - photos/01Y11_0.jpg
 social_media: {}
-ratings: {}
+ratings:
+  schulen_de:
+    source: schulen.de
+    score: 4.5
+    scale_min: 1.0
+    scale_max: 5.0
+    retrieved: '2026-03-27'
+  schulen_de_users:
+    source: schulen.de (user reviews)
+    score: 4.2
+    scale_min: 1.0
+    scale_max: 6.0
+    retrieved: '2026-03-27'
 completeness_score: 0.824
 field_confidence:
   accepts_after_4th_grade: high
@@ -48,6 +64,9 @@ data_sources:
 - wfs_berlin
 - agent_research
 - wikimedia
+- abitur_xlsx_2025
+- gymnasium_berlin_net
+- schulen_de
 unverified_fields:
 - social_media
 - unverified_fields
@@ -62,3 +81,6 @@ unverified_fields:
 - open_day
 _pinned_fields: []
 open_day: '2025-12-06'
+abitur_average: 2.65
+abitur_pass_rate: 93.5
+abitur_student_count: 93

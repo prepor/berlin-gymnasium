@@ -32,13 +32,29 @@ admission_requirements:
   entrance_test: false
   notes: 'Public Gymnasium (Herder-Gymnasium); starts at grade 7. Known as a school with a French bilingual profile. No grade-5
     grundständig track confirmed. Website: https://www.herder-gymnasium.eu'
+  first_choices: 67
+  places: 64
+  demand_ratio: 1.05
+  oversubscribed: true
 image_urls:
 - photos/04Y05_0.jpg
 - photos/04Y05_1.jpg
 social_media:
   instagram: https://www.instagram.com/herdergymnasium.berlin/
   facebook: https://www.facebook.com/herderberlin/
-ratings: {}
+ratings:
+  schulen_de:
+    source: schulen.de
+    score: 3.5
+    scale_min: 1.0
+    scale_max: 5.0
+    retrieved: '2026-03-27'
+  schulen_de_users:
+    source: schulen.de (user reviews)
+    score: 1.7
+    scale_min: 1.0
+    scale_max: 6.0
+    retrieved: '2026-03-27'
 completeness_score: 0.941
 field_confidence:
   accepts_after_4th_grade: medium
@@ -53,6 +69,9 @@ data_sources:
 - wfs_berlin
 - agent_research
 - wikimedia
+- abitur_xlsx_2025
+- gymnasium_berlin_net
+- schulen_de
 unverified_fields:
 - social_media
 - unverified_fields
@@ -66,5 +85,7 @@ unverified_fields:
 - profile
 - abitur_average
 _pinned_fields: []
-abitur_average: 1.99
+abitur_average: 2.15
 open_day: '2026-01-09'
+abitur_pass_rate: 97.2
+abitur_student_count: 106

@@ -27,7 +27,19 @@ image_urls:
 - photos/07Y04_0.jpg
 social_media:
   instagram: https://www.instagram.com/sv_natorp/
-ratings: {}
+ratings:
+  schulen_de:
+    source: schulen.de
+    score: 3.5
+    scale_min: 1.0
+    scale_max: 5.0
+    retrieved: '2026-03-27'
+  schulen_de_users:
+    source: schulen.de (user reviews)
+    score: 1.5
+    scale_min: 1.0
+    scale_max: 6.0
+    retrieved: '2026-03-27'
 completeness_score: 0.824
 field_confidence:
   accepts_after_4th_grade: high
@@ -43,6 +55,9 @@ data_sources:
 - wfs_berlin
 - wikimedia
 - agent_research
+- abitur_xlsx_2025
+- gymnasium_berlin_net
+- schulen_de
 unverified_fields:
 - ganztag
 - profile
@@ -57,3 +72,9 @@ admission_requirements:
   probeunterricht: true
   entrance_test: false
   notes: Probeunterricht required if note sum >= 14 in first foreign language from semesters 5.2 and 6.1
+  first_choices: 155
+  places: 128
+  demand_ratio: 1.21
+abitur_average: 2.05
+abitur_pass_rate: 99.2
+abitur_student_count: 132

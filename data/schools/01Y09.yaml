@@ -32,12 +32,28 @@ admission_requirements:
   entrance_test: false
   notes: 'Altsprachlicher Zug ab Klasse 5 (Schulversuch): Sprachenfolge Französisch–Latein–Englisch. Regelklassen beginnen
     ab Klasse 7 mit Englisch.'
+  first_choices: 95
+  places: 128
+  demand_ratio: 0.74
+  oversubscribed: false
 image_urls:
 - photos/01Y09_0.jpg
 social_media:
   instagram: https://www.instagram.com/diesterweggymnasiumberlin/
   facebook: https://www.facebook.com/p/Diesterweg-Gymnasium-Berlin-100066936645063/
-ratings: {}
+ratings:
+  schulen_de:
+    source: schulen.de
+    score: 5.0
+    scale_min: 1.0
+    scale_max: 5.0
+    retrieved: '2026-03-27'
+  schulen_de_users:
+    source: schulen.de (user reviews)
+    score: 1.2
+    scale_min: 1.0
+    scale_max: 6.0
+    retrieved: '2026-03-27'
 completeness_score: 0.882
 field_confidence:
   accepts_after_4th_grade: high
@@ -53,6 +69,9 @@ data_sources:
 - wfs_berlin
 - agent_research
 - wikimedia
+- abitur_xlsx_2025
+- gymnasium_berlin_net
+- schulen_de
 unverified_fields:
 - social_media
 - unverified_fields
@@ -67,3 +86,6 @@ unverified_fields:
 - open_day
 _pinned_fields: []
 open_day: '2026-01-10'
+abitur_average: 2.67
+abitur_pass_rate: 93.2
+abitur_student_count: 74

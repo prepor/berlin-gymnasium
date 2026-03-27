@@ -27,7 +27,13 @@ image_urls:
 - photos/08Y06_0.jpg
 social_media:
   instagram: https://www.instagram.com/hannah_arendt_gymnasium_berlin/
-ratings: {}
+ratings:
+  schulen_de:
+    source: schulen.de
+    score: 5.0
+    scale_min: 1.0
+    scale_max: 5.0
+    retrieved: '2026-03-27'
 completeness_score: 0.824
 field_confidence:
   accepts_after_4th_grade: high
@@ -43,6 +49,9 @@ data_sources:
 - wfs_berlin
 - wikimedia
 - agent_research
+- abitur_xlsx_2025
+- gymnasium_berlin_net
+- schulen_de
 unverified_fields:
 - ganztag
 - open_day
@@ -52,8 +61,14 @@ ganztag: false
 accepts_after_4th_grade: false
 admission_requirements:
   notendurchschnitt:
-  oversubscribed:
+  oversubscribed: false
   selection_criteria: Förderprognose
   probeunterricht: false
   entrance_test: false
   notes: Aufnahmekriterium bei Übernachfrage ist der Notendurchschnitt der Förderprognose
+  first_choices: 125
+  places: 128
+  demand_ratio: 0.98
+abitur_average: 2.37
+abitur_pass_rate: 95.6
+abitur_student_count: 91

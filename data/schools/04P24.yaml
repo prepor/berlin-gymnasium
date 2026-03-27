@@ -51,6 +51,7 @@ field_confidence:
 data_sources:
 - wfs_berlin
 - agent_research
+- abitur_xlsx_2025
 unverified_fields:
 - unverified_fields
 - social_media
@@ -63,3 +64,6 @@ unverified_fields:
 _pinned_fields: []
 accepts_after_4th_grade: true
 ganztag: true
+abitur_average: 1.69
+abitur_pass_rate: 97.8
+abitur_student_count: 46

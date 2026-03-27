@@ -33,6 +33,12 @@ struct AdmissionRequirements {
     entrance_test: Option<bool>,
     #[serde(default)]
     notes: Option<String>,
+    #[serde(default)]
+    first_choices: Option<u32>,
+    #[serde(default)]
+    places: Option<u32>,
+    #[serde(default)]
+    demand_ratio: Option<f64>,
 }
 
 #[derive(Serialize, Deserialize)]
@@ -98,6 +104,10 @@ struct SchoolRecord {
     admission_requirements: Option<AdmissionRequirements>,
     #[serde(default)]
     abitur_average: Option<f64>,
+    #[serde(default)]
+    abitur_pass_rate: Option<f64>,
+    #[serde(default)]
+    abitur_student_count: Option<u32>,
     #[serde(default)]
     image_urls: Vec<String>,
     #[serde(default)]

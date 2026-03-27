@@ -30,7 +30,7 @@ languages:
 - name: Chinesisch
   from_grade: 8
 admission_requirements:
-  oversubscribed: true
+  oversubscribed: false
   selection_criteria: Admission to the grundständig bilingual French track (Klasse 5) is by ranked application list; 
     admission to the MINT profile class is also by ranked list. Regular tracks (Klasse 7) accept students with first 
     foreign language French or English. Entry into the bilingual track at Klasse 7 requires an advisory interview 
@@ -41,11 +41,26 @@ admission_requirements:
     The school has ~1100 students across ~95 teachers, making it one of the largest Gymnasien in Reinickendorf. AbiBac 
     (German-French double qualification) is available for bilingual track students. CertiLingua excellence label also 
     attainable.
+  first_choices: 85
+  places: 128
+  demand_ratio: 0.66
 image_urls:
 - photos/12Y07_0.jpg
 social_media:
   instagram: https://www.instagram.com/instantroro/
-ratings: {}
+ratings:
+  schulen_de:
+    source: schulen.de
+    score: 4.0
+    scale_min: 1.0
+    scale_max: 5.0
+    retrieved: '2026-03-27'
+  schulen_de_users:
+    source: schulen.de (user reviews)
+    score: 1.7
+    scale_min: 1.0
+    scale_max: 6.0
+    retrieved: '2026-03-27'
 completeness_score: 0.882
 field_confidence:
   accepts_after_4th_grade: high
@@ -62,6 +77,9 @@ data_sources:
 - wfs_berlin
 - agent_research
 - wikimedia
+- abitur_xlsx_2025
+- gymnasium_berlin_net
+- schulen_de
 unverified_fields:
 - social_media
 - unverified_fields
@@ -76,3 +94,6 @@ unverified_fields:
 - open_day
 _pinned_fields: []
 open_day: '2026-01-24'
+abitur_average: 2.29
+abitur_pass_rate: 95.5
+abitur_student_count: 111

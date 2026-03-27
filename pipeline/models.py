@@ -41,6 +41,9 @@ class AdmissionRequirements(BaseModel):
     probeunterricht: Optional[bool] = None      # Trial lesson required for admission
     entrance_test: Optional[bool] = None        # Entrance exam required
     notes: Optional[str] = None                 # Additional context
+    first_choices: Optional[int] = None         # Erstwünsche: first-choice applications
+    places: Optional[int] = None                # Regelplätze: available regular places
+    demand_ratio: Optional[float] = None        # first_choices / places (>1.0 = oversubscribed)
 
 
 class SchoolRecord(BaseModel):
@@ -78,7 +81,9 @@ class SchoolRecord(BaseModel):
     languages: list[LanguageEntry] = Field(default_factory=list)   # Foreign languages
     open_day: Optional[str] = None                       # DATA-12: ISO date of next open day
     admission_requirements: Optional[AdmissionRequirements] = None # DATA-11
-    abitur_average: Optional[float] = None               # D-24: from Tagesspiegel
+    abitur_average: Optional[float] = None               # D-24: Abiturdurchschnitt (official from daten.berlin.de)
+    abitur_pass_rate: Optional[float] = None             # 0.0–100.0 percentage who passed Abitur
+    abitur_student_count: Optional[int] = None           # Number of students who took Abitur
     image_urls: list[str] = Field(default_factory=list)  # D-14: school photo URLs
     social_media: dict[str, str] = Field(default_factory=dict)  # D-14: {"instagram": url}
 

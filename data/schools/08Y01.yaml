@@ -42,6 +42,8 @@ data_sources:
 - wfs_berlin
 - wikimedia
 - agent_research
+- abitur_xlsx_2025
+- gymnasium_berlin_net
 unverified_fields:
 - ganztag
 - abitur_average
@@ -56,3 +58,9 @@ admission_requirements:
   probeunterricht: false
   entrance_test: true
   notes: Schnelllernerklassen ab Klasse 5; Dalton-Pädagogik
+  first_choices: 66
+  places: 60
+  demand_ratio: 1.1
+abitur_average: 2.44
+abitur_pass_rate: 98.6
+abitur_student_count: 69

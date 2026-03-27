@@ -38,12 +38,27 @@ admission_requirements:
   notes: Accepts students from grade 7 only (not grundständig). Registration period March 2026 for school year 2026/27. 
     Härtefallantrag possible at time of registration. Up to 128 places (4 classes) available from SY 2026/27 after 
     return to renovated main building.
-abitur_average: 2.47
+  first_choices: 103
+  places: 96
+  demand_ratio: 1.07
+abitur_average: 2.71
 image_urls:
 - photos/07Y05_0.jpg
 social_media:
   instagram: https://www.instagram.com/lhgberlin/
-ratings: {}
+ratings:
+  schulen_de:
+    source: schulen.de
+    score: 4.0
+    scale_min: 1.0
+    scale_max: 5.0
+    retrieved: '2026-03-27'
+  schulen_de_users:
+    source: schulen.de (user reviews)
+    score: 3.5
+    scale_min: 1.0
+    scale_max: 6.0
+    retrieved: '2026-03-27'
 completeness_score: 0.882
 field_confidence:
   accepts_after_4th_grade: high
@@ -60,6 +75,9 @@ data_sources:
 - wfs_berlin
 - agent_research
 - wikimedia
+- abitur_xlsx_2025
+- gymnasium_berlin_net
+- schulen_de
 unverified_fields:
 - social_media
 - abitur_average
@@ -75,3 +93,5 @@ unverified_fields:
 - open_day
 _pinned_fields: []
 open_day: '2026-01-17'
+abitur_pass_rate: 100.0
+abitur_student_count: 51
