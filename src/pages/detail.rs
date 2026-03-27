@@ -236,10 +236,10 @@ fn render_detail(s: School, lang: Language, school_id: String) -> impl IntoView 
         .clone()
         .unwrap_or_else(|| t("no_data", lang).to_string());
     let traeger_label = match s.traeger.as_deref() {
-        Some("privat") => t("private_school", lang),
-        Some("oeffentlich") | Some("öffentlich") => t("public_school", lang),
-        Some(_) => t("unknown", lang),
-        None => t("no_data", lang),
+        Some("privat") => Some(t("private_school", lang)),
+        Some("oeffentlich") | Some("öffentlich") => Some(t("public_school", lang)),
+        Some(_) => Some(t("unknown", lang)),
+        None => None,
     };
     let student_teacher = match (s.student_count, s.teacher_count) {
         (Some(st), Some(te)) => {
@@ -250,9 +250,9 @@ fn render_detail(s: School, lang: Language, school_id: String) -> impl IntoView 
         (None, None) => t("no_data", lang).to_string(),
     };
     let ganztag_label = match s.ganztag {
-        Some(true) => t("all_day_school", lang),
-        Some(false) => t("half_day_school", lang),
-        None => t("no_data", lang),
+        Some(true) => Some(t("all_day_school", lang)),
+        Some(false) => Some(t("half_day_school", lang)),
+        None => None,
     };
 
     // Website
@@ -445,11 +445,15 @@ fn render_detail(s: School, lang: Language, school_id: String) -> impl IntoView 
                 <p class="detail-address">{address_display}</p>
 
                 <div class="detail-badges">
-                    <span class="badge badge-traeger">{traeger_label}</span>
+                    {traeger_label.map(|label| view! {
+                        <span class="badge badge-traeger">{label}</span>
+                    })}
                     {grundstaendig.then(|| view! {
                         <span class="badge badge-grundstaendig">{t("grundstaendig", lang)}</span>
                     })}
-                    <span class="badge badge-ganztag">{ganztag_label}</span>
+                    {ganztag_label.map(|label| view! {
+                        <span class="badge badge-ganztag">{label}</span>
+                    })}
                 </div>
 
                 <p class="detail-counts">{student_teacher}</p>
